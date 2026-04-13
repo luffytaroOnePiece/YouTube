@@ -1,4 +1,5 @@
 import React from 'react';
+import Dropdown from './Dropdown';
 
 const GRID_OPTIONS = [
   { value: 2, label: '2' },
@@ -30,6 +31,32 @@ export default function FilterBar({
   hasActiveFilters,
   onReset,
 }) {
+  // Build group options
+  const groupOptions = [
+    { value: 'All', label: `All Groups`, count: videoCounts.total },
+    ...groups.map((g) => ({
+      value: g,
+      label: `${groupMeta[g]?.icon || ''} ${g}`,
+      count: videoCounts.groups[g] || 0,
+    })),
+  ];
+
+  // Build category options
+  const categoryOptions = [
+    { value: 'All', label: 'All Categories' },
+    ...categories.map((c) => ({
+      value: c,
+      label: c,
+      count: videoCounts.categories[`${activeGroup}::${c}`] || 0,
+    })),
+  ];
+
+  // Build resolution options
+  const resolutionOptions = [
+    { value: 'All', label: 'All Quality' },
+    ...availableResolutions.map((r) => ({ value: r, label: r })),
+  ];
+
   return (
     <div className="filter-bar">
       {/* Row 1: Search + Dropdowns + Reset + Grid */}
@@ -62,73 +89,32 @@ export default function FilterBar({
 
         {/* Dropdowns */}
         <div className="filter-bar__dropdowns">
-          {/* Group dropdown */}
-          <div className="filter-bar__select-wrapper">
-            <select
-              id="group-select"
-              className="filter-bar__select"
-              value={activeGroup}
-              onChange={(e) => onGroupChange(e.target.value)}
-            >
-              <option value="All">All Groups ({videoCounts.total})</option>
-              {groups.map((group) => {
-                const meta = groupMeta[group];
-                const count = videoCounts.groups[group] || 0;
-                return (
-                  <option key={group} value={group}>
-                    {meta?.icon} {group} ({count})
-                  </option>
-                );
-              })}
-            </select>
-            <svg className="filter-bar__select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </div>
+          <Dropdown
+            id="group-select"
+            value={activeGroup}
+            options={groupOptions}
+            onChange={onGroupChange}
+            placeholder="All Groups"
+          />
 
-          {/* Category dropdown */}
           {activeGroup !== 'All' && categories.length > 0 && (
-            <div className="filter-bar__select-wrapper">
-              <select
-                id="category-select"
-                className="filter-bar__select"
-                value={activeCategory}
-                onChange={(e) => onCategoryChange(e.target.value)}
-              >
-                <option value="All">All Categories</option>
-                {categories.map((cat) => {
-                  const count = videoCounts.categories[`${activeGroup}::${cat}`] || 0;
-                  return (
-                    <option key={cat} value={cat}>
-                      {cat} ({count})
-                    </option>
-                  );
-                })}
-              </select>
-              <svg className="filter-bar__select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </div>
+            <Dropdown
+              id="category-select"
+              value={activeCategory}
+              options={categoryOptions}
+              onChange={onCategoryChange}
+              placeholder="All Categories"
+            />
           )}
 
-          {/* Resolution dropdown */}
           {availableResolutions.length > 0 && (
-            <div className="filter-bar__select-wrapper">
-              <select
-                id="resolution-select"
-                className="filter-bar__select filter-bar__select--res"
-                value={activeResolution}
-                onChange={(e) => onResolutionChange(e.target.value)}
-              >
-                <option value="All">All Quality</option>
-                {availableResolutions.map((res) => (
-                  <option key={res} value={res}>{res}</option>
-                ))}
-              </select>
-              <svg className="filter-bar__select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </div>
+            <Dropdown
+              id="resolution-select"
+              value={activeResolution}
+              options={resolutionOptions}
+              onChange={onResolutionChange}
+              placeholder="All Quality"
+            />
           )}
         </div>
 

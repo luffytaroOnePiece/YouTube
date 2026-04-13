@@ -216,10 +216,10 @@ function App() {
       {/* Home View: Latest Videos */}
       {isHomeView && latestVideos.length > 0 && (
         <section className="home-section">
-          <h2 className="home-section__title">
-            <span className="home-section__icon">🕐</span>
-            Recently Added
-          </h2>
+          <div className="home-section__header">
+            <span className="home-section__title">Recently Added</span>
+            <div className="home-section__line" />
+          </div>
           <VideoGrid
             videos={latestVideos}
             onVideoSelect={handleVideoSelect}
