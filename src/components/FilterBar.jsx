@@ -23,6 +23,7 @@ export default function FilterBar({
   onGridColumnsChange,
   hasActiveFilters,
   onReset,
+  onQuickAccess,
 }) {
   // Build group options
   const groupOptions = [
@@ -50,9 +51,12 @@ export default function FilterBar({
     ...availableResolutions.map((r) => ({ value: r, label: r })),
   ];
 
+  const isTeluguActive = activeGroup === 'Music' && activeCategory === 'Telugu';
+  const isEnglishActive = activeGroup === 'Music' && activeCategory === 'English';
+  const is8KActive = activeResolution === '8K' && activeGroup === 'All';
+
   return (
     <div className="filter-bar">
-      {/* Row 1: Search + Dropdowns + Reset + Grid */}
       <div className="filter-bar__top">
 
         {/* Dropdowns */}
@@ -101,24 +105,28 @@ export default function FilterBar({
           </button>
         )}
 
-        {/* Grid density */}
-        <div className="filter-bar__grid-control">
-          <svg className="filter-bar__grid-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="3" y="3" width="7" height="7" />
-            <rect x="14" y="3" width="7" height="7" />
-            <rect x="3" y="14" width="7" height="7" />
-            <rect x="14" y="14" width="7" height="7" />
-          </svg>
-          <input
-            type="range"
-            className="filter-bar__grid-slider"
-            min="2"
-            max="6"
-            value={gridColumns}
-            onChange={(e) => onGridColumnsChange(Number(e.target.value))}
-            title={`${gridColumns} per row`}
-          />
-          <span className="filter-bar__grid-value">{gridColumns}</span>
+        {/* Quick Access — right side */}
+        <div className="filter-bar__quick-group">
+          <div className="filter-bar__divider" />
+          <span className="filter-bar__quick-label">Quick Access</span>
+          <button
+            className={`filter-bar__quick-chip ${isTeluguActive ? 'filter-bar__quick-chip--active' : ''}`}
+            onClick={() => isTeluguActive ? onReset() : onQuickAccess('Music', 'Telugu', 'All')}
+          >
+            🎵 Telugu
+          </button>
+          <button
+            className={`filter-bar__quick-chip ${isEnglishActive ? 'filter-bar__quick-chip--active' : ''}`}
+            onClick={() => isEnglishActive ? onReset() : onQuickAccess('Music', 'English', 'All')}
+          >
+            🎶 English
+          </button>
+          <button
+            className={`filter-bar__quick-chip ${is8KActive ? 'filter-bar__quick-chip--active' : ''}`}
+            onClick={() => is8KActive ? onReset() : onQuickAccess('All', 'All', '8K')}
+          >
+            ✦ 8K Ultra
+          </button>
         </div>
       </div>
 
