@@ -1,13 +1,6 @@
 import React from 'react';
 import Dropdown from './Dropdown';
 
-const GRID_OPTIONS = [
-  { value: 2, label: '2' },
-  { value: 3, label: '3' },
-  { value: 4, label: '4' },
-  { value: 5, label: '5' },
-  { value: 6, label: '6' },
-];
 
 export default function FilterBar({
   groups,
@@ -135,18 +128,22 @@ export default function FilterBar({
 
         {/* Grid density */}
         <div className="filter-bar__grid-control">
-          <div className="filter-bar__grid-btns">
-            {GRID_OPTIONS.map((opt) => (
-              <button
-                key={opt.value}
-                className={`filter-bar__grid-btn ${gridColumns === opt.value ? 'filter-bar__grid-btn--active' : ''}`}
-                onClick={() => onGridColumnsChange(opt.value)}
-                title={`${opt.value} per row`}
-              >
-                {opt.label}
-              </button>
-            ))}
-          </div>
+          <svg className="filter-bar__grid-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+          </svg>
+          <input
+            type="range"
+            className="filter-bar__grid-slider"
+            min="2"
+            max="6"
+            value={gridColumns}
+            onChange={(e) => onGridColumnsChange(Number(e.target.value))}
+            title={`${gridColumns} per row`}
+          />
+          <span className="filter-bar__grid-value">{gridColumns}</span>
         </div>
       </div>
 

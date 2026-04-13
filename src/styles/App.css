@@ -736,57 +736,67 @@ body {
   filter: drop-shadow(0 0 4px rgba(90, 200, 250, 0.3));
 }
 
-/* ── Grid Density Control (Segmented Pill) ─────────────────── */
+/* ── Grid Density (Minimal Slider) ──────────────────────────── */
 .filter-bar__grid-control {
   display: flex;
   align-items: center;
+  gap: 8px;
   margin-left: auto;
 }
 
-.filter-bar__grid-btns {
-  display: flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  overflow: hidden;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
-}
-
-.filter-bar__grid-btn {
-  padding: 7px 11px;
-  border: none;
-  background: transparent;
+.filter-bar__grid-icon {
   color: var(--text-muted);
-  font-family: inherit;
-  font-size: 0.75rem;
-  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.filter-bar__grid-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 72px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 2px;
+  outline: none;
   cursor: pointer;
-  transition: all var(--transition-smooth);
-  border-right: 1px solid rgba(255, 255, 255, 0.06);
-  position: relative;
+  transition: background var(--transition-smooth);
 }
 
-.filter-bar__grid-btn:last-child {
-  border-right: none;
+.filter-bar__grid-slider:hover {
+  background: rgba(255, 255, 255, 0.18);
 }
 
-.filter-bar__grid-btn:hover {
-  color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.08);
+.filter-bar__grid-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
-.filter-bar__grid-btn--active {
-  background: rgba(255, 255, 255, 0.92);
-  color: #0a0a0a;
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.2),
-    0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+.filter-bar__grid-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-.filter-bar__grid-btn--active:hover {
-  background: rgba(255, 255, 255, 0.95);
-  color: #0a0a0a;
+.filter-bar__grid-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.filter-bar__grid-value {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  min-width: 14px;
+  text-align: center;
 }
 
 /* ── Reset Button (Glassmorphic) ───────────────────────────── */
