@@ -178,6 +178,7 @@ function App() {
 
   return (
     <div className="app">
+      <div className="sticky-nav">
       {/* Header */}
       <header className="header">
         <div className="header__brand" onClick={handleReset} style={{ cursor: 'pointer' }}>
@@ -224,6 +225,7 @@ function App() {
         hasActiveFilters={hasActiveFilters}
         onReset={handleReset}
       />
+      </div>
 
       {/* Home View: Latest Videos */}
       {isHomeView && latestVideos.length > 0 && (
