@@ -71,6 +71,19 @@ body {
   line-height: 1.5;
   min-height: 100vh;
   overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
 }
 
 /* ── App Layout ────────────────────────────────────────────── */
@@ -649,8 +662,9 @@ body {
 .filter-bar__quick-group {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
   margin-left: auto;
+  margin-right: 20px;
   flex-shrink: 0;
 }
 
@@ -674,41 +688,51 @@ body {
 }
 
 .filter-bar__quick-chip {
-  padding: 8px 18px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(255, 255, 255, 0.85);
+  padding: 7px 0;
+  border-radius: 0;
+  border: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.5);
   font-family: inherit;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 500;
   cursor: pointer;
   white-space: nowrap;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.filter-bar__quick-chip::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background: #fff;
+  border-radius: 1px;
+  transform: scaleX(0);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-bar__quick-chip:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .filter-bar__quick-chip:active {
-  transform: scale(0.96);
+  transform: scale(0.97);
 }
 
 .filter-bar__quick-chip--active {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: rgba(255, 255, 255, 0.18);
   color: #ffffff;
   font-weight: 600;
-  box-shadow:
-    0 0.5px 0 rgba(255, 255, 255, 0.1) inset,
-    0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.filter-bar__quick-chip--active::after {
+  transform: scaleX(1);
 }
 
 .filter-bar__quick-chip--active:hover {
-  background: rgba(255, 255, 255, 0.18);
   color: #ffffff;
 }
 
