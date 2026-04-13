@@ -121,6 +121,7 @@ export default function VideoCard({ video, onClick, index }) {
         {video.duration && (
           <span className="video-card__duration">{video.duration}</span>
         )}
+
       </div>
 
       {/* Info */}
@@ -132,6 +133,9 @@ export default function VideoCard({ video, onClick, index }) {
             <span className="video-card__date" title={formatAbsoluteDate(video.date)}>
               {formatDate(video.date)}
             </span>
+          )}
+          {video.resolution && (
+            <span className="video-card__resolution">{video.resolution}</span>
           )}
         </div>
       </div>

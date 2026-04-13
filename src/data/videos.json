@@ -1,250 +1,346 @@
 {
-  "lastUpdated": "2026-04-13T13:14:42.897Z",
-  "categories": {
-    "Telugu Romance": [
-      {
-        "youtubeLinkID": "sl2X-e956Ts",
-        "title": "Pareshanura 8K Video Song | Dhruva | Ram Charan, Rakul Preet | Hiphop Tamizha | Surender Reddy",
-        "thumbnail": "https://img.youtube.com/vi/sl2X-e956Ts/maxresdefault.jpg",
-        "duration": "3:02",
-        "durationSec": 182,
-        "type": "Telugu Romance",
-        "date": "2026-03-28T07:30:06-07:00"
-      },
-      {
-        "youtubeLinkID": "bF_6ndNptU8",
-        "title": "Suvvi Suvvi 8K 60FPS Video Song | They Call Him OG | Pawan Kalyan, Priyanka Mohan  | Thaman S",
-        "thumbnail": "https://img.youtube.com/vi/bF_6ndNptU8/maxresdefault.jpg",
-        "duration": "4:36",
-        "durationSec": 276,
-        "type": "Telugu Romance",
-        "date": "2026-02-01T06:30:28-08:00"
-      },
-      {
-        "youtubeLinkID": "2cF8x6Mhgj4",
-        "title": "Sahana Sahana Song (Telugu) | The RajaSaab | Prabhas | Nidhhi Agerwal | Maruthi | Thaman S| Vishal M",
-        "thumbnail": "https://img.youtube.com/vi/2cF8x6Mhgj4/maxresdefault.jpg",
-        "duration": "2:34",
-        "durationSec": 154,
-        "type": "Telugu Romance",
-        "date": "2025-12-17T05:59:05-08:00"
-      },
-      {
-        "youtubeLinkID": "W8nny8Vm81s",
-        "title": "Full Video: Nuvvunte Chaley | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
-        "thumbnail": "https://img.youtube.com/vi/W8nny8Vm81s/maxresdefault.jpg",
-        "duration": "3:29",
-        "durationSec": 209,
-        "type": "Telugu Romance",
-        "date": "2025-12-16T20:29:07-08:00"
-      },
-      {
-        "youtubeLinkID": "iBpSuQTJdaU",
-        "title": "Chinni Gundelo Video | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
-        "thumbnail": "https://img.youtube.com/vi/iBpSuQTJdaU/maxresdefault.jpg",
-        "duration": "3:26",
-        "durationSec": 206,
-        "type": "Telugu Romance",
-        "date": "2025-12-13T05:30:58-08:00"
-      },
-      {
-        "youtubeLinkID": "o5DI4WuazA4",
-        "title": "Aradhya - 8K Video | Kushi | Vijay Deverakonda, Samantha | Hesham Abdul Wahab | Sid Sriram, Chinmayi",
-        "thumbnail": "https://img.youtube.com/vi/o5DI4WuazA4/maxresdefault.jpg",
-        "duration": "4:47",
-        "durationSec": 287,
-        "type": "Telugu Romance",
-        "date": "2025-11-14T02:30:39-08:00"
-      },
-      {
-        "youtubeLinkID": "Tn8RLoe0Zb8",
-        "title": "Urike Urike - 8K Video Song | HIT 2 | Adivi Sesh | Meenakshi | MM Sreelekha | Sid Sriram",
-        "thumbnail": "https://img.youtube.com/vi/Tn8RLoe0Zb8/maxresdefault.jpg",
-        "duration": "3:25",
-        "durationSec": 205,
-        "type": "Telugu Romance",
-        "date": "2025-11-13T05:30:26-08:00"
-      },
-      {
-        "youtubeLinkID": "2zR4TNTXB6I",
-        "title": "Inthandham 8K/4K Video Song - Sita Ramam (Telugu) | Dulquer | Mrunal | Vishal | Hanu Raghavapudi",
-        "thumbnail": "https://img.youtube.com/vi/2zR4TNTXB6I/maxresdefault.jpg",
-        "duration": "4:07",
-        "durationSec": 247,
-        "type": "Telugu Romance",
-        "date": "2025-09-30T07:30:09-07:00"
-      },
-      {
-        "youtubeLinkID": "Tu_jvhwHvcU",
-        "title": "Premalo -  8K Video | Court | Priyadarshi, Harsh Roshan, Sridevi | Vijai Bulganin | Ram Jagadeesh",
-        "thumbnail": "https://img.youtube.com/vi/Tu_jvhwHvcU/maxresdefault.jpg",
-        "duration": "4:50",
-        "durationSec": 290,
-        "type": "Telugu Romance",
-        "date": "2025-07-02T03:30:31-07:00"
-      },
-      {
-        "youtubeLinkID": "HKiwNcV7znw",
-        "title": "Hey Rangule - 8K Video | Amaran | Sivakarthikeyan, Sai Pallavi | GV Prakash | Rajkumar Periasamy",
-        "thumbnail": "https://img.youtube.com/vi/HKiwNcV7znw/maxresdefault.jpg",
-        "duration": "2:49",
-        "durationSec": 169,
-        "type": "Telugu Romance",
-        "date": "2025-06-27T03:30:11-07:00"
-      },
-      {
-        "youtubeLinkID": "-dr8ecezXrg",
-        "title": "Pillaa Raa - 8K Video Song | RX 100 | Kartikeya, Payal Rajput | Anurag Kulkarni | Chaitan Bharadwaj",
-        "thumbnail": "https://img.youtube.com/vi/-dr8ecezXrg/maxresdefault.jpg",
-        "duration": "4:12",
-        "durationSec": 252,
-        "type": "Telugu Romance",
-        "date": "2025-06-20T04:30:00-07:00"
-      },
-      {
-        "youtubeLinkID": "_0ak7rWPlmU",
-        "title": "Chuttamalle [8K] Video - Devara Part 1 | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao | Koratala Siva",
-        "thumbnail": "https://img.youtube.com/vi/_0ak7rWPlmU/maxresdefault.jpg",
-        "duration": "3:37",
-        "durationSec": 217,
-        "type": "Telugu Romance",
-        "date": "2025-06-12T03:45:06-07:00"
-      },
-      {
-        "youtubeLinkID": "YpViW3V734g",
-        "title": "NaaNaa Hyraanaa - 8K Video | Game Changer | Ram Charan, Kiara | Shreya Ghoshal, Karthik | Thaman S",
-        "thumbnail": "https://img.youtube.com/vi/YpViW3V734g/maxresdefault.jpg",
-        "duration": "3:38",
-        "durationSec": 218,
-        "type": "Telugu Romance",
-        "date": "2025-06-12T03:30:19-07:00"
-      },
-      {
-        "youtubeLinkID": "L8365jak_7w",
-        "title": "Na Roja Nuvve - 8K Video Song | Kushi | Vijay Deverakonda, Samantha Ruth Prabhu | Hesham Abdul Wahab",
-        "thumbnail": "https://img.youtube.com/vi/L8365jak_7w/maxresdefault.jpg",
-        "duration": "4:36",
-        "durationSec": 276,
-        "type": "Telugu Romance",
-        "date": "2025-06-04T04:30:31-07:00"
-      },
-      {
-        "youtubeLinkID": "NEnDw6y76zw",
-        "title": "8k Ultra HD songs 60fps Emito ivala (Telugu)full resolution 4k Andala rakshasi Lavanya #TFI #new",
-        "thumbnail": "https://img.youtube.com/vi/NEnDw6y76zw/maxresdefault.jpg",
-        "duration": "3:38",
-        "durationSec": 218,
-        "type": "Telugu Romance",
-        "date": "2025-05-19T00:21:23-07:00"
-      },
-      {
-        "youtubeLinkID": "Xbizke4zftY",
-        "title": "ANIMAL: Evarevaro (Full Video) - Ranbir Kapoor,Tripti Dimri | Sandeep V | Vishal M | Bhushan K",
-        "thumbnail": "https://img.youtube.com/vi/Xbizke4zftY/maxresdefault.jpg",
-        "duration": "4:09",
-        "durationSec": 249,
-        "type": "Telugu Romance",
-        "date": "2023-12-19T04:29:12-08:00"
-      },
-      {
-        "youtubeLinkID": "8b2BRoqYbaw",
-        "title": "Full Video: Sammohanuda | Rules Ranjann | Kiran Abbavaram,Neha Sshetty | Rathinam Krishna | Shreya G",
-        "thumbnail": "https://img.youtube.com/vi/8b2BRoqYbaw/maxresdefault.jpg",
-        "duration": "3:12",
-        "durationSec": 192,
-        "type": "Telugu Romance",
-        "date": "2023-10-19T04:29:10-07:00"
-      },
-      {
-        "youtubeLinkID": "j7nme3OUqVc",
-        "title": "Paccha Bottesina Full Video Song [4K] | Baahubali (Telugu) | Prabhas, Tamannaah | Bahubali",
-        "thumbnail": "https://img.youtube.com/vi/j7nme3OUqVc/maxresdefault.jpg",
-        "duration": "3:00",
-        "durationSec": 180,
-        "type": "Telugu Romance",
-        "date": "2023-06-06T03:30:13-07:00"
-      },
-      {
-        "youtubeLinkID": "lWc1LVIuySA",
-        "title": "#Leharaayi Full Video | Most Eligible Bachelor | Akhil,Pooja Hegde | Gopi Sundar | Telugu Love Songs",
-        "thumbnail": "https://img.youtube.com/vi/lWc1LVIuySA/maxresdefault.jpg",
-        "duration": "4:21",
-        "durationSec": 261,
-        "type": "Telugu Romance",
-        "date": "2022-03-25T02:30:01-07:00"
-      },
-      {
-        "youtubeLinkID": "t-UXozzpGRg",
-        "title": "Korameesam Polisoda Video Song [4K] | #Krack | Raviteja,Shruti Haasan | Gopichand Malineni |Thaman S",
-        "thumbnail": "https://img.youtube.com/vi/t-UXozzpGRg/maxresdefault.jpg",
-        "duration": "3:39",
-        "durationSec": 219,
-        "type": "Telugu Romance",
-        "date": "2021-02-06T03:32:59-08:00"
-      },
-      {
-        "youtubeLinkID": "Pal0uollc4E",
-        "title": "Manasu Maree Full video Song | V Songs | Nani, Aditi Rao Hydari | Amit Trivedi",
-        "thumbnail": "https://img.youtube.com/vi/Pal0uollc4E/maxresdefault.jpg",
-        "duration": "4:28",
-        "durationSec": 268,
-        "type": "Telugu Romance",
-        "date": "2020-10-02T22:01:12-07:00"
-      },
-      {
-        "youtubeLinkID": "QlFwVjhllzQ",
-        "title": "Gang Leader - Ninnu Chuse Anandamlo Video Telugu | Nani | Anirudh",
-        "thumbnail": "https://img.youtube.com/vi/QlFwVjhllzQ/maxresdefault.jpg",
-        "duration": "4:34",
-        "durationSec": 274,
-        "type": "Telugu Romance",
-        "date": "2019-10-14T00:00:02-07:00"
-      },
-      {
-        "youtubeLinkID": "wAGjkxx--JU",
-        "title": "Maate Vinadhuga Video Song (4K) || Taxiwaala Movie || Vijay Deverakonda, Priyanka || Sid Sriram",
-        "thumbnail": "https://img.youtube.com/vi/wAGjkxx--JU/maxresdefault.jpg",
-        "duration": "1:36",
-        "durationSec": 96,
-        "type": "Telugu Romance",
-        "date": "2018-10-30T04:25:09-07:00"
-      },
-      {
-        "youtubeLinkID": "qaU03QRrcPs",
-        "title": "Telusa Telusa Full Video Song || Sarrainodu  || Allu Arjun , Rakul Preet, Catherine Tresa",
-        "thumbnail": "https://img.youtube.com/vi/qaU03QRrcPs/maxresdefault.jpg",
-        "duration": "4:04",
-        "durationSec": 244,
-        "type": "Telugu Romance",
-        "date": "2016-06-27T04:57:22-07:00"
-      },
-      {
-        "youtubeLinkID": "xwdjRkKqNYE",
-        "title": "Yenno Yenno : Malli Malli Idi Rani Roju Full Video Songs",
-        "thumbnail": "https://img.youtube.com/vi/xwdjRkKqNYE/maxresdefault.jpg",
-        "duration": "3:16",
-        "durationSec": 196,
-        "type": "Telugu Romance",
-        "date": "2015-05-10T22:09:54-07:00"
-      },
-      {
-        "youtubeLinkID": "cjoz0FZ-wWs",
-        "title": "I - Manoharudu - Poolane Kunukeyamantaa Video | Vikram, Amy Jackson | A.R. Rahman",
-        "thumbnail": "https://img.youtube.com/vi/cjoz0FZ-wWs/maxresdefault.jpg",
-        "duration": "4:53",
-        "durationSec": 293,
-        "type": "Telugu Romance",
-        "date": "2015-02-14T00:00:00-08:00"
-      },
-      {
-        "youtubeLinkID": "bc157RVRwzU",
-        "title": "Nee Jathaga Full Video Song - Yevadu Video Songs - Ram Charan, Allu Arjun, Shruti Hassan, Kajal",
-        "thumbnail": "https://img.youtube.com/vi/bc157RVRwzU/maxresdefault.jpg",
-        "duration": "4:46",
-        "durationSec": 286,
-        "type": "Telugu Romance",
-        "date": "2014-03-08T03:30:29-08:00"
+  "lastUpdated": "2026-04-13T13:58:46.555Z",
+  "groups": {
+    "Music": {
+      "icon": "🎵",
+      "categories": {
+        "Telugu": {
+          "Romance": [
+            {
+              "youtubeLinkID": "sl2X-e956Ts",
+              "title": "Pareshanura 8K Video Song | Dhruva | Ram Charan, Rakul Preet | Hiphop Tamizha | Surender Reddy",
+              "thumbnail": "https://img.youtube.com/vi/sl2X-e956Ts/maxresdefault.jpg",
+              "duration": "3:02",
+              "durationSec": 182,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2026-03-28T07:30:06-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "bF_6ndNptU8",
+              "title": "Suvvi Suvvi 8K 60FPS Video Song | They Call Him OG | Pawan Kalyan, Priyanka Mohan  | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/bF_6ndNptU8/maxresdefault.jpg",
+              "duration": "4:36",
+              "durationSec": 276,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2026-02-01T06:30:28-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "2cF8x6Mhgj4",
+              "title": "Sahana Sahana Song (Telugu) | The RajaSaab | Prabhas | Nidhhi Agerwal | Maruthi | Thaman S| Vishal M",
+              "thumbnail": "https://img.youtube.com/vi/2cF8x6Mhgj4/maxresdefault.jpg",
+              "duration": "2:34",
+              "durationSec": 154,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-12-17T05:59:05-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "W8nny8Vm81s",
+              "title": "Full Video: Nuvvunte Chaley | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
+              "thumbnail": "https://img.youtube.com/vi/W8nny8Vm81s/maxresdefault.jpg",
+              "duration": "3:29",
+              "durationSec": 209,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-12-16T20:29:07-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "iBpSuQTJdaU",
+              "title": "Chinni Gundelo Video | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
+              "thumbnail": "https://img.youtube.com/vi/iBpSuQTJdaU/maxresdefault.jpg",
+              "duration": "3:26",
+              "durationSec": 206,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-12-13T05:30:58-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "o5DI4WuazA4",
+              "title": "Aradhya - 8K Video | Kushi | Vijay Deverakonda, Samantha | Hesham Abdul Wahab | Sid Sriram, Chinmayi",
+              "thumbnail": "https://img.youtube.com/vi/o5DI4WuazA4/maxresdefault.jpg",
+              "duration": "4:47",
+              "durationSec": 287,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-11-14T02:30:39-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "Tn8RLoe0Zb8",
+              "title": "Urike Urike - 8K Video Song | HIT 2 | Adivi Sesh | Meenakshi | MM Sreelekha | Sid Sriram",
+              "thumbnail": "https://img.youtube.com/vi/Tn8RLoe0Zb8/maxresdefault.jpg",
+              "duration": "3:25",
+              "durationSec": 205,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-11-13T05:30:26-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "2zR4TNTXB6I",
+              "title": "Inthandham 8K/4K Video Song - Sita Ramam (Telugu) | Dulquer | Mrunal | Vishal | Hanu Raghavapudi",
+              "thumbnail": "https://img.youtube.com/vi/2zR4TNTXB6I/maxresdefault.jpg",
+              "duration": "4:07",
+              "durationSec": 247,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-09-30T07:30:09-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "Tu_jvhwHvcU",
+              "title": "Premalo -  8K Video | Court | Priyadarshi, Harsh Roshan, Sridevi | Vijai Bulganin | Ram Jagadeesh",
+              "thumbnail": "https://img.youtube.com/vi/Tu_jvhwHvcU/maxresdefault.jpg",
+              "duration": "4:50",
+              "durationSec": 290,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-07-02T03:30:31-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "HKiwNcV7znw",
+              "title": "Hey Rangule - 8K Video | Amaran | Sivakarthikeyan, Sai Pallavi | GV Prakash | Rajkumar Periasamy",
+              "thumbnail": "https://img.youtube.com/vi/HKiwNcV7znw/maxresdefault.jpg",
+              "duration": "2:49",
+              "durationSec": 169,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-06-27T03:30:11-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "-dr8ecezXrg",
+              "title": "Pillaa Raa - 8K Video Song | RX 100 | Kartikeya, Payal Rajput | Anurag Kulkarni | Chaitan Bharadwaj",
+              "thumbnail": "https://img.youtube.com/vi/-dr8ecezXrg/maxresdefault.jpg",
+              "duration": "4:12",
+              "durationSec": 252,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-06-20T04:30:00-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "_0ak7rWPlmU",
+              "title": "Chuttamalle [8K] Video - Devara Part 1 | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao | Koratala Siva",
+              "thumbnail": "https://img.youtube.com/vi/_0ak7rWPlmU/maxresdefault.jpg",
+              "duration": "3:37",
+              "durationSec": 217,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-06-12T03:45:06-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "YpViW3V734g",
+              "title": "NaaNaa Hyraanaa - 8K Video | Game Changer | Ram Charan, Kiara | Shreya Ghoshal, Karthik | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/YpViW3V734g/maxresdefault.jpg",
+              "duration": "3:38",
+              "durationSec": 218,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-06-12T03:30:19-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "L8365jak_7w",
+              "title": "Na Roja Nuvve - 8K Video Song | Kushi | Vijay Deverakonda, Samantha Ruth Prabhu | Hesham Abdul Wahab",
+              "thumbnail": "https://img.youtube.com/vi/L8365jak_7w/maxresdefault.jpg",
+              "duration": "4:36",
+              "durationSec": 276,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-06-04T04:30:31-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "NEnDw6y76zw",
+              "title": "8k Ultra HD songs 60fps Emito ivala (Telugu)full resolution 4k Andala rakshasi Lavanya #TFI #new",
+              "thumbnail": "https://img.youtube.com/vi/NEnDw6y76zw/maxresdefault.jpg",
+              "duration": "3:38",
+              "durationSec": 218,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-05-19T00:21:23-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "Xbizke4zftY",
+              "title": "ANIMAL: Evarevaro (Full Video) - Ranbir Kapoor,Tripti Dimri | Sandeep V | Vishal M | Bhushan K",
+              "thumbnail": "https://img.youtube.com/vi/Xbizke4zftY/maxresdefault.jpg",
+              "duration": "4:09",
+              "durationSec": 249,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2023-12-19T04:29:12-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "8b2BRoqYbaw",
+              "title": "Full Video: Sammohanuda | Rules Ranjann | Kiran Abbavaram,Neha Sshetty | Rathinam Krishna | Shreya G",
+              "thumbnail": "https://img.youtube.com/vi/8b2BRoqYbaw/maxresdefault.jpg",
+              "duration": "3:12",
+              "durationSec": 192,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2023-10-19T04:29:10-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "j7nme3OUqVc",
+              "title": "Paccha Bottesina Full Video Song [4K] | Baahubali (Telugu) | Prabhas, Tamannaah | Bahubali",
+              "thumbnail": "https://img.youtube.com/vi/j7nme3OUqVc/maxresdefault.jpg",
+              "duration": "3:00",
+              "durationSec": 180,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2023-06-06T03:30:13-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "lWc1LVIuySA",
+              "title": "#Leharaayi Full Video | Most Eligible Bachelor | Akhil,Pooja Hegde | Gopi Sundar | Telugu Love Songs",
+              "thumbnail": "https://img.youtube.com/vi/lWc1LVIuySA/maxresdefault.jpg",
+              "duration": "4:21",
+              "durationSec": 261,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2022-03-25T02:30:01-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "t-UXozzpGRg",
+              "title": "Korameesam Polisoda Video Song [4K] | #Krack | Raviteja,Shruti Haasan | Gopichand Malineni |Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/t-UXozzpGRg/maxresdefault.jpg",
+              "duration": "3:39",
+              "durationSec": 219,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2021-02-06T03:32:59-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "Pal0uollc4E",
+              "title": "Manasu Maree Full video Song | V Songs | Nani, Aditi Rao Hydari | Amit Trivedi",
+              "thumbnail": "https://img.youtube.com/vi/Pal0uollc4E/maxresdefault.jpg",
+              "duration": "4:28",
+              "durationSec": 268,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2020-10-02T22:01:12-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "QlFwVjhllzQ",
+              "title": "Gang Leader - Ninnu Chuse Anandamlo Video Telugu | Nani | Anirudh",
+              "thumbnail": "https://img.youtube.com/vi/QlFwVjhllzQ/maxresdefault.jpg",
+              "duration": "4:34",
+              "durationSec": 274,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2019-10-14T00:00:02-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "wAGjkxx--JU",
+              "title": "Maate Vinadhuga Video Song (4K) || Taxiwaala Movie || Vijay Deverakonda, Priyanka || Sid Sriram",
+              "thumbnail": "https://img.youtube.com/vi/wAGjkxx--JU/maxresdefault.jpg",
+              "duration": "1:36",
+              "durationSec": 96,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2018-10-30T04:25:09-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "qaU03QRrcPs",
+              "title": "Telusa Telusa Full Video Song || Sarrainodu  || Allu Arjun , Rakul Preet, Catherine Tresa",
+              "thumbnail": "https://img.youtube.com/vi/qaU03QRrcPs/maxresdefault.jpg",
+              "duration": "4:04",
+              "durationSec": 244,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2016-06-27T04:57:22-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "xwdjRkKqNYE",
+              "title": "Yenno Yenno : Malli Malli Idi Rani Roju Full Video Songs",
+              "thumbnail": "https://img.youtube.com/vi/xwdjRkKqNYE/maxresdefault.jpg",
+              "duration": "3:16",
+              "durationSec": 196,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2015-05-10T22:09:54-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "cjoz0FZ-wWs",
+              "title": "I - Manoharudu - Poolane Kunukeyamantaa Video | Vikram, Amy Jackson | A.R. Rahman",
+              "thumbnail": "https://img.youtube.com/vi/cjoz0FZ-wWs/maxresdefault.jpg",
+              "duration": "4:53",
+              "durationSec": 293,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2015-02-14T00:00:00-08:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "bc157RVRwzU",
+              "title": "Nee Jathaga Full Video Song - Yevadu Video Songs - Ram Charan, Allu Arjun, Shruti Hassan, Kajal",
+              "thumbnail": "https://img.youtube.com/vi/bc157RVRwzU/maxresdefault.jpg",
+              "duration": "4:46",
+              "durationSec": 286,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2014-03-08T03:30:29-08:00",
+              "resolution": "1080p"
+            }
+          ]
+        }
       }
-    ]
+    },
+    "Nature": {
+      "icon": "🌿",
+      "categories": {}
+    },
+    "Games": {
+      "icon": "🎮",
+      "categories": {}
+    }
   }
 }

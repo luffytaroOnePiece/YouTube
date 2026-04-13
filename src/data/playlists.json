@@ -1,3 +1,18 @@
 {
-  "Telugu Romance": "https://youtube.com/playlist?list=PLk-aMlMwXfRwBhB-Ea-lSJS5GVR3rehH6"
+  "Music": {
+    "icon": "🎵",
+    "categories": {
+      "Telugu": {
+        "Romance": "https://youtube.com/playlist?list=PLk-aMlMwXfRwBhB-Ea-lSJS5GVR3rehH6"
+      }
+    }
+  },
+  "Nature": {
+    "icon": "🌿",
+    "categories": {}
+  },
+  "Games": {
+    "icon": "🎮",
+    "categories": {}
+  }
 }

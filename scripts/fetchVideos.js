@@ -23,117 +23,210 @@ function formatDuration(seconds) {
   return `${mins}:${String(secs).padStart(2, '0')}`;
 }
 
+function getResolutionLabel(formats) {
+  if (!formats || !Array.isArray(formats)) return '';
+  const videoFormats = formats
+    .filter(f => f.qualityLabel)
+    .map(f => {
+      const match = f.qualityLabel.match(/(\d+)p/);
+      return match ? parseInt(match[1]) : 0;
+    })
+    .filter(h => h > 0);
+
+  if (videoFormats.length === 0) return '';
+  const maxRes = Math.max(...videoFormats);
+  if (maxRes >= 4320) return '8K';
+  if (maxRes >= 2160) return '4K';
+  if (maxRes >= 1440) return '2K';
+  if (maxRes >= 1080) return '1080p';
+  if (maxRes >= 720) return '720p';
+  if (maxRes >= 480) return '480p';
+  return `${maxRes}p`;
+}
+
+async function fetchPlaylist(url, groupName, categoryName, playlistName) {
+  const playlistId = url.split('list=')[1]?.split('&')[0];
+  if (!playlistId) {
+    console.warn(`    ⚠️  Invalid playlist URL: ${url}`);
+    return [];
+  }
+
+  const playlist = await ytpl(playlistId, { limit: Infinity });
+  console.log(`    Found ${playlist.items.length} videos. Enriching...\n`);
+
+  const videos = [];
+
+  for (let i = 0; i < playlist.items.length; i++) {
+    const item = playlist.items[i];
+    const progress = `    [${i + 1}/${playlist.items.length}]`;
+
+    let publishDate = '';
+    let resolution = '';
+
+    try {
+      const info = await ytdl.getBasicInfo(item.id);
+      publishDate = info.videoDetails.publishDate || '';
+      resolution = getResolutionLabel(info.formats || []);
+    } catch (e) {
+      // Fall back — ytpl data is sufficient
+    }
+
+    videos.push({
+      youtubeLinkID: item.id,
+      title: item.title,
+      thumbnail: `https://img.youtube.com/vi/${item.id}/maxresdefault.jpg`,
+      duration: formatDuration(item.durationSec || 0),
+      durationSec: item.durationSec || 0,
+      group: groupName,
+      category: categoryName,
+      type: playlistName,
+      date: publishDate,
+      resolution
+    });
+
+    const resLabel = resolution ? ` [${resolution}]` : '';
+    process.stdout.write(`${progress} ✓${resLabel} ${item.title.substring(0, 50)}...\n`);
+    await sleep(DELAY_MS);
+  }
+
+  return videos;
+}
+
 async function fetchVideos() {
   try {
-    console.log('\n🎬 YouTube Video Library — Fetch Script\n');
+    console.log('\n🎬 YouTube Video Library — Fetch Script (3-Level)\n');
 
-    // 1. Read playlists.json
     if (!fs.existsSync(PLAYLISTS_FILE)) {
       console.error(`❌ Playlists file not found at ${PLAYLISTS_FILE}`);
       process.exit(1);
     }
 
     const playlists = JSON.parse(fs.readFileSync(PLAYLISTS_FILE, 'utf-8'));
-
-    // 2. Check for single-category CLI argument
     const args = process.argv.slice(2);
-    const targetCategory = args[0];
+    const targetGroup = args[0] || null;
+    const targetCategory = args[1] || null;
+    const targetPlaylist = args[2] || null;
 
-    let playlistsToFetch = Object.entries(playlists);
-    let existingCategories = {};
-
-    // Load existing videos.json
+    let existingGroups = {};
     if (fs.existsSync(VIDEOS_FILE)) {
       try {
         const existing = JSON.parse(fs.readFileSync(VIDEOS_FILE, 'utf-8'));
-        existingCategories = existing.categories || {};
+        existingGroups = existing.groups || {};
       } catch (e) {
         console.warn('⚠️  Could not parse existing videos.json, starting fresh.');
       }
     }
 
-    if (targetCategory) {
-      if (!playlists[targetCategory]) {
-        console.error(`❌ Category "${targetCategory}" not found in playlists.json`);
-        console.log('Available categories:', Object.keys(playlists).join(', '));
+    if (targetGroup) {
+      if (!playlists[targetGroup]) {
+        console.error(`❌ Group "${targetGroup}" not found.`);
+        console.log('Available:', Object.keys(playlists).join(', '));
         process.exit(1);
       }
-      console.log(`📂 Mode: Single category update — "${targetCategory}"\n`);
-      playlistsToFetch = [[targetCategory, playlists[targetCategory]]];
+      if (targetCategory) {
+        const cats = playlists[targetGroup].categories || {};
+        if (!cats[targetCategory]) {
+          console.error(`❌ Category "${targetCategory}" not found in "${targetGroup}".`);
+          console.log('Available:', Object.keys(cats).join(', '));
+          process.exit(1);
+        }
+        if (targetPlaylist) {
+          if (!cats[targetCategory][targetPlaylist]) {
+            console.error(`❌ Playlist "${targetPlaylist}" not found.`);
+            console.log('Available:', Object.keys(cats[targetCategory]).join(', '));
+            process.exit(1);
+          }
+          console.log(`📂 Mode: Single playlist — "${targetGroup}" > "${targetCategory}" > "${targetPlaylist}"\n`);
+        } else {
+          console.log(`📂 Mode: Category update — "${targetGroup}" > "${targetCategory}"\n`);
+        }
+      } else {
+        console.log(`📂 Mode: Group update — "${targetGroup}"\n`);
+      }
     } else {
-      console.log(`📂 Mode: Full update — All ${playlistsToFetch.length} categories\n`);
-      existingCategories = {}; // Reset all on full update
+      console.log(`📂 Mode: Full update — All groups\n`);
+      existingGroups = {};
     }
 
-    // 3. Fetch each playlist
-    for (const [categoryName, url] of playlistsToFetch) {
-      console.log(`\n━━━ Fetching: ${categoryName} ━━━`);
-      console.log(`    URL: ${url}`);
+    const groupsToProcess = targetGroup
+      ? [[targetGroup, playlists[targetGroup]]]
+      : Object.entries(playlists);
 
-      try {
-        // Extract playlist ID
-        const playlistId = url.split('list=')[1]?.split('&')[0];
-        if (!playlistId) {
-          console.warn(`⚠️  Invalid playlist URL for "${categoryName}": ${url}`);
-          continue;
+    for (const [groupName, groupConfig] of groupsToProcess) {
+      const icon = groupConfig.icon || '';
+      const allCategories = groupConfig.categories || {};
+
+      if (!existingGroups[groupName]) {
+        existingGroups[groupName] = { icon, categories: {} };
+      }
+      existingGroups[groupName].icon = icon;
+
+      if (!targetCategory) {
+        existingGroups[groupName].categories = {};
+      }
+
+      const catsToProcess = targetCategory
+        ? [[targetCategory, allCategories[targetCategory]]]
+        : Object.entries(allCategories);
+
+      if (catsToProcess.length === 0) {
+        console.log(`⏭  Skipping "${groupName}" — no categories defined.\n`);
+        continue;
+      }
+
+      for (const [catName, catPlaylists] of catsToProcess) {
+        if (!existingGroups[groupName].categories[catName]) {
+          existingGroups[groupName].categories[catName] = {};
         }
 
-        // Fetch playlist items via ytpl
-        const playlist = await ytpl(playlistId, { limit: Infinity });
-        console.log(`    Found ${playlist.items.length} videos. Enriching with metadata...\n`);
+        if (!targetPlaylist) {
+          existingGroups[groupName].categories[catName] = {};
+        }
 
-        const videos = [];
+        const playlistsToProcess = targetPlaylist
+          ? [[targetPlaylist, catPlaylists[targetPlaylist]]]
+          : Object.entries(catPlaylists || {});
 
-        for (let i = 0; i < playlist.items.length; i++) {
-          const item = playlist.items[i];
-          const progress = `    [${i + 1}/${playlist.items.length}]`;
+        for (const [plName, url] of playlistsToProcess) {
+          console.log(`\n━━━ ${icon} ${groupName} > ${catName} > ${plName} ━━━`);
+          console.log(`    URL: ${url}`);
 
-          let publishDate = '';
-
-          // Try to enrich with ytdl-core for publish date
-          try {
-            const info = await ytdl.getBasicInfo(item.id);
-            publishDate = info.videoDetails.publishDate || '';
-          } catch (e) {
-            // Silently fall back — ytpl data is sufficient
+          if (!url) {
+            console.warn(`    ⚠️  No URL provided, skipping.`);
+            continue;
           }
 
-          videos.push({
-            youtubeLinkID: item.id,
-            title: item.title,
-            thumbnail: `https://img.youtube.com/vi/${item.id}/maxresdefault.jpg`,
-            duration: formatDuration(item.durationSec || 0),
-            durationSec: item.durationSec || 0,
-            type: categoryName,
-            date: publishDate
-          });
-
-          process.stdout.write(`${progress} ✓ ${item.title.substring(0, 55)}...\n`);
-
-          // Rate limiting
-          await sleep(DELAY_MS);
+          try {
+            const videos = await fetchPlaylist(url, groupName, catName, plName);
+            existingGroups[groupName].categories[catName][plName] = videos;
+            console.log(`\n    ✅ ${plName}: ${videos.length} videos saved.`);
+          } catch (err) {
+            console.error(`    ❌ Error fetching "${plName}":`, err.message);
+          }
         }
-
-        existingCategories[categoryName] = videos;
-        console.log(`\n    ✅ ${categoryName}: ${videos.length} videos saved.`);
-
-      } catch (err) {
-        console.error(`    ❌ Error fetching "${categoryName}":`, err.message);
       }
     }
 
-    // 4. Write output
     const output = {
       lastUpdated: new Date().toISOString(),
-      categories: existingCategories
+      groups: existingGroups
     };
 
     fs.writeFileSync(VIDEOS_FILE, JSON.stringify(output, null, 2));
 
-    const totalVideos = Object.values(existingCategories).reduce((sum, arr) => sum + arr.length, 0);
+    let totalVideos = 0;
+    let totalPlaylists = 0;
+    for (const group of Object.values(existingGroups)) {
+      for (const cat of Object.values(group.categories || {})) {
+        for (const vids of Object.values(cat || {})) {
+          totalVideos += vids.length;
+          totalPlaylists++;
+        }
+      }
+    }
 
     console.log(`\n════════════════════════════════════`);
-    console.log(`✅ Done! ${totalVideos} total videos across ${Object.keys(existingCategories).length} categories.`);
+    console.log(`✅ Done! ${totalVideos} videos across ${totalPlaylists} playlists in ${Object.keys(existingGroups).length} groups.`);
     console.log(`📄 Output: ${VIDEOS_FILE}`);
     console.log(`════════════════════════════════════\n`);
 
