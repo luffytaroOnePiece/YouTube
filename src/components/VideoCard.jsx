@@ -1,0 +1,140 @@
+import React, { useState } from 'react';
+
+const FALLBACK_THUMBNAIL = 'data:image/svg+xml,' + encodeURIComponent(`
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#1e1e1e"/>
+  <g transform="translate(320,180)">
+    <circle r="40" fill="none" stroke="#333" stroke-width="3"/>
+    <polygon points="-12,-20 -12,20 20,0" fill="#444"/>
+  </g>
+  <text x="320" y="240" text-anchor="middle" fill="#555" font-family="sans-serif" font-size="14">Thumbnail unavailable</text>
+</svg>`);
+
+function formatDate(dateStr) {
+  if (!dateStr) return '';
+  try {
+    const date = new Date(dateStr);
+    const now = new Date();
+    const diffMs = now - date;
+    const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+    if (diffDays < 0) return 'Upcoming';
+    if (diffDays < 1) return 'Today';
+    if (diffDays === 1) return 'Yesterday';
+    if (diffDays < 7) return `${diffDays} days ago`;
+    if (diffDays < 30) {
+      const weeks = Math.floor(diffDays / 7);
+      return `${weeks} week${weeks > 1 ? 's' : ''} ago`;
+    }
+    if (diffDays < 365) {
+      const months = Math.floor(diffDays / 30);
+      return `${months} month${months > 1 ? 's' : ''} ago`;
+    }
+    const years = Math.floor(diffDays / 365);
+    return `${years} year${years > 1 ? 's' : ''} ago`;
+  } catch {
+    return dateStr;
+  }
+}
+
+function formatAbsoluteDate(dateStr) {
+  if (!dateStr) return '';
+  try {
+    const date = new Date(dateStr);
+    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  } catch {
+    return '';
+  }
+}
+
+export default function VideoCard({ video, onClick, index }) {
+  const [imgError, setImgError] = useState(false);
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const animationDelay = `${Math.min(index * 0.03, 0.5)}s`;
+
+  const thumbnailSrc = imgError
+    ? FALLBACK_THUMBNAIL
+    : (video.thumbnail || `https://img.youtube.com/vi/${video.youtubeLinkID}/maxresdefault.jpg`);
+
+  return (
+    <div
+      id={`video-${video.youtubeLinkID}`}
+      className="video-card"
+      onClick={() => onClick(video)}
+      style={{ animationDelay }}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick(video);
+        }
+      }}
+    >
+      {/* Thumbnail */}
+      <div className="video-card__thumbnail-wrapper">
+        {!imgLoaded && !imgError && (
+          <div className="video-card__thumbnail-skeleton" />
+        )}
+        <img
+          className={`video-card__thumbnail ${imgLoaded ? 'video-card__thumbnail--loaded' : ''}`}
+          src={thumbnailSrc}
+          alt={video.title}
+          loading="lazy"
+          onLoad={(e) => {
+            // YouTube returns a tiny 120x90 gray placeholder when maxresdefault doesn't exist
+            if (e.target.naturalWidth <= 120 && e.target.src.includes('maxresdefault')) {
+              e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/hqdefault.jpg`;
+              return;
+            }
+            if (e.target.naturalWidth <= 120 && e.target.src.includes('hqdefault')) {
+              e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`;
+              return;
+            }
+            setImgLoaded(true);
+          }}
+          onError={(e) => {
+            if (e.target.src.includes('maxresdefault')) {
+              e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/hqdefault.jpg`;
+            } else if (e.target.src.includes('hqdefault')) {
+              e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`;
+            } else {
+              setImgError(true);
+              setImgLoaded(true);
+            }
+          }}
+        />
+
+        {/* Watch indicator line */}
+        <div className="video-card__progress" />
+
+        {/* Play overlay */}
+        <div className="video-card__play-overlay">
+          <div className="video-card__play-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </div>
+        </div>
+
+        {/* Duration badge */}
+        {video.duration && (
+          <span className="video-card__duration">{video.duration}</span>
+        )}
+      </div>
+
+      {/* Info */}
+      <div className="video-card__info">
+        <h3 className="video-card__title" title={video.title}>{video.title}</h3>
+        <div className="video-card__meta">
+          <span className="video-card__category">{video.type}</span>
+          {video.date && (
+            <span className="video-card__date" title={formatAbsoluteDate(video.date)}>
+              {formatDate(video.date)}
+            </span>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
