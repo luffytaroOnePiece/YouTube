@@ -134,6 +134,310 @@ body {
   border: 1px solid var(--border-subtle);
 }
 
+.header__scripts-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  margin-left: 8px;
+}
+
+.header__scripts-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+  background: var(--bg-elevated);
+}
+
+/* ── Scripts Page ──────────────────────────────────────────── */
+.scripts-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.2s ease;
+}
+
+.scripts-modal {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 680px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 24px;
+  animation: dropdownSlide 0.25s ease;
+}
+
+.scripts-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.scripts-modal__title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.scripts-modal__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.scripts-modal__close {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.scripts-modal__close:hover {
+  background: var(--text-muted);
+  color: var(--bg-primary);
+}
+
+/* Status indicator */
+.scripts-modal__status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #ef4444;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.scripts-modal__status--online {
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.scripts-modal__status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Offline */
+.scripts-modal__offline {
+  text-align: center;
+  padding: 30px 20px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.scripts-modal__offline code {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: var(--bg-elevated);
+  border-radius: 8px;
+  font-family: 'SF Mono', monospace;
+  font-size: 0.85rem;
+  color: #5ac8fa;
+}
+
+/* Stats */
+.scripts-modal__stats {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.scripts-modal__stat {
+  flex: 1;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+}
+
+.scripts-modal__stat-value {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.scripts-modal__stat-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Actions */
+.scripts-modal__actions {
+  margin-bottom: 16px;
+}
+
+.scripts-modal__section-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+}
+
+.scripts-modal__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.scripts-modal__btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.scripts-modal__btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.scripts-modal__btn--primary {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.scripts-modal__btn--sm {
+  padding: 5px 12px;
+  font-size: 0.72rem;
+}
+
+.scripts-modal__btn--xs {
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  border-radius: 6px;
+}
+
+/* Groups */
+.scripts-modal__group {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.scripts-modal__group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.scripts-modal__cat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.scripts-modal__cat-name {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  min-width: 80px;
+}
+
+.scripts-modal__cat-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* Error */
+.scripts-modal__error {
+  padding: 10px 14px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  color: #ef4444;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+}
+
+/* Job logs */
+.scripts-modal__logs {
+  margin-top: 14px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.scripts-modal__logs-header {
+  padding: 8px 12px;
+  background: var(--bg-elevated);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.scripts-modal__logs-body {
+  background: #0a0a0a;
+  padding: 12px;
+  max-height: 250px;
+  overflow-y: auto;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.scripts-modal__log-line {
+  color: #9ca3af;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
 /* ── Filter Bar ────────────────────────────────────────────── */
 .filter-bar {
   position: sticky;

@@ -3,7 +3,13 @@
     "icon": "🎵",
     "categories": {
       "Telugu": {
-        "Romance": "https://youtube.com/playlist?list=PLk-aMlMwXfRwBhB-Ea-lSJS5GVR3rehH6"
+        "Romance": "PLk-aMlMwXfRwBhB-Ea-lSJS5GVR3rehH6"
+      },
+      "English": {
+        "Adrenaline": "PLk-aMlMwXfRwbrC7iAI5OH7qe9JEQY0fY"
+      },
+      "Others": {
+        "Straight From The Studio": "PLk-aMlMwXfRxyI38CSiTZKDssEXoopXQB"
       }
     }
   },
