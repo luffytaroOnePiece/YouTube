@@ -91,10 +91,11 @@ body {
 
 /* ── Header ────────────────────────────────────────────────── */
 .header {
-  padding: 16px 24px;
-  display: flex;
+  padding: 12px 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px;
   background: linear-gradient(180deg, rgba(22, 22, 24, 0.95) 0%, rgba(16, 16, 18, 0.92) 100%);
   backdrop-filter: blur(24px) saturate(1.8);
   -webkit-backdrop-filter: blur(24px) saturate(1.8);
@@ -151,34 +152,144 @@ body {
   background-clip: text;
 }
 
-.header__subtitle {
-  font-size: 0.68rem;
+/* ── Header Search (center) ───────────────────────────────── */
+.header__search {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  justify-self: center;
+}
+
+.header__search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--text-muted);
-  font-weight: 600;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
+  pointer-events: none;
+  transition: color var(--transition-smooth);
+}
+
+.header__search-input {
+  width: 100%;
+  padding: 9px 36px 9px 38px;
   background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  padding: 5px 14px;
-  border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.84rem;
+  outline: none;
+  transition: all var(--transition-smooth);
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+}
+
+.header__search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.header__search-input:focus {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset,
+    0 0 16px rgba(255, 255, 255, 0.03);
+}
+
+.header__search-input:focus ~ .header__search-icon {
+  color: var(--text-secondary);
+}
+
+.header__search-clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  color: var(--text-muted);
+  font-size: 0.6rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.header__search-clear:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--text-primary);
+}
+
+/* ── Header Right Group ────────────────────────────────────── */
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__quick-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header__chip {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-secondary);
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition-smooth);
+}
+
+.header__chip:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.header__chip:active {
+  transform: translateY(0) scale(0.96);
+}
+
+.header__chip--active {
+  background: rgba(255, 255, 255, 0.92);
+  color: #0a0a0a;
+  font-weight: 600;
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header__chip--active:hover {
+  background: rgba(255, 255, 255, 1);
+  color: #0a0a0a;
+  transform: none;
 }
 
 .header__scripts-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
+  border-radius: 10px;
   color: var(--text-muted);
   cursor: pointer;
   transition: all var(--transition-smooth);
-  margin-left: 8px;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
 }
 
