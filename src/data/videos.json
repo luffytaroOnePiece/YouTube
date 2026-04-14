@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-13T14:49:39.341Z",
+  "lastUpdated": "2026-04-14T03:13:28.136Z",
   "groups": {
     "Music": {
       "icon": "🎵",
@@ -328,6 +328,116 @@
               "category": "Telugu",
               "type": "Romance",
               "date": "2014-03-08T03:30:29-08:00",
+              "resolution": "1080p"
+            }
+          ],
+          "Mass": [
+            {
+              "youtubeLinkID": "M_5F02R3aH4",
+              "title": "Trance of OMI 8K 60 FPS Video Song | They Call Him OG | Pawan Kalyan | Emraan Hashmi | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/M_5F02R3aH4/maxresdefault.jpg",
+              "duration": "2:45",
+              "durationSec": 165,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Mass",
+              "date": "2026-03-17T07:30:16-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "gWpl8ADxNsc",
+              "title": "Hungry Cheetah 8K 60 FPS Video Song | They Call Him OG | Pawan Kalyan | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/gWpl8ADxNsc/maxresdefault.jpg",
+              "duration": "3:42",
+              "durationSec": 222,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Mass",
+              "date": "2026-03-06T06:30:28-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "uMsgoBhcpCg",
+              "title": "Firestorm 8K 60 FPS Video Song | They Call Him OG | Pawan Kalyan | Sujeeth | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/uMsgoBhcpCg/maxresdefault.jpg",
+              "duration": "4:06",
+              "durationSec": 246,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Mass",
+              "date": "2026-02-20T06:30:54-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "g44VQxMcFH4",
+              "title": "Full Video: Fear Song | Devara | NTR | Koratala Siva | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/g44VQxMcFH4/maxresdefault.jpg",
+              "duration": "2:46",
+              "durationSec": 166,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Mass",
+              "date": "2024-10-29T06:29:07-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "-6h-ycYVbgQ",
+              "title": "Guns and Roses 8K 60 FPS Video Song | They Call Him OG | Pawan Kalyan | Emraan Hashmi | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/-6h-ycYVbgQ/maxresdefault.jpg",
+              "duration": "1:42",
+              "durationSec": 102,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Mass",
+              "date": "2026-03-01T06:30:00-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "_96E3pQ7csw",
+              "title": "Dhruva Dhruva 8K Video Song | Dhruva | Ram Charan, Rakul Preet | Hiphop Tamizha | Surender Reddy",
+              "thumbnail": "https://img.youtube.com/vi/_96E3pQ7csw/maxresdefault.jpg",
+              "duration": "3:37",
+              "durationSec": 217,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Mass",
+              "date": "2026-04-03T05:14:06-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "FRhCbPbXgsU",
+              "title": "Salaar - Sound of Salaar | Prabhas | PrithviRaj | Prashanth Neel | Ravi Basrur | Hombale Films",
+              "thumbnail": "https://img.youtube.com/vi/FRhCbPbXgsU/maxresdefault.jpg",
+              "duration": "3:03",
+              "durationSec": 183,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Mass",
+              "date": "2025-08-12T05:30:28-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "ebMMTDFKBIg",
+              "title": "Toofan (Telugu) [8K] Video - KGF Chapter 2 | RockingStar Yash | Prashanth Neel| Ravi Basrur| Hombale",
+              "thumbnail": "https://img.youtube.com/vi/ebMMTDFKBIg/maxresdefault.jpg",
+              "duration": "3:24",
+              "durationSec": 204,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Mass",
+              "date": "2025-09-26T03:30:38-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "6Hvc-xpNTME",
+              "title": "Full Video: SALAAM ROCKY BHAI | KGF Chapter 1 | Yash, Srinidhi Shetty | Prashanth Neel",
+              "thumbnail": "https://img.youtube.com/vi/6Hvc-xpNTME/maxresdefault.jpg",
+              "duration": "4:15",
+              "durationSec": 255,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Mass",
+              "date": "2019-04-10T03:19:19-07:00",
               "resolution": "1080p"
             }
           ]
