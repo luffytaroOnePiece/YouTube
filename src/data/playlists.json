@@ -18,7 +18,11 @@
   },
   "Nature": {
     "icon": "🌿",
-    "categories": {}
+    "categories": {
+      "MacOS": {
+        "LandScapes": "PLA8Y5hhRksHwkotpoWrFIQj2y_qijQRK9"
+      }
+    }
   },
   "Games": {
     "icon": "🎮",

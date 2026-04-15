@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-14T17:01:24.353Z",
+  "lastUpdated": "2026-04-15T01:17:14.645Z",
   "groups": {
     "Music": {
       "icon": "🎵",
@@ -2126,7 +2126,84 @@
     },
     "Nature": {
       "icon": "🌿",
-      "categories": {}
+      "categories": {
+        "MacOS": {
+          "LandScapes": [
+            {
+              "youtubeLinkID": "CAzHeMqwUwY",
+              "title": "Sonoma Clouds",
+              "thumbnail": "https://img.youtube.com/vi/CAzHeMqwUwY/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-14T08:26:41-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "ZKrLbOC4d48",
+              "title": "Sonoma River",
+              "thumbnail": "https://img.youtube.com/vi/ZKrLbOC4d48/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-14T09:17:35-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "xynh8ccTLD4",
+              "title": "Sonoma Greenlands",
+              "thumbnail": "https://img.youtube.com/vi/xynh8ccTLD4/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-14T09:34:00-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "5uOyin3-htU",
+              "title": "Sonoma Horizon",
+              "thumbnail": "https://img.youtube.com/vi/5uOyin3-htU/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-14T09:42:26-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "rwkg1zplkn0",
+              "title": "Yosemite Snow Caps",
+              "thumbnail": "https://img.youtube.com/vi/rwkg1zplkn0/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-14T10:22:50-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "Fs6Z0XFgIzw",
+              "title": "Yosemite Silhouette",
+              "thumbnail": "https://img.youtube.com/vi/Fs6Z0XFgIzw/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-14T10:49:12-07:00",
+              "resolution": "4K"
+            }
+          ]
+        }
+      }
     },
     "Games": {
       "icon": "🎮",
