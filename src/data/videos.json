@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15T11:42:08.747Z",
+  "lastUpdated": "2026-04-15T17:14:22.875Z",
   "groups": {
     "Music": {
       "icon": "🎵",
@@ -1862,6 +1862,450 @@
             }
           ]
         },
+        "Tamil": {
+          "Mass": [
+            {
+              "youtubeLinkID": "1F3hm6MfR1k",
+              "title": "JAILER - Hukum Lyric Video | Superstar Rajinikanth | Sun Pictures | Anirudh | Nelson",
+              "thumbnail": "https://img.youtube.com/vi/1F3hm6MfR1k/maxresdefault.jpg",
+              "duration": "3:27",
+              "durationSec": 207,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Mass",
+              "date": "2023-07-17T05:30:01-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "Fyj5wbzRPC8",
+              "title": "Beast Mode - Video Song | Beast | Thalapathy Vijay | Nelson | Anirudh | Sun Music",
+              "thumbnail": "https://img.youtube.com/vi/Fyj5wbzRPC8/maxresdefault.jpg",
+              "duration": "3:12",
+              "durationSec": 192,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Mass",
+              "date": "2023-05-09T05:30:11-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "eqBrHvdGbOY",
+              "title": "Thee Thalapathy | Thalapathy Vijay | Varisu | STR | Vamshi Paidipally | Thaman",
+              "thumbnail": "https://img.youtube.com/vi/eqBrHvdGbOY/maxresdefault.jpg",
+              "duration": "4:15",
+              "durationSec": 255,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Mass",
+              "date": "2022-12-04T02:31:20-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "4FPvdV_5ZOw",
+              "title": "Once Upon A Time 8K/4K Video Song | VIKRAM | Kamal Haasan | Anirudh Ravichander | Lokesh Kanagaraj",
+              "thumbnail": "https://img.youtube.com/vi/4FPvdV_5ZOw/maxresdefault.jpg",
+              "duration": "2:31",
+              "durationSec": 151,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Mass",
+              "date": "2025-10-21T07:30:03-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "aeLkBvyiRfg",
+              "title": "VIKRAM Title Track 8K/4K Video Song | Kamal Haasan | Vijay Sethupathi | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/aeLkBvyiRfg/maxresdefault.jpg",
+              "duration": "3:14",
+              "durationSec": 194,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Mass",
+              "date": "2026-01-20T06:30:02-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "EBa6OoMxAag",
+              "title": "Powerhouse - Video Song | Coolie | Superstar Rajinikanth | Sun Pictures | Lokesh | Anirudh",
+              "thumbnail": "https://img.youtube.com/vi/EBa6OoMxAag/maxresdefault.jpg",
+              "duration": "3:15",
+              "durationSec": 195,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Mass",
+              "date": "2025-09-19T05:28:00-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "1G6ERZkk8So",
+              "title": "I Am The Danger -Video Song | Coolie| Superstar Rajinikanth| Nagarjuna| Lokesh| Anirudh|Sun Pictures",
+              "thumbnail": "https://img.youtube.com/vi/1G6ERZkk8So/maxresdefault.jpg",
+              "duration": "2:12",
+              "durationSec": 132,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Mass",
+              "date": "2025-09-13T05:28:00-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "PxjPg1C5V_8",
+              "title": "Leo - Ordinary Person 8K/4K Video Song | Thalapathy Vijay | Trisha | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/PxjPg1C5V_8/maxresdefault.jpg",
+              "duration": "2:21",
+              "durationSec": 141,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Mass",
+              "date": "2025-06-30T07:30:17-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "Ph8O1cu0eH4",
+              "title": "Hunter Vantaar 8K 60FPS Video Song | Vettaiyan | Rajinikanth | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/Ph8O1cu0eH4/maxresdefault.jpg",
+              "duration": "3:18",
+              "durationSec": 198,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Mass",
+              "date": "2025-09-12T07:30:18-07:00",
+              "resolution": "8K"
+            }
+          ],
+          "Energetic": [
+            {
+              "youtubeLinkID": "fZQgutehIw4",
+              "title": "Jinguchaa - 8K Video | Thug Life | Kamal Haasan | Mani Ratnam | STR | Trisha | AR Rahman | Sanya M",
+              "thumbnail": "https://img.youtube.com/vi/fZQgutehIw4/maxresdefault.jpg",
+              "duration": "4:26",
+              "durationSec": 266,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Energetic",
+              "date": "2025-08-16T03:30:11-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "G_rCecrG1mI",
+              "title": "Manasilaayo 8K 60FPS /4K Video Song | Vettaiyan | Rajinikanth | Manju Warrier | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/G_rCecrG1mI/maxresdefault.jpg",
+              "duration": "4:02",
+              "durationSec": 242,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Energetic",
+              "date": "2025-09-01T07:30:27-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "BAOdoV7jQVo",
+              "title": "Rise Of Dragon - Video Song | Dragon | Pradeep Ranganathan | Ashwath Marimuthu | Leon James | AGS",
+              "thumbnail": "https://img.youtube.com/vi/BAOdoV7jQVo/maxresdefault.jpg",
+              "duration": "3:41",
+              "durationSec": 221,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Energetic",
+              "date": "2025-03-23T22:30:04-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "mbRzwr_ojA8",
+              "title": "Dippam Dappam Video 8K/4K Video | KRK | Vijay Sethupathi | Nayanthara | Samantha | Anirudh",
+              "thumbnail": "https://img.youtube.com/vi/mbRzwr_ojA8/maxresdefault.jpg",
+              "duration": "3:24",
+              "durationSec": 204,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Energetic",
+              "date": "2025-06-16T07:30:39-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "U9D3u8WK__w",
+              "title": "Two Two Two 8K 60FPS Video Song | KRK | Vijay Sethupathi, Nayanthara, Samantha | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/U9D3u8WK__w/maxresdefault.jpg",
+              "duration": "2:52",
+              "durationSec": 172,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Energetic",
+              "date": "2025-10-20T07:30:31-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "Wgiub6Vwz6Y",
+              "title": "Ranjithame [8K] Video Song | Varisu | Thalapathy Vijay | Rashmika | Vamshi P | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/Wgiub6Vwz6Y/maxresdefault.jpg",
+              "duration": "4:48",
+              "durationSec": 288,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Energetic",
+              "date": "2025-07-30T06:30:25-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "FBXe36hkq3Q",
+              "title": "Jinguchaa - Video Song | Thug Life | Kamal Haasan | Mani Ratnam | STR | AR Rahman | Sanya M",
+              "thumbnail": "https://img.youtube.com/vi/FBXe36hkq3Q/maxresdefault.jpg",
+              "duration": "4:29",
+              "durationSec": 269,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Energetic",
+              "date": "2025-06-23T22:30:07-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "4Bsc2uI_LsM",
+              "title": "Oorum Blood | Dude | Pradeep Ranganathan, Mamitha | Sai Abhyankkar| Keerthiswaran|Paal Dabba| Mythri",
+              "thumbnail": "https://img.youtube.com/vi/4Bsc2uI_LsM/maxresdefault.jpg",
+              "duration": "4:29",
+              "durationSec": 269,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Energetic",
+              "date": "2025-08-28T05:46:04-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "AQ65yLt8MtM",
+              "title": "Chikitu - Official Video Song | COOLIE | Superstar Rajinikanth | Sun Pictures | Lokesh | Anirudh",
+              "thumbnail": "https://img.youtube.com/vi/AQ65yLt8MtM/maxresdefault.jpg",
+              "duration": "4:36",
+              "durationSec": 276,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Energetic",
+              "date": "2025-09-05T05:28:01-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "nIYZ4nbWq7w",
+              "title": "Master - Vaathi Coming 8K/4K Video Song | Thalapathy Vijay | Anirudh Ravichander | Lokesh Kanagaraj",
+              "thumbnail": "https://img.youtube.com/vi/nIYZ4nbWq7w/maxresdefault.jpg",
+              "duration": "4:17",
+              "durationSec": 257,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Energetic",
+              "date": "2025-07-01T07:30:42-07:00",
+              "resolution": "8K"
+            }
+          ],
+          "Groovy": [
+            {
+              "youtubeLinkID": "067FqlIxEWA",
+              "title": "Dheema Video Song (Tamil) | Love Insurance Kompany | Pradeep Ranganathan | Anirudh | Vignesh Shivan",
+              "thumbnail": "https://img.youtube.com/vi/067FqlIxEWA/maxresdefault.jpg",
+              "duration": "3:49",
+              "durationSec": 229,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2026-04-14T06:17:02-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "WjOSnmS6usQ",
+              "title": "Yedi -  8K Video Song | Dhanush | Pavish | Anikha | GV Prakash | Jonita Gandhi #NEEK",
+              "thumbnail": "https://img.youtube.com/vi/WjOSnmS6usQ/maxresdefault.jpg",
+              "duration": "3:34",
+              "durationSec": 214,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2025-11-27T04:59:11-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "ghGjlx5ZBWk",
+              "title": "Golden Sparrow - 8K Video Song | Dhanush | Priyanka Mohan | Pavish | Anikha | GV Prakash #NEEK",
+              "thumbnail": "https://img.youtube.com/vi/ghGjlx5ZBWk/maxresdefault.jpg",
+              "duration": "4:18",
+              "durationSec": 258,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2025-11-26T05:41:26-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "05zfG0I0J6I",
+              "title": "Spark [8K] Video | The Greatest Of All Time | Thalapathy Vijay | Venkat Prabhu | Yuvan Shankar Raja",
+              "thumbnail": "https://img.youtube.com/vi/05zfG0I0J6I/maxresdefault.jpg",
+              "duration": "2:48",
+              "durationSec": 168,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2026-04-03T03:00:02-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "1in9qjwkOuo",
+              "title": "Jimikki Ponnu [8K]  Video | Varisu | Thalapathy Vijay | Thaman S | Tamil Popular Hits",
+              "thumbnail": "https://img.youtube.com/vi/1in9qjwkOuo/maxresdefault.jpg",
+              "duration": "3:42",
+              "durationSec": 222,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2025-08-02T22:30:00-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "06PbdVIICPo",
+              "title": "Don’u Don’u Don’u 8K/4K Video Song | Maari | Dhanush, Kajal | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/06PbdVIICPo/maxresdefault.jpg",
+              "duration": "3:06",
+              "durationSec": 186,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2025-03-31T04:30:59-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "kp8copt-zJY",
+              "title": "Yolo - Video Song | Kanguva | Suriya, Disha Patani | Devi Sri Prasad | Siva | Lavita Lobo | Viveka",
+              "thumbnail": "https://img.youtube.com/vi/kp8copt-zJY/maxresdefault.jpg",
+              "duration": "4:08",
+              "durationSec": 248,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2024-12-12T04:30:08-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "DhX_dwwCMwg",
+              "title": "Tum Tum - 8K Video Song | Enemy (Tamil) | Vishal,Arya | Anand Shankar | Vinod Kumar | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/DhX_dwwCMwg/maxresdefault.jpg",
+              "duration": "3:05",
+              "durationSec": 185,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2025-11-25T05:17:24-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "m-RiOAOfCGs",
+              "title": "Madhuvaramae | Return of The Dragon | Pradeep Ranganathan, Kayadu Lohar | Ashwath | Leon James | AGS",
+              "thumbnail": "https://img.youtube.com/vi/m-RiOAOfCGs/maxresdefault.jpg",
+              "duration": "3:44",
+              "durationSec": 224,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2025-03-06T04:30:05-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "HgszkuNzbn8",
+              "title": "Chellamma 8K/4K Video Song | Doctor | Sivakarthikeyan, Priyanka Mohan | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/HgszkuNzbn8/maxresdefault.jpg",
+              "duration": "4:05",
+              "durationSec": 245,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2025-10-16T07:30:24-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "7TcUIsxVCLc",
+              "title": "Paiya - Adada Mazhaida 8K/4K Video Song | Karthi, Tamannah | Yuvan Shankar Raja",
+              "thumbnail": "https://img.youtube.com/vi/7TcUIsxVCLc/maxresdefault.jpg",
+              "duration": "5:02",
+              "durationSec": 302,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2025-07-27T07:30:07-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "x6Q7c9RyMzk",
+              "title": "Maari 2 - Rowdy Baby (Video Song) | Dhanush, Sai Pallavi | Yuvan Shankar Raja | Balaji Mohan",
+              "thumbnail": "https://img.youtube.com/vi/x6Q7c9RyMzk/maxresdefault.jpg",
+              "duration": "4:44",
+              "durationSec": 284,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2019-01-02T04:31:14-08:00",
+              "resolution": "4K"
+            }
+          ],
+          "Item": [
+            {
+              "youtubeLinkID": "ijBxe70sd8M",
+              "title": "Achacho - Video Song | Aranmanai 4  | Sundar.C | Tamannaah | Raashii Khanna | Hiphop Tamizha",
+              "thumbnail": "https://img.youtube.com/vi/ijBxe70sd8M/maxresdefault.jpg",
+              "duration": "3:13",
+              "durationSec": 193,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Item",
+              "date": "2024-05-06T23:30:02-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "lM8h5Mm6ODo",
+              "title": "JAILER - Kaavaalaa Video Song | Superstar Rajinikanth | Sun Pictures | Anirudh | Nelson | Tamannaah",
+              "thumbnail": "https://img.youtube.com/vi/lM8h5Mm6ODo/maxresdefault.jpg",
+              "duration": "2:54",
+              "durationSec": 174,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Item",
+              "date": "2023-09-06T05:29:02-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "neOasLBWoy0",
+              "title": "Monica - Video Song | COOLIE | Superstar Rajinikanth | Sun Pictures | Lokesh | Anirudh | Pooja Hegde",
+              "thumbnail": "https://img.youtube.com/vi/neOasLBWoy0/maxresdefault.jpg",
+              "duration": "3:06",
+              "durationSec": 186,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Item",
+              "date": "2025-09-11T05:28:59-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "KUN5Uf9mObQ",
+              "title": "Arabic Kuthu - Video Song | Beast | Thalapathy Vijay | Pooja Hegde | Sun Pictures | Nelson | Anirudh",
+              "thumbnail": "https://img.youtube.com/vi/KUN5Uf9mObQ/maxresdefault.jpg",
+              "duration": "4:42",
+              "durationSec": 282,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Item",
+              "date": "2022-05-09T06:30:02-07:00",
+              "resolution": "4K"
+            }
+          ],
+          "Romance": [
+            {
+              "youtubeLinkID": "UCnlulzC6M4",
+              "title": "Enna Solla Video 8K/4K Video Song | Thangamagan | Anirudh Ravichander | Dhanush | Samantha",
+              "thumbnail": "https://img.youtube.com/vi/UCnlulzC6M4/maxresdefault.jpg",
+              "duration": "3:30",
+              "durationSec": 210,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2025-08-07T07:30:33-07:00",
+              "resolution": "8K"
+            }
+          ]
+        },
         "English": {
           "Adrenaline": [
             {
@@ -2119,6 +2563,18 @@
               "type": "Straight From The Studio",
               "date": "2025-06-16T07:43:35-07:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "bjzI5NN6dfY",
+              "title": "Siddhu Kumar -  Adipoli | Ashwin Kumar | Kushee | Sivaangi | Vineeth Sreenivasan | Think Originals",
+              "thumbnail": "https://img.youtube.com/vi/bjzI5NN6dfY/maxresdefault.jpg",
+              "duration": "3:24",
+              "durationSec": 204,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2021-08-20T06:30:11-07:00",
+              "resolution": "1080p"
             }
           ]
         }
@@ -2247,6 +2703,56 @@
               "category": "MacOS",
               "type": "LandScapes",
               "date": "2026-04-14T10:49:12-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "kU2Na07kZew",
+              "title": "Redwoods River",
+              "thumbnail": "https://img.youtube.com/vi/kU2Na07kZew/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-15T06:13:37-07:00",
+              "resolution": "4K"
+            }
+          ],
+          "Urban": [
+            {
+              "youtubeLinkID": "sRDJrrMAhzA",
+              "title": "Dubai Skyline",
+              "thumbnail": "https://img.youtube.com/vi/sRDJrrMAhzA/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "Urban",
+              "date": "2026-04-14T18:28:28-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "SdcIB-HhCcA",
+              "title": "Dubai Night",
+              "thumbnail": "https://img.youtube.com/vi/SdcIB-HhCcA/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "Urban",
+              "date": "2026-04-14T18:35:18-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "KGoWUpvXIgE",
+              "title": "Dubai Creek",
+              "thumbnail": "https://img.youtube.com/vi/KGoWUpvXIgE/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "Urban",
+              "date": "2026-04-14T18:41:37-07:00",
               "resolution": "4K"
             }
           ]
