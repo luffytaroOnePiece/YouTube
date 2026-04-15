@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15T01:17:14.645Z",
+  "lastUpdated": "2026-04-15T11:42:08.747Z",
   "groups": {
     "Music": {
       "icon": "🎵",
@@ -2142,6 +2142,18 @@
               "resolution": "4K"
             },
             {
+              "youtubeLinkID": "-a7FGeI6poo",
+              "title": "Utah Evening",
+              "thumbnail": "https://img.youtube.com/vi/-a7FGeI6poo/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-14T08:35:49-07:00",
+              "resolution": "4K"
+            },
+            {
               "youtubeLinkID": "ZKrLbOC4d48",
               "title": "Sonoma River",
               "thumbnail": "https://img.youtube.com/vi/ZKrLbOC4d48/maxresdefault.jpg",
@@ -2151,6 +2163,18 @@
               "category": "MacOS",
               "type": "LandScapes",
               "date": "2026-04-14T09:17:35-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "GdGRe8f6bdE",
+              "title": "Sonoma Misty Forest",
+              "thumbnail": "https://img.youtube.com/vi/GdGRe8f6bdE/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-14T09:27:14-07:00",
               "resolution": "4K"
             },
             {
@@ -2187,6 +2211,30 @@
               "category": "MacOS",
               "type": "LandScapes",
               "date": "2026-04-14T10:22:50-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "7yKyxkce3f8",
+              "title": "Yosemite Snow Forest",
+              "thumbnail": "https://img.youtube.com/vi/7yKyxkce3f8/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-14T10:31:45-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "1JyxmJE5V-U",
+              "title": "Yosemite Clouds",
+              "thumbnail": "https://img.youtube.com/vi/1JyxmJE5V-U/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-14T10:41:19-07:00",
               "resolution": "4K"
             },
             {
