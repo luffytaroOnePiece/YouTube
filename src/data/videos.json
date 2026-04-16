@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15T17:14:22.875Z",
+  "lastUpdated": "2026-04-16T01:56:43.366Z",
   "groups": {
     "Music": {
       "icon": "🎵",
@@ -2706,6 +2706,42 @@
               "resolution": "4K"
             },
             {
+              "youtubeLinkID": "a0lG1Ir7a8U",
+              "title": "Utah Olympia Bar",
+              "thumbnail": "https://img.youtube.com/vi/a0lG1Ir7a8U/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-15T05:15:31-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "jnEAYfq_V3g",
+              "title": "Utah Lake Powell",
+              "thumbnail": "https://img.youtube.com/vi/jnEAYfq_V3g/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-15T05:34:32-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "UDW71BN1pOg",
+              "title": "Oregon Sunset",
+              "thumbnail": "https://img.youtube.com/vi/UDW71BN1pOg/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-15T05:51:16-07:00",
+              "resolution": "4K"
+            },
+            {
               "youtubeLinkID": "kU2Na07kZew",
               "title": "Redwoods River",
               "thumbnail": "https://img.youtube.com/vi/kU2Na07kZew/maxresdefault.jpg",
@@ -2715,6 +2751,78 @@
               "category": "MacOS",
               "type": "LandScapes",
               "date": "2026-04-15T06:13:37-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "70YGwVteLk4",
+              "title": "Greenland Coast",
+              "thumbnail": "https://img.youtube.com/vi/70YGwVteLk4/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-15T07:21:28-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "q8WP82vuTkA",
+              "title": "Greenland Glacier",
+              "thumbnail": "https://img.youtube.com/vi/q8WP82vuTkA/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-15T07:27:38-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "KZTQsUS793E",
+              "title": "Greenland Glacier Sunset",
+              "thumbnail": "https://img.youtube.com/vi/KZTQsUS793E/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-15T07:33:48-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "2ug83LGwKBk",
+              "title": "Patagonia Mountain",
+              "thumbnail": "https://img.youtube.com/vi/2ug83LGwKBk/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-15T07:39:17-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "dU-dnYbXZhc",
+              "title": "Patagonia Lake",
+              "thumbnail": "https://img.youtube.com/vi/dU-dnYbXZhc/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-15T07:50:14-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "z2tnHtsaeGY",
+              "title": "Patagonia Mountains",
+              "thumbnail": "https://img.youtube.com/vi/z2tnHtsaeGY/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "LandScapes",
+              "date": "2026-04-15T08:01:03-07:00",
               "resolution": "4K"
             }
           ],
@@ -2753,6 +2861,18 @@
               "category": "MacOS",
               "type": "Urban",
               "date": "2026-04-14T18:41:37-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "24XEaDrP8nA",
+              "title": "San Francisco Gold Gate Bridge",
+              "thumbnail": "https://img.youtube.com/vi/24XEaDrP8nA/maxresdefault.jpg",
+              "duration": "1:00:01",
+              "durationSec": 3601,
+              "group": "Nature",
+              "category": "MacOS",
+              "type": "Urban",
+              "date": "2026-04-14T18:47:11-07:00",
               "resolution": "4K"
             }
           ]
