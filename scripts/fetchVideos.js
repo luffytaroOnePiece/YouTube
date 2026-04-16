@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { execSync } from 'child_process';
 import ytpl from 'ytpl';
 import ytdl from 'ytdl-core';
 import { fileURLToPath } from 'url';
@@ -73,17 +74,52 @@ export async function fetchPlaylist(idOrUrl, groupName, categoryName, playlistNa
     return [];
   }
 
-  const playlist = await ytpl(playlistId, { limit: Infinity });
-  const total = playlist.items.length;
+  // Try ytpl first; if it fails (unlisted/large playlists), fall back to yt-dlp
+  let playlistItems;
+  let usedYtDlp = false;
+  try {
+    const playlist = await ytpl(playlistId, { limit: Infinity });
+    playlistItems = playlist.items.map(item => ({
+      id: item.id,
+      title: item.title,
+      durationSec: item.durationSec || 0,
+    }));
+  } catch (ytplErr) {
+    log(`    ⚠️  ytpl failed (${ytplErr.message}), falling back to yt-dlp...`);
+    try {
+      const url = `https://www.youtube.com/playlist?list=${playlistId}`;
+      const raw = execSync(
+        `yt-dlp --flat-playlist --dump-json --no-warnings "${url}"`,
+        { encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, timeout: 120000 }
+      );
+      playlistItems = raw.trim().split('\n').filter(Boolean).map(line => {
+        const entry = JSON.parse(line);
+        return {
+          id: entry.id,
+          title: entry.title || 'Untitled',
+          durationSec: Math.round(entry.duration || 0),
+        };
+      });
+      usedYtDlp = true;
+    } catch (dlpErr) {
+      throw new Error(`Both ytpl and yt-dlp failed. ytpl: ${ytplErr.message} | yt-dlp: ${dlpErr.message}`);
+    }
+  }
+
+  const total = playlistItems.length;
   let cached = 0;
   let fetched = 0;
 
-  log(`    Found ${total} videos. Processing...\n`);
+  if (usedYtDlp) {
+    log(`    🔄 Fetched ${total} videos via yt-dlp fallback.\n`);
+  } else {
+    log(`    Found ${total} videos. Processing...\n`);
+  }
 
   const videos = [];
 
   for (let i = 0; i < total; i++) {
-    const item = playlist.items[i];
+    const item = playlistItems[i];
     const progress = `    [${i + 1}/${total}]`;
 
     // Check cache first
