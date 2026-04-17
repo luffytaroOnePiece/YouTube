@@ -246,7 +246,6 @@ function App() {
               </svg>
               <span>Analytics</span>
             </button>
-            <span className="header__count">{allVideos.length} videos</span>
             <button
               className="header__scripts-btn"
               onClick={() => setShowScripts(true)}
