@@ -13,6 +13,7 @@ function App() {
   const [activePlaylist, setActivePlaylist] = useState('All');
   const [activeResolution, setActiveResolution] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const [activeSort, setActiveSort] = useState('Newest First');
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [gridColumns, setGridColumns] = useState(3);
   const [showScripts, setShowScripts] = useState(false);
@@ -142,8 +143,14 @@ function App() {
       videos = videos.filter((v) => v.resolution === activeResolution);
     }
 
+    if (activeSort === 'Newest First') {
+      videos.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
+    } else if (activeSort === 'Oldest First') {
+      videos.sort((a, b) => new Date(a.date || 0) - new Date(b.date || 0));
+    }
+
     return videos;
-  }, [activeGroup, activeCategory, activePlaylist, activeResolution, searchQuery, allVideos]);
+  }, [activeGroup, activeCategory, activePlaylist, activeResolution, activeSort, searchQuery, allVideos]);
 
   // Is home view (no filters active, no search)
   const isHomeView = activeGroup === 'All' && !searchQuery.trim();
@@ -167,6 +174,7 @@ function App() {
     setActiveCategory('All');
     setActivePlaylist('All');
     setActiveResolution('All');
+    setActiveSort('Newest First');
     setSearchQuery('');
   }, []);
 
@@ -275,6 +283,8 @@ function App() {
         availableResolutions={availableResolutions}
         activeResolution={activeResolution}
         onResolutionChange={setActiveResolution}
+        activeSort={activeSort}
+        onSortChange={setActiveSort}
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
         videoCounts={videoCounts}

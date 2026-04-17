@@ -16,6 +16,8 @@ export default function FilterBar({
   availableResolutions,
   activeResolution,
   onResolutionChange,
+  activeSort,
+  onSortChange,
   searchQuery,
   onSearchChange,
   videoCounts,
@@ -55,6 +57,12 @@ export default function FilterBar({
   const isHindiActive = activeGroup === 'Music' && activeCategory === 'Hindi';
   const is8KActive = activeResolution === '8K' && activeGroup === 'All';
 
+  // Build sort options
+  const sortOptions = [
+    { value: 'Newest First', label: 'Newest' },
+    { value: 'Oldest First', label: 'Oldest' }
+  ];
+
   return (
     <div className="filter-bar">
       <div className="filter-bar__top">
@@ -86,6 +94,16 @@ export default function FilterBar({
               options={resolutionOptions}
               onChange={onResolutionChange}
               placeholder="All Quality"
+            />
+          )}
+
+          {activeGroup !== 'All' && (
+            <Dropdown
+              id="sort-select"
+              value={activeSort}
+              options={sortOptions}
+              onChange={onSortChange}
+              placeholder="Sort by"
             />
           )}
         </div>
