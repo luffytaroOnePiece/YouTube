@@ -38,11 +38,19 @@
       "MacOS": {
         "LandScapes": "PLA8Y5hhRksHwkotpoWrFIQj2y_qijQRK9",
         "Urban": "PLA8Y5hhRksHyvQOrYAwTs62N4z3h5mkfM"
+      },
+      "Aerial Drone Shots": {
+        "Timelab Pro": "PLA8Y5hhRksHx-wYbldVlDMvxhACWgUSQo"
       }
     }
   },
   "Games": {
     "icon": "",
-    "categories": {}
+    "categories": {
+      "PS5": {
+        "Game Trailers": "PLCXz5mzH0JBcUcC8fLschTpAxIk6PxntJ",
+        "Gameplay": "PLCXz5mzH0JBdVwiKsKJEDY82mEeDyNtbB"
+      }
+    }
   }
 }

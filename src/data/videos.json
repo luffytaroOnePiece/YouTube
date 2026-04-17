@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-17T13:10:14.680Z",
+  "lastUpdated": "2026-04-17T13:46:39.404Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -4524,12 +4524,383 @@
               "resolution": "4K"
             }
           ]
+        },
+        "Aerial Drone Shots": {
+          "Timelab Pro": [
+            {
+              "youtubeLinkID": "uqU6oZsyEPU",
+              "title": "Kazan: Where History Meets the Future",
+              "thumbnail": "https://img.youtube.com/vi/uqU6oZsyEPU/maxresdefault.jpg",
+              "duration": "2:53",
+              "durationSec": 173,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2025-02-08T07:00:54-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "o-eYesXYEag",
+              "title": "Digital Dream on the Edge of Reality. Shenzhen - Flying between skyscrapers in 8k",
+              "thumbnail": "https://img.youtube.com/vi/o-eYesXYEag/maxresdefault.jpg",
+              "duration": "3:26",
+              "durationSec": 206,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2024-07-04T23:29:08-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "mwG8G4F1wPU",
+              "title": "Greenland. Ice Waltz. Shot on DJI Inspire 3.",
+              "thumbnail": "https://img.youtube.com/vi/mwG8G4F1wPU/maxresdefault.jpg",
+              "duration": "4:11",
+              "durationSec": 251,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2023-07-20T07:00:14-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "yWJRPwvhmds",
+              "title": "Sea Unicorn. Arctic. Franz Josef Land. Narwhal Expedition.",
+              "thumbnail": "https://img.youtube.com/vi/yWJRPwvhmds/maxresdefault.jpg",
+              "duration": "2:40",
+              "durationSec": 160,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2023-04-15T10:00:13-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "REDVbTQxMXo",
+              "title": "Paris: The last drone aerials",
+              "thumbnail": "https://img.youtube.com/vi/REDVbTQxMXo/maxresdefault.jpg",
+              "duration": "1:31",
+              "durationSec": 91,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2023-03-15T12:18:49-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "oBFQ0ZuhXrg",
+              "title": "Indonesia FPV: Bali & Java. Vimeo Staff Pick Best Of The Year Award",
+              "thumbnail": "https://img.youtube.com/vi/oBFQ0ZuhXrg/maxresdefault.jpg",
+              "duration": "4:55",
+              "durationSec": 295,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2022-09-08T06:00:09-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "eV6lTEY95yY",
+              "title": "Istanbul. Love of the continents // İstanbul. Kıtaların aşkı. Drone aerial video",
+              "thumbnail": "https://img.youtube.com/vi/eV6lTEY95yY/maxresdefault.jpg",
+              "duration": "3:23",
+              "durationSec": 203,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2021-03-23T11:00:12-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "ywHCj86aqFE",
+              "title": "Switzerland. Geneva & Romandy. Timelab Pro & Ilya Beshevli collaboration",
+              "thumbnail": "https://img.youtube.com/vi/ywHCj86aqFE/maxresdefault.jpg",
+              "duration": "2:19",
+              "durationSec": 139,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2020-10-14T10:46:25-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "BB-2nj8g78Y",
+              "title": "Motosinfonia d'autumno. Alps, Northern Italy. Timelab & MV Agusta",
+              "thumbnail": "https://img.youtube.com/vi/BB-2nj8g78Y/maxresdefault.jpg",
+              "duration": "2:02",
+              "durationSec": 122,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2020-01-29T00:00:11-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "SffcA-5kOXI",
+              "title": "Kamchatka. Wild and Implicit",
+              "thumbnail": "https://img.youtube.com/vi/SffcA-5kOXI/maxresdefault.jpg",
+              "duration": "2:25",
+              "durationSec": 145,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2021-12-22T09:00:13-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "gYO1uk7vIcc",
+              "title": "Magic of Hong Kong. Mind-blowing cyberpunk drone video of the craziest Asia’s city by Timelab.pro",
+              "thumbnail": "https://img.youtube.com/vi/gYO1uk7vIcc/maxresdefault.jpg",
+              "duration": "3:25",
+              "durationSec": 205,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2019-10-07T06:47:44-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "e10pVhxNOco",
+              "title": "Budapest: The Taste of Europe. Timelab & Havasi collaboration",
+              "thumbnail": "https://img.youtube.com/vi/e10pVhxNOco/maxresdefault.jpg",
+              "duration": "3:32",
+              "durationSec": 212,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2019-07-29T05:57:48-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "bKaVhXn49xY",
+              "title": "75 000 h.p. The Biggest Nuclear Icebreaker",
+              "thumbnail": "https://img.youtube.com/vi/bKaVhXn49xY/maxresdefault.jpg",
+              "duration": "3:05",
+              "durationSec": 185,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2019-06-12T01:43:46-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "GOlSrTbiBK0",
+              "title": "Kamchatka. The Winter Surf Challenge",
+              "thumbnail": "https://img.youtube.com/vi/GOlSrTbiBK0/maxresdefault.jpg",
+              "duration": "2:38",
+              "durationSec": 158,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2019-04-08T06:50:16-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "eMEH6LG9_iQ",
+              "title": "The city of white nights - Saint Petersburg drone video Timelab.pro",
+              "thumbnail": "https://img.youtube.com/vi/eMEH6LG9_iQ/maxresdefault.jpg",
+              "duration": "2:45",
+              "durationSec": 165,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2018-07-30T01:29:45-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "rAxhaiNNfRk",
+              "title": "Desperation of winter Moscow \\ Russia Drone Video \\ Shot on DJI X7",
+              "thumbnail": "https://img.youtube.com/vi/rAxhaiNNfRk/maxresdefault.jpg",
+              "duration": "2:45",
+              "durationSec": 165,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2018-04-22T01:57:57-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "S_dfq9rFWAE",
+              "title": "Moscow Russia Aerial Drone 4K Timelab.pro",
+              "thumbnail": "https://img.youtube.com/vi/S_dfq9rFWAE/maxresdefault.jpg",
+              "duration": "2:47",
+              "durationSec": 167,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2017-11-01T07:04:24-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "4EoUz39nPMM",
+              "title": "Saint Petersburg Aerial Timelab.pro",
+              "thumbnail": "https://img.youtube.com/vi/4EoUz39nPMM/maxresdefault.jpg",
+              "duration": "4:29",
+              "durationSec": 269,
+              "group": "Nature",
+              "category": "Aerial Drone Shots",
+              "type": "Timelab Pro",
+              "date": "2016-02-05T14:53:18-08:00",
+              "resolution": "1080p"
+            }
+          ]
         }
       }
     },
     "Games": {
       "icon": "",
-      "categories": {}
+      "categories": {
+        "PS5": {
+          "Game Trailers": [
+            {
+              "youtubeLinkID": "pWw-UENvdTw",
+              "title": "Forza Horizon 6 - Official Gameplay Teaser Trailer",
+              "thumbnail": "https://img.youtube.com/vi/pWw-UENvdTw/maxresdefault.jpg",
+              "duration": "0:48",
+              "durationSec": 48,
+              "group": "Games",
+              "category": "PS5",
+              "type": "Game Trailers",
+              "date": "2026-01-22T10:15:12-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "3dTGHIFMFhA",
+              "title": "Forza Horizon 6 - Cover Car Reveal | 2025 GR GT",
+              "thumbnail": "https://img.youtube.com/vi/3dTGHIFMFhA/maxresdefault.jpg",
+              "duration": "0:48",
+              "durationSec": 48,
+              "group": "Games",
+              "category": "PS5",
+              "type": "Game Trailers",
+              "date": "2026-01-22T12:15:00-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "VQRLujxTm3c",
+              "title": "Grand Theft Auto VI Trailer 2",
+              "thumbnail": "https://img.youtube.com/vi/VQRLujxTm3c/maxresdefault.jpg",
+              "duration": "2:47",
+              "durationSec": 167,
+              "group": "Games",
+              "category": "PS5",
+              "type": "Game Trailers",
+              "date": "2025-05-06T06:29:04-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "QdBZY2fkU-0",
+              "title": "Grand Theft Auto VI Trailer 1",
+              "thumbnail": "https://img.youtube.com/vi/QdBZY2fkU-0/maxresdefault.jpg",
+              "duration": "1:31",
+              "durationSec": 91,
+              "group": "Games",
+              "category": "PS5",
+              "type": "Game Trailers",
+              "date": "2023-12-04T15:07:10-08:00",
+              "resolution": "4K"
+            }
+          ],
+          "Gameplay": [
+            {
+              "youtubeLinkID": "fXGULB8PdO4",
+              "title": "It’s Just A Game | The Beauty of Elden Ring",
+              "thumbnail": "https://img.youtube.com/vi/fXGULB8PdO4/maxresdefault.jpg",
+              "duration": "5:16",
+              "durationSec": 316,
+              "group": "Games",
+              "category": "PS5",
+              "type": "Gameplay",
+              "date": "2023-02-25T01:09:30-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "a4XWVqXhBRI",
+              "title": "The Beauty of ELDEN RING",
+              "thumbnail": "https://img.youtube.com/vi/a4XWVqXhBRI/maxresdefault.jpg",
+              "duration": "9:11",
+              "durationSec": 551,
+              "group": "Games",
+              "category": "PS5",
+              "type": "Gameplay",
+              "date": "2024-08-30T08:00:27-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "qCbgF6clQUg",
+              "title": "The Beauty of The Last of Us",
+              "thumbnail": "https://img.youtube.com/vi/qCbgF6clQUg/maxresdefault.jpg",
+              "duration": "6:16",
+              "durationSec": 376,
+              "group": "Games",
+              "category": "PS5",
+              "type": "Gameplay",
+              "date": "2023-08-17T11:40:38-07:00",
+              "resolution": "2K"
+            },
+            {
+              "youtubeLinkID": "vidJ9ns6_90",
+              "title": "The Beauty of Ghost of Tsushima",
+              "thumbnail": "https://img.youtube.com/vi/vidJ9ns6_90/maxresdefault.jpg",
+              "duration": "5:49",
+              "durationSec": 349,
+              "group": "Games",
+              "category": "PS5",
+              "type": "Gameplay",
+              "date": "2025-01-10T08:00:06-08:00",
+              "resolution": "2K"
+            },
+            {
+              "youtubeLinkID": "0kytm0hWyLM",
+              "title": "The Beauty of Red Dead Redemption 2",
+              "thumbnail": "https://img.youtube.com/vi/0kytm0hWyLM/maxresdefault.jpg",
+              "duration": "6:45",
+              "durationSec": 405,
+              "group": "Games",
+              "category": "PS5",
+              "type": "Gameplay",
+              "date": "2025-03-11T10:00:06-07:00",
+              "resolution": "2K"
+            },
+            {
+              "youtubeLinkID": "COa9LDmZBzs",
+              "title": "The Beauty of Cyberpunk 2077",
+              "thumbnail": "https://img.youtube.com/vi/COa9LDmZBzs/maxresdefault.jpg",
+              "duration": "8:15",
+              "durationSec": 495,
+              "group": "Games",
+              "category": "PS5",
+              "type": "Gameplay",
+              "date": "2025-09-19T05:00:26-07:00",
+              "resolution": "2K"
+            },
+            {
+              "youtubeLinkID": "JNYrJQuNIDc",
+              "title": "The World of Elden Ring: Underground",
+              "thumbnail": "https://img.youtube.com/vi/JNYrJQuNIDc/maxresdefault.jpg",
+              "duration": "3:55",
+              "durationSec": 235,
+              "group": "Games",
+              "category": "PS5",
+              "type": "Gameplay",
+              "date": "2024-04-29T09:00:07-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "0YPPM-OQLR8",
+              "title": "The World of Elden Ring: Liurnia of the Lakes",
+              "thumbnail": "https://img.youtube.com/vi/0YPPM-OQLR8/maxresdefault.jpg",
+              "duration": "4:31",
+              "durationSec": 271,
+              "group": "Games",
+              "category": "PS5",
+              "type": "Gameplay",
+              "date": "2024-05-06T09:00:18-07:00",
+              "resolution": "4K"
+            }
+          ]
+        }
+      }
     }
   }
 }
