@@ -113,13 +113,13 @@ export default function FilterBar({
             className={`filter-bar__quick-chip ${isTeluguActive ? 'filter-bar__quick-chip--active' : ''}`}
             onClick={() => isTeluguActive ? onReset() : onQuickAccess('Music', 'Telugu', 'All')}
           >
-            🎵 Telugu
+            Telugu
           </button>
           <button
             className={`filter-bar__quick-chip ${isEnglishActive ? 'filter-bar__quick-chip--active' : ''}`}
-            onClick={() => isEnglishActive ? onReset() : onQuickAccess('Music', 'English', 'All')}
+            onClick={() => isEnglishActive ? onReset() : onQuickAccess('Music', 'Hindi', 'All')}
           >
-            🎶 English
+            Hindi
           </button>
           <button
             className={`filter-bar__quick-chip ${is8KActive ? 'filter-bar__quick-chip--active' : ''}`}
@@ -148,7 +148,7 @@ export default function FilterBar({
                 onClick={() => onPlaylistChange(pl)}
               >
                 {pl}
-                <span className="filter-bar__count">{count}</span>
+                {/* <span className="filter-bar__count">{count}</span> */}
               </button>
             );
           })}
