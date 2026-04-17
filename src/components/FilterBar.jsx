@@ -52,7 +52,7 @@ export default function FilterBar({
   ];
 
   const isTeluguActive = activeGroup === 'Music' && activeCategory === 'Telugu';
-  const isEnglishActive = activeGroup === 'Music' && activeCategory === 'English';
+  const isHindiActive = activeGroup === 'Music' && activeCategory === 'Hindi';
   const is8KActive = activeResolution === '8K' && activeGroup === 'All';
 
   return (
@@ -116,8 +116,8 @@ export default function FilterBar({
             Telugu
           </button>
           <button
-            className={`filter-bar__quick-chip ${isEnglishActive ? 'filter-bar__quick-chip--active' : ''}`}
-            onClick={() => isEnglishActive ? onReset() : onQuickAccess('Music', 'Hindi', 'All')}
+            className={`filter-bar__quick-chip ${isHindiActive ? 'filter-bar__quick-chip--active' : ''}`}
+            onClick={() => isHindiActive ? onReset() : onQuickAccess('Music', 'Hindi', 'All')}
           >
             Hindi
           </button>
