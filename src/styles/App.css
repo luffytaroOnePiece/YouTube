@@ -1716,7 +1716,9 @@ body::-webkit-scrollbar {
 .analytics-modal {
   width: 96vw;
   height: 94vh;
-  background: linear-gradient(145deg, rgba(35, 35, 38, 0.7) 0%, rgba(20, 20, 22, 0.85) 100%);
+  background: linear-gradient(145deg, rgba(35, 35, 38, 0.96) 0%, rgba(20, 20, 22, 0.98) 100%);
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
   border: 0.5px solid rgba(255, 255, 255, 0.15);
   border-radius: 32px;
   display: flex;
