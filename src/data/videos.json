@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-04-17T01:26:49.895Z",
+  "lastUpdated": "2026-04-17T02:02:18.712Z",
   "groups": {
     "Music": {
-      "icon": "🎵",
+      "icon": "",
       "categories": {
         "Telugu": {
           "Romance": [
@@ -4193,7 +4193,7 @@
       }
     },
     "Nature": {
-      "icon": "🌿",
+      "icon": "",
       "categories": {
         "MacOS": {
           "LandScapes": [
@@ -4516,7 +4516,7 @@
       }
     },
     "Games": {
-      "icon": "🎮",
+      "icon": "",
       "categories": {}
     }
   }

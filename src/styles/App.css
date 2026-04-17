@@ -817,6 +817,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   gap: 8px;
+  padding-left: 10px;
 }
 
 /* ── Custom Dropdown (Apple Glassmorphism) ──────────────────── */
@@ -881,18 +882,17 @@ body::-webkit-scrollbar {
   top: calc(100% + 8px);
   left: 0;
   min-width: 100%;
-  background: rgba(28, 28, 30, 0.88);
-  backdrop-filter: blur(40px) saturate(1.8);
-  -webkit-backdrop-filter: blur(40px) saturate(1.8);
+  background: rgba(30, 30, 30, 0.65);
+  backdrop-filter: blur(60px) saturate(200%);
+  -webkit-backdrop-filter: blur(60px) saturate(200%);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 14px;
-  padding: 5px;
+  padding: 6px;
   z-index: 200;
   box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.04) inset,
-    0 1px 0 rgba(255, 255, 255, 0.06) inset,
-    0 12px 40px rgba(0, 0, 0, 0.55),
-    0 0 0 1px rgba(0, 0, 0, 0.3);
+    0 0 0 0.5px rgba(255, 255, 255, 0.08) inset,
+    0 16px 40px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(0, 0, 0, 0.2);
   animation: dropdownSlide 0.2s cubic-bezier(0.2, 0, 0.13, 1.5);
   max-height: 300px;
   overflow-y: auto;
@@ -916,29 +916,34 @@ body::-webkit-scrollbar {
   align-items: center;
   gap: 8px;
   width: 100%;
-  padding: 9px 12px;
+  padding: 8px 12px;
   border: none;
   background: transparent;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 500;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 8px;
   text-align: left;
-  transition: all 0.15s ease;
+  transition: all 0.1s ease;
   white-space: nowrap;
 }
 
 .dropdown__item:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--text-primary);
+  background: #ff2d55;
+  color: #ffffff;
 }
 
 .dropdown__item--active {
   color: var(--text-primary);
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.08); /* subtle highlight */
+}
+
+.dropdown__item--active:hover {
+  background: #ff2d55;
+  color: #ffffff;
 }
 
 .dropdown__item-label {
@@ -950,14 +955,22 @@ body::-webkit-scrollbar {
   color: var(--text-muted);
   font-weight: 500;
   background: rgba(255, 255, 255, 0.06);
-  padding: 1px 7px;
-  border-radius: 8px;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.dropdown__item:hover .dropdown__item-count {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .dropdown__check {
-  color: #5ac8fa;
+  color: #ff2d55;
   flex-shrink: 0;
-  filter: drop-shadow(0 0 4px rgba(90, 200, 250, 0.3));
+}
+
+.dropdown__item:hover .dropdown__check {
+  color: #ffffff;
 }
 
 /* ── Grid Density (Minimal Slider) ──────────────────────────── */
