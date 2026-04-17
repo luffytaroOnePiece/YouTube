@@ -3,6 +3,7 @@ import FilterBar from './components/FilterBar';
 import VideoGrid from './components/VideoGrid';
 import Player from './components/Player';
 import ScriptsPage from './components/ScriptsPage';
+import AnalyticsDashboard from './components/AnalyticsDashboard';
 import videosData from './data/videos.json';
 import './styles/App.css';
 
@@ -15,6 +16,7 @@ function App() {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [gridColumns, setGridColumns] = useState(3);
   const [showScripts, setShowScripts] = useState(false);
+  const [showAnalytics, setShowAnalytics] = useState(false);
 
   // Parse grouped data
   const { allVideos, groups, groupMeta } = useMemo(() => {
@@ -232,6 +234,18 @@ function App() {
             )}
           </div>
           <div className="header__right">
+            <button
+              className="header__analytics-btn"
+              onClick={() => setShowAnalytics(true)}
+              title="View Analytics"
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="18" y="3" width="4" height="18"></rect>
+                <rect x="10" y="8" width="4" height="13"></rect>
+                <rect x="2" y="13" width="4" height="8"></rect>
+              </svg>
+              <span>Analytics</span>
+            </button>
             <span className="header__count">{allVideos.length} videos</span>
             <button
               className="header__scripts-btn"
@@ -312,6 +326,11 @@ function App() {
       {/* Scripts Modal */}
       {showScripts && (
         <ScriptsPage onClose={() => setShowScripts(false)} />
+      )}
+      
+      {/* Analytics Modal */}
+      {showAnalytics && (
+        <AnalyticsDashboard onClose={() => setShowAnalytics(false)} allVideos={allVideos} />
       )}
     </div>
   );

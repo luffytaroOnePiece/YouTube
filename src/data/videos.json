@@ -1,11 +1,23 @@
 {
-  "lastUpdated": "2026-04-16T13:09:14.945Z",
+  "lastUpdated": "2026-04-17T01:26:49.895Z",
   "groups": {
     "Music": {
       "icon": "🎵",
       "categories": {
         "Telugu": {
           "Romance": [
+            {
+              "youtubeLinkID": "-DjBB2h9B5w",
+              "title": "Jala Jala Jalapaatham Nuvvu 8K Video Song | Uppena Movie | Panja Vaisshnav Tej, Krithi Shetty | DSP",
+              "thumbnail": "https://img.youtube.com/vi/-DjBB2h9B5w/maxresdefault.jpg",
+              "duration": "4:36",
+              "durationSec": 276,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2026-04-16T07:30:54-07:00",
+              "resolution": "8K"
+            },
             {
               "youtubeLinkID": "sl2X-e956Ts",
               "title": "Pareshanura 8K Video Song | Dhruva | Ram Charan, Rakul Preet | Hiphop Tamizha | Surender Reddy",
@@ -1777,18 +1789,6 @@
               "resolution": "1080p"
             },
             {
-              "youtubeLinkID": "0Olv8zM_rps",
-              "title": "Darling - Neeve Video | Prabhas | G.V. Prakash Kumar",
-              "thumbnail": "https://img.youtube.com/vi/0Olv8zM_rps/maxresdefault.jpg",
-              "duration": "3:20",
-              "durationSec": 200,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Groovy",
-              "date": "2015-01-09T17:06:43-08:00",
-              "resolution": "1080p"
-            },
-            {
               "youtubeLinkID": "ekAYewieHKA",
               "title": "Mr Perfect Songs | Chali Chali Ga Allindi Video Song | Prabhas | Kajal Aggarwal | Telugu Movie Songs",
               "thumbnail": "https://img.youtube.com/vi/ekAYewieHKA/maxresdefault.jpg",
@@ -2075,6 +2075,18 @@
               "type": "Groovy",
               "date": "2026-04-16T03:35:02-07:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "tAR31ROj4hw",
+              "title": "Darling - Neeve 8K 60 FPS Video Song | Prabhas, Kajal Agarwal | G.V. Prakash Kumar",
+              "thumbnail": "https://img.youtube.com/vi/tAR31ROj4hw/maxresdefault.jpg",
+              "duration": "3:20",
+              "durationSec": 200,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-04-16T07:30:44-07:00",
+              "resolution": "8K"
             }
           ],
           "Energetic": [
@@ -3668,6 +3680,30 @@
               "category": "Hindi",
               "type": "Groovy",
               "date": "2025-07-22T01:12:15-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "U_t88pVQgew",
+              "title": "Hum Dono - 8K Video | Tu Meri Main Tera Main Tera Tu Meri | Kartik A, Ananya, Shekhar, Shruti,Vishal",
+              "thumbnail": "https://img.youtube.com/vi/U_t88pVQgew/maxresdefault.jpg",
+              "duration": "3:35",
+              "durationSec": 215,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2026-03-03T23:08:02-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "EIiFuuVmNUA",
+              "title": "Cham Cham 8K Full Song | BAAGHI | Tiger Shroff,Shraddha Kapoor | Rain Song | Meet Bros,Monali,Sabbir",
+              "thumbnail": "https://img.youtube.com/vi/EIiFuuVmNUA/maxresdefault.jpg",
+              "duration": "3:53",
+              "durationSec": 233,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2026-03-10T07:05:31-07:00",
               "resolution": "8K"
             }
           ],
