@@ -4,7 +4,7 @@ import {
   PieChart, Pie, Cell, AreaChart, Area, CartesianGrid
 } from 'recharts';
 
-function AnalyticsDashboard({ onClose, allVideos }) {
+function AnalyticsDashboard({ onClose, allVideos, isMonitorSize }) {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -117,7 +117,7 @@ function AnalyticsDashboard({ onClose, allVideos }) {
   };
 
   return (
-    <div className="analytics-overlay">
+    <div className="analytics-overlay" style={{ zoom: isMonitorSize ? (1 / 1.75) : 1 }}>
       <div className={`analytics-modal ${isMounted ? 'loaded' : ''}`}>
         
         <div className="analytics-modal__header">

@@ -18,7 +18,12 @@ function App() {
   const [gridColumns, setGridColumns] = useState(3);
   const [showScripts, setShowScripts] = useState(false);
   const [showAnalytics, setShowAnalytics] = useState(false);
-  const [isMiniPlayer, setIsMiniPlayer] = useState(false);
+  const [playerMode, setPlayerMode] = useState('normal');
+  const [isMonitorSize, setIsMonitorSize] = useState(false);
+
+  useEffect(() => {
+    document.documentElement.style.zoom = isMonitorSize ? '1.75' : '1';
+  }, [isMonitorSize]);
 
   // Parse grouped data
   const { allVideos, groups, groupMeta } = useMemo(() => {
@@ -203,104 +208,123 @@ function App() {
   return (
     <div className="app">
       <div className="sticky-nav">
-      {/* Header */}
-      <header className="header">
-        <div className="header__top-row">
-          <div className="header__brand" onClick={handleReset} style={{ cursor: 'pointer' }}>
-            <div className="header__play-btn">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="white">
-                <path d="M8 5v14l11-7z" />
+        {/* Header */}
+        <header className="header">
+          <div className="header__top-row">
+            <div className="header__brand" onClick={handleReset} style={{ cursor: 'pointer' }}>
+              <div className="header__play-btn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="white">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+              <div className="header__brand-text">
+                <h1 className="header__logo">YouTube</h1>
+                <span className="header__tagline">Library</span>
+              </div>
+            </div>
+            <div className="header__search">
+              <svg className="header__search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
               </svg>
+              <input
+                id="search-input"
+                type="text"
+                className="header__search-input"
+                placeholder="Search videos..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                autoComplete="off"
+              />
+              {searchQuery ? (
+                <button
+                  className="header__search-clear"
+                  onClick={() => setSearchQuery('')}
+                  aria-label="Clear search"
+                >
+                  ✕
+                </button>
+              ) : (
+                <kbd className="header__search-kbd">⌘K</kbd>
+              )}
             </div>
-            <div className="header__brand-text">
-              <h1 className="header__logo">YouTube</h1>
-              <span className="header__tagline">Library</span>
-            </div>
-          </div>
-          <div className="header__search">
-            <svg className="header__search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16.65" y2="16.65" />
-            </svg>
-            <input
-              id="search-input"
-              type="text"
-              className="header__search-input"
-              placeholder="Search videos..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              autoComplete="off"
-            />
-            {searchQuery ? (
+            <div className="header__right">
               <button
-                className="header__search-clear"
-                onClick={() => setSearchQuery('')}
-                aria-label="Clear search"
+                className="header__analytics-btn"
+                onClick={() => setShowAnalytics(true)}
+                title="View Analytics"
               >
-                ✕
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="18" y="3" width="4" height="18"></rect>
+                  <rect x="10" y="8" width="4" height="13"></rect>
+                  <rect x="2" y="13" width="4" height="8"></rect>
+                </svg>
+                <span>Analytics</span>
               </button>
-            ) : (
-              <kbd className="header__search-kbd">⌘K</kbd>
-            )}
+              <button
+                className="header__scripts-btn"
+                onClick={() => setIsMonitorSize(!isMonitorSize)}
+                title={isMonitorSize ? "Switch to Laptop Size (100%)" : "Switch to Monitor Size (175%)"}
+                style={{ padding: '8px' }}
+              >
+                {isMonitorSize ? (
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                    <path d="M8 21h8" />
+                    <path d="M12 17v4" />
+                  </svg>
+                ) : (
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                    <path d="M2 20h20" />
+                  </svg>
+                )}
+              </button>
+              <button
+                className="header__scripts-btn"
+                onClick={() => setShowScripts(true)}
+                title="Scripts & Data"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                </svg>
+              </button>
+            </div>
           </div>
-          <div className="header__right">
-            <button
-              className="header__analytics-btn"
-              onClick={() => setShowAnalytics(true)}
-              title="View Analytics"
-            >
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="18" y="3" width="4" height="18"></rect>
-                <rect x="10" y="8" width="4" height="13"></rect>
-                <rect x="2" y="13" width="4" height="8"></rect>
-              </svg>
-              <span>Analytics</span>
-            </button>
-            <button
-              className="header__scripts-btn"
-              onClick={() => setShowScripts(true)}
-              title="Scripts & Data"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="3" />
-                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </header>
+        </header>
 
-      {/* Filter Bar */}
-      <FilterBar
-        groups={groups}
-        groupMeta={groupMeta}
-        activeGroup={activeGroup}
-        onGroupChange={handleGroupChange}
-        categories={activeCategories}
-        activeCategory={activeCategory}
-        onCategoryChange={handleCategoryChange}
-        playlists={activePlaylists}
-        activePlaylist={activePlaylist}
-        onPlaylistChange={setActivePlaylist}
-        availableResolutions={availableResolutions}
-        activeResolution={activeResolution}
-        onResolutionChange={setActiveResolution}
-        activeSort={activeSort}
-        onSortChange={setActiveSort}
-        searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
-        videoCounts={videoCounts}
-        gridColumns={gridColumns}
-        onGridColumnsChange={setGridColumns}
-        hasActiveFilters={hasActiveFilters}
-        onReset={handleReset}
-        onQuickAccess={(group, category, resolution) => {
-          setActiveGroup(group);
-          setActiveCategory(category);
-          setActivePlaylist('All');
-          setActiveResolution(resolution);
-        }}
-      />
+        {/* Filter Bar */}
+        <FilterBar
+          groups={groups}
+          groupMeta={groupMeta}
+          activeGroup={activeGroup}
+          onGroupChange={handleGroupChange}
+          categories={activeCategories}
+          activeCategory={activeCategory}
+          onCategoryChange={handleCategoryChange}
+          playlists={activePlaylists}
+          activePlaylist={activePlaylist}
+          onPlaylistChange={setActivePlaylist}
+          availableResolutions={availableResolutions}
+          activeResolution={activeResolution}
+          onResolutionChange={setActiveResolution}
+          activeSort={activeSort}
+          onSortChange={setActiveSort}
+          searchQuery={searchQuery}
+          onSearchChange={setSearchQuery}
+          videoCounts={videoCounts}
+          gridColumns={gridColumns}
+          onGridColumnsChange={setGridColumns}
+          hasActiveFilters={hasActiveFilters}
+          onReset={handleReset}
+          onQuickAccess={(group, category, resolution) => {
+            setActiveGroup(group);
+            setActiveCategory(category);
+            setActivePlaylist('All');
+            setActiveResolution(resolution);
+          }}
+        />
       </div>
 
       {/* Home View: Latest Videos */}
@@ -340,10 +364,10 @@ function App() {
       {showScripts && (
         <ScriptsPage onClose={() => setShowScripts(false)} />
       )}
-      
+
       {/* Analytics Modal */}
       {showAnalytics && (
-        <AnalyticsDashboard onClose={() => setShowAnalytics(false)} allVideos={allVideos} />
+        <AnalyticsDashboard onClose={() => setShowAnalytics(false)} allVideos={allVideos} isMonitorSize={isMonitorSize} />
       )}
     </div>
   );
