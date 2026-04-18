@@ -20,6 +20,7 @@ function App() {
   const [showAnalytics, setShowAnalytics] = useState(false);
   const [playerMode, setPlayerMode] = useState('normal');
   const [isMonitorSize, setIsMonitorSize] = useState(false);
+  const [isMiniPlayer, setIsMiniPlayer] = useState(false);
 
   useEffect(() => {
     document.documentElement.style.zoom = isMonitorSize ? '1.75' : '1';
