@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-18T17:11:57.159Z",
+  "lastUpdated": "2026-04-18T17:20:08.488Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2787,6 +2787,30 @@
               "type": "Vintage",
               "date": "2025-10-07T01:37:00-07:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "ekAYewieHKA",
+              "title": "Mr Perfect Songs | Chali Chali Ga Allindi Video Song | Prabhas | Kajal Aggarwal | Telugu Movie Songs",
+              "thumbnail": "https://img.youtube.com/vi/ekAYewieHKA/maxresdefault.jpg",
+              "duration": "5:02",
+              "durationSec": 302,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2013-10-12T08:00:03-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "lwz5bMN8jX8",
+              "title": "Aarya-2 - Baby He Loves You Video | Allu Arjun | Devi Sri Prasad",
+              "thumbnail": "https://img.youtube.com/vi/lwz5bMN8jX8/maxresdefault.jpg",
+              "duration": "3:24",
+              "durationSec": 204,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2015-01-09T18:01:17-08:00",
+              "resolution": "1080p"
             }
           ],
           "Classics": [
@@ -2848,6 +2872,30 @@
               "category": "Telugu",
               "type": "Classics",
               "date": "2025-03-08T18:35:46-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "WlfLkcod13Y",
+              "title": "Muvvala Navvakala Song 4K | Pournami Movie Songs | Prabhas, Trisha | TeluguOne Music",
+              "thumbnail": "https://img.youtube.com/vi/WlfLkcod13Y/maxresdefault.jpg",
+              "duration": "5:07",
+              "durationSec": 307,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-10-22T21:30:18-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "zed5SZ2EiY0",
+              "title": "Ee Manase [4K] Full Video Song | Tholiprema | Pawan Kalyan, Keerthi Reddy | Deva | A. Karunakaran",
+              "thumbnail": "https://img.youtube.com/vi/zed5SZ2EiY0/maxresdefault.jpg",
+              "duration": "4:17",
+              "durationSec": 257,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2023-06-27T23:37:32-07:00",
               "resolution": "4K"
             }
           ]
