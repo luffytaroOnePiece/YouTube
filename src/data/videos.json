@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-18T04:24:11.247Z",
+  "lastUpdated": "2026-04-18T07:08:41.326Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -911,18 +911,6 @@
               "type": "Groovy",
               "date": "2025-09-11T22:30:30-07:00",
               "resolution": "8K"
-            },
-            {
-              "youtubeLinkID": "K4lziCo1Fr8",
-              "title": "Full Video: Meesaala Pilla | Mana ShankaraVaraPrasad Garu | Chiranjeevi | Nayanthara | Bheems Music",
-              "thumbnail": "https://img.youtube.com/vi/K4lziCo1Fr8/maxresdefault.jpg",
-              "duration": "4:06",
-              "durationSec": 246,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Groovy",
-              "date": "2026-02-01T21:30:22-08:00",
-              "resolution": "4K"
             },
             {
               "youtubeLinkID": "1_JNUlsEQEE",
@@ -2086,6 +2074,18 @@
               "category": "Telugu",
               "type": "Groovy",
               "date": "2026-04-16T07:30:44-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "A4anPJkdVTY",
+              "title": "Meesaala Pilla 8K Video | Mana ShankaraVaraPrasad Garu | Chiranjeevi | Nayanthara | Bheems Music",
+              "thumbnail": "https://img.youtube.com/vi/A4anPJkdVTY/maxresdefault.jpg",
+              "duration": "4:06",
+              "durationSec": 246,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-04-17T22:30:04-07:00",
               "resolution": "8K"
             }
           ],
@@ -3944,6 +3944,98 @@
             }
           ]
         },
+        "Live": {
+          "Tamil": [
+            {
+              "youtubeLinkID": "UreAN6Zxsdo",
+              "title": "Anirudh & Sublahshini's live performance of Monica Song | Coolie Song Launch Event",
+              "thumbnail": "https://img.youtube.com/vi/UreAN6Zxsdo/maxresdefault.jpg",
+              "duration": "1:45",
+              "durationSec": 105,
+              "group": "Music",
+              "category": "Live",
+              "type": "Tamil",
+              "date": "2025-07-23T09:05:45-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "byUbhCt952U",
+              "title": "Dhanush & Swetha Mohan's \"Vaa Vaathi\" Performance | Vaathi - Audio Launch | Best Moments | Sun TV",
+              "thumbnail": "https://img.youtube.com/vi/byUbhCt952U/maxresdefault.jpg",
+              "duration": "6:32",
+              "durationSec": 392,
+              "group": "Music",
+              "category": "Live",
+              "type": "Tamil",
+              "date": "2023-02-13T01:17:11-08:00",
+              "resolution": "1080p"
+            }
+          ],
+          "Hindi": [
+            {
+              "youtubeLinkID": "wEwKNS-JIPA",
+              "title": "Jaan Se Guzarte Hain (Live at Dhurandhar The Revenge -Music Album Launch)|Shashwat Sachdev,Khan Saab",
+              "thumbnail": "https://img.youtube.com/vi/wEwKNS-JIPA/maxresdefault.jpg",
+              "duration": "2:18",
+              "durationSec": 138,
+              "group": "Music",
+              "category": "Live",
+              "type": "Hindi",
+              "date": "2026-03-18T22:30:03-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "XGfRnU2sPyI",
+              "title": "Main Aur Tu (Live @ Dhurandhar The Revenge - Music Album Launch) | Shashwat Sachdev, Jasmine, Reble",
+              "thumbnail": "https://img.youtube.com/vi/XGfRnU2sPyI/maxresdefault.jpg",
+              "duration": "2:29",
+              "durationSec": 149,
+              "group": "Music",
+              "category": "Live",
+              "type": "Hindi",
+              "date": "2026-03-18T22:43:06-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "L6FKFGJI3Po",
+              "title": "Aari Aari (Live at Dhurandhar The Revenge - Music Album Launch) | Shashwat Sachdev, Bombay Rockers",
+              "thumbnail": "https://img.youtube.com/vi/L6FKFGJI3Po/maxresdefault.jpg",
+              "duration": "2:27",
+              "durationSec": 147,
+              "group": "Music",
+              "category": "Live",
+              "type": "Hindi",
+              "date": "2026-03-18T22:40:04-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "utm-FWimjoQ",
+              "title": "Jaiye Sajana (Live at Dhurandhar The Revenge - Music Album Launch)| Shashwat Sachdev,Jasmine Sandlas",
+              "thumbnail": "https://img.youtube.com/vi/utm-FWimjoQ/maxresdefault.jpg",
+              "duration": "1:56",
+              "durationSec": 116,
+              "group": "Music",
+              "category": "Live",
+              "type": "Hindi",
+              "date": "2026-03-18T22:33:13-07:00",
+              "resolution": "4K"
+            }
+          ],
+          "English": [
+            {
+              "youtubeLinkID": "VJPhmau5Vgk",
+              "title": "Sabrina Carpenter - Espresso / Please Please Please (Live From The 67th Grammy Awards / 2025)",
+              "thumbnail": "https://img.youtube.com/vi/VJPhmau5Vgk/maxresdefault.jpg",
+              "duration": "4:56",
+              "durationSec": 296,
+              "group": "Music",
+              "category": "Live",
+              "type": "English",
+              "date": "2025-02-18T12:25:00-08:00",
+              "resolution": "1080p"
+            }
+          ]
+        },
         "Others": {
           "Straight From The Studio": [
             {
@@ -4249,6 +4341,20 @@
               "type": "Malayalam",
               "date": "2022-02-25T05:30:12-08:00",
               "resolution": "1080p"
+            }
+          ],
+          "Bhojpuri": [
+            {
+              "youtubeLinkID": "iqp-qq8h8uc",
+              "title": "8K Version #Namrita Malla🌡️थर्मामीटर Tharmamiter | Latest Bhojpuri Song 2025 | Shilpi Raj | T-Series",
+              "thumbnail": "https://img.youtube.com/vi/iqp-qq8h8uc/maxresdefault.jpg",
+              "duration": "3:20",
+              "durationSec": 200,
+              "group": "Music",
+              "category": "Others",
+              "type": "Bhojpuri",
+              "date": "2025-06-21T00:27:30-07:00",
+              "resolution": "8K"
             }
           ]
         }
@@ -4797,6 +4903,149 @@
         }
       }
     },
+    "Movies": {
+      "icon": "",
+      "categories": {
+        "Telugu": {
+          "Classics": [
+            {
+              "youtubeLinkID": "glbn3fzBL8U",
+              "title": "Nuvvu Naaku Nachav Full Movie 4K | Venkatesh | Aarthi Agarwal | Trivikram | K Vijaya Bhaskar | Koti",
+              "thumbnail": "https://img.youtube.com/vi/glbn3fzBL8U/maxresdefault.jpg",
+              "duration": "3:07:29",
+              "durationSec": 11249,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2026-02-19T03:34:36-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "1DIrsAOkx1c",
+              "title": "Magadheera Telugu Full Movie | 4K | Dolby Audio | Ram Charan, Kajal Aggarwal, Dev Gill | SSRajamouli",
+              "thumbnail": "https://img.youtube.com/vi/1DIrsAOkx1c/maxresdefault.jpg",
+              "duration": "2:38:37",
+              "durationSec": 9517,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2024-03-31T23:15:10-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "G5ZNbNxs9Os",
+              "title": "Dookudu Telugu Full Movie 4K | Mahesh Babu | Samantha | Sonu Sood | Thaman S | Telugu New Movies",
+              "thumbnail": "https://img.youtube.com/vi/G5ZNbNxs9Os/maxresdefault.jpg",
+              "duration": "2:54:56",
+              "durationSec": 10496,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-12-30T06:00:06-08:00",
+              "resolution": "2K"
+            },
+            {
+              "youtubeLinkID": "h0dybrN-8Ys",
+              "title": "Bujjigadu Telugu Full Movie 4K | Prabhas | Mohan Babu | Trisha | Puri Jagannadh | Telugu New Movies",
+              "thumbnail": "https://img.youtube.com/vi/h0dybrN-8Ys/maxresdefault.jpg",
+              "duration": "2:25:18",
+              "durationSec": 8718,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-10-23T08:16:17-07:00",
+              "resolution": "2K"
+            },
+            {
+              "youtubeLinkID": "W03c_X8VcV0",
+              "title": "Naayak Latest Telugu Full Movie | Ram Charan, Kajal Agarwal, Amala Paul @SriBalajiMovies",
+              "thumbnail": "https://img.youtube.com/vi/W03c_X8VcV0/maxresdefault.jpg",
+              "duration": "2:35:10",
+              "durationSec": 9310,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2020-11-12T01:21:16-08:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "nf1OpDXnrCc",
+              "title": "Rebel Latest Telugu Full Movie | Prabhas, Tamanna, Deeksha Seth @SriBalajiMovies",
+              "thumbnail": "https://img.youtube.com/vi/nf1OpDXnrCc/maxresdefault.jpg",
+              "duration": "2:37:07",
+              "durationSec": 9427,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2020-11-12T21:54:38-08:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "b8dvhBPrGtw",
+              "title": "Mirchi Telugu Full Movie | Prabhas, Anushka Shetty, Richa Gangopadhyay@SriBalajiMovies",
+              "thumbnail": "https://img.youtube.com/vi/b8dvhBPrGtw/maxresdefault.jpg",
+              "duration": "2:39:48",
+              "durationSec": 9588,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2013-06-28T01:03:40-07:00",
+              "resolution": "4K"
+            }
+          ],
+          "Essentials": [
+            {
+              "youtubeLinkID": "yFKkN1uX4p8",
+              "title": "Race Gurram Telugu Full Movie 4K | Allu Arjun | Shruti Haasan | Thaman S | Telugu New Movies 2025",
+              "thumbnail": "https://img.youtube.com/vi/yFKkN1uX4p8/maxresdefault.jpg",
+              "duration": "2:41:59",
+              "durationSec": 9719,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Essentials",
+              "date": "2024-12-07T05:30:06-08:00",
+              "resolution": "2K"
+            },
+            {
+              "youtubeLinkID": "nVsJLEIMnmE",
+              "title": "Govindudu Andarivadele Latest Telugu Full Movie | Ram Charan, Kajal Agarwal @SriBalajiMovies",
+              "thumbnail": "https://img.youtube.com/vi/nVsJLEIMnmE/maxresdefault.jpg",
+              "duration": "2:25:46",
+              "durationSec": 8746,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Essentials",
+              "date": "2020-11-13T01:53:45-08:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "LS6XiINMc2s",
+              "title": "Srimanthudu Telugu Full Movie | Mahesh Babu | Shruti Haasan | Jagapathi Babu | Latest Telugu Movies",
+              "thumbnail": "https://img.youtube.com/vi/LS6XiINMc2s/maxresdefault.jpg",
+              "duration": "2:41:59",
+              "durationSec": 9719,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Essentials",
+              "date": "2017-09-13T04:00:03-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "GQ8hnfe5v_M",
+              "title": "DJ Duvvada Jagannadham | Telugu Full Movie 2017 | Allu Arjun, Pooja Hegde",
+              "thumbnail": "https://img.youtube.com/vi/GQ8hnfe5v_M/maxresdefault.jpg",
+              "duration": "2:23:04",
+              "durationSec": 8584,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Essentials",
+              "date": "2022-10-17T21:08:44-07:00",
+              "resolution": "1080p"
+            }
+          ]
+        }
+      }
+    },
     "Games": {
       "icon": "",
       "categories": {
@@ -4947,113 +5196,6 @@
               "type": "Gameplay",
               "date": "2024-05-06T09:00:18-07:00",
               "resolution": "4K"
-            }
-          ]
-        }
-      }
-    },
-    "Movies": {
-      "icon": "",
-      "categories": {
-        "Telugu": {
-          "Classics": [
-            {
-              "youtubeLinkID": "glbn3fzBL8U",
-              "title": "Nuvvu Naaku Nachav Full Movie 4K | Venkatesh | Aarthi Agarwal | Trivikram | K Vijaya Bhaskar | Koti",
-              "thumbnail": "https://img.youtube.com/vi/glbn3fzBL8U/maxresdefault.jpg",
-              "duration": "3:07:29",
-              "durationSec": 11249,
-              "group": "Movies",
-              "category": "Telugu",
-              "type": "Classics",
-              "date": "2026-02-19T03:34:36-08:00",
-              "resolution": "4K"
-            },
-            {
-              "youtubeLinkID": "1DIrsAOkx1c",
-              "title": "Magadheera Telugu Full Movie | 4K | Dolby Audio | Ram Charan, Kajal Aggarwal, Dev Gill | SSRajamouli",
-              "thumbnail": "https://img.youtube.com/vi/1DIrsAOkx1c/maxresdefault.jpg",
-              "duration": "2:38:37",
-              "durationSec": 9517,
-              "group": "Movies",
-              "category": "Telugu",
-              "type": "Classics",
-              "date": "2024-03-31T23:15:10-07:00",
-              "resolution": "4K"
-            },
-            {
-              "youtubeLinkID": "G5ZNbNxs9Os",
-              "title": "Dookudu Telugu Full Movie 4K | Mahesh Babu | Samantha | Sonu Sood | Thaman S | Telugu New Movies",
-              "thumbnail": "https://img.youtube.com/vi/G5ZNbNxs9Os/maxresdefault.jpg",
-              "duration": "2:54:56",
-              "durationSec": 10496,
-              "group": "Movies",
-              "category": "Telugu",
-              "type": "Classics",
-              "date": "2025-12-30T06:00:06-08:00",
-              "resolution": "2K"
-            },
-            {
-              "youtubeLinkID": "h0dybrN-8Ys",
-              "title": "Bujjigadu Telugu Full Movie 4K | Prabhas | Mohan Babu | Trisha | Puri Jagannadh | Telugu New Movies",
-              "thumbnail": "https://img.youtube.com/vi/h0dybrN-8Ys/maxresdefault.jpg",
-              "duration": "2:25:18",
-              "durationSec": 8718,
-              "group": "Movies",
-              "category": "Telugu",
-              "type": "Classics",
-              "date": "2025-10-23T08:16:17-07:00",
-              "resolution": "2K"
-            },
-            {
-              "youtubeLinkID": "W03c_X8VcV0",
-              "title": "Naayak Latest Telugu Full Movie | Ram Charan, Kajal Agarwal, Amala Paul @SriBalajiMovies",
-              "thumbnail": "https://img.youtube.com/vi/W03c_X8VcV0/maxresdefault.jpg",
-              "duration": "2:35:10",
-              "durationSec": 9310,
-              "group": "Movies",
-              "category": "Telugu",
-              "type": "Classics",
-              "date": "2020-11-12T01:21:16-08:00",
-              "resolution": "1080p"
-            }
-          ],
-          "Essentials": [
-            {
-              "youtubeLinkID": "yFKkN1uX4p8",
-              "title": "Race Gurram Telugu Full Movie 4K | Allu Arjun | Shruti Haasan | Thaman S | Telugu New Movies 2025",
-              "thumbnail": "https://img.youtube.com/vi/yFKkN1uX4p8/maxresdefault.jpg",
-              "duration": "2:41:59",
-              "durationSec": 9719,
-              "group": "Movies",
-              "category": "Telugu",
-              "type": "Essentials",
-              "date": "2024-12-07T05:30:06-08:00",
-              "resolution": "2K"
-            },
-            {
-              "youtubeLinkID": "nVsJLEIMnmE",
-              "title": "Govindudu Andarivadele Latest Telugu Full Movie | Ram Charan, Kajal Agarwal @SriBalajiMovies",
-              "thumbnail": "https://img.youtube.com/vi/nVsJLEIMnmE/maxresdefault.jpg",
-              "duration": "2:25:46",
-              "durationSec": 8746,
-              "group": "Movies",
-              "category": "Telugu",
-              "type": "Essentials",
-              "date": "2020-11-13T01:53:45-08:00",
-              "resolution": "1080p"
-            },
-            {
-              "youtubeLinkID": "LS6XiINMc2s",
-              "title": "Srimanthudu Telugu Full Movie | Mahesh Babu | Shruti Haasan | Jagapathi Babu | Latest Telugu Movies",
-              "thumbnail": "https://img.youtube.com/vi/LS6XiINMc2s/maxresdefault.jpg",
-              "duration": "2:41:59",
-              "durationSec": 9719,
-              "group": "Movies",
-              "category": "Telugu",
-              "type": "Essentials",
-              "date": "2017-09-13T04:00:03-07:00",
-              "resolution": "1080p"
             }
           ]
         }
