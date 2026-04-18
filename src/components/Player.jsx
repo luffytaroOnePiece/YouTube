@@ -28,7 +28,7 @@ function formatDate(dateStr) {
   }
 }
 
-export default function Player({ video, onClose }) {
+export default function Player({ video, onClose, isMiniPlayer, onToggleMini }) {
   // Close on ESC
   const handleKeyDown = useCallback(
     (e) => {
@@ -39,12 +39,16 @@ export default function Player({ video, onClose }) {
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyDown);
-    document.body.style.overflow = 'hidden';
+    if (!isMiniPlayer) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = '';
     };
-  }, [handleKeyDown]);
+  }, [handleKeyDown, isMiniPlayer]);
 
   if (!video) return null;
 
@@ -62,9 +66,9 @@ export default function Player({ video, onClose }) {
 
   return (
     <div
-      className="player-overlay"
+      className={`player-overlay ${isMiniPlayer ? 'mini' : ''}`}
       onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
+        if (!isMiniPlayer && e.target === e.currentTarget) onClose();
       }}
     >
       <div className="player-modal" onClick={(e) => e.stopPropagation()}>
@@ -72,15 +76,25 @@ export default function Player({ video, onClose }) {
         <div className="player-modal__header">
           <h2 className="player-modal__title">{video.title}</h2>
           <div className="player-modal__actions">
-            <a
-              href={youtubeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="player-modal__btn"
-              title="Open in YouTube"
+            {!isMiniPlayer && (
+              <a
+                href={youtubeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="player-modal__btn"
+                title="Open in YouTube"
+              >
+                ↗ YouTube
+              </a>
+            )}
+            <button
+              className="player-modal__close"
+              onClick={onToggleMini}
+              aria-label={isMiniPlayer ? "Expand player" : "Minimize player"}
+              title={isMiniPlayer ? "Expand" : "Minimize"}
             >
-              ↗ YouTube
-            </a>
+              {isMiniPlayer ? '↖' : '↘'}
+            </button>
             <button
               id="player-close-btn"
               className="player-modal__close"

@@ -18,6 +18,7 @@ function App() {
   const [gridColumns, setGridColumns] = useState(3);
   const [showScripts, setShowScripts] = useState(false);
   const [showAnalytics, setShowAnalytics] = useState(false);
+  const [isMiniPlayer, setIsMiniPlayer] = useState(false);
 
   // Parse grouped data
   const { allVideos, groups, groupMeta } = useMemo(() => {
@@ -184,6 +185,7 @@ function App() {
 
   const handleClosePlayer = useCallback(() => {
     setSelectedVideo(null);
+    setIsMiniPlayer(false);
   }, []);
 
   // ⌘K keyboard shortcut to focus search
@@ -330,6 +332,8 @@ function App() {
         <Player
           video={selectedVideo}
           onClose={handleClosePlayer}
+          isMiniPlayer={isMiniPlayer}
+          onToggleMini={() => setIsMiniPlayer((prev) => !prev)}
         />
       )}
       {/* Scripts Modal */}

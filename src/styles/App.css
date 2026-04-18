@@ -1569,6 +1569,54 @@ body::-webkit-scrollbar {
   letter-spacing: 0.5px;
 }
 
+/* ── Mini Player (PiP) State ───────────────────────────────── */
+.player-overlay.mini {
+  position: fixed;
+  inset: auto;
+  bottom: 24px;
+  right: 24px;
+  width: 380px;
+  height: auto;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  pointer-events: none;
+  padding: 0;
+  z-index: 1000;
+  animation: none;
+}
+
+.player-overlay.mini .player-modal {
+  pointer-events: auto;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-hover);
+}
+
+.player-overlay.mini .player-modal__info {
+  display: none;
+}
+
+.player-overlay.mini .player-modal__header {
+  padding: 10px 14px;
+}
+
+.player-overlay.mini .player-modal__title {
+  font-size: 0.85rem;
+  margin-right: 8px;
+}
+
+.player-overlay.mini .player-modal__close {
+  width: 28px;
+  height: 28px;
+  font-size: 1rem;
+}
+
+.player-overlay.mini .player-modal__actions {
+  gap: 6px;
+}
+
 /* ── Loading State ─────────────────────────────────────────── */
 .loading {
   display: flex;
