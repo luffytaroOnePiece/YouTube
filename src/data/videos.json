@@ -1,11 +1,23 @@
 {
-  "lastUpdated": "2026-04-18T07:08:41.326Z",
+  "lastUpdated": "2026-04-18T17:11:57.159Z",
   "groups": {
     "Music": {
       "icon": "",
       "categories": {
         "Telugu": {
           "Romance": [
+            {
+              "youtubeLinkID": "PmuQDnWT-WI",
+              "title": "Chinni Gundelo 8K Video | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
+              "thumbnail": "https://img.youtube.com/vi/PmuQDnWT-WI/maxresdefault.jpg",
+              "duration": "3:26",
+              "durationSec": 206,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2026-04-18T06:30:34-07:00",
+              "resolution": "8K"
+            },
             {
               "youtubeLinkID": "-DjBB2h9B5w",
               "title": "Jala Jala Jalapaatham Nuvvu 8K Video Song | Uppena Movie | Panja Vaisshnav Tej, Krithi Shetty | DSP",
@@ -29,6 +41,18 @@
               "type": "Romance",
               "date": "2026-03-28T07:30:06-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "yLKKz4-M_y8",
+              "title": "Endhayya Saami Special Surprise | Ranabaali |Vijay Deverakonda,Rashmika |Rahul Sankrityan |Ajay–Atul",
+              "thumbnail": "https://img.youtube.com/vi/yLKKz4-M_y8/maxresdefault.jpg",
+              "duration": "1:21",
+              "durationSec": 81,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2026-02-27T21:37:13-08:00",
+              "resolution": "4K"
             },
             {
               "youtubeLinkID": "bF_6ndNptU8",
@@ -64,18 +88,6 @@
               "category": "Telugu",
               "type": "Romance",
               "date": "2025-12-16T20:29:07-08:00",
-              "resolution": "4K"
-            },
-            {
-              "youtubeLinkID": "iBpSuQTJdaU",
-              "title": "Chinni Gundelo Video | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
-              "thumbnail": "https://img.youtube.com/vi/iBpSuQTJdaU/maxresdefault.jpg",
-              "duration": "3:26",
-              "durationSec": 206,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Romance",
-              "date": "2025-12-13T05:30:58-08:00",
               "resolution": "4K"
             },
             {
@@ -779,6 +791,18 @@
               "resolution": "8K"
             },
             {
+              "youtubeLinkID": "UY8LtHLvOY8",
+              "title": "Jajikaya Jajikaya Full Video Song | Akhanda 2 | NBK | Samyuktha | Boyapati Srinu | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/UY8LtHLvOY8/maxresdefault.jpg",
+              "duration": "3:43",
+              "durationSec": 223,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Item",
+              "date": "2025-12-24T21:40:07-08:00",
+              "resolution": "4K"
+            },
+            {
               "youtubeLinkID": "VzvqVR0NqRY",
               "title": "Motha Full Video | Gangs of Godavari |VishwakSen |Krishna Chaitanya |Chandrabose |Yuvan Shankar Raja",
               "thumbnail": "https://img.youtube.com/vi/VzvqVR0NqRY/maxresdefault.jpg",
@@ -873,6 +897,18 @@
               "type": "Item",
               "date": "2026-03-28T06:59:16-07:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "0PtKIQ6h_oA",
+              "title": "Lucky Lucky Rai - 8K Video Song | Balupu | Ravi Teja | Shruti Haasan | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/0PtKIQ6h_oA/maxresdefault.jpg",
+              "duration": "4:00",
+              "durationSec": 240,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Item",
+              "date": "2026-04-07T21:30:00-07:00",
+              "resolution": "8K"
             }
           ],
           "Groovy": [
@@ -2087,6 +2123,42 @@
               "type": "Groovy",
               "date": "2026-04-17T22:30:04-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "GQCMsSNKT6I",
+              "title": "Miami - Ma Ma Ma Ma Mia | Chal Mohan Ranga | Nithiin, Megha Akash | Thaman S | Adithi Singh Sharma",
+              "thumbnail": "https://img.youtube.com/vi/GQCMsSNKT6I/maxresdefault.jpg",
+              "duration": "3:23",
+              "durationSec": 203,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2023-07-01T07:00:08-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "8FOG4vhc8q8",
+              "title": "Nijame Ne Full Video | Ooru Peru Bhairavakona |Sundeep Kishan | Sid Sriram | VI Anand| ShekarChandra",
+              "thumbnail": "https://img.youtube.com/vi/8FOG4vhc8q8/maxresdefault.jpg",
+              "duration": "3:43",
+              "durationSec": 223,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2024-03-01T05:30:02-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "0QY2SNwB-cw",
+              "title": "Dhinaku Dhin Jiya 4K Video Song | Mirapakay Telugu Movie | Raviteja, Richagangopadhyay | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/0QY2SNwB-cw/maxresdefault.jpg",
+              "duration": "4:42",
+              "durationSec": 282,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2024-11-18T23:28:52-08:00",
+              "resolution": "4K"
             }
           ],
           "Energetic": [
@@ -2665,6 +2737,118 @@
               "type": "Energetic",
               "date": "2025-10-23T04:56:35-07:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "deY4ScoSyL8",
+              "title": "Pathikella Sundhari - 8K Video Song | Balupu | Ravi Teja | Shruti Haasan | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/deY4ScoSyL8/maxresdefault.jpg",
+              "duration": "4:03",
+              "durationSec": 243,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Energetic",
+              "date": "2026-04-07T03:30:33-07:00",
+              "resolution": "8K"
+            }
+          ],
+          "Vintage": [
+            {
+              "youtubeLinkID": "g77cefIJVCI",
+              "title": "Ellora Silpanni 4K Video Song | Billa [Telugu] | Prabhas,Hansika Motwani | Mani Sharma |Lahari Music",
+              "thumbnail": "https://img.youtube.com/vi/g77cefIJVCI/maxresdefault.jpg",
+              "duration": "4:07",
+              "durationSec": 247,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2025-10-15T05:10:03-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "YLcCryHUNOg",
+              "title": "Bommali 4K Video Song | Billa [Telugu] | Prabhas, Anushka | Mani Sharma | Lahari Music",
+              "thumbnail": "https://img.youtube.com/vi/YLcCryHUNOg/maxresdefault.jpg",
+              "duration": "5:00",
+              "durationSec": 300,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2025-10-10T01:55:04-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "pfNF2Vqr3l0",
+              "title": "My Name Is Billa 4K Video Song | Billa (Telugu) | Prabhas, Anushka Shetty | Mani Sharma",
+              "thumbnail": "https://img.youtube.com/vi/pfNF2Vqr3l0/maxresdefault.jpg",
+              "duration": "3:44",
+              "durationSec": 224,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2025-10-07T01:37:00-07:00",
+              "resolution": "4K"
+            }
+          ],
+          "Classics": [
+            {
+              "youtubeLinkID": "8hZTA4UOg7Y",
+              "title": "Darling - Bulle 8K 60FPS Video Song | Prabhas, Kajal Agarwal | G.V. Prakash Kumar",
+              "thumbnail": "https://img.youtube.com/vi/8hZTA4UOg7Y/maxresdefault.jpg",
+              "duration": "3:21",
+              "durationSec": 201,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2026-04-18T07:30:05-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "mfSmw116fcM",
+              "title": "8k songs 60fps Andamga lena (Telugu)full resolution 4k Godavari kamalinee Sumanth#TFI #new#trending",
+              "thumbnail": "https://img.youtube.com/vi/mfSmw116fcM/maxresdefault.jpg",
+              "duration": "4:14",
+              "durationSec": 254,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-07-01T01:14:36-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "y-JxeiXVFPQ",
+              "title": "8k UHD songs 60fps Nuvvem maya (Telugu) full resolution 4k Okkadu Mahesh bubu Boomika #TFI #trending",
+              "thumbnail": "https://img.youtube.com/vi/y-JxeiXVFPQ/maxresdefault.jpg",
+              "duration": "3:42",
+              "durationSec": 222,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-02-20T01:37:19-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "DqgYm73wPeY",
+              "title": "4k UHD songs 60fps Pachadanamey (Telugu)full resolution 8k Sakhi shalini #TFI#trending#new",
+              "thumbnail": "https://img.youtube.com/vi/DqgYm73wPeY/maxresdefault.jpg",
+              "duration": "5:31",
+              "durationSec": 331,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-03-02T18:59:47-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "EjUIt9sFku8",
+              "title": "8k songs 60fps Chinnaga Chinnaga (Telugu)full resolution 4k Thagur chiranjeevi #TFI#trending#new",
+              "thumbnail": "https://img.youtube.com/vi/EjUIt9sFku8/maxresdefault.jpg",
+              "duration": "5:22",
+              "durationSec": 322,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-03-08T18:35:46-08:00",
+              "resolution": "4K"
             }
           ]
         },
@@ -3045,6 +3229,18 @@
               "type": "Groovy",
               "date": "2019-01-02T04:31:14-08:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "Cm982XjYm1c",
+              "title": "Eiffel Mele - 8K Video Song | Thozha | Karthi | Nagarjuna | Tamannaah | Gopi Sundar",
+              "thumbnail": "https://img.youtube.com/vi/Cm982XjYm1c/maxresdefault.jpg",
+              "duration": "3:55",
+              "durationSec": 235,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2026-01-31T20:30:16-08:00",
+              "resolution": "8K"
             }
           ],
           "Item": [
@@ -3607,6 +3803,18 @@
               "type": "Item",
               "date": "2025-05-26T22:20:43-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "0jwO-6ap2Wc",
+              "title": "SAJNA VE SAJNA (Flip): Shehnaaz Gill | Sunidhi Chauhan,Divya Kumar | DJ Lijo | Sandesh S | Bhushan K",
+              "thumbnail": "https://img.youtube.com/vi/0jwO-6ap2Wc/maxresdefault.jpg",
+              "duration": "3:14",
+              "durationSec": 194,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Item",
+              "date": "2024-12-12T05:30:08-08:00",
+              "resolution": "4K"
             }
           ],
           "Groovy": [
@@ -3705,6 +3913,18 @@
               "type": "Groovy",
               "date": "2026-03-10T07:05:31-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "VQB_r-Y3BXk",
+              "title": "8K Remastered - Tip Tip Barsa Paani | Katrina Kaif, Akshay Kumar | Sooryavanshi",
+              "thumbnail": "https://img.youtube.com/vi/VQB_r-Y3BXk/maxresdefault.jpg",
+              "duration": "2:45",
+              "durationSec": 165,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2023-10-28T07:30:11-07:00",
+              "resolution": "8K"
             }
           ],
           "Energetic": [
@@ -3778,6 +3998,18 @@
               "category": "Hindi",
               "type": "Energetic",
               "date": "2025-11-02T01:32:25-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "jmzr_dJJcjw",
+              "title": "Dholida - 8K Video | Gangubai Kathiawadi | Sanjay Leela Bhansali | Alia Bhatt | Ajay Devgn",
+              "thumbnail": "https://img.youtube.com/vi/jmzr_dJJcjw/maxresdefault.jpg",
+              "duration": "3:01",
+              "durationSec": 181,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Energetic",
+              "date": "2025-06-30T01:30:32-07:00",
               "resolution": "8K"
             }
           ],
@@ -4032,6 +4264,66 @@
               "category": "Live",
               "type": "English",
               "date": "2025-02-18T12:25:00-08:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "2Ndra-1Pwug",
+              "title": "Shakira & Wyclef Jean - Hips Don't Lie (Live from LMYNL World Tour)",
+              "thumbnail": "https://img.youtube.com/vi/2Ndra-1Pwug/maxresdefault.jpg",
+              "duration": "4:56",
+              "durationSec": 296,
+              "group": "Music",
+              "category": "Live",
+              "type": "English",
+              "date": "2025-05-15T13:51:51-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "3GvjV7I-DEk",
+              "title": "Ed Sheeran - Sapphire (Live from Marseille)",
+              "thumbnail": "https://img.youtube.com/vi/3GvjV7I-DEk/maxresdefault.jpg",
+              "duration": "4:11",
+              "durationSec": 251,
+              "group": "Music",
+              "category": "Live",
+              "type": "English",
+              "date": "2025-06-24T08:00:05-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "o9-4zW_r9AE",
+              "title": "Clean Bandit - 'Rockabye' feat. Anne-Marie and Sean Paul (Live At Capital's Summertime Ball)",
+              "thumbnail": "https://img.youtube.com/vi/o9-4zW_r9AE/maxresdefault.jpg",
+              "duration": "4:37",
+              "durationSec": 277,
+              "group": "Music",
+              "category": "Live",
+              "type": "English",
+              "date": "2017-06-11T05:06:04-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "FrA98gZGbDI",
+              "title": "Anne Marie - Ciao Adios (Radio 1's Big Weekend 2017)",
+              "thumbnail": "https://img.youtube.com/vi/FrA98gZGbDI/maxresdefault.jpg",
+              "duration": "3:43",
+              "durationSec": 223,
+              "group": "Music",
+              "category": "Live",
+              "type": "English",
+              "date": "2017-05-28T09:19:36-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "-DkJMa7QkGY",
+              "title": "Tyla - Water (Live from The Tonight Show Starring Jimmy Fallon)",
+              "thumbnail": "https://img.youtube.com/vi/-DkJMa7QkGY/maxresdefault.jpg",
+              "duration": "3:41",
+              "durationSec": 221,
+              "group": "Music",
+              "category": "Live",
+              "type": "English",
+              "date": "2023-10-26T12:37:38-07:00",
               "resolution": "1080p"
             }
           ]
@@ -4341,6 +4633,18 @@
               "type": "Malayalam",
               "date": "2022-02-25T05:30:12-08:00",
               "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "8kf8WAmMrDM",
+              "title": "Hey Sinamika - Thozhi 8K/4K Video Song | DULQUER SALMAAN | KAJAL AGRAWAL | GOVIND VASANTHA",
+              "thumbnail": "https://img.youtube.com/vi/8kf8WAmMrDM/maxresdefault.jpg",
+              "duration": "4:04",
+              "durationSec": 244,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2025-12-17T06:30:06-08:00",
+              "resolution": "8K"
             }
           ],
           "Bhojpuri": [
