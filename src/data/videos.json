@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-17T13:46:39.404Z",
+  "lastUpdated": "2026-04-18T04:24:11.247Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -4200,6 +4200,56 @@
               "date": "2024-11-30T21:57:31-08:00",
               "resolution": "4K"
             }
+          ],
+          "Malayalam": [
+            {
+              "youtubeLinkID": "5BMvVvk2aGA",
+              "title": "Neela Nilave - 8K Video | RDX | Kapil Kapilan | Sam CS | Shane Nigam,Antony Varghese,Neeraj Madhav",
+              "thumbnail": "https://img.youtube.com/vi/5BMvVvk2aGA/maxresdefault.jpg",
+              "duration": "4:13",
+              "durationSec": 253,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2025-06-10T05:30:05-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "dR9B_gPxjkk",
+              "title": "Kiliye Kiliye - Video Song | Lokah Chapter 1: Chandra | Kalyani Priyadarshan | Naslen | Dominic Arun",
+              "thumbnail": "https://img.youtube.com/vi/dR9B_gPxjkk/maxresdefault.jpg",
+              "duration": "2:05",
+              "durationSec": 125,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2025-11-04T02:58:07-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "XPWu3f_BWYI",
+              "title": "Kannil Video Song | Rachel | Anandhini Bala | Honey Rose | Roshan | Ishaan Chhabra | Ahi | Jeevan",
+              "thumbnail": "https://img.youtube.com/vi/XPWu3f_BWYI/maxresdefault.jpg",
+              "duration": "3:35",
+              "durationSec": 215,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2025-11-20T04:30:08-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "xyUxkUPe2xg",
+              "title": "Nagumo Video Song |Hridayam |Pranav |Darshana |Kalyani |Hesham |Arvind Venugopal|Tyagaraja|Merryland",
+              "thumbnail": "https://img.youtube.com/vi/xyUxkUPe2xg/maxresdefault.jpg",
+              "duration": "2:51",
+              "durationSec": 171,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2022-02-25T05:30:12-08:00",
+              "resolution": "1080p"
+            }
           ]
         }
       }
@@ -4897,6 +4947,113 @@
               "type": "Gameplay",
               "date": "2024-05-06T09:00:18-07:00",
               "resolution": "4K"
+            }
+          ]
+        }
+      }
+    },
+    "Movies": {
+      "icon": "",
+      "categories": {
+        "Telugu": {
+          "Classics": [
+            {
+              "youtubeLinkID": "glbn3fzBL8U",
+              "title": "Nuvvu Naaku Nachav Full Movie 4K | Venkatesh | Aarthi Agarwal | Trivikram | K Vijaya Bhaskar | Koti",
+              "thumbnail": "https://img.youtube.com/vi/glbn3fzBL8U/maxresdefault.jpg",
+              "duration": "3:07:29",
+              "durationSec": 11249,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2026-02-19T03:34:36-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "1DIrsAOkx1c",
+              "title": "Magadheera Telugu Full Movie | 4K | Dolby Audio | Ram Charan, Kajal Aggarwal, Dev Gill | SSRajamouli",
+              "thumbnail": "https://img.youtube.com/vi/1DIrsAOkx1c/maxresdefault.jpg",
+              "duration": "2:38:37",
+              "durationSec": 9517,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2024-03-31T23:15:10-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "G5ZNbNxs9Os",
+              "title": "Dookudu Telugu Full Movie 4K | Mahesh Babu | Samantha | Sonu Sood | Thaman S | Telugu New Movies",
+              "thumbnail": "https://img.youtube.com/vi/G5ZNbNxs9Os/maxresdefault.jpg",
+              "duration": "2:54:56",
+              "durationSec": 10496,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-12-30T06:00:06-08:00",
+              "resolution": "2K"
+            },
+            {
+              "youtubeLinkID": "h0dybrN-8Ys",
+              "title": "Bujjigadu Telugu Full Movie 4K | Prabhas | Mohan Babu | Trisha | Puri Jagannadh | Telugu New Movies",
+              "thumbnail": "https://img.youtube.com/vi/h0dybrN-8Ys/maxresdefault.jpg",
+              "duration": "2:25:18",
+              "durationSec": 8718,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-10-23T08:16:17-07:00",
+              "resolution": "2K"
+            },
+            {
+              "youtubeLinkID": "W03c_X8VcV0",
+              "title": "Naayak Latest Telugu Full Movie | Ram Charan, Kajal Agarwal, Amala Paul @SriBalajiMovies",
+              "thumbnail": "https://img.youtube.com/vi/W03c_X8VcV0/maxresdefault.jpg",
+              "duration": "2:35:10",
+              "durationSec": 9310,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2020-11-12T01:21:16-08:00",
+              "resolution": "1080p"
+            }
+          ],
+          "Essentials": [
+            {
+              "youtubeLinkID": "yFKkN1uX4p8",
+              "title": "Race Gurram Telugu Full Movie 4K | Allu Arjun | Shruti Haasan | Thaman S | Telugu New Movies 2025",
+              "thumbnail": "https://img.youtube.com/vi/yFKkN1uX4p8/maxresdefault.jpg",
+              "duration": "2:41:59",
+              "durationSec": 9719,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Essentials",
+              "date": "2024-12-07T05:30:06-08:00",
+              "resolution": "2K"
+            },
+            {
+              "youtubeLinkID": "nVsJLEIMnmE",
+              "title": "Govindudu Andarivadele Latest Telugu Full Movie | Ram Charan, Kajal Agarwal @SriBalajiMovies",
+              "thumbnail": "https://img.youtube.com/vi/nVsJLEIMnmE/maxresdefault.jpg",
+              "duration": "2:25:46",
+              "durationSec": 8746,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Essentials",
+              "date": "2020-11-13T01:53:45-08:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "LS6XiINMc2s",
+              "title": "Srimanthudu Telugu Full Movie | Mahesh Babu | Shruti Haasan | Jagapathi Babu | Latest Telugu Movies",
+              "thumbnail": "https://img.youtube.com/vi/LS6XiINMc2s/maxresdefault.jpg",
+              "duration": "2:41:59",
+              "durationSec": 9719,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Essentials",
+              "date": "2017-09-13T04:00:03-07:00",
+              "resolution": "1080p"
             }
           ]
         }

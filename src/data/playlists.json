@@ -28,7 +28,8 @@
       },
       "Others": {
         "Straight From The Studio": "PLk-aMlMwXfRxyI38CSiTZKDssEXoopXQB",
-        "Dance Covers": "PLk-aMlMwXfRw3uLULtPnxYbi7NhqSpTWs"
+        "Dance Covers": "PLk-aMlMwXfRw3uLULtPnxYbi7NhqSpTWs",
+        "Malayalam": "PLk-aMlMwXfRz_dJhj0myagrGddDgdimf7"
       }
     }
   },
@@ -41,6 +42,15 @@
       },
       "Aerial Drone Shots": {
         "Timelab Pro": "PLA8Y5hhRksHx-wYbldVlDMvxhACWgUSQo"
+      }
+    }
+  },
+  "Movies": {
+    "icon": "",
+    "categories": {
+      "Telugu": {
+        "Classics": "PLk-aMlMwXfRwXfk5v3HabUWpVUP9j9q45",
+        "Essentials": "PLk-aMlMwXfRzIbt3SOocDSV67o5_cw0kr"
       }
     }
   },
