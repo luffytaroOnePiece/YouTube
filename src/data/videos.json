@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T02:30:38.460Z",
+  "lastUpdated": "2026-04-19T02:36:08.545Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -5589,6 +5589,18 @@
               "type": "Hindi",
               "date": "2025-08-12T01:30:00-07:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "Pb2KJlBGids",
+              "title": "Dhurandhar 2: The Revenge - Official Trailer | Releasing on 19th March at PVR INOX!",
+              "thumbnail": "https://img.youtube.com/vi/Pb2KJlBGids/maxresdefault.jpg",
+              "duration": "3:26",
+              "durationSec": 206,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Hindi",
+              "date": "2026-03-06T21:47:38-08:00",
+              "resolution": "1080p"
             }
           ],
           "Telugu": [
@@ -5710,6 +5722,30 @@
               "category": "Trailers",
               "type": "Telugu",
               "date": "2020-12-31T21:30:00-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "zjlCyAibeWg",
+              "title": "Toxic Official Telugu Teaser | Rocking Star Yash | Geetu Mohandas | KVN | Monster Mind Creations",
+              "thumbnail": "https://img.youtube.com/vi/zjlCyAibeWg/maxresdefault.jpg",
+              "duration": "1:56",
+              "durationSec": 116,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Telugu",
+              "date": "2026-02-19T20:05:01-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "aF08WVSvCok",
+              "title": "Toxic: Introducing Raya | Rocking Star Yash| Geetu Mohandas| KVN Productions| Monster Mind Creations",
+              "thumbnail": "https://img.youtube.com/vi/aF08WVSvCok/maxresdefault.jpg",
+              "duration": "2:52",
+              "durationSec": 172,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Telugu",
+              "date": "2026-01-07T20:40:00-08:00",
               "resolution": "4K"
             }
           ]
