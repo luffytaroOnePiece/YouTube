@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-18T17:32:57.152Z",
+  "lastUpdated": "2026-04-19T02:30:38.460Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2065,18 +2065,6 @@
               "resolution": "4K"
             },
             {
-              "youtubeLinkID": "tAR31ROj4hw",
-              "title": "Darling - Neeve 8K 60 FPS Video Song | Prabhas, Kajal Agarwal | G.V. Prakash Kumar",
-              "thumbnail": "https://img.youtube.com/vi/tAR31ROj4hw/maxresdefault.jpg",
-              "duration": "3:20",
-              "durationSec": 200,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Groovy",
-              "date": "2026-04-16T07:30:44-07:00",
-              "resolution": "8K"
-            },
-            {
               "youtubeLinkID": "A4anPJkdVTY",
               "title": "Meesaala Pilla 8K Video | Mana ShankaraVaraPrasad Garu | Chiranjeevi | Nayanthara | Bheems Music",
               "thumbnail": "https://img.youtube.com/vi/A4anPJkdVTY/maxresdefault.jpg",
@@ -2787,6 +2775,18 @@
               "type": "Vintage",
               "date": "2025-04-22T19:34:32-07:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "tAR31ROj4hw",
+              "title": "Darling - Neeve 8K 60 FPS Video Song | Prabhas, Kajal Agarwal | G.V. Prakash Kumar",
+              "thumbnail": "https://img.youtube.com/vi/tAR31ROj4hw/maxresdefault.jpg",
+              "duration": "3:20",
+              "durationSec": 200,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2026-04-16T07:30:44-07:00",
+              "resolution": "8K"
             }
           ],
           "Classics": [
@@ -4695,6 +4695,18 @@
           ],
           "Malayalam": [
             {
+              "youtubeLinkID": "4jOTGhJ00NI",
+              "title": "Minnalvala 8K Video Song | Narivetta | Tovino Thomas | Anuraj Manohar | Jakes Bejoy",
+              "thumbnail": "https://img.youtube.com/vi/4jOTGhJ00NI/maxresdefault.jpg",
+              "duration": "3:43",
+              "durationSec": 223,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2025-09-14T07:30:11-07:00",
+              "resolution": "8K"
+            },
+            {
               "youtubeLinkID": "5BMvVvk2aGA",
               "title": "Neela Nilave - 8K Video | RDX | Kapil Kapilan | Sam CS | Shane Nigam,Antony Varghese,Neeraj Madhav",
               "thumbnail": "https://img.youtube.com/vi/5BMvVvk2aGA/maxresdefault.jpg",
@@ -4729,6 +4741,42 @@
               "type": "Malayalam",
               "date": "2025-11-20T04:30:08-08:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "c854uO02zb4",
+              "title": "Thudarum - Kanmanipoove 8K/4K Video Song | Mohanlal | Jakes Bejoy | Shobana | M.G Sreekumar",
+              "thumbnail": "https://img.youtube.com/vi/c854uO02zb4/maxresdefault.jpg",
+              "duration": "4:04",
+              "durationSec": 244,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2025-10-10T05:31:00-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "pmwNOiES7KE",
+              "title": "Nenjodu Cherthu 8K/4K Video Song | Yuvvh  | Nivin Pauly | Nazriya Nazim | Malayalam Pop Music",
+              "thumbnail": "https://img.youtube.com/vi/pmwNOiES7KE/maxresdefault.jpg",
+              "duration": "4:48",
+              "durationSec": 288,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2025-09-19T05:30:08-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "NARy7CVSfZo",
+              "title": "Arikil Pathiye - 8K/4K Video Song |Oru Murai Vanthu Paarthaya|Unni Mukundan|PrayagaMartin|VinuThomas",
+              "thumbnail": "https://img.youtube.com/vi/NARy7CVSfZo/maxresdefault.jpg",
+              "duration": "4:28",
+              "durationSec": 268,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2026-01-10T03:30:21-08:00",
+              "resolution": "8K"
             },
             {
               "youtubeLinkID": "xyUxkUPe2xg",
@@ -5453,6 +5501,216 @@
               "type": "Essentials",
               "date": "2022-10-17T21:08:44-07:00",
               "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "-V0boH3bQ8c",
+              "title": "Akhil Akkineni And Nidhhi Agerwal Telugu Comedy Love Full Length Movie || Ajay || Matinee Show",
+              "thumbnail": "https://img.youtube.com/vi/-V0boH3bQ8c/maxresdefault.jpg",
+              "duration": "1:52:11",
+              "durationSec": 6731,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Essentials",
+              "date": "2023-10-04T06:00:00-07:00",
+              "resolution": "1080p"
+            }
+          ]
+        },
+        "Trailers": {
+          "Hindi": [
+            {
+              "youtubeLinkID": "XW1RkKiRnsg",
+              "title": "Bhooth Bangla -Official Trailer| Akshay Kumar, Tabu, Paresh, Wamiqa, Priyadarshan |In Cinemas 16 Apr",
+              "thumbnail": "https://img.youtube.com/vi/XW1RkKiRnsg/maxresdefault.jpg",
+              "duration": "3:04",
+              "durationSec": 184,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Hindi",
+              "date": "2026-04-06T01:32:51-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "V5jVntRVl-0",
+              "title": "BRAHMĀSTRA OFFICIAL TRAILER 4K | Hindi | Amitabh | Ranbir | Alia | Ayan | In Cinemas 9th September",
+              "thumbnail": "https://img.youtube.com/vi/V5jVntRVl-0/maxresdefault.jpg",
+              "duration": "2:52",
+              "durationSec": 172,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Hindi",
+              "date": "2022-06-19T04:03:52-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "vqu4z34wENw",
+              "title": "Pathaan Trailer | Shah Rukh Khan | Deepika Padukone | John Abraham | Siddharth A | YRF Spy Universe",
+              "thumbnail": "https://img.youtube.com/vi/vqu4z34wENw/maxresdefault.jpg",
+              "duration": "2:34",
+              "durationSec": 154,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Hindi",
+              "date": "2023-01-09T21:30:08-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "6mdxy3zohEk",
+              "title": "#RockyAurRaniKiiPremKahaani - OFFICIAL TRAILER | Dharmendra, Jaya, Shabana, Ranveer, Alia | Karan",
+              "thumbnail": "https://img.youtube.com/vi/6mdxy3zohEk/maxresdefault.jpg",
+              "duration": "3:22",
+              "durationSec": 202,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Hindi",
+              "date": "2023-07-03T23:30:09-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "59aIp7SfIIk",
+              "title": "De De Pyaar De 2 - Official Trailer | Ajay Devgn, R. Madhavan, Rakul Preet, Meezaan Jafri | 14th Nov",
+              "thumbnail": "https://img.youtube.com/vi/59aIp7SfIIk/maxresdefault.jpg",
+              "duration": "3:04",
+              "durationSec": 184,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Hindi",
+              "date": "2025-10-14T06:30:06-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "fdWnfzsx-ks",
+              "title": "Param Sundari - Official Trailer | Sidharth M | Janhvi K | Dinesh V | Tushar J | In Cinemas 29th Aug",
+              "thumbnail": "https://img.youtube.com/vi/fdWnfzsx-ks/maxresdefault.jpg",
+              "duration": "2:40",
+              "durationSec": 160,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Hindi",
+              "date": "2025-08-12T01:30:00-07:00",
+              "resolution": "4K"
+            }
+          ],
+          "Telugu": [
+            {
+              "youtubeLinkID": "i-8w5yDwukA",
+              "title": "The Raja Saab Telugu Trailer | Prabhas | Maruthi | Thaman S | TG Vishwa Prasad | Jan 9 2026",
+              "thumbnail": "https://img.youtube.com/vi/i-8w5yDwukA/maxresdefault.jpg",
+              "duration": "3:34",
+              "durationSec": 214,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Telugu",
+              "date": "2025-09-29T05:30:27-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "8oYxBZaHzZw",
+              "title": "Baahubali - The Epic Release Trailer (Telugu) | Prabhas, Rana | SS Rajamouli | 31st October 2025",
+              "thumbnail": "https://img.youtube.com/vi/8oYxBZaHzZw/maxresdefault.jpg",
+              "duration": "2:41",
+              "durationSec": 161,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Telugu",
+              "date": "2025-10-27T05:01:22-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "ndIlwPeOHNs",
+              "title": "Darling (Telugu) - Re-release Trailer | Prabhas, Kajal Aggarwal | G.V.Prakash Kumar | A. Karunakaran",
+              "thumbnail": "https://img.youtube.com/vi/ndIlwPeOHNs/maxresdefault.jpg",
+              "duration": "2:31",
+              "durationSec": 151,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Telugu",
+              "date": "2026-04-11T01:13:00-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "DMD2uthghWE",
+              "title": "VARANASI to the WORLD - Mahesh Babu | Priyanka Chopra | Prithviraj | SS Rajamouli | MM Keeravaani",
+              "thumbnail": "https://img.youtube.com/vi/DMD2uthghWE/maxresdefault.jpg",
+              "duration": "3:41",
+              "durationSec": 221,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Telugu",
+              "date": "2025-11-15T09:15:27-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "_8J8LwoVH_0",
+              "title": "They Call Him OG Trailer - Pawan Kalyan | Emraan Hashmi | Sujeeth | Thaman S | DVV Danayya |",
+              "thumbnail": "https://img.youtube.com/vi/_8J8LwoVH_0/maxresdefault.jpg",
+              "duration": "2:40",
+              "durationSec": 160,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Telugu",
+              "date": "2025-09-22T01:55:04-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "93rwTuhwwLA",
+              "title": "Mirai Trailer - Telugu | Teja Sajja | Manchu Manoj | Karthik Gattamneni | PMF | 12th September",
+              "thumbnail": "https://img.youtube.com/vi/93rwTuhwwLA/maxresdefault.jpg",
+              "duration": "3:12",
+              "durationSec": 192,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Telugu",
+              "date": "2025-09-05T04:14:33-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "dRvmrYh6lZc",
+              "title": "Baahubali - The Epic Release Trailer 2 (Telugu) | Prabhas, Rana | SS Rajamouli | 31st October 2025",
+              "thumbnail": "https://img.youtube.com/vi/dRvmrYh6lZc/maxresdefault.jpg",
+              "duration": "2:22",
+              "durationSec": 142,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Telugu",
+              "date": "2025-10-28T10:04:32-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "A4CbAkPb468",
+              "title": "Mana ShankaraVaraPrasad Garu Official Trailer | Chiranjeevi | Venkatesh | Nayanthara | Anil Ravipudi",
+              "thumbnail": "https://img.youtube.com/vi/A4CbAkPb468/maxresdefault.jpg",
+              "duration": "2:31",
+              "durationSec": 151,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Telugu",
+              "date": "2026-01-05T23:30:05-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "XLChRsR5KKQ",
+              "title": "K-RAMP Trailer | Kiran Abbavaraam | Yukti Thareja | Jains Nani | Razesh Danda | Chaitan Bharadwaj",
+              "thumbnail": "https://img.youtube.com/vi/XLChRsR5KKQ/maxresdefault.jpg",
+              "duration": "2:46",
+              "durationSec": 166,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Telugu",
+              "date": "2025-10-13T01:34:23-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "EAvpSWmoPSA",
+              "title": "Krack Movie Trailer - Raviteja, Shruti Hassan | Gopichand Malineni | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/EAvpSWmoPSA/maxresdefault.jpg",
+              "duration": "2:11",
+              "durationSec": 131,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Telugu",
+              "date": "2020-12-31T21:30:00-08:00",
+              "resolution": "4K"
             }
           ]
         }
