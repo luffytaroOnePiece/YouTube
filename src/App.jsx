@@ -149,8 +149,48 @@ function App() {
     }
 
     if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase().trim();
-      videos = videos.filter((v) => v.title.toLowerCase().includes(q));
+      let q = searchQuery.toLowerCase().trim();
+      let resFilter = null;
+      let afterFilter = null;
+      let typeFilter = null;
+
+      // Extract inline filters
+      const resMatch = q.match(/res:(\S+)/);
+      if (resMatch) {
+        resFilter = resMatch[1];
+        q = q.replace(resMatch[0], '').trim();
+      }
+
+      const afterMatch = q.match(/after:(\d{4})/);
+      if (afterMatch) {
+        afterFilter = parseInt(afterMatch[1], 10);
+        q = q.replace(afterMatch[0], '').trim();
+      }
+
+      const typeMatch = q.match(/type:(\S+)/);
+      if (typeMatch) {
+        typeFilter = typeMatch[1];
+        q = q.replace(typeMatch[0], '').trim();
+      }
+
+      videos = videos.filter((v) => {
+        // Apply parsed inline filters
+        if (resFilter && (!v.resolution || v.resolution.toLowerCase() !== resFilter)) return false;
+        if (afterFilter) {
+          if (!v.date) return false;
+          const year = new Date(v.date).getFullYear();
+          if (year < afterFilter) return false;
+        }
+        if (typeFilter && (!v.type || !v.type.toLowerCase().includes(typeFilter))) return false;
+
+        // Default query: title + type combined
+        if (q) {
+          const combinedText = `${v.title || ''} ${v.type || ''}`.toLowerCase();
+          if (!combinedText.includes(q)) return false;
+        }
+
+        return true;
+      });
     }
 
     if (activeResolution !== 'All') {
