@@ -4,16 +4,23 @@ import VideoGrid from './components/VideoGrid';
 import Player from './components/Player';
 import ScriptsPage from './components/ScriptsPage';
 import AnalyticsDashboard from './components/AnalyticsDashboard';
+import { useUrlFilters } from './hooks/useUrlFilters';
 import videosData from './data/videos.json';
 import './styles/App.css';
 
+const INITIAL_FILTERS = {
+  group: 'All',
+  category: 'All',
+  playlist: 'All',
+  resolution: 'All',
+  search: '',
+  sort: 'Newest First'
+};
+
 function App() {
-  const [activeGroup, setActiveGroup] = useState('All');
-  const [activeCategory, setActiveCategory] = useState('All');
-  const [activePlaylist, setActivePlaylist] = useState('All');
-  const [activeResolution, setActiveResolution] = useState('All');
-  const [searchQuery, setSearchQuery] = useState('');
-  const [activeSort, setActiveSort] = useState('Newest First');
+  const [filters, setFilters] = useUrlFilters(INITIAL_FILTERS);
+  const { group: activeGroup, category: activeCategory, playlist: activePlaylist, resolution: activeResolution, search: searchQuery, sort: activeSort } = filters;
+
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [gridColumns, setGridColumns] = useState(3);
   const [showScripts, setShowScripts] = useState(false);
@@ -166,24 +173,16 @@ function App() {
   const hasActiveFilters = activeGroup !== 'All' || activeResolution !== 'All' || searchQuery.trim();
 
   const handleGroupChange = useCallback((group) => {
-    setActiveGroup(group);
-    setActiveCategory('All');
-    setActivePlaylist('All');
-  }, []);
+    setFilters({ group, category: 'All', playlist: 'All' });
+  }, [setFilters]);
 
   const handleCategoryChange = useCallback((cat) => {
-    setActiveCategory(cat);
-    setActivePlaylist('All');
-  }, []);
+    setFilters({ category: cat, playlist: 'All' });
+  }, [setFilters]);
 
   const handleReset = useCallback(() => {
-    setActiveGroup('All');
-    setActiveCategory('All');
-    setActivePlaylist('All');
-    setActiveResolution('All');
-    setActiveSort('Newest First');
-    setSearchQuery('');
-  }, []);
+    setFilters(INITIAL_FILTERS);
+  }, [setFilters]);
 
   const handleVideoSelect = useCallback((video) => {
     setSelectedVideo(video);
@@ -234,13 +233,13 @@ function App() {
                 className="header__search-input"
                 placeholder="Search videos..."
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e) => setFilters({ search: e.target.value })}
                 autoComplete="off"
               />
               {searchQuery ? (
                 <button
                   className="header__search-clear"
-                  onClick={() => setSearchQuery('')}
+                  onClick={() => setFilters({ search: '' })}
                   aria-label="Clear search"
                 >
                   ✕
@@ -306,24 +305,21 @@ function App() {
           onCategoryChange={handleCategoryChange}
           playlists={activePlaylists}
           activePlaylist={activePlaylist}
-          onPlaylistChange={setActivePlaylist}
+          onPlaylistChange={(playlist) => setFilters({ playlist })}
           availableResolutions={availableResolutions}
           activeResolution={activeResolution}
-          onResolutionChange={setActiveResolution}
+          onResolutionChange={(resolution) => setFilters({ resolution })}
           activeSort={activeSort}
-          onSortChange={setActiveSort}
+          onSortChange={(sort) => setFilters({ sort })}
           searchQuery={searchQuery}
-          onSearchChange={setSearchQuery}
+          onSearchChange={(search) => setFilters({ search })}
           videoCounts={videoCounts}
           gridColumns={gridColumns}
           onGridColumnsChange={setGridColumns}
           hasActiveFilters={hasActiveFilters}
           onReset={handleReset}
           onQuickAccess={(group, category, resolution) => {
-            setActiveGroup(group);
-            setActiveCategory(category);
-            setActivePlaylist('All');
-            setActiveResolution(resolution);
+            setFilters({ group, category, playlist: 'All', resolution });
           }}
         />
       </div>
