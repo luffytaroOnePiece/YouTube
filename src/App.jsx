@@ -352,6 +352,8 @@ function App() {
       {selectedVideo && (
         <Player
           video={selectedVideo}
+          allVideos={allVideos}
+          onVideoSelect={handleVideoSelect}
           onClose={handleClosePlayer}
           isMiniPlayer={isMiniPlayer}
           onToggleMini={() => setIsMiniPlayer((prev) => !prev)}

@@ -1,5 +1,6 @@
 import React, { useEffect, useCallback } from 'react';
 import YouTube from 'react-youtube';
+import RelatedPanel from './RelatedPanel';
 
 function formatDate(dateStr) {
   if (!dateStr) return '';
@@ -28,7 +29,7 @@ function formatDate(dateStr) {
   }
 }
 
-export default function Player({ video, onClose, isMiniPlayer, onToggleMini }) {
+export default function Player({ video, allVideos, onVideoSelect, onClose, isMiniPlayer, onToggleMini }) {
   // Close on ESC
   const handleKeyDown = useCallback(
     (e) => {
@@ -71,62 +72,74 @@ export default function Player({ video, onClose, isMiniPlayer, onToggleMini }) {
         if (!isMiniPlayer && e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="player-modal" onClick={(e) => e.stopPropagation()}>
-        {/* Header */}
-        <div className="player-modal__header">
-          <h2 className="player-modal__title">{video.title}</h2>
-          <div className="player-modal__actions">
-            {!isMiniPlayer && (
-              <a
-                href={youtubeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="player-modal__btn"
-                title="Open in YouTube"
+      <div className={`player-modal ${!isMiniPlayer ? 'player-modal--with-sidebar' : ''}`} onClick={(e) => e.stopPropagation()}>
+        <div className="player-modal__main">
+          {/* Header */}
+          <div className="player-modal__header">
+            <h2 className="player-modal__title">{video.title}</h2>
+            <div className="player-modal__actions">
+              {!isMiniPlayer && (
+                <a
+                  href={youtubeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="player-modal__btn"
+                  title="Open in YouTube"
+                >
+                  ↗ YouTube
+                </a>
+              )}
+              <button
+                className="player-modal__close"
+                onClick={onToggleMini}
+                aria-label={isMiniPlayer ? "Expand player" : "Minimize player"}
+                title={isMiniPlayer ? "Expand" : "Minimize"}
               >
-                ↗ YouTube
-              </a>
+                {isMiniPlayer ? '↖' : '↘'}
+              </button>
+              <button
+                id="player-close-btn"
+                className="player-modal__close"
+                onClick={onClose}
+                aria-label="Close player"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+
+          {/* Video */}
+          <div className="player-modal__video">
+            <YouTube
+              videoId={video.youtubeLinkID}
+              opts={youtubeOpts}
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            />
+          </div>
+
+          {/* Footer Info */}
+          <div className="player-modal__info">
+            <span className="player-modal__category-tag">{video.type}</span>
+            {video.date && (
+              <span className="player-modal__date" title={video.date}>
+                {formatDate(video.date)}
+              </span>
             )}
-            <button
-              className="player-modal__close"
-              onClick={onToggleMini}
-              aria-label={isMiniPlayer ? "Expand player" : "Minimize player"}
-              title={isMiniPlayer ? "Expand" : "Minimize"}
-            >
-              {isMiniPlayer ? '↖' : '↘'}
-            </button>
-            <button
-              id="player-close-btn"
-              className="player-modal__close"
-              onClick={onClose}
-              aria-label="Close player"
-            >
-              ✕
-            </button>
+            {video.duration && (
+              <span className="player-modal__date">⏱ {video.duration}</span>
+            )}
           </div>
         </div>
-
-        {/* Video */}
-        <div className="player-modal__video">
-          <YouTube
-            videoId={video.youtubeLinkID}
-            opts={youtubeOpts}
-            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-          />
-        </div>
-
-        {/* Footer Info */}
-        <div className="player-modal__info">
-          <span className="player-modal__category-tag">{video.type}</span>
-          {video.date && (
-            <span className="player-modal__date" title={video.date}>
-              {formatDate(video.date)}
-            </span>
-          )}
-          {video.duration && (
-            <span className="player-modal__date">⏱ {video.duration}</span>
-          )}
-        </div>
+        
+        {!isMiniPlayer && (
+          <div className="player-modal__sidebar-wrapper">
+            <RelatedPanel 
+              currentVideo={video} 
+              allVideos={allVideos} 
+              onVideoSelect={onVideoSelect} 
+            />
+          </div>
+        )}
       </div>
     </div>
   );
