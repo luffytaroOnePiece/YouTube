@@ -25,6 +25,8 @@ export default function FilterBar({
   onGridColumnsChange,
   hasActiveFilters,
   onReset,
+  shuffleActive,
+  onToggleShuffle,
   onQuickAccess,
 }) {
   // Build group options
@@ -107,6 +109,23 @@ export default function FilterBar({
             />
           )}
         </div>
+
+        {/* Shuffle button */}
+        <button
+          className={`filter-bar__reset ${shuffleActive ? 'filter-bar__reset--active' : ''}`}
+          onClick={onToggleShuffle}
+          title="Shuffle Videos"
+          style={shuffleActive ? { color: '#ff2d55', borderColor: '#ff2d55', background: 'rgba(255, 45, 85, 0.1)' } : {}}
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="16 3 21 3 21 8"></polyline>
+            <line x1="4" y1="20" x2="21" y2="3"></line>
+            <polyline points="21 16 21 21 16 21"></polyline>
+            <line x1="15" y1="15" x2="21" y2="21"></line>
+            <line x1="4" y1="4" x2="9" y2="9"></line>
+          </svg>
+          Shuffle
+        </button>
 
         {/* Reset button */}
         {hasActiveFilters && (

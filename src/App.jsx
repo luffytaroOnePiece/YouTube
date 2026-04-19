@@ -17,9 +17,21 @@ const INITIAL_FILTERS = {
   sort: 'Newest First'
 };
 
+// Seeded PRNG for stable shuffling
+function pseudoRandom(seed) {
+  let value = seed;
+  return function() {
+    value = (value * 9301 + 49297) % 233280;
+    return value / 233280;
+  };
+}
+
 function App() {
   const [filters, setFilters] = useUrlFilters(INITIAL_FILTERS);
   const { group: activeGroup, category: activeCategory, playlist: activePlaylist, resolution: activeResolution, search: searchQuery, sort: activeSort } = filters;
+
+  const [shuffleActive, setShuffleActive] = useState(false);
+  const [shuffleSeed, setShuffleSeed] = useState(1);
 
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [gridColumns, setGridColumns] = useState(3);
@@ -197,14 +209,22 @@ function App() {
       videos = videos.filter((v) => v.resolution === activeResolution);
     }
 
-    if (activeSort === 'Newest First') {
+    if (shuffleActive) {
+      const rng = pseudoRandom(shuffleSeed);
+      const shuffled = [...videos];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(rng() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      videos = shuffled;
+    } else if (activeSort === 'Newest First') {
       videos.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
     } else if (activeSort === 'Oldest First') {
       videos.sort((a, b) => new Date(a.date || 0) - new Date(b.date || 0));
     }
 
     return videos;
-  }, [activeGroup, activeCategory, activePlaylist, activeResolution, activeSort, searchQuery, allVideos]);
+  }, [activeGroup, activeCategory, activePlaylist, activeResolution, activeSort, searchQuery, allVideos, shuffleActive, shuffleSeed]);
 
   // Is home view (no filters active, no search)
   const isHomeView = activeGroup === 'All' && !searchQuery.trim();
@@ -222,7 +242,15 @@ function App() {
 
   const handleReset = useCallback(() => {
     setFilters(INITIAL_FILTERS);
+    setShuffleActive(false);
   }, [setFilters]);
+
+  const handleToggleShuffle = useCallback(() => {
+    setShuffleActive(prev => {
+      if (!prev) setShuffleSeed(Date.now());
+      return !prev;
+    });
+  }, []);
 
   const handleVideoSelect = useCallback((video) => {
     setSelectedVideo(video);
@@ -358,6 +386,8 @@ function App() {
           onGridColumnsChange={setGridColumns}
           hasActiveFilters={hasActiveFilters}
           onReset={handleReset}
+          shuffleActive={shuffleActive}
+          onToggleShuffle={handleToggleShuffle}
           onQuickAccess={(group, category, resolution) => {
             setFilters({ group, category, playlist: 'All', resolution });
           }}
