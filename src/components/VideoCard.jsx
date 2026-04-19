@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const FALLBACK_THUMBNAIL = 'data:image/svg+xml,' + encodeURIComponent(`
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
@@ -50,17 +50,42 @@ function formatAbsoluteDate(dateStr) {
 export default function VideoCard({ video, onClick, index }) {
   const [imgError, setImgError] = useState(false);
   const [imgLoaded, setImgLoaded] = useState(false);
+
+  // Hover Preview State
+  const [showIframe, setShowIframe] = useState(false);
+  const hoverTimeoutRef = useRef(null);
+
   const animationDelay = `${Math.min(index * 0.03, 0.5)}s`;
 
   const thumbnailSrc = imgError
     ? FALLBACK_THUMBNAIL
     : (video.thumbnail || `https://img.youtube.com/vi/${video.youtubeLinkID}/maxresdefault.jpg`);
 
+  const handleMouseEnter = () => {
+    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+    hoverTimeoutRef.current = setTimeout(() => {
+      setShowIframe(true);
+    }, 2000);
+  };
+
+  const handleMouseLeave = () => {
+    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+    setShowIframe(false);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+    };
+  }, []);
+
   return (
     <div
       id={`video-${video.youtubeLinkID}`}
       className="video-card"
       onClick={() => onClick(video)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       style={{ animationDelay }}
       role="button"
       tabIndex={0}
@@ -104,6 +129,17 @@ export default function VideoCard({ video, onClick, index }) {
             }
           }}
         />
+
+        {showIframe && (
+          <div className="video-card__iframe-overlay" style={{ position: 'absolute', inset: 0, zIndex: 5, pointerEvents: 'none', background: '#000' }}>
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${video.youtubeLinkID}?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&loop=1&playlist=${video.youtubeLinkID}&modestbranding=1&playsinline=1&iv_load_policy=3&showinfo=0&rel=0`}
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              style={{ width: '100%', height: '100%', pointerEvents: 'none', transform: 'scale(1.15)', transformOrigin: 'center' }}
+            />
+          </div>
+        )}
 
         {/* Watch indicator line */}
         <div className="video-card__progress" />
