@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T02:36:08.545Z",
+  "lastUpdated": "2026-04-19T05:23:58.691Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2111,6 +2111,42 @@
               "type": "Groovy",
               "date": "2024-11-18T23:28:52-08:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "B6KLh2G3dKM",
+              "title": "Sweety Sweety Video Song | Race Gurram | Allu Arjun, Shruti Haasan | S.S. Thaman",
+              "thumbnail": "https://img.youtube.com/vi/B6KLh2G3dKM/maxresdefault.jpg",
+              "duration": "4:23",
+              "durationSec": 263,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-04-08T05:35:31-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "VcM-QV1HfBA",
+              "title": "Chusa Nene - 8K Video Song | Pandavalu Pandavalu Thummeda | Manoj | Pranitha Subhash | Bappi Lahari",
+              "thumbnail": "https://img.youtube.com/vi/VcM-QV1HfBA/maxresdefault.jpg",
+              "duration": "4:40",
+              "durationSec": 280,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-02-24T21:05:19-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "--vhNen6sME",
+              "title": "Bella Bella - Video Song | Bhartha Mahasayulaku Wignyapthi | Ravi Teja | Ashika R | Bheems Ceciroleo",
+              "thumbnail": "https://img.youtube.com/vi/--vhNen6sME/maxresdefault.jpg",
+              "duration": "3:19",
+              "durationSec": 199,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-02-02T03:30:07-08:00",
+              "resolution": "4K"
             }
           ],
           "Energetic": [
@@ -2700,6 +2736,30 @@
               "category": "Telugu",
               "type": "Energetic",
               "date": "2026-04-07T03:30:33-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "BUV7KTSI584",
+              "title": "Cinema Choopistha Mama 8K Video Song | Race Gurram | Allu Arjun, Shruti Haasan | S.S. Thaman",
+              "thumbnail": "https://img.youtube.com/vi/BUV7KTSI584/maxresdefault.jpg",
+              "duration": "4:25",
+              "durationSec": 265,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Energetic",
+              "date": "2026-04-04T22:37:01-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "cd5IyXuSQ7g",
+              "title": "Nee Chuttu Chuttu - 8K Video Song | Skanda | Ram Pothineni, Sree Leela | Boyapati Sreenu | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/cd5IyXuSQ7g/maxresdefault.jpg",
+              "duration": "4:27",
+              "durationSec": 267,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Energetic",
+              "date": "2026-02-17T20:30:25-08:00",
               "resolution": "8K"
             }
           ],
@@ -3585,6 +3645,42 @@
               "type": "Romance",
               "date": "2025-11-01T00:39:05-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "NMegJueUzUk",
+              "title": "Gerua - 8K/4K Music Video | Shah Rukh Khan | Kajol | Dilwale | Arijit Singh, Antara Mitra | Pritam",
+              "thumbnail": "https://img.youtube.com/vi/NMegJueUzUk/maxresdefault.jpg",
+              "duration": "4:49",
+              "durationSec": 289,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Romance",
+              "date": "2025-07-10T03:30:25-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "cbr2i96Q4ak",
+              "title": "Enna Sona - 8K/4K Music Video | Shraddha Kapoor, Aditya Roy | Arijit Singh | OK Jaanu | A.R. Rahman",
+              "thumbnail": "https://img.youtube.com/vi/cbr2i96Q4ak/maxresdefault.jpg",
+              "duration": "3:48",
+              "durationSec": 228,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Romance",
+              "date": "2026-02-14T02:30:32-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "HkJvE6j1low",
+              "title": "8K Remastered - Guli Mata | Saad Lamjarred, Shreya Ghoshal, Jennifer Winget",
+              "thumbnail": "https://img.youtube.com/vi/HkJvE6j1low/maxresdefault.jpg",
+              "duration": "3:51",
+              "durationSec": 231,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Romance",
+              "date": "2024-03-09T20:21:07-08:00",
+              "resolution": "4K"
             }
           ],
           "Item": [
@@ -3923,6 +4019,30 @@
               "type": "Item",
               "date": "2024-12-12T05:30:08-08:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "sd1XTaoYTl4",
+              "title": "DUM DUM (Official Video): Ft. Jacqueline Fernandez | Jaani | Asees Kaur | Bunny | Bhushan Kumar",
+              "thumbnail": "https://img.youtube.com/vi/sd1XTaoYTl4/maxresdefault.jpg",
+              "duration": "3:46",
+              "durationSec": 226,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Item",
+              "date": "2025-06-30T22:30:07-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "9o_kyj5omQ4",
+              "title": "Jasmine Song (Hindi) | Martin | Dhruva Sarja | Giorgia Andriani | AP Arjun | Mani Sharma",
+              "thumbnail": "https://img.youtube.com/vi/9o_kyj5omQ4/maxresdefault.jpg",
+              "duration": "3:19",
+              "durationSec": 199,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Item",
+              "date": "2024-10-18T21:30:07-07:00",
+              "resolution": "4K"
             }
           ],
           "Groovy": [
@@ -4119,6 +4239,18 @@
               "type": "Energetic",
               "date": "2025-06-30T01:30:32-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "YvWKPU2mcLw",
+              "title": "Kala Chashma 8K Video | Baar Baar Dekho | Sidharth Malhotra & Katrina Kaif | Badshah & Neha Kakkar",
+              "thumbnail": "https://img.youtube.com/vi/YvWKPU2mcLw/maxresdefault.jpg",
+              "duration": "3:19",
+              "durationSec": 199,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Energetic",
+              "date": "2026-02-20T06:43:19-08:00",
+              "resolution": "8K"
             }
           ],
           "Mass": [
@@ -4281,6 +4413,22 @@
               "type": "Adrenaline",
               "date": "2022-02-23T05:15:01-08:00",
               "resolution": "1080p"
+            }
+          ]
+        },
+        "Kanada": {
+          "Item": [
+            {
+              "youtubeLinkID": "DkCJmFhzXeE",
+              "title": "Ra Ra Rakkamma [8K] Video | Vikrant Rona Kannada | Kichcha Sudeep | Jacqueline Fernandez | Anup",
+              "thumbnail": "https://img.youtube.com/vi/DkCJmFhzXeE/maxresdefault.jpg",
+              "duration": "3:46",
+              "durationSec": 226,
+              "group": "Music",
+              "category": "Kanada",
+              "type": "Item",
+              "date": "2025-09-11T04:30:13-07:00",
+              "resolution": "8K"
             }
           ]
         },
@@ -4695,18 +4843,6 @@
           ],
           "Malayalam": [
             {
-              "youtubeLinkID": "4jOTGhJ00NI",
-              "title": "Minnalvala 8K Video Song | Narivetta | Tovino Thomas | Anuraj Manohar | Jakes Bejoy",
-              "thumbnail": "https://img.youtube.com/vi/4jOTGhJ00NI/maxresdefault.jpg",
-              "duration": "3:43",
-              "durationSec": 223,
-              "group": "Music",
-              "category": "Others",
-              "type": "Malayalam",
-              "date": "2025-09-14T07:30:11-07:00",
-              "resolution": "8K"
-            },
-            {
               "youtubeLinkID": "5BMvVvk2aGA",
               "title": "Neela Nilave - 8K Video | RDX | Kapil Kapilan | Sam CS | Shane Nigam,Antony Varghese,Neeraj Madhav",
               "thumbnail": "https://img.youtube.com/vi/5BMvVvk2aGA/maxresdefault.jpg",
@@ -4741,42 +4877,6 @@
               "type": "Malayalam",
               "date": "2025-11-20T04:30:08-08:00",
               "resolution": "4K"
-            },
-            {
-              "youtubeLinkID": "c854uO02zb4",
-              "title": "Thudarum - Kanmanipoove 8K/4K Video Song | Mohanlal | Jakes Bejoy | Shobana | M.G Sreekumar",
-              "thumbnail": "https://img.youtube.com/vi/c854uO02zb4/maxresdefault.jpg",
-              "duration": "4:04",
-              "durationSec": 244,
-              "group": "Music",
-              "category": "Others",
-              "type": "Malayalam",
-              "date": "2025-10-10T05:31:00-07:00",
-              "resolution": "8K"
-            },
-            {
-              "youtubeLinkID": "pmwNOiES7KE",
-              "title": "Nenjodu Cherthu 8K/4K Video Song | Yuvvh  | Nivin Pauly | Nazriya Nazim | Malayalam Pop Music",
-              "thumbnail": "https://img.youtube.com/vi/pmwNOiES7KE/maxresdefault.jpg",
-              "duration": "4:48",
-              "durationSec": 288,
-              "group": "Music",
-              "category": "Others",
-              "type": "Malayalam",
-              "date": "2025-09-19T05:30:08-07:00",
-              "resolution": "8K"
-            },
-            {
-              "youtubeLinkID": "NARy7CVSfZo",
-              "title": "Arikil Pathiye - 8K/4K Video Song |Oru Murai Vanthu Paarthaya|Unni Mukundan|PrayagaMartin|VinuThomas",
-              "thumbnail": "https://img.youtube.com/vi/NARy7CVSfZo/maxresdefault.jpg",
-              "duration": "4:28",
-              "durationSec": 268,
-              "group": "Music",
-              "category": "Others",
-              "type": "Malayalam",
-              "date": "2026-01-10T03:30:21-08:00",
-              "resolution": "8K"
             },
             {
               "youtubeLinkID": "xyUxkUPe2xg",
@@ -5601,6 +5701,18 @@
               "type": "Hindi",
               "date": "2026-03-06T21:47:38-08:00",
               "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "YleIZgpTF6w",
+              "title": "Rama | Namit Malhotra’s Ramayana | Nitesh Tiwari | Ranbir, Yash, Hans Zimmer & A.R. Rahman",
+              "thumbnail": "https://img.youtube.com/vi/YleIZgpTF6w/maxresdefault.jpg",
+              "duration": "2:38",
+              "durationSec": 158,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Hindi",
+              "date": "2026-04-01T21:10:09-07:00",
+              "resolution": "4K"
             }
           ],
           "Telugu": [
