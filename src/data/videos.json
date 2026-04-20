@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20T02:03:17.184Z",
+  "lastUpdated": "2026-04-20T03:53:26.693Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2171,6 +2171,18 @@
               "type": "Groovy",
               "date": "2025-10-03T06:30:14-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "V2gppcj53q0",
+              "title": "Punnami Puvvai 8K Video Song | Rudhramadevi | Allu Arjun, Anushka, Rana | Shreya Ghoshal",
+              "thumbnail": "https://img.youtube.com/vi/V2gppcj53q0/maxresdefault.jpg",
+              "duration": "2:50",
+              "durationSec": 170,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-03-09T03:33:07-07:00",
+              "resolution": "8K"
             }
           ],
           "Energetic": [
@@ -3741,6 +3753,18 @@
               "type": "Romance",
               "date": "2024-03-09T20:21:07-08:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "p93O-umBg98",
+              "title": "Animal: Pehle Bhi Main 8K Video Song | Ranbir Kapoor,Tripti Dimri | Sandeep V | Vishal M | Bhushan K",
+              "thumbnail": "https://img.youtube.com/vi/p93O-umBg98/maxresdefault.jpg",
+              "duration": "4:09",
+              "durationSec": 249,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Romance",
+              "date": "2025-06-18T05:02:00-07:00",
+              "resolution": "8K"
             }
           ],
           "Item": [
@@ -4127,6 +4151,18 @@
               "type": "Item",
               "date": "2025-11-09T00:40:13-08:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "oiwcKjXXjQU",
+              "title": "O SAKI SAKI 8K Full Song | Batla House | Nora Fatehi,Tanishk,Neha K,Tulsi K, B Praak,Vishal-Shekhar",
+              "thumbnail": "https://img.youtube.com/vi/oiwcKjXXjQU/maxresdefault.jpg",
+              "duration": "3:10",
+              "durationSec": 190,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Item",
+              "date": "2025-09-07T02:01:39-07:00",
+              "resolution": "8K"
             }
           ],
           "Groovy": [
@@ -4249,6 +4285,54 @@
               "type": "Groovy",
               "date": "2022-01-23T21:00:10-08:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "U4K9guxEix4",
+              "title": "Bom Diggy Diggy 8K Video | Zack Knight | Kartik A | Sunny S | Jasmin Walia | Sonu Ke Titu Ki Sweety",
+              "thumbnail": "https://img.youtube.com/vi/U4K9guxEix4/maxresdefault.jpg",
+              "duration": "3:18",
+              "durationSec": 198,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2025-06-27T00:37:13-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "9pIXNy-pS10",
+              "title": "KHAIRIYAT 8K - BONUS TRACK | Sushant Singh Rajput, Shraddha Kapoor |Arijit Singh |Pritam |Chhichhore",
+              "thumbnail": "https://img.youtube.com/vi/9pIXNy-pS10/maxresdefault.jpg",
+              "duration": "3:46",
+              "durationSec": 226,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2025-07-23T04:36:57-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "gh8DuVpFeNE",
+              "title": "BB3: Jaana Samjho Na 8K Full Song | Kartik Aaryan, Triptii Dimri, Aditya R, Tulsi K, Lijo, DJ Chetas",
+              "thumbnail": "https://img.youtube.com/vi/gh8DuVpFeNE/maxresdefault.jpg",
+              "duration": "3:31",
+              "durationSec": 211,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2025-07-13T03:40:06-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "PZ-hA8EAB74",
+              "title": "Sunn Raha Hai Na Tu - Female Version 8K Full Video | Aashiqui 2 |Shreya Ghoshal |Aditya K,Shraddha K",
+              "thumbnail": "https://img.youtube.com/vi/PZ-hA8EAB74/maxresdefault.jpg",
+              "duration": "3:39",
+              "durationSec": 219,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2025-08-03T01:30:57-07:00",
+              "resolution": "8K"
             }
           ],
           "Energetic": [
@@ -4347,6 +4431,42 @@
               "type": "Energetic",
               "date": "2026-02-20T06:43:19-08:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "mPMcSc5bvkc",
+              "title": "Abhi Toh Party Shuru Hui Hai 8K Video: Badshah | Sonam Kapoor | Aastha | Khoobsurat | Dance Song",
+              "thumbnail": "https://img.youtube.com/vi/mPMcSc5bvkc/maxresdefault.jpg",
+              "duration": "2:54",
+              "durationSec": 174,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Energetic",
+              "date": "2025-07-06T07:11:10-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "sQAnGAFIuEY",
+              "title": "Teri Baaton Mein Aisa Uljha Jiya - 8K - Title Track | Shahid Kapoor,Kriti Sanon,Raghav,Tanishk,Asees",
+              "thumbnail": "https://img.youtube.com/vi/sQAnGAFIuEY/maxresdefault.jpg",
+              "duration": "2:34",
+              "durationSec": 154,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Energetic",
+              "date": "2025-07-10T02:30:56-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "mNh5-DUcjBE",
+              "title": "MILLIONAIRE SONG - 8K VIDEO | YO YO HONEY SINGH | GLORY | BHUSHAN KUMAR",
+              "thumbnail": "https://img.youtube.com/vi/mNh5-DUcjBE/maxresdefault.jpg",
+              "duration": "3:26",
+              "durationSec": 206,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Energetic",
+              "date": "2025-06-05T22:30:10-07:00",
+              "resolution": "8K"
             }
           ],
           "Mass": [
@@ -4444,6 +4564,68 @@
               "category": "Hindi",
               "type": "Mass",
               "date": "2026-04-17T04:20:53-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "_GFcWG0M-YM",
+              "title": "Animal: Arjan Vailly 8K Video Song | Ranbir Kapoor | Sandeep Vanga | Bhupinder B,Manan B | Bhushan K",
+              "thumbnail": "https://img.youtube.com/vi/_GFcWG0M-YM/maxresdefault.jpg",
+              "duration": "3:28",
+              "durationSec": 208,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2025-06-19T05:00:03-07:00",
+              "resolution": "8K"
+            }
+          ],
+          "Sad": [
+            {
+              "youtubeLinkID": "F2m4HPLvj-4",
+              "title": "JAIYE SAJANA (Video): Dhurandhar The Revenge | Shashwat Sachdev | Satinder Sartaaj | Jasmine Sandlas",
+              "thumbnail": "https://img.youtube.com/vi/F2m4HPLvj-4/maxresdefault.jpg",
+              "duration": "2:32",
+              "durationSec": 152,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2026-03-28T23:42:01-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "dzH-fG4murA",
+              "title": "Bekhayali 8K Full Song | Kabir Singh | Arijit Singh | Shahid K,Kiara A | Sandeep V |Sachet-Parampara",
+              "thumbnail": "https://img.youtube.com/vi/dzH-fG4murA/maxresdefault.jpg",
+              "duration": "5:54",
+              "durationSec": 354,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2025-08-21T04:30:36-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "bqW-mtsWnhk",
+              "title": "Animal:Saari Duniya Jalaa Denge 8K Video | Ranbir K, Bobby D | Sandeep V | B Praak,Jaani | Bhushan K",
+              "thumbnail": "https://img.youtube.com/vi/bqW-mtsWnhk/maxresdefault.jpg",
+              "duration": "5:46",
+              "durationSec": 346,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2025-06-21T04:25:22-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "sNGwuOR3PQQ",
+              "title": "Deewaana Deewaana 8K Full Video: Tere Ishk Mein | Dhanush, Kriti | AR Rahman | Aanand LR | Bhushan K",
+              "thumbnail": "https://img.youtube.com/vi/sNGwuOR3PQQ/maxresdefault.jpg",
+              "duration": "5:39",
+              "durationSec": 339,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2026-03-29T04:30:07-07:00",
               "resolution": "8K"
             }
           ]
@@ -4909,6 +5091,18 @@
               "type": "Straight From The Studio",
               "date": "2021-08-20T06:30:11-07:00",
               "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "cDuuYdJYIGY",
+              "title": "Sahiba 8K Full Video Song | Aditya Rikhari | Ankita Chhetri | T-Series",
+              "thumbnail": "https://img.youtube.com/vi/cDuuYdJYIGY/maxresdefault.jpg",
+              "duration": "3:03",
+              "durationSec": 183,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2025-07-11T22:30:08-07:00",
+              "resolution": "8K"
             }
           ],
           "Dance Covers": [
