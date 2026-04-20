@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20T01:48:20.720Z",
+  "lastUpdated": "2026-04-20T02:03:17.184Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2159,6 +2159,18 @@
               "type": "Groovy",
               "date": "2026-02-02T03:30:07-08:00",
               "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "6X5pJfqpWVk",
+              "title": "Elluvochi Godaramma - 8K Video Song | Valmiki | Varun Tej, Pooja Hegde | Mickey J. Meyer",
+              "thumbnail": "https://img.youtube.com/vi/6X5pJfqpWVk/maxresdefault.jpg",
+              "duration": "3:33",
+              "durationSec": 213,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2025-10-03T06:30:14-07:00",
+              "resolution": "8K"
             }
           ],
           "Energetic": [
@@ -2232,6 +2244,18 @@
               "category": "Telugu",
               "type": "Energetic",
               "date": "2024-08-30T03:29:08-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "vVDp1ulBKIk",
+              "title": "Chikiri Chikiri Video Song | Peddi | Ram Charan | Janhvi | Buchi Babu Sana | AR Rahman|Mohit Chauhan",
+              "thumbnail": "https://img.youtube.com/vi/vVDp1ulBKIk/maxresdefault.jpg",
+              "duration": "4:33",
+              "durationSec": 273,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Energetic",
+              "date": "2025-11-06T21:37:04-08:00",
               "resolution": "4K"
             },
             {
@@ -2760,6 +2784,18 @@
               "category": "Telugu",
               "type": "Energetic",
               "date": "2026-04-04T22:37:01-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "QZhyLl8dLI8",
+              "title": "Down Down 8K Video Song | Race Gurram | Allu Arjun, Shruti Haasan | S.S. Thaman",
+              "thumbnail": "https://img.youtube.com/vi/QZhyLl8dLI8/maxresdefault.jpg",
+              "duration": "3:59",
+              "durationSec": 239,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Energetic",
+              "date": "2026-04-03T03:01:06-07:00",
               "resolution": "8K"
             },
             {
@@ -3611,6 +3647,18 @@
               "resolution": "8K"
             },
             {
+              "youtubeLinkID": "UMFR2nAcego",
+              "title": "Pardesiya (8K/4K Music Video) Sidharth M, Janhvi K |Sachin-Jigar, Sonu Nigam, Krishnakali, Amitabh B",
+              "thumbnail": "https://img.youtube.com/vi/UMFR2nAcego/maxresdefault.jpg",
+              "duration": "2:54",
+              "durationSec": 174,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Romance",
+              "date": "2026-01-12T21:30:33-08:00",
+              "resolution": "8K"
+            },
+            {
               "youtubeLinkID": "81qmmlsIE3k",
               "title": "Aashiqui 2: Tum Hi Ho 8K Full Song | Aditya Roy Kapur | Shraddha Kapoor | Arijit Singh | Mithoon",
               "thumbnail": "https://img.youtube.com/vi/81qmmlsIE3k/maxresdefault.jpg",
@@ -4067,6 +4115,18 @@
               "type": "Item",
               "date": "2025-12-04T05:33:35-08:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "Svspj4Q6-5g",
+              "title": "Dabangg 2: Fevicol Se 8K Full Song | Salman Khan | Kareena Kapoor | Sonakshi Sinha",
+              "thumbnail": "https://img.youtube.com/vi/Svspj4Q6-5g/maxresdefault.jpg",
+              "duration": "4:36",
+              "durationSec": 276,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Item",
+              "date": "2025-11-09T00:40:13-08:00",
+              "resolution": "8K"
             }
           ],
           "Groovy": [
@@ -4325,6 +4385,42 @@
               "type": "Mass",
               "date": "2026-03-12T00:41:37-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "dESIGVxSSCE",
+              "title": "Dhurandhar The Revenge - AARI AARI (Video)| Ranveer Singh | Shashwat Sachdev,Bombay Rockers|Aditya D",
+              "thumbnail": "https://img.youtube.com/vi/dESIGVxSSCE/maxresdefault.jpg",
+              "duration": "2:44",
+              "durationSec": 164,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2026-03-11T23:42:17-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "47ooG3yi6dQ",
+              "title": "WILD RIDE (Full Video) | Dhurandhar The Revenge | Ranveer Singh | Shashwat Sachdev | Ellisar",
+              "thumbnail": "https://img.youtube.com/vi/47ooG3yi6dQ/maxresdefault.jpg",
+              "duration": "2:43",
+              "durationSec": 163,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2026-04-12T23:42:03-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "v84ZYg0mDyg",
+              "title": "Ramba Ho | Dhurandhar | Ranveer Singh, Shashwat Sachdev, Madhubanti Bagchi",
+              "thumbnail": "https://img.youtube.com/vi/v84ZYg0mDyg/maxresdefault.jpg",
+              "duration": "2:08",
+              "durationSec": 128,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2026-01-05T22:30:38-08:00",
+              "resolution": "4K"
             },
             {
               "youtubeLinkID": "8SHaqaYSY34",
@@ -4767,6 +4863,18 @@
               "resolution": "4K"
             },
             {
+              "youtubeLinkID": "CqDByohxbtA",
+              "title": "ARJN x KDS x FIFTY4 x RONN - KALYANI [ Official Lyrical Video ]",
+              "thumbnail": "https://img.youtube.com/vi/CqDByohxbtA/maxresdefault.jpg",
+              "duration": "4:02",
+              "durationSec": 242,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2025-11-10T10:30:24-08:00",
+              "resolution": "4K"
+            },
+            {
               "youtubeLinkID": "uhY2fqU_1yA",
               "title": "Koyila Music Video Alekhya Harika | Vinayshanmukh |Vijai Bulganin |Nitesh Krishnan| Cinegrindstudios",
               "thumbnail": "https://img.youtube.com/vi/uhY2fqU_1yA/maxresdefault.jpg",
@@ -4776,6 +4884,18 @@
               "category": "Others",
               "type": "Straight From The Studio",
               "date": "2025-06-16T07:43:35-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "55KzMQB6b18",
+              "title": "Aadu 3 Video Song | Sulthaan | Shaan Rahman | Midhun Manuel Thomas |Vijay Babu & Venu Kunnappilly",
+              "thumbnail": "https://img.youtube.com/vi/55KzMQB6b18/maxresdefault.jpg",
+              "duration": "4:34",
+              "durationSec": 274,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2026-03-14T07:30:06-07:00",
               "resolution": "4K"
             },
             {
@@ -5775,6 +5895,30 @@
               "resolution": "4K"
             },
             {
+              "youtubeLinkID": "NHk7scrb_9I",
+              "title": "Dhurandhar The Revenge Official Hindi Trailer | Ranveer S | Aditya D | Roaring In Cinemas Now",
+              "thumbnail": "https://img.youtube.com/vi/NHk7scrb_9I/maxresdefault.jpg",
+              "duration": "3:26",
+              "durationSec": 206,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Hindi",
+              "date": "2026-03-06T21:31:00-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "BKOVzHcjEIo",
+              "title": "Dhurandhar Official Trailer | Ranveer Singh | Aditya Dhar | Storming Cinemas Worldwide",
+              "thumbnail": "https://img.youtube.com/vi/BKOVzHcjEIo/maxresdefault.jpg",
+              "duration": "4:08",
+              "durationSec": 248,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Hindi",
+              "date": "2025-11-17T22:50:49-08:00",
+              "resolution": "4K"
+            },
+            {
               "youtubeLinkID": "Pb2KJlBGids",
               "title": "Dhurandhar 2: The Revenge - Official Trailer | Releasing on 19th March at PVR INOX!",
               "thumbnail": "https://img.youtube.com/vi/Pb2KJlBGids/maxresdefault.jpg",
@@ -5906,6 +6050,18 @@
               "category": "Trailers",
               "type": "Telugu",
               "date": "2025-10-13T01:34:23-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "z7PJpctfx3Q",
+              "title": "Bhartha Mahasayulaku Wignyapthi Trailer | Ravi Teja | Kishore Tirumala | Ashika | Dimple",
+              "thumbnail": "https://img.youtube.com/vi/z7PJpctfx3Q/maxresdefault.jpg",
+              "duration": "2:20",
+              "durationSec": 140,
+              "group": "Movies",
+              "category": "Trailers",
+              "type": "Telugu",
+              "date": "2026-01-07T03:16:32-08:00",
               "resolution": "4K"
             },
             {
