@@ -82,6 +82,43 @@ app.get('/api/jobs/:id', (req, res) => {
   res.json(job);
 });
 
+// GET /api/fav — get favorites
+app.get('/api/fav', (req, res) => {
+  try {
+    const favFile = path.join(__dirname, '../src/data/fav.json');
+    if (!fs.existsSync(favFile)) return res.json([]);
+    const data = JSON.parse(fs.readFileSync(favFile, 'utf-8'));
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/fav — toggle favorite
+app.post('/api/fav', (req, res) => {
+  try {
+    const { videoId } = req.body;
+    if (!videoId) return res.status(400).json({ error: 'videoId required' });
+    
+    const favFile = path.join(__dirname, '../src/data/fav.json');
+    let data = [];
+    if (fs.existsSync(favFile)) {
+      data = JSON.parse(fs.readFileSync(favFile, 'utf-8'));
+    }
+    
+    if (data.includes(videoId)) {
+      data = data.filter(id => id !== videoId);
+    } else {
+      data.push(videoId);
+    }
+    
+    fs.writeFileSync(favFile, JSON.stringify(data, null, 2), 'utf-8');
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`\n🚀 YouTube Library API running at http://localhost:${PORT}`);
@@ -89,5 +126,6 @@ app.listen(PORT, () => {
   console.log(`   GET  /api/playlists  — View playlists config`);
   console.log(`   GET  /api/stats      — Video stats`);
   console.log(`   POST /api/fetch      — Start fetch job`);
-  console.log(`   GET  /api/jobs/:id   — Check job status\n`);
+  console.log(`   GET  /api/jobs/:id   — Check job status`);
+  console.log(`   GET/POST /api/fav    — Manage favorites\n`);
 });

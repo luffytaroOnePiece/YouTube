@@ -1,7 +1,7 @@
 import React from 'react';
 import VideoCard from './VideoCard';
 
-export default function VideoGrid({ videos, onVideoSelect, gridColumns }) {
+export default function VideoGrid({ videos, onVideoSelect, gridColumns, isLocal, favorites, onToggleFav }) {
   if (!videos || videos.length === 0) {
     return (
       <div className="empty-state">
@@ -26,6 +26,9 @@ export default function VideoGrid({ videos, onVideoSelect, gridColumns }) {
           video={video}
           onClick={onVideoSelect}
           index={index}
+          isLocal={isLocal}
+          isFav={favorites?.includes(video.youtubeLinkID)}
+          onToggleFav={onToggleFav}
         />
       ))}
     </div>

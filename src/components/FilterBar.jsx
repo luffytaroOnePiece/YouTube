@@ -28,6 +28,7 @@ export default function FilterBar({
   shuffleActive,
   onToggleShuffle,
   onQuickAccess,
+  isLocal,
 }) {
   // Build group options
   const groupOptions = [
@@ -146,6 +147,14 @@ export default function FilterBar({
         <div className="filter-bar__quick-group">
           <div className="filter-bar__divider" />
           <span className="filter-bar__quick-label">Quick Access</span>
+          {isLocal && (
+            <button
+              className={`filter-bar__quick-chip ${activeGroup === 'Favorites' ? 'filter-bar__quick-chip--active' : ''}`}
+              onClick={() => activeGroup === 'Favorites' ? onReset() : onQuickAccess('Favorites', 'All', 'All')}
+            >
+              ❤️ Favorites
+            </button>
+          )}
           <button
             className={`filter-bar__quick-chip ${isTeluguActive ? 'filter-bar__quick-chip--active' : ''}`}
             onClick={() => isTeluguActive ? onReset() : onQuickAccess('Music', 'Telugu', 'All')}

@@ -30,6 +30,37 @@ function App() {
   const [filters, setFilters] = useUrlFilters(INITIAL_FILTERS);
   const { group: activeGroup, category: activeCategory, playlist: activePlaylist, resolution: activeResolution, search: searchQuery, sort: activeSort } = filters;
 
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const [favorites, setFavorites] = useState([]);
+
+  useEffect(() => {
+    if (isLocal) {
+      fetch('http://localhost:3001/api/fav')
+        .then(res => res.json())
+        .then(data => setFavorites(Array.isArray(data) ? data : []))
+        .catch(err => console.error('Error fetching favs:', err));
+    }
+  }, [isLocal]);
+
+  const handleToggleFav = useCallback((video) => {
+    if (!isLocal) return;
+    const videoId = video.youtubeLinkID;
+    
+    // Optimistic update
+    setFavorites(prev => 
+      prev.includes(videoId) ? prev.filter(id => id !== videoId) : [...prev, videoId]
+    );
+
+    fetch('http://localhost:3001/api/fav', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ videoId }),
+    })
+      .then(res => res.json())
+      .then(data => setFavorites(Array.isArray(data) ? data : []))
+      .catch(console.error);
+  }, [isLocal]);
+
   const [shuffleActive, setShuffleActive] = useState(false);
   const [shuffleSeed, setShuffleSeed] = useState(1);
 
@@ -138,7 +169,9 @@ function App() {
   const filteredVideos = useMemo(() => {
     let videos;
 
-    if (activeGroup === 'All') {
+    if (activeGroup === 'Favorites') {
+      videos = allVideos.filter(v => favorites.includes(v.youtubeLinkID));
+    } else if (activeGroup === 'All') {
       videos = allVideos;
     } else {
       const group = videosData.groups[activeGroup];
@@ -436,6 +469,7 @@ function App() {
           onQuickAccess={(group, category, resolution) => {
             setFilters({ group, category, playlist: 'All', resolution });
           }}
+          isLocal={isLocal}
         />
       </div>
 
@@ -450,6 +484,9 @@ function App() {
             videos={latestVideos}
             onVideoSelect={handleVideoSelect}
             gridColumns={gridColumns}
+            isLocal={isLocal}
+            favorites={favorites}
+            onToggleFav={handleToggleFav}
           />
         </section>
       )}
@@ -460,6 +497,9 @@ function App() {
           videos={filteredVideos}
           onVideoSelect={handleVideoSelect}
           gridColumns={gridColumns}
+          isLocal={isLocal}
+          favorites={favorites}
+          onToggleFav={handleToggleFav}
         />
       )}
 

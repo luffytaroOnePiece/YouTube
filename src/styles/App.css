@@ -1400,6 +1400,53 @@ body::-webkit-scrollbar {
   transition: width 0.3s ease;
 }
 
+.video-card__fav-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.2s ease;
+  transform: translateY(-5px);
+}
+
+.video-card:hover .video-card__fav-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.video-card__fav-btn--active {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  background: rgba(255, 45, 85, 0.15);
+  border-color: rgba(255, 45, 85, 0.3);
+}
+
+.video-card__fav-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.video-card__fav-btn svg {
+  width: 16px;
+  height: 16px;
+  transition: all 0.2s ease;
+}
+
+.video-card__fav-btn:active svg {
+  transform: scale(0.85);
+}
+
 .video-card__play-overlay {
   position: absolute;
   inset: 0;
