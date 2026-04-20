@@ -40,6 +40,7 @@ function App() {
   const [playerMode, setPlayerMode] = useState('normal');
   const [isMonitorSize, setIsMonitorSize] = useState(false);
   const [isMiniPlayer, setIsMiniPlayer] = useState(false);
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
 
   useEffect(() => {
     document.documentElement.style.zoom = isMonitorSize ? '1.75' : '1';
@@ -302,18 +303,62 @@ function App() {
                 placeholder="Search videos..."
                 value={searchQuery}
                 onChange={(e) => setFilters({ search: e.target.value })}
+                onFocus={() => setIsSearchFocused(true)}
+                onBlur={() => setTimeout(() => setIsSearchFocused(false), 200)}
                 autoComplete="off"
               />
-              {searchQuery ? (
-                <button
-                  className="header__search-clear"
-                  onClick={() => setFilters({ search: '' })}
-                  aria-label="Clear search"
-                >
-                  ✕
-                </button>
-              ) : (
-                <kbd className="header__search-kbd">⌘K</kbd>
+              <div className="header__search-actions">
+                <div className="header__search-tips" title="Search tips">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  <div className="header__search-tips-content">
+                    <strong>Search Filters</strong>
+                    <div><code>res:8K</code> (Quality)</div>
+                    <div><code>after:2020</code> (Year)</div>
+                    <div><code>type:music</code> (Type)</div>
+                    <div style={{ marginTop: '6px' }}><small>Example: <code>avatar res:8K after:2022</code></small></div>
+                  </div>
+                </div>
+
+                {searchQuery ? (
+                  <button
+                    className="header__search-clear"
+                    onClick={() => setFilters({ search: '' })}
+                    aria-label="Clear search"
+                  >
+                    ✕
+                  </button>
+                ) : (
+                  <kbd className="header__search-kbd">⌘K</kbd>
+                )}
+              </div>
+
+              {/* Suggestions Dropdown */}
+              {isSearchFocused && searchQuery.trim() && (
+                <div className="header__search-suggestions">
+                  {filteredVideos.length > 0 ? (
+                    filteredVideos.slice(0, 5).map((v) => (
+                      <div 
+                        key={v.id || v.title} 
+                        className="search-suggestion"
+                        onMouseDown={() => setFilters({ search: v.title })}
+                      >
+                        <svg className="suggestion-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                          <circle cx="11" cy="11" r="8" />
+                          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                        <span className="suggestion-text">{v.title}</span>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="search-suggestion suggestion-empty">
+                      No matching videos found
+                    </div>
+                  )}
+                </div>
               )}
             </div>
             <div className="header__right">
