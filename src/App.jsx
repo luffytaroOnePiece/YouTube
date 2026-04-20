@@ -297,25 +297,22 @@ function App() {
     });
   }, []);
 
-  // Build queue from related videos algorithm
+  // Build queue — strictly same type AND category only
   const buildQueue = useCallback((video, videos) => {
     if (!video || !videos) return [];
-    let pool = videos.filter(v => v.youtubeLinkID !== video.youtubeLinkID);
-    let related = pool.filter(v => v.type === video.type);
-    if (related.length < 8) {
-      const existingIds = new Set(related.map(v => v.youtubeLinkID));
-      const remaining = pool.filter(v => !existingIds.has(v.youtubeLinkID));
-      related = [...related, ...remaining];
-    }
+    const pool = videos.filter(v =>
+      v.youtubeLinkID !== video.youtubeLinkID &&
+      v.group === video.group &&
+      v.type === video.type &&
+      v.category === video.category
+    );
     const currentMs = video.date ? new Date(video.date).getTime() : 0;
-    related.sort((a, b) => {
-      if (a.type === video.type && b.type !== video.type) return -1;
-      if (a.type !== video.type && b.type === video.type) return 1;
+    pool.sort((a, b) => {
       const aMs = a.date ? new Date(a.date).getTime() : 0;
       const bMs = b.date ? new Date(b.date).getTime() : 0;
       return Math.abs(aMs - currentMs) - Math.abs(bMs - currentMs);
     });
-    return related.slice(0, 15);
+    return pool;
   }, []);
 
   const handleVideoSelect = useCallback((video) => {
@@ -334,9 +331,10 @@ function App() {
     const nextVideo = queue[0];
     const remainingQueue = queue.slice(1);
     // Append more videos based on the new currentVideo to keep the queue populated
+    const usedIds = new Set([nextVideo.youtubeLinkID, ...remainingQueue.map(q => q.youtubeLinkID)]);
     const newRelated = allVideos
-      .filter(v => v.youtubeLinkID !== nextVideo.youtubeLinkID && !remainingQueue.some(q => q.youtubeLinkID === v.youtubeLinkID))
-      .filter(v => v.type === nextVideo.type)
+      .filter(v => !usedIds.has(v.youtubeLinkID))
+      .filter(v => v.group === nextVideo.group && v.type === nextVideo.type && v.category === nextVideo.category)
       .slice(0, 5);
     setSelectedVideo(nextVideo);
     setQueue([...remainingQueue, ...newRelated].slice(0, 15));

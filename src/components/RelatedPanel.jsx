@@ -4,36 +4,20 @@ export default function RelatedPanel({ currentVideo, allVideos, onVideoSelect })
   const relatedVideos = useMemo(() => {
     if (!currentVideo || !allVideos) return [];
 
-    let pool = allVideos.filter(v => v.youtubeLinkID !== currentVideo.youtubeLinkID);
-
-    // Try to find videos of the same type/category first
-    let related = pool.filter(v => v.type === currentVideo.type);
-
-    // If too few, just expand pool to all other videos
-    if (related.length < 8) {
-      // Find videos not already in related to append
-      const existingIds = new Set(related.map(v => v.youtubeLinkID));
-      const remaining = pool.filter(v => !existingIds.has(v.youtubeLinkID));
-      related = [...related, ...remaining];
-    }
-
-    // Sort by nearest date (most similar context)
+    const pool = allVideos.filter(v => v.youtubeLinkID !== currentVideo.youtubeLinkID && v.group === currentVideo.group);
     const currentMs = currentVideo.date ? new Date(currentVideo.date).getTime() : 0;
-    
-    // Sort logic prioritizing videos of same type first (since we already shoved them in front, let's keep it stable, or re-sort the whole related slice)
-    // Actually, sorting the whole pool:
-    related.sort((a, b) => {
-      // If one matches type and other doesn't, prioritize matcher
-      if (a.type === currentVideo.type && b.type !== currentVideo.type) return -1;
-      if (a.type !== currentVideo.type && b.type === currentVideo.type) return 1;
 
-      // Otherwise, sort by nearest date
+    // Prioritize same type (e.g. Romance, Mass) across ALL categories
+    pool.sort((a, b) => {
+      const aType = a.type === currentVideo.type ? 0 : 1;
+      const bType = b.type === currentVideo.type ? 0 : 1;
+      if (aType !== bType) return aType - bType;
       const aMs = a.date ? new Date(a.date).getTime() : 0;
       const bMs = b.date ? new Date(b.date).getTime() : 0;
       return Math.abs(aMs - currentMs) - Math.abs(bMs - currentMs);
     });
 
-    return related.slice(0, 10);
+    return pool.slice(0, 12);
   }, [currentVideo, allVideos]);
 
   return (
