@@ -148,12 +148,6 @@ export default function FilterBar({
           <div className="filter-bar__divider" />
           <span className="filter-bar__quick-label">Quick Access</span>
           <button
-            className={`filter-bar__quick-chip ${activeGroup === 'Favorites' ? 'filter-bar__quick-chip--active' : ''}`}
-            onClick={() => activeGroup === 'Favorites' ? onReset() : onQuickAccess('Favorites', 'All', 'All')}
-          >
-            ❤️ Favorites
-          </button>
-          <button
             className={`filter-bar__quick-chip ${isTeluguActive ? 'filter-bar__quick-chip--active' : ''}`}
             onClick={() => isTeluguActive ? onReset() : onQuickAccess('Music', 'Telugu', 'All')}
           >
@@ -166,10 +160,16 @@ export default function FilterBar({
             Hindi
           </button>
           <button
+            className={`filter-bar__quick-chip ${activeGroup === 'Favorites' ? 'filter-bar__quick-chip--active' : ''}`}
+            onClick={() => activeGroup === 'Favorites' ? onReset() : onQuickAccess('Favorites', 'All', 'All')}
+          >
+            Favorites
+          </button>
+          <button
             className={`filter-bar__quick-chip ${is8KActive ? 'filter-bar__quick-chip--active' : ''}`}
             onClick={() => is8KActive ? onReset() : onQuickAccess('All', 'All', '8K')}
           >
-            ✦ 8K Ultra
+            8K Ultra
           </button>
         </div>
       </div>
