@@ -73,10 +73,16 @@ function App() {
   const [isMonitorSize, setIsMonitorSize] = useState(false);
   const [isMiniPlayer, setIsMiniPlayer] = useState(false);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [searchHighlight, setSearchHighlight] = useState(-1);
 
   useEffect(() => {
     document.documentElement.style.zoom = isMonitorSize ? '1.75' : '1';
   }, [isMonitorSize]);
+
+  // Reset highlight when search query changes
+  useEffect(() => {
+    setSearchHighlight(-1);
+  }, [searchQuery]);
 
   // Parse grouped data
   const { allVideos, groups, groupMeta } = useMemo(() => {
@@ -338,7 +344,26 @@ function App() {
                 value={searchQuery}
                 onChange={(e) => setFilters({ search: e.target.value })}
                 onFocus={() => setIsSearchFocused(true)}
-                onBlur={() => setTimeout(() => setIsSearchFocused(false), 200)}
+                onBlur={() => setTimeout(() => setIsSearchFocused(false), 250)}
+                onKeyDown={(e) => {
+                  const suggestions = filteredVideos.slice(0, 6);
+                  if (!isSearchFocused || !searchQuery.trim() || suggestions.length === 0) return;
+                  if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    setSearchHighlight(prev => prev < suggestions.length - 1 ? prev + 1 : 0);
+                  } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    setSearchHighlight(prev => prev > 0 ? prev - 1 : suggestions.length - 1);
+                  } else if (e.key === 'Enter' && searchHighlight >= 0) {
+                    e.preventDefault();
+                    const selected = suggestions[searchHighlight];
+                    if (selected) {
+                      handleVideoSelect(selected);
+                      setIsSearchFocused(false);
+                      document.getElementById('search-input')?.blur();
+                    }
+                  }
+                }}
                 autoComplete="off"
               />
               <div className="header__search-actions">
@@ -370,26 +395,89 @@ function App() {
                 )}
               </div>
 
-              {/* Suggestions Dropdown */}
+              {/* Apple-Style Search Suggestions Dropdown */}
               {isSearchFocused && searchQuery.trim() && (
-                <div className="header__search-suggestions">
+                <div className="search-dropdown">
                   {filteredVideos.length > 0 ? (
-                    filteredVideos.slice(0, 5).map((v) => (
-                      <div 
-                        key={v.id || v.title} 
-                        className="search-suggestion"
-                        onMouseDown={() => setFilters({ search: v.title })}
-                      >
-                        <svg className="suggestion-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                          <circle cx="11" cy="11" r="8" />
-                          <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                        </svg>
-                        <span className="suggestion-text">{v.title}</span>
+                    <>
+                      <div className="search-dropdown__header">
+                        <span className="search-dropdown__section-title">Top Results</span>
+                        <span className="search-dropdown__count">{filteredVideos.length} found</span>
                       </div>
-                    ))
+                      <div className="search-dropdown__list">
+                        {filteredVideos.slice(0, 6).map((v, idx) => {
+                          // Highlight matching text
+                          const query = searchQuery.toLowerCase().replace(/res:\S+|after:\d{4}|type:\S+/g, '').trim();
+                          let titleParts = [v.title];
+                          if (query) {
+                            const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+                            titleParts = v.title.split(regex);
+                          }
+                          return (
+                            <div
+                              key={v.youtubeLinkID || v.title}
+                              className={`search-dropdown__item ${idx === searchHighlight ? 'search-dropdown__item--active' : ''}`}
+                              onMouseDown={() => {
+                                handleVideoSelect(v);
+                                setIsSearchFocused(false);
+                              }}
+                              onMouseEnter={() => setSearchHighlight(idx)}
+                            >
+                              <div className="search-dropdown__thumb-wrap">
+                                <img
+                                  className="search-dropdown__thumb"
+                                  src={v.thumbnail}
+                                  alt=""
+                                  loading="lazy"
+                                />
+                                {v.duration && (
+                                  <span className="search-dropdown__duration">{v.duration}</span>
+                                )}
+                              </div>
+                              <div className="search-dropdown__info">
+                                <span className="search-dropdown__title">
+                                  {titleParts.map((part, i) =>
+                                    part.toLowerCase() === query.toLowerCase()
+                                      ? <mark key={i} className="search-dropdown__highlight">{part}</mark>
+                                      : <span key={i}>{part}</span>
+                                  )}
+                                </span>
+                                <div className="search-dropdown__meta">
+                                  {v.group && v.category && (
+                                    <span className="search-dropdown__category">{v.group} › {v.category}</span>
+                                  )}
+                                  {v.resolution && (
+                                    <span className={`search-dropdown__badge ${v.resolution === '8K' ? 'search-dropdown__badge--8k' : v.resolution === '4K' ? 'search-dropdown__badge--4k' : ''}`}>
+                                      {v.resolution}
+                                    </span>
+                                  )}
+                                </div>
+                              </div>
+                              <div className="search-dropdown__action">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                  <polyline points="9 18 15 12 9 6" />
+                                </svg>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                      {filteredVideos.length > 6 && (
+                        <div className="search-dropdown__footer">
+                          <span>Show all {filteredVideos.length} results</span>
+                          <kbd className="search-dropdown__footer-kbd">↵</kbd>
+                        </div>
+                      )}
+                    </>
                   ) : (
-                    <div className="search-suggestion suggestion-empty">
-                      No matching videos found
+                    <div className="search-dropdown__empty">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        <line x1="8" y1="11" x2="14" y2="11" />
+                      </svg>
+                      <span className="search-dropdown__empty-title">No Results</span>
+                      <span className="search-dropdown__empty-subtitle">Try a different search term</span>
                     </div>
                   )}
                 </div>
