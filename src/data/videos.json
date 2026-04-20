@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20T03:53:26.693Z",
+  "lastUpdated": "2026-04-20T05:20:29.598Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -3765,6 +3765,66 @@
               "type": "Romance",
               "date": "2025-06-18T05:02:00-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "gYHVddokkd0",
+              "title": "Sajni 8K Full Video Song: Arijit Singh, Ram Sampath | Laapataa Ladies | Aamir Khan Productions",
+              "thumbnail": "https://img.youtube.com/vi/gYHVddokkd0/maxresdefault.jpg",
+              "duration": "2:50",
+              "durationSec": 170,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Romance",
+              "date": "2025-09-11T04:40:07-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "5DFJO3rNRTA",
+              "title": "Kaise Hua 8K Full Song | Kabir Singh | Shahid K, Kiara A, Sandeep V | Vishal Mishra, Manoj Muntashir",
+              "thumbnail": "https://img.youtube.com/vi/5DFJO3rNRTA/maxresdefault.jpg",
+              "duration": "3:58",
+              "durationSec": 238,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Romance",
+              "date": "2025-08-22T04:30:19-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "XvRsfPO63jQ",
+              "title": "ANIMAL: Hua Main 8K Full Video | Ranbir Kapoor | Rashmika M | Sandeep V | Raghav,Manoj M | Bhushan K",
+              "thumbnail": "https://img.youtube.com/vi/XvRsfPO63jQ/maxresdefault.jpg",
+              "duration": "4:35",
+              "durationSec": 275,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Romance",
+              "date": "2025-10-11T04:30:34-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "j8AF2WV2pEI",
+              "title": "Yeh Aaina 8K Full Song | Kabir Singh | Shahid Kapoor, Nikita Dutta | Amaal Mallik, Shreya Ghoshal",
+              "thumbnail": "https://img.youtube.com/vi/j8AF2WV2pEI/maxresdefault.jpg",
+              "duration": "3:41",
+              "durationSec": 221,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Romance",
+              "date": "2025-08-24T04:30:41-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "3-0BPHxBL5g",
+              "title": "Padmaavat: Nainowale Ne 8K Full Video Song | Deepika P | Shahid K | Neeti M | Sanjay Leela Bhansali",
+              "thumbnail": "https://img.youtube.com/vi/3-0BPHxBL5g/maxresdefault.jpg",
+              "duration": "2:33",
+              "durationSec": 153,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Romance",
+              "date": "2026-03-14T22:30:18-07:00",
+              "resolution": "8K"
             }
           ],
           "Item": [
@@ -4163,6 +4223,18 @@
               "type": "Item",
               "date": "2025-09-07T02:01:39-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "SNbEgBFCO5Y",
+              "title": "Sajna Ve Sajna 8K Video | Rajkummar R, Shehnaaz Gill | Sunidhi,Divya | Vicky Vidya Ka Woh Wala Video",
+              "thumbnail": "https://img.youtube.com/vi/SNbEgBFCO5Y/maxresdefault.jpg",
+              "duration": "3:01",
+              "durationSec": 181,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Item",
+              "date": "2025-07-31T08:14:38-07:00",
+              "resolution": "8K"
             }
           ],
           "Groovy": [
@@ -4333,6 +4405,42 @@
               "type": "Groovy",
               "date": "2025-08-03T01:30:57-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "x172KyxnQmg",
+              "title": "Dheere Dheere Se Meri Zindagi 8K Video Song | Yo Yo Honey Singh | Hrithik Roshan | Sonam Kapoor",
+              "thumbnail": "https://img.youtube.com/vi/x172KyxnQmg/maxresdefault.jpg",
+              "duration": "5:04",
+              "durationSec": 304,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2026-02-15T21:30:12-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "LToDPzfwMoM",
+              "title": "Tere Hawaale 8K Video Song | Aamir | Kareena | Pritam | Arijit Singh | Shilpa R | Laal Singh Chaddha",
+              "thumbnail": "https://img.youtube.com/vi/LToDPzfwMoM/maxresdefault.jpg",
+              "duration": "5:31",
+              "durationSec": 331,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2026-02-02T03:30:07-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "WDuIl00HNrY",
+              "title": "Lutt Putt Gaya 8K Full Song | Shah Rukh Khan,Taapsee,Rajkumar H,Pritam,Arijit,Swanand,IP Singh|Dunki",
+              "thumbnail": "https://img.youtube.com/vi/WDuIl00HNrY/maxresdefault.jpg",
+              "duration": "3:47",
+              "durationSec": 227,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2025-11-01T02:35:00-07:00",
+              "resolution": "8K"
             }
           ],
           "Energetic": [
@@ -4467,6 +4575,18 @@
               "type": "Energetic",
               "date": "2025-06-05T22:30:10-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "vbTkIlPCsgs",
+              "title": "Badtameez Dil 8K Full Song | Yeh Jawaani Hai Deewani | Pritam | Ranbir Kapoor, Deepika Padukone",
+              "thumbnail": "https://img.youtube.com/vi/vbTkIlPCsgs/maxresdefault.jpg",
+              "duration": "4:31",
+              "durationSec": 271,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Energetic",
+              "date": "2025-11-16T01:31:23-08:00",
+              "resolution": "8K"
             }
           ],
           "Mass": [
@@ -4577,6 +4697,18 @@
               "type": "Mass",
               "date": "2025-06-19T05:00:03-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "KsEMAXNXnO4",
+              "title": "ANIMAL: ABRAR’S ENTRY - JAMAL KUDU 8K🔥 | Bobby Deol | Ranbir Kapoor | Sandeep Vanga | Bhushan Kumar",
+              "thumbnail": "https://img.youtube.com/vi/KsEMAXNXnO4/maxresdefault.jpg",
+              "duration": "2:13",
+              "durationSec": 133,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2025-10-03T22:30:09-07:00",
+              "resolution": "8K"
             }
           ],
           "Sad": [
@@ -4626,6 +4758,18 @@
               "category": "Hindi",
               "type": "Sad",
               "date": "2026-03-29T04:30:07-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "9W6CSt6-PIU",
+              "title": "Animal: Satranga [8K] - Video | Ranbir K,Rashmika|Sandeep|Arijit,Shreyas,Siddharth-Garima|Bhushan K",
+              "thumbnail": "https://img.youtube.com/vi/9W6CSt6-PIU/maxresdefault.jpg",
+              "duration": "4:31",
+              "durationSec": 271,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2025-06-17T22:30:05-07:00",
               "resolution": "8K"
             }
           ]
