@@ -1,6 +1,7 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { useEffect, useCallback, useState, useRef } from 'react';
 import YouTube from 'react-youtube';
 import RelatedPanel from './RelatedPanel';
+import QueuePanel from './QueuePanel';
 
 function formatDate(dateStr) {
   if (!dateStr) return '';
@@ -29,13 +30,36 @@ function formatDate(dateStr) {
   }
 }
 
-export default function Player({ video, allVideos, onVideoSelect, onClose, isMiniPlayer, onToggleMini }) {
+export default function Player({
+  video,
+  allVideos,
+  onVideoSelect,
+  onClose,
+  isMiniPlayer,
+  onToggleMini,
+  queue,
+  autoplay,
+  onAdvance,
+  onQueueReorder,
+  onQueueRemove,
+  onToggleAutoplay
+}) {
+  const [sidebarTab, setSidebarTab] = useState('queue'); // 'queue' | 'related'
+  const [upNextCountdown, setUpNextCountdown] = useState(null); // null or { seconds, video }
+  const countdownRef = useRef(null);
+
   // Close on ESC
   const handleKeyDown = useCallback(
     (e) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === 'Escape') {
+        if (upNextCountdown) {
+          cancelCountdown();
+        } else {
+          onClose();
+        }
+      }
     },
-    [onClose]
+    [onClose, upNextCountdown]
   );
 
   useEffect(() => {
@@ -50,6 +74,39 @@ export default function Player({ video, allVideos, onVideoSelect, onClose, isMin
       document.body.style.overflow = '';
     };
   }, [handleKeyDown, isMiniPlayer]);
+
+  // Cleanup countdown on unmount
+  useEffect(() => {
+    return () => {
+      if (countdownRef.current) clearInterval(countdownRef.current);
+    };
+  }, []);
+
+  const cancelCountdown = useCallback(() => {
+    if (countdownRef.current) clearInterval(countdownRef.current);
+    countdownRef.current = null;
+    setUpNextCountdown(null);
+  }, []);
+
+  const handleVideoEnd = useCallback(() => {
+    if (!autoplay || !queue || queue.length === 0) return;
+
+    const nextVideo = queue[0];
+    setUpNextCountdown({ seconds: 3, video: nextVideo });
+
+    let secs = 3;
+    countdownRef.current = setInterval(() => {
+      secs -= 1;
+      if (secs <= 0) {
+        clearInterval(countdownRef.current);
+        countdownRef.current = null;
+        setUpNextCountdown(null);
+        onAdvance();
+      } else {
+        setUpNextCountdown({ seconds: secs, video: nextVideo });
+      }
+    }, 1000);
+  }, [autoplay, queue, onAdvance]);
 
   if (!video) return null;
 
@@ -113,8 +170,47 @@ export default function Player({ video, allVideos, onVideoSelect, onClose, isMin
             <YouTube
               videoId={video.youtubeLinkID}
               opts={youtubeOpts}
+              onEnd={handleVideoEnd}
               style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
             />
+
+            {/* Up Next Countdown Overlay */}
+            {upNextCountdown && (
+              <div className="player-modal__up-next">
+                <div className="player-modal__up-next-card">
+                  <div className="player-modal__up-next-header">
+                    <span className="player-modal__up-next-label">Up Next</span>
+                    <span className="player-modal__up-next-timer">
+                      <svg className="player-modal__up-next-ring" width="28" height="28" viewBox="0 0 28 28">
+                        <circle cx="14" cy="14" r="12" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="2.5" />
+                        <circle
+                          cx="14" cy="14" r="12"
+                          fill="none"
+                          stroke="#fff"
+                          strokeWidth="2.5"
+                          strokeDasharray={2 * Math.PI * 12}
+                          strokeDashoffset={2 * Math.PI * 12 * (1 - upNextCountdown.seconds / 3)}
+                          strokeLinecap="round"
+                          style={{ transition: 'stroke-dashoffset 1s linear', transform: 'rotate(-90deg)', transformOrigin: 'center' }}
+                        />
+                      </svg>
+                      <span className="player-modal__up-next-sec">{upNextCountdown.seconds}</span>
+                    </span>
+                  </div>
+                  <div className="player-modal__up-next-info">
+                    <img
+                      className="player-modal__up-next-thumb"
+                      src={`https://img.youtube.com/vi/${upNextCountdown.video.youtubeLinkID}/mqdefault.jpg`}
+                      alt=""
+                    />
+                    <span className="player-modal__up-next-title">{upNextCountdown.video.title}</span>
+                  </div>
+                  <button className="player-modal__up-next-cancel" onClick={cancelCountdown}>
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Footer Info */}
@@ -133,11 +229,47 @@ export default function Player({ video, allVideos, onVideoSelect, onClose, isMin
         
         {!isMiniPlayer && (
           <div className="player-modal__sidebar-wrapper">
-            <RelatedPanel 
-              currentVideo={video} 
-              allVideos={allVideos} 
-              onVideoSelect={onVideoSelect} 
-            />
+            <div className="player-sidebar">
+              {/* Apple-style Segmented Control */}
+              <div className="player-sidebar__tabs">
+                <button
+                  className={`player-sidebar__tab ${sidebarTab === 'queue' ? 'player-sidebar__tab--active' : ''}`}
+                  onClick={() => setSidebarTab('queue')}
+                >
+                  Up Next
+                  {queue && queue.length > 0 && (
+                    <span className="player-sidebar__tab-count">{queue.length}</span>
+                  )}
+                </button>
+                <button
+                  className={`player-sidebar__tab ${sidebarTab === 'related' ? 'player-sidebar__tab--active' : ''}`}
+                  onClick={() => setSidebarTab('related')}
+                >
+                  Related
+                </button>
+              </div>
+
+              {/* Tab Content */}
+              <div className="player-sidebar__content">
+                {sidebarTab === 'queue' ? (
+                  <QueuePanel
+                    queue={queue || []}
+                    onReorder={onQueueReorder}
+                    onRemove={onQueueRemove}
+                    onSelect={onVideoSelect}
+                    autoplay={autoplay}
+                    onToggleAutoplay={onToggleAutoplay}
+                    currentVideo={video}
+                  />
+                ) : (
+                  <RelatedPanel
+                    currentVideo={video}
+                    allVideos={allVideos}
+                    onVideoSelect={onVideoSelect}
+                  />
+                )}
+              </div>
+            </div>
           </div>
         )}
       </div>

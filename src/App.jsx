@@ -75,6 +75,10 @@ function App() {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [searchHighlight, setSearchHighlight] = useState(-1);
 
+  // Queue / Autoplay state
+  const [queue, setQueue] = useState([]);
+  const [autoplay, setAutoplay] = useState(true);
+
   useEffect(() => {
     document.documentElement.style.zoom = isMonitorSize ? '1.75' : '1';
   }, [isMonitorSize]);
@@ -293,13 +297,61 @@ function App() {
     });
   }, []);
 
+  // Build queue from related videos algorithm
+  const buildQueue = useCallback((video, videos) => {
+    if (!video || !videos) return [];
+    let pool = videos.filter(v => v.youtubeLinkID !== video.youtubeLinkID);
+    let related = pool.filter(v => v.type === video.type);
+    if (related.length < 8) {
+      const existingIds = new Set(related.map(v => v.youtubeLinkID));
+      const remaining = pool.filter(v => !existingIds.has(v.youtubeLinkID));
+      related = [...related, ...remaining];
+    }
+    const currentMs = video.date ? new Date(video.date).getTime() : 0;
+    related.sort((a, b) => {
+      if (a.type === video.type && b.type !== video.type) return -1;
+      if (a.type !== video.type && b.type === video.type) return 1;
+      const aMs = a.date ? new Date(a.date).getTime() : 0;
+      const bMs = b.date ? new Date(b.date).getTime() : 0;
+      return Math.abs(aMs - currentMs) - Math.abs(bMs - currentMs);
+    });
+    return related.slice(0, 15);
+  }, []);
+
   const handleVideoSelect = useCallback((video) => {
     setSelectedVideo(video);
-  }, []);
+    setQueue(buildQueue(video, allVideos));
+  }, [allVideos, buildQueue]);
 
   const handleClosePlayer = useCallback(() => {
     setSelectedVideo(null);
     setIsMiniPlayer(false);
+    setQueue([]);
+  }, []);
+
+  const handleAdvance = useCallback(() => {
+    if (queue.length === 0) return;
+    const nextVideo = queue[0];
+    const remainingQueue = queue.slice(1);
+    // Append more videos based on the new currentVideo to keep the queue populated
+    const newRelated = allVideos
+      .filter(v => v.youtubeLinkID !== nextVideo.youtubeLinkID && !remainingQueue.some(q => q.youtubeLinkID === v.youtubeLinkID))
+      .filter(v => v.type === nextVideo.type)
+      .slice(0, 5);
+    setSelectedVideo(nextVideo);
+    setQueue([...remainingQueue, ...newRelated].slice(0, 15));
+  }, [queue, allVideos]);
+
+  const handleQueueReorder = useCallback((newQueue) => {
+    setQueue(newQueue);
+  }, []);
+
+  const handleQueueRemove = useCallback((idx) => {
+    setQueue(prev => prev.filter((_, i) => i !== idx));
+  }, []);
+
+  const handleToggleAutoplay = useCallback(() => {
+    setAutoplay(prev => !prev);
   }, []);
 
   // ⌘K keyboard shortcut to focus search
@@ -601,6 +653,12 @@ function App() {
           onClose={handleClosePlayer}
           isMiniPlayer={isMiniPlayer}
           onToggleMini={() => setIsMiniPlayer((prev) => !prev)}
+          queue={queue}
+          autoplay={autoplay}
+          onAdvance={handleAdvance}
+          onQueueReorder={handleQueueReorder}
+          onQueueRemove={handleQueueRemove}
+          onToggleAutoplay={handleToggleAutoplay}
         />
       )}
       {/* Scripts Modal */}
