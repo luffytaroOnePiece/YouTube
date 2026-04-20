@@ -6,6 +6,7 @@ import ScriptsPage from './components/ScriptsPage';
 import AnalyticsDashboard from './components/AnalyticsDashboard';
 import { useUrlFilters } from './hooks/useUrlFilters';
 import videosData from './data/videos.json';
+import favData from './data/fav.json';
 import './styles/App.css';
 
 const INITIAL_FILTERS = {
@@ -31,13 +32,13 @@ function App() {
   const { group: activeGroup, category: activeCategory, playlist: activePlaylist, resolution: activeResolution, search: searchQuery, sort: activeSort } = filters;
 
   const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const [favorites, setFavorites] = useState([]);
+  const [favorites, setFavorites] = useState(Array.isArray(favData) ? favData : []);
 
   useEffect(() => {
     if (isLocal) {
       fetch('http://localhost:3001/api/fav')
         .then(res => res.json())
-        .then(data => setFavorites(Array.isArray(data) ? data : []))
+        .then(data => setFavorites(Array.isArray(data) ? data : favData))
         .catch(err => console.error('Error fetching favs:', err));
     }
   }, [isLocal]);
