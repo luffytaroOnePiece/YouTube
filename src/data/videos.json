@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T03:20:36.793Z",
+  "lastUpdated": "2026-04-21T05:12:40.867Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -3541,6 +3541,54 @@
               "type": "Groovy",
               "date": "2025-09-07T23:15:04-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "PUoFjVbdzxU",
+              "title": "Idhazhin Oram 8K/4K Video Song | Dhanush, Shruti Haasan | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/PUoFjVbdzxU/maxresdefault.jpg",
+              "duration": "3:14",
+              "durationSec": 194,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2025-05-03T07:30:27-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "bui3q02NK8Y",
+              "title": "Unakku Thaan - Music Video | Chithha | Siddharth | Santhosh Narayanan | Deeraj Vaidy | Etaki",
+              "thumbnail": "https://img.youtube.com/vi/bui3q02NK8Y/maxresdefault.jpg",
+              "duration": "3:56",
+              "durationSec": 236,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2023-09-22T05:31:04-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "-Euany_dUDM",
+              "title": "Kaathadi Music Video | Alya Manasa | Sanjeev | Anand Kashinath | Sublahshini",
+              "thumbnail": "https://img.youtube.com/vi/-Euany_dUDM/maxresdefault.jpg",
+              "duration": "6:35",
+              "durationSec": 395,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2021-12-17T03:30:00-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "k9_JbEaRxso",
+              "title": "Oorum Blood Movie Version | Dude | Pradeep R, Mamitha | @SaiAbhyankkar| Keerthiswaran | Paal Dabba",
+              "thumbnail": "https://img.youtube.com/vi/k9_JbEaRxso/maxresdefault.jpg",
+              "duration": "4:06",
+              "durationSec": 246,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2025-11-21T04:30:01-08:00",
+              "resolution": "4K"
             }
           ],
           "Item": [
@@ -3760,6 +3808,66 @@
               "category": "Tamil",
               "type": "Romance",
               "date": "2024-03-20T05:30:35-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "46-RBvJpPVE",
+              "title": "PAGAL IRAVAI | MARAIGIRAI Official Tamil Music Video | BehindwoodsTv",
+              "thumbnail": "https://img.youtube.com/vi/46-RBvJpPVE/maxresdefault.jpg",
+              "duration": "4:59",
+              "durationSec": 299,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2019-03-08T05:00:12-08:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "ckwRhLE9_LY",
+              "title": "Mudhal Nee Mudivum Nee Title Track 8K/4K Video Song | Darbuka Siva | Sid Sriram",
+              "thumbnail": "https://img.youtube.com/vi/ckwRhLE9_LY/maxresdefault.jpg",
+              "duration": "5:34",
+              "durationSec": 334,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2025-03-25T04:52:24-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "pmNA98zoaUk",
+              "title": "Naan Gaali Video Song | Good Night | HDR | Manikandan, Meetha Raghunath | Sean Roldan | Vinayak",
+              "thumbnail": "https://img.youtube.com/vi/pmNA98zoaUk/maxresdefault.jpg",
+              "duration": "3:14",
+              "durationSec": 194,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2023-05-29T23:00:01-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "7aJNeIExVrQ",
+              "title": "Railin Oligal - Video | Blue Star | Ashok Selvan, Keerthi | Govind Vasantha | Jaya Kumar| Pa.Ranjith",
+              "thumbnail": "https://img.youtube.com/vi/7aJNeIExVrQ/maxresdefault.jpg",
+              "duration": "2:43",
+              "durationSec": 163,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2024-01-24T03:00:03-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "HW-o0YXmFa0",
+              "title": "Naan Nee Video Song | Madras | Karthi, Catherine Tresa | Santhosh Narayanan",
+              "thumbnail": "https://img.youtube.com/vi/HW-o0YXmFa0/maxresdefault.jpg",
+              "duration": "2:50",
+              "durationSec": 170,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2014-09-29T06:49:40-07:00",
               "resolution": "1080p"
             }
           ],
@@ -5524,6 +5632,18 @@
               "category": "Others",
               "type": "Straight From The Studio",
               "date": "2021-02-18T06:28:39-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "t-a6VlOUEtc",
+              "title": "Sakkarakatti - Marudaani Cover by Sanah Moidutty |@ARRahman",
+              "thumbnail": "https://img.youtube.com/vi/t-a6VlOUEtc/maxresdefault.jpg",
+              "duration": "2:59",
+              "durationSec": 179,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2023-01-13T04:45:03-08:00",
               "resolution": "4K"
             }
           ],
