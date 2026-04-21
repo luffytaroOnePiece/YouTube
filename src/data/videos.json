@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20T13:21:22.562Z",
+  "lastUpdated": "2026-04-21T03:20:36.793Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -3189,6 +3189,18 @@
               "type": "Mass",
               "date": "2025-09-12T07:30:18-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "kw6SFbbinnY",
+              "title": "Pathu Thala - Nee Singam Dhan Video | Silambarasan TR | A. R Rahman | Gautham Karthik",
+              "thumbnail": "https://img.youtube.com/vi/kw6SFbbinnY/maxresdefault.jpg",
+              "duration": "4:13",
+              "durationSec": 253,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Mass",
+              "date": "2023-04-09T05:01:00-07:00",
+              "resolution": "4K"
             }
           ],
           "Energetic": [
@@ -3469,6 +3481,66 @@
               "type": "Groovy",
               "date": "2026-01-31T20:30:16-08:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "DFJwndK0vJg",
+              "title": "Hey Minnale - 8K Video | Amaran | Sivakarthikeyan, Sai Pallavi | GV Prakash | Rajkumar",
+              "thumbnail": "https://img.youtube.com/vi/DFJwndK0vJg/maxresdefault.jpg",
+              "duration": "2:49",
+              "durationSec": 169,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2025-06-02T22:30:04-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "xIEmIue7ubI",
+              "title": "Doctor - So Baby 8K/4K Video Song | Sivakarthikeyan, Priyanka Mohan | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/xIEmIue7ubI/maxresdefault.jpg",
+              "duration": "4:12",
+              "durationSec": 252,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2025-12-16T06:30:51-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "0aavCtXiiX4",
+              "title": "Veera Raja Veera - Full Video | PS2 Tamil | @ARRahman | Mani Ratnam | Jayam Ravi, Sobhita Dhulipala",
+              "thumbnail": "https://img.youtube.com/vi/0aavCtXiiX4/maxresdefault.jpg",
+              "duration": "3:58",
+              "durationSec": 238,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2023-05-22T23:30:07-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "dsrku40uZMc",
+              "title": "Imaikkaa Nodigal | Vilambara Idaiveli Video Song | Hiphop Tamizha | Atharvaa, Raashi Khanna",
+              "thumbnail": "https://img.youtube.com/vi/dsrku40uZMc/maxresdefault.jpg",
+              "duration": "4:43",
+              "durationSec": 283,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2018-08-10T04:52:48-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "WsRr8H19sYk",
+              "title": "Kanne Kanne [8K] Video Song | Ayogya | Anirudh Ravichander | Vishal, Raashi Khanna | Sam CS",
+              "thumbnail": "https://img.youtube.com/vi/WsRr8H19sYk/maxresdefault.jpg",
+              "duration": "3:16",
+              "durationSec": 196,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2025-09-07T23:15:04-07:00",
+              "resolution": "8K"
             }
           ],
           "Item": [
@@ -3532,6 +3604,176 @@
               "category": "Tamil",
               "type": "Romance",
               "date": "2025-08-07T07:30:33-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "0tX2ck4Rmzk",
+              "title": "3 - KannazhagaVideo | Dhanush, Shruti | Anirudh",
+              "thumbnail": "https://img.youtube.com/vi/0tX2ck4Rmzk/maxresdefault.jpg",
+              "duration": "3:13",
+              "durationSec": 193,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2014-12-02T14:13:29-08:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "zsaff26T4Wg",
+              "title": "Kadhal Ondru Kanden - Kanna Veesi Video Song | Ashwin Kumar | Rio Raj | Nakshathra Nagesh",
+              "thumbnail": "https://img.youtube.com/vi/zsaff26T4Wg/maxresdefault.jpg",
+              "duration": "4:03",
+              "durationSec": 243,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2020-01-25T05:30:04-08:00",
+              "resolution": "2K"
+            },
+            {
+              "youtubeLinkID": "zjI-7EiJt7M",
+              "title": "Chellakuttiye [ Official Music Video ] AVASTHA || Srinish Aravind | Pearle Maaney | Jecin George",
+              "thumbnail": "https://img.youtube.com/vi/zjI-7EiJt7M/maxresdefault.jpg",
+              "duration": "3:51",
+              "durationSec": 231,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2020-07-24T05:00:14-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "2NrpwkyoTrI",
+              "title": "Adiye Video Song | Bachelor | G.V. Prakash Kumar | Dhibu Ninan Thomas | Sathish | G Dilli Babu",
+              "thumbnail": "https://img.youtube.com/vi/2NrpwkyoTrI/maxresdefault.jpg",
+              "duration": "4:37",
+              "durationSec": 277,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2021-12-10T04:30:12-08:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "Y3-PeuQ7nvY",
+              "title": "Vikram Vedha Songs | Yaanji Video Song | R. Madhavan, Vijay Sethupathi | Sam C.S | Anirudh",
+              "thumbnail": "https://img.youtube.com/vi/Y3-PeuQ7nvY/maxresdefault.jpg",
+              "duration": "3:27",
+              "durationSec": 207,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2017-07-25T04:28:02-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "592mNGkpYig",
+              "title": "Vaa Vaathi Full Video Song | Vaathi Movie | Dhanush, Samyuktha | GV Prakash Kumar | Venky Atluri",
+              "thumbnail": "https://img.youtube.com/vi/592mNGkpYig/maxresdefault.jpg",
+              "duration": "3:15",
+              "durationSec": 195,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2023-03-13T21:29:11-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "m6m_IbbHl4M",
+              "title": "Kaadhal En Kaviye (Tamil) | SALMON 3D | Sid Sriram | Vijay Yesudas | Shalil Kallur | Sreejith",
+              "thumbnail": "https://img.youtube.com/vi/m6m_IbbHl4M/maxresdefault.jpg",
+              "duration": "4:42",
+              "durationSec": 282,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2022-03-23T04:30:08-07:00",
+              "resolution": "2K"
+            },
+            {
+              "youtubeLinkID": "-E2mRSZvJlM",
+              "title": "Aga Naga - Full Video | PS2 Tamil | @ARRahman | Mani Ratnam | Karthi, Trisha | Shakthisree Gopalan",
+              "thumbnail": "https://img.youtube.com/vi/-E2mRSZvJlM/maxresdefault.jpg",
+              "duration": "3:56",
+              "durationSec": 236,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2023-05-18T22:30:10-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "_IuJsaMqtqc",
+              "title": "3 - Nee Paartha Vizhigal Video Song | Dhanush, Shruti | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/_IuJsaMqtqc/maxresdefault.jpg",
+              "duration": "4:09",
+              "durationSec": 249,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2014-12-02T14:21:55-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "-7n_krPLRgs",
+              "title": "Don - Bae Video | Sivakarthikeyan, Priyanka Mohan | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/-7n_krPLRgs/maxresdefault.jpg",
+              "duration": "4:14",
+              "durationSec": 254,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2022-06-15T04:30:01-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "ohnVWZjSejE",
+              "title": "Nira Video Song (Extended Version) | Takkar (Tamil) | Siddharth | Karthik G Krish | Nivas K Prasanna",
+              "thumbnail": "https://img.youtube.com/vi/ohnVWZjSejE/maxresdefault.jpg",
+              "duration": "5:12",
+              "durationSec": 312,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2023-09-04T22:30:09-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "L8V3ylj4NUA",
+              "title": "Kadhale Kadhale Video Song | Indru Netru Naalai | Vishnu Vishal | Mia George | Hiphop Tamizha",
+              "thumbnail": "https://img.youtube.com/vi/L8V3ylj4NUA/maxresdefault.jpg",
+              "duration": "4:55",
+              "durationSec": 295,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2015-07-20T05:31:15-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "efBqZ4dIXDw",
+              "title": "Vaaya En Veera - Video Song | Kanchana 2 | Raghava Lawrence | Taapsee | Sun Music",
+              "thumbnail": "https://img.youtube.com/vi/efBqZ4dIXDw/maxresdefault.jpg",
+              "duration": "3:55",
+              "durationSec": 235,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2024-03-20T05:30:35-07:00",
+              "resolution": "1080p"
+            }
+          ],
+          "Sad": [
+            {
+              "youtubeLinkID": "R7atDOgjaFg",
+              "title": "Rendu Kaadhal 8K/4K Video Song | Kaathuvaakula Rendu Kaadhal | Vijay Sethupathi | AnirudhRavichander",
+              "thumbnail": "https://img.youtube.com/vi/R7atDOgjaFg/maxresdefault.jpg",
+              "duration": "4:04",
+              "durationSec": 244,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Sad",
+              "date": "2026-02-04T06:30:31-08:00",
               "resolution": "8K"
             }
           ]
@@ -5259,6 +5501,30 @@
               "type": "Straight From The Studio",
               "date": "2025-07-11T22:30:08-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "RLzC55ai0eo",
+              "title": "Heeriye (Official Video) Jasleen Royal ft Arijit Singh| Dulquer Salmaan| Aditya Sharma |Taani Tanvir",
+              "thumbnail": "https://img.youtube.com/vi/RLzC55ai0eo/maxresdefault.jpg",
+              "duration": "3:19",
+              "durationSec": 199,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2023-07-25T00:41:09-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "2pOVz45p8Ho",
+              "title": "Naam - Adi Penne (Duet) Official Video [4K] - T Suriavelan | Rupiny | Stephen Zechariah ft Srinisha",
+              "thumbnail": "https://img.youtube.com/vi/2pOVz45p8Ho/maxresdefault.jpg",
+              "duration": "5:03",
+              "durationSec": 303,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2021-02-18T06:28:39-08:00",
+              "resolution": "4K"
             }
           ],
           "Dance Covers": [
@@ -5455,6 +5721,54 @@
               "type": "Malayalam",
               "date": "2025-12-17T06:30:06-08:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "81jbVOvOUTE",
+              "title": "Ashubha Mangalakaari - Video Song | Super Sharanya | Anaswara Rajan | Justin Varghese | Girish AD",
+              "thumbnail": "https://img.youtube.com/vi/81jbVOvOUTE/maxresdefault.jpg",
+              "duration": "5:18",
+              "durationSec": 318,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2021-12-22T05:30:09-08:00",
+              "resolution": "2K"
+            },
+            {
+              "youtubeLinkID": "rwOJ1jJUZ9w",
+              "title": "Mandarappoove - 8K Video | Kumari | Jakes Bejoy | Aishwarya Lekshmi | Nirmal Sahadev",
+              "thumbnail": "https://img.youtube.com/vi/rwOJ1jJUZ9w/maxresdefault.jpg",
+              "duration": "3:53",
+              "durationSec": 233,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2025-11-01T05:31:14-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "Y23dN3JZrcE",
+              "title": "Neeye Punchiri |  | Lokah | Hanan Sha | Reyan | Jakes Bejoy | Kalyani | Naslen | Dominic | Nimish ",
+              "thumbnail": "https://img.youtube.com/vi/Y23dN3JZrcE/maxresdefault.jpg",
+              "duration": "4:01",
+              "durationSec": 241,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2025-10-19T05:18:09-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "0G2VxhV_gXM",
+              "title": "Premam Malare Video Song | Rajesh Murugesan | Vijay Yesudas | Nivin Pauly | Sai Pallavi",
+              "thumbnail": "https://img.youtube.com/vi/0G2VxhV_gXM/maxresdefault.jpg",
+              "duration": "5:14",
+              "durationSec": 314,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2015-06-20T06:30:01-07:00",
+              "resolution": "1080p"
             }
           ],
           "Bhojpuri": [
