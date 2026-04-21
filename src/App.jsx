@@ -4,6 +4,7 @@ import VideoGrid from './components/VideoGrid';
 import Player from './components/Player';
 import ScriptsPage from './components/ScriptsPage';
 import AnalyticsDashboard from './components/AnalyticsDashboard';
+import AdvancedSearchPanel from './components/AdvancedSearchPanel';
 import { useUrlFilters } from './hooks/useUrlFilters';
 import videosData from './data/videos.json';
 import favData from './data/fav.json';
@@ -74,6 +75,7 @@ function App() {
   const [isMiniPlayer, setIsMiniPlayer] = useState(false);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [searchHighlight, setSearchHighlight] = useState(-1);
+  const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
 
   // Queue / Autoplay state
   const [queue, setQueue] = useState([]);
@@ -417,20 +419,19 @@ function App() {
                 autoComplete="off"
               />
               <div className="header__search-actions">
-                <div className="header__search-tips" title="Search tips">
+                <button
+                  className="header__search-tips"
+                  title="Advanced Search Filters"
+                  onClick={() => setShowAdvancedSearch(true)}
+                  aria-label="Advanced Search Filters"
+                  style={{ background: 'transparent', border: 'none', cursor: 'pointer', padding: 0 }}
+                >
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <line x1="12" y1="16" x2="12" y2="12"></line>
                     <line x1="12" y1="8" x2="12.01" y2="8"></line>
                   </svg>
-                  <div className="header__search-tips-content">
-                    <strong>Search Filters</strong>
-                    <div><code>res:8K</code> (Quality)</div>
-                    <div><code>after:2020</code> (Year)</div>
-                    <div><code>type:music</code> (Type)</div>
-                    <div style={{ marginTop: '6px' }}><small>Example: <code>avatar res:8K after:2022</code></small></div>
-                  </div>
-                </div>
+                </button>
 
                 {searchQuery ? (
                   <button
@@ -684,6 +685,15 @@ function App() {
           onResetFilters={handleReset}
         />
       )}
+
+      <AdvancedSearchPanel
+        isOpen={showAdvancedSearch}
+        onClose={() => setShowAdvancedSearch(false)}
+        searchQuery={searchQuery}
+        onSearchChange={(search) => setFilters({ search })}
+        availableResolutions={availableResolutions}
+        allVideos={allVideos}
+      />
     </div>
   );
 }
