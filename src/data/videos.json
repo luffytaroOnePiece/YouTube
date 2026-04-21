@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T05:12:40.867Z",
+  "lastUpdated": "2026-04-21T07:03:01.444Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -5121,6 +5121,18 @@
               "type": "Sad",
               "date": "2025-06-17T22:30:05-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "r8O3URprq1M",
+              "title": "PHIR SE (Full Video) | Dhurandhar The Revenge | Ranveer Singh | Shashwat Sachdev,Arijit S,Irshad K",
+              "thumbnail": "https://img.youtube.com/vi/r8O3URprq1M/maxresdefault.jpg",
+              "duration": "3:48",
+              "durationSec": 228,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2026-04-20T23:42:03-07:00",
+              "resolution": "4K"
             }
           ]
         },
@@ -7122,6 +7134,173 @@
               "type": "Gameplay",
               "date": "2024-05-06T09:00:18-07:00",
               "resolution": "4K"
+            }
+          ]
+        }
+      }
+    },
+    "Youtubers": {
+      "icon": "",
+      "categories": {
+        "Fun": {
+          "Mr Beast": [
+            {
+              "youtubeLinkID": "pAnGwRiQ4-4",
+              "title": "$1 vs $1,000,000,000 Futuristic Tech!",
+              "thumbnail": "https://img.youtube.com/vi/pAnGwRiQ4-4/maxresdefault.jpg",
+              "duration": "23:04",
+              "durationSec": 1384,
+              "group": "Youtubers",
+              "category": "Fun",
+              "type": "Mr Beast",
+              "date": "2026-01-24T09:00:01-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "ZFoNBxpXen4",
+              "title": "Survive 30 Days Trapped In The Sky, Win $250,000",
+              "thumbnail": "https://img.youtube.com/vi/ZFoNBxpXen4/maxresdefault.jpg",
+              "duration": "37:26",
+              "durationSec": 2246,
+              "group": "Youtubers",
+              "category": "Fun",
+              "type": "Mr Beast",
+              "date": "2025-12-20T09:00:01-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "8bMh8azh3CY",
+              "title": "100 Pilots Fight For A Private Jet",
+              "thumbnail": "https://img.youtube.com/vi/8bMh8azh3CY/maxresdefault.jpg",
+              "duration": "28:46",
+              "durationSec": 1726,
+              "group": "Youtubers",
+              "category": "Fun",
+              "type": "Mr Beast",
+              "date": "2025-12-06T09:00:01-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "Ah_uuTwGOYU",
+              "title": "World's Strongest Man Vs Robot",
+              "thumbnail": "https://img.youtube.com/vi/Ah_uuTwGOYU/maxresdefault.jpg",
+              "duration": "18:24",
+              "durationSec": 1104,
+              "group": "Youtubers",
+              "category": "Fun",
+              "type": "Mr Beast",
+              "date": "2025-11-22T09:00:01-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "pzBi1nwDn8U",
+              "title": "Survive 100 Days Trapped In A Private Jet, Keep It",
+              "thumbnail": "https://img.youtube.com/vi/pzBi1nwDn8U/maxresdefault.jpg",
+              "duration": "33:03",
+              "durationSec": 1983,
+              "group": "Youtubers",
+              "category": "Fun",
+              "type": "Mr Beast",
+              "date": "2025-07-19T09:00:01-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "NDsO1LT_0lw",
+              "title": "I Spent 100 Hours Inside The Pyramids!",
+              "thumbnail": "https://img.youtube.com/vi/NDsO1LT_0lw/maxresdefault.jpg",
+              "duration": "21:43",
+              "durationSec": 1303,
+              "group": "Youtubers",
+              "category": "Fun",
+              "type": "Mr Beast",
+              "date": "2025-02-08T09:00:00-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "F6PqxbvOCUI",
+              "title": "Protect The Yacht, Keep It!",
+              "thumbnail": "https://img.youtube.com/vi/F6PqxbvOCUI/maxresdefault.jpg",
+              "duration": "15:08",
+              "durationSec": 908,
+              "group": "Youtubers",
+              "category": "Fun",
+              "type": "Mr Beast",
+              "date": "2024-05-11T09:00:00-07:00",
+              "resolution": "1080p"
+            }
+          ],
+          "Ryan Trahan": [
+            {
+              "youtubeLinkID": "z2SPBQMrye8",
+              "title": "I Tried Every Room on the Most Expensive Cruise",
+              "thumbnail": "https://img.youtube.com/vi/z2SPBQMrye8/maxresdefault.jpg",
+              "duration": "28:17",
+              "durationSec": 1697,
+              "group": "Youtubers",
+              "category": "Fun",
+              "type": "Ryan Trahan",
+              "date": "2025-10-11T08:01:55-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "X3aoIWMC2qs",
+              "title": "I Survived in an Ancient, then Futuristic Town",
+              "thumbnail": "https://img.youtube.com/vi/X3aoIWMC2qs/maxresdefault.jpg",
+              "duration": "31:08",
+              "durationSec": 1868,
+              "group": "Youtubers",
+              "category": "Fun",
+              "type": "Ryan Trahan",
+              "date": "2025-02-15T08:00:17-08:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "cG22jPC9J_0",
+              "title": "I Survived the World's Loneliest Job",
+              "thumbnail": "https://img.youtube.com/vi/cG22jPC9J_0/maxresdefault.jpg",
+              "duration": "12:25",
+              "durationSec": 745,
+              "group": "Youtubers",
+              "category": "Fun",
+              "type": "Ryan Trahan",
+              "date": "2023-03-11T07:03:33-08:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "y-34-bAKgU8",
+              "title": "I Tested Japan's Weirdest Trains",
+              "thumbnail": "https://img.youtube.com/vi/y-34-bAKgU8/maxresdefault.jpg",
+              "duration": "22:27",
+              "durationSec": 1347,
+              "group": "Youtubers",
+              "category": "Fun",
+              "type": "Ryan Trahan",
+              "date": "2025-03-15T08:01:14-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "ymvjfu_Hm_8",
+              "title": "I Tried Every Seat on the Most Expensive Airline",
+              "thumbnail": "https://img.youtube.com/vi/ymvjfu_Hm_8/maxresdefault.jpg",
+              "duration": "25:23",
+              "durationSec": 1523,
+              "group": "Youtubers",
+              "category": "Fun",
+              "type": "Ryan Trahan",
+              "date": "2024-05-18T08:00:47-07:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "kU2pSzKkfOk",
+              "title": "I Asked 100 Drive Thrus for Banned Items",
+              "thumbnail": "https://img.youtube.com/vi/kU2pSzKkfOk/maxresdefault.jpg",
+              "duration": "16:03",
+              "durationSec": 963,
+              "group": "Youtubers",
+              "category": "Fun",
+              "type": "Ryan Trahan",
+              "date": "2023-05-18T12:18:50-07:00",
+              "resolution": "1080p"
             }
           ]
         }
