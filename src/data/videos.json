@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T07:55:44.745Z",
+  "lastUpdated": "2026-04-21T13:53:39.655Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -1477,18 +1477,6 @@
               "resolution": "1080p"
             },
             {
-              "youtubeLinkID": "zq55GTBp8ho",
-              "title": "Bala Tripuramani - Full Video | Brahmotsavam | Mahesh Babu | Kajal Aggarwal | Mickey J Meyer",
-              "thumbnail": "https://img.youtube.com/vi/zq55GTBp8ho/maxresdefault.jpg",
-              "duration": "4:05",
-              "durationSec": 245,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Groovy",
-              "date": "2020-07-31T05:30:12-07:00",
-              "resolution": "1080p"
-            },
-            {
               "youtubeLinkID": "1FMDlWOu-AI",
               "title": "Choosa Choosa Full Video Song | Dhruva Full Video Songs | Ram Charan,Rakul Preet | HipHopTamizha",
               "thumbnail": "https://img.youtube.com/vi/1FMDlWOu-AI/maxresdefault.jpg",
@@ -2183,6 +2171,30 @@
               "type": "Groovy",
               "date": "2026-03-09T03:33:07-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "hYPcZkj5bbc",
+              "title": "Kiss Song - 8K Video Song | JACK | Siddhu Jonnalagadda | Vaishnavi Chaitanya | Bhaskar | BVSN Prasad",
+              "thumbnail": "https://img.youtube.com/vi/hYPcZkj5bbc/maxresdefault.jpg",
+              "duration": "3:09",
+              "durationSec": 189,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-04-13T22:30:33-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "ej3MaK8-Gls",
+              "title": "Bala Tripuramani | Brahmotsavam | Mahesh Babu | Kajal Aggarwal | Mickey J Meyer | Full Video",
+              "thumbnail": "https://img.youtube.com/vi/ej3MaK8-Gls/maxresdefault.jpg",
+              "duration": "4:01",
+              "durationSec": 241,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-03-23T01:57:21-07:00",
+              "resolution": "1080p"
             }
           ],
           "Energetic": [
@@ -4175,6 +4187,18 @@
               "type": "Romance",
               "date": "2026-03-14T22:30:18-07:00",
               "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "W-YOvWCYMfk",
+              "title": "8K Remastered - Titli Full Video Song | Deepika Padukone, Shahrukh Khan | Chennai Express",
+              "thumbnail": "https://img.youtube.com/vi/W-YOvWCYMfk/maxresdefault.jpg",
+              "duration": "4:05",
+              "durationSec": 245,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Romance",
+              "date": "2024-05-14T06:42:52-07:00",
+              "resolution": "8K"
             }
           ],
           "Item": [
@@ -5659,6 +5683,152 @@
               "resolution": "4K"
             }
           ],
+          "Devotional": [
+            {
+              "youtubeLinkID": "QU60pnaOn4g",
+              "title": "Ram Siya Ram Full Song 8K | Prabhas | Kriti S | Sachet-Parampara | Manoj Muntashir | Shri Ram Bhajan",
+              "thumbnail": "https://img.youtube.com/vi/QU60pnaOn4g/maxresdefault.jpg",
+              "duration": "3:42",
+              "durationSec": 222,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2025-07-07T23:30:07-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "e_hDBpqEVkw",
+              "title": "Shyama Aan Baso 8K Video: Khushalii Kumar | Sachet-Parampara | Satvik | Youngveer | Bhushan Kumar",
+              "thumbnail": "https://img.youtube.com/vi/e_hDBpqEVkw/maxresdefault.jpg",
+              "duration": "4:33",
+              "durationSec": 273,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2025-10-09T22:30:09-07:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "dpQQW8hdSkI",
+              "title": "Namo Namo 8K Video | Kedarnath | Sushant Singh Rajput | Amit Trivedi | Amitabh Bhattacharya",
+              "thumbnail": "https://img.youtube.com/vi/dpQQW8hdSkI/maxresdefault.jpg",
+              "duration": "5:04",
+              "durationSec": 304,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2026-02-01T18:30:41-08:00",
+              "resolution": "8K"
+            },
+            {
+              "youtubeLinkID": "f18cpg-mTrY",
+              "title": "SHRI KRISHNA GOVIND HARE MURARI || Cover Song by SIMPAL KHAREL | Krishna Bhajan 2022 | BHAKTI SONG",
+              "thumbnail": "https://img.youtube.com/vi/f18cpg-mTrY/maxresdefault.jpg",
+              "duration": "4:12",
+              "durationSec": 252,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2022-11-24T04:41:39-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "45mT6CvbjkA",
+              "title": "SHYAMA AAN BASO VRINDAVAN MEIN || SIMPAL KHAREL NEW SONG | RADHA KRISHNA BHAJAN 2024 | BHAKTISONG",
+              "thumbnail": "https://img.youtube.com/vi/45mT6CvbjkA/maxresdefault.jpg",
+              "duration": "4:40",
+              "durationSec": 280,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2024-01-25T05:10:44-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "jOEJfsISeSQ",
+              "title": "ACHYUTAM KESHAVAM || SIMPAL KHAREL NEW SONG | RADHA KRSIHNA BHAJAN 2024 | BHAKTI SONG | JANMASHTAMI",
+              "thumbnail": "https://img.youtube.com/vi/jOEJfsISeSQ/maxresdefault.jpg",
+              "duration": "5:08",
+              "durationSec": 308,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2024-08-24T06:53:32-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "7uBblxch1dY",
+              "title": "Jaya Janardhana Krishna Radhika Pathe | Shree Naval Kishori",
+              "thumbnail": "https://img.youtube.com/vi/7uBblxch1dY/maxresdefault.jpg",
+              "duration": "5:01",
+              "durationSec": 301,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2024-12-11T18:19:47-08:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "8U7x1mhPidk",
+              "title": "Shri Ramchandra Kripalu Bhajman | Ram Stuti | Shree Naval Kishori | श्री रामचंद्र कृपालु भजमन",
+              "thumbnail": "https://img.youtube.com/vi/8U7x1mhPidk/maxresdefault.jpg",
+              "duration": "2:38",
+              "durationSec": 158,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2026-03-24T18:30:06-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "_P2aI9SYDbo",
+              "title": "Garuda Gamana Tava | Shree Naval Kishori | Divine Dharohar",
+              "thumbnail": "https://img.youtube.com/vi/_P2aI9SYDbo/maxresdefault.jpg",
+              "duration": "4:15",
+              "durationSec": 255,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2024-07-05T17:30:07-07:00",
+              "resolution": "4K"
+            },
+            {
+              "youtubeLinkID": "oUe2s3UxJqY",
+              "title": "Radha Krishna Naamawali Chant | Tum Prem Ho | MOhit lalwani | Bharat Kamal | Akanksha Bhandari",
+              "thumbnail": "https://img.youtube.com/vi/oUe2s3UxJqY/maxresdefault.jpg",
+              "duration": "8:38",
+              "durationSec": 518,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2019-12-20T20:57:52-08:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "qPFGGpGbZEs",
+              "title": "Achyutam Keshavam | Beautiful Krishna Bhajan for Inner Peace",
+              "thumbnail": "https://img.youtube.com/vi/qPFGGpGbZEs/maxresdefault.jpg",
+              "duration": "5:18",
+              "durationSec": 318,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2025-11-26T07:31:48-08:00",
+              "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "-kbrdUQlQjQ",
+              "title": "Bhagwati Stotram | Most Powerful Chant to Invoke Goddess Shakti & Divine Protection",
+              "thumbnail": "https://img.youtube.com/vi/-kbrdUQlQjQ/maxresdefault.jpg",
+              "duration": "5:21",
+              "durationSec": 321,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2026-04-09T07:11:06-07:00",
+              "resolution": "4K"
+            }
+          ],
           "Dance Covers": [
             {
               "youtubeLinkID": "JFvoro5T-7A",
@@ -5901,6 +6071,18 @@
               "type": "Malayalam",
               "date": "2015-06-20T06:30:01-07:00",
               "resolution": "1080p"
+            },
+            {
+              "youtubeLinkID": "9_xMvx-vnJ0",
+              "title": "Welcome to Hyderabad Video Song | Premalu | Naslen | Mamitha | Girish AD | Vishnu Vijay |Suhail Koya",
+              "thumbnail": "https://img.youtube.com/vi/9_xMvx-vnJ0/maxresdefault.jpg",
+              "duration": "4:09",
+              "durationSec": 249,
+              "group": "Music",
+              "category": "Others",
+              "type": "Malayalam",
+              "date": "2024-02-19T03:29:07-08:00",
+              "resolution": "4K"
             }
           ],
           "Bhojpuri": [
