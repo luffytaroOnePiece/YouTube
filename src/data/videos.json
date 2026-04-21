@@ -1,11 +1,23 @@
 {
-  "lastUpdated": "2026-04-21T07:03:01.444Z",
+  "lastUpdated": "2026-04-21T07:55:44.745Z",
   "groups": {
     "Music": {
       "icon": "",
       "categories": {
         "Telugu": {
           "Romance": [
+            {
+              "youtubeLinkID": "__YIIytAnI8",
+              "title": "Nuvvunte Chaley 8K Video | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
+              "thumbnail": "https://img.youtube.com/vi/__YIIytAnI8/maxresdefault.jpg",
+              "duration": "3:29",
+              "durationSec": 209,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2026-04-20T23:30:31-07:00",
+              "resolution": "8K"
+            },
             {
               "youtubeLinkID": "PmuQDnWT-WI",
               "title": "Chinni Gundelo 8K Video | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
@@ -76,18 +88,6 @@
               "category": "Telugu",
               "type": "Romance",
               "date": "2025-12-17T05:59:05-08:00",
-              "resolution": "4K"
-            },
-            {
-              "youtubeLinkID": "W8nny8Vm81s",
-              "title": "Full Video: Nuvvunte Chaley | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
-              "thumbnail": "https://img.youtube.com/vi/W8nny8Vm81s/maxresdefault.jpg",
-              "duration": "3:29",
-              "durationSec": 209,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Romance",
-              "date": "2025-12-16T20:29:07-08:00",
               "resolution": "4K"
             },
             {
