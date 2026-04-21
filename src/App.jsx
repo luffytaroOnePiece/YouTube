@@ -666,7 +666,23 @@ function App() {
 
       {/* Analytics Modal */}
       {showAnalytics && (
-        <AnalyticsDashboard onClose={() => setShowAnalytics(false)} allVideos={allVideos} isMonitorSize={isMonitorSize} />
+        <AnalyticsDashboard
+          onClose={() => setShowAnalytics(false)}
+          videos={filteredVideos}
+          isMonitorSize={isMonitorSize}
+          onFilterUpdate={(type, value) => {
+            if (type === 'group') setFilters({ group: value, category: 'All', playlist: 'All' });
+            else if (type === 'category') setFilters({ category: value, playlist: 'All' });
+            else if (type === 'resolution') setFilters({ resolution: value });
+            else if (type === 'type') {
+               const q = searchQuery.replace(/type:\S+/g, '').trim();
+               const typeVal = value.split(' ')[0].toLowerCase();
+               setFilters({ search: (q ? q + ' ' : '') + `type:${typeVal}` });
+            }
+          }}
+          hasActiveFilters={hasActiveFilters}
+          onResetFilters={handleReset}
+        />
       )}
     </div>
   );

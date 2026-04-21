@@ -4,7 +4,7 @@ import {
   PieChart, Pie, Cell, AreaChart, Area, CartesianGrid
 } from 'recharts';
 
-function AnalyticsDashboard({ onClose, allVideos, isMonitorSize }) {
+function AnalyticsDashboard({ onClose, videos, isMonitorSize, onFilterUpdate, hasActiveFilters, onResetFilters }) {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ function AnalyticsDashboard({ onClose, allVideos, isMonitorSize }) {
     const categoryCount = {};
     const yearCount = {};
 
-    allVideos.forEach(v => {
+    videos.forEach(v => {
       const sec = v.durationSec || 0;
       totalWatchSec += sec;
 
@@ -65,7 +65,7 @@ function AnalyticsDashboard({ onClose, allVideos, isMonitorSize }) {
     const hours = Math.floor(totalWatchSec / 3600);
     const mins = Math.floor((totalWatchSec % 3600) / 60);
 
-    const avgSec = allVideos.length ? Math.floor(totalWatchSec / allVideos.length) : 0;
+    const avgSec = videos.length ? Math.floor(totalWatchSec / videos.length) : 0;
     const avgMins = Math.floor(avgSec / 60);
     const avgRemainderSec = avgSec % 60;
     const avgDurationStr = `${avgMins}m ${avgRemainderSec}s`;
@@ -77,14 +77,14 @@ function AnalyticsDashboard({ onClose, allVideos, isMonitorSize }) {
     const timelineData = Object.entries(yearCount).map(([name, count]) => ({ name, count, raw: name })).sort((a, b) => a.raw.localeCompare(b.raw));
 
     // New replaced KPI metrics
-    const premiumPct = allVideos.length ? Math.round((highResCount / allVideos.length) * 100) : 0;
+    const premiumPct = videos.length ? Math.round((highResCount / videos.length) * 100) : 0;
     const topMotifName = topTypes.length > 0 ? topTypes[0].name : 'N/A';
     const topMotifCount = topTypes.length > 0 ? topTypes[0].count : 0;
     const latestVideoStr = latestVideo ? latestVideo.title : 'N/A';
     const latestVideoDate = latestVideo ? new Date(latestVideo.date).toLocaleDateString() : '';
 
     return {
-      totalVideos: allVideos.length,
+      totalVideos: videos.length,
       watchHours: hours,
       watchMins: mins,
       avgDurationStr,
@@ -99,11 +99,11 @@ function AnalyticsDashboard({ onClose, allVideos, isMonitorSize }) {
       catData,
       timelineData
     };
-  }, [allVideos]);
+  }, [videos]);
 
   const topRecentVideos = useMemo(() => {
-    return [...allVideos].filter(v => v.date).sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 20);
-  }, [allVideos]);
+    return [...videos].filter(v => v.date).sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 20);
+  }, [videos]);
 
   const PIE_COLORS = ['#ff2d55', '#5856d6', '#ff9500', '#34c759', '#32ade6'];
   const RES_COLORS = { '8K': '#ff9500', '4K': '#007aff', '1080p': '#8e8e93' };
@@ -121,9 +121,21 @@ function AnalyticsDashboard({ onClose, allVideos, isMonitorSize }) {
       <div className={`analytics-modal ${isMounted ? 'loaded' : ''}`}>
         
         <div className="analytics-modal__header">
-          <div>
-            <h2 className="analytics-modal__title">Library Insights</h2>
-            <p className="analytics-modal__subtitle">Analyzing {allVideos.length} videos</p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            <div>
+              <h2 className="analytics-modal__title">Library Insights</h2>
+              <p className="analytics-modal__subtitle">Analyzing {videos.length} videos</p>
+            </div>
+            {hasActiveFilters && (
+              <button 
+                onClick={onResetFilters}
+                className="analytics-card__badge" 
+                style={{ cursor: 'pointer', background: 'rgba(255, 45, 85, 0.15)', color: '#ff2d55', border: '1px solid rgba(255, 45, 85, 0.3)', padding: '6px 12px', borderRadius: '12px', fontSize: '0.85rem', fontWeight: '600' }}
+                title="Clear current drill-down filters"
+              >
+                Clear Filters
+              </button>
+            )}
           </div>
           <button className="analytics-modal__close" onClick={onClose} title="Close Analytics">
             ✕
@@ -187,7 +199,13 @@ function AnalyticsDashboard({ onClose, allVideos, isMonitorSize }) {
                   <XAxis dataKey="name" stroke="rgba(255,255,255,0.5)" tick={{fontSize: 12, fill: 'rgba(255,255,255,0.8)'}} axisLine={false} tickLine={false} />
                   <YAxis stroke="rgba(255,255,255,0.5)" tick={{fontSize: 12, fill: 'rgba(255,255,255,0.8)'}} axisLine={false} tickLine={false} />
                   <Tooltip cursor={{fill: 'rgba(255,255,255,0.05)'}} contentStyle={{backgroundColor: 'rgba(30,30,30,0.85)', backdropFilter: 'blur(10px)', borderRadius: '12px', border: '0.5px solid rgba(255,255,255,0.1)'}} itemStyle={{color: '#fff'}} />
-                  <Bar dataKey="count" fill="#ff2d55" radius={[6, 6, 0, 0]} />
+                  <Bar 
+                    dataKey="count" 
+                    fill="#ff2d55" 
+                    radius={[6, 6, 0, 0]} 
+                    onClick={(data) => onFilterUpdate && onFilterUpdate('type', data.name)}
+                    style={{ cursor: 'pointer' }}
+                  />
                 </BarChart>
               </ResponsiveContainer>
             </div>
@@ -205,7 +223,12 @@ function AnalyticsDashboard({ onClose, allVideos, isMonitorSize }) {
                     labelLine={{ stroke: 'rgba(255,255,255,0.3)', strokeWidth: 1.5 }}
                   >
                     {stats.groupTimePieData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={PIE_COLORS[index % PIE_COLORS.length]} />
+                      <Cell 
+                        key={`cell-${index}`} 
+                        fill={PIE_COLORS[index % PIE_COLORS.length]} 
+                        onClick={() => onFilterUpdate && onFilterUpdate('group', entry.name)}
+                        style={{ cursor: 'pointer', outline: 'none' }}
+                      />
                     ))}
                   </Pie>
                   <Tooltip contentStyle={{backgroundColor: 'rgba(30,30,30,0.85)', backdropFilter: 'blur(10px)', borderRadius: '12px', border: '0.5px solid rgba(255,255,255,0.1)'}} itemStyle={{color: '#fff'}} />
@@ -226,7 +249,12 @@ function AnalyticsDashboard({ onClose, allVideos, isMonitorSize }) {
                     labelLine={{ stroke: 'rgba(255,255,255,0.3)', strokeWidth: 1.5 }}
                   >
                     {stats.resData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={PIE_COLORS[(index+2) % PIE_COLORS.length]} />
+                      <Cell 
+                        key={`cell-${index}`} 
+                        fill={PIE_COLORS[(index+2) % PIE_COLORS.length]} 
+                        onClick={() => onFilterUpdate && onFilterUpdate('resolution', entry.name)}
+                        style={{ cursor: 'pointer', outline: 'none' }}
+                      />
                     ))}
                   </Pie>
                   <Tooltip contentStyle={{backgroundColor: 'rgba(30,30,30,0.85)', backdropFilter: 'blur(10px)', borderRadius: '12px', border: '0.5px solid rgba(255,255,255,0.1)'}} itemStyle={{color: '#fff'}} />
@@ -242,7 +270,13 @@ function AnalyticsDashboard({ onClose, allVideos, isMonitorSize }) {
                   <XAxis type="number" stroke="rgba(255,255,255,0.5)" tick={{fontSize: 12, fill: 'rgba(255,255,255,0.8)'}} axisLine={false} tickLine={false} />
                   <YAxis dataKey="name" type="category" stroke="rgba(255,255,255,0.5)" tick={{fontSize: 12, fill: 'rgba(255,255,255,0.8)'}} width={100} axisLine={false} tickLine={false} />
                   <Tooltip cursor={{fill: 'rgba(255,255,255,0.05)'}} contentStyle={{backgroundColor: 'rgba(30,30,30,0.85)', backdropFilter: 'blur(10px)', borderRadius: '12px', border: '0.5px solid rgba(255,255,255,0.1)'}} itemStyle={{color: '#fff'}} />
-                  <Bar dataKey="count" fill="#32ade6" radius={[0, 6, 6, 0]} />
+                  <Bar 
+                    dataKey="count" 
+                    fill="#32ade6" 
+                    radius={[0, 6, 6, 0]} 
+                    onClick={(data) => onFilterUpdate && onFilterUpdate('category', data.name)}
+                    style={{ cursor: 'pointer' }}
+                  />
                 </BarChart>
               </ResponsiveContainer>
             </div>
