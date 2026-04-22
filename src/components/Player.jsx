@@ -47,11 +47,53 @@ export default function Player({
   const [sidebarTab, setSidebarTab] = useState('queue'); // 'queue' | 'related'
   const [upNextCountdown, setUpNextCountdown] = useState(null); // null or { seconds, video }
   const countdownRef = useRef(null);
+  const overlayRef = useRef(null);
+  const wasFullscreenRef = useRef(false); // tracks fullscreen intent across autoplay
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
-  // Close on ESC
+  // Fullscreen toggle
+  const enterFullscreen = useCallback(() => {
+    const el = overlayRef.current;
+    if (!el) return;
+    const rfs = el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
+    if (rfs) rfs.call(el).catch(() => {});
+  }, []);
+
+  const exitFullscreen = useCallback(() => {
+    const exitFs = document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen;
+    if (exitFs && document.fullscreenElement) exitFs.call(document).catch(() => {});
+  }, []);
+
+  const toggleFullscreen = useCallback(() => {
+    if (document.fullscreenElement) {
+      exitFullscreen();
+    } else {
+      enterFullscreen();
+    }
+  }, [enterFullscreen, exitFullscreen]);
+
+  // Track fullscreen state changes
+  useEffect(() => {
+    const handleFsChange = () => {
+      const inFs = !!document.fullscreenElement;
+      setIsFullscreen(inFs);
+    };
+    document.addEventListener('fullscreenchange', handleFsChange);
+    document.addEventListener('webkitfullscreenchange', handleFsChange);
+    return () => {
+      document.removeEventListener('fullscreenchange', handleFsChange);
+      document.removeEventListener('webkitfullscreenchange', handleFsChange);
+    };
+  }, []);
+
+  // Close on ESC (only when not in fullscreen — browser handles ESC for fullscreen)
   const handleKeyDown = useCallback(
     (e) => {
       if (e.key === 'Escape') {
+        if (document.fullscreenElement) {
+          // Let the browser handle exiting fullscreen; don't close player
+          return;
+        }
         if (upNextCountdown) {
           cancelCountdown();
         } else {
@@ -91,6 +133,9 @@ export default function Player({
   const handleVideoEnd = useCallback(() => {
     if (!autoplay || !queue || queue.length === 0) return;
 
+    // Capture fullscreen state BEFORE advancing
+    wasFullscreenRef.current = !!document.fullscreenElement;
+
     const nextVideo = queue[0];
     setUpNextCountdown({ seconds: 3, video: nextVideo });
 
@@ -108,6 +153,26 @@ export default function Player({
     }, 1000);
   }, [autoplay, queue, onAdvance]);
 
+  // Re-enter fullscreen after autoplay advances and new video is ready
+  const handlePlayerReady = useCallback((event) => {
+    // Force highest available quality
+    const player = event.target;
+    try {
+      const levels = player.getAvailableQualityLevels();
+      if (levels && levels.length > 0) {
+        player.setPlaybackQuality(levels[0]); // highest available
+      }
+    } catch (e) { /* ignore */ }
+
+    if (wasFullscreenRef.current) {
+      // Small delay to let the iframe settle before requesting fullscreen
+      setTimeout(() => {
+        enterFullscreen();
+      }, 300);
+      wasFullscreenRef.current = false;
+    }
+  }, [enterFullscreen]);
+
   if (!video) return null;
 
   const youtubeOpts = {
@@ -117,6 +182,7 @@ export default function Player({
       autoplay: 1,
       modestbranding: 1,
       rel: 0,
+      vq: 'hd2160', // request highest available resolution
     },
   };
 
@@ -124,9 +190,10 @@ export default function Player({
 
   return (
     <div
-      className={`player-overlay ${isMiniPlayer ? 'mini' : ''}`}
+      ref={overlayRef}
+      className={`player-overlay ${isMiniPlayer ? 'mini' : ''} ${isFullscreen ? 'player-overlay--fullscreen' : ''}`}
       onClick={(e) => {
-        if (!isMiniPlayer && e.target === e.currentTarget) onClose();
+        if (!isMiniPlayer && !isFullscreen && e.target === e.currentTarget) onClose();
       }}
     >
       <div className={`player-modal ${!isMiniPlayer ? 'player-modal--with-sidebar' : ''}`} onClick={(e) => e.stopPropagation()}>
@@ -145,6 +212,30 @@ export default function Player({
                 >
                   ↗ YouTube
                 </a>
+              )}
+              {!isMiniPlayer && (
+                <button
+                  className="player-modal__close"
+                  onClick={toggleFullscreen}
+                  aria-label={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
+                  title={isFullscreen ? "Exit Fullscreen" : "Fullscreen"}
+                >
+                  {isFullscreen ? (
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="4 14 10 14 10 20" />
+                      <polyline points="20 10 14 10 14 4" />
+                      <line x1="14" y1="10" x2="21" y2="3" />
+                      <line x1="3" y1="21" x2="10" y2="14" />
+                    </svg>
+                  ) : (
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="15 3 21 3 21 9" />
+                      <polyline points="9 21 3 21 3 15" />
+                      <line x1="21" y1="3" x2="14" y2="10" />
+                      <line x1="3" y1="21" x2="10" y2="14" />
+                    </svg>
+                  )}
+                </button>
               )}
               <button
                 className="player-modal__close"
@@ -171,6 +262,7 @@ export default function Player({
               videoId={video.youtubeLinkID}
               opts={youtubeOpts}
               onEnd={handleVideoEnd}
+              onReady={handlePlayerReady}
               style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
             />
 

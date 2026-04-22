@@ -1860,6 +1860,60 @@ body::-webkit-scrollbar {
   padding: 20px;
 }
 
+/* ── Fullscreen Player ─────────────────────────────────────── */
+.player-overlay--fullscreen {
+  padding: 0;
+  background: #000;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.player-overlay--fullscreen .player-modal {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border: none;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-overlay--fullscreen .player-modal__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-overlay--fullscreen .player-modal__header {
+  display: none;
+}
+
+.player-overlay--fullscreen .player-modal__video {
+  flex: 1;
+  padding-top: 0;
+  position: relative;
+}
+
+.player-overlay--fullscreen .player-modal__video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.player-overlay--fullscreen .player-modal__info {
+  display: none;
+}
+
+.player-overlay--fullscreen .player-modal__sidebar-wrapper {
+  display: none;
+}
+
+.player-overlay--fullscreen .player-modal__up-next {
+  z-index: 30;
+}
+
 @keyframes overlayFadeIn {
   from {
     opacity: 0;
