@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T02:41:45.549Z",
+  "lastUpdated": "2026-04-23T09:23:57.167Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -7855,6 +7855,19 @@
               "date": "2023-10-04T06:00:00-07:00",
               "resolution": "1080p",
               "viewCount": 8255692
+            },
+            {
+              "youtubeLinkID": "U4aEnnoTxS8",
+              "title": "Bichagadu Telugu Blockbuster Action/Thriller Hit Full Length HD Movie | Vijay Antony | Satna | OM",
+              "thumbnail": "https://img.youtube.com/vi/U4aEnnoTxS8/maxresdefault.jpg",
+              "duration": "1:53:17",
+              "durationSec": 6797,
+              "group": "Movies",
+              "category": "Telugu",
+              "type": "Essentials",
+              "date": "2025-11-18T22:06:07-08:00",
+              "resolution": "1080p",
+              "viewCount": 73255
             }
           ]
         },
