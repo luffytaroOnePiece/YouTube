@@ -670,6 +670,8 @@ function App() {
         <AnalyticsDashboard
           onClose={() => setShowAnalytics(false)}
           videos={filteredVideos}
+          allVideos={allVideos}
+          favorites={favorites}
           isMonitorSize={isMonitorSize}
           onFilterUpdate={(type, value) => {
             if (type === 'group') setFilters({ group: value, category: 'All', playlist: 'All' });
