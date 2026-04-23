@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T11:14:46.269Z",
+  "lastUpdated": "2026-04-23T11:34:41.936Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -122,6 +122,19 @@
               "date": "2025-11-13T05:30:26-08:00",
               "resolution": "8K",
               "viewCount": 570467
+            },
+            {
+              "youtubeLinkID": "gG9yb5K8BIc",
+              "title": "Adire Hrudayam - 8K Video Song | RX 100 | Kartikeya, Payal Rajput | Karthik | Chaitan Bharadwaj",
+              "thumbnail": "https://img.youtube.com/vi/gG9yb5K8BIc/maxresdefault.jpg",
+              "duration": "4:50",
+              "durationSec": 290,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2025-10-14T06:30:42-07:00",
+              "resolution": "8K",
+              "viewCount": 1033646
             },
             {
               "youtubeLinkID": "2zR4TNTXB6I",
@@ -2390,6 +2403,19 @@
               "date": "2026-04-23T01:30:10-07:00",
               "resolution": "8K",
               "viewCount": 2721
+            },
+            {
+              "youtubeLinkID": "Tog74lrHfgE",
+              "title": "Chamkeela Angeelesi - 8K Video Song | Dasara | Nani, Keerthy Suresh | Santhosh Narayanan",
+              "thumbnail": "https://img.youtube.com/vi/Tog74lrHfgE/maxresdefault.jpg",
+              "duration": "3:21",
+              "durationSec": 201,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2025-06-02T05:30:37-07:00",
+              "resolution": "4K",
+              "viewCount": 6212095
             }
           ],
           "Energetic": [
@@ -7010,7 +7036,7 @@
               "viewCount": 17752382
             }
           ],
-          "INternational": [
+          "International": [
             {
               "youtubeLinkID": "i7wveOu5hkQ",
               "title": "INNA - Yalla | Official Music Video",
@@ -7019,7 +7045,7 @@
               "durationSec": 197,
               "group": "Music",
               "category": "Others",
-              "type": "INternational",
+              "type": "International",
               "date": "2015-11-12T07:24:45-08:00",
               "resolution": "1080p",
               "viewCount": 537261152
@@ -7032,7 +7058,7 @@
               "durationSec": 217,
               "group": "Music",
               "category": "Others",
-              "type": "INternational",
+              "type": "International",
               "date": "2018-04-20T03:40:51-07:00",
               "resolution": "1080p",
               "viewCount": 2320513377
@@ -7045,7 +7071,7 @@
               "durationSec": 186,
               "group": "Music",
               "category": "Others",
-              "type": "INternational",
+              "type": "International",
               "date": "2017-06-29T21:00:05-07:00",
               "resolution": "1080p",
               "viewCount": 3637555844
@@ -7058,7 +7084,7 @@
               "durationSec": 232,
               "group": "Music",
               "category": "Others",
-              "type": "INternational",
+              "type": "International",
               "date": "2018-10-09T17:35:00-07:00",
               "resolution": "4K",
               "viewCount": 2790175491
@@ -7071,7 +7097,7 @@
               "durationSec": 282,
               "group": "Music",
               "category": "Others",
-              "type": "INternational",
+              "type": "International",
               "date": "2017-01-12T21:00:02-08:00",
               "resolution": "1080p",
               "viewCount": 8997248912
@@ -7084,7 +7110,7 @@
               "durationSec": 186,
               "group": "Music",
               "category": "Others",
-              "type": "INternational",
+              "type": "International",
               "date": "2014-09-10T10:00:09-07:00",
               "resolution": "1080p",
               "viewCount": 715667587
@@ -7097,7 +7123,7 @@
               "durationSec": 151,
               "group": "Music",
               "category": "Others",
-              "type": "INternational",
+              "type": "International",
               "date": "2019-06-20T13:58:45-07:00",
               "resolution": "1080p",
               "viewCount": 265294017
@@ -8173,6 +8199,235 @@
               "date": "2026-01-07T20:40:00-08:00",
               "resolution": "4K",
               "viewCount": 109223257
+            }
+          ]
+        },
+        "Clips": {
+          "Visuals": [
+            {
+              "youtubeLinkID": "yao9ww00ul4",
+              "title": "Visuals - Your Name (4K)",
+              "thumbnail": "https://img.youtube.com/vi/yao9ww00ul4/maxresdefault.jpg",
+              "duration": "3:12",
+              "durationSec": 192,
+              "group": "Movies",
+              "category": "Clips",
+              "type": "Visuals",
+              "date": "2021-09-05T01:00:14-07:00",
+              "resolution": "4K",
+              "viewCount": 5294914
+            },
+            {
+              "youtubeLinkID": "JRmz4N6ao5o",
+              "title": "Visuals - Game of Thrones (4K)",
+              "thumbnail": "https://img.youtube.com/vi/JRmz4N6ao5o/maxresdefault.jpg",
+              "duration": "10:01",
+              "durationSec": 601,
+              "group": "Movies",
+              "category": "Clips",
+              "type": "Visuals",
+              "date": "2023-04-02T01:00:08-07:00",
+              "resolution": "4K",
+              "viewCount": 2767553
+            },
+            {
+              "youtubeLinkID": "8JfdD0GoGr8",
+              "title": "Visuals - The Batman (4K)",
+              "thumbnail": "https://img.youtube.com/vi/8JfdD0GoGr8/maxresdefault.jpg",
+              "duration": "4:00",
+              "durationSec": 240,
+              "group": "Movies",
+              "category": "Clips",
+              "type": "Visuals",
+              "date": "2022-04-26T07:00:05-07:00",
+              "resolution": "4K",
+              "viewCount": 230331
+            },
+            {
+              "youtubeLinkID": "5pvdT_JapQs",
+              "title": "Visuals - Stranger Things (4K)",
+              "thumbnail": "https://img.youtube.com/vi/5pvdT_JapQs/maxresdefault.jpg",
+              "duration": "9:28",
+              "durationSec": 568,
+              "group": "Movies",
+              "category": "Clips",
+              "type": "Visuals",
+              "date": "2026-01-02T07:00:17-08:00",
+              "resolution": "4K",
+              "viewCount": 121076
+            },
+            {
+              "youtubeLinkID": "Hrb8wl-E6pk",
+              "title": "Visuals - Avatar (4K)",
+              "thumbnail": "https://img.youtube.com/vi/Hrb8wl-E6pk/maxresdefault.jpg",
+              "duration": "4:42",
+              "durationSec": 282,
+              "group": "Movies",
+              "category": "Clips",
+              "type": "Visuals",
+              "date": "2021-08-11T09:00:15-07:00",
+              "resolution": "4K",
+              "viewCount": 95962
+            },
+            {
+              "youtubeLinkID": "5KIV8xEnCuQ",
+              "title": "Visuals - The Dark Knight Trilogy (4K IMAX)",
+              "thumbnail": "https://img.youtube.com/vi/5KIV8xEnCuQ/maxresdefault.jpg",
+              "duration": "4:37",
+              "durationSec": 277,
+              "group": "Movies",
+              "category": "Clips",
+              "type": "Visuals",
+              "date": "2022-09-25T01:00:02-07:00",
+              "resolution": "4K",
+              "viewCount": 69683
+            },
+            {
+              "youtubeLinkID": "0Uw3D1D8dDI",
+              "title": "Visuals - WALL-E (4K)",
+              "thumbnail": "https://img.youtube.com/vi/0Uw3D1D8dDI/maxresdefault.jpg",
+              "duration": "2:15",
+              "durationSec": 135,
+              "group": "Movies",
+              "category": "Clips",
+              "type": "Visuals",
+              "date": "2022-05-01T07:00:00-07:00",
+              "resolution": "4K",
+              "viewCount": 54760
+            },
+            {
+              "youtubeLinkID": "5ixjdMHzjS8",
+              "title": "Visuals - Avatar: The Way of Water (4K IMAX)",
+              "thumbnail": "https://img.youtube.com/vi/5ixjdMHzjS8/maxresdefault.jpg",
+              "duration": "3:34",
+              "durationSec": 214,
+              "group": "Movies",
+              "category": "Clips",
+              "type": "Visuals",
+              "date": "2023-04-09T09:00:03-07:00",
+              "resolution": "4K",
+              "viewCount": 49872
+            },
+            {
+              "youtubeLinkID": "x_GzkxcyFIc",
+              "title": "Visuals - Interstellar (4K IMAX)",
+              "thumbnail": "https://img.youtube.com/vi/x_GzkxcyFIc/maxresdefault.jpg",
+              "duration": "3:46",
+              "durationSec": 226,
+              "group": "Movies",
+              "category": "Clips",
+              "type": "Visuals",
+              "date": "2022-01-02T10:02:40-08:00",
+              "resolution": "4K",
+              "viewCount": 31138
+            },
+            {
+              "youtubeLinkID": "eSklm3asPz0",
+              "title": "Visuals - The Lord of the Rings (4K)",
+              "thumbnail": "https://img.youtube.com/vi/eSklm3asPz0/maxresdefault.jpg",
+              "duration": "5:55",
+              "durationSec": 355,
+              "group": "Movies",
+              "category": "Clips",
+              "type": "Visuals",
+              "date": "2022-01-11T06:34:56-08:00",
+              "resolution": "4K",
+              "viewCount": 15549
+            },
+            {
+              "youtubeLinkID": "YSJb-Q3ik3E",
+              "title": "Visuals - Avatar: Fire and Ash (4K)",
+              "thumbnail": "https://img.youtube.com/vi/YSJb-Q3ik3E/maxresdefault.jpg",
+              "duration": "5:22",
+              "durationSec": 322,
+              "group": "Movies",
+              "category": "Clips",
+              "type": "Visuals",
+              "date": "2026-04-05T09:01:01-07:00",
+              "resolution": "4K",
+              "viewCount": 3606
+            },
+            {
+              "youtubeLinkID": "MMgTUuHRrE8",
+              "title": "Visuals - Titanic (4K)",
+              "thumbnail": "https://img.youtube.com/vi/MMgTUuHRrE8/maxresdefault.jpg",
+              "duration": "5:17",
+              "durationSec": 317,
+              "group": "Movies",
+              "category": "Clips",
+              "type": "Visuals",
+              "date": "2026-02-15T09:00:34-08:00",
+              "resolution": "4K",
+              "viewCount": 5767
+            }
+          ]
+        },
+        "Anime": {
+          "AMV": [
+            {
+              "youtubeLinkID": "zQGQLEE1nQs",
+              "title": "Darkside「AMV」Anime Mix",
+              "thumbnail": "https://img.youtube.com/vi/zQGQLEE1nQs/maxresdefault.jpg",
+              "duration": "2:55",
+              "durationSec": 175,
+              "group": "Movies",
+              "category": "Anime",
+              "type": "AMV",
+              "date": "2022-12-26T15:01:17-08:00",
+              "resolution": "4K",
+              "viewCount": 35110461
+            },
+            {
+              "youtubeLinkID": "CMF3qeu7fHY",
+              "title": "Middle of the Night「AMV」Anime Mix",
+              "thumbnail": "https://img.youtube.com/vi/CMF3qeu7fHY/maxresdefault.jpg",
+              "duration": "3:32",
+              "durationSec": 212,
+              "group": "Movies",
+              "category": "Anime",
+              "type": "AMV",
+              "date": "2022-12-29T07:01:53-08:00",
+              "resolution": "4K",
+              "viewCount": 32481403
+            },
+            {
+              "youtubeLinkID": "dIvAk_VlM3s",
+              "title": "Gojo Eyes -  Fluxxwave「AMV」4k",
+              "thumbnail": "https://img.youtube.com/vi/dIvAk_VlM3s/maxresdefault.jpg",
+              "duration": "0:17",
+              "durationSec": 17,
+              "group": "Movies",
+              "category": "Anime",
+              "type": "AMV",
+              "date": "2023-07-23T13:52:51-07:00",
+              "resolution": "4K",
+              "viewCount": 4004467
+            },
+            {
+              "youtubeLinkID": "bhhTHtBX474",
+              "title": "The story of Monkey D. Luffy (One Piece)「AMV」Royalty「4K 60FPS」",
+              "thumbnail": "https://img.youtube.com/vi/bhhTHtBX474/maxresdefault.jpg",
+              "duration": "3:51",
+              "durationSec": 231,
+              "group": "Movies",
+              "category": "Anime",
+              "type": "AMV",
+              "date": "2025-01-27T07:00:06-08:00",
+              "resolution": "4K",
+              "viewCount": 3149399
+            },
+            {
+              "youtubeLinkID": "RtWgqNNrCZg",
+              "title": "Gojo Satoru | Animals [AMV] | Season 2 Remake",
+              "thumbnail": "https://img.youtube.com/vi/RtWgqNNrCZg/maxresdefault.jpg",
+              "duration": "3:51",
+              "durationSec": 231,
+              "group": "Movies",
+              "category": "Anime",
+              "type": "AMV",
+              "date": "2023-09-29T13:07:00-07:00",
+              "resolution": "1080p",
+              "viewCount": 2712195
             }
           ]
         }
