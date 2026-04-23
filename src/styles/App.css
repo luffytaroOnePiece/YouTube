@@ -3159,8 +3159,10 @@ body::-webkit-scrollbar {
   backdrop-filter: blur(15px);
   border: 0.5px solid rgba(255, 255, 255, 0.06);
   border-radius: 24px;
-  padding: 24px;
+  padding: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  min-width: 0;
 }
 
 .analytics-leaderboard__list {
@@ -3173,10 +3175,11 @@ body::-webkit-scrollbar {
 .analytics-leaderboard__item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 8px 10px;
-  border-radius: 12px;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 10px;
   transition: background 0.2s;
+  min-width: 0;
 }
 
 .analytics-leaderboard__item:hover {
@@ -3194,10 +3197,10 @@ body::-webkit-scrollbar {
 }
 
 .analytics-leaderboard__thumb {
-  width: 56px;
-  height: 32px;
+  width: 44px;
+  height: 26px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 5px;
   flex-shrink: 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
@@ -3208,7 +3211,7 @@ body::-webkit-scrollbar {
 }
 
 .analytics-leaderboard__title {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: #fff;
   white-space: nowrap;
@@ -3218,12 +3221,12 @@ body::-webkit-scrollbar {
 }
 
 .analytics-leaderboard__meta {
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   color: rgba(255, 255, 255, 0.35);
 }
 
 .analytics-leaderboard__duration {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   font-weight: 800;
   color: var(--accent);
   flex-shrink: 0;
