@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T09:23:57.167Z",
+  "lastUpdated": "2026-04-23T11:14:46.269Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -1025,19 +1025,6 @@
               "date": "2025-09-11T22:30:30-07:00",
               "resolution": "8K",
               "viewCount": 4694128
-            },
-            {
-              "youtubeLinkID": "1_JNUlsEQEE",
-              "title": "Full Video: Sasirekha | Mana ShankaraVaraPrasad Garu | Chiranjeevi, Nayanthara | Bheems | Anil R",
-              "thumbnail": "https://img.youtube.com/vi/1_JNUlsEQEE/maxresdefault.jpg",
-              "duration": "3:50",
-              "durationSec": 230,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Groovy",
-              "date": "2026-01-22T21:30:02-08:00",
-              "resolution": "4K",
-              "viewCount": 30797294
             },
             {
               "youtubeLinkID": "6Nzbha_IQ0c",
@@ -2390,6 +2377,19 @@
               "date": "2021-05-13T03:29:52-07:00",
               "resolution": "4K",
               "viewCount": 97263349
+            },
+            {
+              "youtubeLinkID": "KLuw63KH6R4",
+              "title": "Sasirekha 8K Video | Mana ShankaraVaraPrasad Garu | Chiranjeevi, Nayanthara | Bheems | Anil Ravipudi",
+              "thumbnail": "https://img.youtube.com/vi/KLuw63KH6R4/maxresdefault.jpg",
+              "duration": "3:50",
+              "durationSec": 230,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-04-23T01:30:10-07:00",
+              "resolution": "8K",
+              "viewCount": 2721
             }
           ],
           "Energetic": [
