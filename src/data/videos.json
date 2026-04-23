@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T16:59:53.292Z",
+  "lastUpdated": "2026-04-23T17:24:52.796Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -3226,6 +3226,19 @@
               "date": "2013-12-06T03:28:56-08:00",
               "resolution": "1080p",
               "viewCount": 17865298
+            },
+            {
+              "youtubeLinkID": "7FSZsfLgHIY",
+              "title": "Attarintiki Daredi Songs || Bapu Gari Bommo - Pawan Kalyan, Pranitha",
+              "thumbnail": "https://img.youtube.com/vi/7FSZsfLgHIY/maxresdefault.jpg",
+              "duration": "4:27",
+              "durationSec": 267,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2014-01-08T04:29:17-08:00",
+              "resolution": "1080p",
+              "viewCount": 17061675
             }
           ],
           "Vintage": [
@@ -3436,6 +3449,97 @@
               "date": "2013-08-22T01:29:17-07:00",
               "resolution": "1080p",
               "viewCount": 148003217
+            },
+            {
+              "youtubeLinkID": "BCwsSk_KKrE",
+              "title": "Konte Chuputho Video Song || Ananthapuram 1980 Movie Songs || Swati, Jai, Sasikumar",
+              "thumbnail": "https://img.youtube.com/vi/BCwsSk_KKrE/maxresdefault.jpg",
+              "duration": "5:39",
+              "durationSec": 339,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2015-02-07T05:18:06-08:00",
+              "resolution": "1080p",
+              "viewCount": 39781347
+            },
+            {
+              "youtubeLinkID": "cCoNfxrlQKs",
+              "title": "Naa Manasukemayindhi 4K Video Song l Nuvve Nuvve Movie | Tarun | Shriya Saran | Trivikram | Koti",
+              "thumbnail": "https://img.youtube.com/vi/cCoNfxrlQKs/maxresdefault.jpg",
+              "duration": "4:22",
+              "durationSec": 262,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2026-04-11T04:34:00-07:00",
+              "resolution": "4K",
+              "viewCount": 786945
+            },
+            {
+              "youtubeLinkID": "dUPXRnyvLtE",
+              "title": "Feel My Love Video Song || Aarya Video Songs || Allu Arjun, Anuradha Mehta",
+              "thumbnail": "https://img.youtube.com/vi/dUPXRnyvLtE/maxresdefault.jpg",
+              "duration": "4:57",
+              "durationSec": 297,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2012-04-25T00:57:50-07:00",
+              "resolution": "1080p",
+              "viewCount": 18950804
+            },
+            {
+              "youtubeLinkID": "2cmWLJyTKjc",
+              "title": "Murari Movie || Alanati Video Song || Mahesh Babu, Sonali Bendre || Shalimarcinema",
+              "thumbnail": "https://img.youtube.com/vi/2cmWLJyTKjc/maxresdefault.jpg",
+              "duration": "5:09",
+              "durationSec": 309,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2014-10-07T07:57:00-07:00",
+              "resolution": "1080p",
+              "viewCount": 11716173
+            },
+            {
+              "youtubeLinkID": "_QwXjd_1plk",
+              "title": "Pilichina Ranantava Song With Telugu Lyrics | Athadu Movie | Mahesh Babu, Trisha |Maa Paata Mee Nota",
+              "thumbnail": "https://img.youtube.com/vi/_QwXjd_1plk/maxresdefault.jpg",
+              "duration": "5:17",
+              "durationSec": 317,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2023-11-17T04:01:08-08:00",
+              "resolution": "1080p",
+              "viewCount": 36701452
+            },
+            {
+              "youtubeLinkID": "26qZNn8KXB0",
+              "title": "Neelapoori Gajula 4K Video Song | Mahatma Movie | Srikanth, Bhavana | Vijay Antony | Krishna Vamsi",
+              "thumbnail": "https://img.youtube.com/vi/26qZNn8KXB0/maxresdefault.jpg",
+              "duration": "3:21",
+              "durationSec": 201,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2026-02-18T04:58:07-08:00",
+              "resolution": "4K",
+              "viewCount": 862681
+            },
+            {
+              "youtubeLinkID": "Llw7cXHmDDo",
+              "title": "Edo Priyaragam Video Song || Aarya Video Songs || Allu Arjun, Anuradha Mehta",
+              "thumbnail": "https://img.youtube.com/vi/Llw7cXHmDDo/maxresdefault.jpg",
+              "duration": "5:30",
+              "durationSec": 330,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2012-04-25T00:57:09-07:00",
+              "resolution": "1080p",
+              "viewCount": 251346868
             }
           ]
         },
