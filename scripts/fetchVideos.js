@@ -178,10 +178,12 @@ export async function fetchPlaylist(idOrUrl, groupName, categoryName, playlistNa
     // Fetch fresh data
     let publishDate = '';
     let resolution = '';
+    let viewCount = 0;
     try {
       const info = await ytdl.getBasicInfo(item.id);
       publishDate = info.videoDetails.publishDate || '';
       resolution = getResolutionLabel(info.formats || []);
+      viewCount = parseInt(info.videoDetails.viewCount) || 0;
       
       if (item.title === 'Fetching title...' || !item.title) {
         item.title = info.videoDetails.title || 'Unknown Title';
@@ -203,7 +205,8 @@ export async function fetchPlaylist(idOrUrl, groupName, categoryName, playlistNa
       category: categoryName,
       type: playlistName,
       date: publishDate,
-      resolution
+      resolution,
+      viewCount
     });
 
     fetched++;

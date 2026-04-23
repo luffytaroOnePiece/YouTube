@@ -299,6 +299,46 @@ function AnalyticsDashboard({ onClose, videos, allVideos, favorites = [], isMoni
   }, [videos]);
 
   // ──────────────────────────────────────────────────────────
+  //  VIEWS INSIGHTS
+  // ──────────────────────────────────────────────────────────
+  const viewsInsights = useMemo(() => {
+    const withViews = videos.filter(v => v.viewCount && v.viewCount > 0);
+    const hasViewData = withViews.length > 0;
+
+    if (!hasViewData) {
+      return { hasViewData: false, totalViews: 0, avgViews: 0, topViewed: [], viewsByGroup: [], viewsByType: [], coveragePct: 0 };
+    }
+
+    const totalViews = withViews.reduce((sum, v) => sum + v.viewCount, 0);
+    const avgViews = Math.round(totalViews / withViews.length);
+    const coveragePct = Math.round((withViews.length / videos.length) * 100);
+
+    // Top 10 most viewed
+    const topViewed = [...withViews].sort((a, b) => b.viewCount - a.viewCount).slice(0, 10);
+
+    // Views by group
+    const groupViews = {};
+    withViews.forEach(v => {
+      if (v.group) groupViews[v.group] = (groupViews[v.group] || 0) + v.viewCount;
+    });
+    const viewsByGroup = Object.entries(groupViews)
+      .map(([name, views]) => ({ name, views: Math.round(views / 1000) })) // in thousands
+      .sort((a, b) => b.views - a.views);
+
+    // Views by type (top 5)
+    const typeViews = {};
+    withViews.forEach(v => {
+      if (v.type) typeViews[v.type] = (typeViews[v.type] || 0) + v.viewCount;
+    });
+    const viewsByType = Object.entries(typeViews)
+      .map(([name, views]) => ({ name, views: parseFloat((views / 1000000).toFixed(1)) }))
+      .sort((a, b) => b.views - a.views)
+      .slice(0, 10);
+
+    return { hasViewData: true, totalViews, avgViews, topViewed, viewsByGroup, viewsByType, coveragePct };
+  }, [videos]);
+
+  // ──────────────────────────────────────────────────────────
   //  ACTIVITY HEATMAP
   // ──────────────────────────────────────────────────────────
   const heatmapData = useMemo(() => {
@@ -585,6 +625,77 @@ function AnalyticsDashboard({ onClose, videos, allVideos, favorites = [], isMoni
   // ──────────────────────────────────────────────────────────
   const renderDeepDive = () => (
     <>
+      {/* Views Insights Section */}
+      {viewsInsights.hasViewData && (
+        <div className="analytics-views-section">
+          <h3 className="analytics-section-title">Views Intelligence</h3>
+          <div className="analytics-views-kpis">
+            <div className="fav-insight-card">
+
+              <span className="fav-insight-card__val">{viewsInsights.totalViews >= 1000000 ? `${(viewsInsights.totalViews/1000000).toFixed(1)}M` : viewsInsights.totalViews >= 1000 ? `${(viewsInsights.totalViews/1000).toFixed(1)}K` : viewsInsights.totalViews}</span>
+              <span className="fav-insight-card__label">Total Views</span>
+              <span className="fav-insight-card__sub">{viewsInsights.coveragePct}% of library tracked</span>
+            </div>
+            <div className="fav-insight-card">
+
+              <span className="fav-insight-card__val">{viewsInsights.avgViews >= 1000000 ? `${(viewsInsights.avgViews/1000000).toFixed(1)}M` : viewsInsights.avgViews >= 1000 ? `${(viewsInsights.avgViews/1000).toFixed(0)}K` : viewsInsights.avgViews}</span>
+              <span className="fav-insight-card__label">Avg Views</span>
+              <span className="fav-insight-card__sub">Per video</span>
+            </div>
+            <div className="fav-insight-card">
+
+              <span className="fav-insight-card__val">{viewsInsights.topViewed.length > 0 ? (viewsInsights.topViewed[0].viewCount >= 1000000 ? `${(viewsInsights.topViewed[0].viewCount/1000000).toFixed(1)}M` : `${(viewsInsights.topViewed[0].viewCount/1000).toFixed(0)}K`) : '—'}</span>
+              <span className="fav-insight-card__label">Most Viewed</span>
+              <span className="fav-insight-card__sub" style={{maxWidth: '140px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap'}}>{viewsInsights.topViewed[0]?.title?.slice(0, 30) || '—'}...</span>
+            </div>
+          </div>
+
+          {/* Most Viewed Leaderboard */}
+          <div className="analytics-leaderboard-card" style={{marginTop: '16px'}}>
+            <h3 className="analytics-section-title">Most Viewed Videos</h3>
+            <div className="analytics-leaderboard__list">
+              {viewsInsights.topViewed.map((vid, idx) => (
+                <div key={vid.youtubeLinkID} className="analytics-leaderboard__item">
+                  <span className="analytics-leaderboard__rank">{idx + 1}</span>
+                  <img src={vid.thumbnail} alt="" className="analytics-leaderboard__thumb" loading="lazy" />
+                  <div className="analytics-leaderboard__info">
+                    <span className="analytics-leaderboard__title" title={vid.title}>{vid.title}</span>
+                    <span className="analytics-leaderboard__meta">{vid.group} · {vid.category} · {vid.type}</span>
+                  </div>
+                  <span className="analytics-leaderboard__duration" style={{color: '#34c759'}}>
+                    {vid.viewCount >= 1000000 ? `${(vid.viewCount/1000000).toFixed(1)}M` : vid.viewCount >= 1000 ? `${Math.round(vid.viewCount/1000)}K` : vid.viewCount}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Views by Type Chart */}
+          {viewsInsights.viewsByType.length > 0 && (
+            <div className="apple-chart-box" style={{marginTop: '16px'}}>
+              <h3 className="analytics-chart-title">Views by Content Type (M)</h3>
+              <ResponsiveContainer width="100%" height={220}>
+                <BarChart data={viewsInsights.viewsByType}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(255,255,255,0.08)" />
+                  <XAxis dataKey="name" stroke="rgba(255,255,255,0.5)" tick={{fontSize: 12, fill: 'rgba(255,255,255,0.8)'}} axisLine={false} tickLine={false} />
+                  <YAxis stroke="rgba(255,255,255,0.5)" tick={{fontSize: 12, fill: 'rgba(255,255,255,0.8)'}} axisLine={false} tickLine={false} />
+                  <Tooltip cursor={{fill: 'rgba(255,255,255,0.05)'}} contentStyle={{backgroundColor: 'rgba(30,30,30,0.85)', backdropFilter: 'blur(10px)', borderRadius: '12px', border: '0.5px solid rgba(255,255,255,0.1)'}} itemStyle={{color: '#fff'}} formatter={(val) => [`${val}M views`, 'Views']} />
+                  <Bar dataKey="views" fill="#34c759" radius={[6, 6, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          )}
+        </div>
+      )}
+
+      {!viewsInsights.hasViewData && (
+        <div className="analytics-views-empty">
+
+          <span className="analytics-views-empty__title">Views Data Not Yet Available</span>
+          <span className="analytics-views-empty__sub">Re-fetch your playlists to start collecting view counts for each video.</span>
+        </div>
+      )}
+
       <div className="analytics-charts">
         <div className="apple-chart-box">
           <h3 className="analytics-chart-title">Top 5 Content Types</h3>
