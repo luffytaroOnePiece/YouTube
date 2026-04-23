@@ -2796,6 +2796,37 @@ body::-webkit-scrollbar {
 }
 
 /* ── iOS-style Toggle ─────────────────────────────────────── */
+
+.queue-panel__header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.queue-panel__shuffle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.queue-panel__shuffle-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+.queue-panel__shuffle-btn:active {
+  transform: scale(0.9);
+}
+
 .queue-panel__autoplay-toggle {
   position: relative;
   width: 40px;

@@ -1,6 +1,16 @@
 import React, { useState, useRef, useCallback } from 'react';
 
 export default function QueuePanel({ queue, onReorder, onRemove, onSelect, autoplay, onToggleAutoplay, currentVideo }) {
+  const handleShuffle = useCallback(() => {
+    if (!queue || queue.length < 2) return;
+    const shuffled = [...queue];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    onReorder(shuffled);
+  }, [queue, onReorder]);
+
   const [dragIndex, setDragIndex] = useState(null);
   const [dragOverIndex, setDragOverIndex] = useState(null);
   const dragNode = useRef(null);
@@ -44,16 +54,34 @@ export default function QueuePanel({ queue, onReorder, onRemove, onSelect, autop
 
   return (
     <div className="queue-panel">
-      {/* Autoplay Toggle */}
+      {/* Autoplay Toggle + Shuffle */}
       <div className="queue-panel__header">
         <span className="queue-panel__label">Autoplay</span>
-        <button
-          className={`queue-panel__autoplay-toggle ${autoplay ? 'queue-panel__autoplay-toggle--on' : ''}`}
-          onClick={onToggleAutoplay}
-          aria-label={autoplay ? 'Disable autoplay' : 'Enable autoplay'}
-        >
-          <span className="queue-panel__autoplay-knob" />
-        </button>
+        <div className="queue-panel__header-actions">
+          {queue.length > 1 && (
+            <button
+              className="queue-panel__shuffle-btn"
+              onClick={handleShuffle}
+              aria-label="Shuffle queue"
+              title="Shuffle"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="16 3 21 3 21 8" />
+                <line x1="4" y1="20" x2="21" y2="3" />
+                <polyline points="21 16 21 21 16 21" />
+                <line x1="15" y1="15" x2="21" y2="21" />
+                <line x1="4" y1="4" x2="9" y2="9" />
+              </svg>
+            </button>
+          )}
+          <button
+            className={`queue-panel__autoplay-toggle ${autoplay ? 'queue-panel__autoplay-toggle--on' : ''}`}
+            onClick={onToggleAutoplay}
+            aria-label={autoplay ? 'Disable autoplay' : 'Enable autoplay'}
+          >
+            <span className="queue-panel__autoplay-knob" />
+          </button>
+        </div>
       </div>
 
       {/* Queue List */}
