@@ -521,7 +521,7 @@ function AnalyticsDashboard({ onClose, videos, allVideos, favorites = [], isMoni
         <div className="analytics-chart-header">
           <h3 className="analytics-chart-title">Growth Velocity</h3>
           <span className="analytics-chart-badge">
-            {stats.growthTrend === 'up' ? '📈' : '📉'} {stats.growthRate} videos/month
+            {stats.growthTrend === 'up' ? '↗' : '↘'} {stats.growthRate} videos/month
           </span>
         </div>
         <ResponsiveContainer width="100%" height={280}>
@@ -632,26 +632,26 @@ function AnalyticsDashboard({ onClose, videos, allVideos, favorites = [], isMoni
           <div className="analytics-views-kpis">
             <div className="fav-insight-card">
 
-              <span className="fav-insight-card__val">{viewsInsights.totalViews >= 1000000 ? `${(viewsInsights.totalViews/1000000).toFixed(1)}M` : viewsInsights.totalViews >= 1000 ? `${(viewsInsights.totalViews/1000).toFixed(1)}K` : viewsInsights.totalViews}</span>
+              <span className="fav-insight-card__val">{viewsInsights.totalViews >= 1000000 ? `${(viewsInsights.totalViews / 1000000).toFixed(1)}M` : viewsInsights.totalViews >= 1000 ? `${(viewsInsights.totalViews / 1000).toFixed(1)}K` : viewsInsights.totalViews}</span>
               <span className="fav-insight-card__label">Total Views</span>
               <span className="fav-insight-card__sub">{viewsInsights.coveragePct}% of library tracked</span>
             </div>
             <div className="fav-insight-card">
 
-              <span className="fav-insight-card__val">{viewsInsights.avgViews >= 1000000 ? `${(viewsInsights.avgViews/1000000).toFixed(1)}M` : viewsInsights.avgViews >= 1000 ? `${(viewsInsights.avgViews/1000).toFixed(0)}K` : viewsInsights.avgViews}</span>
+              <span className="fav-insight-card__val">{viewsInsights.avgViews >= 1000000 ? `${(viewsInsights.avgViews / 1000000).toFixed(1)}M` : viewsInsights.avgViews >= 1000 ? `${(viewsInsights.avgViews / 1000).toFixed(0)}K` : viewsInsights.avgViews}</span>
               <span className="fav-insight-card__label">Avg Views</span>
               <span className="fav-insight-card__sub">Per video</span>
             </div>
             <div className="fav-insight-card">
 
-              <span className="fav-insight-card__val">{viewsInsights.topViewed.length > 0 ? (viewsInsights.topViewed[0].viewCount >= 1000000 ? `${(viewsInsights.topViewed[0].viewCount/1000000).toFixed(1)}M` : `${(viewsInsights.topViewed[0].viewCount/1000).toFixed(0)}K`) : '—'}</span>
+              <span className="fav-insight-card__val">{viewsInsights.topViewed.length > 0 ? (viewsInsights.topViewed[0].viewCount >= 1000000 ? `${(viewsInsights.topViewed[0].viewCount / 1000000).toFixed(1)}M` : `${(viewsInsights.topViewed[0].viewCount / 1000).toFixed(0)}K`) : '—'}</span>
               <span className="fav-insight-card__label">Most Viewed</span>
-              <span className="fav-insight-card__sub" style={{maxWidth: '140px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap'}}>{viewsInsights.topViewed[0]?.title?.slice(0, 30) || '—'}...</span>
+              <span className="fav-insight-card__sub" style={{ maxWidth: '140px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{viewsInsights.topViewed[0]?.title?.slice(0, 30) || '—'}...</span>
             </div>
           </div>
 
           {/* Most Viewed Leaderboard */}
-          <div className="analytics-leaderboard-card" style={{marginTop: '16px'}}>
+          <div className="analytics-leaderboard-card" style={{ marginTop: '16px' }}>
             <h3 className="analytics-section-title">Most Viewed Videos</h3>
             <div className="analytics-leaderboard__list">
               {viewsInsights.topViewed.map((vid, idx) => (
@@ -662,8 +662,8 @@ function AnalyticsDashboard({ onClose, videos, allVideos, favorites = [], isMoni
                     <span className="analytics-leaderboard__title" title={vid.title}>{vid.title}</span>
                     <span className="analytics-leaderboard__meta">{vid.group} · {vid.category} · {vid.type}</span>
                   </div>
-                  <span className="analytics-leaderboard__duration" style={{color: '#34c759'}}>
-                    {vid.viewCount >= 1000000 ? `${(vid.viewCount/1000000).toFixed(1)}M` : vid.viewCount >= 1000 ? `${Math.round(vid.viewCount/1000)}K` : vid.viewCount}
+                  <span className="analytics-leaderboard__duration" style={{ color: '#34c759' }}>
+                    {vid.viewCount >= 1000000 ? `${(vid.viewCount / 1000000).toFixed(1)}M` : vid.viewCount >= 1000 ? `${Math.round(vid.viewCount / 1000)}K` : vid.viewCount}
                   </span>
                 </div>
               ))}
@@ -672,14 +672,14 @@ function AnalyticsDashboard({ onClose, videos, allVideos, favorites = [], isMoni
 
           {/* Views by Type Chart */}
           {viewsInsights.viewsByType.length > 0 && (
-            <div className="apple-chart-box" style={{marginTop: '16px'}}>
+            <div className="apple-chart-box" style={{ marginTop: '16px' }}>
               <h3 className="analytics-chart-title">Views by Content Type (M)</h3>
               <ResponsiveContainer width="100%" height={220}>
                 <BarChart data={viewsInsights.viewsByType}>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(255,255,255,0.08)" />
-                  <XAxis dataKey="name" stroke="rgba(255,255,255,0.5)" tick={{fontSize: 12, fill: 'rgba(255,255,255,0.8)'}} axisLine={false} tickLine={false} />
-                  <YAxis stroke="rgba(255,255,255,0.5)" tick={{fontSize: 12, fill: 'rgba(255,255,255,0.8)'}} axisLine={false} tickLine={false} />
-                  <Tooltip cursor={{fill: 'rgba(255,255,255,0.05)'}} contentStyle={{backgroundColor: 'rgba(30,30,30,0.85)', backdropFilter: 'blur(10px)', borderRadius: '12px', border: '0.5px solid rgba(255,255,255,0.1)'}} itemStyle={{color: '#fff'}} formatter={(val) => [`${val}M views`, 'Views']} />
+                  <XAxis dataKey="name" stroke="rgba(255,255,255,0.5)" tick={{ fontSize: 12, fill: 'rgba(255,255,255,0.8)' }} axisLine={false} tickLine={false} />
+                  <YAxis stroke="rgba(255,255,255,0.5)" tick={{ fontSize: 12, fill: 'rgba(255,255,255,0.8)' }} axisLine={false} tickLine={false} />
+                  <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} contentStyle={{ backgroundColor: 'rgba(30,30,30,0.85)', backdropFilter: 'blur(10px)', borderRadius: '12px', border: '0.5px solid rgba(255,255,255,0.1)' }} itemStyle={{ color: '#fff' }} formatter={(val) => [`${val}M views`, 'Views']} />
                   <Bar dataKey="views" fill="#34c759" radius={[6, 6, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
