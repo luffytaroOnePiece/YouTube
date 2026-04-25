@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T17:24:52.796Z",
+  "lastUpdated": "2026-04-25T09:37:45.106Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -358,6 +358,19 @@
               "viewCount": 3651289
             },
             {
+              "youtubeLinkID": "yvhrORy4x30",
+              "title": "Rendu Kallu Full Video Song 4K | Mahanubhavudu Telugu Movie | Sharwanand | Mehreen | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/yvhrORy4x30/maxresdefault.jpg",
+              "duration": "2:58",
+              "durationSec": 178,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2017-10-28T23:30:01-07:00",
+              "resolution": "4K",
+              "viewCount": 8905157
+            },
+            {
               "youtubeLinkID": "qaU03QRrcPs",
               "title": "Telusa Telusa Full Video Song || Sarrainodu  || Allu Arjun , Rakul Preet, Catherine Tresa",
               "thumbnail": "https://img.youtube.com/vi/qaU03QRrcPs/maxresdefault.jpg",
@@ -527,6 +540,19 @@
               "date": "2019-04-10T03:19:19-07:00",
               "resolution": "1080p",
               "viewCount": 96562970
+            },
+            {
+              "youtubeLinkID": "hoUecvdMHD8",
+              "title": "Race Gurram Title Song 8K Video | Allu Arjun | Shruti Haasan | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/hoUecvdMHD8/maxresdefault.jpg",
+              "duration": "4:28",
+              "durationSec": 268,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Mass",
+              "date": "2026-04-24T06:03:46-07:00",
+              "resolution": "8K",
+              "viewCount": 11447
             }
           ],
           "Item": [
@@ -3239,6 +3265,19 @@
               "date": "2014-01-08T04:29:17-08:00",
               "resolution": "1080p",
               "viewCount": 17061675
+            },
+            {
+              "youtubeLinkID": "XR5UKEVWqWk",
+              "title": "Ninnu Chudagaane Video Song | 4K 60FPS | Attarintiki Daredi | Pawan Kalyan , Samantha | DSP",
+              "thumbnail": "https://img.youtube.com/vi/XR5UKEVWqWk/maxresdefault.jpg",
+              "duration": "5:28",
+              "durationSec": 328,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-06-16T04:54:34-07:00",
+              "resolution": "4K",
+              "viewCount": 6087
             }
           ],
           "Vintage": [
@@ -3540,6 +3579,32 @@
               "date": "2012-04-25T00:57:09-07:00",
               "resolution": "1080p",
               "viewCount": 251346868
+            },
+            {
+              "youtubeLinkID": "YRoeM15sQfc",
+              "title": "Cheppamma 4k Video Song || Murari || Mahesh Babu, Sonali Bindre || Krishna Vamsi || Mani Sharma",
+              "thumbnail": "https://img.youtube.com/vi/YRoeM15sQfc/maxresdefault.jpg",
+              "duration": "4:52",
+              "durationSec": 292,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2024-11-27T23:04:40-08:00",
+              "resolution": "4K",
+              "viewCount": 16849
+            },
+            {
+              "youtubeLinkID": "JJBPNXRLDcw",
+              "title": "Bangaru Kalla 4k Video Song || Murari || Mahesh Babu, Sonali Bindre || Krishna Vamsi || Mani Sharma",
+              "thumbnail": "https://img.youtube.com/vi/JJBPNXRLDcw/maxresdefault.jpg",
+              "duration": "5:02",
+              "durationSec": 302,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2024-11-21T03:45:01-08:00",
+              "resolution": "4K",
+              "viewCount": 13409
             }
           ]
         },
