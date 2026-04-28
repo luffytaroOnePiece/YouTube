@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-28T03:49:30.955Z",
+  "lastUpdated": "2026-04-28T15:57:14.165Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2455,6 +2455,32 @@
               "date": "2025-08-16T05:18:31-07:00",
               "resolution": "4K",
               "viewCount": 6482579
+            },
+            {
+              "youtubeLinkID": "GoHqRhnfw_A",
+              "title": "Rangamma Mangamma 8K Video Song | Rangasthalam | Ram Charan, Samantha | DSP",
+              "thumbnail": "https://img.youtube.com/vi/GoHqRhnfw_A/maxresdefault.jpg",
+              "duration": "4:16",
+              "durationSec": 256,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-04-27T22:47:06-07:00",
+              "resolution": "8K",
+              "viewCount": 460
+            },
+            {
+              "youtubeLinkID": "GT3YDlnxHlI",
+              "title": "Parichayamila 8K Video | 8 Vasantalu | Ananthika Sanilkumar | Phanindra Narsetti | Hesham | Chithra",
+              "thumbnail": "https://img.youtube.com/vi/GT3YDlnxHlI/maxresdefault.jpg",
+              "duration": "3:22",
+              "durationSec": 202,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-04-28T02:30:08-07:00",
+              "resolution": "8K",
+              "viewCount": 3162
             }
           ],
           "Energetic": [
@@ -3538,6 +3564,19 @@
               "date": "2023-05-30T04:15:03-07:00",
               "resolution": "4K",
               "viewCount": 593907
+            },
+            {
+              "youtubeLinkID": "lFX1PUjL9n4",
+              "title": "8k Ultra HD songs 60fps Nalupu Neredanti (Telugu)full resolution 4k Muni 2 Raghava Laxmi rai#TFI#new",
+              "thumbnail": "https://img.youtube.com/vi/lFX1PUjL9n4/maxresdefault.jpg",
+              "duration": "4:47",
+              "durationSec": 287,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2026-04-27T22:25:03-07:00",
+              "resolution": "4K",
+              "viewCount": 378
             }
           ],
           "Vintage": [
@@ -4073,6 +4112,19 @@
               "date": "2023-05-07T08:45:02-07:00",
               "resolution": "4K",
               "viewCount": 728779
+            },
+            {
+              "youtubeLinkID": "FU3STdZC57Q",
+              "title": "Em Jaruguthondi 4K Video Song | Mahatma | Srikanth, Bhavana | Vijay Antony | Krishna Vamsi",
+              "thumbnail": "https://img.youtube.com/vi/FU3STdZC57Q/maxresdefault.jpg",
+              "duration": "4:53",
+              "durationSec": 293,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2026-02-12T03:32:07-08:00",
+              "resolution": "4K",
+              "viewCount": 136566
             }
           ]
         },
