@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-28T01:28:24.004Z",
+  "lastUpdated": "2026-04-28T02:58:35.323Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -1846,19 +1846,6 @@
               "viewCount": 214214
             },
             {
-              "youtubeLinkID": "xWRhjK9eNsU",
-              "title": "Violin Song Full Video - Iddarammayilatho | Allu Arjun, Amala Paul | Devi Sri Prasad",
-              "thumbnail": "https://img.youtube.com/vi/xWRhjK9eNsU/maxresdefault.jpg",
-              "duration": "4:31",
-              "durationSec": 271,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Groovy",
-              "date": "2025-08-16T05:18:31-07:00",
-              "resolution": "4K",
-              "viewCount": 6482579
-            },
-            {
               "youtubeLinkID": "VYKk1KOEq84",
               "title": "Naayak Movie Songs | Oka Choopuke Full Video Song | Latest Telugu Superhits @SriBalajiMovies",
               "thumbnail": "https://img.youtube.com/vi/VYKk1KOEq84/maxresdefault.jpg",
@@ -2455,6 +2442,19 @@
               "date": "2026-04-16T03:13:06-07:00",
               "resolution": "4K",
               "viewCount": 10983106
+            },
+            {
+              "youtubeLinkID": "xWRhjK9eNsU",
+              "title": "Violin Song Full Video - Iddarammayilatho | Allu Arjun, Amala Paul | Devi Sri Prasad",
+              "thumbnail": "https://img.youtube.com/vi/xWRhjK9eNsU/maxresdefault.jpg",
+              "duration": "4:31",
+              "durationSec": 271,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2025-08-16T05:18:31-07:00",
+              "resolution": "4K",
+              "viewCount": 6482579
             }
           ],
           "Energetic": [
@@ -3291,6 +3291,123 @@
               "date": "2025-06-16T04:54:34-07:00",
               "resolution": "4K",
               "viewCount": 6087
+            },
+            {
+              "youtubeLinkID": "IRSZMyRzswo",
+              "title": "Nachavura Full Video Song | Badrinath | Allu Arjun | Tamannaah | V.V.Vinayak | M.M.Keeravani",
+              "thumbnail": "https://img.youtube.com/vi/IRSZMyRzswo/maxresdefault.jpg",
+              "duration": "3:57",
+              "durationSec": 237,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-03-15T05:31:09-07:00",
+              "resolution": "4K",
+              "viewCount": 523954
+            },
+            {
+              "youtubeLinkID": "bHWE5RrYdrI",
+              "title": "Nadh Nadh Full Video Song | Badrinath | Allu Arjun | Tamannaah | V.V.Vinayak | M.M.Keeravani",
+              "thumbnail": "https://img.youtube.com/vi/bHWE5RrYdrI/maxresdefault.jpg",
+              "duration": "4:55",
+              "durationSec": 295,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-03-19T02:30:05-07:00",
+              "resolution": "4K",
+              "viewCount": 3612314
+            },
+            {
+              "youtubeLinkID": "VxggQqxypck",
+              "title": "Chiranjeeva Full Video Song | Badrinath | Allu Arjun | Tamannaah | V.V.Vinayak | M.M.Keeravani",
+              "thumbnail": "https://img.youtube.com/vi/VxggQqxypck/maxresdefault.jpg",
+              "duration": "3:24",
+              "durationSec": 204,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-03-19T06:30:24-07:00",
+              "resolution": "4K",
+              "viewCount": 704276
+            },
+            {
+              "youtubeLinkID": "GdN9qdDnE5U",
+              "title": "Aarya-2 - My Love Is Gone Video | Allu Arjun | Devi Sri Prasad",
+              "thumbnail": "https://img.youtube.com/vi/GdN9qdDnE5U/maxresdefault.jpg",
+              "duration": "3:52",
+              "durationSec": 232,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2015-01-09T15:51:36-08:00",
+              "resolution": "1080p",
+              "viewCount": 123376908
+            },
+            {
+              "youtubeLinkID": "TTGQX0CXlL0",
+              "title": "Aarya-2 - Mr. Perfect Video Song | Allu Arjun | Devi Sri Prasad | Kajal Agarwal",
+              "thumbnail": "https://img.youtube.com/vi/TTGQX0CXlL0/maxresdefault.jpg",
+              "duration": "4:20",
+              "durationSec": 260,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2015-01-09T16:11:39-08:00",
+              "resolution": "1080p",
+              "viewCount": 68186533
+            },
+            {
+              "youtubeLinkID": "YzETAhwnQy8",
+              "title": "Dethadi Dethadi 4k Video Song || Dookudu || Mahesh Babu, Samantha || S. Thaman || Remastered",
+              "thumbnail": "https://img.youtube.com/vi/YzETAhwnQy8/maxresdefault.jpg",
+              "duration": "3:54",
+              "durationSec": 234,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-08-09T05:42:28-07:00",
+              "resolution": "4K",
+              "viewCount": 4138
+            },
+            {
+              "youtubeLinkID": "RO1lfbWgK7Y",
+              "title": "Dhinaku Dhin 4K HDR || DTS 5.1 || Mirapakay || Ravi Teja, Richa || Thaman S || Remastered || 90sHD",
+              "thumbnail": "https://img.youtube.com/vi/RO1lfbWgK7Y/maxresdefault.jpg",
+              "duration": "4:42",
+              "durationSec": 282,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-05-11T04:45:02-07:00",
+              "resolution": "4K",
+              "viewCount": 11827
+            },
+            {
+              "youtubeLinkID": "2FaSyoew9JY",
+              "title": "Sri Anjaneyam 4k Video Song || Oosaravelli || Jr.Ntr, Tamanna || Surender Reddy || Devi Sri Prasad",
+              "thumbnail": "https://img.youtube.com/vi/2FaSyoew9JY/maxresdefault.jpg",
+              "duration": "2:32",
+              "durationSec": 152,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2025-04-12T00:28:38-07:00",
+              "resolution": "4K",
+              "viewCount": 1958
+            },
+            {
+              "youtubeLinkID": "57ekGrvcWuo",
+              "title": "Kaatuka Kallu 4k Video Song || Sarocharu Movie || Ravi Teja, KajalAgarwal, Richa || Parasuram || DSP",
+              "thumbnail": "https://img.youtube.com/vi/57ekGrvcWuo/maxresdefault.jpg",
+              "duration": "3:56",
+              "durationSec": 236,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2023-12-04T03:45:00-08:00",
+              "resolution": "4K",
+              "viewCount": 14540
             }
           ],
           "Vintage": [
@@ -3618,6 +3735,110 @@
               "date": "2024-11-21T03:45:01-08:00",
               "resolution": "4K",
               "viewCount": 13409
+            },
+            {
+              "youtubeLinkID": "xsqduFwAH6M",
+              "title": "Mellaga Karagani 4k Video Song || Varsham || Prabhas,Trisha || Shoban || Devi Sri Prasad",
+              "thumbnail": "https://img.youtube.com/vi/xsqduFwAH6M/maxresdefault.jpg",
+              "duration": "5:06",
+              "durationSec": 306,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2024-10-21T21:01:46-07:00",
+              "resolution": "4K",
+              "viewCount": 8507
+            },
+            {
+              "youtubeLinkID": "2T3S1499HRU",
+              "title": "Nuvvasthanante - 4K Ultra HD Remastered | Prabhas, Trisha | Devi Sri Prasad | Dolby 5.1 Surround",
+              "thumbnail": "https://img.youtube.com/vi/2T3S1499HRU/maxresdefault.jpg",
+              "duration": "5:13",
+              "durationSec": 313,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2025-06-21T04:45:00-07:00",
+              "resolution": "4K",
+              "viewCount": 3690
+            },
+            {
+              "youtubeLinkID": "MxULEqftDK8",
+              "title": "June Pothe Song | Neevalle Neevalle | Vinay, Sadha, Tanisha | Harris Jayaraj",
+              "thumbnail": "https://img.youtube.com/vi/MxULEqftDK8/maxresdefault.jpg",
+              "duration": "5:43",
+              "durationSec": 343,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2026-04-04T04:45:05-07:00",
+              "resolution": "4K",
+              "viewCount": 2452
+            },
+            {
+              "youtubeLinkID": "lVGBAW4f3EY",
+              "title": "Inthandanga 4k Video Song ll Don ll Nagarjuna, Anushka || Raghava Lawrence",
+              "thumbnail": "https://img.youtube.com/vi/lVGBAW4f3EY/maxresdefault.jpg",
+              "duration": "3:50",
+              "durationSec": 230,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2026-02-19T03:45:05-08:00",
+              "resolution": "4K",
+              "viewCount": 2938
+            },
+            {
+              "youtubeLinkID": "Vg0-a-giy2U",
+              "title": "Chitti Nadumune 4k Video Song || Gudumba Shankar || Pawan Kalyan, Meera Jasmine || Mani Sharma",
+              "thumbnail": "https://img.youtube.com/vi/Vg0-a-giy2U/maxresdefault.jpg",
+              "duration": "5:40",
+              "durationSec": 340,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2025-12-26T03:45:03-08:00",
+              "resolution": "4K",
+              "viewCount": 9734
+            },
+            {
+              "youtubeLinkID": "BAAdcYHPOuY",
+              "title": "Cheema Cheema 4k Video Song  || Simhadri || Jr. Ntr , Ankitha || S.S. Rajamouli  || M.M. Keeravani",
+              "thumbnail": "https://img.youtube.com/vi/BAAdcYHPOuY/maxresdefault.jpg",
+              "duration": "4:07",
+              "durationSec": 247,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2025-03-17T02:30:05-07:00",
+              "resolution": "4K",
+              "viewCount": 3935
+            },
+            {
+              "youtubeLinkID": "hRK8P0u0B6k",
+              "title": "Ekkada Ekkada 4k Video Song || Murari || Mahesh Babu, Sonali Bindre || Krishna Vamsi || Mani Sharma",
+              "thumbnail": "https://img.youtube.com/vi/hRK8P0u0B6k/maxresdefault.jpg",
+              "duration": "6:13",
+              "durationSec": 373,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2024-11-19T06:47:54-08:00",
+              "resolution": "4K",
+              "viewCount": 6450
+            },
+            {
+              "youtubeLinkID": "s5Ppz0zydDw",
+              "title": "Nuvvem Maya Chesavo 4K Video Song II Okkadu II Mahesh Babu, Bhoomika || Gunasekhar || Mani Sharma",
+              "thumbnail": "https://img.youtube.com/vi/s5Ppz0zydDw/maxresdefault.jpg",
+              "duration": "3:42",
+              "durationSec": 222,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2024-07-31T19:45:02-07:00",
+              "resolution": "4K",
+              "viewCount": 3401
             }
           ]
         },
