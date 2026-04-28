@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27T06:31:10.660Z",
+  "lastUpdated": "2026-04-28T01:28:24.004Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -4172,6 +4172,19 @@
               "date": "2025-11-21T04:30:01-08:00",
               "resolution": "4K",
               "viewCount": 35969613
+            },
+            {
+              "youtubeLinkID": "9oMkZJvGX2k",
+              "title": "Ey Inge Paaru Video Song 8K | Velai Illa Pattadhaari | Dhanush | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/9oMkZJvGX2k/maxresdefault.jpg",
+              "duration": "2:02",
+              "durationSec": 122,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2026-04-27T05:30:12-07:00",
+              "resolution": "8K",
+              "viewCount": 3057
             }
           ],
           "Item": [
@@ -5499,6 +5512,19 @@
               "date": "2026-03-12T19:30:09-07:00",
               "resolution": "8K",
               "viewCount": 700950
+            },
+            {
+              "youtubeLinkID": "_-Iui4ef0bs",
+              "title": "8K Remastered - Tere Pyaar Mein | Ranbir Kapoor, Shraddha Kapoor | Tu Jhoothi Main Makkaar",
+              "thumbnail": "https://img.youtube.com/vi/_-Iui4ef0bs/maxresdefault.jpg",
+              "duration": "4:14",
+              "durationSec": 254,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2023-12-02T17:50:10-08:00",
+              "resolution": "8K",
+              "viewCount": 302065
             }
           ],
           "Energetic": [
@@ -5657,6 +5683,19 @@
               "date": "2025-11-16T01:31:23-08:00",
               "resolution": "8K",
               "viewCount": 846672
+            },
+            {
+              "youtubeLinkID": "f6e41V-DGS8",
+              "title": "8K Remastered - Maine Pi Rakhi Hai | Ranbir Kapoor, Shraddha Kapoor | Tu Jhoothi Main Makkaar",
+              "thumbnail": "https://img.youtube.com/vi/f6e41V-DGS8/maxresdefault.jpg",
+              "duration": "3:55",
+              "durationSec": 235,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Energetic",
+              "date": "2023-10-30T11:07:32-07:00",
+              "resolution": "8K",
+              "viewCount": 202979
             }
           ],
           "Mass": [
