@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npm run api & npm run dev",
     "launch": "npm run fetch-videos && git add . && git commit -m 'YT' && git push && npm run deploy",
+    "push": "git add . && git commit -m 'YT' && git push && npm run deploy",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",

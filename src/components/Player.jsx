@@ -213,6 +213,19 @@ export default function Player({
                   ↗ YouTube
                 </a>
               )}
+              {!isMiniPlayer && queue && queue.length > 0 && (
+                <button
+                  className="player-modal__close"
+                  onClick={() => {
+                    if (upNextCountdown) cancelCountdown();
+                    onAdvance();
+                  }}
+                  aria-label="Next video"
+                  title="Next Video"
+                >
+                  →
+                </button>
+              )}
               {!isMiniPlayer && (
                 <button
                   className="player-modal__close"
