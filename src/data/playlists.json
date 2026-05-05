@@ -77,9 +77,6 @@
       },
       "Clips": {
         "Visuals": "PLk-aMlMwXfRyue8AqcysJZuOO7sWvaejg"
-      },
-      "Anime": {
-        "AMV": "PLk-aMlMwXfRykejp2NWadH4v-PLDeE4EB"
       }
     }
   },
@@ -98,6 +95,14 @@
       "Fun": {
         "Mr Beast": "PLrZVX3Rf2YWuR-XnxK6OXYnrRJDM-7vbT",
         "Ryan Trahan": "PLrZVX3Rf2YWsUKy0zvhWlRPdUoOktis8i"
+      }
+    }
+  },
+  "Anime": {
+    "icon": "",
+    "categories": {
+      "Solo Leveling": {
+        "Moments": "PLRe9ARNnYSY7k91_kB0mgGpMO6eVQqifN"
       }
     }
   }
