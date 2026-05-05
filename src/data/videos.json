@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02T04:56:42.312Z",
+  "lastUpdated": "2026-05-05T07:46:55.834Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -1023,6 +1023,19 @@
               "date": "2026-04-07T21:30:00-07:00",
               "resolution": "8K",
               "viewCount": 66550
+            },
+            {
+              "youtubeLinkID": "ZFHvmUWvRjg",
+              "title": "Gulebakavali - Video Song | Bimbisara | Nandamuri Kalyan Ram | Chirrantan Bhatt | Vassishta",
+              "thumbnail": "https://img.youtube.com/vi/ZFHvmUWvRjg/maxresdefault.jpg",
+              "duration": "4:05",
+              "durationSec": 245,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Item",
+              "date": "2022-08-27T04:37:09-07:00",
+              "resolution": "1080p",
+              "viewCount": 9606754
             }
           ],
           "Groovy": [
@@ -2481,6 +2494,19 @@
               "date": "2026-04-28T02:30:08-07:00",
               "resolution": "8K",
               "viewCount": 21580
+            },
+            {
+              "youtubeLinkID": "-xB_Nnm7CHU",
+              "title": "Ee Manase Full Video Song | Ustaad Bhagat Singh | Pawan Kalyan, Sreeleela | Harish Shankar",
+              "thumbnail": "https://img.youtube.com/vi/-xB_Nnm7CHU/maxresdefault.jpg",
+              "duration": "4:25",
+              "durationSec": 265,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-05-03T04:32:06-07:00",
+              "resolution": "4K",
+              "viewCount": 393325
             }
           ],
           "Energetic": [
@@ -6201,19 +6227,6 @@
               "viewCount": 2411058
             },
             {
-              "youtubeLinkID": "YyepU5ztLf4",
-              "title": "Shararat | Dhurandhar | Ranveer, Aditya Dhar, Shashwat, Jasmine, Madhubanti, Ayesha, Krystle",
-              "thumbnail": "https://img.youtube.com/vi/YyepU5ztLf4/maxresdefault.jpg",
-              "duration": "3:49",
-              "durationSec": 229,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Item",
-              "date": "2025-12-09T01:33:03-08:00",
-              "resolution": "4K",
-              "viewCount": 527199610
-            },
-            {
               "youtubeLinkID": "H6l0q4l2NLo",
               "title": "Tum Mere Na Huye (Video) Thamma | Ayushmann K, Rashmika M | Sachin-Jigar, Madhubanti B, Amitabh B",
               "thumbnail": "https://img.youtube.com/vi/H6l0q4l2NLo/maxresdefault.jpg",
@@ -6368,6 +6381,32 @@
               "date": "2026-04-09T03:30:13-07:00",
               "resolution": "8K",
               "viewCount": 335910
+            },
+            {
+              "youtubeLinkID": "_IsheYU45TE",
+              "title": "Housefull 5: Laal Pari 8K Video Song | Yo Yo Honey Singh | Sajid Nadiadwala | Tarun Mansukhani",
+              "thumbnail": "https://img.youtube.com/vi/_IsheYU45TE/maxresdefault.jpg",
+              "duration": "3:51",
+              "durationSec": 231,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Item",
+              "date": "2025-08-23T06:30:50-07:00",
+              "resolution": "8K",
+              "viewCount": 4709302
+            },
+            {
+              "youtubeLinkID": "v5jVX0QYwQo",
+              "title": "Shararat - 8K Video | Dhurandhar | Ranveer Singh, Shashwat S, Jasmine, Madhubanti, Ayesha, Krystle",
+              "thumbnail": "https://img.youtube.com/vi/v5jVX0QYwQo/maxresdefault.jpg",
+              "duration": "3:47",
+              "durationSec": 227,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Item",
+              "date": "2026-05-04T00:23:07-07:00",
+              "resolution": "8K",
+              "viewCount": 870189
             }
           ],
           "Groovy": [
@@ -7000,6 +7039,19 @@
               "date": "2026-04-20T23:42:03-07:00",
               "resolution": "4K",
               "viewCount": 524021
+            },
+            {
+              "youtubeLinkID": "IcMBZkvS7IY",
+              "title": "Deewaniyat (Title Track | 8K Remastered) | Ek Deewane Ki Deewaniyat | Harshvardhan, Sonam | Vishal",
+              "thumbnail": "https://img.youtube.com/vi/IcMBZkvS7IY/maxresdefault.jpg",
+              "duration": "3:26",
+              "durationSec": 206,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2025-09-01T07:44:40-07:00",
+              "resolution": "8K",
+              "viewCount": 569586
             }
           ]
         },
@@ -7534,6 +7586,19 @@
               "date": "2026-04-20T04:32:06-07:00",
               "resolution": "4K",
               "viewCount": 15949
+            },
+            {
+              "youtubeLinkID": "BcNpkv54ZLo",
+              "title": "Masth Malaika - 8K Video | Mark | Kichcha Sudeepa, Nishvika | Vijay Kartikeyaa |Ajaneesh B Loknath",
+              "thumbnail": "https://img.youtube.com/vi/BcNpkv54ZLo/maxresdefault.jpg",
+              "duration": "3:17",
+              "durationSec": 197,
+              "group": "Music",
+              "category": "Kanada",
+              "type": "Item",
+              "date": "2026-02-28T02:31:01-08:00",
+              "resolution": "8K",
+              "viewCount": 9366850
             }
           ]
         },
@@ -7962,6 +8027,32 @@
               "date": "2023-01-13T04:45:03-08:00",
               "resolution": "4K",
               "viewCount": 22340308
+            },
+            {
+              "youtubeLinkID": "WpBn9w-Js_c",
+              "title": "Sundari (Official Video) Sanju Rathod Ft. Yashika Jatav | G-Spark | Marathi Song 2025",
+              "thumbnail": "https://img.youtube.com/vi/WpBn9w-Js_c/maxresdefault.jpg",
+              "duration": "3:18",
+              "durationSec": 198,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2025-09-11T08:30:07-07:00",
+              "resolution": "4K",
+              "viewCount": 224062705
+            },
+            {
+              "youtubeLinkID": "sUf2PtEZris",
+              "title": "Shaky ( Official #Video ) Sanju Rathod Ft. Isha Malviya | G-Spark | New #Marathi Songs 2025",
+              "thumbnail": "https://img.youtube.com/vi/sUf2PtEZris/maxresdefault.jpg",
+              "duration": "3:35",
+              "durationSec": 215,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2025-04-22T02:21:13-07:00",
+              "resolution": "4K",
+              "viewCount": 729373752
             }
           ],
           "Devotional": [
