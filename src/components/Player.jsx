@@ -50,6 +50,7 @@ export default function Player({
   const overlayRef = useRef(null);
   const wasFullscreenRef = useRef(false); // tracks fullscreen intent across autoplay
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   // Fullscreen toggle
   const enterFullscreen = useCallback(() => {
@@ -202,6 +203,19 @@ export default function Player({
           <div className="player-modal__header">
             <h2 className="player-modal__title">{video.title}</h2>
             <div className="player-modal__actions">
+              {!isMiniPlayer && (
+                <button
+                  className="player-modal__btn"
+                  onClick={() => {
+                    navigator.clipboard.writeText(youtubeUrl);
+                    setCopied(true);
+                    setTimeout(() => setCopied(false), 2000);
+                  }}
+                  title="Copy YouTube Link"
+                >
+                  {copied ? '✓ Copied' : '⎘ Copy'}
+                </button>
+              )}
               {!isMiniPlayer && (
                 <a
                   href={youtubeUrl}
