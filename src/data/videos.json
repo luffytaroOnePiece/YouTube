@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05T16:13:33.916Z",
+  "lastUpdated": "2026-05-06T13:56:43.604Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -4844,6 +4844,19 @@
               "date": "2023-04-09T05:01:00-07:00",
               "resolution": "4K",
               "viewCount": 133167950
+            },
+            {
+              "youtubeLinkID": "zluCin4zJHM",
+              "title": "Badass 8K 60 FPS Video Song | LEO | Thalapathy Vijay | Anirudh Ravichander | Trisha",
+              "thumbnail": "https://img.youtube.com/vi/zluCin4zJHM/maxresdefault.jpg",
+              "duration": "3:51",
+              "durationSec": 231,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Mass",
+              "date": "2026-05-06T04:30:50-07:00",
+              "resolution": "8K",
+              "viewCount": 15738
             }
           ],
           "Energetic": [
@@ -6188,19 +6201,6 @@
               "viewCount": 459602
             },
             {
-              "youtubeLinkID": "Cd3gM1g4Jx8",
-              "title": "8K Remastered - Kusu Kusu | Nora Fatehi | Satyameva Jayate 2",
-              "thumbnail": "https://img.youtube.com/vi/Cd3gM1g4Jx8/maxresdefault.jpg",
-              "duration": "2:55",
-              "durationSec": 175,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Item",
-              "date": "2023-12-13T07:40:06-08:00",
-              "resolution": "8K",
-              "viewCount": 503992
-            },
-            {
               "youtubeLinkID": "U-o5jaxPL-M",
               "title": "BABY DOLL [8K] Full Video Song | Sunny Leone | Ragini MMS 2 | Meet Bros Anjjan Feat. Kanika Kapoor",
               "thumbnail": "https://img.youtube.com/vi/U-o5jaxPL-M/maxresdefault.jpg",
@@ -6407,6 +6407,19 @@
               "date": "2026-05-04T00:23:07-07:00",
               "resolution": "8K",
               "viewCount": 870189
+            },
+            {
+              "youtubeLinkID": "ibwcsrdrUt8",
+              "title": "Kusu Kusu 8K Video Song | Nora Fatehi | Satyameva Jayate 2 | John A, Divya K | Tanishk, Zahrah, Dev",
+              "thumbnail": "https://img.youtube.com/vi/ibwcsrdrUt8/maxresdefault.jpg",
+              "duration": "2:59",
+              "durationSec": 179,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Item",
+              "date": "2026-05-06T04:30:03-07:00",
+              "resolution": "8K",
+              "viewCount": 24515
             }
           ],
           "Groovy": [
