@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-07T01:48:56.934Z",
+  "lastUpdated": "2026-05-08T01:53:39.437Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -4123,6 +4123,19 @@
               "date": "2014-08-05T08:13:42-07:00",
               "resolution": "1080p",
               "viewCount": 51243684
+            },
+            {
+              "youtubeLinkID": "OMgyY1BywH8",
+              "title": "Chulbuli Chulbuli 4k Video Song | Dookudu Telugu Movie | Mahesh babu, Samantha | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/OMgyY1BywH8/maxresdefault.jpg",
+              "duration": "4:20",
+              "durationSec": 260,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Classics",
+              "date": "2024-11-15T10:38:46-08:00",
+              "resolution": "4K",
+              "viewCount": 45400
             }
           ],
           "Vintage": [
@@ -5028,6 +5041,32 @@
               "date": "2025-07-01T07:30:42-07:00",
               "resolution": "8K",
               "viewCount": 5726085
+            },
+            {
+              "youtubeLinkID": "F6hSBJy1rUY",
+              "title": "Varisu: Ranjithame 8K Full Video Song (Tamil) | Thalapathy Vijay | Rashmika | Vamshi P | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/F6hSBJy1rUY/maxresdefault.jpg",
+              "duration": "4:48",
+              "durationSec": 288,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Energetic",
+              "date": "2026-05-07T03:23:29-07:00",
+              "resolution": "8K",
+              "viewCount": 25044
+            },
+            {
+              "youtubeLinkID": "gcwYNwqJaTU",
+              "title": "Whistle Podu 8K Full Video Song (Tamil) | The Greatest Of All Time | Thalapathy Vijay | VP | U1| AGS",
+              "thumbnail": "https://img.youtube.com/vi/gcwYNwqJaTU/maxresdefault.jpg",
+              "duration": "4:15",
+              "durationSec": 255,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Energetic",
+              "date": "2026-05-07T03:39:10-07:00",
+              "resolution": "8K",
+              "viewCount": 52957
             }
           ],
           "Groovy": [
