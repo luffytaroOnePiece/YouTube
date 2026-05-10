@@ -34,15 +34,7 @@ function App() {
 
   const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
   const [favorites, setFavorites] = useState(Array.isArray(favData) ? favData : []);
-
-  useEffect(() => {
-    if (isLocal) {
-      fetch('http://localhost:3001/api/fav')
-        .then(res => res.json())
-        .then(data => setFavorites(Array.isArray(data) ? data : favData))
-        .catch(err => console.error('Error fetching favs:', err));
-    }
-  }, [isLocal]);
+  const [isFavoritesMode, setIsFavoritesMode] = useState(false);
 
   const handleToggleFav = useCallback((video) => {
     if (!isLocal) return;
@@ -182,9 +174,7 @@ function App() {
   const filteredVideos = useMemo(() => {
     let videos;
 
-    if (activeGroup === 'Favorites') {
-      videos = allVideos.filter(v => favorites.includes(v.youtubeLinkID));
-    } else if (activeGroup === 'All') {
+    if (activeGroup === 'All' || !videosData.groups[activeGroup]) {
       videos = allVideos;
     } else {
       const group = videosData.groups[activeGroup];
@@ -205,6 +195,10 @@ function App() {
       } else {
         videos = group.categories?.[activeCategory]?.[activePlaylist] || [];
       }
+    }
+
+    if (isFavoritesMode) {
+      videos = videos.filter(v => favorites.includes(v.youtubeLinkID));
     }
 
     if (searchQuery.trim()) {
@@ -271,13 +265,13 @@ function App() {
     }
 
     return videos;
-  }, [activeGroup, activeCategory, activePlaylist, activeResolution, activeSort, searchQuery, allVideos, shuffleActive, shuffleSeed]);
+  }, [activeGroup, activeCategory, activePlaylist, activeResolution, activeSort, searchQuery, allVideos, shuffleActive, shuffleSeed, isFavoritesMode, favorites]);
 
   // Is home view (no filters active, no search)
-  const isHomeView = activeGroup === 'All' && !searchQuery.trim();
+  const isHomeView = activeGroup === 'All' && !searchQuery.trim() && !isFavoritesMode;
 
   // Check if any filter is active
-  const hasActiveFilters = activeGroup !== 'All' || activeResolution !== 'All' || searchQuery.trim();
+  const hasActiveFilters = activeGroup !== 'All' || activeResolution !== 'All' || searchQuery.trim() || isFavoritesMode;
 
   const handleGroupChange = useCallback((group) => {
     setFilters({ group, category: 'All', playlist: 'All' });
@@ -290,6 +284,7 @@ function App() {
   const handleReset = useCallback(() => {
     setFilters(INITIAL_FILTERS);
     setShuffleActive(false);
+    setIsFavoritesMode(false);
   }, [setFilters]);
 
   const handleToggleShuffle = useCallback(() => {
@@ -610,6 +605,8 @@ function App() {
             setFilters({ group, category, playlist: 'All', resolution });
           }}
           isLocal={isLocal}
+          isFavoritesMode={isFavoritesMode}
+          onToggleFavoritesMode={() => setIsFavoritesMode(prev => !prev)}
         />
       </div>
 
