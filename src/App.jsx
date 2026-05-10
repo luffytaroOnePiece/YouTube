@@ -294,15 +294,10 @@ function App() {
     });
   }, []);
 
-  // Build queue — strictly same type AND category only
+  // Build queue from the current filtered video pool
   const buildQueue = useCallback((video, videos) => {
     if (!video || !videos) return [];
-    const pool = videos.filter(v =>
-      v.youtubeLinkID !== video.youtubeLinkID &&
-      v.group === video.group &&
-      v.type === video.type &&
-      v.category === video.category
-    );
+    const pool = videos.filter(v => v.youtubeLinkID !== video.youtubeLinkID);
     const currentMs = video.date ? new Date(video.date).getTime() : 0;
     pool.sort((a, b) => {
       const aMs = a.date ? new Date(a.date).getTime() : 0;
@@ -314,8 +309,8 @@ function App() {
 
   const handleVideoSelect = useCallback((video) => {
     setSelectedVideo(video);
-    setQueue(buildQueue(video, allVideos));
-  }, [allVideos, buildQueue]);
+    setQueue(buildQueue(video, filteredVideos));
+  }, [filteredVideos, buildQueue]);
 
   const handleClosePlayer = useCallback(() => {
     setSelectedVideo(null);
@@ -329,13 +324,12 @@ function App() {
     const remainingQueue = queue.slice(1);
     // Append more videos based on the new currentVideo to keep the queue populated
     const usedIds = new Set([nextVideo.youtubeLinkID, ...remainingQueue.map(q => q.youtubeLinkID)]);
-    const newRelated = allVideos
+    const newRelated = filteredVideos
       .filter(v => !usedIds.has(v.youtubeLinkID))
-      .filter(v => v.group === nextVideo.group && v.type === nextVideo.type && v.category === nextVideo.category)
       .slice(0, 5);
     setSelectedVideo(nextVideo);
     setQueue([...remainingQueue, ...newRelated].slice(0, 15));
-  }, [queue, allVideos]);
+  }, [queue, filteredVideos]);
 
   const handleQueueReorder = useCallback((newQueue) => {
     setQueue(newQueue);
