@@ -17,7 +17,8 @@
         "Groovy": "PLk-aMlMwXfRzjAZ4Zk3N9d7TQJin3nE7a",
         "Item": "PLk-aMlMwXfRwP3O-VX0Ka05kFRrDD8_go",
         "Romance": "PLk-aMlMwXfRyVTYjvQ2pqRsojIK0GaCzk",
-        "Sad": "PLk-aMlMwXfRy6VkAuC2QctXxEktYvkupe"
+        "Sad": "PLk-aMlMwXfRy6VkAuC2QctXxEktYvkupe",
+        "Classics": "PLk-aMlMwXfRx9LEGCagZxWdtFLDrcRz15"
       },
       "Hindi": {
         "Romance": "PLk-aMlMwXfRwFFMNbc46LKa91GzY6GBLv",
@@ -67,9 +68,10 @@
   "Movies": {
     "icon": "",
     "categories": {
-      "Telugu": {
-        "Classics": "PLk-aMlMwXfRwXfk5v3HabUWpVUP9j9q45",
-        "Essentials": "PLk-aMlMwXfRzIbt3SOocDSV67o5_cw0kr"
+      "Curated": {
+        "Telugu Classics": "PLk-aMlMwXfRwXfk5v3HabUWpVUP9j9q45",
+        "Telugu Essentials": "PLk-aMlMwXfRzIbt3SOocDSV67o5_cw0kr",
+        "Indian Cinema": "PLk-aMlMwXfRwlmPqvPcp_49WuoNcwG9Xc"
       },
       "Trailers": {
         "Hindi": "PLk-aMlMwXfRxn-dF36yr5UhxkTpgmHRWs",
@@ -92,9 +94,14 @@
   "Youtubers": {
     "icon": "",
     "categories": {
-      "Fun": {
-        "Mr Beast": "PLrZVX3Rf2YWuR-XnxK6OXYnrRJDM-7vbT",
-        "Ryan Trahan": "PLrZVX3Rf2YWsUKy0zvhWlRPdUoOktis8i"
+      "Mr Beast": {
+        "Fun": "PLrZVX3Rf2YWuR-XnxK6OXYnrRJDM-7vbT"
+      },
+      "Ryan Trahan": {
+        "Fun": "PLrZVX3Rf2YWsUKy0zvhWlRPdUoOktis8i"
+      },
+      "Naa Anveshana": {
+        "China": "PLrZVX3Rf2YWsXeiH5hklACHfdxoDxxUIK"
       }
     }
   }
