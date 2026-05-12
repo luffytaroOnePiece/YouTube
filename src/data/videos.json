@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12T01:26:42.768Z",
+  "lastUpdated": "2026-05-12T10:04:56.375Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -3436,19 +3436,6 @@
               "viewCount": 68186533
             },
             {
-              "youtubeLinkID": "YzETAhwnQy8",
-              "title": "Dethadi Dethadi 4k Video Song || Dookudu || Mahesh Babu, Samantha || S. Thaman || Remastered",
-              "thumbnail": "https://img.youtube.com/vi/YzETAhwnQy8/maxresdefault.jpg",
-              "duration": "3:54",
-              "durationSec": 234,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Classics",
-              "date": "2025-08-09T05:42:28-07:00",
-              "resolution": "4K",
-              "viewCount": 4138
-            },
-            {
               "youtubeLinkID": "RO1lfbWgK7Y",
               "title": "Dhinaku Dhin 4K HDR || DTS 5.1 || Mirapakay || Ravi Teja, Richa || Thaman S || Remastered || 90sHD",
               "thumbnail": "https://img.youtube.com/vi/RO1lfbWgK7Y/maxresdefault.jpg",
@@ -4478,19 +4465,6 @@
               "viewCount": 2452
             },
             {
-              "youtubeLinkID": "lVGBAW4f3EY",
-              "title": "Inthandanga 4k Video Song ll Don ll Nagarjuna, Anushka || Raghava Lawrence",
-              "thumbnail": "https://img.youtube.com/vi/lVGBAW4f3EY/maxresdefault.jpg",
-              "duration": "3:50",
-              "durationSec": 230,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Vintage",
-              "date": "2026-02-19T03:45:05-08:00",
-              "resolution": "4K",
-              "viewCount": 2938
-            },
-            {
               "youtubeLinkID": "Vg0-a-giy2U",
               "title": "Chitti Nadumune 4k Video Song || Gudumba Shankar || Pawan Kalyan, Meera Jasmine || Mani Sharma",
               "thumbnail": "https://img.youtube.com/vi/Vg0-a-giy2U/maxresdefault.jpg",
@@ -5028,19 +5002,6 @@
               "date": "2025-07-30T06:30:25-07:00",
               "resolution": "8K",
               "viewCount": 8913332
-            },
-            {
-              "youtubeLinkID": "FBXe36hkq3Q",
-              "title": "Jinguchaa - Video Song | Thug Life | Kamal Haasan | Mani Ratnam | STR | AR Rahman | Sanya M",
-              "thumbnail": "https://img.youtube.com/vi/FBXe36hkq3Q/maxresdefault.jpg",
-              "duration": "4:29",
-              "durationSec": 269,
-              "group": "Music",
-              "category": "Tamil",
-              "type": "Energetic",
-              "date": "2025-06-23T22:30:07-07:00",
-              "resolution": "4K",
-              "viewCount": 45419870
             },
             {
               "youtubeLinkID": "4Bsc2uI_LsM",
@@ -6422,19 +6383,6 @@
               "date": "2024-10-18T21:30:07-07:00",
               "resolution": "4K",
               "viewCount": 2274301
-            },
-            {
-              "youtubeLinkID": "hmQ7rRtcS6A",
-              "title": "Oh Mama! TETEMA 8K Video | Rayvanny, Nora Fatehi | Shreya Ghoshal, Vishal Mishra, Sanjoy | Bhushan K",
-              "thumbnail": "https://img.youtube.com/vi/hmQ7rRtcS6A/maxresdefault.jpg",
-              "duration": "3:16",
-              "durationSec": 196,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Item",
-              "date": "2025-12-04T05:33:35-08:00",
-              "resolution": "8K",
-              "viewCount": 2568655
             },
             {
               "youtubeLinkID": "Svspj4Q6-5g",
@@ -7966,19 +7914,6 @@
               "viewCount": 12762591
             },
             {
-              "youtubeLinkID": "ge_UgErt4yo",
-              "title": "Oh Mama! TETEMA (Song) | Rayvanny, Nora Fatehi | Shreya Ghoshal, Vishal Mishra, Sanjoy | Bhushan K",
-              "thumbnail": "https://img.youtube.com/vi/ge_UgErt4yo/maxresdefault.jpg",
-              "duration": "3:16",
-              "durationSec": 196,
-              "group": "Music",
-              "category": "Others",
-              "type": "Straight From The Studio",
-              "date": "2025-08-09T04:30:07-07:00",
-              "resolution": "4K",
-              "viewCount": 102379162
-            },
-            {
               "youtubeLinkID": "rc2VlzcUXv0",
               "title": "Maname Lyrical Video / Sarah Black / Sathyan Ilanko",
               "thumbnail": "https://img.youtube.com/vi/rc2VlzcUXv0/maxresdefault.jpg",
@@ -8289,6 +8224,19 @@
               "date": "2026-05-04T23:00:10-07:00",
               "resolution": "4K",
               "viewCount": 69001
+            },
+            {
+              "youtubeLinkID": "hmQ7rRtcS6A",
+              "title": "Oh Mama! TETEMA 8K Video | Rayvanny, Nora Fatehi | Shreya Ghoshal, Vishal Mishra, Sanjoy | Bhushan K",
+              "thumbnail": "https://img.youtube.com/vi/hmQ7rRtcS6A/maxresdefault.jpg",
+              "duration": "3:16",
+              "durationSec": 196,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2025-12-04T05:33:35-08:00",
+              "resolution": "8K",
+              "viewCount": 2568655
             }
           ],
           "Devotional": [
