@@ -1,5 +1,7 @@
 import React, { useMemo, useEffect, useRef } from 'react';
 
+const toCamelCase = (str) => str.replace(/\b\w/g, c => c.toUpperCase());
+
 const AdvancedSearchPanel = ({
   isOpen,
   onClose,
@@ -119,7 +121,7 @@ const AdvancedSearchPanel = ({
                     className={`adv-search-panel__chip ${activeTag === tagName ? 'adv-search-panel__chip--active' : ''}`}
                     onClick={() => onTagChange(activeTag === tagName ? null : tagName)}
                   >
-                    {tagName}
+                    {toCamelCase(tagName)}
                     <span className="adv-search-panel__tag-count">{tags[tagName]?.length || 0}</span>
                   </button>
                 ))}
