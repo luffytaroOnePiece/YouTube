@@ -139,6 +139,10 @@ export default function VideoCard({ video, onClick, index, isLocal, isFav, onTog
           onLoad={(e) => {
             // YouTube returns a tiny 120x90 gray placeholder when maxresdefault doesn't exist
             if (e.target.naturalWidth <= 120 && e.target.src.includes('maxresdefault')) {
+              e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/sddefault.jpg`;
+              return;
+            }
+            if (e.target.naturalWidth <= 120 && e.target.src.includes('sddefault')) {
               e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/hqdefault.jpg`;
               return;
             }
@@ -150,6 +154,8 @@ export default function VideoCard({ video, onClick, index, isLocal, isFav, onTog
           }}
           onError={(e) => {
             if (e.target.src.includes('maxresdefault')) {
+              e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/sddefault.jpg`;
+            } else if (e.target.src.includes('sddefault')) {
               e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/hqdefault.jpg`;
             } else if (e.target.src.includes('hqdefault')) {
               e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`;

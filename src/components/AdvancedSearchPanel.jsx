@@ -1,4 +1,4 @@
-import React, { useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 
 const toCamelCase = (str) => str.replace(/\b\w/g, c => c.toUpperCase());
 
@@ -14,6 +14,7 @@ const AdvancedSearchPanel = ({
   onTagChange,
 }) => {
   const panelRef = useRef(null);
+  const [tagSearch, setTagSearch] = useState('');
 
   useEffect(() => {
     const handleEscape = (e) => {
@@ -113,9 +114,28 @@ const AdvancedSearchPanel = ({
                   <line x1="7" y1="7" x2="7.01" y2="7"></line>
                 </svg>
                 Tags
+                <span className="adv-search-panel__group-count">{tagNames.length}</span>
+              </div>
+              <div className="adv-search-panel__tag-search">
+                <svg className="adv-search-panel__tag-search-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <input
+                  className="adv-search-panel__tag-search-input"
+                  type="text"
+                  placeholder="Search tags..."
+                  value={tagSearch}
+                  onChange={(e) => setTagSearch(e.target.value)}
+                />
+                {tagSearch && (
+                  <button className="adv-search-panel__tag-search-clear" onClick={() => setTagSearch('')}>✕</button>
+                )}
               </div>
               <div className="adv-search-panel__chips">
-                {tagNames.map(tagName => (
+                {tagNames
+                  .filter(t => t.includes(tagSearch.toLowerCase().trim()))
+                  .map(tagName => (
                   <button
                     key={tagName}
                     className={`adv-search-panel__chip ${activeTag === tagName ? 'adv-search-panel__chip--active' : ''}`}
@@ -125,6 +145,9 @@ const AdvancedSearchPanel = ({
                     <span className="adv-search-panel__tag-count">{tags[tagName]?.length || 0}</span>
                   </button>
                 ))}
+                {tagNames.filter(t => t.includes(tagSearch.toLowerCase().trim())).length === 0 && (
+                  <span className="adv-search-panel__tag-empty">No tags match "{tagSearch}"</span>
+                )}
               </div>
             </div>
           )}
