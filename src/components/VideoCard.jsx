@@ -47,13 +47,18 @@ function formatAbsoluteDate(dateStr) {
   }
 }
 
-export default function VideoCard({ video, onClick, index, isLocal, isFav, onToggleFav }) {
+export default function VideoCard({ video, onClick, index, isLocal, isFav, onToggleFav, tags, onToggleTag }) {
   const [imgError, setImgError] = useState(false);
   const [imgLoaded, setImgLoaded] = useState(false);
 
   // Hover Preview State
   const [showIframe, setShowIframe] = useState(false);
   const hoverTimeoutRef = useRef(null);
+
+  // Tag popover state
+  const [showTagPopover, setShowTagPopover] = useState(false);
+  const [newTagInput, setNewTagInput] = useState('');
+  const tagPopoverRef = useRef(null);
 
   const animationDelay = `${Math.min(index * 0.03, 0.5)}s`;
 
@@ -78,6 +83,31 @@ export default function VideoCard({ video, onClick, index, isLocal, isFav, onTog
       if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
     };
   }, []);
+
+  // Close tag popover on outside click
+  useEffect(() => {
+    if (!showTagPopover) return;
+    const handleClickOutside = (e) => {
+      if (tagPopoverRef.current && !tagPopoverRef.current.contains(e.target)) {
+        setShowTagPopover(false);
+        setNewTagInput('');
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [showTagPopover]);
+
+  // Get tags for this video
+  const videoTags = tags ? Object.entries(tags).filter(([, ids]) => ids.includes(video.youtubeLinkID)).map(([name]) => name) : [];
+  const allTagNames = tags ? Object.keys(tags).sort() : [];
+
+  const handleCreateTag = (e) => {
+    e.preventDefault();
+    const tagName = newTagInput.trim().toLowerCase();
+    if (!tagName || !onToggleTag) return;
+    onToggleTag(tagName, video.youtubeLinkID);
+    setNewTagInput('');
+  };
 
   return (
     <div
@@ -169,6 +199,66 @@ export default function VideoCard({ video, onClick, index, isLocal, isFav, onTog
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
             </svg>
           </button>
+        )}
+
+        {/* Tag button (local only) */}
+        {isLocal && (
+          <button
+            className={`video-card__tag-btn ${videoTags.length > 0 ? 'video-card__tag-btn--active' : ''}`}
+            onClick={(e) => { e.stopPropagation(); setShowTagPopover(prev => !prev); }}
+            title="Manage Tags"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+              <line x1="7" y1="7" x2="7.01" y2="7"></line>
+            </svg>
+            {videoTags.length > 0 && (
+              <span className="video-card__tag-count">{videoTags.length}</span>
+            )}
+          </button>
+        )}
+
+        {/* Tag Popover */}
+        {showTagPopover && isLocal && (
+          <div className="video-card__tag-popover" ref={tagPopoverRef} onClick={(e) => e.stopPropagation()}>
+            <div className="video-card__tag-popover-header">
+              <span>Tags</span>
+              <button className="video-card__tag-popover-close" onClick={() => { setShowTagPopover(false); setNewTagInput(''); }}>✕</button>
+            </div>
+            <form className="video-card__tag-input-wrap" onSubmit={handleCreateTag}>
+              <input
+                className="video-card__tag-input"
+                type="text"
+                placeholder="New tag..."
+                value={newTagInput}
+                onChange={(e) => setNewTagInput(e.target.value)}
+                autoFocus
+                onClick={(e) => e.stopPropagation()}
+              />
+              {newTagInput.trim() && (
+                <button type="submit" className="video-card__tag-add-btn">+</button>
+              )}
+            </form>
+            <div className="video-card__tag-list">
+              {allTagNames.length === 0 && !newTagInput.trim() && (
+                <div className="video-card__tag-empty">No tags yet. Create one above.</div>
+              )}
+              {allTagNames.map(tagName => {
+                const isTagged = tags[tagName]?.includes(video.youtubeLinkID);
+                return (
+                  <button
+                    key={tagName}
+                    className={`video-card__tag-item ${isTagged ? 'video-card__tag-item--active' : ''}`}
+                    onClick={(e) => { e.stopPropagation(); onToggleTag(tagName, video.youtubeLinkID); }}
+                  >
+                    <span className="video-card__tag-check">{isTagged ? '✓' : ''}</span>
+                    <span className="video-card__tag-name">{tagName}</span>
+                    <span className="video-card__tag-badge">{tags[tagName]?.length || 0}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         )}
 
       </div>

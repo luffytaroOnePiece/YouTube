@@ -119,6 +119,64 @@ app.post('/api/fav', (req, res) => {
   }
 });
 
+// POST /api/tags — create a tag or toggle a video on a tag
+app.post('/api/tags', (req, res) => {
+  try {
+    const { tag, videoId } = req.body;
+    if (!tag || typeof tag !== 'string') return res.status(400).json({ error: 'tag (string) required' });
+
+    const tagsFile = path.join(__dirname, '../src/data/tags.json');
+    let data = {};
+    if (fs.existsSync(tagsFile)) {
+      data = JSON.parse(fs.readFileSync(tagsFile, 'utf-8'));
+    }
+
+    const tagKey = tag.trim().toLowerCase();
+    if (!tagKey) return res.status(400).json({ error: 'tag cannot be empty' });
+
+    // Ensure tag exists
+    if (!data[tagKey]) {
+      data[tagKey] = [];
+    }
+
+    // If videoId provided, toggle it
+    if (videoId) {
+      if (data[tagKey].includes(videoId)) {
+        data[tagKey] = data[tagKey].filter(id => id !== videoId);
+      } else {
+        data[tagKey].push(videoId);
+      }
+    }
+
+    fs.writeFileSync(tagsFile, JSON.stringify(data, null, 2), 'utf-8');
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/tags/delete — delete a tag entirely
+app.post('/api/tags/delete', (req, res) => {
+  try {
+    const { tag } = req.body;
+    if (!tag || typeof tag !== 'string') return res.status(400).json({ error: 'tag (string) required' });
+
+    const tagsFile = path.join(__dirname, '../src/data/tags.json');
+    let data = {};
+    if (fs.existsSync(tagsFile)) {
+      data = JSON.parse(fs.readFileSync(tagsFile, 'utf-8'));
+    }
+
+    const tagKey = tag.trim().toLowerCase();
+    delete data[tagKey];
+
+    fs.writeFileSync(tagsFile, JSON.stringify(data, null, 2), 'utf-8');
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`\n🚀 YouTube Library API running at http://localhost:${PORT}`);
@@ -127,5 +185,7 @@ app.listen(PORT, () => {
   console.log(`   GET  /api/stats      — Video stats`);
   console.log(`   POST /api/fetch      — Start fetch job`);
   console.log(`   GET  /api/jobs/:id   — Check job status`);
-  console.log(`   GET/POST /api/fav    — Manage favorites\n`);
+  console.log(`   GET/POST /api/fav    — Manage favorites`);
+  console.log(`   POST /api/tags       — Create/toggle tags`);
+  console.log(`   POST /api/tags/delete — Delete a tag\n`);
 });

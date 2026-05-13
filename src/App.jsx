@@ -8,6 +8,7 @@ import AdvancedSearchPanel from './components/AdvancedSearchPanel';
 import { useUrlFilters } from './hooks/useUrlFilters';
 import videosData from './data/videos.json';
 import favData from './data/fav.json';
+import tagsData from './data/tags.json';
 import './styles/App.css';
 
 const INITIAL_FILTERS = {
@@ -36,6 +37,10 @@ function App() {
   const [favorites, setFavorites] = useState(Array.isArray(favData) ? favData : []);
   const [isFavoritesMode, setIsFavoritesMode] = useState(false);
 
+  // Tags state
+  const [tags, setTags] = useState(tagsData && typeof tagsData === 'object' && !Array.isArray(tagsData) ? tagsData : {});
+  const [activeTag, setActiveTag] = useState(null);
+
   const handleToggleFav = useCallback((video) => {
     if (!isLocal) return;
     const videoId = video.youtubeLinkID;
@@ -52,6 +57,36 @@ function App() {
     })
       .then(res => res.json())
       .then(data => setFavorites(Array.isArray(data) ? data : []))
+      .catch(console.error);
+  }, [isLocal]);
+
+  // Tag handlers
+  const handleToggleTag = useCallback((tag, videoId) => {
+    if (!isLocal) return;
+    const tagKey = tag.trim().toLowerCase();
+    if (!tagKey) return;
+
+    // Optimistic update
+    setTags(prev => {
+      const updated = { ...prev };
+      if (!updated[tagKey]) updated[tagKey] = [];
+      if (videoId) {
+        if (updated[tagKey].includes(videoId)) {
+          updated[tagKey] = updated[tagKey].filter(id => id !== videoId);
+        } else {
+          updated[tagKey] = [...updated[tagKey], videoId];
+        }
+      }
+      return updated;
+    });
+
+    fetch('http://localhost:3001/api/tags', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ tag: tagKey, videoId }),
+    })
+      .then(res => res.json())
+      .then(data => { if (data && typeof data === 'object' && !data.error) setTags(data); })
       .catch(console.error);
   }, [isLocal]);
 
@@ -174,7 +209,10 @@ function App() {
   const filteredVideos = useMemo(() => {
     let videos;
 
-    if (activeGroup === 'All' || !videosData.groups[activeGroup]) {
+    // When a tag is active, search across all videos (bypass group/category/playlist)
+    if (activeTag && tags[activeTag]) {
+      videos = allVideos.filter(v => tags[activeTag].includes(v.youtubeLinkID));
+    } else if (activeGroup === 'All' || !videosData.groups[activeGroup]) {
       videos = allVideos;
     } else {
       const group = videosData.groups[activeGroup];
@@ -200,6 +238,7 @@ function App() {
     if (isFavoritesMode) {
       videos = videos.filter(v => favorites.includes(v.youtubeLinkID));
     }
+
 
     if (searchQuery.trim()) {
       let q = searchQuery.toLowerCase().trim();
@@ -265,13 +304,13 @@ function App() {
     }
 
     return videos;
-  }, [activeGroup, activeCategory, activePlaylist, activeResolution, activeSort, searchQuery, allVideos, shuffleActive, shuffleSeed, isFavoritesMode, favorites]);
+  }, [activeGroup, activeCategory, activePlaylist, activeResolution, activeSort, searchQuery, allVideos, shuffleActive, shuffleSeed, isFavoritesMode, favorites, activeTag, tags]);
 
   // Is home view (no filters active, no search)
-  const isHomeView = activeGroup === 'All' && !searchQuery.trim() && !isFavoritesMode;
+  const isHomeView = activeGroup === 'All' && !searchQuery.trim() && !isFavoritesMode && !activeTag;
 
   // Check if any filter is active
-  const hasActiveFilters = activeGroup !== 'All' || activeResolution !== 'All' || searchQuery.trim() || isFavoritesMode;
+  const hasActiveFilters = activeGroup !== 'All' || activeResolution !== 'All' || searchQuery.trim() || isFavoritesMode || activeTag !== null;
 
   const handleGroupChange = useCallback((group) => {
     setFilters({ group, category: 'All', playlist: 'All' });
@@ -285,6 +324,7 @@ function App() {
     setFilters(INITIAL_FILTERS);
     setShuffleActive(false);
     setIsFavoritesMode(false);
+    setActiveTag(null);
   }, [setFilters]);
 
   const handleToggleShuffle = useCallback(() => {
@@ -618,6 +658,8 @@ function App() {
             isLocal={isLocal}
             favorites={favorites}
             onToggleFav={handleToggleFav}
+            tags={tags}
+            onToggleTag={handleToggleTag}
           />
         </section>
       )}
@@ -631,6 +673,8 @@ function App() {
           isLocal={isLocal}
           favorites={favorites}
           onToggleFav={handleToggleFav}
+          tags={tags}
+          onToggleTag={handleToggleTag}
         />
       )}
 
@@ -686,6 +730,9 @@ function App() {
         onSearchChange={(search) => setFilters({ search })}
         availableResolutions={availableResolutions}
         allVideos={allVideos}
+        tags={tags}
+        activeTag={activeTag}
+        onTagChange={setActiveTag}
       />
     </div>
   );

@@ -68,6 +68,7 @@ export default function FilterBar({
     { value: 'Oldest First', label: 'Oldest' }
   ];
 
+
   return (
     <div className="filter-bar">
       <div className="filter-bar__top">
@@ -180,6 +181,7 @@ export default function FilterBar({
           >
             8K Ultra
           </button>
+
         </div>
       </div>
 
@@ -210,3 +212,4 @@ export default function FilterBar({
     </div>
   );
 }
+

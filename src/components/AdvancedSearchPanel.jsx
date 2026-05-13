@@ -6,7 +6,10 @@ const AdvancedSearchPanel = ({
   searchQuery,
   onSearchChange,
   availableResolutions,
-  allVideos
+  allVideos,
+  tags,
+  activeTag,
+  onTagChange,
 }) => {
   const panelRef = useRef(null);
 
@@ -38,6 +41,11 @@ const AdvancedSearchPanel = ({
     });
     return Array.from(yearSet).sort((a,b) => b - a);
   }, [allVideos]);
+
+  // Build tag names from tags data
+  const tagNames = useMemo(() => {
+    return tags ? Object.keys(tags).sort() : [];
+  }, [tags]);
 
   if (!isOpen) return null;
 
@@ -93,6 +101,31 @@ const AdvancedSearchPanel = ({
           <p className="adv-search-panel__desc">
             Use these tags to instantly refine your search results. They will be added to your search query.
           </p>
+
+          {/* Tags section */}
+          {tagNames.length > 0 && (
+            <div className="adv-search-panel__group">
+              <div className="adv-search-panel__group-title">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: 5, verticalAlign: '-2px' }}>
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                Tags
+              </div>
+              <div className="adv-search-panel__chips">
+                {tagNames.map(tagName => (
+                  <button
+                    key={tagName}
+                    className={`adv-search-panel__chip ${activeTag === tagName ? 'adv-search-panel__chip--active' : ''}`}
+                    onClick={() => onTagChange(activeTag === tagName ? null : tagName)}
+                  >
+                    {tagName}
+                    <span className="adv-search-panel__tag-count">{tags[tagName]?.length || 0}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
 
           {availableResolutions && availableResolutions.length > 0 && (
             <div className="adv-search-panel__group">
@@ -151,3 +184,4 @@ const AdvancedSearchPanel = ({
 };
 
 export default AdvancedSearchPanel;
+
