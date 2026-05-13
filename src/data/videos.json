@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12T10:04:56.375Z",
+  "lastUpdated": "2026-05-13T13:09:22.700Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -10417,6 +10417,41 @@
               "date": "2024-05-06T09:00:18-07:00",
               "resolution": "4K",
               "viewCount": 2092
+            }
+          ]
+        }
+      }
+    },
+    "Anime": {
+      "icon": "",
+      "categories": {
+        "One Piece": {
+          "Elbaf": [
+            {
+              "youtubeLinkID": "XOCzteMMhz0",
+              "title": "1160 - Nico Robin New Hair Cut Look",
+              "thumbnail": "https://img.youtube.com/vi/XOCzteMMhz0/maxresdefault.jpg",
+              "duration": "2:36",
+              "durationSec": 156,
+              "group": "Anime",
+              "category": "One Piece",
+              "type": "Elbaf",
+              "date": "2026-05-13T05:47:40-07:00",
+              "resolution": "1080p",
+              "viewCount": 2
+            },
+            {
+              "youtubeLinkID": "K_9LyCaUdRY",
+              "title": "1160 - Luffy Attacks Loki For Insulting Shanks",
+              "thumbnail": "https://img.youtube.com/vi/K_9LyCaUdRY/maxresdefault.jpg",
+              "duration": "2:01",
+              "durationSec": 121,
+              "group": "Anime",
+              "category": "One Piece",
+              "type": "Elbaf",
+              "date": "2026-05-13T06:02:01-07:00",
+              "resolution": "1080p",
+              "viewCount": 0
             }
           ]
         }
