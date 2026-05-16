@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15T13:33:05.899Z",
+  "lastUpdated": "2026-05-16T05:10:04.461Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -4788,6 +4788,19 @@
               "date": "2026-03-19T08:39:59-07:00",
               "resolution": "4K",
               "viewCount": 10391
+            },
+            {
+              "youtubeLinkID": "4yZ_tCDvlZ0",
+              "title": "Mass Title Song 4K | Mass Movie| Akkineni Nagarjuna | Raghawa Lawrence | DSP | Annapurna Studios",
+              "thumbnail": "https://img.youtube.com/vi/4yZ_tCDvlZ0/maxresdefault.jpg",
+              "duration": "5:05",
+              "durationSec": 305,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2026-05-15T08:02:32-07:00",
+              "resolution": "4K",
+              "viewCount": 4487
             }
           ]
         },
@@ -8250,6 +8263,84 @@
               "date": "2025-12-04T05:33:35-08:00",
               "resolution": "8K",
               "viewCount": 2568655
+            },
+            {
+              "youtubeLinkID": "OaowKKolskc",
+              "title": "Neha Bhasin - Vyaah ( Official Video )",
+              "thumbnail": "https://img.youtube.com/vi/OaowKKolskc/maxresdefault.jpg",
+              "duration": "3:02",
+              "durationSec": 182,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2026-05-14T22:30:26-07:00",
+              "resolution": "4K",
+              "viewCount": 101583
+            },
+            {
+              "youtubeLinkID": "vB0V3iCSzQw",
+              "title": "GURU RANDHAWA - \"AZUL\"  MV",
+              "thumbnail": "https://img.youtube.com/vi/vB0V3iCSzQw/maxresdefault.jpg",
+              "duration": "2:32",
+              "durationSec": 152,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2025-08-05T22:30:04-07:00",
+              "resolution": "4K",
+              "viewCount": 301657230
+            },
+            {
+              "youtubeLinkID": "c-FKlE3_kHo",
+              "title": "Guru Randhawa - QATAL - (Official Video)",
+              "thumbnail": "https://img.youtube.com/vi/c-FKlE3_kHo/maxresdefault.jpg",
+              "duration": "2:54",
+              "durationSec": 174,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2025-04-17T22:30:19-07:00",
+              "resolution": "4K",
+              "viewCount": 260907498
+            },
+            {
+              "youtubeLinkID": "knGCfzm4jWs",
+              "title": "Guru Randhawa - SIRRA ( Official Video )",
+              "thumbnail": "https://img.youtube.com/vi/knGCfzm4jWs/maxresdefault.jpg",
+              "duration": "2:34",
+              "durationSec": 154,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2025-06-30T22:31:15-07:00",
+              "resolution": "4K",
+              "viewCount": 211772002
+            },
+            {
+              "youtubeLinkID": "4RSxIX2I6Ic",
+              "title": "GURU RANDHAWA - “SHKINI“ MV",
+              "thumbnail": "https://img.youtube.com/vi/4RSxIX2I6Ic/maxresdefault.jpg",
+              "duration": "2:31",
+              "durationSec": 151,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2025-11-26T20:32:07-08:00",
+              "resolution": "4K",
+              "viewCount": 95857093
+            },
+            {
+              "youtubeLinkID": "ITFYDGPHRg8",
+              "title": "GURU RANDHAWA - “PARIS” MV",
+              "thumbnail": "https://img.youtube.com/vi/ITFYDGPHRg8/maxresdefault.jpg",
+              "duration": "2:17",
+              "durationSec": 137,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2026-04-22T22:29:50-07:00",
+              "resolution": "4K",
+              "viewCount": 14163942
             }
           ],
           "Devotional": [
