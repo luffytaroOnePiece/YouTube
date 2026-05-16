@@ -224,50 +224,50 @@ export default function VideoCard({ video, onClick, index, isLocal, isFav, onTog
           </button>
         )}
 
-        {/* Tag Popover */}
-        {showTagPopover && isLocal && (
-          <div className="video-card__tag-popover" ref={tagPopoverRef} onClick={(e) => e.stopPropagation()}>
-            <div className="video-card__tag-popover-header">
-              <span>Tags</span>
-              <button className="video-card__tag-popover-close" onClick={() => { setShowTagPopover(false); setNewTagInput(''); }}>✕</button>
-            </div>
-            <form className="video-card__tag-input-wrap" onSubmit={handleCreateTag}>
-              <input
-                className="video-card__tag-input"
-                type="text"
-                placeholder="New tag..."
-                value={newTagInput}
-                onChange={(e) => setNewTagInput(e.target.value)}
-                autoFocus
-                onClick={(e) => e.stopPropagation()}
-              />
-              {newTagInput.trim() && (
-                <button type="submit" className="video-card__tag-add-btn">+</button>
-              )}
-            </form>
-            <div className="video-card__tag-list">
-              {allTagNames.length === 0 && !newTagInput.trim() && (
-                <div className="video-card__tag-empty">No tags yet. Create one above.</div>
-              )}
-              {allTagNames.map(tagName => {
-                const isTagged = tags[tagName]?.includes(video.youtubeLinkID);
-                return (
-                  <button
-                    key={tagName}
-                    className={`video-card__tag-item ${isTagged ? 'video-card__tag-item--active' : ''}`}
-                    onClick={(e) => { e.stopPropagation(); onToggleTag(tagName, video.youtubeLinkID); }}
-                  >
-                    <span className="video-card__tag-check">{isTagged ? '✓' : ''}</span>
-                    <span className="video-card__tag-name">{tagName}</span>
-                    <span className="video-card__tag-badge">{tags[tagName]?.length || 0}</span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        )}
-
       </div>
+
+      {/* Tag Popover – rendered at card level to escape thumbnail overflow:hidden */}
+      {showTagPopover && isLocal && (
+        <div className="video-card__tag-popover" ref={tagPopoverRef} onClick={(e) => e.stopPropagation()}>
+          <div className="video-card__tag-popover-header">
+            <span>Tags</span>
+            <button className="video-card__tag-popover-close" onClick={() => { setShowTagPopover(false); setNewTagInput(''); }}>✕</button>
+          </div>
+          <form className="video-card__tag-input-wrap" onSubmit={handleCreateTag}>
+            <input
+              className="video-card__tag-input"
+              type="text"
+              placeholder="New tag..."
+              value={newTagInput}
+              onChange={(e) => setNewTagInput(e.target.value)}
+              autoFocus
+              onClick={(e) => e.stopPropagation()}
+            />
+            {newTagInput.trim() && (
+              <button type="submit" className="video-card__tag-add-btn">+</button>
+            )}
+          </form>
+          <div className="video-card__tag-list">
+            {allTagNames.length === 0 && !newTagInput.trim() && (
+              <div className="video-card__tag-empty">No tags yet. Create one above.</div>
+            )}
+            {allTagNames.map(tagName => {
+              const isTagged = tags[tagName]?.includes(video.youtubeLinkID);
+              return (
+                <button
+                  key={tagName}
+                  className={`video-card__tag-item ${isTagged ? 'video-card__tag-item--active' : ''}`}
+                  onClick={(e) => { e.stopPropagation(); onToggleTag(tagName, video.youtubeLinkID); }}
+                >
+                  <span className="video-card__tag-check">{isTagged ? '✓' : ''}</span>
+                  <span className="video-card__tag-name">{tagName}</span>
+                  <span className="video-card__tag-badge">{tags[tagName]?.length || 0}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Info */}
       <div className="video-card__info">

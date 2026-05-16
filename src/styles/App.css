@@ -1879,9 +1879,10 @@ body::-webkit-scrollbar {
 
 /* ── Video Card ────────────────────────────────────────────── */
 .video-card {
+  position: relative;
   background: var(--bg-card);
   border-radius: var(--radius-md);
-  overflow: hidden;
+  overflow: visible;
   cursor: pointer;
   transition: transform var(--transition-smooth), box-shadow var(--transition-smooth),
     background var(--transition-fast);
@@ -2101,7 +2102,7 @@ body::-webkit-scrollbar {
     0 16px 40px rgba(0, 0, 0, 0.55),
     0 0 0 1px rgba(0, 0, 0, 0.15);
   animation: tagPopoverIn 0.2s cubic-bezier(0.2, 0, 0.13, 1.5);
-  overflow: hidden;
+  overflow: visible;
 }
 
 @keyframes tagPopoverIn {
