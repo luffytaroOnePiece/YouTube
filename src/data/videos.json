@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-16T05:10:04.461Z",
+  "lastUpdated": "2026-05-16T05:14:36.255Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -8341,6 +8341,45 @@
               "date": "2026-04-22T22:29:50-07:00",
               "resolution": "4K",
               "viewCount": 14163942
+            },
+            {
+              "youtubeLinkID": "CGhGAVH2GqY",
+              "title": "Diljit Dosanjh I Sanya Malhotra I Charmer | Raj Ranjodh | Avvy Sra ( Official Video )",
+              "thumbnail": "https://img.youtube.com/vi/CGhGAVH2GqY/maxresdefault.jpg",
+              "duration": "2:50",
+              "durationSec": 170,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2025-10-19T21:00:06-07:00",
+              "resolution": "4K",
+              "viewCount": 61172417
+            },
+            {
+              "youtubeLinkID": "WVq1siHnPxI",
+              "title": "Kufar I Official Video | Diljit Dosanjh I Manushi Chhillar | Aura I Raj Ranjodh I MixSingh",
+              "thumbnail": "https://img.youtube.com/vi/WVq1siHnPxI/maxresdefault.jpg",
+              "duration": "2:39",
+              "durationSec": 159,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2025-10-14T20:30:14-07:00",
+              "resolution": "4K",
+              "viewCount": 78606078
+            },
+            {
+              "youtubeLinkID": "hNgI9E_-v24",
+              "title": "Diljit Dosanjh: Tension (Official Music Video) Advisory",
+              "thumbnail": "https://img.youtube.com/vi/hNgI9E_-v24/maxresdefault.jpg",
+              "duration": "3:19",
+              "durationSec": 199,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2025-02-05T23:30:07-08:00",
+              "resolution": "4K",
+              "viewCount": 79009178
             }
           ],
           "Devotional": [
