@@ -231,19 +231,17 @@ export default function VideoCard({ video, onClick, index, isLocal, isFav, onTog
         )}
 
         {/* Rating Button */}
-        {(isLocal || rating > 0) && (
+        {isLocal && (
           <button
             className={`video-card__rating-btn ${rating > 0 ? 'video-card__rating-btn--active' : ''}`}
             onClick={(e) => { 
               e.stopPropagation(); 
-              if (isLocal) {
-                setShowRatingPopover(prev => !prev);
-                setShowTagPopover(false);
-              }
+              setShowRatingPopover(prev => !prev);
+              setShowTagPopover(false);
             }}
-            title={isLocal ? "Set Rating" : `Rating: ${rating}/10`}
+            title="Set Rating"
           >
-            <span style={{color: rating >= 8 ? '#ffd700' : (rating > 0 ? '#fff' : 'rgba(255,255,255,0.6)')}}>★</span>
+            <span style={{color: rating >= 8 ? '#1ed760' : (rating > 0 ? '#fff' : 'rgba(255,255,255,0.6)')}}>★</span>
             {rating > 0 && <span className="video-card__rating-val">{rating}</span>}
           </button>
         )}
@@ -332,6 +330,9 @@ export default function VideoCard({ video, onClick, index, isLocal, isFav, onTog
             <span className="video-card__date" title={formatAbsoluteDate(video.date)}>
               {formatDate(video.date)}
             </span>
+          )}
+          {rating > 0 && (
+            <span className="video-card__resolution video-card__rating-badge">★ {rating}/10</span>
           )}
           {video.resolution && (
             <span className="video-card__resolution">{video.resolution}</span>
