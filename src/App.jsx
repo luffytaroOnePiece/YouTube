@@ -9,6 +9,7 @@ import { useUrlFilters } from './hooks/useUrlFilters';
 import videosData from './data/videos.json';
 import favData from './data/fav.json';
 import tagsData from './data/tags.json';
+import ratingsData from './data/ratings.json';
 import './styles/App.css';
 
 const INITIAL_FILTERS = {
@@ -40,6 +41,10 @@ function App() {
   // Tags state
   const [tags, setTags] = useState(tagsData && typeof tagsData === 'object' && !Array.isArray(tagsData) ? tagsData : {});
   const [activeTag, setActiveTag] = useState(null);
+
+  // Ratings state
+  const [ratings, setRatings] = useState(ratingsData && typeof ratingsData === 'object' && !Array.isArray(ratingsData) ? ratingsData : {});
+
 
   const handleToggleFav = useCallback((video) => {
     if (!isLocal) return;
@@ -87,6 +92,30 @@ function App() {
     })
       .then(res => res.json())
       .then(data => { if (data && typeof data === 'object' && !data.error) setTags(data); })
+      .catch(console.error);
+  }, [isLocal]);
+
+  // Rating handler
+  const handleSetRating = useCallback((videoId, rating) => {
+    if (!isLocal) return;
+
+    setRatings(prev => {
+      const updated = { ...prev };
+      if (rating === null || rating === 0) {
+        delete updated[videoId];
+      } else {
+        updated[videoId] = rating;
+      }
+      return updated;
+    });
+
+    fetch('http://localhost:3001/api/ratings', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ videoId, rating }),
+    })
+      .then(res => res.json())
+      .then(data => { if (data && typeof data === 'object' && !data.error) setRatings(data); })
       .catch(console.error);
   }, [isLocal]);
 
@@ -297,6 +326,10 @@ function App() {
         [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
       }
       videos = shuffled;
+    } else if (activeSort === 'Highest Rated') {
+      videos.sort((a, b) => (ratings[b.youtubeLinkID] || 0) - (ratings[a.youtubeLinkID] || 0));
+    } else if (activeSort === 'Lowest Rated') {
+      videos.sort((a, b) => (ratings[a.youtubeLinkID] || 0) - (ratings[b.youtubeLinkID] || 0));
     } else if (activeSort === 'Newest First') {
       videos.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
     } else if (activeSort === 'Oldest First') {
@@ -304,7 +337,7 @@ function App() {
     }
 
     return videos;
-  }, [activeGroup, activeCategory, activePlaylist, activeResolution, activeSort, searchQuery, allVideos, shuffleActive, shuffleSeed, isFavoritesMode, favorites, activeTag, tags]);
+  }, [activeGroup, activeCategory, activePlaylist, activeResolution, activeSort, searchQuery, allVideos, shuffleActive, shuffleSeed, isFavoritesMode, favorites, activeTag, tags, ratings]);
 
   // Is home view (no filters active, no search)
   const isHomeView = activeGroup === 'All' && !searchQuery.trim() && !isFavoritesMode && !activeTag;
@@ -660,6 +693,8 @@ function App() {
             onToggleFav={handleToggleFav}
             tags={tags}
             onToggleTag={handleToggleTag}
+            ratings={ratings}
+            onSetRating={handleSetRating}
           />
         </section>
       )}
@@ -675,6 +710,8 @@ function App() {
           onToggleFav={handleToggleFav}
           tags={tags}
           onToggleTag={handleToggleTag}
+          ratings={ratings}
+          onSetRating={handleSetRating}
         />
       )}
 

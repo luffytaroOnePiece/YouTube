@@ -177,6 +177,31 @@ app.post('/api/tags/delete', (req, res) => {
   }
 });
 
+// POST /api/ratings — set rating for a video
+app.post('/api/ratings', (req, res) => {
+  try {
+    const { videoId, rating } = req.body;
+    if (!videoId) return res.status(400).json({ error: 'videoId required' });
+
+    const ratingsFile = path.join(__dirname, '../src/data/ratings.json');
+    let data = {};
+    if (fs.existsSync(ratingsFile)) {
+      data = JSON.parse(fs.readFileSync(ratingsFile, 'utf-8'));
+    }
+
+    if (rating === null || rating === undefined || rating === 0) {
+      delete data[videoId];
+    } else {
+      data[videoId] = rating;
+    }
+
+    fs.writeFileSync(ratingsFile, JSON.stringify(data, null, 2), 'utf-8');
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`\n🚀 YouTube Library API running at http://localhost:${PORT}`);
@@ -187,5 +212,6 @@ app.listen(PORT, () => {
   console.log(`   GET  /api/jobs/:id   — Check job status`);
   console.log(`   GET/POST /api/fav    — Manage favorites`);
   console.log(`   POST /api/tags       — Create/toggle tags`);
-  console.log(`   POST /api/tags/delete — Delete a tag\n`);
+  console.log(`   POST /api/tags/delete — Delete a tag`);
+  console.log(`   POST /api/ratings    — Set rating for a video\n`);
 });

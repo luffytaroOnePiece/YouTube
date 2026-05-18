@@ -65,7 +65,9 @@ export default function FilterBar({
   // Build sort options
   const sortOptions = [
     { value: 'Newest First', label: 'Newest' },
-    { value: 'Oldest First', label: 'Oldest' }
+    { value: 'Oldest First', label: 'Oldest' },
+    { value: 'Highest Rated', label: 'Highest Rated' },
+    { value: 'Lowest Rated', label: 'Lowest Rated' }
   ];
 
 

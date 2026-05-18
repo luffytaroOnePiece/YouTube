@@ -47,7 +47,7 @@ function formatAbsoluteDate(dateStr) {
   }
 }
 
-export default function VideoCard({ video, onClick, index, isLocal, isFav, onToggleFav, tags, onToggleTag }) {
+export default function VideoCard({ video, onClick, index, isLocal, isFav, onToggleFav, tags, onToggleTag, rating, onSetRating }) {
   const [imgError, setImgError] = useState(false);
   const [imgLoaded, setImgLoaded] = useState(false);
 
@@ -59,6 +59,10 @@ export default function VideoCard({ video, onClick, index, isLocal, isFav, onTog
   const [showTagPopover, setShowTagPopover] = useState(false);
   const [newTagInput, setNewTagInput] = useState('');
   const tagPopoverRef = useRef(null);
+
+  // Rating popover state
+  const [showRatingPopover, setShowRatingPopover] = useState(false);
+  const ratingPopoverRef = useRef(null);
 
   const animationDelay = `${Math.min(index * 0.03, 0.5)}s`;
 
@@ -84,18 +88,20 @@ export default function VideoCard({ video, onClick, index, isLocal, isFav, onTog
     };
   }, []);
 
-  // Close tag popover on outside click
+  // Close popovers on outside click
   useEffect(() => {
-    if (!showTagPopover) return;
     const handleClickOutside = (e) => {
-      if (tagPopoverRef.current && !tagPopoverRef.current.contains(e.target)) {
+      if (showTagPopover && tagPopoverRef.current && !tagPopoverRef.current.contains(e.target)) {
         setShowTagPopover(false);
         setNewTagInput('');
+      }
+      if (showRatingPopover && ratingPopoverRef.current && !ratingPopoverRef.current.contains(e.target)) {
+        setShowRatingPopover(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [showTagPopover]);
+  }, [showTagPopover, showRatingPopover]);
 
   // Get tags for this video
   const videoTags = tags ? Object.entries(tags).filter(([, ids]) => ids.includes(video.youtubeLinkID)).map(([name]) => name) : [];
@@ -224,6 +230,24 @@ export default function VideoCard({ video, onClick, index, isLocal, isFav, onTog
           </button>
         )}
 
+        {/* Rating Button */}
+        {(isLocal || rating > 0) && (
+          <button
+            className={`video-card__rating-btn ${rating > 0 ? 'video-card__rating-btn--active' : ''}`}
+            onClick={(e) => { 
+              e.stopPropagation(); 
+              if (isLocal) {
+                setShowRatingPopover(prev => !prev);
+                setShowTagPopover(false);
+              }
+            }}
+            title={isLocal ? "Set Rating" : `Rating: ${rating}/10`}
+          >
+            <span style={{color: rating >= 8 ? '#ffd700' : (rating > 0 ? '#fff' : 'rgba(255,255,255,0.6)')}}>★</span>
+            {rating > 0 && <span className="video-card__rating-val">{rating}</span>}
+          </button>
+        )}
+
       </div>
 
       {/* Tag Popover – rendered at card level to escape thumbnail overflow:hidden */}
@@ -266,6 +290,36 @@ export default function VideoCard({ video, onClick, index, isLocal, isFav, onTog
               );
             })}
           </div>
+        </div>
+      )}
+
+      {/* Rating Popover */}
+      {showRatingPopover && isLocal && (
+        <div className="video-card__rating-popover" ref={ratingPopoverRef} onClick={(e) => e.stopPropagation()}>
+          <div className="video-card__tag-popover-header">
+            <span>Rating (out of 10)</span>
+            <button className="video-card__tag-popover-close" onClick={() => setShowRatingPopover(false)}>✕</button>
+          </div>
+          <div className="video-card__rating-grid">
+             {[...Array(10)].map((_, i) => {
+                const score = i + 1;
+                return (
+                  <button 
+                    key={score} 
+                    className={`video-card__rating-num ${rating === score ? 'video-card__rating-num--active' : ''}`}
+                    onClick={(e) => { e.stopPropagation(); onSetRating(video.youtubeLinkID, score); setShowRatingPopover(false); }}
+                  >
+                    {score}
+                  </button>
+                )
+             })}
+          </div>
+          <button 
+             className="video-card__rating-clear"
+             onClick={(e) => { e.stopPropagation(); onSetRating(video.youtubeLinkID, 0); setShowRatingPopover(false); }}
+          >
+             Clear Rating
+          </button>
         </div>
       )}
 
