@@ -12,6 +12,7 @@ const AdvancedSearchPanel = ({
   tags,
   activeTag,
   onTagChange,
+  availableRatings,
 }) => {
   const panelRef = useRef(null);
   const [tagSearch, setTagSearch] = useState('');
@@ -180,6 +181,23 @@ const AdvancedSearchPanel = ({
                     onClick={() => toggleFilter('type', type)}
                   >
                     {type}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {availableRatings && availableRatings.length > 0 && (
+            <div className="adv-search-panel__group">
+              <div className="adv-search-panel__group-title">Rating (rating:)</div>
+              <div className="adv-search-panel__chips">
+                {availableRatings.map(rating => (
+                  <button
+                    key={rating}
+                    className={`adv-search-panel__chip ${isActive('rating', rating) ? 'adv-search-panel__chip--active' : ''}`}
+                    onClick={() => toggleFilter('rating', rating)}
+                  >
+                    ★ {rating}
                   </button>
                 ))}
               </div>

@@ -197,6 +197,15 @@ function App() {
     return order.filter((r) => resSet.has(r));
   }, [allVideos]);
 
+  // Available ratings
+  const availableRatings = useMemo(() => {
+    const rSet = new Set();
+    Object.values(ratings).forEach((r) => {
+      if (r > 0) rSet.add(r);
+    });
+    return Array.from(rSet).sort((a, b) => b - a);
+  }, [ratings]);
+
   // Active categories and playlists
   const activeCategories = useMemo(() => {
     if (activeGroup === 'All') return [];
@@ -294,6 +303,13 @@ function App() {
         q = q.replace(typeMatch[0], '').trim();
       }
 
+      const ratingMatch = q.match(/rating:(\d+)/);
+      let ratingFilter = null;
+      if (ratingMatch) {
+        ratingFilter = parseInt(ratingMatch[1], 10);
+        q = q.replace(ratingMatch[0], '').trim();
+      }
+
       videos = videos.filter((v) => {
         // Apply parsed inline filters
         if (resFilter && (!v.resolution || v.resolution.toLowerCase() !== resFilter)) return false;
@@ -303,6 +319,10 @@ function App() {
           if (year < afterFilter) return false;
         }
         if (typeFilter && (!v.type || !v.type.toLowerCase().includes(typeFilter))) return false;
+        if (ratingFilter) {
+          const r = ratings[v.youtubeLinkID] || 0;
+          if (r !== ratingFilter) return false;
+        }
 
         // Default query: title + type combined
         if (q) {
@@ -770,6 +790,7 @@ function App() {
         tags={tags}
         activeTag={activeTag}
         onTagChange={setActiveTag}
+        availableRatings={availableRatings}
       />
     </div>
   );
