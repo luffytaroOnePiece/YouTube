@@ -390,14 +390,13 @@ function App() {
   // Build queue from the current filtered video pool
   const buildQueue = useCallback((video, videos) => {
     if (!video || !videos) return [];
-    const pool = videos.filter(v => v.youtubeLinkID !== video.youtubeLinkID);
-    const currentMs = video.date ? new Date(video.date).getTime() : 0;
-    pool.sort((a, b) => {
-      const aMs = a.date ? new Date(a.date).getTime() : 0;
-      const bMs = b.date ? new Date(b.date).getTime() : 0;
-      return Math.abs(aMs - currentMs) - Math.abs(bMs - currentMs);
-    });
-    return pool;
+    const idx = videos.findIndex(v => v.youtubeLinkID === video.youtubeLinkID);
+    // Preserve the current sort order: show items after the selected video first,
+    // then wrap around to items before it.
+    if (idx >= 0) {
+      return [...videos.slice(idx + 1), ...videos.slice(0, idx)];
+    }
+    return videos.filter(v => v.youtubeLinkID !== video.youtubeLinkID);
   }, []);
 
   const handleVideoSelect = useCallback((video) => {
