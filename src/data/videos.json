@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-22T15:09:47.494Z",
+  "lastUpdated": "2026-05-22T15:24:25.749Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -10553,19 +10553,6 @@
               "viewCount": 224773
             },
             {
-              "youtubeLinkID": "EIkObrhO_YY",
-              "title": "Toyota Land Cruiser | Forza Horizon 6",
-              "thumbnail": "https://img.youtube.com/vi/EIkObrhO_YY/maxresdefault.jpg",
-              "duration": "0:33",
-              "durationSec": 33,
-              "group": "Games",
-              "category": "PS5",
-              "type": "Game Trailers",
-              "date": "2026-03-06T12:11:16-08:00",
-              "resolution": "4K",
-              "viewCount": 278168
-            },
-            {
               "youtubeLinkID": "JgK8bneoBFQ",
               "title": "Forza Horizon 6 - Discover Japan | Biomes Showcase",
               "thumbnail": "https://img.youtube.com/vi/JgK8bneoBFQ/maxresdefault.jpg",
@@ -10748,6 +10735,60 @@
               "date": "2024-05-06T09:00:18-07:00",
               "resolution": "4K",
               "viewCount": 2092
+            }
+          ],
+          "FH6 Cars": [
+            {
+              "youtubeLinkID": "zzsmUPDrkbk",
+              "title": "Mazda Furai | Forza Horizon 6",
+              "thumbnail": "https://img.youtube.com/vi/zzsmUPDrkbk/maxresdefault.jpg",
+              "duration": "0:32",
+              "durationSec": 32,
+              "group": "Games",
+              "category": "PS5",
+              "type": "FH6 Cars",
+              "date": "2026-05-21T14:00:43-07:00",
+              "resolution": "4K",
+              "viewCount": 46518
+            },
+            {
+              "youtubeLinkID": "oiKex4yinJk",
+              "title": "Nissan GT-R NISMO | Forza Horizon 6",
+              "thumbnail": "https://img.youtube.com/vi/oiKex4yinJk/maxresdefault.jpg",
+              "duration": "0:32",
+              "durationSec": 32,
+              "group": "Games",
+              "category": "PS5",
+              "type": "FH6 Cars",
+              "date": "2026-05-12T03:40:24-07:00",
+              "resolution": "1080p",
+              "viewCount": 159604
+            },
+            {
+              "youtubeLinkID": "_vHhew82aZo",
+              "title": "Ferrari J50 | Forza Horizon 6",
+              "thumbnail": "https://img.youtube.com/vi/_vHhew82aZo/maxresdefault.jpg",
+              "duration": "0:33",
+              "durationSec": 33,
+              "group": "Games",
+              "category": "PS5",
+              "type": "FH6 Cars",
+              "date": "2026-05-12T03:01:01-07:00",
+              "resolution": "1080p",
+              "viewCount": 117347
+            },
+            {
+              "youtubeLinkID": "EIkObrhO_YY",
+              "title": "Toyota Land Cruiser | Forza Horizon 6",
+              "thumbnail": "https://img.youtube.com/vi/EIkObrhO_YY/maxresdefault.jpg",
+              "duration": "0:33",
+              "durationSec": 33,
+              "group": "Games",
+              "category": "PS5",
+              "type": "FH6 Cars",
+              "date": "2026-03-06T12:11:16-08:00",
+              "resolution": "4K",
+              "viewCount": 278168
             }
           ]
         }
