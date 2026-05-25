@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25T16:03:10.517Z",
+  "lastUpdated": "2026-05-25T17:34:05.020Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -10993,6 +10993,62 @@
               "date": "2026-05-13T05:47:40-07:00",
               "resolution": "1080p",
               "viewCount": 2
+            }
+          ]
+        },
+        "Lofi": {
+          "Chill": [
+            {
+              "youtubeLinkID": "zzu5bPR2aWE",
+              "title": "Shibuya After Dark – Lofi Rain & Cozy Neon Balcony Nights | 4K",
+              "thumbnail": "https://img.youtube.com/vi/zzu5bPR2aWE/maxresdefault.jpg",
+              "duration": "3:00:01",
+              "durationSec": 10801,
+              "group": "Anime",
+              "category": "Lofi",
+              "type": "Chill",
+              "date": "2026-02-03T16:01:10-08:00",
+              "resolution": "1080p",
+              "viewCount": 816223
+            },
+            {
+              "youtubeLinkID": "SuzmYTFGBuQ",
+              "title": "Lofi Zen - Kyoto Sake Bar Rain with Lo-fi Chillhop at Night | For Study, Sleep, or Relaxation | 4K",
+              "thumbnail": "https://img.youtube.com/vi/SuzmYTFGBuQ/maxresdefault.jpg",
+              "duration": "3:30:01",
+              "durationSec": 12601,
+              "group": "Anime",
+              "category": "Lofi",
+              "type": "Chill",
+              "date": "2025-09-21T19:46:05-07:00",
+              "resolution": "4K",
+              "viewCount": 985917
+            },
+            {
+              "youtubeLinkID": "tbXlI4WpAJw",
+              "title": "Lofi Zen - Calm Beats from a Trailer Balcony Above Neon City | For Study, Sleep, or Relaxation | 4K",
+              "thumbnail": "https://img.youtube.com/vi/tbXlI4WpAJw/maxresdefault.jpg",
+              "duration": "3:30:01",
+              "durationSec": 12601,
+              "group": "Anime",
+              "category": "Lofi",
+              "type": "Chill",
+              "date": "2025-07-27T10:55:41-07:00",
+              "resolution": "4K",
+              "viewCount": 399473
+            },
+            {
+              "youtubeLinkID": "yxCIEj4zdvM",
+              "title": "Balcony Night Rain 🌙 Chill & Cozy Lofi Beats for a Peaceful Mind ☕",
+              "thumbnail": "https://img.youtube.com/vi/yxCIEj4zdvM/maxresdefault.jpg",
+              "duration": "1:16:55",
+              "durationSec": 4615,
+              "group": "Anime",
+              "category": "Lofi",
+              "type": "Chill",
+              "date": "2025-11-07T23:56:58-08:00",
+              "resolution": "2K",
+              "viewCount": 204243
             }
           ]
         }
