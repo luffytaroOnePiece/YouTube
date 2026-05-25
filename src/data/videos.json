@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-23T14:23:00.512Z",
+  "lastUpdated": "2026-05-25T03:19:30.518Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -1049,6 +1049,32 @@
               "date": "2026-04-24T20:30:01-07:00",
               "resolution": "8K",
               "viewCount": 21114
+            },
+            {
+              "youtubeLinkID": "6zDfwVSvyEk",
+              "title": "Hellallallo Video | Peddi (TELUGU) | Ram Charan | Buchi Babu | Shruthi Haasan | Janhvi | AR Rahman",
+              "thumbnail": "https://img.youtube.com/vi/6zDfwVSvyEk/maxresdefault.jpg",
+              "duration": "3:57",
+              "durationSec": 237,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Item",
+              "date": "2026-05-23T22:37:31-07:00",
+              "resolution": "4K",
+              "viewCount": 25971868
+            },
+            {
+              "youtubeLinkID": "oor9od6nXBM",
+              "title": "Kiss Kiss Bang Bang 8K 60 FPS Video Song | They Call Him OG | Pawan Kalyan | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/oor9od6nXBM/maxresdefault.jpg",
+              "duration": "3:29",
+              "durationSec": 209,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Item",
+              "date": "2026-02-17T06:30:43-08:00",
+              "resolution": "8K",
+              "viewCount": 383262
             }
           ],
           "Groovy": [
@@ -3328,6 +3354,19 @@
               "date": "2026-03-20T04:30:44-07:00",
               "resolution": "8K",
               "viewCount": 359042
+            },
+            {
+              "youtubeLinkID": "EroMPt0nY18",
+              "title": "College Papa Video Song(Telugu)| MAD| Kalyan Shankar| S. Naga Vamsi |Kasarla Shyam |Bheems Ceciroleo",
+              "thumbnail": "https://img.youtube.com/vi/EroMPt0nY18/maxresdefault.jpg",
+              "duration": "3:44",
+              "durationSec": 224,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Energetic",
+              "date": "2023-10-03T05:30:27-07:00",
+              "resolution": "4K",
+              "viewCount": 171142644
             }
           ],
           "Classics": [
@@ -4892,6 +4931,19 @@
               "date": "2026-05-15T08:02:32-07:00",
               "resolution": "4K",
               "viewCount": 4487
+            },
+            {
+              "youtubeLinkID": "rMLGKq6IxoA",
+              "title": "Swathilo Muthyamantha 4K Video Song | Bangaru Bullodu | Balakrishna, Raveena Tandon | Raj-Koti",
+              "thumbnail": "https://img.youtube.com/vi/rMLGKq6IxoA/maxresdefault.jpg",
+              "duration": "5:01",
+              "durationSec": 301,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2025-09-19T05:01:11-07:00",
+              "resolution": "4K",
+              "viewCount": 23963783
             }
           ]
         },
