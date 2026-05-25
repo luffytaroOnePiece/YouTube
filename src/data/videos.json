@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25T11:09:00.887Z",
+  "lastUpdated": "2026-05-25T16:03:10.517Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -1062,6 +1062,32 @@
               "date": "2026-02-17T06:30:43-08:00",
               "resolution": "8K",
               "viewCount": 383262
+            },
+            {
+              "youtubeLinkID": "vr9vSj9AkgI",
+              "title": "Jaru Mitaya - Video Song | Ginna | Vishnu Manchu | Sunny Leone | Anup Rubens | Suryaah",
+              "thumbnail": "https://img.youtube.com/vi/vr9vSj9AkgI/maxresdefault.jpg",
+              "duration": "4:17",
+              "durationSec": 257,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Item",
+              "date": "2022-12-09T02:30:10-08:00",
+              "resolution": "4K",
+              "viewCount": 10570860
+            },
+            {
+              "youtubeLinkID": "iwA3M7MQHHs",
+              "title": "KATTALAN - MAJAKO MALLIKA | CUBES ENTERTAINMENTS | \rPEPE |SHAREEF MUHAMMED | SUNIL |DUSHARA VIJAYAN ",
+              "thumbnail": "https://img.youtube.com/vi/iwA3M7MQHHs/maxresdefault.jpg",
+              "duration": "3:22",
+              "durationSec": 202,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Item",
+              "date": "2026-04-25T05:31:03-07:00",
+              "resolution": "4K",
+              "viewCount": 254925
             }
           ],
           "Groovy": [
@@ -8297,6 +8323,32 @@
               "date": "2026-01-05T03:32:55-08:00",
               "resolution": "4K",
               "viewCount": 9633311
+            },
+            {
+              "youtubeLinkID": "WlJKlHYcLQY",
+              "title": "Vadhalane Song Promo | Chennai Love Story | Kiran Abbavaraam, Sri Gouri Priya | Mani Sharma",
+              "thumbnail": "https://img.youtube.com/vi/WlJKlHYcLQY/maxresdefault.jpg",
+              "duration": "0:32",
+              "durationSec": 32,
+              "group": "Music",
+              "category": "Others",
+              "type": "Promo Songs",
+              "date": "2026-05-24T22:31:59-07:00",
+              "resolution": "4K",
+              "viewCount": 76755
+            },
+            {
+              "youtubeLinkID": "jOOiKHf0p6o",
+              "title": "Guruthunda Music Video | Chennai Love Story | Kiran Abbavaraam, Sri Gouri Priya | Mani Sharma",
+              "thumbnail": "https://img.youtube.com/vi/jOOiKHf0p6o/maxresdefault.jpg",
+              "duration": "5:29",
+              "durationSec": 329,
+              "group": "Music",
+              "category": "Others",
+              "type": "Promo Songs",
+              "date": "2026-03-30T09:12:28-07:00",
+              "resolution": "4K",
+              "viewCount": 10575030
             }
           ],
           "Straight From The Studio": [
@@ -10891,28 +10943,15 @@
         "One Piece": {
           "Elbaf": [
             {
-              "youtubeLinkID": "XOCzteMMhz0",
-              "title": "1161 - Nico Robin New Hair Cut Look",
-              "thumbnail": "https://img.youtube.com/vi/XOCzteMMhz0/maxresdefault.jpg",
-              "duration": "2:36",
-              "durationSec": 156,
+              "youtubeLinkID": "-7Flyh8T78k",
+              "title": "1159 - Nami’s Attack & Mischievous Laugh",
+              "thumbnail": "https://img.youtube.com/vi/-7Flyh8T78k/maxresdefault.jpg",
+              "duration": "1:46",
+              "durationSec": 106,
               "group": "Anime",
               "category": "One Piece",
               "type": "Elbaf",
-              "date": "2026-05-13T05:47:40-07:00",
-              "resolution": "1080p",
-              "viewCount": 2
-            },
-            {
-              "youtubeLinkID": "K_9LyCaUdRY",
-              "title": "1161 - Luffy Attacks Loki For Insulting Shanks",
-              "thumbnail": "https://img.youtube.com/vi/K_9LyCaUdRY/maxresdefault.jpg",
-              "duration": "2:01",
-              "durationSec": 121,
-              "group": "Anime",
-              "category": "One Piece",
-              "type": "Elbaf",
-              "date": "2026-05-13T06:02:01-07:00",
+              "date": "2026-05-13T08:58:45-07:00",
               "resolution": "1080p",
               "viewCount": 0
             },
@@ -10930,17 +10969,30 @@
               "viewCount": 0
             },
             {
-              "youtubeLinkID": "-7Flyh8T78k",
-              "title": "1159 - Nami’s Attack & Mischievous Laugh",
-              "thumbnail": "https://img.youtube.com/vi/-7Flyh8T78k/maxresdefault.jpg",
-              "duration": "1:46",
-              "durationSec": 106,
+              "youtubeLinkID": "K_9LyCaUdRY",
+              "title": "1161 - Luffy Attacks Loki For Insulting Shanks",
+              "thumbnail": "https://img.youtube.com/vi/K_9LyCaUdRY/maxresdefault.jpg",
+              "duration": "2:01",
+              "durationSec": 121,
               "group": "Anime",
               "category": "One Piece",
               "type": "Elbaf",
-              "date": "2026-05-13T08:58:45-07:00",
+              "date": "2026-05-13T06:02:01-07:00",
               "resolution": "1080p",
               "viewCount": 0
+            },
+            {
+              "youtubeLinkID": "XOCzteMMhz0",
+              "title": "1161 - Nico Robin New Hair Cut Look",
+              "thumbnail": "https://img.youtube.com/vi/XOCzteMMhz0/maxresdefault.jpg",
+              "duration": "2:36",
+              "durationSec": 156,
+              "group": "Anime",
+              "category": "One Piece",
+              "type": "Elbaf",
+              "date": "2026-05-13T05:47:40-07:00",
+              "resolution": "1080p",
+              "viewCount": 2
             }
           ]
         }
