@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25T17:34:05.020Z",
+  "lastUpdated": "2026-05-27T14:27:38.410Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -1088,6 +1088,19 @@
               "date": "2026-04-25T05:31:03-07:00",
               "resolution": "4K",
               "viewCount": 254925
+            },
+            {
+              "youtubeLinkID": "Ejsj1519gos",
+              "title": "Konte Konte Video Song | Mad Square | Narne Nithin, Sangeeth Shobhan, Ram Nithin | Priyanka Jawalkar",
+              "thumbnail": "https://img.youtube.com/vi/Ejsj1519gos/maxresdefault.jpg",
+              "duration": "3:27",
+              "durationSec": 207,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Item",
+              "date": "2025-05-13T06:32:00-07:00",
+              "resolution": "4K",
+              "viewCount": 5420490
             }
           ],
           "Groovy": [
@@ -2611,6 +2624,19 @@
               "date": "2026-04-01T06:30:00-07:00",
               "resolution": "8K",
               "viewCount": 255229
+            },
+            {
+              "youtubeLinkID": "agAyQuQRL7g",
+              "title": "Desi Girl 8K Video Song | Srirastu Subhamastu | Allu Sirish, Lavanya Tripathi | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/agAyQuQRL7g/maxresdefault.jpg",
+              "duration": "4:33",
+              "durationSec": 273,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-05-26T23:47:00-07:00",
+              "resolution": "8K",
+              "viewCount": 296
             }
           ],
           "Energetic": [
@@ -7115,6 +7141,19 @@
               "date": "2023-10-30T11:07:32-07:00",
               "resolution": "8K",
               "viewCount": 202979
+            },
+            {
+              "youtubeLinkID": "YxWlaYCA8MU",
+              "title": "Jhoome Jo Pathaan Song | Shah Rukh Khan, Deepika | Vishal & Sheykhar, Arijit Singh, Sukriti, Kumaar",
+              "thumbnail": "https://img.youtube.com/vi/YxWlaYCA8MU/maxresdefault.jpg",
+              "duration": "3:23",
+              "durationSec": 203,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Energetic",
+              "date": "2022-12-21T21:30:09-08:00",
+              "resolution": "4K",
+              "viewCount": 1253914679
             }
           ],
           "Mass": [
@@ -11049,6 +11088,19 @@
               "date": "2025-11-07T23:56:58-08:00",
               "resolution": "2K",
               "viewCount": 204243
+            },
+            {
+              "youtubeLinkID": "63edyl4u_e8",
+              "title": "Midnight Lofi 🌧️ Rain Sounds for Deep Relaxation",
+              "thumbnail": "https://img.youtube.com/vi/63edyl4u_e8/maxresdefault.jpg",
+              "duration": "3:09:11",
+              "durationSec": 11351,
+              "group": "Anime",
+              "category": "Lofi",
+              "type": "Chill",
+              "date": "2026-04-22T17:45:26-07:00",
+              "resolution": "1080p",
+              "viewCount": 28977
             }
           ]
         }
