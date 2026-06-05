@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-02T15:54:34.770Z",
+  "lastUpdated": "2026-06-05T02:04:55.892Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -5048,6 +5048,19 @@
               "date": "2026-06-02T07:01:34-07:00",
               "resolution": "4K",
               "viewCount": 716
+            },
+            {
+              "youtubeLinkID": "thp_DQC5VJQ",
+              "title": "Nuvvu Ready Nenu Ready Song 4K | King Movie Songs | Nagarjuna, Trisha, Anushka | TeluguOne Music",
+              "thumbnail": "https://img.youtube.com/vi/thp_DQC5VJQ/maxresdefault.jpg",
+              "duration": "6:02",
+              "durationSec": 362,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2026-06-04T05:45:06-07:00",
+              "resolution": "4K",
+              "viewCount": 6378
             }
           ]
         },
@@ -5628,6 +5641,19 @@
               "date": "2025-08-12T07:30:28-07:00",
               "resolution": "8K",
               "viewCount": 3848888
+            },
+            {
+              "youtubeLinkID": "Aze7zTyIRtk",
+              "title": "Aura 10/10 - Music Video | Meesaya Murukku 2 | Hiphop Tamizha | Ketika Sharma",
+              "thumbnail": "https://img.youtube.com/vi/Aze7zTyIRtk/maxresdefault.jpg",
+              "duration": "2:21",
+              "durationSec": 141,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Groovy",
+              "date": "2026-03-04T04:28:07-08:00",
+              "resolution": "4K",
+              "viewCount": 114271805
             }
           ],
           "Item": [
@@ -5931,6 +5957,19 @@
               "date": "2014-09-29T06:49:40-07:00",
               "resolution": "1080p",
               "viewCount": 8291210
+            },
+            {
+              "youtubeLinkID": "bnFGanEGbJU",
+              "title": "3 - Kannazhaga 8K/4K Video Song | Dhanush, Shruti Haasan | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/bnFGanEGbJU/maxresdefault.jpg",
+              "duration": "3:14",
+              "durationSec": 194,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2026-06-04T07:30:13-07:00",
+              "resolution": "8K",
+              "viewCount": 11285
             }
           ],
           "Sad": [
@@ -6316,6 +6355,19 @@
               "date": "2026-02-11T18:30:13-08:00",
               "resolution": "8K",
               "viewCount": 1609926
+            },
+            {
+              "youtubeLinkID": "Wdf3mDJSbvc",
+              "title": "MANIKE 8K Video | Nora Fatehi | Sidharth Malhotra | Thank God | Tanishk,Yohani,Jubin,Surya R",
+              "thumbnail": "https://img.youtube.com/vi/Wdf3mDJSbvc/maxresdefault.jpg",
+              "duration": "3:45",
+              "durationSec": 225,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Romance",
+              "date": "2026-06-02T22:30:07-07:00",
+              "resolution": "8K",
+              "viewCount": 78752
             }
           ],
           "Item": [
@@ -8453,6 +8505,34 @@
               "date": "2023-10-26T12:37:38-07:00",
               "resolution": "1080p",
               "viewCount": 25879820
+            }
+          ],
+          "Telugu": [
+            {
+              "youtubeLinkID": "VIfuQsnJatE",
+              "title": "AR Rahman Live Performance of Rai Rai Raa Raa Song | Peddi Grand Pre-Release Event | Shreyas Media",
+              "thumbnail": "https://img.youtube.com/vi/VIfuQsnJatE/maxresdefault.jpg",
+              "duration": "5:01",
+              "durationSec": 301,
+              "group": "Music",
+              "category": "Live",
+              "type": "Telugu",
+              "date": "2026-06-01T08:35:37-07:00",
+              "resolution": "1080p",
+              "viewCount": 44597
+            },
+            {
+              "youtubeLinkID": "CULNjcWDUDU",
+              "title": "Hello Hello Song Live Performance at Peddi Grand Roar Pre-Release Event | Shreyas Media",
+              "thumbnail": "https://img.youtube.com/vi/CULNjcWDUDU/maxresdefault.jpg",
+              "duration": "4:10",
+              "durationSec": 250,
+              "group": "Music",
+              "category": "Live",
+              "type": "Telugu",
+              "date": "2026-06-01T08:44:44-07:00",
+              "resolution": "1080p",
+              "viewCount": 123004
             }
           ]
         },
