@@ -1,11 +1,24 @@
 {
-  "lastUpdated": "2026-06-05T02:04:55.892Z",
+  "lastUpdated": "2026-06-07T03:52:24.392Z",
   "groups": {
     "Music": {
       "icon": "",
       "categories": {
         "Telugu": {
           "Romance": [
+            {
+              "youtubeLinkID": "CsOBNhWa5Q8",
+              "title": "Sammohanuda 8K Video | Rules Ranjann | Kiran Abbavaram,Neha Sshetty | Rathinam Krishna | Shreya G",
+              "thumbnail": "https://img.youtube.com/vi/CsOBNhWa5Q8/maxresdefault.jpg",
+              "duration": "3:12",
+              "durationSec": 192,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2026-06-06T03:30:19-07:00",
+              "resolution": "8K",
+              "viewCount": 11789
+            },
             {
               "youtubeLinkID": "__YIIytAnI8",
               "title": "Nuvvunte Chaley 8K Video | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
@@ -252,19 +265,6 @@
               "date": "2023-12-19T04:29:12-08:00",
               "resolution": "4K",
               "viewCount": 72057866
-            },
-            {
-              "youtubeLinkID": "8b2BRoqYbaw",
-              "title": "Full Video: Sammohanuda | Rules Ranjann | Kiran Abbavaram,Neha Sshetty | Rathinam Krishna | Shreya G",
-              "thumbnail": "https://img.youtube.com/vi/8b2BRoqYbaw/maxresdefault.jpg",
-              "duration": "3:12",
-              "durationSec": 192,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Romance",
-              "date": "2023-10-19T04:29:10-07:00",
-              "resolution": "4K",
-              "viewCount": 25776784
             },
             {
               "youtubeLinkID": "j7nme3OUqVc",
@@ -5061,6 +5061,19 @@
               "date": "2026-06-04T05:45:06-07:00",
               "resolution": "4K",
               "viewCount": 6378
+            },
+            {
+              "youtubeLinkID": "1LBpvlEQlY0",
+              "title": "Nachave Nizam Pori Song 4K | Varsham Movie Songs | Prabhas, Trisha | TeluguOne Music",
+              "thumbnail": "https://img.youtube.com/vi/1LBpvlEQlY0/maxresdefault.jpg",
+              "duration": "3:58",
+              "durationSec": 238,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2026-06-06T05:45:07-07:00",
+              "resolution": "4K",
+              "viewCount": 19429
             }
           ]
         },
@@ -5970,6 +5983,19 @@
               "date": "2026-06-04T07:30:13-07:00",
               "resolution": "8K",
               "viewCount": 11285
+            },
+            {
+              "youtubeLinkID": "Rhrahd3ea6U",
+              "title": "3 - Nee Paartha Vizhigal 8K/4K Video Song | Dhanush, Shruti Haasan | Anirudh Ravichander",
+              "thumbnail": "https://img.youtube.com/vi/Rhrahd3ea6U/maxresdefault.jpg",
+              "duration": "4:07",
+              "durationSec": 247,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Romance",
+              "date": "2026-06-03T07:30:30-07:00",
+              "resolution": "8K",
+              "viewCount": 78481
             }
           ],
           "Sad": [
@@ -6368,6 +6394,19 @@
               "date": "2026-06-02T22:30:07-07:00",
               "resolution": "8K",
               "viewCount": 78752
+            },
+            {
+              "youtubeLinkID": "2_yF-McB55o",
+              "title": "Luka Chuppi: Duniyaa - 8K Full Video Song | Kartik Aaryan Kriti Sanon | Akhil | Dhvani B",
+              "thumbnail": "https://img.youtube.com/vi/2_yF-McB55o/maxresdefault.jpg",
+              "duration": "3:38",
+              "durationSec": 218,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Romance",
+              "date": "2026-06-05T04:30:36-07:00",
+              "resolution": "8K",
+              "viewCount": 76540
             }
           ],
           "Item": [
@@ -7284,6 +7323,19 @@
               "date": "2026-03-15T03:11:46-07:00",
               "resolution": "8K",
               "viewCount": 361169
+            },
+            {
+              "youtubeLinkID": "QMz6VmPLPAU",
+              "title": "COCA COLA 8K Video Song | Kartik A, Kriti S | Luka Chuppi | Tony K, Tanishk B, Neha K, Young Desi",
+              "thumbnail": "https://img.youtube.com/vi/QMz6VmPLPAU/maxresdefault.jpg",
+              "duration": "2:19",
+              "durationSec": 139,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Energetic",
+              "date": "2026-06-04T22:30:04-07:00",
+              "resolution": "8K",
+              "viewCount": 104886
             }
           ],
           "Mass": [
