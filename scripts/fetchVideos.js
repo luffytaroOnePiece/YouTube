@@ -74,80 +74,30 @@ export async function fetchPlaylist(idOrUrl, groupName, categoryName, playlistNa
     return [];
   }
 
-  // Fetch playlist items using chunked pagination (yt-dlp caps at ~100 per request)
+  // Fetch playlist items via yt-dlp (playlists are kept to ≤100 items each)
   let playlistItems = [];
-  const seenIds = new Set();
-
-  const addItems = (items) => {
-    let added = 0;
-    for (const item of items) {
-      if (item.id && !seenIds.has(item.id)) {
-        seenIds.add(item.id);
-        playlistItems.push(item);
-        added++;
-      }
-    }
-    return added;
-  };
-
-  // Primary: yt-dlp with chunked pagination (100 items per page)
-  const CHUNK_SIZE = 100;
-  const url = `https://www.youtube.com/playlist?list=${playlistId}`;
-  let page = 0;
-
-  while (true) {
-    const start = page * CHUNK_SIZE + 1;
-    const end = start + CHUNK_SIZE - 1;
-    try {
-      const raw = execSync(
-        `yt-dlp --flat-playlist --dump-json --no-warnings --playlist-items ${start}:${end} "${url}"`,
-        { encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, timeout: 120000 }
-      );
-      const items = raw.trim().split('\n').filter(Boolean).map(line => {
-        const entry = JSON.parse(line);
-        return {
-          id: entry.id,
-          title: entry.title || 'Untitled',
-          durationSec: Math.round(entry.duration || 0),
-        };
-      });
-
-      if (items.length === 0) break;
-
-      const count = addItems(items);
-      log(`    📋 Page ${page + 1} (items ${start}-${end}): got ${items.length} videos, ${count} new`);
-
-      // If we got fewer than CHUNK_SIZE, that's the last page
-      if (items.length < CHUNK_SIZE) break;
-      page++;
-    } catch (err) {
-      // If first page fails, that's a real error. Otherwise we just ran out of items.
-      if (page === 0 && playlistItems.length === 0) {
-        log(`    ⚠️  yt-dlp failed: ${err.message?.substring(0, 80)}`);
-      }
-      break;
-    }
-  }
-
-  // Supplement: try ytpl to catch anything yt-dlp missed
   try {
-    const playlist = await ytpl(playlistId, { limit: Infinity });
-    const items = playlist.items.map(item => ({
-      id: item.id,
-      title: item.title,
-      durationSec: item.durationSec || 0,
-    }));
-    const count = addItems(items);
-    if (count > 0) log(`    ➕ ytpl recovered ${count} extra videos`);
+    const url = `https://www.youtube.com/playlist?list=${playlistId}`;
+    const raw = execSync(
+      `yt-dlp --flat-playlist --dump-json --no-warnings "${url}"`,
+      { encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, timeout: 120000 }
+    );
+    playlistItems = raw.trim().split('\n').filter(Boolean).map(line => {
+      const entry = JSON.parse(line);
+      return {
+        id: entry.id,
+        title: entry.title || 'Untitled',
+        durationSec: Math.round(entry.duration || 0),
+      };
+    });
+    log(`    📋 Found ${playlistItems.length} videos`);
   } catch (err) {
-    // ytpl is optional, don't worry if it fails
+    log(`    ⚠️  yt-dlp failed: ${err.message?.substring(0, 80)}`);
   }
 
   if (playlistItems.length === 0) {
     throw new Error('Failed to fetch any videos from playlist');
   }
-
-  log(`    📊 Total unique videos: ${playlistItems.length}`);
 
   const total = playlistItems.length;
   let cached = 0;
@@ -304,15 +254,29 @@ export async function fetchVideos(opts = {}) {
         ? [[targetPlaylist, catPlaylists[targetPlaylist]]]
         : Object.entries(catPlaylists || {});
 
-      for (const [plName, idOrUrl] of plToProcess) {
+      for (const [plName, idOrUrlRaw] of plToProcess) {
         log(`\n━━━ ${icon} ${groupName} > ${catName} > ${plName} ━━━`);
-        log(`    ID: ${idOrUrl}`);
-        if (!idOrUrl) { log(`    ⚠️  No ID, skipping.`); continue; }
+        if (!idOrUrlRaw) { log(`    ⚠️  No ID, skipping.`); continue; }
+
+        // Support both single ID (string) and multiple IDs (array)
+        const ids = Array.isArray(idOrUrlRaw) ? idOrUrlRaw : [idOrUrlRaw];
+        log(`    IDs: ${ids.join(', ')}${ids.length > 1 ? ` (${ids.length} playlists)` : ''}`);
 
         try {
-          const videos = await fetchPlaylist(idOrUrl, groupName, catName, plName, videoCache, log);
-          existingGroups[groupName].categories[catName][plName] = videos;
-          log(`    ✅ ${plName}: ${videos.length} videos saved.`);
+          const allVideos = [];
+          const seen = new Set();
+          for (let i = 0; i < ids.length; i++) {
+            if (ids.length > 1) log(`\n    📂 Playlist ${i + 1}/${ids.length}: ${ids[i]}`);
+            const videos = await fetchPlaylist(ids[i], groupName, catName, plName, videoCache, log);
+            for (const v of videos) {
+              if (!seen.has(v.youtubeLinkID)) {
+                seen.add(v.youtubeLinkID);
+                allVideos.push(v);
+              }
+            }
+          }
+          existingGroups[groupName].categories[catName][plName] = allVideos;
+          log(`    ✅ ${plName}: ${allVideos.length} videos saved.`);
         } catch (err) {
           log(`    ❌ Error: ${err.message}`);
         }

@@ -6,7 +6,10 @@
         "Romance": "PLk-aMlMwXfRwBhB-Ea-lSJS5GVR3rehH6",
         "Mass": "PLk-aMlMwXfRz_7esnhJKRH-iY_b5q56Zh",
         "Item": "PLk-aMlMwXfRxBKjidFEqfRIPXefB68qry",
-        "Groovy": "PLk-aMlMwXfRzUVl1ggAQC7TYv9rRC8-5h",
+        "Groovy": [
+          "PLk-aMlMwXfRzUVl1ggAQC7TYv9rRC8-5h",
+          "PLk-aMlMwXfRwmNkPS8Zsx9HxbqB76ui9e"
+        ],
         "Energetic": "PLk-aMlMwXfRwoV9O5KAkGFgNHOCiho1Yb",
         "Classics": "PLk-aMlMwXfRwJQFWg9aHtf3ngnV8DS8Et",
         "Vintage": "PLk-aMlMwXfRw7ILgsWwbQ7wfrFYf1dpLH"
