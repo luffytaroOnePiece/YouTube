@@ -281,7 +281,8 @@ function App() {
     if (searchQuery.trim()) {
       let q = searchQuery.toLowerCase().trim();
       let resFilter = null;
-      let afterFilter = null;
+      let yearFilter = null;
+      let monthFilter = null;
       let typeFilter = null;
 
       // Extract inline filters
@@ -291,10 +292,16 @@ function App() {
         q = q.replace(resMatch[0], '').trim();
       }
 
-      const afterMatch = q.match(/after:(\d{4})/);
-      if (afterMatch) {
-        afterFilter = parseInt(afterMatch[1], 10);
-        q = q.replace(afterMatch[0], '').trim();
+      const yearMatch = q.match(/year:(\d{4})/);
+      if (yearMatch) {
+        yearFilter = parseInt(yearMatch[1], 10);
+        q = q.replace(yearMatch[0], '').trim();
+      }
+
+      const monthMatch = q.match(/month:(\d{1,2})/);
+      if (monthMatch) {
+        monthFilter = parseInt(monthMatch[1], 10);
+        q = q.replace(monthMatch[0], '').trim();
       }
 
       const typeMatch = q.match(/type:(\S+)/);
@@ -313,10 +320,11 @@ function App() {
       videos = videos.filter((v) => {
         // Apply parsed inline filters
         if (resFilter && (!v.resolution || v.resolution.toLowerCase() !== resFilter)) return false;
-        if (afterFilter) {
+        if (yearFilter) {
           if (!v.date) return false;
-          const year = new Date(v.date).getFullYear();
-          if (year < afterFilter) return false;
+          const d = new Date(v.date);
+          if (d.getFullYear() !== yearFilter) return false;
+          if (monthFilter && (d.getMonth() + 1) !== monthFilter) return false;
         }
         if (typeFilter && (!v.type || !v.type.toLowerCase().includes(typeFilter))) return false;
         if (ratingFilter) {
@@ -539,7 +547,7 @@ function App() {
                       <div className="search-dropdown__list">
                         {filteredVideos.slice(0, 6).map((v, idx) => {
                           // Highlight matching text
-                          const query = searchQuery.toLowerCase().replace(/res:\S+|after:\d{4}|type:\S+/g, '').trim();
+                          const query = searchQuery.toLowerCase().replace(/res:\S+|year:\d{4}|month:\d{1,2}|type:\S+|rating:\d+/g, '').trim();
                           let titleParts = [v.title];
                           if (query) {
                             const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');

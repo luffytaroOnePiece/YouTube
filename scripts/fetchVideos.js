@@ -74,78 +74,80 @@ export async function fetchPlaylist(idOrUrl, groupName, categoryName, playlistNa
     return [];
   }
 
-  // Try yt-dlp first as the primary robust source
+  // Fetch playlist items using chunked pagination (yt-dlp caps at ~100 per request)
   let playlistItems = [];
-  try {
-    const url = `https://www.youtube.com/playlist?list=${playlistId}`;
-    const raw = execSync(
-      `yt-dlp --flat-playlist --dump-json --no-warnings "${url}"`,
-      { encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, timeout: 120000 }
-    );
-    playlistItems = raw.trim().split('\n').filter(Boolean).map(line => {
-      const entry = JSON.parse(line);
-      return {
-        id: entry.id,
-        title: entry.title || 'Untitled',
-        durationSec: Math.round(entry.duration || 0),
-      };
-    });
-  } catch (dlpErr) {
-    log(`    ⚠️  yt-dlp failed (${dlpErr.message}), falling back to ytpl...`);
+  const seenIds = new Set();
+
+  const addItems = (items) => {
+    let added = 0;
+    for (const item of items) {
+      if (item.id && !seenIds.has(item.id)) {
+        seenIds.add(item.id);
+        playlistItems.push(item);
+        added++;
+      }
+    }
+    return added;
+  };
+
+  // Primary: yt-dlp with chunked pagination (100 items per page)
+  const CHUNK_SIZE = 100;
+  const url = `https://www.youtube.com/playlist?list=${playlistId}`;
+  let page = 0;
+
+  while (true) {
+    const start = page * CHUNK_SIZE + 1;
+    const end = start + CHUNK_SIZE - 1;
+    try {
+      const raw = execSync(
+        `yt-dlp --flat-playlist --dump-json --no-warnings --playlist-items ${start}:${end} "${url}"`,
+        { encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, timeout: 120000 }
+      );
+      const items = raw.trim().split('\n').filter(Boolean).map(line => {
+        const entry = JSON.parse(line);
+        return {
+          id: entry.id,
+          title: entry.title || 'Untitled',
+          durationSec: Math.round(entry.duration || 0),
+        };
+      });
+
+      if (items.length === 0) break;
+
+      const count = addItems(items);
+      log(`    📋 Page ${page + 1} (items ${start}-${end}): got ${items.length} videos, ${count} new`);
+
+      // If we got fewer than CHUNK_SIZE, that's the last page
+      if (items.length < CHUNK_SIZE) break;
+      page++;
+    } catch (err) {
+      // If first page fails, that's a real error. Otherwise we just ran out of items.
+      if (page === 0 && playlistItems.length === 0) {
+        log(`    ⚠️  yt-dlp failed: ${err.message?.substring(0, 80)}`);
+      }
+      break;
+    }
   }
 
-  // Use ytpl to supplement any missing videos (multi-collaborator songs often skipped by flat-playlist)
+  // Supplement: try ytpl to catch anything yt-dlp missed
   try {
     const playlist = await ytpl(playlistId, { limit: Infinity });
-    const ytplItems = playlist.items.map(item => ({
+    const items = playlist.items.map(item => ({
       id: item.id,
       title: item.title,
       durationSec: item.durationSec || 0,
     }));
-    
-    // Merge results, giving yt-dlp priority for duplicates
-    const existingIds = new Set(playlistItems.map(x => x.id));
-    let addedCount = 0;
-    
-    // We iterate through ytpl items to retain original playlist order where possible 
-    // by injecting them, but for simplicity we'll just push them here.
-    for (const item of ytplItems) {
-      if (!existingIds.has(item.id)) {
-        playlistItems.push(item);
-        addedCount++;
-      }
-    }
-    
-    if (addedCount > 0) {
-      log(`    ➕ Recovered ${addedCount} missing videos via ytpl!`);
-    }
-  } catch (ytplErr) {
-    if (playlistItems.length === 0) {
-      throw new Error(`Both yt-dlp and ytpl failed to fetch any items. Ytpl err: ${ytplErr.message}`);
-    } else {
-      log(`    ⚠️  ytpl supplement check skipped/failed: ${ytplErr.message}`);
-    }
+    const count = addItems(items);
+    if (count > 0) log(`    ➕ ytpl recovered ${count} extra videos`);
+  } catch (err) {
+    // ytpl is optional, don't worry if it fails
   }
 
-  // 3rd level fallback: raw HTML regex scan for any remaining skipped IDs
-  try {
-    const rawHtml = execSync(`curl -sL "https://www.youtube.com/playlist?list=${playlistId}"`, { encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024 });
-    const idMatches = rawHtml.matchAll(/"videoId":"([a-zA-Z0-9_-]{11})"/g);
-    const existingIds = new Set(playlistItems.map(x => x.id));
-    let rawAdded = 0;
-    
-    for (const m of idMatches) {
-      const vidId = m[1];
-      if (!existingIds.has(vidId)) {
-        playlistItems.push({ id: vidId, title: 'Fetching title...', durationSec: 0 });
-        existingIds.add(vidId);
-        rawAdded++;
-      }
-    }
-    if (rawAdded > 0) log(`    ➕ Recovered ${rawAdded} missing videos via raw HTML scan!`);
-  } catch (rawErr) {
-    // Silently continue if curl fails
+  if (playlistItems.length === 0) {
+    throw new Error('Failed to fetch any videos from playlist');
   }
+
+  log(`    📊 Total unique videos: ${playlistItems.length}`);
 
   const total = playlistItems.length;
   let cached = 0;

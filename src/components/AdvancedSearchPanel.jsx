@@ -46,6 +46,28 @@ const AdvancedSearchPanel = ({
     return Array.from(yearSet).sort((a,b) => b - a);
   }, [allVideos]);
 
+  // Get the currently selected year from the search query
+  const selectedYear = useMemo(() => {
+    const match = searchQuery.match(/year:(\d{4})/);
+    return match ? parseInt(match[1], 10) : null;
+  }, [searchQuery]);
+
+  // Get available months for the selected year
+  const MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const availableMonths = useMemo(() => {
+    if (!selectedYear) return [];
+    const monthSet = new Set();
+    allVideos.forEach(v => {
+      if (v.date) {
+        const d = new Date(v.date);
+        if (d.getFullYear() === selectedYear) {
+          monthSet.add(d.getMonth() + 1); // 1-indexed
+        }
+      }
+    });
+    return Array.from(monthSet).sort((a, b) => a - b);
+  }, [allVideos, selectedYear]);
+
   // Build tag names from tags data
   const tagNames = useMemo(() => {
     return tags ? Object.keys(tags).sort() : [];
@@ -63,9 +85,17 @@ const AdvancedSearchPanel = ({
       if (isActive(prefix, value)) {
         // Toggle off the exact match
         newQuery = newQuery.replace(new RegExp(`${prefix}:${value}(?:\\s|$)`, 'g'), ' ').trim();
+        // If toggling off a year, also remove any month filter
+        if (prefix === 'year') {
+          newQuery = newQuery.replace(/month:\S+/g, '').trim();
+        }
       } else {
         // Replace existing prefix with new value
         newQuery = newQuery.replace(regex, filterStr).trim();
+        // If switching to a different year, clear the month filter
+        if (prefix === 'year') {
+          newQuery = newQuery.replace(/month:\S+/g, '').trim();
+        }
       }
     } else {
       // Add new
@@ -206,18 +236,50 @@ const AdvancedSearchPanel = ({
 
           {availableYears && availableYears.length > 0 && (
             <div className="adv-search-panel__group">
-              <div className="adv-search-panel__group-title">Release Year (after:)</div>
+              <div className="adv-search-panel__group-title">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: 5, verticalAlign: '-2px' }}>
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Year
+              </div>
               <div className="adv-search-panel__chips">
                 {availableYears.map(year => (
                   <button
                     key={year}
-                    className={`adv-search-panel__chip ${isActive('after', year) ? 'adv-search-panel__chip--active' : ''}`}
-                    onClick={() => toggleFilter('after', year)}
+                    className={`adv-search-panel__chip ${isActive('year', year) ? 'adv-search-panel__chip--active' : ''}`}
+                    onClick={() => toggleFilter('year', year)}
                   >
                     {year}
                   </button>
                 ))}
               </div>
+
+              {/* Month sub-filter — only shown when a year is selected */}
+              {selectedYear && availableMonths.length > 0 && (
+                <div className="adv-search-panel__month-section">
+                  <div className="adv-search-panel__group-title" style={{ marginTop: 16 }}>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: 5, verticalAlign: '-2px' }}>
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    Month ({selectedYear})
+                  </div>
+                  <div className="adv-search-panel__chips">
+                    {availableMonths.map(month => (
+                      <button
+                        key={month}
+                        className={`adv-search-panel__chip adv-search-panel__chip--month ${isActive('month', month) ? 'adv-search-panel__chip--active' : ''}`}
+                        onClick={() => toggleFilter('month', month)}
+                      >
+                        {MONTH_NAMES[month - 1]}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>

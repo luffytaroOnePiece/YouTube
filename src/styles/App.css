@@ -4846,3 +4846,27 @@ body::-webkit-scrollbar {
   padding: 8px 4px;
   font-style: italic;
 }
+
+/* ── Month Sub-Filter Section ─────────────────────────────── */
+.adv-search-panel__month-section {
+  margin-top: 14px;
+  padding-left: 12px;
+  border-left: 2px solid rgba(59, 130, 246, 0.25);
+  animation: monthSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes monthSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.adv-search-panel__chip--month {
+  padding: 5px 12px;
+  font-size: 0.75rem;
+}
