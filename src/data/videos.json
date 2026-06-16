@@ -1,11 +1,24 @@
 {
-  "lastUpdated": "2026-06-13T05:51:27.460Z",
+  "lastUpdated": "2026-06-16T15:13:16.432Z",
   "groups": {
     "Music": {
       "icon": "",
       "categories": {
         "Telugu": {
           "Romance": [
+            {
+              "youtubeLinkID": "RyzPweJKJ9M",
+              "title": "Full Video: Chikiri Chikiri | Peddi | Ram Charan | Janhvi | Buchi Babu | AR Rahman | Mohit Chauhan",
+              "thumbnail": "https://img.youtube.com/vi/RyzPweJKJ9M/maxresdefault.jpg",
+              "duration": "4:38",
+              "durationSec": 278,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "",
+              "resolution": "",
+              "viewCount": 0
+            },
             {
               "youtubeLinkID": "CsOBNhWa5Q8",
               "title": "Sammohanuda 8K Video | Rules Ranjann | Kiran Abbavaram,Neha Sshetty | Rathinam Krishna | Shreya G",
@@ -1038,19 +1051,6 @@
               "viewCount": 21114
             },
             {
-              "youtubeLinkID": "6zDfwVSvyEk",
-              "title": "Hellallallo Video | Peddi (TELUGU) | Ram Charan | Buchi Babu | Shruthi Haasan | Janhvi | AR Rahman",
-              "thumbnail": "https://img.youtube.com/vi/6zDfwVSvyEk/maxresdefault.jpg",
-              "duration": "3:57",
-              "durationSec": 237,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Item",
-              "date": "2026-05-23T22:37:31-07:00",
-              "resolution": "4K",
-              "viewCount": 25971868
-            },
-            {
               "youtubeLinkID": "oor9od6nXBM",
               "title": "Kiss Kiss Bang Bang 8K 60 FPS Video Song | They Call Him OG | Pawan Kalyan | Thaman S",
               "thumbnail": "https://img.youtube.com/vi/oor9od6nXBM/maxresdefault.jpg",
@@ -1101,6 +1101,19 @@
               "date": "2025-05-13T06:32:00-07:00",
               "resolution": "4K",
               "viewCount": 5420490
+            },
+            {
+              "youtubeLinkID": "IRBEhaYydS8",
+              "title": "Full Video: Hellallallo | Peddi | Ram Charan | Buchi Babu | Shruthi Haasan | Janhvi | AR Rahman",
+              "thumbnail": "https://img.youtube.com/vi/IRBEhaYydS8/maxresdefault.jpg",
+              "duration": "4:00",
+              "durationSec": 240,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Item",
+              "date": "",
+              "resolution": "",
+              "viewCount": 0
             }
           ],
           "Groovy": [
@@ -2550,19 +2563,6 @@
               "viewCount": 70351696
             },
             {
-              "youtubeLinkID": "vVDp1ulBKIk",
-              "title": "Chikiri Chikiri Video Song | Peddi | Ram Charan | Janhvi | Buchi Babu Sana | AR Rahman|Mohit Chauhan",
-              "thumbnail": "https://img.youtube.com/vi/vVDp1ulBKIk/maxresdefault.jpg",
-              "duration": "4:33",
-              "durationSec": 273,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Energetic",
-              "date": "2025-11-06T21:37:04-08:00",
-              "resolution": "4K",
-              "viewCount": 204725143
-            },
-            {
               "youtubeLinkID": "2So45J1dAu4",
               "title": "Full Video: Daavudi [8K] - దావూదీ | Devara | NTR | Janhvi K | Koratala Siva | Anirudh Ravichander",
               "thumbnail": "https://img.youtube.com/vi/2So45J1dAu4/maxresdefault.jpg",
@@ -2691,19 +2691,6 @@
               "date": "2020-03-03T02:35:01-08:00",
               "resolution": "4K",
               "viewCount": 778186006
-            },
-            {
-              "youtubeLinkID": "V5c4BnmPTpU",
-              "title": "Dimaak Kharaab - Full Video Song | iSmart Shankar | Ram Pothineni, Nidhhi Agerwal & Nabha Natesh",
-              "thumbnail": "https://img.youtube.com/vi/V5c4BnmPTpU/maxresdefault.jpg",
-              "duration": "4:28",
-              "durationSec": 268,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Energetic",
-              "date": "2019-09-20T01:30:12-07:00",
-              "resolution": "4K",
-              "viewCount": 291651776
             },
             {
               "youtubeLinkID": "I7HwFFJGWhw",
@@ -3250,6 +3237,32 @@
               "date": "2018-08-04T22:30:01-07:00",
               "resolution": "1080p",
               "viewCount": 63122137
+            },
+            {
+              "youtubeLinkID": "p-dSzDYunL8",
+              "title": "Full Video: Rai Rai Raa Raa Song | Peddi | Ram Charan | Janhvi | Buchi Babu Sana | AR Rahman",
+              "thumbnail": "https://img.youtube.com/vi/p-dSzDYunL8/maxresdefault.jpg",
+              "duration": "4:44",
+              "durationSec": 284,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Energetic",
+              "date": "",
+              "resolution": "",
+              "viewCount": 0
+            },
+            {
+              "youtubeLinkID": "5GFPJviUatg",
+              "title": "Dimaak Kharaab - 8K Video | iSmart Shankar | Ram Pothineni, Nidhhi A & Nabha N | Mani Sharma",
+              "thumbnail": "https://img.youtube.com/vi/5GFPJviUatg/maxresdefault.jpg",
+              "duration": "4:52",
+              "durationSec": 292,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Energetic",
+              "date": "",
+              "resolution": "",
+              "viewCount": 0
             }
           ],
           "Classics": [
@@ -8473,19 +8486,6 @@
         },
         "Others": {
           "Promo Songs": [
-            {
-              "youtubeLinkID": "4v31nFdfUS8",
-              "title": "Hellallallo Promo (TELUGU) | Peddi | Ram Charan | Buchi Babu | Shruthi Haasan | Janhvi | AR Rahman",
-              "thumbnail": "https://img.youtube.com/vi/4v31nFdfUS8/maxresdefault.jpg",
-              "duration": "0:25",
-              "durationSec": 25,
-              "group": "Music",
-              "category": "Others",
-              "type": "Promo Songs",
-              "date": "2026-05-22T00:39:32-07:00",
-              "resolution": "4K",
-              "viewCount": 1582742
-            },
             {
               "youtubeLinkID": "VqCuq9YDgkI",
               "title": "VaareVaa VaareVaa Lyrical Video | Lenin | Akhil Akkineni,Bhagyashri B | Thaman S | Murali Kishor A",
