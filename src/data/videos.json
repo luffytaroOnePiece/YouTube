@@ -1,11 +1,24 @@
 {
-  "lastUpdated": "2026-06-25T09:08:29.305Z",
+  "lastUpdated": "2026-06-25T14:22:25.488Z",
   "groups": {
     "Music": {
       "icon": "",
       "categories": {
         "Telugu": {
           "Romance": [
+            {
+              "youtubeLinkID": "XWv6fKw7O2E",
+              "title": "Sitar 8K Video | Mr. Bachchan | Ravi Teja | Bhagyashri Borse | Mickey J Meyer | Harish Shankar S",
+              "thumbnail": "https://img.youtube.com/vi/XWv6fKw7O2E/maxresdefault.jpg",
+              "duration": "4:09",
+              "durationSec": 249,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2026-06-25T03:30:03-07:00",
+              "resolution": "8K",
+              "viewCount": 6775
+            },
             {
               "youtubeLinkID": "Xi1MHHJVmGc",
               "title": "Ee Vayase Full Video Song | Gurthukosthunnayi | Viraj Ashwin, Yashashree Rao | Winod Gali | S Suhas",
@@ -278,6 +291,19 @@
               "date": "2025-06-04T04:30:31-07:00",
               "resolution": "8K",
               "viewCount": 3928776
+            },
+            {
+              "youtubeLinkID": "JgYrGx00MLI",
+              "title": "Full Video: Jikki Song | Mr Bachchan | Ravi Teja, Bhagyashri B | Mickey J Meyer | Harish Shankar S",
+              "thumbnail": "https://img.youtube.com/vi/JgYrGx00MLI/maxresdefault.jpg",
+              "duration": "3:28",
+              "durationSec": 208,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2024-08-29T03:29:08-07:00",
+              "resolution": "4K",
+              "viewCount": 2823313
             },
             {
               "youtubeLinkID": "Xbizke4zftY",
@@ -579,6 +605,19 @@
               "date": "2026-06-17T04:30:29-07:00",
               "resolution": "4K",
               "viewCount": 1699268
+            },
+            {
+              "youtubeLinkID": "UMNJ0WeiZFo",
+              "title": "Sye Dhalapathi 8K Video | Dhalapathi Vijay | Vaarasudu | Vamshi Paidipally | Deepak Blue | Thaman S",
+              "thumbnail": "https://img.youtube.com/vi/UMNJ0WeiZFo/maxresdefault.jpg",
+              "duration": "2:56",
+              "durationSec": 176,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Mass",
+              "date": "2026-06-23T22:30:12-07:00",
+              "resolution": "8K",
+              "viewCount": 3363
             }
           ],
           "Item": [
@@ -2507,6 +2546,32 @@
               "date": "2021-10-15T22:31:42-07:00",
               "resolution": "4K",
               "viewCount": 192609255
+            },
+            {
+              "youtubeLinkID": "wkSs8-4OtDY",
+              "title": "Hey Taara - 8K Video Song | Appudo Ippudo Eppudo | Nikhil, Rukmini, Divyansha | Sudheer Varma",
+              "thumbnail": "https://img.youtube.com/vi/wkSs8-4OtDY/maxresdefault.jpg",
+              "duration": "3:06",
+              "durationSec": 186,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-06-24T01:30:02-07:00",
+              "resolution": "8K",
+              "viewCount": 17212
+            },
+            {
+              "youtubeLinkID": "tq7lr41sC94",
+              "title": "Idhe Idhe 8K Video | Hi Nanna | Nani | Mrunal Thakur | Baby Kiara K | Hesham Abdul Wahab | Krishna K",
+              "thumbnail": "https://img.youtube.com/vi/tq7lr41sC94/maxresdefault.jpg",
+              "duration": "3:08",
+              "durationSec": 188,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-06-23T05:45:02-07:00",
+              "resolution": "8K",
+              "viewCount": 32204
             }
           ],
           "Energetic": [
@@ -4983,6 +5048,19 @@
               "date": "2026-06-16T05:45:06-07:00",
               "resolution": "4K",
               "viewCount": 2524
+            },
+            {
+              "youtubeLinkID": "1sXXWXLUvZg",
+              "title": "Musugu Veyyoddu Song 4K | Khadgam Movie Songs | Kim Sharma, Srikanth | TeluguOne Music",
+              "thumbnail": "https://img.youtube.com/vi/1sXXWXLUvZg/maxresdefault.jpg",
+              "duration": "4:23",
+              "durationSec": 263,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2026-06-24T07:00:07-07:00",
+              "resolution": "4K",
+              "viewCount": 854
             }
           ]
         },
@@ -8112,46 +8190,33 @@
           ],
           "Romantic": [
             {
-              "youtubeLinkID": "Q9dKU_RhJGQ",
-              "title": "Madana Mana Mohini Kannada Video Song  - Kantara Chapter 1 | Rishab Shetty, Rukmini | Hombale Films",
-              "thumbnail": "https://img.youtube.com/vi/Q9dKU_RhJGQ/maxresdefault.jpg",
-              "duration": "3:43",
-              "durationSec": 223,
+              "youtubeLinkID": "3OCBdugaNEM",
+              "title": "Madana Mana Mohini Kannada 8K Video Song- Kantara Chapter 1 | Rishab Shetty, Rukmini | Hombale Music",
+              "thumbnail": "https://img.youtube.com/vi/3OCBdugaNEM/maxresdefault.jpg",
+              "duration": "3:35",
+              "durationSec": 215,
               "group": "Music",
               "category": "Kanada",
               "type": "Romantic",
-              "date": "2025-10-18T21:30:30-07:00",
-              "resolution": "4K",
-              "viewCount": 30212394
+              "date": "2025-11-20T04:30:11-08:00",
+              "resolution": "8K",
+              "viewCount": 1238433
             },
             {
-              "youtubeLinkID": "3XShkcOze3s",
-              "title": "Kantara - Singara Siriye | Rishab Shetty |Vijay Prakash|Ananya Bhat |Ajaneesh Loknath| Hombale Films",
-              "thumbnail": "https://img.youtube.com/vi/3XShkcOze3s/maxresdefault.jpg",
-              "duration": "5:07",
-              "durationSec": 307,
+              "youtubeLinkID": "qWfEhrcB6uw",
+              "title": "Kantara - Singara Siriye 8K Video Song | Rishab Shetty | Ajaneesh Loknath | Hombale Films",
+              "thumbnail": "https://img.youtube.com/vi/qWfEhrcB6uw/maxresdefault.jpg",
+              "duration": "5:14",
+              "durationSec": 314,
               "group": "Music",
               "category": "Kanada",
               "type": "Romantic",
-              "date": "2022-08-15T00:28:03-07:00",
-              "resolution": "4K",
-              "viewCount": 203820168
+              "date": "2026-02-17T05:30:56-08:00",
+              "resolution": "8K",
+              "viewCount": 22007
             }
           ],
           "Energitic": [
-            {
-              "youtubeLinkID": "m-5ck3BuT1o",
-              "title": "Kantara - Varaha Roopam Video Song| Rishab Shetty| Ajaneesh Loknath| Vijay Kiragandur| Hombale Films",
-              "thumbnail": "https://img.youtube.com/vi/m-5ck3BuT1o/maxresdefault.jpg",
-              "duration": "4:31",
-              "durationSec": 271,
-              "group": "Music",
-              "category": "Kanada",
-              "type": "Energitic",
-              "date": "2023-09-30T07:29:12-07:00",
-              "resolution": "4K",
-              "viewCount": 144553759
-            },
             {
               "youtubeLinkID": "3ocX9df0krI",
               "title": "Brahmakalasha Kannada 8K Video Song  - Kantara Chapter 1 | Rishab Shetty, Rukmini | Hombale Music",
@@ -8166,17 +8231,17 @@
               "viewCount": 8365495
             },
             {
-              "youtubeLinkID": "ILLo7cjohiE",
-              "title": "Kantara - Varaha Roopam 8K Video Song | Rishab Shetty | Ajaneesh Loknath | Hombale Music",
-              "thumbnail": "https://img.youtube.com/vi/ILLo7cjohiE/maxresdefault.jpg",
-              "duration": "4:43",
-              "durationSec": 283,
+              "youtubeLinkID": "cCtWQtESPbI",
+              "title": "Varaha Roopam 8K Video Song- Kantara Chapter 1 | Rishab Shetty | Ajaneesh Loknath | Hombale Music",
+              "thumbnail": "https://img.youtube.com/vi/cCtWQtESPbI/maxresdefault.jpg",
+              "duration": "2:47",
+              "durationSec": 167,
               "group": "Music",
               "category": "Kanada",
               "type": "Energitic",
-              "date": "2026-02-27T04:30:00-08:00",
+              "date": "2026-01-02T04:31:02-08:00",
               "resolution": "8K",
-              "viewCount": 34545
+              "viewCount": 1596437
             }
           ]
         },
