@@ -1,11 +1,24 @@
 {
-  "lastUpdated": "2026-06-25T14:22:25.488Z",
+  "lastUpdated": "2026-06-26T13:28:09.188Z",
   "groups": {
     "Music": {
       "icon": "",
       "categories": {
         "Telugu": {
           "Romance": [
+            {
+              "youtubeLinkID": "6DrD3mLy80A",
+              "title": "Undipo - 8K Video | iSmart Shankar | Ram Pothineni, Nidhhi Agerwal & Nabha Natesh | Telugu Love Song",
+              "thumbnail": "https://img.youtube.com/vi/6DrD3mLy80A/maxresdefault.jpg",
+              "duration": "3:59",
+              "durationSec": 239,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2026-06-26T03:30:03-07:00",
+              "resolution": "8K",
+              "viewCount": 2492
+            },
             {
               "youtubeLinkID": "XWv6fKw7O2E",
               "title": "Sitar 8K Video | Mr. Bachchan | Ravi Teja | Bhagyashri Borse | Mickey J Meyer | Harish Shankar S",
@@ -1352,19 +1365,6 @@
               "viewCount": 939040483
             },
             {
-              "youtubeLinkID": "C-Cf0ZWdyEE",
-              "title": "Undipo - Full Video | iSmart Shankar | Ram Pothineni, Nidhhi Agerwal & Nabha Natesh",
-              "thumbnail": "https://img.youtube.com/vi/C-Cf0ZWdyEE/maxresdefault.jpg",
-              "duration": "3:45",
-              "durationSec": 225,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Groovy",
-              "date": "2019-09-26T01:30:00-07:00",
-              "resolution": "4K",
-              "viewCount": 57299878
-            },
-            {
               "youtubeLinkID": "xVcoYF--0mM",
               "title": "Vachindamma Video Song | Geetha Govindam Songs | Vijay Devarakonda, Rashmika Mandanna",
               "thumbnail": "https://img.youtube.com/vi/xVcoYF--0mM/maxresdefault.jpg",
@@ -2667,19 +2667,6 @@
               "viewCount": 3672298
             },
             {
-              "youtubeLinkID": "06WW1v6oJMw",
-              "title": "Full Video: Reppal Dappul | Mr Bachchan | Ravi Teja,Bhagyashri B | Mickey J Meyer | Harish Shankar S",
-              "thumbnail": "https://img.youtube.com/vi/06WW1v6oJMw/maxresdefault.jpg",
-              "duration": "4:35",
-              "durationSec": 275,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Energetic",
-              "date": "2024-08-28T03:29:08-07:00",
-              "resolution": "4K",
-              "viewCount": 4877875
-            },
-            {
               "youtubeLinkID": "EgnaDC_xrRM",
               "title": "Pulsar Bike 8K Video Song | Dhamaka | Ravi Teja | Sreeleela | Thrinadha Rao | Bheems Ceciroleo",
               "thumbnail": "https://img.youtube.com/vi/EgnaDC_xrRM/maxresdefault.jpg",
@@ -3354,6 +3341,19 @@
               "date": "2026-06-15T04:30:37-07:00",
               "resolution": "8K",
               "viewCount": 15198
+            },
+            {
+              "youtubeLinkID": "ULKSfKuo9sI",
+              "title": "Reppal Dappul 8K Video | Mr Bachchan | Ravi Teja | Bhagyashri B | Mickey J Meyer | Harish Shankar S",
+              "thumbnail": "https://img.youtube.com/vi/ULKSfKuo9sI/maxresdefault.jpg",
+              "duration": "4:35",
+              "durationSec": 275,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Energetic",
+              "date": "2026-06-26T03:30:18-07:00",
+              "resolution": "8K",
+              "viewCount": 3988
             }
           ],
           "Classics": [
