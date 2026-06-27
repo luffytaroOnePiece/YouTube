@@ -1,11 +1,24 @@
 {
-  "lastUpdated": "2026-06-26T13:28:09.188Z",
+  "lastUpdated": "2026-06-27T11:53:21.658Z",
   "groups": {
     "Music": {
       "icon": "",
       "categories": {
         "Telugu": {
           "Romance": [
+            {
+              "youtubeLinkID": "EGqdMZrkVj0",
+              "title": "Jikki 8K Video Song | Mr Bachchan | Ravi Teja, Bhagyashri B | Mickey J Meyer | Harish Shankar S",
+              "thumbnail": "https://img.youtube.com/vi/EGqdMZrkVj0/maxresdefault.jpg",
+              "duration": "3:28",
+              "durationSec": 208,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2026-06-27T02:30:16-07:00",
+              "resolution": "8K",
+              "viewCount": 2451
+            },
             {
               "youtubeLinkID": "6DrD3mLy80A",
               "title": "Undipo - 8K Video | iSmart Shankar | Ram Pothineni, Nidhhi Agerwal & Nabha Natesh | Telugu Love Song",
@@ -304,19 +317,6 @@
               "date": "2025-06-04T04:30:31-07:00",
               "resolution": "8K",
               "viewCount": 3928776
-            },
-            {
-              "youtubeLinkID": "JgYrGx00MLI",
-              "title": "Full Video: Jikki Song | Mr Bachchan | Ravi Teja, Bhagyashri B | Mickey J Meyer | Harish Shankar S",
-              "thumbnail": "https://img.youtube.com/vi/JgYrGx00MLI/maxresdefault.jpg",
-              "duration": "3:28",
-              "durationSec": 208,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Romance",
-              "date": "2024-08-29T03:29:08-07:00",
-              "resolution": "4K",
-              "viewCount": 2823313
             },
             {
               "youtubeLinkID": "Xbizke4zftY",
