@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T11:53:21.658Z",
+  "lastUpdated": "2026-06-28T10:42:54.379Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2572,6 +2572,19 @@
               "date": "2026-06-23T05:45:02-07:00",
               "resolution": "8K",
               "viewCount": 32204
+            },
+            {
+              "youtubeLinkID": "AbwqQ8FSOIk",
+              "title": "Kalyani Vaccha 8K Video -The Family Star | Vijay Deverakonda | Mrunal T | Gopi Sundar | Love Vibes",
+              "thumbnail": "https://img.youtube.com/vi/AbwqQ8FSOIk/maxresdefault.jpg",
+              "duration": "2:57",
+              "durationSec": 177,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-04-03T22:30:08-07:00",
+              "resolution": "8K",
+              "viewCount": 133115
             }
           ],
           "Energetic": [
@@ -2639,19 +2652,6 @@
               "date": "2026-03-25T21:30:01-07:00",
               "resolution": "8K",
               "viewCount": 35884
-            },
-            {
-              "youtubeLinkID": "kiu9WG9eUh0",
-              "title": "Full Video: Nallanchu Thellacheera | Mr Bachchan| Ravi Teja, Bhagyashri | Mickey J Meyer | Harish S",
-              "thumbnail": "https://img.youtube.com/vi/kiu9WG9eUh0/maxresdefault.jpg",
-              "duration": "3:38",
-              "durationSec": 218,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Energetic",
-              "date": "2024-08-30T03:29:08-07:00",
-              "resolution": "4K",
-              "viewCount": 70351696
             },
             {
               "youtubeLinkID": "2So45J1dAu4",
@@ -3354,6 +3354,19 @@
               "date": "2026-06-26T03:30:18-07:00",
               "resolution": "8K",
               "viewCount": 3988
+            },
+            {
+              "youtubeLinkID": "nXQqtd2KMHs",
+              "title": "Nallanchu Thellacheera 8K Video | Mr Bachchan | Ravi Teja | Bhagyashri | Mickey J Meyer | Harish S",
+              "thumbnail": "https://img.youtube.com/vi/nXQqtd2KMHs/maxresdefault.jpg",
+              "duration": "3:38",
+              "durationSec": 218,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Energetic",
+              "date": "2026-06-28T03:30:13-07:00",
+              "resolution": "8K",
+              "viewCount": 973
             }
           ],
           "Classics": [
