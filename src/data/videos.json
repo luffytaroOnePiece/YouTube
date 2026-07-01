@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-28T10:42:54.379Z",
+  "lastUpdated": "2026-07-01T12:33:45.144Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2585,6 +2585,19 @@
               "date": "2026-04-03T22:30:08-07:00",
               "resolution": "8K",
               "viewCount": 133115
+            },
+            {
+              "youtubeLinkID": "_USekdN1k5E",
+              "title": "Awaara - Nee Yadalo Naaku 8K/4K Video Song | Yuvanshankar Raja | Karthi | Tamannaah",
+              "thumbnail": "https://img.youtube.com/vi/_USekdN1k5E/maxresdefault.jpg",
+              "duration": "4:42",
+              "durationSec": 282,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-06-30T07:30:28-07:00",
+              "resolution": "8K",
+              "viewCount": 11565
             }
           ],
           "Energetic": [
@@ -3367,6 +3380,19 @@
               "date": "2026-06-28T03:30:13-07:00",
               "resolution": "8K",
               "viewCount": 973
+            },
+            {
+              "youtubeLinkID": "2jus2uTTCgY",
+              "title": "Kung Fu Kumaari - 8K Video | Bruce Lee The Fighter | Ram Charan & Rakul Preet Singh | Ramya & Deepak",
+              "thumbnail": "https://img.youtube.com/vi/2jus2uTTCgY/maxresdefault.jpg",
+              "duration": "4:23",
+              "durationSec": 263,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Energetic",
+              "date": "2026-07-01T02:30:10-07:00",
+              "resolution": "8K",
+              "viewCount": 1129
             }
           ],
           "Classics": [
