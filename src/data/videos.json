@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T12:33:45.144Z",
+  "lastUpdated": "2026-07-04T01:04:27.397Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2598,6 +2598,19 @@
               "date": "2026-06-30T07:30:28-07:00",
               "resolution": "8K",
               "viewCount": 11565
+            },
+            {
+              "youtubeLinkID": "GIp0pKovoA4",
+              "title": "Thassadiya - Film Version | Maa Inti Bangaaram | Samantha | Chinmayi | Punya | Santhosh Narayanan",
+              "thumbnail": "https://img.youtube.com/vi/GIp0pKovoA4/maxresdefault.jpg",
+              "duration": "3:58",
+              "durationSec": 238,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-07-03T05:11:24-07:00",
+              "resolution": "4K",
+              "viewCount": 36022
             }
           ],
           "Energetic": [
@@ -9332,6 +9345,19 @@
               "date": "2026-06-19T05:30:08-07:00",
               "resolution": "4K",
               "viewCount": 9599
+            },
+            {
+              "youtubeLinkID": "xvT1jH8B9AM",
+              "title": "KALYANI (with Shreya Ghoshal) OFFICIAL MUSIC VIDEO | ARJN | KDS | FIFTY4 | RONN | SHREYA GHOSHAL |",
+              "thumbnail": "https://img.youtube.com/vi/xvT1jH8B9AM/maxresdefault.jpg",
+              "duration": "4:48",
+              "durationSec": 288,
+              "group": "Music",
+              "category": "Others",
+              "type": "Straight From The Studio",
+              "date": "2026-07-01T08:30:23-07:00",
+              "resolution": "4K",
+              "viewCount": 2897957
             }
           ],
           "Devotional": [
