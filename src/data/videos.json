@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-04T01:04:27.397Z",
+  "lastUpdated": "2026-07-05T11:42:28.267Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -7243,6 +7243,19 @@
               "date": "2026-06-17T01:50:17-07:00",
               "resolution": "4K",
               "viewCount": 16434403
+            },
+            {
+              "youtubeLinkID": "AbZKoq3M1-I",
+              "title": "Desi Kalakaar 8K Full Video Song | Yo Yo Honey Singh | Sonakshi Sinha | Gulshan Grover",
+              "thumbnail": "https://img.youtube.com/vi/AbZKoq3M1-I/maxresdefault.jpg",
+              "duration": "9:46",
+              "durationSec": 586,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2026-07-04T22:30:19-07:00",
+              "resolution": "8K",
+              "viewCount": 62000
             }
           ],
           "Energetic": [
@@ -7972,6 +7985,19 @@
               "date": "2014-05-07T08:33:46-07:00",
               "resolution": "1080p",
               "viewCount": 246853008
+            },
+            {
+              "youtubeLinkID": "F4ELqraXx-U",
+              "title": "Lana Del Rey - White Mustang (Official Music Video)",
+              "thumbnail": "https://img.youtube.com/vi/F4ELqraXx-U/maxresdefault.jpg",
+              "duration": "4:42",
+              "durationSec": 282,
+              "group": "Music",
+              "category": "English",
+              "type": "Serenity",
+              "date": "2017-09-13T08:00:01-07:00",
+              "resolution": "1080p",
+              "viewCount": 69211651
             }
           ],
           "Melancholy": [
@@ -10136,19 +10162,6 @@
         },
         "Aerial Drone Shots": {
           "Timelab Pro": [
-            {
-              "youtubeLinkID": "uqU6oZsyEPU",
-              "title": "Kazan: Where History Meets the Future",
-              "thumbnail": "https://img.youtube.com/vi/uqU6oZsyEPU/maxresdefault.jpg",
-              "duration": "2:53",
-              "durationSec": 173,
-              "group": "Nature",
-              "category": "Aerial Drone Shots",
-              "type": "Timelab Pro",
-              "date": "2025-02-08T07:00:54-08:00",
-              "resolution": "8K",
-              "viewCount": 135611
-            },
             {
               "youtubeLinkID": "o-eYesXYEag",
               "title": "Digital Dream on the Edge of Reality. Shenzhen - Flying between skyscrapers in 8k",
