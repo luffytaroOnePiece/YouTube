@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-08T01:25:07.881Z",
+  "lastUpdated": "2026-07-08T13:39:25.414Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2611,6 +2611,19 @@
               "date": "2026-07-03T05:11:24-07:00",
               "resolution": "4K",
               "viewCount": 36022
+            },
+            {
+              "youtubeLinkID": "xGy0A0atslA",
+              "title": "Tabaahi 🔥 - Toxic (Telugu) | Rocking Star Yash & Kiara Advani | Vishal Mishra | Ramajogayya Sastry",
+              "thumbnail": "https://img.youtube.com/vi/xGy0A0atslA/maxresdefault.jpg",
+              "duration": "4:29",
+              "durationSec": 269,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-07-07T23:03:07-07:00",
+              "resolution": "4K",
+              "viewCount": 348462
             }
           ],
           "Energetic": [
@@ -9806,6 +9819,19 @@
               "date": "2017-01-12T21:00:02-08:00",
               "resolution": "1080p",
               "viewCount": 8997248912
+            },
+            {
+              "youtubeLinkID": "-j0dlcfekqw",
+              "title": "Otilia - Bilionera (official video)",
+              "thumbnail": "https://img.youtube.com/vi/-j0dlcfekqw/maxresdefault.jpg",
+              "duration": "3:06",
+              "durationSec": 186,
+              "group": "Music",
+              "category": "Others",
+              "type": "International",
+              "date": "2014-09-10T10:00:09-07:00",
+              "resolution": "1080p",
+              "viewCount": 719107217
             },
             {
               "youtubeLinkID": "m9ezpAUvMC8",
