@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T08:03:31.936Z",
+  "lastUpdated": "2026-07-08T01:25:07.881Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -5113,6 +5113,19 @@
               "date": "2026-06-24T07:00:07-07:00",
               "resolution": "4K",
               "viewCount": 854
+            },
+            {
+              "youtubeLinkID": "1p1PwJrxEPA",
+              "title": "Tappulu Tippulu Song 4K | Godavari Movie | Kamalini Mukherjee, Sumanth, Neetu Chandra | Tone Music",
+              "thumbnail": "https://img.youtube.com/vi/1p1PwJrxEPA/maxresdefault.jpg",
+              "duration": "4:20",
+              "durationSec": 260,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2026-07-07T06:55:07-07:00",
+              "resolution": "4K",
+              "viewCount": 586
             }
           ]
         },
@@ -7909,6 +7922,19 @@
               "viewCount": 118510842
             },
             {
+              "youtubeLinkID": "o7e4IfE0ScI",
+              "title": "Radio",
+              "thumbnail": "https://img.youtube.com/vi/o7e4IfE0ScI/maxresdefault.jpg",
+              "duration": "3:35",
+              "durationSec": 215,
+              "group": "Music",
+              "category": "English",
+              "type": "Serenity",
+              "date": "2020-04-14T11:33:49-07:00",
+              "resolution": "1080p",
+              "viewCount": 92539094
+            },
+            {
               "youtubeLinkID": "GxldQ9eX2wo",
               "title": "Stephen Sanchez - Until I Found You (Official Video)",
               "thumbnail": "https://img.youtube.com/vi/GxldQ9eX2wo/maxresdefault.jpg",
@@ -7998,6 +8024,19 @@
               "date": "2014-05-07T08:33:46-07:00",
               "resolution": "1080p",
               "viewCount": 246853008
+            },
+            {
+              "youtubeLinkID": "F4ELqraXx-U",
+              "title": "Lana Del Rey - White Mustang (Official Music Video)",
+              "thumbnail": "https://img.youtube.com/vi/F4ELqraXx-U/maxresdefault.jpg",
+              "duration": "4:42",
+              "durationSec": 282,
+              "group": "Music",
+              "category": "English",
+              "type": "Serenity",
+              "date": "2017-09-13T08:00:01-07:00",
+              "resolution": "1080p",
+              "viewCount": 69276312
             }
           ],
           "Melancholy": [
@@ -9769,19 +9808,6 @@
               "viewCount": 8997248912
             },
             {
-              "youtubeLinkID": "-j0dlcfekqw",
-              "title": "Otilia - Bilionera (official video)",
-              "thumbnail": "https://img.youtube.com/vi/-j0dlcfekqw/maxresdefault.jpg",
-              "duration": "3:06",
-              "durationSec": 186,
-              "group": "Music",
-              "category": "Others",
-              "type": "International",
-              "date": "2014-09-10T10:00:09-07:00",
-              "resolution": "1080p",
-              "viewCount": 715667587
-            },
-            {
               "youtubeLinkID": "m9ezpAUvMC8",
               "title": "JONY - Love your voice",
               "thumbnail": "https://img.youtube.com/vi/m9ezpAUvMC8/maxresdefault.jpg",
@@ -11181,6 +11207,19 @@
               "date": "2025-05-06T06:29:04-07:00",
               "resolution": "4K",
               "viewCount": 157708103
+            },
+            {
+              "youtubeLinkID": "QdBZY2fkU-0",
+              "title": "Grand Theft Auto VI Trailer 1",
+              "thumbnail": "https://img.youtube.com/vi/QdBZY2fkU-0/maxresdefault.jpg",
+              "duration": "1:31",
+              "durationSec": 91,
+              "group": "Games",
+              "category": "PS5",
+              "type": "Game Trailers",
+              "date": "2023-12-04T15:07:10-08:00",
+              "resolution": "4K",
+              "viewCount": 286800068
             },
             {
               "youtubeLinkID": "kbrWV-q-QAA",
