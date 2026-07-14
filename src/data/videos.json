@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-08T13:39:25.414Z",
+  "lastUpdated": "2026-07-14T12:46:01.084Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2624,6 +2624,19 @@
               "date": "2026-07-07T23:03:07-07:00",
               "resolution": "4K",
               "viewCount": 348462
+            },
+            {
+              "youtubeLinkID": "8WteJKcbJ48",
+              "title": "8K | Priya Mithunam (song) | Prabhas, Kriti Senon | Adipurush",
+              "thumbnail": "https://img.youtube.com/vi/8WteJKcbJ48/maxresdefault.jpg",
+              "duration": "3:19",
+              "durationSec": 199,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-07-09T03:28:12-07:00",
+              "resolution": "8K",
+              "viewCount": 95318
             }
           ],
           "Energetic": [
@@ -7282,6 +7295,19 @@
               "date": "2026-07-04T22:30:19-07:00",
               "resolution": "8K",
               "viewCount": 62000
+            },
+            {
+              "youtubeLinkID": "lR5aQMAl36k",
+              "title": "Haaniya Song | ALPHA | Alia Bhatt, Sharvari | Rohansh & Abeer | Vishal Dadlani | Kumaar",
+              "thumbnail": "https://img.youtube.com/vi/lR5aQMAl36k/maxresdefault.jpg",
+              "duration": "3:05",
+              "durationSec": 185,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2026-07-09T22:30:21-07:00",
+              "resolution": "4K",
+              "viewCount": 2755458
             }
           ],
           "Energetic": [
@@ -7531,6 +7557,19 @@
               "date": "2026-07-06T22:30:06-07:00",
               "resolution": "4K",
               "viewCount": 72263
+            },
+            {
+              "youtubeLinkID": "YwlndOd4xLE",
+              "title": "Champagne Song | ALPHA | Sharvari | Rohansh & Abeer | Akasa | Anvitaa Dutt",
+              "thumbnail": "https://img.youtube.com/vi/YwlndOd4xLE/maxresdefault.jpg",
+              "duration": "2:53",
+              "durationSec": 173,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Energetic",
+              "date": "2026-07-13T22:30:35-07:00",
+              "resolution": "4K",
+              "viewCount": 226343
             }
           ],
           "Mass": [
@@ -9873,6 +9912,34 @@
               "date": "2025-09-14T06:27:15-07:00",
               "resolution": "4K",
               "viewCount": 1352610
+            }
+          ],
+          "Lyrics": [
+            {
+              "youtubeLinkID": "eKVxZXElu9Q",
+              "title": "Bheegi Saree (Video) Sidharth Malhotra, Janhvi Kapoor | Sachin-Jigar, Adnan Sami, Shreya Ghosal",
+              "thumbnail": "https://img.youtube.com/vi/eKVxZXElu9Q/maxresdefault.jpg",
+              "duration": "3:20",
+              "durationSec": 200,
+              "group": "Music",
+              "category": "Others",
+              "type": "Lyrics",
+              "date": "2026-07-12T22:30:21-07:00",
+              "resolution": "4K",
+              "viewCount": 6357
+            },
+            {
+              "youtubeLinkID": "zF3GGO8qnWc",
+              "title": "Danger - Sidharth Malhotra, Janhvi Kapoor | Sachin-Jigar, Vishal D, Parvati, Amitabh| Param Sundari",
+              "thumbnail": "https://img.youtube.com/vi/zF3GGO8qnWc/maxresdefault.jpg",
+              "duration": "2:35",
+              "durationSec": 155,
+              "group": "Music",
+              "category": "Others",
+              "type": "Lyrics",
+              "date": "2026-07-13T22:30:27-07:00",
+              "resolution": "4K",
+              "viewCount": 385
             }
           ]
         }
