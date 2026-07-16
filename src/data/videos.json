@@ -1,11 +1,24 @@
 {
-  "lastUpdated": "2026-07-14T12:46:01.084Z",
+  "lastUpdated": "2026-07-16T07:44:45.054Z",
   "groups": {
     "Music": {
       "icon": "",
       "categories": {
         "Telugu": {
           "Romance": [
+            {
+              "youtubeLinkID": "8WteJKcbJ48",
+              "title": "8K | Priya Mithunam (song) | Prabhas, Kriti Senon | Adipurush",
+              "thumbnail": "https://img.youtube.com/vi/8WteJKcbJ48/maxresdefault.jpg",
+              "duration": "3:19",
+              "durationSec": 199,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Romance",
+              "date": "2026-07-09T03:28:12-07:00",
+              "resolution": "8K",
+              "viewCount": 95318
+            },
             {
               "youtubeLinkID": "EGqdMZrkVj0",
               "title": "Jikki 8K Video Song | Mr Bachchan | Ravi Teja, Bhagyashri B | Mickey J Meyer | Harish Shankar S",
@@ -2624,19 +2637,6 @@
               "date": "2026-07-07T23:03:07-07:00",
               "resolution": "4K",
               "viewCount": 348462
-            },
-            {
-              "youtubeLinkID": "8WteJKcbJ48",
-              "title": "8K | Priya Mithunam (song) | Prabhas, Kriti Senon | Adipurush",
-              "thumbnail": "https://img.youtube.com/vi/8WteJKcbJ48/maxresdefault.jpg",
-              "duration": "3:19",
-              "durationSec": 199,
-              "group": "Music",
-              "category": "Telugu",
-              "type": "Groovy",
-              "date": "2026-07-09T03:28:12-07:00",
-              "resolution": "8K",
-              "viewCount": 95318
             }
           ],
           "Energetic": [
@@ -9685,6 +9685,45 @@
               "date": "2026-07-05T07:30:31-07:00",
               "resolution": "8K",
               "viewCount": 12670
+            },
+            {
+              "youtubeLinkID": "KEPvL9NRnCk",
+              "title": "SHRI RADHA KRIPA KATAKSH STOTRA || SIMPAL KHAREL NEW SONG | RADHA KRISHNA BHAJAN 2026 | BHAKTI SONG",
+              "thumbnail": "https://img.youtube.com/vi/KEPvL9NRnCk/maxresdefault.jpg",
+              "duration": "6:43",
+              "durationSec": 403,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2026-01-24T07:03:23-08:00",
+              "resolution": "4K",
+              "viewCount": 711968
+            },
+            {
+              "youtubeLinkID": "LVM6Tb06Sto",
+              "title": "SHRI KRISHNA GOVIND HARE MURARI 2 PREVIEW ||  SIMPAL KHAREL| RADHA KRISHNA BHAJAN 2025 | BHAKTI SONG",
+              "thumbnail": "https://img.youtube.com/vi/LVM6Tb06Sto/maxresdefault.jpg",
+              "duration": "1:21",
+              "durationSec": 81,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2025-02-06T04:21:57-08:00",
+              "resolution": "4K",
+              "viewCount": 4283773
+            },
+            {
+              "youtubeLinkID": "iq_2f_gYz_M",
+              "title": "MADHURASHTAKAM || SIMPAL KHAREL NEW SONG | ADHARAM MADHURAM|| RADHA KRISHNA BHAJAN 2025 |BHAKTI SONG",
+              "thumbnail": "https://img.youtube.com/vi/iq_2f_gYz_M/maxresdefault.jpg",
+              "duration": "4:11",
+              "durationSec": 251,
+              "group": "Music",
+              "category": "Others",
+              "type": "Devotional",
+              "date": "2025-04-19T08:32:21-07:00",
+              "resolution": "4K",
+              "viewCount": 3479335
             }
           ],
           "Dance Covers": [
