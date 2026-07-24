@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-17T17:58:20.962Z",
+  "lastUpdated": "2026-07-24T14:15:08.896Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2663,6 +2663,19 @@
               "date": "2026-06-06T22:30:35-07:00",
               "resolution": "8K",
               "viewCount": 238727
+            },
+            {
+              "youtubeLinkID": "JCnJqPeUEdc",
+              "title": "Full Video: VaareVaa VaareVaa | Lenin | Akhil Akkineni,Bhagyashri B | Thaman S | Murali Kishor A",
+              "thumbnail": "https://img.youtube.com/vi/JCnJqPeUEdc/maxresdefault.jpg",
+              "duration": "3:09",
+              "durationSec": 189,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-07-23T05:29:06-07:00",
+              "resolution": "4K",
+              "viewCount": 300293
             }
           ],
           "Energetic": [
@@ -7905,6 +7918,19 @@
         "English": {
           "Adrenaline": [
             {
+              "youtubeLinkID": "ZSFb1IBVbgQ",
+              "title": "Amaarae - Angels in Tibet (Official Music Video)",
+              "thumbnail": "https://img.youtube.com/vi/ZSFb1IBVbgQ/maxresdefault.jpg",
+              "duration": "2:26",
+              "durationSec": 146,
+              "group": "Music",
+              "category": "English",
+              "type": "Adrenaline",
+              "date": "2024-03-13T09:00:06-07:00",
+              "resolution": "4K",
+              "viewCount": 11659565
+            },
+            {
               "youtubeLinkID": "a0ul-BghOAs",
               "title": "Phantogram - Black Out Days",
               "thumbnail": "https://img.youtube.com/vi/a0ul-BghOAs/maxresdefault.jpg",
@@ -7918,6 +7944,19 @@
               "viewCount": 40074375
             },
             {
+              "youtubeLinkID": "2KVS-MYD3Fk",
+              "title": "Darci - On My Own (Official Audio)",
+              "thumbnail": "https://img.youtube.com/vi/2KVS-MYD3Fk/maxresdefault.jpg",
+              "duration": "2:53",
+              "durationSec": 173,
+              "group": "Music",
+              "category": "English",
+              "type": "Adrenaline",
+              "date": "2018-05-14T10:16:26-07:00",
+              "resolution": "1080p",
+              "viewCount": 43126463
+            },
+            {
               "youtubeLinkID": "FFxsTiFGWT8",
               "title": "Ian Asher & Phantogram- Black Out Days (Official Audio)",
               "thumbnail": "https://img.youtube.com/vi/FFxsTiFGWT8/maxresdefault.jpg",
@@ -7929,6 +7968,19 @@
               "date": "2025-08-15T13:21:39-07:00",
               "resolution": "1080p",
               "viewCount": 6526447
+            },
+            {
+              "youtubeLinkID": "qsDfFE2i0Ws",
+              "title": "Often (Kygo Remix)",
+              "thumbnail": "https://img.youtube.com/vi/qsDfFE2i0Ws/maxresdefault.jpg",
+              "duration": "3:55",
+              "durationSec": 235,
+              "group": "Music",
+              "category": "English",
+              "type": "Adrenaline",
+              "date": "2018-07-28T06:23:58-07:00",
+              "resolution": "1080p",
+              "viewCount": 31747501
             },
             {
               "youtubeLinkID": "rW5P6W-Cq8c",
@@ -10044,6 +10096,19 @@
               "date": "2026-07-13T22:30:27-07:00",
               "resolution": "4K",
               "viewCount": 385
+            },
+            {
+              "youtubeLinkID": "RU3CM0xk0Y0",
+              "title": "Konchem Konchem - Lyrical | Nenu Ready | Nargis Fakhri | Havish, Kavya Thapar | Mickey J Meyer",
+              "thumbnail": "https://img.youtube.com/vi/RU3CM0xk0Y0/maxresdefault.jpg",
+              "duration": "3:34",
+              "durationSec": 214,
+              "group": "Music",
+              "category": "Others",
+              "type": "Lyrics",
+              "date": "2026-07-24T06:32:08-07:00",
+              "resolution": "4K",
+              "viewCount": 1433
             }
           ]
         }
