@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24T14:15:08.896Z",
+  "lastUpdated": "2026-07-26T03:34:36.927Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -8429,6 +8429,49 @@
               "date": "2023-01-19T11:00:07-08:00",
               "resolution": "4K",
               "viewCount": 454686246
+            }
+          ],
+          "Resonance": [
+            {
+              "youtubeLinkID": "34Na4j8AVgA",
+              "title": "The Weeknd - Starboy ft. Daft Punk (Official Video) ft. Daft Punk",
+              "thumbnail": "https://img.youtube.com/vi/34Na4j8AVgA/maxresdefault.jpg",
+              "duration": "4:34",
+              "durationSec": 274,
+              "group": "Music",
+              "category": "English",
+              "type": "Resonance",
+              "date": "2016-09-28T09:00:01-07:00",
+              "resolution": "1080p",
+              "viewCount": 2778547294
+            },
+            {
+              "youtubeLinkID": "4NRXx6U8ABQ",
+              "title": "The Weeknd - Blinding Lights (Official Video)",
+              "thumbnail": "https://img.youtube.com/vi/4NRXx6U8ABQ/maxresdefault.jpg",
+              "duration": "4:23",
+              "durationSec": 263,
+              "group": "Music",
+              "category": "English",
+              "type": "Resonance",
+              "date": "2020-01-21T10:00:10-08:00",
+              "resolution": "1080p",
+              "viewCount": 1048246064
+            }
+          ],
+          "Atmoshpheric": [
+            {
+              "youtubeLinkID": "_p2NvO6KrBs",
+              "title": "M83 - Solitude (Felsmann + Tiley Reinterpretation) (Official Audio)",
+              "thumbnail": "https://img.youtube.com/vi/_p2NvO6KrBs/maxresdefault.jpg",
+              "duration": "3:43",
+              "durationSec": 223,
+              "group": "Music",
+              "category": "English",
+              "type": "Atmoshpheric",
+              "date": "2020-05-14T02:41:12-07:00",
+              "resolution": "1080p",
+              "viewCount": 34558491
             }
           ]
         },
