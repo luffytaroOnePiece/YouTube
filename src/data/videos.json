@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-26T03:34:36.927Z",
+  "lastUpdated": "2026-07-29T12:50:37.239Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2676,6 +2676,32 @@
               "date": "2026-07-23T05:29:06-07:00",
               "resolution": "4K",
               "viewCount": 300293
+            },
+            {
+              "youtubeLinkID": "us61eVD7Tps",
+              "title": "Full Video: Yetta Yetta | Lenin | Akhil Akkineni | Bhagyashri Borse | Thaman S | Murali Kishor A",
+              "thumbnail": "https://img.youtube.com/vi/us61eVD7Tps/maxresdefault.jpg",
+              "duration": "3:22",
+              "durationSec": 202,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-07-26T22:29:06-07:00",
+              "resolution": "4K",
+              "viewCount": 211757
+            },
+            {
+              "youtubeLinkID": "qg1DHoFbn0I",
+              "title": "Full Video: Jaya Mangalam | Lenin | Akhil Akkineni | Bhagyashri Borse | Thaman S | Murali Kishor A",
+              "thumbnail": "https://img.youtube.com/vi/qg1DHoFbn0I/maxresdefault.jpg",
+              "duration": "3:23",
+              "durationSec": 203,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-07-29T03:29:06-07:00",
+              "resolution": "4K",
+              "viewCount": 16036
             }
           ],
           "Energetic": [
@@ -10152,6 +10178,19 @@
               "date": "2026-07-24T06:32:08-07:00",
               "resolution": "4K",
               "viewCount": 1433
+            },
+            {
+              "youtubeLinkID": "TZpedU88YU8",
+              "title": "Idemitamma Maya Lyrical Video | Aayudham | Dr Rajashekhar, Gurleen Chopra | Vandemataram Srinivas",
+              "thumbnail": "https://img.youtube.com/vi/TZpedU88YU8/maxresdefault.jpg",
+              "duration": "5:23",
+              "durationSec": 323,
+              "group": "Music",
+              "category": "Others",
+              "type": "Lyrics",
+              "date": "2026-07-27T06:25:08-07:00",
+              "resolution": "4K",
+              "viewCount": 20922
             }
           ]
         }
