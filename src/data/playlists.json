@@ -67,51 +67,9 @@
       }
     }
   },
-  "Nature": {
-    "icon": "",
-    "categories": {
-      "MacOS": {
-        "LandScapes": "PLA8Y5hhRksHwkotpoWrFIQj2y_qijQRK9",
-        "Urban": "PLA8Y5hhRksHyvQOrYAwTs62N4z3h5mkfM"
-      },
-      "Aerial Drone Shots": {
-        "Timelab Pro": "PLA8Y5hhRksHx-wYbldVlDMvxhACWgUSQo"
-      }
-    }
-  },
-  "Movies": {
-    "icon": "",
-    "categories": {
-      "Curated": {
-        "Telugu Classics": "PLk-aMlMwXfRwXfk5v3HabUWpVUP9j9q45",
-        "Telugu Essentials": "PLk-aMlMwXfRzIbt3SOocDSV67o5_cw0kr",
-        "Indian Cinema": "PLk-aMlMwXfRwlmPqvPcp_49WuoNcwG9Xc"
-      },
-      "Trailers": {
-        "Hindi": "PLk-aMlMwXfRxn-dF36yr5UhxkTpgmHRWs",
-        "Telugu": "PLk-aMlMwXfRwyMad0xng6g13xwIwX8kpo"
-      },
-      "Clips": {
-        "Visuals": "PLk-aMlMwXfRyue8AqcysJZuOO7sWvaejg"
-      }
-    }
-  },
-  "Games": {
-    "icon": "",
-    "categories": {
-      "PS5": {
-        "Game Trailers": "PLCXz5mzH0JBcUcC8fLschTpAxIk6PxntJ",
-        "Gameplay": "PLCXz5mzH0JBdVwiKsKJEDY82mEeDyNtbB",
-        "FH6 Cars": "PLCXz5mzH0JBfR_c-pOWgZLTMU3Sx6JXpH"
-      }
-    }
-  },
   "Anime": {
     "icon": "",
     "categories": {
-      "One Piece": {
-        "Elbaf": "PLA8Y5hhRksHyzoNwejqErOt_buqgA4z9U"
-      },
       "Lofi": {
         "Chill": "PLk-aMlMwXfRwtsMhNa6MrxDvVoT3CdoGT"
       }
