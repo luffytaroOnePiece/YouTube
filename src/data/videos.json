@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-29T12:50:37.239Z",
+  "lastUpdated": "2026-07-31T12:21:20.638Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -2702,6 +2702,32 @@
               "date": "2026-07-29T03:29:06-07:00",
               "resolution": "4K",
               "viewCount": 16036
+            },
+            {
+              "youtubeLinkID": "8r0QQKuNmDY",
+              "title": "Bangaram Video | Lenin | Akhil Akkineni | Bhagyashri Borse | Thaman S | Murali Kishor Abburu",
+              "thumbnail": "https://img.youtube.com/vi/8r0QQKuNmDY/maxresdefault.jpg",
+              "duration": "1:54",
+              "durationSec": 114,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-07-30T05:29:06-07:00",
+              "resolution": "4K",
+              "viewCount": 114753
+            },
+            {
+              "youtubeLinkID": "lS7xveVtGSo",
+              "title": "Chitralahari - Prema Vennela 8K/4K Video Song | Sai Tej | Devi Sri Prasad",
+              "thumbnail": "https://img.youtube.com/vi/lS7xveVtGSo/maxresdefault.jpg",
+              "duration": "3:30",
+              "durationSec": 210,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Groovy",
+              "date": "2026-07-30T07:30:25-07:00",
+              "resolution": "8K",
+              "viewCount": 22465
             }
           ],
           "Energetic": [
