@@ -220,7 +220,7 @@ function App() {
     }
     return vids
       .sort((a, b) => new Date(b.date) - new Date(a.date))
-      .slice(0, 100);
+      .slice(0, 300);
   }, [allVideos, activeResolution]);
 
   // Available resolutions
