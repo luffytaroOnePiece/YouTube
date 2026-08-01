@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-31T12:28:44.031Z",
+  "lastUpdated": "2026-08-01T02:14:07.699Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -5269,6 +5269,32 @@
               "date": "2026-06-08T06:00:14-07:00",
               "resolution": "4K",
               "viewCount": 27238
+            },
+            {
+              "youtubeLinkID": "LaQ39Ymby2M",
+              "title": "Ee Varsham Sakshiga Song 4K | Varsham Movie Songs | Prabhas, Trisha | TeluguOne Music",
+              "thumbnail": "https://img.youtube.com/vi/LaQ39Ymby2M/maxresdefault.jpg",
+              "duration": "5:05",
+              "durationSec": 305,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2026-07-31T05:45:06-07:00",
+              "resolution": "4K",
+              "viewCount": 1065
+            },
+            {
+              "youtubeLinkID": "oahjHpZmsMQ",
+              "title": "Preminche Premava 4k Video Song | Nuvvu Nenu Prema (2006) | Surya, Jyothika, Bhoomika | A.R. Rahman",
+              "thumbnail": "https://img.youtube.com/vi/oahjHpZmsMQ/maxresdefault.jpg",
+              "duration": "5:49",
+              "durationSec": 349,
+              "group": "Music",
+              "category": "Telugu",
+              "type": "Vintage",
+              "date": "2026-04-03T04:45:06-07:00",
+              "resolution": "4K",
+              "viewCount": 20034
             }
           ]
         },
@@ -7451,6 +7477,19 @@
               "date": "2026-07-09T22:30:21-07:00",
               "resolution": "4K",
               "viewCount": 2755458
+            },
+            {
+              "youtubeLinkID": "-IlIRjtlLKg",
+              "title": "ROY: Sooraj Dooba Hain 8K Video Song | Arijit Singh | Ranbir Kapoor | Jacqueline | Amaal Mallik",
+              "thumbnail": "https://img.youtube.com/vi/-IlIRjtlLKg/maxresdefault.jpg",
+              "duration": "3:52",
+              "durationSec": 232,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Groovy",
+              "date": "2026-07-20T04:30:01-07:00",
+              "resolution": "8K",
+              "viewCount": 755129
             }
           ],
           "Energetic": [
@@ -10230,6 +10269,19 @@
               "date": "2026-07-27T06:25:08-07:00",
               "resolution": "4K",
               "viewCount": 20922
+            },
+            {
+              "youtubeLinkID": "2IFs-OOTQ4k",
+              "title": "Oka Maru Kalisina Andam Lyrical Video | Ghajini | Suriya, Asin | Harris Jayaraj | A.R. Murugadoss",
+              "thumbnail": "https://img.youtube.com/vi/2IFs-OOTQ4k/maxresdefault.jpg",
+              "duration": "6:06",
+              "durationSec": 366,
+              "group": "Music",
+              "category": "Others",
+              "type": "Lyrics",
+              "date": "2026-07-31T05:21:46-07:00",
+              "resolution": "4K",
+              "viewCount": 6881
             }
           ]
         }
