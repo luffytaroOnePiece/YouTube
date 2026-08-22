@@ -1,0 +1,141 @@
+{
+  "lastUpdated": "2026-08-22T10:54:45.657Z",
+  "movies": {
+    "1122030": {
+      "tmdbId": 1122030,
+      "title": "Alpha",
+      "originalTitle": "ऐल्फा",
+      "language": "Hindi",
+      "year": 2026,
+      "releaseDate": "2026-07-02",
+      "overview": "When Sita, a highly trained assassin raised in isolation as a super-soldier by a rogue commander, discovers the dark truth about her family and her stolen childhood, she teams up with her long lost sister to take down her creator and his illicit military program.",
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "runtime": 141,
+      "voteAverage": 5.6,
+      "voteCount": 7,
+      "posterPath": "/jlwWG63Yud6q5Ofv4YWaLjzZoFH.jpg",
+      "backdropPath": "/b4WXm5ahmtubYXy3wqHUG2nUKoM.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/jlwWG63Yud6q5Ofv4YWaLjzZoFH.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/b4WXm5ahmtubYXy3wqHUG2nUKoM.jpg",
+      "youtubePlaylistId": "PLCg_nYalynsU",
+      "videos": [
+        {
+          "youtubeLinkID": "q5HK8lXE_aE",
+          "title": "Massacre Song | Music Video | ALPHA | Alia Bhatt, Sharvari | Rohansh & Abeer, Shilpa, Jonita, Kausar",
+          "thumbnail": "https://img.youtube.com/vi/q5HK8lXE_aE/maxresdefault.jpg",
+          "duration": "2:55",
+          "durationSec": 175,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "YwlndOd4xLE",
+          "title": "Champagne Song | ALPHA | Sharvari | Rohansh & Abeer | Akasa | Anvitaa Dutt",
+          "thumbnail": "https://img.youtube.com/vi/YwlndOd4xLE/maxresdefault.jpg",
+          "duration": "2:53",
+          "durationSec": 173,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "0-Vgg04M3m0",
+          "title": "Agni Song | ALPHA | Alia Bhatt, Sharvari, Anil Kapoor, Bobby Deol | Rohansh & Abeer | Ranj",
+          "thumbnail": "https://img.youtube.com/vi/0-Vgg04M3m0/maxresdefault.jpg",
+          "duration": "2:00",
+          "durationSec": 120,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "lR5aQMAl36k",
+          "title": "Haaniya Song | ALPHA | Alia Bhatt, Sharvari | Rohansh & Abeer | Vishal Dadlani | Kumaar",
+          "thumbnail": "https://img.youtube.com/vi/lR5aQMAl36k/maxresdefault.jpg",
+          "duration": "3:05",
+          "durationSec": 185,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "1392469": {
+      "tmdbId": 1392469,
+      "title": "Cocktail 2",
+      "originalTitle": "कॉकटेल २",
+      "language": "Hindi",
+      "year": 2026,
+      "releaseDate": "2026-06-19",
+      "overview": "A vacation in Sicily forces longtime partners Diya and Kunal to question their love and commitment after they reunite with Diya's old friend Ally.",
+      "genres": [
+        "Romance",
+        "Comedy"
+      ],
+      "runtime": 150,
+      "voteAverage": 5.792,
+      "voteCount": 24,
+      "posterPath": "/oIQmtByV1LtEQSwM4EpdLTyoSlM.jpg",
+      "backdropPath": "/6tROOVmV5vRymO2g52aR8kWlfoT.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/oIQmtByV1LtEQSwM4EpdLTyoSlM.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/6tROOVmV5vRymO2g52aR8kWlfoT.jpg",
+      "youtubePlaylistId": "PLAfQLhhHCEKA",
+      "videos": [
+        {
+          "youtubeLinkID": "eh_5uIWqh2M",
+          "title": "Leher (Official Video) Shahid, Kriti, Rashmika | Pritam, Arijit Singh, Amitabh B | Cocktail 2",
+          "thumbnail": "https://img.youtube.com/vi/eh_5uIWqh2M/maxresdefault.jpg",
+          "duration": "2:54",
+          "durationSec": 174,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "7jMzMXpSOjs",
+          "title": "Mashooqa (Video) Shahid, Kriti, Rashmika | Pritam, Mahmood, Amitabh B, Raghav C, Ruaa K | Cocktail 2",
+          "thumbnail": "https://img.youtube.com/vi/7jMzMXpSOjs/maxresdefault.jpg",
+          "duration": "2:56",
+          "durationSec": 176,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "0RxUcKE13ZI",
+          "title": "Bandhu 2.0 | Shahid, Kriti, Rashmika| Pritam | Kavita | Neeraj | Irshad K | Cocktail 2 | 19th June",
+          "thumbnail": "https://img.youtube.com/vi/0RxUcKE13ZI/maxresdefault.jpg",
+          "duration": "3:06",
+          "durationSec": 186,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "JBOkML4Ld9g",
+          "title": "Vallah (Official Video) Shahid, Kriti, Rashmika | Pritam, Bayanni, Harrdy S, Amitabh B | Cocktail 2",
+          "thumbnail": "https://img.youtube.com/vi/JBOkML4Ld9g/maxresdefault.jpg",
+          "duration": "2:17",
+          "durationSec": 137,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "D1F-6BbhYAo",
+          "title": "Jag Se Laaj (Video) | Shahid, Kriti, Rashmika | Pritam, Shilpa, Aarvan, WiSH, Amitabh B | Cocktail 2",
+          "thumbnail": "https://img.youtube.com/vi/D1F-6BbhYAo/maxresdefault.jpg",
+          "duration": "3:34",
+          "durationSec": 214,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    }
+  }
+}

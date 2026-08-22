@@ -5,12 +5,15 @@ import Player from "./components/Player";
 import ScriptsPage from "./components/ScriptsPage";
 import AnalyticsDashboard from "./components/AnalyticsDashboard";
 import AdvancedSearchPanel from "./components/AdvancedSearchPanel";
+import MoviesSection from "./components/movies/MoviesSection";
 import { useUrlFilters } from "./hooks/useUrlFilters";
 import videosData from "./data/videos.json";
 import favData from "./data/fav.json";
 import tagsData from "./data/tags.json";
 import ratingsData from "./data/ratings.json";
+import moviesData from "./data/moviesData.json";
 import "./styles/App.css";
+import "./styles/movies/Movies.css";
 
 const INITIAL_FILTERS = {
   group: "All",
@@ -161,6 +164,7 @@ function App() {
   const [gridColumns, setGridColumns] = useState(3);
   const [showScripts, setShowScripts] = useState(false);
   const [showAnalytics, setShowAnalytics] = useState(false);
+  const [showMovies, setShowMovies] = useState(false);
   const [playerMode, setPlayerMode] = useState("normal");
   const [isMonitorSize, setIsMonitorSize] = useState(false);
   const [isMiniPlayer, setIsMiniPlayer] = useState(false);
@@ -830,6 +834,33 @@ function App() {
                 <span>Analytics</span>
               </button>
               <button
+                className="header__analytics-btn"
+                onClick={() => setShowMovies((prev) => !prev)}
+                title="Movies"
+                style={showMovies ? { background: 'var(--accent-soft)', color: 'var(--accent)' } : {}}
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                  <line x1="7" y1="2" x2="7" y2="22"></line>
+                  <line x1="17" y1="2" x2="17" y2="22"></line>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <line x1="2" y1="7" x2="7" y2="7"></line>
+                  <line x1="2" y1="17" x2="7" y2="17"></line>
+                  <line x1="17" y1="7" x2="22" y2="7"></line>
+                  <line x1="17" y1="17" x2="22" y2="17"></line>
+                </svg>
+                <span>Movies</span>
+              </button>
+              <button
                 className="header__scripts-btn"
                 onClick={() => setIsMonitorSize(!isMonitorSize)}
                 title={
@@ -929,7 +960,7 @@ function App() {
       </div>
 
       {/* Home View: Latest Videos */}
-      {isHomeView && latestVideos.length > 0 && (
+      {isHomeView && !showMovies && latestVideos.length > 0 && (
         <section className="home-section">
           <div className="home-section__header">
             <span className="home-section__title">Recently Added</span>
@@ -950,8 +981,24 @@ function App() {
         </section>
       )}
 
+      {/* Home View: Movies Section */}
+      {isHomeView && !showMovies && (
+        <MoviesSection
+          moviesData={moviesData}
+          onVideoSelect={handleVideoSelect}
+        />
+      )}
+
+      {/* Dedicated Movies View */}
+      {showMovies && (
+        <MoviesSection
+          moviesData={moviesData}
+          onVideoSelect={handleVideoSelect}
+        />
+      )}
+
       {/* Filtered View */}
-      {!isHomeView && (
+      {!isHomeView && !showMovies && (
         <VideoGrid
           videos={filteredVideos}
           onVideoSelect={handleVideoSelect}
