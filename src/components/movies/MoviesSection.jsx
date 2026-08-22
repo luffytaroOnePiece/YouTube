@@ -35,15 +35,21 @@ export default function MoviesSection({ moviesData, onVideoSelect }) {
   };
 
   const handleVideoSelect = (video) => {
+    if (!selectedMovie) return;
+
     // Enrich video with movie context for player display
-    const enriched = {
-      ...video,
+    const enrich = (v) => ({
+      ...v,
       group: 'Movies',
-      category: selectedMovie?.language || '',
-      type: selectedMovie?.title || '',
-    };
+      category: selectedMovie.language || '',
+      type: selectedMovie.title || '',
+    });
+
+    const enrichedVideo = enrich(video);
+    const enrichedAlbum = (selectedMovie.videos || []).map(enrich);
+    
     setSelectedMovie(null);
-    onVideoSelect(enriched);
+    onVideoSelect(enrichedVideo, enrichedAlbum);
   };
 
   return (

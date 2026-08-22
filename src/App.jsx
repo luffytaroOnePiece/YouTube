@@ -175,6 +175,7 @@ function App() {
   // Queue / Autoplay state
   const [queue, setQueue] = useState([]);
   const [autoplay, setAutoplay] = useState(true);
+  const [currentPool, setCurrentPool] = useState(null);
 
   useEffect(() => {
     document.documentElement.style.zoom = isMonitorSize ? "1.75" : "1";
@@ -504,15 +505,25 @@ function App() {
   }, []);
 
   const handleVideoSelect = useCallback(
-    (video) => {
+    (video, customPool) => {
       setSelectedVideo(video);
-      setQueue(buildQueue(video, filteredVideos));
+      let nextPool = customPool;
+      if (!customPool && currentPool) {
+        // If clicking a video from the player's queue, keep the current pool if the video belongs to it
+        const isFromCurrentPool = currentPool.some((v) => v.youtubeLinkID === video.youtubeLinkID);
+        nextPool = isFromCurrentPool ? currentPool : null;
+      } else if (!customPool) {
+        nextPool = null;
+      }
+      setCurrentPool(nextPool);
+      setQueue(buildQueue(video, nextPool || filteredVideos));
     },
-    [filteredVideos, buildQueue],
+    [filteredVideos, buildQueue, currentPool],
   );
 
   const handleClosePlayer = useCallback(() => {
     setSelectedVideo(null);
+    setCurrentPool(null);
     setIsMiniPlayer(false);
     setQueue([]);
   }, []);
@@ -522,16 +533,17 @@ function App() {
     const nextVideo = queue[0];
     const remainingQueue = queue.slice(1);
     // Append more videos based on the new currentVideo to keep the queue populated
+    const poolToUse = currentPool || filteredVideos;
     const usedIds = new Set([
       nextVideo.youtubeLinkID,
       ...remainingQueue.map((q) => q.youtubeLinkID),
     ]);
-    const newRelated = filteredVideos
+    const newRelated = poolToUse
       .filter((v) => !usedIds.has(v.youtubeLinkID))
       .slice(0, 5);
     setSelectedVideo(nextVideo);
     setQueue([...remainingQueue, ...newRelated].slice(0, 15));
-  }, [queue, filteredVideos]);
+  }, [queue, currentPool, filteredVideos]);
 
   const handleQueueReorder = useCallback((newQueue) => {
     setQueue(newQueue);
