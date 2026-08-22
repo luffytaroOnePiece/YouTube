@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-22T10:54:45.657Z",
+  "lastUpdated": "2026-08-22T15:40:05.581Z",
   "movies": {
     "1122030": {
       "tmdbId": 1122030,
@@ -131,6 +131,80 @@
           "thumbnail": "https://img.youtube.com/vi/D1F-6BbhYAo/maxresdefault.jpg",
           "duration": "3:34",
           "durationSec": 214,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "1408170": {
+      "tmdbId": 1408170,
+      "title": "Lenin",
+      "originalTitle": "లెనిన్",
+      "language": "Telugu",
+      "year": 2026,
+      "releaseDate": "2026-07-10",
+      "overview": "In a village trapped by generations of bloodshed, a determined young man dares to challenge the traditions fueling an endless cycle of violence.",
+      "genres": [
+        "Action",
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 156,
+      "voteAverage": 6.4,
+      "voteCount": 5,
+      "posterPath": "/rAHQviBq8Fxi20hNtHPGLnr4L0f.jpg",
+      "backdropPath": "/5P6jYac8MjxyIh0m9JO4K7MUeUc.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/rAHQviBq8Fxi20hNtHPGLnr4L0f.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/5P6jYac8MjxyIh0m9JO4K7MUeUc.jpg",
+      "youtubePlaylistId": "PLLQM2eVZ57Rw",
+      "videos": [
+        {
+          "youtubeLinkID": "us61eVD7Tps",
+          "title": "Full Video: Yetta Yetta | Lenin | Akhil Akkineni | Bhagyashri Borse | Thaman S | Murali Kishor A",
+          "thumbnail": "https://img.youtube.com/vi/us61eVD7Tps/maxresdefault.jpg",
+          "duration": "3:22",
+          "durationSec": 202,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "EjnJ0T5qqVM",
+          "title": "Full Video: Soul of Lenin | Lenin | Akhil Akkineni | Bhagyashri Borse | Thaman S | Murali Kishor A",
+          "thumbnail": "https://img.youtube.com/vi/EjnJ0T5qqVM/maxresdefault.jpg",
+          "duration": "2:19",
+          "durationSec": 139,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "JCnJqPeUEdc",
+          "title": "Full Video: VaareVaa VaareVaa | Lenin | Akhil Akkineni,Bhagyashri B | Thaman S | Murali Kishor A",
+          "thumbnail": "https://img.youtube.com/vi/JCnJqPeUEdc/maxresdefault.jpg",
+          "duration": "3:09",
+          "durationSec": 189,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "8r0QQKuNmDY",
+          "title": "Bangaram Video | Lenin | Akhil Akkineni | Bhagyashri Borse | Thaman S | Murali Kishor Abburu",
+          "thumbnail": "https://img.youtube.com/vi/8r0QQKuNmDY/maxresdefault.jpg",
+          "duration": "1:54",
+          "durationSec": 114,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "qg1DHoFbn0I",
+          "title": "Full Video: Jaya Mangalam | Lenin | Akhil Akkineni | Bhagyashri Borse | Thaman S | Murali Kishor A",
+          "thumbnail": "https://img.youtube.com/vi/qg1DHoFbn0I/maxresdefault.jpg",
+          "duration": "3:23",
+          "durationSec": 203,
           "date": "",
           "resolution": "",
           "viewCount": 0

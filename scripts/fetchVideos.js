@@ -1,9 +1,12 @@
 import fs from 'fs';
 import path from 'path';
-import { execSync } from 'child_process';
+import { exec } from 'child_process';
+import { promisify } from 'util';
 import ytpl from 'ytpl';
 import ytdl from 'ytdl-core';
 import { fileURLToPath } from 'url';
+
+const execAsync = promisify(exec);
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -78,7 +81,7 @@ export async function fetchPlaylist(idOrUrl, groupName, categoryName, playlistNa
   let playlistItems = [];
   try {
     const url = `https://www.youtube.com/playlist?list=${playlistId}`;
-    const raw = execSync(
+    const { stdout: raw } = await execAsync(
       `yt-dlp --flat-playlist --dump-json --no-warnings "${url}"`,
       { encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, timeout: 120000 }
     );
@@ -229,6 +232,8 @@ export async function fetchVideos(opts = {}) {
     ? [[targetGroup, playlists[targetGroup]]]
     : Object.entries(playlists);
 
+  const allTasks = [];
+
   for (const [groupName, groupConfig] of groupsToProcess) {
     const icon = groupConfig.icon || '';
     const allCategories = groupConfig.categories || {};
@@ -255,33 +260,42 @@ export async function fetchVideos(opts = {}) {
         : Object.entries(catPlaylists || {});
 
       for (const [plName, idOrUrlRaw] of plToProcess) {
-        log(`\n━━━ ${icon} ${groupName} > ${catName} > ${plName} ━━━`);
-        if (!idOrUrlRaw) { log(`    ⚠️  No ID, skipping.`); continue; }
-
-        // Support both single ID (string) and multiple IDs (array)
-        const ids = Array.isArray(idOrUrlRaw) ? idOrUrlRaw : [idOrUrlRaw];
-        log(`    IDs: ${ids.join(', ')}${ids.length > 1 ? ` (${ids.length} playlists)` : ''}`);
-
-        try {
-          const allVideos = [];
-          const seen = new Set();
-          for (let i = 0; i < ids.length; i++) {
-            if (ids.length > 1) log(`\n    📂 Playlist ${i + 1}/${ids.length}: ${ids[i]}`);
-            const videos = await fetchPlaylist(ids[i], groupName, catName, plName, videoCache, log);
-            for (const v of videos) {
-              if (!seen.has(v.youtubeLinkID)) {
-                seen.add(v.youtubeLinkID);
-                allVideos.push(v);
-              }
-            }
-          }
-          existingGroups[groupName].categories[catName][plName] = allVideos;
-          log(`    ✅ ${plName}: ${allVideos.length} videos saved.`);
-        } catch (err) {
-          log(`    ❌ Error: ${err.message}`);
-        }
+        if (!idOrUrlRaw) { log(`    ⚠️  No ID for ${plName}, skipping.`); continue; }
+        allTasks.push({ groupName, icon, catName, plName, idOrUrlRaw });
       }
     }
+  }
+
+  const chunkArray = (arr, size) => Array.from({ length: Math.ceil(arr.length / size) }, (v, i) => arr.slice(i * size, i * size + size));
+  const chunks = chunkArray(allTasks, 5); // 5 playlists concurrently
+
+  log(`\n🚀 Starting concurrent processing of ${allTasks.length} playlists (in chunks of 5)...\n`);
+
+  for (let i = 0; i < chunks.length; i++) {
+    log(`⏳ Processing chunk ${i + 1}/${chunks.length}...`);
+    await Promise.all(chunks[i].map(async (task) => {
+      const { groupName, icon, catName, plName, idOrUrlRaw } = task;
+      const ids = Array.isArray(idOrUrlRaw) ? idOrUrlRaw : [idOrUrlRaw];
+      log(`  ➤ ${icon} ${groupName} > ${catName} > ${plName} (${ids.length} lists)`);
+
+      try {
+        const allVideos = [];
+        const seen = new Set();
+        for (let j = 0; j < ids.length; j++) {
+          const videos = await fetchPlaylist(ids[j], groupName, catName, plName, videoCache, () => {}); // silence inner logs
+          for (const v of videos) {
+            if (!seen.has(v.youtubeLinkID)) {
+              seen.add(v.youtubeLinkID);
+              allVideos.push(v);
+            }
+          }
+        }
+        existingGroups[groupName].categories[catName][plName] = allVideos;
+        log(`    ✅ ${plName}: ${allVideos.length} videos saved.`);
+      } catch (err) {
+        log(`    ❌ Error on ${plName}: ${err.message}`);
+      }
+    }));
   }
 
   // Write

@@ -1,7 +1,10 @@
 import fs from 'fs';
 import path from 'path';
-import { execSync } from 'child_process';
+import { exec } from 'child_process';
+import { promisify } from 'util';
 import { fileURLToPath } from 'url';
+
+const execAsync = promisify(exec);
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -64,11 +67,11 @@ function formatDuration(seconds) {
 }
 
 // ── Fetch YouTube Playlist via yt-dlp ──────────────────────────
-function fetchPlaylistVideos(playlistId) {
+async function fetchPlaylistVideos(playlistId) {
   if (!playlistId) return [];
   try {
     const url = `https://www.youtube.com/playlist?list=${playlistId}`;
-    const raw = execSync(
+    const { stdout: raw } = await execAsync(
       `yt-dlp --flat-playlist --dump-json --no-warnings "${url}"`,
       { encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, timeout: 120000 }
     );
@@ -117,68 +120,68 @@ async function fetchMovies() {
 
   const movies = {};
 
-  for (let i = 0; i < tmdbIds.length; i++) {
-    const tmdbId = tmdbIds[i];
-    const entry = moviesInput[tmdbId];
-    const progress = `[${i + 1}/${tmdbIds.length}]`;
+  const chunkArray = (arr, size) => Array.from({ length: Math.ceil(arr.length / size) }, (v, i) => arr.slice(i * size, i * size + size));
+  const chunks = chunkArray(tmdbIds, 5); // 5 movies concurrently
 
-    console.log(`${progress} 🎥 Processing: ${entry.title} (TMDB: ${tmdbId})`);
+  console.log(`\n🚀 Starting concurrent processing of ${tmdbIds.length} movies (in chunks of 5)...\n`);
 
-    // Check if we have cached TMDB data and playlist videos
-    const cached = existingMovies[tmdbId];
-    if (cached && cached.posterPath && cached.videos && cached.videos.length > 0) {
-      console.log(`  ⚡ CACHED — ${cached.videos.length} videos`);
-      // Update language from input in case it changed
-      movies[tmdbId] = { ...cached, language: entry.language || cached.language };
-      continue;
-    }
+  for (let i = 0; i < chunks.length; i++) {
+    const chunk = chunks[i];
+    console.log(`⏳ Processing chunk ${i + 1}/${chunks.length}...`);
+    
+    await Promise.all(chunk.map(async (tmdbId) => {
+      const entry = moviesInput[tmdbId];
+      const progress = `[ID: ${tmdbId}]`;
 
-    // ── Fetch TMDB metadata ──────────────────────────────────
-    console.log('  📡 Fetching TMDB metadata...');
-    const details = await tmdbFetch(`/movie/${tmdbId}?language=en-US`);
-    await sleep(DELAY_MS);
+      // Check if we have cached TMDB data and playlist videos
+      const cached = existingMovies[tmdbId];
+      if (cached && cached.posterPath && cached.videos && cached.videos.length > 0) {
+        console.log(`  ⚡ CACHED — ${entry.title}`);
+        // Update language from input in case it changed
+        movies[tmdbId] = { ...cached, language: entry.language || cached.language };
+        return;
+      }
 
-    if (!details) {
-      console.log(`  ❌ Failed to fetch TMDB details, skipping.`);
-      continue;
-    }
+      // ── Fetch TMDB metadata ──────────────────────────────────
+      const details = await tmdbFetch(`/movie/${tmdbId}?language=en-US`);
+      if (!details) {
+        console.log(`  ❌ Failed to fetch TMDB details for ${tmdbId}, skipping.`);
+        return;
+      }
 
-    const releaseYear = details.release_date ? new Date(details.release_date).getFullYear() : null;
-    const genres = (details.genres || []).map(g => g.name);
-    const posterUrl = details.poster_path
-      ? `https://image.tmdb.org/t/p/w500${details.poster_path}`
-      : null;
-    const backdropUrl = details.backdrop_path
-      ? `https://image.tmdb.org/t/p/original${details.backdrop_path}`
-      : null;
+      const releaseYear = details.release_date ? new Date(details.release_date).getFullYear() : null;
+      const genres = (details.genres || []).map(g => g.name);
+      const posterUrl = details.poster_path
+        ? `https://image.tmdb.org/t/p/w500${details.poster_path}`
+        : null;
+      const backdropUrl = details.backdrop_path
+        ? `https://image.tmdb.org/t/p/original${details.backdrop_path}`
+        : null;
 
-    console.log(`  ✓ ${details.title} (${releaseYear}) — ${genres.join(', ')}`);
+      // ── Fetch YouTube playlist videos ────────────────────────
+      const videos = await fetchPlaylistVideos(entry.YoutubePlaylistId);
+      console.log(`  ✓ ${details.title} (${releaseYear}) — ${videos.length} videos found`);
 
-    // ── Fetch YouTube playlist videos ────────────────────────
-    console.log(`  📋 Fetching YouTube playlist: ${entry.YoutubePlaylistId}...`);
-    const videos = fetchPlaylistVideos(entry.YoutubePlaylistId);
-    console.log(`  ✓ ${videos.length} videos found`);
-
-    movies[tmdbId] = {
-      tmdbId: parseInt(tmdbId),
-      title: details.title || entry.title,
-      originalTitle: details.original_title || '',
-      language: entry.language || '',
-      year: releaseYear,
-      releaseDate: details.release_date || '',
-      overview: details.overview || '',
-      genres,
-      runtime: details.runtime || 0,
-      voteAverage: details.vote_average || 0,
-      voteCount: details.vote_count || 0,
-      posterPath: details.poster_path || '',
-      backdropPath: details.backdrop_path || '',
-      posterUrl,
-      backdropUrl,
-      youtubePlaylistId: entry.YoutubePlaylistId,
-      videos,
-    };
-
+      movies[tmdbId] = {
+        tmdbId: parseInt(tmdbId),
+        title: details.title || entry.title,
+        originalTitle: details.original_title || '',
+        language: entry.language || '',
+        year: releaseYear,
+        releaseDate: details.release_date || '',
+        overview: details.overview || '',
+        genres,
+        runtime: details.runtime || 0,
+        voteAverage: details.vote_average || 0,
+        voteCount: details.vote_count || 0,
+        posterPath: details.poster_path || '',
+        backdropPath: details.backdrop_path || '',
+        posterUrl,
+        backdropUrl,
+        youtubePlaylistId: entry.YoutubePlaylistId,
+        videos,
+      };
+    }));
     await sleep(DELAY_MS);
   }
 
