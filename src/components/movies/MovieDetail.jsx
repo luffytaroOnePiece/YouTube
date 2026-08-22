@@ -1,4 +1,5 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { useEffect, useCallback, useState } from 'react';
+import { getImages, getImageUrl } from '../../services/tmdbApi';
 
 function formatRuntime(minutes) {
   if (!minutes) return '';
@@ -30,6 +31,23 @@ export default function MovieDetail({ movie, onClose, onVideoSelect }) {
 
   const hasBackdrop = !!movie.backdropUrl;
   const videos = movie.videos || [];
+
+  const [activeTab, setActiveTab] = useState('videos');
+  const [galleryImages, setGalleryImages] = useState(null);
+  const [isLoadingGallery, setIsLoadingGallery] = useState(false);
+
+  useEffect(() => {
+    if (activeTab === 'gallery' && !galleryImages && !isLoadingGallery) {
+      setIsLoadingGallery(true);
+      getImages(movie.tmdbId, 'movie').then(data => {
+        setGalleryImages(data);
+        setIsLoadingGallery(false);
+      }).catch(err => {
+        console.error("Failed to fetch gallery images:", err);
+        setIsLoadingGallery(false);
+      });
+    }
+  }, [activeTab, movie.tmdbId, galleryImages, isLoadingGallery]);
 
   return (
     <div
@@ -118,8 +136,24 @@ export default function MovieDetail({ movie, onClose, onVideoSelect }) {
           </div>
         </div>
 
+        {/* Tabs */}
+        <div className="movie-detail__tabs">
+          <button 
+            className={`movie-detail__tab ${activeTab === 'videos' ? 'movie-detail__tab--active' : ''}`}
+            onClick={() => setActiveTab('videos')}
+          >
+            Videos
+          </button>
+          <button 
+            className={`movie-detail__tab ${activeTab === 'gallery' ? 'movie-detail__tab--active' : ''}`}
+            onClick={() => setActiveTab('gallery')}
+          >
+            Gallery
+          </button>
+        </div>
+
         {/* Videos */}
-        {videos.length > 0 && (
+        {activeTab === 'videos' && videos.length > 0 && (
           <div className="movie-detail__videos">
             <div className="movie-detail__videos-header">
               <span className="movie-detail__videos-title">Videos</span>
@@ -163,6 +197,31 @@ export default function MovieDetail({ movie, onClose, onVideoSelect }) {
                 </div>
               ))}
             </div>
+          </div>
+        )}
+
+        {/* Gallery */}
+        {activeTab === 'gallery' && (
+          <div className="movie-detail__gallery">
+            {isLoadingGallery && (
+              <div className="movie-detail__loader">Loading high-quality images...</div>
+            )}
+            {!isLoadingGallery && galleryImages && (
+              <div className="movie-detail__gallery-grid">
+                {(galleryImages.backdrops || []).map((img, i) => (
+                  <div key={i} className="movie-detail__gallery-item">
+                    <img
+                      src={getImageUrl(img.file_path, 'original')}
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
+            {!isLoadingGallery && galleryImages && (!galleryImages.backdrops || galleryImages.backdrops.length === 0) && (
+              <div className="movie-detail__empty">No gallery images found.</div>
+            )}
           </div>
         )}
       </div>
