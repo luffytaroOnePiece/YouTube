@@ -1,5 +1,6 @@
-import React, { useEffect, useCallback, useState } from 'react';
+import React, { useEffect, useCallback, useState, useMemo } from 'react';
 import { getImages, getImageUrl } from '../../services/tmdbApi';
+import MovieCard from './MovieCard';
 
 function formatRuntime(minutes) {
   if (!minutes) return '';
@@ -9,7 +10,7 @@ function formatRuntime(minutes) {
   return m > 0 ? `${h}h ${m}m` : `${h}h`;
 }
 
-export default function MovieDetail({ movie, onClose, onVideoSelect }) {
+export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSelect, onMovieClick }) {
   // Lock body scroll
   useEffect(() => {
     const prev = document.body.style.overflow;
@@ -35,6 +36,42 @@ export default function MovieDetail({ movie, onClose, onVideoSelect }) {
   const [activeTab, setActiveTab] = useState('videos');
   const [galleryImages, setGalleryImages] = useState(null);
   const [isLoadingGallery, setIsLoadingGallery] = useState(false);
+
+  // Compute recommendations based on genre, language, and year
+  const recommendations = useMemo(() => {
+    if (!allMovies || allMovies.length <= 1) return [];
+    const movieGenres = new Set(movie.genres || []);
+    const movieYear = movie.year || 0;
+    const movieLang = (movie.language || '').toLowerCase();
+
+    const scored = allMovies
+      .filter(m => m.tmdbId !== movie.tmdbId)
+      .map(m => {
+        let score = 0;
+        // Same language: +5
+        if (movieLang && (m.language || '').toLowerCase() === movieLang) score += 5;
+        // Matching genres: +2 per shared genre
+        const otherGenres = m.genres || [];
+        for (const g of otherGenres) {
+          if (movieGenres.has(g)) score += 2;
+        }
+        // Year proximity
+        const otherYear = m.year || 0;
+        if (movieYear && otherYear) {
+          const diff = Math.abs(movieYear - otherYear);
+          if (diff === 0) score += 3;
+          else if (diff <= 2) score += 2;
+          else if (diff <= 5) score += 1;
+        }
+        return { movie: m, score };
+      })
+      .filter(item => item.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 6)
+      .map(item => item.movie);
+
+    return scored;
+  }, [movie, allMovies]);
 
   useEffect(() => {
     if (activeTab === 'gallery' && !galleryImages && !isLoadingGallery) {
@@ -222,6 +259,23 @@ export default function MovieDetail({ movie, onClose, onVideoSelect }) {
             {!isLoadingGallery && galleryImages && (!galleryImages.backdrops || galleryImages.backdrops.length === 0) && (
               <div className="movie-detail__empty">No gallery images found.</div>
             )}
+          </div>
+        )}
+
+        {/* Recommendations */}
+        {recommendations.length > 0 && (
+          <div className="movie-detail__recommendations">
+            <h2 className="movie-detail__recommendations-title">More Like This</h2>
+            <div className="movie-detail__recommendations-grid">
+              {recommendations.map((rec, index) => (
+                <MovieCard
+                  key={rec.tmdbId}
+                  movie={rec}
+                  onClick={onMovieClick}
+                  index={index}
+                />
+              ))}
+            </div>
           </div>
         )}
       </div>

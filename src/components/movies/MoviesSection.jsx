@@ -107,8 +107,10 @@ export default function MoviesSection({ moviesData, onVideoSelect }) {
       {selectedMovie && (
         <MovieDetail
           movie={selectedMovie}
+          allMovies={allMovies}
           onClose={() => setSelectedMovie(null)}
           onVideoSelect={handleVideoSelect}
+          onMovieClick={handleMovieClick}
         />
       )}
     </section>

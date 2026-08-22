@@ -1,6 +1,134 @@
 {
-  "lastUpdated": "2026-08-22T15:40:05.581Z",
+  "lastUpdated": "2026-08-22T15:50:38.566Z",
   "movies": {
+    "1022453": {
+      "tmdbId": 1022453,
+      "title": "The Rajasaab",
+      "originalTitle": "ది రాజాసాబ్",
+      "language": "Telugu",
+      "year": 2026,
+      "releaseDate": "2026-01-08",
+      "overview": "Seeking his lost grandfather, a young man enters a haunted mansion and awakens a family curse powerful enough to upend both his life and reality.",
+      "genres": [
+        "Comedy",
+        "Horror",
+        "Fantasy",
+        "Action"
+      ],
+      "runtime": 186,
+      "voteAverage": 5.152,
+      "voteCount": 33,
+      "posterPath": "/nvK6gYa4diCnQkDVN42uoYXPrdT.jpg",
+      "backdropPath": "/kCwmLYy9ZMto1eMH8BI9KcVVIH2.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/nvK6gYa4diCnQkDVN42uoYXPrdT.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/kCwmLYy9ZMto1eMH8BI9KcVVIH2.jpg",
+      "youtubePlaylistId": "PLdRS9AouhFHM",
+      "videos": [
+        {
+          "youtubeLinkID": "hLXWkFKY4XI",
+          "title": "Nache Nache - 8K Video | The RajaSaab | Prabhas, Malavika Mohan, Nidhhi Agerwal, Riddhi | Thaman S",
+          "thumbnail": "https://img.youtube.com/vi/hLXWkFKY4XI/maxresdefault.jpg",
+          "duration": "3:28",
+          "durationSec": 208,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "2nbj5UT-1Jc",
+          "title": "Full Video: Sahana Sahana | The Rajasaab | Prabhas | Nidhhi Agerwal | Maruthi | Thaman S | Vishal M",
+          "thumbnail": "https://img.youtube.com/vi/2nbj5UT-1Jc/maxresdefault.jpg",
+          "duration": "4:18",
+          "durationSec": 258,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "bkSa4J15WNc",
+          "title": "Full Video: Raje Yuvaraje Song - The Rajasaab | Prabhas | Nidhhi Agerwal | Thaman S | Maruthi",
+          "thumbnail": "https://img.youtube.com/vi/bkSa4J15WNc/maxresdefault.jpg",
+          "duration": "4:13",
+          "durationSec": 253,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "eVzQL5rQMms",
+          "title": "Full Video: Rebel Saab (Telugu) - The RajaSaab | Prabhas | Maruthi  | Thaman S | Vishwa Prasad",
+          "thumbnail": "https://img.youtube.com/vi/eVzQL5rQMms/maxresdefault.jpg",
+          "duration": "3:39",
+          "durationSec": 219,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "1057265": {
+      "tmdbId": 1057265,
+      "title": "Peddi",
+      "originalTitle": "పెద్ది",
+      "language": "Telugu",
+      "year": 2026,
+      "releaseDate": "2026-06-03",
+      "overview": "In a village that doesn't officially exist, a laborer's unmatched athletic talent becomes his weapon to fight for his people's right to be recognized.",
+      "genres": [
+        "Action",
+        "Drama"
+      ],
+      "runtime": 189,
+      "voteAverage": 5.8,
+      "voteCount": 66,
+      "posterPath": "/kJAJNNBYlbqAcpTDxBNnaILSMTy.jpg",
+      "backdropPath": "/oPsRr7AfNLw6XaPuMpvkWK0bIUA.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/kJAJNNBYlbqAcpTDxBNnaILSMTy.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/oPsRr7AfNLw6XaPuMpvkWK0bIUA.jpg",
+      "youtubePlaylistId": "PLWA6_wa76_FA",
+      "videos": [
+        {
+          "youtubeLinkID": "IRBEhaYydS8",
+          "title": "Full Video: Hellallallo | Peddi | Ram Charan | Buchi Babu | Shruthi Haasan | Janhvi | AR Rahman",
+          "thumbnail": "https://img.youtube.com/vi/IRBEhaYydS8/maxresdefault.jpg",
+          "duration": "4:00",
+          "durationSec": 240,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "RyzPweJKJ9M",
+          "title": "Full Video: Chikiri Chikiri | Peddi | Ram Charan | Janhvi | Buchi Babu | AR Rahman | Mohit Chauhan",
+          "thumbnail": "https://img.youtube.com/vi/RyzPweJKJ9M/maxresdefault.jpg",
+          "duration": "4:38",
+          "durationSec": 278,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "p-dSzDYunL8",
+          "title": "Full Video: Rai Rai Raa Raa Song | Peddi | Ram Charan | Janhvi | Buchi Babu Sana | AR Rahman",
+          "thumbnail": "https://img.youtube.com/vi/p-dSzDYunL8/maxresdefault.jpg",
+          "duration": "4:44",
+          "durationSec": 284,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "tlRlavbg3sY",
+          "title": "Full Video: Massa Massa | Peddi | Ram Charan | Buchi Babu | Janhvi | AR Rahman |Vishal Mishra",
+          "thumbnail": "https://img.youtube.com/vi/tlRlavbg3sY/maxresdefault.jpg",
+          "duration": "4:23",
+          "durationSec": 263,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
     "1122030": {
       "tmdbId": 1122030,
       "title": "Alpha",
@@ -58,6 +186,70 @@
           "thumbnail": "https://img.youtube.com/vi/lR5aQMAl36k/maxresdefault.jpg",
           "duration": "3:05",
           "durationSec": 185,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "1226354": {
+      "tmdbId": 1226354,
+      "title": "Param Sundari",
+      "originalTitle": "परम सुंदरी",
+      "language": "Hindi",
+      "year": 2025,
+      "releaseDate": "2025-08-29",
+      "overview": "In Kerala's picturesque backwaters, a North Indian and South Indian find unexpected love. Their cultural differences spark a hilarious and chaotic romance, full of twists and turns.",
+      "genres": [
+        "Romance",
+        "Drama",
+        "Comedy"
+      ],
+      "runtime": 136,
+      "voteAverage": 5.522,
+      "voteCount": 23,
+      "posterPath": "/uLPUsH3Fwe6mAU7n6WpMSDLdYCm.jpg",
+      "backdropPath": "/A5FkracCv0UeQuRPtM0dcXlUzz2.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/uLPUsH3Fwe6mAU7n6WpMSDLdYCm.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/A5FkracCv0UeQuRPtM0dcXlUzz2.jpg",
+      "youtubePlaylistId": "PLMW9GpfXlr9c",
+      "videos": [
+        {
+          "youtubeLinkID": "UMFR2nAcego",
+          "title": "Pardesiya (8K/4K Music Video) Sidharth M, Janhvi K |Sachin-Jigar, Sonu Nigam, Krishnakali, Amitabh B",
+          "thumbnail": "https://img.youtube.com/vi/UMFR2nAcego/maxresdefault.jpg",
+          "duration": "2:54",
+          "durationSec": 174,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "csVPrZhr3NQ",
+          "title": "Bheegi Saree (8K Music Video) Sidharth M, Janhvi K | Sachin-Jigar, Adnan Sami, Shreya G, Amitabh B",
+          "thumbnail": "https://img.youtube.com/vi/csVPrZhr3NQ/maxresdefault.jpg",
+          "duration": "2:53",
+          "durationSec": 173,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "imaTkoWPkR8",
+          "title": "Danger (8K Music Video) | Sidharth Malhotra, Janhvi K | Sachin-Jigar, Vishal D, Parvati M, Amitabh B",
+          "thumbnail": "https://img.youtube.com/vi/imaTkoWPkR8/maxresdefault.jpg",
+          "duration": "2:35",
+          "durationSec": 155,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "lJL7ASAukyo",
+          "title": "Sunn Mere Yaar Ve (8K Video) Sidharth M, Janhvi K |Sachin-Jigar, Aditya R, Amitabh B | Param Sundari",
+          "thumbnail": "https://img.youtube.com/vi/lJL7ASAukyo/maxresdefault.jpg",
+          "duration": "2:36",
+          "durationSec": 156,
           "date": "",
           "resolution": "",
           "viewCount": 0

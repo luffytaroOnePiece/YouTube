@@ -805,6 +805,26 @@
   font-size: 0.9rem;
 }
 
+/* ── Recommendations ───────────────────────────────────────── */
+.movie-detail__recommendations {
+  padding: 40px 32px 48px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.movie-detail__recommendations-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+
+.movie-detail__recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
 /* ── Responsive ────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .movies-section__grid {
