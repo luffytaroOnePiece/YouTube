@@ -69,12 +69,64 @@
   margin-left: 8px;
 }
 
-/* ── Language Pills ────────────────────────────────────────── */
+/* ── Controls & Filters ────────────────────────────────────── */
+.movies-section__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
 .movies-section__lang-pills {
   display: flex;
   gap: 8px;
-  margin-bottom: 24px;
   flex-wrap: wrap;
+}
+
+.movies-section__sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.movies-section__sort-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+
+.movies-section__sort-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.movies-section__sort-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.movies-section__sort-btn--active {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border-color: transparent;
+}
+
+.movies-section__sort-icon {
+  width: 14px;
+  height: 14px;
+  transition: transform var(--transition-fast);
 }
 
 .movies-section__pill {

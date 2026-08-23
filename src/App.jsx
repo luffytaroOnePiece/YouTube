@@ -937,9 +937,10 @@ function App() {
         </header>
 
         {/* Filter Bar */}
-        <FilterBar
-          groups={groups}
-          groupMeta={groupMeta}
+        {!showMovies && (
+          <FilterBar
+            groups={groups}
+            groupMeta={groupMeta}
           activeGroup={activeGroup}
           onGroupChange={handleGroupChange}
           categories={activeCategories}
@@ -966,9 +967,10 @@ function App() {
             setFilters({ group, category, playlist: "All", resolution });
           }}
           isLocal={isLocal}
-          isFavoritesMode={isFavoritesMode}
-          onToggleFavoritesMode={() => setIsFavoritesMode((prev) => !prev)}
-        />
+            isFavoritesMode={isFavoritesMode}
+            onToggleFavoritesMode={() => setIsFavoritesMode((prev) => !prev)}
+          />
+        )}
       </div>
 
       {/* Home View: Latest Videos */}
@@ -998,6 +1000,7 @@ function App() {
         <MoviesSection
           moviesData={moviesData}
           onVideoSelect={handleVideoSelect}
+          searchQuery={searchQuery}
         />
       )}
 
@@ -1006,6 +1009,7 @@ function App() {
         <MoviesSection
           moviesData={moviesData}
           onVideoSelect={handleVideoSelect}
+          searchQuery={searchQuery}
         />
       )}
 
