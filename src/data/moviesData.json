@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-22T15:50:38.566Z",
+  "lastUpdated": "2026-08-23T03:39:46.978Z",
   "movies": {
     "1022453": {
       "tmdbId": 1022453,
@@ -129,6 +129,99 @@
         }
       ]
     },
+    "1080365": {
+      "tmdbId": 1080365,
+      "title": "They Call Him OG",
+      "originalTitle": "దె కాల్ హిమ్ ఓజి",
+      "language": "Telugu",
+      "year": 2025,
+      "releaseDate": "2025-09-24",
+      "overview": "After vanishing from Mumbai's underworld for a decade, mob boss Ojas Gambheera resurfaces—feared, unstoppable, and with a single goal: to reclaim his empire and exact vengeance on the current tyrant, Omi Bhau. As loyalties fracture and alliances shift, OG reignites a brutal criminal war, confronting both external threats and haunting buried betrayals.",
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "runtime": 155,
+      "voteAverage": 6,
+      "voteCount": 37,
+      "posterPath": "/yHyvS4OMq8oij11Co9CbeMqLUo2.jpg",
+      "backdropPath": "/lBJR69jrQ8I84irRexFfO70v0EA.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/yHyvS4OMq8oij11Co9CbeMqLUo2.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/lBJR69jrQ8I84irRexFfO70v0EA.jpg",
+      "youtubePlaylistId": "PLdc9KDhiSU3U",
+      "videos": [
+        {
+          "youtubeLinkID": "-6h-ycYVbgQ",
+          "title": "Guns and Roses 8K 60 FPS Video Song | They Call Him OG | Pawan Kalyan | Emraan Hashmi | Thaman S",
+          "thumbnail": "https://img.youtube.com/vi/-6h-ycYVbgQ/maxresdefault.jpg",
+          "duration": "1:42",
+          "durationSec": 102,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "uMsgoBhcpCg",
+          "title": "Firestorm 8K 60 FPS Video Song | They Call Him OG | Pawan Kalyan | Sujeeth | Thaman S",
+          "thumbnail": "https://img.youtube.com/vi/uMsgoBhcpCg/maxresdefault.jpg",
+          "duration": "4:06",
+          "durationSec": 246,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "gWpl8ADxNsc",
+          "title": "Hungry Cheetah 8K 60 FPS Video Song | They Call Him OG | Pawan Kalyan | Thaman S",
+          "thumbnail": "https://img.youtube.com/vi/gWpl8ADxNsc/maxresdefault.jpg",
+          "duration": "3:42",
+          "durationSec": 222,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "bF_6ndNptU8",
+          "title": "Suvvi Suvvi 8K 60FPS Video Song | They Call Him OG | Pawan Kalyan, Priyanka Mohan  | Thaman S",
+          "thumbnail": "https://img.youtube.com/vi/bF_6ndNptU8/maxresdefault.jpg",
+          "duration": "4:36",
+          "durationSec": 276,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "eHk-QjHFj6c",
+          "title": "Streets of fire 8K 60 FPS Video Song | They Call Him OG | Pawan Kalyan | Thaman S",
+          "thumbnail": "https://img.youtube.com/vi/eHk-QjHFj6c/maxresdefault.jpg",
+          "duration": "1:47",
+          "durationSec": 107,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "M_5F02R3aH4",
+          "title": "Trance of OMI 8K 60 FPS Video Song | They Call Him OG | Pawan Kalyan | Emraan Hashmi | Thaman S",
+          "thumbnail": "https://img.youtube.com/vi/M_5F02R3aH4/maxresdefault.jpg",
+          "duration": "2:45",
+          "durationSec": 165,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "oor9od6nXBM",
+          "title": "Kiss Kiss Bang Bang 8K 60 FPS Video Song | They Call Him OG | Pawan Kalyan | Thaman S",
+          "thumbnail": "https://img.youtube.com/vi/oor9od6nXBM/maxresdefault.jpg",
+          "duration": "3:29",
+          "durationSec": 209,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
     "1122030": {
       "tmdbId": 1122030,
       "title": "Alpha",
@@ -250,6 +343,70 @@
           "thumbnail": "https://img.youtube.com/vi/lJL7ASAukyo/maxresdefault.jpg",
           "duration": "2:36",
           "durationSec": 156,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "1232219": {
+      "tmdbId": 1232219,
+      "title": "Mr Bachchan",
+      "originalTitle": "మిస్టర్‌ బచ్చన్",
+      "language": "Telugu",
+      "year": 2024,
+      "releaseDate": "2024-08-15",
+      "overview": "Just four days before wedding, a fiercely honest Income Tax officer Bachchan’s life takes a dramatic turn when he is reinstated from suspension and tasked with raiding the home of the powerful and ruthless politician Mutyam Jaggaiah.",
+      "genres": [
+        "Action",
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 160,
+      "voteAverage": 3,
+      "voteCount": 7,
+      "posterPath": "/55TWpe9GvJEx2dq8fWoroIbJRvI.jpg",
+      "backdropPath": "/pXs3GE1LzDO2xUX2S4sO6iBAA5H.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/55TWpe9GvJEx2dq8fWoroIbJRvI.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/pXs3GE1LzDO2xUX2S4sO6iBAA5H.jpg",
+      "youtubePlaylistId": "PLfTyaip9O3BQ",
+      "videos": [
+        {
+          "youtubeLinkID": "nXQqtd2KMHs",
+          "title": "Nallanchu Thellacheera 8K Video | Mr Bachchan | Ravi Teja | Bhagyashri | Mickey J Meyer | Harish S",
+          "thumbnail": "https://img.youtube.com/vi/nXQqtd2KMHs/maxresdefault.jpg",
+          "duration": "3:38",
+          "durationSec": 218,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "XWv6fKw7O2E",
+          "title": "Sitar 8K Video | Mr. Bachchan | Ravi Teja | Bhagyashri Borse | Mickey J Meyer | Harish Shankar S",
+          "thumbnail": "https://img.youtube.com/vi/XWv6fKw7O2E/maxresdefault.jpg",
+          "duration": "4:09",
+          "durationSec": 249,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "EGqdMZrkVj0",
+          "title": "Jikki 8K Video Song | Mr Bachchan | Ravi Teja, Bhagyashri B | Mickey J Meyer | Harish Shankar S",
+          "thumbnail": "https://img.youtube.com/vi/EGqdMZrkVj0/maxresdefault.jpg",
+          "duration": "3:28",
+          "durationSec": 208,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "ULKSfKuo9sI",
+          "title": "Reppal Dappul 8K Video | Mr Bachchan | Ravi Teja | Bhagyashri B | Mickey J Meyer | Harish Shankar S",
+          "thumbnail": "https://img.youtube.com/vi/ULKSfKuo9sI/maxresdefault.jpg",
+          "duration": "4:35",
+          "durationSec": 275,
           "date": "",
           "resolution": "",
           "viewCount": 0
@@ -397,6 +554,69 @@
           "thumbnail": "https://img.youtube.com/vi/qg1DHoFbn0I/maxresdefault.jpg",
           "duration": "3:23",
           "durationSec": 203,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "811941-devara-part-1": {
+      "tmdbId": 811941,
+      "title": "Devara: Part 1",
+      "originalTitle": "Devara: Part 1",
+      "language": "Telugu",
+      "year": 2024,
+      "releaseDate": "2024-09-26",
+      "overview": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
+      "genres": [
+        "Action",
+        "Drama"
+      ],
+      "runtime": 175,
+      "voteAverage": 6.867,
+      "voteCount": 222,
+      "posterPath": "/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
+      "backdropPath": "/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
+      "youtubePlaylistId": "PLE3PpP0ju53w",
+      "videos": [
+        {
+          "youtubeLinkID": "_0ak7rWPlmU",
+          "title": "Chuttamalle [8K] Video - Devara Part 1 | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao | Koratala Siva",
+          "thumbnail": "https://img.youtube.com/vi/_0ak7rWPlmU/maxresdefault.jpg",
+          "duration": "3:37",
+          "durationSec": 217,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "iST7U0l4BJE",
+          "title": "Ayudha Pooja 8K Video | Devara | NTR | Saif Ali Khan | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/iST7U0l4BJE/maxresdefault.jpg",
+          "duration": "3:06",
+          "durationSec": 186,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "2So45J1dAu4",
+          "title": "Full Video: Daavudi [8K] - దావూదీ | Devara | NTR | Janhvi K | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/2So45J1dAu4/maxresdefault.jpg",
+          "duration": "3:06",
+          "durationSec": 186,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "g44VQxMcFH4",
+          "title": "Full Video: Fear Song | Devara | NTR | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/g44VQxMcFH4/maxresdefault.jpg",
+          "duration": "2:46",
+          "durationSec": 166,
           "date": "",
           "resolution": "",
           "viewCount": 0
