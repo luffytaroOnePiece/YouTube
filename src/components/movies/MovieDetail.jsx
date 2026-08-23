@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useState, useMemo } from 'react';
-import { getImages, getImageUrl } from '../../services/tmdbApi';
+import { getImages, getImageUrl, getCredits } from '../../services/tmdbApi';
 import MovieCard from './MovieCard';
 
 function formatRuntime(minutes) {
@@ -36,6 +36,8 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
   const [activeTab, setActiveTab] = useState('videos');
   const [galleryImages, setGalleryImages] = useState(null);
   const [isLoadingGallery, setIsLoadingGallery] = useState(false);
+  const [castData, setCastData] = useState(null);
+  const [isLoadingCast, setIsLoadingCast] = useState(false);
 
   // Compute recommendations based on genre, language, and year
   const recommendations = useMemo(() => {
@@ -85,6 +87,20 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
       });
     }
   }, [activeTab, movie.tmdbId, galleryImages, isLoadingGallery]);
+
+  // On-demand cast fetching
+  useEffect(() => {
+    if (activeTab === 'cast' && !castData && !isLoadingCast) {
+      setIsLoadingCast(true);
+      getCredits(movie.tmdbId, 'movie').then(data => {
+        setCastData(data);
+        setIsLoadingCast(false);
+      }).catch(err => {
+        console.error("Failed to fetch cast:", err);
+        setIsLoadingCast(false);
+      });
+    }
+  }, [activeTab, movie.tmdbId, castData, isLoadingCast]);
 
   return (
     <div
@@ -187,6 +203,12 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
           >
             Gallery
           </button>
+          <button 
+            className={`movie-detail__tab ${activeTab === 'cast' ? 'movie-detail__tab--active' : ''}`}
+            onClick={() => setActiveTab('cast')}
+          >
+            Cast
+          </button>
         </div>
 
         {/* Videos */}
@@ -258,6 +280,46 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
             )}
             {!isLoadingGallery && galleryImages && (!galleryImages.backdrops || galleryImages.backdrops.length === 0) && (
               <div className="movie-detail__empty">No gallery images found.</div>
+            )}
+          </div>
+        )}
+
+        {/* Cast */}
+        {activeTab === 'cast' && (
+          <div className="movie-detail__cast">
+            {isLoadingCast && (
+              <div className="movie-detail__loader">Loading cast...</div>
+            )}
+            {!isLoadingCast && castData && castData.cast && castData.cast.length > 0 && (
+              <div className="movie-detail__cast-grid">
+                {castData.cast.slice(0, 20).map((actor) => (
+                  <div key={actor.id} className="movie-detail__cast-card">
+                    <div className="movie-detail__cast-img-wrap">
+                      {actor.profile_path ? (
+                        <img
+                          className="movie-detail__cast-img"
+                          src={getImageUrl(actor.profile_path, 'h632')}
+                          alt={actor.name}
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="movie-detail__cast-placeholder">
+                          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        </div>
+                      )}
+                    </div>
+                    <div className="movie-detail__cast-info">
+                      <span className="movie-detail__cast-name">{actor.name}</span>
+                      {actor.character && (
+                        <span className="movie-detail__cast-character">{actor.character}</span>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+            {!isLoadingCast && castData && (!castData.cast || castData.cast.length === 0) && (
+              <div className="movie-detail__empty">No cast information found.</div>
             )}
           </div>
         )}
