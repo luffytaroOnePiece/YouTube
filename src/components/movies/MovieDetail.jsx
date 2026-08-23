@@ -36,6 +36,7 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
   const [activeTab, setActiveTab] = useState('videos');
   const [galleryImages, setGalleryImages] = useState(null);
   const [isLoadingGallery, setIsLoadingGallery] = useState(false);
+  const [galleryView, setGalleryView] = useState('horizontal'); // 'horizontal' or 'vertical'
   const [castData, setCastData] = useState(null);
   const [isLoadingCast, setIsLoadingCast] = useState(false);
 
@@ -88,9 +89,9 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
     }
   }, [activeTab, movie.tmdbId, galleryImages, isLoadingGallery]);
 
-  // On-demand cast fetching
+  // On-demand cast/crew fetching
   useEffect(() => {
-    if (activeTab === 'cast' && !castData && !isLoadingCast) {
+    if ((activeTab === 'cast' || activeTab === 'crew') && !castData && !isLoadingCast) {
       setIsLoadingCast(true);
       getCredits(movie.tmdbId, 'movie').then(data => {
         setCastData(data);
@@ -209,6 +210,12 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
           >
             Cast
           </button>
+          <button 
+            className={`movie-detail__tab ${activeTab === 'crew' ? 'movie-detail__tab--active' : ''}`}
+            onClick={() => setActiveTab('crew')}
+          >
+            Crew
+          </button>
         </div>
 
         {/* Videos */}
@@ -266,20 +273,49 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
               <div className="movie-detail__loader">Loading high-quality images...</div>
             )}
             {!isLoadingGallery && galleryImages && (
-              <div className="movie-detail__gallery-grid">
-                {(galleryImages.backdrops || []).map((img, i) => (
-                  <div key={i} className="movie-detail__gallery-item">
-                    <img
-                      src={getImageUrl(img.file_path, 'original')}
-                      alt=""
-                      loading="lazy"
-                    />
+              <>
+                <div className="movie-detail__gallery-toggle">
+                  <button 
+                    className={`movie-detail__gallery-toggle-btn ${galleryView === 'horizontal' ? 'movie-detail__gallery-toggle-btn--active' : ''}`}
+                    onClick={() => setGalleryView('horizontal')}
+                  >
+                    Horizontal (Backdrops)
+                  </button>
+                  <button 
+                    className={`movie-detail__gallery-toggle-btn ${galleryView === 'vertical' ? 'movie-detail__gallery-toggle-btn--active' : ''}`}
+                    onClick={() => setGalleryView('vertical')}
+                  >
+                    Vertical (Posters)
+                  </button>
+                </div>
+                
+                {galleryView === 'horizontal' && (
+                  <div className="movie-detail__gallery-grid">
+                    {(galleryImages.backdrops || []).map((img, i) => (
+                      <div key={i} className="movie-detail__gallery-item">
+                        <img src={getImageUrl(img.file_path, 'original')} alt="" loading="lazy" />
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-            )}
-            {!isLoadingGallery && galleryImages && (!galleryImages.backdrops || galleryImages.backdrops.length === 0) && (
-              <div className="movie-detail__empty">No gallery images found.</div>
+                )}
+
+                {galleryView === 'vertical' && (
+                  <div className="movie-detail__gallery-grid movie-detail__gallery-grid--vertical">
+                    {(galleryImages.posters || []).map((img, i) => (
+                      <div key={i} className="movie-detail__gallery-item">
+                        <img src={getImageUrl(img.file_path, 'original')} alt="" loading="lazy" />
+                      </div>
+                    ))}
+                  </div>
+                )}
+                
+                {galleryView === 'horizontal' && (!galleryImages.backdrops || galleryImages.backdrops.length === 0) && (
+                  <div className="movie-detail__empty">No horizontal images found.</div>
+                )}
+                {galleryView === 'vertical' && (!galleryImages.posters || galleryImages.posters.length === 0) && (
+                  <div className="movie-detail__empty">No vertical images found.</div>
+                )}
+              </>
             )}
           </div>
         )}
@@ -320,6 +356,48 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
             )}
             {!isLoadingCast && castData && (!castData.cast || castData.cast.length === 0) && (
               <div className="movie-detail__empty">No cast information found.</div>
+            )}
+          </div>
+        )}
+
+        {/* Crew */}
+        {activeTab === 'crew' && (
+          <div className="movie-detail__cast">
+            {isLoadingCast && (
+              <div className="movie-detail__loader">Loading crew...</div>
+            )}
+            {!isLoadingCast && castData && castData.crew && castData.crew.length > 0 && (
+              <div className="movie-detail__cast-grid">
+                {castData.crew
+                  .filter(c => ['Director', 'Writer', 'Original Music Composer', 'Music', 'Director of Photography', 'Producer', 'Story', 'Screenplay'].includes(c.job))
+                  .reduce((unique, item) => unique.find(x => x.id === item.id && x.job === item.job) ? unique : [...unique, item], [])
+                  .slice(0, 20)
+                  .map((crewMember, idx) => (
+                    <div key={`${crewMember.id}-${idx}`} className="movie-detail__cast-card">
+                      <div className="movie-detail__cast-img-wrap">
+                        {crewMember.profile_path ? (
+                          <img
+                            className="movie-detail__cast-img"
+                            src={getImageUrl(crewMember.profile_path, 'h632')}
+                            alt={crewMember.name}
+                            loading="lazy"
+                          />
+                        ) : (
+                          <div className="movie-detail__cast-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                          </div>
+                        )}
+                      </div>
+                      <div className="movie-detail__cast-info">
+                        <span className="movie-detail__cast-name">{crewMember.name}</span>
+                        <span className="movie-detail__cast-character">{crewMember.job}</span>
+                      </div>
+                    </div>
+                ))}
+              </div>
+            )}
+            {!isLoadingCast && castData && (!castData.crew || castData.crew.length === 0) && (
+              <div className="movie-detail__empty">No crew information found.</div>
             )}
           </div>
         )}
