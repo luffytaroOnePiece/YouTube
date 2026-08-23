@@ -37,6 +37,7 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
   const [galleryImages, setGalleryImages] = useState(null);
   const [isLoadingGallery, setIsLoadingGallery] = useState(false);
   const [galleryView, setGalleryView] = useState('horizontal'); // 'horizontal' or 'vertical'
+  const [fullscreenImage, setFullscreenImage] = useState(null);
   const [castData, setCastData] = useState(null);
   const [isLoadingCast, setIsLoadingCast] = useState(false);
 
@@ -108,12 +109,11 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
       className="movie-detail"
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
     >
-      {/* Close button */}
-      <button className="movie-detail__close-btn" onClick={onClose} aria-label="Close">
-        ✕
-      </button>
-
       <div className="movie-detail__content">
+        {/* Close button - scrolls away with content */}
+        <button className="movie-detail__close-btn" onClick={onClose} aria-label="Close">
+          ✕
+        </button>
         {/* Hero */}
         <div className={`movie-detail__hero ${!hasBackdrop ? 'movie-detail__hero--fallback' : ''}`}>
           {hasBackdrop && (
@@ -292,7 +292,12 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
                 {galleryView === 'horizontal' && (
                   <div className="movie-detail__gallery-grid">
                     {(galleryImages.backdrops || []).map((img, i) => (
-                      <div key={i} className="movie-detail__gallery-item">
+                      <div 
+                        key={i} 
+                        className="movie-detail__gallery-item"
+                        onClick={() => setFullscreenImage(img.file_path)}
+                        style={{ cursor: 'pointer' }}
+                      >
                         <img src={getImageUrl(img.file_path, 'original')} alt="" loading="lazy" />
                       </div>
                     ))}
@@ -302,7 +307,12 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
                 {galleryView === 'vertical' && (
                   <div className="movie-detail__gallery-grid movie-detail__gallery-grid--vertical">
                     {(galleryImages.posters || []).map((img, i) => (
-                      <div key={i} className="movie-detail__gallery-item">
+                      <div 
+                        key={i} 
+                        className="movie-detail__gallery-item"
+                        onClick={() => setFullscreenImage(img.file_path)}
+                        style={{ cursor: 'pointer' }}
+                      >
                         <img src={getImageUrl(img.file_path, 'original')} alt="" loading="lazy" />
                       </div>
                     ))}
@@ -419,6 +429,30 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
           </div>
         )}
       </div>
+
+      {/* Lightbox for Gallery Images */}
+      {fullscreenImage && (
+        <div className="movie-detail__lightbox" onClick={() => setFullscreenImage(null)}>
+          <button 
+            className="movie-detail__lightbox-close" 
+            onClick={(e) => {
+              e.stopPropagation();
+              setFullscreenImage(null);
+            }}
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <img 
+            className="movie-detail__lightbox-img"
+            src={getImageUrl(fullscreenImage, 'original')} 
+            alt="Fullscreen" 
+            onClick={(e) => e.stopPropagation()} 
+          />
+        </div>
+      )}
     </div>
   );
 }

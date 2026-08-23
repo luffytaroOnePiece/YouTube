@@ -440,7 +440,7 @@
 }
 
 .movie-detail__close-btn {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 24px;
   z-index: 1010;
@@ -467,6 +467,7 @@
 
 /* ── Content Container ─────────────────────────────────────── */
 .movie-detail__content {
+  position: relative;
   width: 100%;
   margin: 0 auto;
   animation: movieDetailSlideIn 0.4s ease-out;
@@ -664,8 +665,20 @@
 /* ── Video Grid in Movie Detail ────────────────────────────── */
 .movie-detail__video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .movie-detail__video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .movie-detail__video-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .movie-detail__video-card {
@@ -889,6 +902,55 @@
   color: var(--text-muted);
   padding: 40px;
   font-size: 0.9rem;
+}
+
+/* ── Gallery Lightbox ──────────────────────────────────────── */
+.movie-detail__lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.movie-detail__lightbox-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  animation: movieDetailSlideIn 0.3s ease-out;
+}
+
+.movie-detail__lightbox-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  z-index: 2001;
+  padding: 8px;
+}
+
+.movie-detail__lightbox-close:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.movie-detail__lightbox-close svg {
+  width: 32px;
+  height: 32px;
 }
 
 /* ── Recommendations ───────────────────────────────────────── */
