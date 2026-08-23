@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T10:17:25.451Z",
+  "lastUpdated": "2026-08-23T10:19:00.360Z",
   "movies": {
     "1022453": {
       "tmdbId": 1022453,
@@ -494,6 +494,36 @@
           "date": "",
           "resolution": "",
           "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "amdOdzmAbSk",
+          "title": "Ishq Jalakar - Karvaan - 8K Video | Dhurandhar | Ranveer Singh, Shashwat Sachdev, Shahzad Ali",
+          "thumbnail": "https://img.youtube.com/vi/amdOdzmAbSk/maxresdefault.jpg",
+          "duration": "2:32",
+          "durationSec": 152,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "s9CIz6UCDw4",
+          "title": "Ez-Ez - 8K Video | Dhurandhar | Ranveer Singh, Shashwat Sachdev, Diljit Dosanjh, Hanumankind, Raj R",
+          "thumbnail": "https://img.youtube.com/vi/s9CIz6UCDw4/maxresdefault.jpg",
+          "duration": "2:53",
+          "durationSec": 173,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "rn1BQ25RjcM",
+          "title": "Teri Ni Kararan - 8K Video | Dhurandhar | Ranveer Singh, Shashwat Sachdev, Diljit Dosanjh",
+          "thumbnail": "https://img.youtube.com/vi/rn1BQ25RjcM/maxresdefault.jpg",
+          "duration": "2:33",
+          "durationSec": 153,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
         }
       ]
     },
@@ -752,6 +782,36 @@
           "thumbnail": "https://img.youtube.com/vi/fFVId5BvPeI/maxresdefault.jpg",
           "duration": "2:30",
           "durationSec": 150,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "uWdfkn_ZBzk",
+          "title": "Aakhri Ishq - 8K Video | Dhurandhar The Revenge | Ranveer Singh|Shashwat Sachdev,Jubin N,Irshad K",
+          "thumbnail": "https://img.youtube.com/vi/uWdfkn_ZBzk/maxresdefault.jpg",
+          "duration": "3:38",
+          "durationSec": 218,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "vSQwYb4aSWc",
+          "title": "Tere Ishq Ne - 8K Video | Dhurandhar The Revenge | Ranveer Singh |Shashwat Sachdev,Jyoti N,Kumaar",
+          "thumbnail": "https://img.youtube.com/vi/vSQwYb4aSWc/maxresdefault.jpg",
+          "duration": "3:49",
+          "durationSec": 229,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "HcLdTujpQJc",
+          "title": "Didi (Sher-E-Baloch) - 8K Video | Dhurandhar The Revenge | Ranveer Singh,Shashwat Sachdev,Khaled",
+          "thumbnail": "https://img.youtube.com/vi/HcLdTujpQJc/maxresdefault.jpg",
+          "duration": "2:21",
+          "durationSec": 141,
           "date": "",
           "resolution": "",
           "viewCount": 0

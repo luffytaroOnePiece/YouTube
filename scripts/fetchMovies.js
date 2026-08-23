@@ -95,6 +95,23 @@ async function fetchPlaylistVideos(playlistId) {
   }
 }
 
+// ── Fetch YouTube Playlist Count Only ────────────────────────
+async function fetchPlaylistCount(playlistId) {
+  if (!playlistId) return 0;
+  try {
+    const url = `https://www.youtube.com/playlist?list=${playlistId}`;
+    const { stdout: raw } = await execAsync(
+      `yt-dlp --flat-playlist --playlist-end 1 --print "%(playlist_count)s" --no-warnings "${url}"`,
+      { encoding: 'utf-8', timeout: 60000 }
+    );
+    const lines = raw.trim().split('\n').filter(Boolean);
+    const countStr = lines[lines.length - 1];
+    return parseInt(countStr, 10) || 0;
+  } catch (err) {
+    return 0;
+  }
+}
+
 // ── Main ───────────────────────────────────────────────────────
 async function fetchMovies() {
   console.log('\n🎬 Movie Albums — Fetch Script\n');
@@ -136,10 +153,17 @@ async function fetchMovies() {
       // Check if we have cached TMDB data and playlist videos
       const cached = existingMovies[tmdbId];
       if (cached && cached.posterPath && cached.videos && cached.videos.length > 0) {
-        console.log(`  ⚡ CACHED — ${entry.title}`);
-        // Update language from input in case it changed
-        movies[tmdbId] = { ...cached, language: entry.language || cached.language };
-        return;
+        // Fetch current playlist count to see if we need to refetch
+        const currentCount = await fetchPlaylistCount(entry.YoutubePlaylistId);
+        
+        if (currentCount > 0 && currentCount === cached.videos.length) {
+          console.log(`  ⚡ CACHED — ${entry.title} (Count matches: ${currentCount})`);
+          // Update language from input in case it changed
+          movies[tmdbId] = { ...cached, language: entry.language || cached.language };
+          return;
+        } else {
+          console.log(`  🔄 REFETCHING — ${entry.title} (Cache: ${cached.videos.length}, New: ${currentCount || 'Unknown'})`);
+        }
       }
 
       // ── Fetch TMDB metadata ──────────────────────────────────
