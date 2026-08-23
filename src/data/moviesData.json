@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T09:52:22.126Z",
+  "lastUpdated": "2026-08-23T10:12:40.748Z",
   "movies": {
     "1022453": {
       "tmdbId": 1022453,
@@ -815,6 +815,90 @@
           "thumbnail": "https://img.youtube.com/vi/g44VQxMcFH4/maxresdefault.jpg",
           "duration": "2:46",
           "durationSec": 166,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "781732-animal": {
+      "tmdbId": 781732,
+      "title": "Animal",
+      "originalTitle": "Animal",
+      "language": "Hindi",
+      "year": 2023,
+      "releaseDate": "2023-12-01",
+      "overview": "The hardened son of a powerful industrialist returns home after years abroad and vows to take bloody revenge on those threatening his father's life.",
+      "genres": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 201,
+      "voteAverage": 6.157,
+      "voteCount": 207,
+      "posterPath": "/hr9rjR3J0xBBKmlJ4n3gHId9ccx.jpg",
+      "backdropPath": "/lprsAHkwMxk2iC6VZxNmV0H7g1t.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/hr9rjR3J0xBBKmlJ4n3gHId9ccx.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/lprsAHkwMxk2iC6VZxNmV0H7g1t.jpg",
+      "youtubePlaylistId": "PLA_2cKlGawhc",
+      "videos": [
+        {
+          "youtubeLinkID": "p93O-umBg98",
+          "title": "Animal: Pehle Bhi Main 8K Video Song | Ranbir Kapoor,Tripti Dimri | Sandeep V | Vishal M | Bhushan K",
+          "thumbnail": "https://img.youtube.com/vi/p93O-umBg98/maxresdefault.jpg",
+          "duration": "4:09",
+          "durationSec": 249,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "8A1XPxaeoZA",
+          "title": "ANIMAL: Saari Duniya Jalaa Denge (Film Version) 8K |Ranbir K,Bobby D,Sandeep,B Praak,Jaani,Bhushan K",
+          "thumbnail": "https://img.youtube.com/vi/8A1XPxaeoZA/maxresdefault.jpg",
+          "duration": "5:46",
+          "durationSec": 346,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "XvRsfPO63jQ",
+          "title": "ANIMAL: Hua Main 8K Full Video | Ranbir Kapoor | Rashmika M | Sandeep V | Raghav,Manoj M | Bhushan K",
+          "thumbnail": "https://img.youtube.com/vi/XvRsfPO63jQ/maxresdefault.jpg",
+          "duration": "4:35",
+          "durationSec": 275,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "9W6CSt6-PIU",
+          "title": "Animal: Satranga [8K] - Video | Ranbir K,Rashmika|Sandeep|Arijit,Shreyas,Siddharth-Garima|Bhushan K",
+          "thumbnail": "https://img.youtube.com/vi/9W6CSt6-PIU/maxresdefault.jpg",
+          "duration": "4:31",
+          "durationSec": 271,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "KsEMAXNXnO4",
+          "title": "ANIMAL: ABRAR’S ENTRY - JAMAL KUDU 8K🔥 | Bobby Deol | Ranbir Kapoor | Sandeep Vanga | Bhushan Kumar",
+          "thumbnail": "https://img.youtube.com/vi/KsEMAXNXnO4/maxresdefault.jpg",
+          "duration": "2:13",
+          "durationSec": 133,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "0YxadsmzcEI",
+          "title": "ANIMAL: Kashmir 8K Full Video | Ranbir Kapoor | Rashmika M | Sandeep V | Shreya G,Manan B |Bhushan K",
+          "thumbnail": "https://img.youtube.com/vi/0YxadsmzcEI/maxresdefault.jpg",
+          "duration": "3:37",
+          "durationSec": 217,
           "date": "",
           "resolution": "",
           "viewCount": 0
