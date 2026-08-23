@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T04:02:18.966Z",
+  "lastUpdated": "2026-08-23T09:52:22.126Z",
   "movies": {
     "1022453": {
       "tmdbId": 1022453,
@@ -413,6 +413,90 @@
         }
       ]
     },
+    "1291608": {
+      "tmdbId": 1291608,
+      "title": "Dhurandhar",
+      "originalTitle": "धुरंधर",
+      "language": "Hindi",
+      "year": 2025,
+      "releaseDate": "2025-12-05",
+      "overview": "In the early 2000s, an undercover operative infiltrates Karachi's underworld, breaking into its inner circle to dismantle a violent nexus from within.",
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "runtime": 214,
+      "voteAverage": 7.307,
+      "voteCount": 344,
+      "posterPath": "/snBOuXDdhmTvlzMUvP9Em3Pp1u1.jpg",
+      "backdropPath": "/4DfxcN4w0FuYZHQ3JAHzpHWia1U.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/snBOuXDdhmTvlzMUvP9Em3Pp1u1.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/4DfxcN4w0FuYZHQ3JAHzpHWia1U.jpg",
+      "youtubePlaylistId": "PLQNy6KH3hDzQ",
+      "videos": [
+        {
+          "youtubeLinkID": "MxIEUzBJn8U",
+          "title": "Gehra Hua - 8K Video | Dhurandhar | Ranveer Singh, Sara A, Shashwat Sachdev, Arijit Singh, Irshad K",
+          "thumbnail": "https://img.youtube.com/vi/MxIEUzBJn8U/maxresdefault.jpg",
+          "duration": "3:29",
+          "durationSec": 209,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "v5jVX0QYwQo",
+          "title": "Shararat - 8K Video | Dhurandhar | Ranveer Singh, Shashwat S, Jasmine, Madhubanti, Ayesha, Krystle",
+          "thumbnail": "https://img.youtube.com/vi/v5jVX0QYwQo/maxresdefault.jpg",
+          "duration": "3:47",
+          "durationSec": 227,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "JWux9POAQzU",
+          "title": "Naal Nachna - 8K Video | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan,Reble",
+          "thumbnail": "https://img.youtube.com/vi/JWux9POAQzU/maxresdefault.jpg",
+          "duration": "1:58",
+          "durationSec": 118,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "BWFr1xlkgL0",
+          "title": "Lutt Le Gaya - 8K Video | Dhurandhar | Ranveer Singh | Akshaye Khanna | Shashwat Sachdev",
+          "thumbnail": "https://img.youtube.com/vi/BWFr1xlkgL0/maxresdefault.jpg",
+          "duration": "2:05",
+          "durationSec": 125,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "7UG4YTQCgkw",
+          "title": "Ramba Ho - 8K Video | Dhurandhar | Ranveer Singh, Shashwat Sachdev, Madhubanti Bagchi",
+          "thumbnail": "https://img.youtube.com/vi/7UG4YTQCgkw/maxresdefault.jpg",
+          "duration": "2:08",
+          "durationSec": 128,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "8SHaqaYSY34",
+          "title": "Run Down The City - Monica - 8K | Dhurandhar | Ranveer Singh, Sara A, Asha Bhosle, Shashwat Sachdev",
+          "thumbnail": "https://img.youtube.com/vi/8SHaqaYSY34/maxresdefault.jpg",
+          "duration": "1:55",
+          "durationSec": 115,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
     "1392469": {
       "tmdbId": 1392469,
       "title": "Cocktail 2",
@@ -554,6 +638,120 @@
           "thumbnail": "https://img.youtube.com/vi/qg1DHoFbn0I/maxresdefault.jpg",
           "duration": "3:23",
           "durationSec": 203,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "1582770": {
+      "tmdbId": 1582770,
+      "title": "Dhurandhar: The Revenge",
+      "originalTitle": "धुरंधर: द रिवेंज",
+      "language": "Hindi",
+      "year": 2026,
+      "releaseDate": "2026-03-18",
+      "overview": "As rival gangs, corrupt officials and a ruthless Major Iqbal close in, Hamza's mission for his country spirals into a bloody personal war where the line between patriot and monster disappears in the streets of Lyari.",
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "runtime": 229,
+      "voteAverage": 7.3,
+      "voteCount": 145,
+      "posterPath": "/ptTwQES14pr5c3aZvJg56YlYgb1.jpg",
+      "backdropPath": "/br4Ra4dRpvR0R7a1zPPkOwGkcky.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/ptTwQES14pr5c3aZvJg56YlYgb1.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/br4Ra4dRpvR0R7a1zPPkOwGkcky.jpg",
+      "youtubePlaylistId": "PLcoanGfkolsc",
+      "videos": [
+        {
+          "youtubeLinkID": "1zlLw7tQTk0",
+          "title": "Aari Aari - 8K Video | Dhurandhar The Revenge | Ranveer Singh | Shashwat Sachdev | Bombay Rockers",
+          "thumbnail": "https://img.youtube.com/vi/1zlLw7tQTk0/maxresdefault.jpg",
+          "duration": "2:42",
+          "durationSec": 162,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "SJ73cJXbPhE",
+          "title": "Vaari Jaavan - 8K Video | Dhurandhar The Revenge | Ranveer Singh | Shashwat Sachdev,Jyoti,Jasmine",
+          "thumbnail": "https://img.youtube.com/vi/SJ73cJXbPhE/maxresdefault.jpg",
+          "duration": "3:37",
+          "durationSec": 217,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "7eZZYdK2VW0",
+          "title": "Jaan Se Guzarte Hain - 8K Video | Dhurandhar The Revenge | Ranveer Singh | Shashwat S, Khan Saab",
+          "thumbnail": "https://img.youtube.com/vi/7eZZYdK2VW0/maxresdefault.jpg",
+          "duration": "3:00",
+          "durationSec": 180,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "qK0FW9ydzSY",
+          "title": "Hum Pyaar Karne Wale - 8K Video | Dhurandhar The Revenge| Ranveer S| Shashwat,Anuradha,Udit,Qveen",
+          "thumbnail": "https://img.youtube.com/vi/qK0FW9ydzSY/maxresdefault.jpg",
+          "duration": "2:13",
+          "durationSec": 133,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "yeq1yUi9q3Y",
+          "title": "Main Aur Tu - 8K Video | Dhurandhar The Revenge | Ranveer Singh | Shashwat Sachdev | Jasmine S",
+          "thumbnail": "https://img.youtube.com/vi/yeq1yUi9q3Y/maxresdefault.jpg",
+          "duration": "2:59",
+          "durationSec": 179,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "fbzxWM97iHQ",
+          "title": "Rang De Lal (Oye Oye) - 8K Video | Dhurandhar The Revenge|Shashwat Sachdev,Kalyanji-Anandji,Jasmine",
+          "thumbnail": "https://img.youtube.com/vi/fbzxWM97iHQ/maxresdefault.jpg",
+          "duration": "3:22",
+          "durationSec": 202,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "mSc-CSiqIqI",
+          "title": "Wild Ride - 8K Video | Dhurandhar The Revenge | Ranveer Singh | Shashwat Sachdev | Ellisar",
+          "thumbnail": "https://img.youtube.com/vi/mSc-CSiqIqI/maxresdefault.jpg",
+          "duration": "2:40",
+          "durationSec": 160,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "E45J_yOyUcA",
+          "title": "Phir Se - 8K Video | Dhurandhar The Revenge | Ranveer Singh | Shashwat Sachdev,Arijit S,Irshad K",
+          "thumbnail": "https://img.youtube.com/vi/E45J_yOyUcA/maxresdefault.jpg",
+          "duration": "3:48",
+          "durationSec": 228,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "fFVId5BvPeI",
+          "title": "Jaiye Sajana - 8K Video: Dhurandhar The Revenge | Ranveer Singh | Shashwat S,Satinder S,Jasmine S",
+          "thumbnail": "https://img.youtube.com/vi/fFVId5BvPeI/maxresdefault.jpg",
+          "duration": "2:30",
+          "durationSec": 150,
           "date": "",
           "resolution": "",
           "viewCount": 0
