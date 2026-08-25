@@ -1,6 +1,124 @@
 {
-  "lastUpdated": "2026-08-25T14:54:00.758Z",
+  "lastUpdated": "2026-08-25T15:01:34.656Z",
   "movies": {
+    "410994": {
+      "tmdbId": 410994,
+      "title": "Dhruva",
+      "originalTitle": "ధృవ",
+      "language": "Telugu",
+      "year": 2016,
+      "releaseDate": "2016-10-07",
+      "overview": "A committed police officer is on a very dangerous mission to destroy the most corrupt person in the country, Siddharth Abhimanyu.",
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Action"
+      ],
+      "runtime": 165,
+      "voteAverage": 6.588,
+      "voteCount": 40,
+      "posterPath": "/hh7D1fLjet1Ce1kcCkk5TVr3g9O.jpg",
+      "backdropPath": "/jyLGOnKmqICxpjJ8GH4FXeTAliY.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/hh7D1fLjet1Ce1kcCkk5TVr3g9O.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/jyLGOnKmqICxpjJ8GH4FXeTAliY.jpg",
+      "youtubePlaylistId": "PLJXLHBT5B0MQ",
+      "videos": [
+        {
+          "youtubeLinkID": "_96E3pQ7csw",
+          "title": "Dhruva Dhruva 8K Video Song | Dhruva | Ram Charan, Rakul Preet | Hiphop Tamizha | Surender Reddy",
+          "thumbnail": "https://img.youtube.com/vi/_96E3pQ7csw/maxresdefault.jpg",
+          "duration": "3:37",
+          "durationSec": 217,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "sl2X-e956Ts",
+          "title": "Pareshanura 8K Video Song | Dhruva | Ram Charan, Rakul Preet | Hiphop Tamizha | Surender Reddy",
+          "thumbnail": "https://img.youtube.com/vi/sl2X-e956Ts/maxresdefault.jpg",
+          "duration": "3:02",
+          "durationSec": 182,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "rZT5cTiTokA",
+          "title": "Neethoney Dance Full Video Song | Dhruva Full Video Songs | Ram Charan,Rakul Preet | HipHopTamizha",
+          "thumbnail": "https://img.youtube.com/vi/rZT5cTiTokA/maxresdefault.jpg",
+          "duration": "3:37",
+          "durationSec": 217,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "1FMDlWOu-AI",
+          "title": "Choosa Choosa Full Video Song | Dhruva Full Video Songs | Ram Charan,Rakul Preet | HipHopTamizha",
+          "thumbnail": "https://img.youtube.com/vi/1FMDlWOu-AI/maxresdefault.jpg",
+          "duration": "4:22",
+          "durationSec": 262,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "496331": {
+      "tmdbId": 496331,
+      "title": "Brahmāstra Part One: Shiva",
+      "originalTitle": "ब्रह्मास्त्र पहला भाग: शिवा",
+      "language": "Hindi",
+      "year": 2022,
+      "releaseDate": "2022-09-08",
+      "overview": "The story of Shiva – a young man on the brink of an epic love, with a girl named Isha. But their world is turned upside down when Shiva learns that he has a mysterious connection to the Brahmāstra... and a great power within him that he doesn’t understand just yet - the power of Fire.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "runtime": 168,
+      "voteAverage": 6.3,
+      "voteCount": 201,
+      "posterPath": "/x61qdvHIsr9U53FwoLVDQqAGur0.jpg",
+      "backdropPath": "/9oAqll65ytlOBLzZwUwkmo5RwIK.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/x61qdvHIsr9U53FwoLVDQqAGur0.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/9oAqll65ytlOBLzZwUwkmo5RwIK.jpg",
+      "youtubePlaylistId": "PLC7pPme0sH-Q",
+      "videos": [
+        {
+          "youtubeLinkID": "P7yRYiBiV3g",
+          "title": "Kesariya 8K/4K Music Video | Arijit Singh | Ranbir Kapoor | Alia Bhatt | Pritam | Brahmāstra",
+          "thumbnail": "https://img.youtube.com/vi/P7yRYiBiV3g/maxresdefault.jpg",
+          "duration": "4:11",
+          "durationSec": 251,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "hXYiAUlQ5Yk",
+          "title": "Deva Deva - 8K/4K Music Video | Ranbir Kapoor, Alia Bhatt | Brahmastra | Arijit Singh, Jonita Gandhi",
+          "thumbnail": "https://img.youtube.com/vi/hXYiAUlQ5Yk/maxresdefault.jpg",
+          "duration": "5:07",
+          "durationSec": 307,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "nEVFCV2EwfE",
+          "title": "Rasiya - 8K/4K Music Video | Ranbir, Alia | Brahmāstra | Pritam | Tushar Joshi | Shreya Ghoshal",
+          "thumbnail": "https://img.youtube.com/vi/nEVFCV2EwfE/maxresdefault.jpg",
+          "duration": "1:45",
+          "durationSec": 105,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
     "848116": {
       "tmdbId": 848116,
       "title": "Rocky Aur Rani Kii Prem Kahaani",
