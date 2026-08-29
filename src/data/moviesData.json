@@ -1,6 +1,89 @@
 {
-  "lastUpdated": "2026-08-29T15:59:19.475Z",
+  "lastUpdated": "2026-08-29T16:07:40.461Z",
   "movies": {
+    "262227": {
+      "tmdbId": 262227,
+      "title": "Race Gurram",
+      "originalTitle": "రేసుగుర్రం",
+      "language": "Telugu",
+      "year": 2014,
+      "releaseDate": "2014-04-11",
+      "overview": "Ram and Lakshman, aka Lucky, are brothers who are polar opposites in nature. Their mother wishes to see them united.",
+      "genres": [
+        "Comedy",
+        "Action"
+      ],
+      "runtime": 162,
+      "voteAverage": 6.779,
+      "voteCount": 68,
+      "posterPath": "/gu3bzAFuQH3fZEFnCsj9uWGZH0v.jpg",
+      "backdropPath": "/m4izPWHxXNg237sQm4jks9m9xxP.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/gu3bzAFuQH3fZEFnCsj9uWGZH0v.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/m4izPWHxXNg237sQm4jks9m9xxP.jpg",
+      "youtubePlaylistId": "PLA8mKU0Q1Avg",
+      "videos": [
+        {
+          "youtubeLinkID": "H5M_jL2d_Kg",
+          "title": "Boochade Boochade 8K Video Song | Race Gurram | Allu Arjun, Shruti Haasan | Thaman S",
+          "thumbnail": "https://img.youtube.com/vi/H5M_jL2d_Kg/maxresdefault.jpg",
+          "duration": "4:10",
+          "durationSec": 250,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "QZhyLl8dLI8",
+          "title": "Down Down 8K Video Song | Race Gurram | Allu Arjun, Shruti Haasan | S.S. Thaman",
+          "thumbnail": "https://img.youtube.com/vi/QZhyLl8dLI8/maxresdefault.jpg",
+          "duration": "3:59",
+          "durationSec": 239,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "BUV7KTSI584",
+          "title": "Cinema Choopistha Mama 8K Video Song | Race Gurram | Allu Arjun, Shruti Haasan | S.S. Thaman",
+          "thumbnail": "https://img.youtube.com/vi/BUV7KTSI584/maxresdefault.jpg",
+          "duration": "4:25",
+          "durationSec": 265,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "B6KLh2G3dKM",
+          "title": "Sweety Sweety Video Song | Race Gurram | Allu Arjun, Shruti Haasan | S.S. Thaman",
+          "thumbnail": "https://img.youtube.com/vi/B6KLh2G3dKM/maxresdefault.jpg",
+          "duration": "4:23",
+          "durationSec": 263,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "hoUecvdMHD8",
+          "title": "Race Gurram Title Song 8K Video Song | Allu Arjun | Shruti Haasan | Thaman S",
+          "thumbnail": "https://img.youtube.com/vi/hoUecvdMHD8/maxresdefault.jpg",
+          "duration": "4:28",
+          "durationSec": 268,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "tBH0DNmPAmU",
+          "title": "Race Gurram Video Songs 4K | Gala Gala Full Video Song | Allu Arjun | Shruti Haasan | Thaman S",
+          "thumbnail": "https://img.youtube.com/vi/tBH0DNmPAmU/maxresdefault.jpg",
+          "duration": "4:13",
+          "durationSec": 253,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
     "410994": {
       "tmdbId": 410994,
       "title": "Dhruva",
@@ -921,6 +1004,51 @@
         }
       ]
     },
+    "1407437": {
+      "tmdbId": 1407437,
+      "title": "Andhra King Taluka",
+      "originalTitle": "ఆంధ్ర కింగ్ తాలూకా",
+      "language": "Telugu",
+      "year": 2025,
+      "releaseDate": "2025-11-26",
+      "overview": "A heartfelt tribute to fan culture, the story follows Sagar, an ardent fan whose life, relationships, and identity revolve around his admiration for his cinematic idol, 'Andhra King' Surya Kumar.",
+      "genres": [
+        "Action",
+        "Drama",
+        "Romance",
+        "Family"
+      ],
+      "runtime": 166,
+      "voteAverage": 5.8,
+      "voteCount": 10,
+      "posterPath": "/e1lNI9dZKar0JN9iNuDeUhCZcwL.jpg",
+      "backdropPath": "/f6vtDzjT5dnwytOmmzWjdFVzYSL.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/e1lNI9dZKar0JN9iNuDeUhCZcwL.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/f6vtDzjT5dnwytOmmzWjdFVzYSL.jpg",
+      "youtubePlaylistId": "PLUU0Qj4LdbSY",
+      "videos": [
+        {
+          "youtubeLinkID": "__YIIytAnI8",
+          "title": "Nuvvunte Chaley 8K Video | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
+          "thumbnail": "https://img.youtube.com/vi/__YIIytAnI8/maxresdefault.jpg",
+          "duration": "3:29",
+          "durationSec": 209,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "PmuQDnWT-WI",
+          "title": "Chinni Gundelo 8K Video | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
+          "thumbnail": "https://img.youtube.com/vi/PmuQDnWT-WI/maxresdefault.jpg",
+          "duration": "3:26",
+          "durationSec": 206,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
     "1408170": {
       "tmdbId": 1408170,
       "title": "Lenin",
@@ -1139,122 +1267,6 @@
         }
       ]
     },
-    "1112426-2": {
-      "tmdbId": 1112426,
-      "title": "Stree 2",
-      "originalTitle": "स्त्री 2: सरकटे का आतंक",
-      "language": "Hindi",
-      "year": 2024,
-      "releaseDate": "2024-08-15",
-      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
-      "genres": [
-        "Horror",
-        "Comedy"
-      ],
-      "runtime": 143,
-      "voteAverage": 6.695,
-      "voteCount": 100,
-      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "youtubePlaylistId": "PLRnfSOtSyGI4",
-      "videos": [
-        {
-          "youtubeLinkID": "0nrvPVnTWlc",
-          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
-          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
-          "duration": "3:08",
-          "durationSec": 188,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        },
-        {
-          "youtubeLinkID": "ri1Ar5nEq4s",
-          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
-          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
-          "duration": "4:38",
-          "durationSec": 278,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        },
-        {
-          "youtubeLinkID": "FTI96c3mGG0",
-          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
-          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
-          "duration": "3:53",
-          "durationSec": 233,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        }
-      ]
-    },
-    "811941-devara-part-1": {
-      "tmdbId": 811941,
-      "title": "Devara: Part 1",
-      "originalTitle": "Devara: Part 1",
-      "language": "Telugu",
-      "year": 2024,
-      "releaseDate": "2024-09-26",
-      "overview": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
-      "genres": [
-        "Action",
-        "Drama"
-      ],
-      "runtime": 175,
-      "voteAverage": 6.867,
-      "voteCount": 222,
-      "posterPath": "/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
-      "backdropPath": "/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
-      "youtubePlaylistId": "PLE3PpP0ju53w",
-      "videos": [
-        {
-          "youtubeLinkID": "_0ak7rWPlmU",
-          "title": "Chuttamalle [8K] Video - Devara Part 1 | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao | Koratala Siva",
-          "thumbnail": "https://img.youtube.com/vi/_0ak7rWPlmU/maxresdefault.jpg",
-          "duration": "3:37",
-          "durationSec": 217,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        },
-        {
-          "youtubeLinkID": "iST7U0l4BJE",
-          "title": "Ayudha Pooja 8K Video | Devara | NTR | Saif Ali Khan | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/iST7U0l4BJE/maxresdefault.jpg",
-          "duration": "3:06",
-          "durationSec": 186,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        },
-        {
-          "youtubeLinkID": "2So45J1dAu4",
-          "title": "Full Video: Daavudi [8K] - దావూదీ | Devara | NTR | Janhvi K | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/2So45J1dAu4/maxresdefault.jpg",
-          "duration": "3:06",
-          "durationSec": 186,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        },
-        {
-          "youtubeLinkID": "g44VQxMcFH4",
-          "title": "Full Video: Fear Song | Devara | NTR | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/g44VQxMcFH4/maxresdefault.jpg",
-          "duration": "2:46",
-          "durationSec": 166,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        }
-      ]
-    },
     "781732-animal": {
       "tmdbId": 781732,
       "title": "Animal",
@@ -1333,6 +1345,122 @@
           "thumbnail": "https://img.youtube.com/vi/0YxadsmzcEI/maxresdefault.jpg",
           "duration": "3:37",
           "durationSec": 217,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "811941-devara-part-1": {
+      "tmdbId": 811941,
+      "title": "Devara: Part 1",
+      "originalTitle": "Devara: Part 1",
+      "language": "Telugu",
+      "year": 2024,
+      "releaseDate": "2024-09-26",
+      "overview": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
+      "genres": [
+        "Action",
+        "Drama"
+      ],
+      "runtime": 175,
+      "voteAverage": 6.867,
+      "voteCount": 222,
+      "posterPath": "/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
+      "backdropPath": "/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
+      "youtubePlaylistId": "PLE3PpP0ju53w",
+      "videos": [
+        {
+          "youtubeLinkID": "_0ak7rWPlmU",
+          "title": "Chuttamalle [8K] Video - Devara Part 1 | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao | Koratala Siva",
+          "thumbnail": "https://img.youtube.com/vi/_0ak7rWPlmU/maxresdefault.jpg",
+          "duration": "3:37",
+          "durationSec": 217,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "iST7U0l4BJE",
+          "title": "Ayudha Pooja 8K Video | Devara | NTR | Saif Ali Khan | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/iST7U0l4BJE/maxresdefault.jpg",
+          "duration": "3:06",
+          "durationSec": 186,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "2So45J1dAu4",
+          "title": "Full Video: Daavudi [8K] - దావూదీ | Devara | NTR | Janhvi K | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/2So45J1dAu4/maxresdefault.jpg",
+          "duration": "3:06",
+          "durationSec": 186,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "g44VQxMcFH4",
+          "title": "Full Video: Fear Song | Devara | NTR | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/g44VQxMcFH4/maxresdefault.jpg",
+          "duration": "2:46",
+          "durationSec": 166,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "1112426-2": {
+      "tmdbId": 1112426,
+      "title": "Stree 2",
+      "originalTitle": "स्त्री 2: सरकटे का आतंक",
+      "language": "Hindi",
+      "year": 2024,
+      "releaseDate": "2024-08-15",
+      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
+      "runtime": 143,
+      "voteAverage": 6.695,
+      "voteCount": 100,
+      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "youtubePlaylistId": "PLRnfSOtSyGI4",
+      "videos": [
+        {
+          "youtubeLinkID": "0nrvPVnTWlc",
+          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
+          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
+          "duration": "3:08",
+          "durationSec": 188,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "ri1Ar5nEq4s",
+          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
+          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
+          "duration": "4:38",
+          "durationSec": 278,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "FTI96c3mGG0",
+          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
+          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
+          "duration": "3:53",
+          "durationSec": 233,
           "date": "",
           "resolution": "",
           "viewCount": 0
