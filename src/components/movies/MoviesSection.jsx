@@ -1,12 +1,14 @@
 import React, { useState, useMemo } from 'react';
 import MovieCard from './MovieCard';
 import MovieDetail from './MovieDetail';
+import VideoGrid from '../VideoGrid';
 
 export default function MoviesSection({ moviesData, onVideoSelect, searchQuery = '' }) {
   const [activeLanguage, setActiveLanguage] = useState('All');
   const [sortBy, setSortBy] = useState('Year'); // 'Year', 'Rating'
   const [sortOrder, setSortOrder] = useState('desc'); // 'desc', 'asc'
   const [selectedMovie, setSelectedMovie] = useState(null);
+  const [viewMode, setViewMode] = useState('albums'); // 'albums', 'flat'
 
   // Parse movies from data
   const allMovies = useMemo(() => {
@@ -62,6 +64,25 @@ export default function MoviesSection({ moviesData, onVideoSelect, searchQuery =
     return result;
   }, [allMovies, activeLanguage, searchQuery, sortBy, sortOrder]);
 
+  const flattenedVideos = useMemo(() => {
+    if (viewMode !== 'flat') return [];
+    
+    const videos = [];
+    filteredMovies.forEach(movie => {
+      if (movie.videos && movie.videos.length > 0) {
+        movie.videos.forEach(v => {
+          videos.push({
+            ...v,
+            group: 'Movies',
+            category: movie.language || '',
+            type: movie.title || '',
+          });
+        });
+      }
+    });
+    return videos;
+  }, [filteredMovies, viewMode]);
+
   if (allMovies.length === 0) return null;
 
   const handleMovieClick = (movie) => {
@@ -84,6 +105,10 @@ export default function MoviesSection({ moviesData, onVideoSelect, searchQuery =
     
     setSelectedMovie(null);
     onVideoSelect(enrichedVideo, enrichedAlbum);
+  };
+
+  const handleFlatVideoSelect = (video) => {
+    onVideoSelect(video, flattenedVideos);
   };
 
   return (
@@ -120,59 +145,85 @@ export default function MoviesSection({ moviesData, onVideoSelect, searchQuery =
           </div>
         )}
 
-        {/* Sort Controls */}
-        <div className="movies-section__sort">
-          <span className="movies-section__sort-label">Sort by:</span>
-          <button 
-            className={`movies-section__sort-btn ${sortBy === 'Year' ? 'movies-section__sort-btn--active' : ''}`}
-            onClick={() => {
-              if (sortBy === 'Year') setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc');
-              else { setSortBy('Year'); setSortOrder('desc'); }
-            }}
-          >
-            Year
-            {sortBy === 'Year' && (
-              <svg className="movies-section__sort-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: sortOrder === 'asc' ? 'rotate(180deg)' : 'none' }}>
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <polyline points="19 12 12 19 5 12"></polyline>
-              </svg>
-            )}
-          </button>
-          <button 
-            className={`movies-section__sort-btn ${sortBy === 'Rating' ? 'movies-section__sort-btn--active' : ''}`}
-            onClick={() => {
-              if (sortBy === 'Rating') setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc');
-              else { setSortBy('Rating'); setSortOrder('desc'); }
-            }}
-          >
-            Rating
-            {sortBy === 'Rating' && (
-              <svg className="movies-section__sort-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: sortOrder === 'asc' ? 'rotate(180deg)' : 'none' }}>
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <polyline points="19 12 12 19 5 12"></polyline>
-              </svg>
-            )}
-          </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
+          {/* Sort Controls */}
+          <div className="movies-section__sort">
+            <span className="movies-section__sort-label">Sort by:</span>
+            <button 
+              className={`movies-section__sort-btn ${sortBy === 'Year' ? 'movies-section__sort-btn--active' : ''}`}
+              onClick={() => {
+                if (sortBy === 'Year') setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc');
+                else { setSortBy('Year'); setSortOrder('desc'); }
+              }}
+            >
+              Year
+              {sortBy === 'Year' && (
+                <svg className="movies-section__sort-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: sortOrder === 'asc' ? 'rotate(180deg)' : 'none' }}>
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              )}
+            </button>
+            <button 
+              className={`movies-section__sort-btn ${sortBy === 'Rating' ? 'movies-section__sort-btn--active' : ''}`}
+              onClick={() => {
+                if (sortBy === 'Rating') setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc');
+                else { setSortBy('Rating'); setSortOrder('desc'); }
+              }}
+            >
+              Rating
+              {sortBy === 'Rating' && (
+                <svg className="movies-section__sort-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: sortOrder === 'asc' ? 'rotate(180deg)' : 'none' }}>
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              )}
+            </button>
+          </div>
+
+          {/* View Toggle */}
+          <div className="movies-section__sort">
+            <span className="movies-section__sort-label">View:</span>
+            <button 
+              className={`movies-section__sort-btn ${viewMode === 'albums' ? 'movies-section__sort-btn--active' : ''}`}
+              onClick={() => setViewMode('albums')}
+            >
+              Albums
+            </button>
+            <button 
+              className={`movies-section__sort-btn ${viewMode === 'flat' ? 'movies-section__sort-btn--active' : ''}`}
+              onClick={() => setViewMode('flat')}
+            >
+              Flat
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Movie Grid */}
-      {filteredMovies.length > 0 ? (
-        <div className="movies-section__grid">
-          {filteredMovies.map((movie, index) => (
-            <MovieCard
-              key={movie.tmdbId}
-              movie={movie}
-              onClick={handleMovieClick}
-              index={index}
-            />
-          ))}
-        </div>
+      {/* Content Grid */}
+      {viewMode === 'albums' ? (
+        filteredMovies.length > 0 ? (
+          <div className="movies-section__grid">
+            {filteredMovies.map((movie, index) => (
+              <MovieCard
+                key={movie.tmdbId}
+                movie={movie}
+                onClick={handleMovieClick}
+                index={index}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="movies-section__empty">
+            <div className="movies-section__empty-icon">🎬</div>
+            <p className="movies-section__empty-text">No movies found for this filter.</p>
+          </div>
+        )
       ) : (
-        <div className="movies-section__empty">
-          <div className="movies-section__empty-icon">🎬</div>
-          <p className="movies-section__empty-text">No movies found for this language.</p>
-        </div>
+        <VideoGrid 
+          videos={flattenedVideos}
+          onVideoSelect={handleFlatVideoSelect}
+        />
       )}
 
       {/* Movie Detail Modal */}
