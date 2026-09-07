@@ -1,26 +1,49 @@
-import React, { useEffect, useState } from 'react';
-import { getPersonDetails, getPersonImages, getExternalIds, getImageUrl } from '../../services/tmdbApi';
+import React, { useEffect, useState, useMemo } from 'react';
+import { getPersonDetails, getPersonImages, getExternalIds, getPersonCredits, getImageUrl } from '../../services/tmdbApi';
+import favActorsData from '../../data/favActors.json';
 
-export default function PersonDetail({ personId, onClose }) {
+export default function PersonDetail({ personId, onClose, moviesData }) {
   const [person, setPerson] = useState(null);
   const [images, setImages] = useState([]);
   const [externalIds, setExternalIds] = useState(null);
+  const [credits, setCredits] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [isFav, setIsFav] = useState(false);
 
   useEffect(() => {
     const fetchPersonData = async () => {
       setLoading(true);
       try {
-        const [detailsData, imagesData, externalIdsData] = await Promise.all([
+        const [detailsData, imagesData, externalIdsData, creditsData] = await Promise.all([
           getPersonDetails(personId),
           getPersonImages(personId),
-          getExternalIds(personId)
+          getExternalIds(personId),
+          getPersonCredits(personId)
         ]);
         setPerson(detailsData);
         if (imagesData && imagesData.profiles) {
           setImages(imagesData.profiles);
         }
         setExternalIds(externalIdsData);
+        if (creditsData && creditsData.cast) {
+          setCredits(creditsData.cast);
+        }
+        
+        // Check fav status — try API first, fallback to local JSON
+        const pid = personId.toString();
+        let favs = Array.isArray(favActorsData) ? favActorsData : [];
+        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        if (isLocal) {
+          try {
+            const res = await fetch('http://localhost:3001/api/favActors');
+            if (res.ok) {
+              favs = await res.json();
+            }
+          } catch (e) {
+            // API not running, use local JSON
+          }
+        }
+        setIsFav(favs.includes(pid) || favs.includes(Number(personId)));
       } catch (err) {
         console.error("Failed to fetch person data:", err);
       } finally {
@@ -31,6 +54,26 @@ export default function PersonDetail({ personId, onClose }) {
       fetchPersonData();
     }
   }, [personId]);
+
+  const toggleFav = async (e) => {
+    e.stopPropagation();
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    if (!isLocal) return;
+
+    try {
+      const res = await fetch('http://localhost:3001/api/favActors', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ actorId: personId.toString() })
+      });
+      if (res.ok) {
+        const favs = await res.json();
+        setIsFav(favs.includes(personId.toString()));
+      }
+    } catch (err) {
+      console.error("Failed to toggle fav actor", err);
+    }
+  };
 
   // Handle ESC
   useEffect(() => {
@@ -44,6 +87,26 @@ export default function PersonDetail({ personId, onClose }) {
     document.addEventListener('keydown', handleEsc, true);
     return () => document.removeEventListener('keydown', handleEsc, true);
   }, [onClose]);
+
+  const timelineMovies = useMemo(() => {
+    if (!credits || credits.length === 0) return [];
+    
+    const localTmdbIds = new Set();
+    if (moviesData && moviesData.movies) {
+      Object.values(moviesData.movies).forEach(m => {
+        if (m.tmdbId) localTmdbIds.add(m.tmdbId.toString());
+      });
+    }
+
+    // Sort by release_date descending
+    return [...credits]
+      .filter(c => c.media_type === 'movie' && c.release_date) // filter only movies with a date
+      .map(c => ({
+        ...c,
+        isLocal: localTmdbIds.has(c.id.toString())
+      }))
+      .sort((a, b) => new Date(b.release_date) - new Date(a.release_date));
+  }, [credits, moviesData]);
 
   if (!personId) return null;
 
@@ -82,6 +145,19 @@ export default function PersonDetail({ personId, onClose }) {
                             Follow on Instagram
                           </a>
                       )}
+
+                      {/* Favorite Button — only on localhost */}
+                      {(window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && (
+                        <button 
+                          className={`person-detail__fav-btn ${isFav ? 'person-detail__fav-btn--active' : ''}`}
+                          onClick={toggleFav}
+                        >
+                          <svg viewBox="0 0 24 24" fill={isFav ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                          </svg>
+                          {isFav ? 'Favorited' : 'Add to Favorites'}
+                        </button>
+                      )}
                   </div>
                </div>
                
@@ -107,6 +183,27 @@ export default function PersonDetail({ personId, onClose }) {
                            ))}
                        </div>
                    </div>
+               )}
+
+               {/* Timeline Section */}
+               {timelineMovies && timelineMovies.length > 0 && (
+                 <div className="person-detail__timeline">
+                   <h2>Movie Timeline</h2>
+                   <div className="person-detail__timeline-list">
+                     {timelineMovies.map(m => (
+                       <div key={m.id} className={`person-detail__timeline-item ${m.isLocal ? 'person-detail__timeline-item--local' : ''}`}>
+                         <span className="person-detail__timeline-year">
+                           {m.release_date ? m.release_date.split('-')[0] : 'TBA'}
+                         </span>
+                         <div className="person-detail__timeline-content">
+                           <span className="person-detail__timeline-title">{m.title}</span>
+                           {m.character && <span className="person-detail__timeline-character"> as {m.character}</span>}
+                           {m.isLocal && <span className="person-detail__timeline-badge">In Library</span>}
+                         </div>
+                       </div>
+                     ))}
+                   </div>
+                 </div>
                )}
             </div>
          ) : (

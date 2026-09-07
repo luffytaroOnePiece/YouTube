@@ -33,6 +33,10 @@ function pseudoRandom(seed) {
   };
 }
 
+import ActorsSection from "./components/movies/ActorsSection";
+
+const ENABLE_ACTORS_FEATURE = true;
+
 function App() {
   const [filters, setFilters] = useUrlFilters(INITIAL_FILTERS);
   const {
@@ -165,6 +169,7 @@ function App() {
   const [showScripts, setShowScripts] = useState(false);
   const [showAnalytics, setShowAnalytics] = useState(false);
   const [showMovies, setShowMovies] = useState(false);
+  const [showActors, setShowActors] = useState(false);
   const [playerMode, setPlayerMode] = useState("normal");
   const [isMonitorSize, setIsMonitorSize] = useState(false);
   const [isMiniPlayer, setIsMiniPlayer] = useState(false);
@@ -847,7 +852,12 @@ function App() {
               </button>
               <button
                 className="header__analytics-btn"
-                onClick={() => setShowMovies((prev) => !prev)}
+                onClick={() => {
+                  setShowMovies((prev) => !prev);
+                  setShowActors(false);
+                  setShowAnalytics(false);
+                  setShowScripts(false);
+                }}
                 title="Movies"
                 style={showMovies ? { background: 'var(--accent-soft)', color: 'var(--accent)' } : {}}
               >
@@ -872,6 +882,26 @@ function App() {
                 </svg>
                 <span>Movies</span>
               </button>
+
+              {ENABLE_ACTORS_FEATURE && (
+                <button
+                  className="header__analytics-btn"
+                  onClick={() => {
+                    setShowActors((prev) => !prev);
+                    setShowMovies(false);
+                    setShowAnalytics(false);
+                    setShowScripts(false);
+                  }}
+                  title="Actors"
+                  style={showActors ? { background: 'var(--accent-soft)', color: 'var(--accent)' } : {}}
+                >
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                  </svg>
+                  <span>Actors</span>
+                </button>
+              )}
+
               <button
                 className="header__scripts-btn"
                 onClick={() => setIsMonitorSize(!isMonitorSize)}
@@ -937,7 +967,7 @@ function App() {
         </header>
 
         {/* Filter Bar */}
-        {!showMovies && (
+        {!showMovies && !showActors && (
           <FilterBar
             groups={groups}
             groupMeta={groupMeta}
@@ -974,7 +1004,7 @@ function App() {
       </div>
 
       {/* Home View: Latest Videos */}
-      {isHomeView && !showMovies && latestVideos.length > 0 && (
+      {isHomeView && !showMovies && !showActors && latestVideos.length > 0 && (
         <section className="home-section">
           <div className="home-section__header">
             <span className="home-section__title">Recently Added</span>
@@ -996,7 +1026,7 @@ function App() {
       )}
 
       {/* Home View: Movies Section */}
-      {isHomeView && !showMovies && (
+      {isHomeView && !showMovies && !showActors && (
         <MoviesSection
           moviesData={moviesData}
           onVideoSelect={handleVideoSelect}
@@ -1005,7 +1035,7 @@ function App() {
       )}
 
       {/* Dedicated Movies View */}
-      {showMovies && (
+      {showMovies && !showActors && (
         <MoviesSection
           moviesData={moviesData}
           onVideoSelect={handleVideoSelect}
@@ -1013,8 +1043,15 @@ function App() {
         />
       )}
 
+      {/* Actors View */}
+      {showActors && ENABLE_ACTORS_FEATURE && (
+        <ActorsSection
+          moviesData={moviesData}
+        />
+      )}
+
       {/* Filtered View */}
-      {!isHomeView && !showMovies && (
+      {!isHomeView && !showMovies && !showActors && (
         <VideoGrid
           videos={filteredVideos}
           onVideoSelect={handleVideoSelect}

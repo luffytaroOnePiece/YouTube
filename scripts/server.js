@@ -119,6 +119,43 @@ app.post('/api/fav', (req, res) => {
   }
 });
 
+// GET /api/favActors — get favorite actors
+app.get('/api/favActors', (req, res) => {
+  try {
+    const favFile = path.join(__dirname, '../src/data/favActors.json');
+    if (!fs.existsSync(favFile)) return res.json([]);
+    const data = JSON.parse(fs.readFileSync(favFile, 'utf-8'));
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/favActors — toggle favorite actor
+app.post('/api/favActors', (req, res) => {
+  try {
+    const { actorId } = req.body;
+    if (!actorId) return res.status(400).json({ error: 'actorId required' });
+    
+    const favFile = path.join(__dirname, '../src/data/favActors.json');
+    let data = [];
+    if (fs.existsSync(favFile)) {
+      data = JSON.parse(fs.readFileSync(favFile, 'utf-8'));
+    }
+    
+    if (data.includes(actorId)) {
+      data = data.filter(id => id !== actorId);
+    } else {
+      data.push(actorId);
+    }
+    
+    fs.writeFileSync(favFile, JSON.stringify(data, null, 2), 'utf-8');
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // POST /api/tags — create a tag or toggle a video on a tag
 app.post('/api/tags', (req, res) => {
   try {

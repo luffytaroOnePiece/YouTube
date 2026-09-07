@@ -1116,11 +1116,9 @@
 .person-detail__content {
   background-color: var(--yt-bg, #0f0f0f);
   width: 100%;
-  max-width: 900px;
   min-height: 100vh;
   position: relative;
-  box-shadow: 0 0 40px rgba(0,0,0,0.8);
-  padding: 40px 20px;
+  padding: 40px 5%;
   color: var(--yt-text, #fff);
 }
 
@@ -1147,7 +1145,8 @@
 }
 
 .person-detail__inner {
-  max-width: 800px;
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -1283,4 +1282,203 @@
   transform: scale(1.05);
   background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
+}
+
+.person-detail__fav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  width: fit-content;
+  margin-top: 10px;
+}
+
+.person-detail__fav-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.person-detail__fav-btn--active {
+  background: rgba(255, 59, 48, 0.2);
+  color: #ff3b30;
+}
+
+.person-detail__fav-btn--active:hover {
+  background: rgba(255, 59, 48, 0.3);
+}
+
+.person-detail__timeline {
+  margin-top: 40px;
+}
+
+.person-detail__timeline h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.person-detail__timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.person-detail__timeline-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.person-detail__timeline-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.person-detail__timeline-item--local {
+  background: rgba(46, 204, 113, 0.1);
+  border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.person-detail__timeline-item--local:hover {
+  background: rgba(46, 204, 113, 0.15);
+}
+
+.person-detail__timeline-year {
+  font-weight: bold;
+  color: #aaa;
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.person-detail__timeline-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.person-detail__timeline-title {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.person-detail__timeline-character {
+  color: #888;
+  font-style: italic;
+}
+
+.person-detail__timeline-badge {
+  background: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+/* ── Actors Section Grid — 6 per row ─────────────────────── */
+.actors-section__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  padding: 20px;
+}
+
+@media (max-width: 1200px) {
+  .actors-section__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .actors-section__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .actors-section__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Actors Section Cards ────────────────────────────────── */
+.actors-section__card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+}
+.actors-section__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.actors-section__img-wrap {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.actors-section__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.actors-section__card:hover .actors-section__img {
+  transform: scale(1.05);
+}
+
+.actors-section__placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.2);
+}
+.actors-section__placeholder svg {
+  width: 48px;
+  height: 48px;
+}
+
+.actors-section__info {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.actors-section__name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.actors-section__age {
+  font-size: 0.9rem;
+  color: #aaa;
 }

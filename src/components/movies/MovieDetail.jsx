@@ -460,6 +460,7 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
         <PersonDetail
           personId={selectedPersonId}
           onClose={() => setSelectedPersonId(null)}
+          moviesData={{ movies: allMovies }}
         />
       )}
     </div>
