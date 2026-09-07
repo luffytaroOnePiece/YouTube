@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T16:16:14.369Z",
+  "lastUpdated": "2026-09-07T03:37:53.482Z",
   "movies": {
     "262227": {
       "tmdbId": 262227,
@@ -261,6 +261,99 @@
           "thumbnail": "https://img.youtube.com/vi/kjuA629s0J0/maxresdefault.jpg",
           "duration": "2:23",
           "durationSec": 143,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "653221": {
+      "tmdbId": 653221,
+      "title": "Hridayam",
+      "originalTitle": "ഹൃദയം",
+      "language": "Malayalam",
+      "year": 2022,
+      "releaseDate": "2022-01-21",
+      "overview": "Arun and Darshana are first-year engineering students and they fall in love soon after their college begins. And just as how things work generally in teenage, the road ahead isn't too easy for them. Life offers many twists and turns that they least expect.",
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "runtime": 172,
+      "voteAverage": 7.185,
+      "voteCount": 65,
+      "posterPath": "/rMNzpbruCuBmYPWhaNLrKOlNKcu.jpg",
+      "backdropPath": "/mrupP5GXx8O4dmhUTTjxND4TMEw.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/rMNzpbruCuBmYPWhaNLrKOlNKcu.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/mrupP5GXx8O4dmhUTTjxND4TMEw.jpg",
+      "youtubePlaylistId": "PLFzvDu6y_xac",
+      "videos": [
+        {
+          "youtubeLinkID": "epAFDEJImrU",
+          "title": "Darshana - Official Video Song | Hridayam | Pranav | Darshana | Vineeth | Hesham | Merryland",
+          "thumbnail": "https://img.youtube.com/vi/epAFDEJImrU/maxresdefault.jpg",
+          "duration": "4:52",
+          "durationSec": 292,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "xyUxkUPe2xg",
+          "title": "Nagumo Video Song |Hridayam |Pranav |Darshana |Kalyani |Hesham |Arvind Venugopal|Tyagaraja|Merryland",
+          "thumbnail": "https://img.youtube.com/vi/xyUxkUPe2xg/maxresdefault.jpg",
+          "duration": "2:51",
+          "durationSec": 171,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "ftIPUowtX2Q",
+          "title": "Pottu Thotta Pournami Video Song |Hridayam |Pranav |Kalyani |Hesham |Sachin |Megha |Kaithapram",
+          "thumbnail": "https://img.youtube.com/vi/ftIPUowtX2Q/maxresdefault.jpg",
+          "duration": "2:59",
+          "durationSec": 179,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "lZL2K3ewRYM",
+          "title": "Puthiyoru Lokam Video Song | Hridayam |Pranav |Kalyani |Darshana |Hesham |Vimal |Bhadra |Kaithapram",
+          "thumbnail": "https://img.youtube.com/vi/lZL2K3ewRYM/maxresdefault.jpg",
+          "duration": "3:50",
+          "durationSec": 230,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "faLdQRF2DQk",
+          "title": "Nagumo Revival Video Song | Pranav | Kalyani | Darshana | Vineeth | Tyagaraja | Hesham Abdul Wahab",
+          "thumbnail": "https://img.youtube.com/vi/faLdQRF2DQk/maxresdefault.jpg",
+          "duration": "2:53",
+          "durationSec": 173,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "N_zXtXla2-c",
+          "title": "Onakka Munthiri Video Song | Extended Cut | Hridayam | Pranav, Kalyani | Vineeth | Divya |Hesham",
+          "thumbnail": "https://img.youtube.com/vi/N_zXtXla2-c/maxresdefault.jpg",
+          "duration": "2:15",
+          "durationSec": 135,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "u0RXWL2JGNE",
+          "title": "Onakka Munthiri Video Song | Hridayam | Pranav | Kalyani | Vineeth |Divya |Hesham |Visakh |Merryland",
+          "thumbnail": "https://img.youtube.com/vi/u0RXWL2JGNE/maxresdefault.jpg",
+          "duration": "2:07",
+          "durationSec": 127,
           "date": "",
           "resolution": "",
           "viewCount": 0
@@ -1267,122 +1360,6 @@
         }
       ]
     },
-    "1112426-2": {
-      "tmdbId": 1112426,
-      "title": "Stree 2",
-      "originalTitle": "स्त्री 2: सरकटे का आतंक",
-      "language": "Hindi",
-      "year": 2024,
-      "releaseDate": "2024-08-15",
-      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
-      "genres": [
-        "Horror",
-        "Comedy"
-      ],
-      "runtime": 143,
-      "voteAverage": 6.695,
-      "voteCount": 100,
-      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "youtubePlaylistId": "PLRnfSOtSyGI4",
-      "videos": [
-        {
-          "youtubeLinkID": "0nrvPVnTWlc",
-          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
-          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
-          "duration": "3:08",
-          "durationSec": 188,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        },
-        {
-          "youtubeLinkID": "ri1Ar5nEq4s",
-          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
-          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
-          "duration": "4:38",
-          "durationSec": 278,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        },
-        {
-          "youtubeLinkID": "FTI96c3mGG0",
-          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
-          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
-          "duration": "3:53",
-          "durationSec": 233,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        }
-      ]
-    },
-    "811941-devara-part-1": {
-      "tmdbId": 811941,
-      "title": "Devara: Part 1",
-      "originalTitle": "Devara: Part 1",
-      "language": "Telugu",
-      "year": 2024,
-      "releaseDate": "2024-09-26",
-      "overview": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
-      "genres": [
-        "Action",
-        "Drama"
-      ],
-      "runtime": 175,
-      "voteAverage": 6.867,
-      "voteCount": 222,
-      "posterPath": "/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
-      "backdropPath": "/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
-      "youtubePlaylistId": "PLE3PpP0ju53w",
-      "videos": [
-        {
-          "youtubeLinkID": "_0ak7rWPlmU",
-          "title": "Chuttamalle [8K] Video - Devara Part 1 | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao | Koratala Siva",
-          "thumbnail": "https://img.youtube.com/vi/_0ak7rWPlmU/maxresdefault.jpg",
-          "duration": "3:37",
-          "durationSec": 217,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        },
-        {
-          "youtubeLinkID": "iST7U0l4BJE",
-          "title": "Ayudha Pooja 8K Video | Devara | NTR | Saif Ali Khan | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/iST7U0l4BJE/maxresdefault.jpg",
-          "duration": "3:06",
-          "durationSec": 186,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        },
-        {
-          "youtubeLinkID": "2So45J1dAu4",
-          "title": "Full Video: Daavudi [8K] - దావూదీ | Devara | NTR | Janhvi K | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/2So45J1dAu4/maxresdefault.jpg",
-          "duration": "3:06",
-          "durationSec": 186,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        },
-        {
-          "youtubeLinkID": "g44VQxMcFH4",
-          "title": "Full Video: Fear Song | Devara | NTR | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/g44VQxMcFH4/maxresdefault.jpg",
-          "duration": "2:46",
-          "durationSec": 166,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        }
-      ]
-    },
     "781732-animal": {
       "tmdbId": 781732,
       "title": "Animal",
@@ -1461,6 +1438,196 @@
           "thumbnail": "https://img.youtube.com/vi/0YxadsmzcEI/maxresdefault.jpg",
           "duration": "3:37",
           "durationSec": 217,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "811941-devara-part-1": {
+      "tmdbId": 811941,
+      "title": "Devara: Part 1",
+      "originalTitle": "Devara: Part 1",
+      "language": "Telugu",
+      "year": 2024,
+      "releaseDate": "2024-09-26",
+      "overview": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
+      "genres": [
+        "Action",
+        "Drama"
+      ],
+      "runtime": 175,
+      "voteAverage": 6.867,
+      "voteCount": 222,
+      "posterPath": "/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
+      "backdropPath": "/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
+      "youtubePlaylistId": "PLE3PpP0ju53w",
+      "videos": [
+        {
+          "youtubeLinkID": "_0ak7rWPlmU",
+          "title": "Chuttamalle [8K] Video - Devara Part 1 | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao | Koratala Siva",
+          "thumbnail": "https://img.youtube.com/vi/_0ak7rWPlmU/maxresdefault.jpg",
+          "duration": "3:37",
+          "durationSec": 217,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "iST7U0l4BJE",
+          "title": "Ayudha Pooja 8K Video | Devara | NTR | Saif Ali Khan | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/iST7U0l4BJE/maxresdefault.jpg",
+          "duration": "3:06",
+          "durationSec": 186,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "2So45J1dAu4",
+          "title": "Full Video: Daavudi [8K] - దావూదీ | Devara | NTR | Janhvi K | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/2So45J1dAu4/maxresdefault.jpg",
+          "duration": "3:06",
+          "durationSec": 186,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "g44VQxMcFH4",
+          "title": "Full Video: Fear Song | Devara | NTR | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/g44VQxMcFH4/maxresdefault.jpg",
+          "duration": "2:46",
+          "durationSec": 166,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "1112426-2": {
+      "tmdbId": 1112426,
+      "title": "Stree 2",
+      "originalTitle": "स्त्री 2: सरकटे का आतंक",
+      "language": "Hindi",
+      "year": 2024,
+      "releaseDate": "2024-08-15",
+      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
+      "runtime": 143,
+      "voteAverage": 6.695,
+      "voteCount": 100,
+      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "youtubePlaylistId": "PLRnfSOtSyGI4",
+      "videos": [
+        {
+          "youtubeLinkID": "0nrvPVnTWlc",
+          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
+          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
+          "duration": "3:08",
+          "durationSec": 188,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "ri1Ar5nEq4s",
+          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
+          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
+          "duration": "4:38",
+          "durationSec": 278,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "FTI96c3mGG0",
+          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
+          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
+          "duration": "3:53",
+          "durationSec": 233,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "1290190-chapter-1": {
+      "tmdbId": 1290190,
+      "title": "Lokah Chapter 1: Chandra",
+      "originalTitle": "ലോകഃ Chapter 1: ചന്ദ്ര",
+      "language": "Malayalam",
+      "year": 2025,
+      "releaseDate": "2025-08-28",
+      "overview": "The story follows Chandra, a mysterious, goth-influenced woman who has just moved to Bangalore and begins working night shifts at a café. Across the road from her apartment live Sunny and Venu, two aimless bachelors. Sunny becomes infatuated with Chandra, observing her odd routines, strange visitors, and reclusive nature. Their dynamic changes when Sunny gets a glimpse of Chandra in her act.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "runtime": 151,
+      "voteAverage": 7.291,
+      "voteCount": 67,
+      "posterPath": "/nRn6is4m5sikO1rSoCoRT2rYtXB.jpg",
+      "backdropPath": "/tkRZ8BpIlvQIFBQWwEHuAlxczyb.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/nRn6is4m5sikO1rSoCoRT2rYtXB.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/tkRZ8BpIlvQIFBQWwEHuAlxczyb.jpg",
+      "youtubePlaylistId": "PLTn8b0kpAgS0",
+      "videos": [
+        {
+          "youtubeLinkID": "dR9B_gPxjkk",
+          "title": "Kiliye Kiliye - Video Song | Lokah Chapter 1: Chandra | Kalyani Priyadarshan | Naslen | Dominic Arun",
+          "thumbnail": "https://img.youtube.com/vi/dR9B_gPxjkk/maxresdefault.jpg",
+          "duration": "2:05",
+          "durationSec": 125,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "DXm6diugHCc",
+          "title": "Queen of the Night | Lokah Movie Song | Kalyani | Naslen | Jakes Bejoy | Dominic Arun | Nimish Ravi",
+          "thumbnail": "https://img.youtube.com/vi/DXm6diugHCc/maxresdefault.jpg",
+          "duration": "3:22",
+          "durationSec": 202,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "Y23dN3JZrcE",
+          "title": "Neeye Punchiri |  | Lokah | Hanan Sha | Reyan | Jakes Bejoy | Kalyani | Naslen | Dominic | Nimish ",
+          "thumbnail": "https://img.youtube.com/vi/Y23dN3JZrcE/maxresdefault.jpg",
+          "duration": "4:01",
+          "durationSec": 241,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "bL1fxyAvPGc",
+          "title": "Paranje Paranje Song | Lokah  | Jakes Bejoy | Anuradha Sriram | Kalyani | Naslen | Dominic | Nimish",
+          "thumbnail": "https://img.youtube.com/vi/bL1fxyAvPGc/maxresdefault.jpg",
+          "duration": "3:35",
+          "durationSec": 215,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "q025lNfr9aU",
+          "title": "Shoka Mookam | Lokah Movie Song 4K | Kalyani |  Naslen | Dominic Arun | Nimish Ravi | JK",
+          "thumbnail": "https://img.youtube.com/vi/q025lNfr9aU/maxresdefault.jpg",
+          "duration": "2:51",
+          "durationSec": 171,
           "date": "",
           "resolution": "",
           "viewCount": 0
