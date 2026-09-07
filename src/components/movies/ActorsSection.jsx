@@ -8,7 +8,7 @@ export default function ActorsSection({ moviesData }) {
   const [actorsData, setActorsData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedPersonId, setSelectedPersonId] = useState(null);
-  const [sortByAge, setSortByAge] = useState(false);
+  const [sortAgeDirection, setSortAgeDirection] = useState('none'); // 'none', 'asc', 'desc'
   const [genderFilter, setGenderFilter] = useState('All'); // 'All', 'Male', 'Female'
 
   useEffect(() => {
@@ -61,7 +61,14 @@ export default function ActorsSection({ moviesData }) {
   const filteredActors = useMemo(() => {
     const calcAge = (birthday) => {
       if (!birthday) return 999;
-      return new Date().getFullYear() - new Date(birthday).getFullYear();
+      const birthDate = new Date(birthday);
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      return age;
     };
 
     // TMDB gender: 1 = Female, 2 = Male
@@ -72,12 +79,25 @@ export default function ActorsSection({ moviesData }) {
       result = result.filter(a => a.gender === 1);
     }
 
-    if (sortByAge) {
-      result = [...result].sort((a, b) => calcAge(a.birthday) - calcAge(b.birthday));
+    if (sortAgeDirection !== 'none') {
+      result = [...result].sort((a, b) => {
+        if (!a.birthday) return 1;
+        if (!b.birthday) return -1;
+        
+        // localeCompare returns -1 if string A is smaller than string B
+        // string A smaller = older date = older age
+        // 'asc' = youngest first (smallest age) = largest date first
+        // 'desc' = oldest first (largest age) = smallest date first
+        if (sortAgeDirection === 'asc') {
+          return b.birthday.localeCompare(a.birthday);
+        } else {
+          return a.birthday.localeCompare(b.birthday);
+        }
+      });
     }
 
     return result;
-  }, [actorsData, sortByAge, genderFilter]);
+  }, [actorsData, sortAgeDirection, genderFilter]);
 
   return (
     <section className="movies-section">
@@ -102,10 +122,14 @@ export default function ActorsSection({ moviesData }) {
         <div className="movies-section__sort">
           <span className="movies-section__sort-label">Sort by:</span>
           <button
-            className={`movies-section__sort-btn ${sortByAge ? 'movies-section__sort-btn--active' : ''}`}
-            onClick={() => setSortByAge(!sortByAge)}
+            className={`movies-section__sort-btn ${sortAgeDirection !== 'none' ? 'movies-section__sort-btn--active' : ''}`}
+            onClick={() => {
+              if (sortAgeDirection === 'none') setSortAgeDirection('asc');
+              else if (sortAgeDirection === 'asc') setSortAgeDirection('desc');
+              else setSortAgeDirection('none');
+            }}
           >
-            Age
+            Age {sortAgeDirection === 'asc' ? '↑' : sortAgeDirection === 'desc' ? '↓' : ''}
           </button>
         </div>
       </div>
@@ -138,7 +162,16 @@ export default function ActorsSection({ moviesData }) {
                 <span className="actors-section__name">{actor.name}</span>
                 {actor.birthday && (
                   <span className="actors-section__age">
-                    Age: {new Date().getFullYear() - new Date(actor.birthday).getFullYear()}
+                    Age: {(() => {
+                      const birthDate = new Date(actor.birthday);
+                      const today = new Date();
+                      let age = today.getFullYear() - birthDate.getFullYear();
+                      const m = today.getMonth() - birthDate.getMonth();
+                      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                        age--;
+                      }
+                      return age;
+                    })()}
                   </span>
                 )}
               </div>
