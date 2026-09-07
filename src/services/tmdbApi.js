@@ -143,6 +143,16 @@ export const getPersonCredits = async (personId) => {
     return fetchTmdb(`/person/${personId}/combined_credits`, { language: 'en-US' });
 };
 
+export const getPersonDetails = async (personId) => {
+    if (!personId) return null;
+    return fetchTmdb(`/person/${personId}`, { language: 'en-US' });
+};
+
+export const getPersonImages = async (personId) => {
+    if (!personId) return null;
+    return fetchTmdb(`/person/${personId}/images`);
+};
+
 export const getExternalIds = async (personId) => {
     if (!personId) return null;
     return fetchTmdb(`/person/${personId}/external_ids`);

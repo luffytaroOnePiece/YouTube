@@ -1095,3 +1095,192 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
+
+/* ── Person Detail (Actor/Crew Overlay) ─────────────────────────────────────────────── */
+.person-detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  animation: movieDetailSlideIn 0.3s ease forwards;
+}
+
+.person-detail__content {
+  background-color: var(--yt-bg, #0f0f0f);
+  width: 100%;
+  max-width: 900px;
+  min-height: 100vh;
+  position: relative;
+  box-shadow: 0 0 40px rgba(0,0,0,0.8);
+  padding: 40px 20px;
+  color: var(--yt-text, #fff);
+}
+
+.person-detail__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  z-index: 10;
+}
+.person-detail__close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.person-detail__inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.person-detail__header {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.person-detail__profile-main,
+.person-detail__profile-placeholder {
+  width: 250px;
+  height: 375px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.person-detail__profile-placeholder {
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.person-detail__profile-placeholder svg {
+  width: 64px;
+  height: 64px;
+}
+
+.person-detail__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.person-detail__name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.person-detail__metadata {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.person-detail__meta {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+.person-detail__meta strong {
+  color: #fff;
+}
+
+.person-detail__social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: opacity 0.2s, transform 0.2s;
+  width: fit-content;
+}
+
+.person-detail__social-link:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.person-detail__bio {
+  margin-bottom: 40px;
+}
+
+.person-detail__bio h2,
+.person-detail__images h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.person-detail__bio p {
+  line-height: 1.6;
+  color: #ccc;
+  font-size: 1.05rem;
+}
+
+.person-detail__images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.person-detail__gallery-img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.person-detail__gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.person-detail__loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.movie-detail__cast-card--clickable {
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+.movie-detail__cast-card--clickable:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}

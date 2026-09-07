@@ -1,6 +1,7 @@
 import React, { useEffect, useCallback, useState, useMemo } from 'react';
 import { getImages, getImageUrl, getCredits } from '../../services/tmdbApi';
 import MovieCard from './MovieCard';
+import PersonDetail from './PersonDetail';
 
 function formatRuntime(minutes) {
   if (!minutes) return '';
@@ -40,6 +41,7 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
   const [fullscreenImage, setFullscreenImage] = useState(null);
   const [castData, setCastData] = useState(null);
   const [isLoadingCast, setIsLoadingCast] = useState(false);
+  const [selectedPersonId, setSelectedPersonId] = useState(null);
 
   // Compute recommendations based on genre, language, and year
   const recommendations = useMemo(() => {
@@ -339,7 +341,7 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
             {!isLoadingCast && castData && castData.cast && castData.cast.length > 0 && (
               <div className="movie-detail__cast-grid">
                 {castData.cast.slice(0, 20).map((actor) => (
-                  <div key={actor.id} className="movie-detail__cast-card">
+                  <div key={actor.id} className="movie-detail__cast-card movie-detail__cast-card--clickable" onClick={() => setSelectedPersonId(actor.id)}>
                     <div className="movie-detail__cast-img-wrap">
                       {actor.profile_path ? (
                         <img
@@ -383,7 +385,7 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
                   .reduce((unique, item) => unique.find(x => x.id === item.id && x.job === item.job) ? unique : [...unique, item], [])
                   .slice(0, 20)
                   .map((crewMember, idx) => (
-                    <div key={`${crewMember.id}-${idx}`} className="movie-detail__cast-card">
+                    <div key={`${crewMember.id}-${idx}`} className="movie-detail__cast-card movie-detail__cast-card--clickable" onClick={() => setSelectedPersonId(crewMember.id)}>
                       <div className="movie-detail__cast-img-wrap">
                         {crewMember.profile_path ? (
                           <img
@@ -452,6 +454,13 @@ export default function MovieDetail({ movie, allMovies = [], onClose, onVideoSel
             onClick={(e) => e.stopPropagation()} 
           />
         </div>
+      )}
+
+      {selectedPersonId && (
+        <PersonDetail
+          personId={selectedPersonId}
+          onClose={() => setSelectedPersonId(null)}
+        />
       )}
     </div>
   );
