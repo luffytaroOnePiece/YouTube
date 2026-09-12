@@ -2,13 +2,13 @@ import React, { useState, useMemo } from 'react';
 import MovieCard from './MovieCard';
 import MovieDetail from './MovieDetail';
 import VideoGrid from '../VideoGrid';
+import Dropdown from '../Dropdown';
 
 export default function MoviesSection({ moviesData, onVideoSelect, searchQuery = '' }) {
   const [activeLanguage, setActiveLanguage] = useState('All');
-  const [sortBy, setSortBy] = useState('Year'); // 'Year', 'Rating'
-  const [sortOrder, setSortOrder] = useState('desc'); // 'desc', 'asc'
+  const [activeSort, setActiveSort] = useState('Date (Newest)');
+  const [viewMode, setViewMode] = useState('Albums');
   const [selectedMovie, setSelectedMovie] = useState(null);
-  const [viewMode, setViewMode] = useState('albums'); // 'albums', 'flat'
 
   // Parse movies from data
   const allMovies = useMemo(() => {
@@ -44,28 +44,30 @@ export default function MoviesSection({ moviesData, onVideoSelect, searchQuery =
 
     // Sort
     result.sort((a, b) => {
-      let valA, valB;
-      
-      if (sortBy === 'Year') {
-        valA = parseInt(a.year) || 0;
-        valB = parseInt(b.year) || 0;
-      } else if (sortBy === 'Rating') {
-        valA = parseFloat(a.voteAverage) || 0;
-        valB = parseFloat(b.voteAverage) || 0;
-      }
-
-      if (sortOrder === 'desc') {
-        return valB - valA;
+      if (activeSort.startsWith('Date')) {
+        const dateA = a.releaseDate || `${a.year || '1970'}-01-01`;
+        const dateB = b.releaseDate || `${b.year || '1970'}-01-01`;
+        if (activeSort === 'Date (Newest)') {
+          return dateB.localeCompare(dateA);
+        } else {
+          return dateA.localeCompare(dateB);
+        }
       } else {
-        return valA - valB;
+        const valA = parseFloat(a.voteAverage) || 0;
+        const valB = parseFloat(b.voteAverage) || 0;
+        if (activeSort === 'Rating (Highest)') {
+          return valB - valA;
+        } else {
+          return valA - valB;
+        }
       }
     });
 
     return result;
-  }, [allMovies, activeLanguage, searchQuery, sortBy, sortOrder]);
+  }, [allMovies, activeLanguage, searchQuery, activeSort]);
 
   const flattenedVideos = useMemo(() => {
-    if (viewMode !== 'flat') return [];
+    if (viewMode !== 'Flat') return [];
     
     const videos = [];
     filteredMovies.forEach(movie => {
@@ -111,6 +113,27 @@ export default function MoviesSection({ moviesData, onVideoSelect, searchQuery =
     onVideoSelect(video, flattenedVideos);
   };
 
+  const languageOptions = [
+    { value: 'All', label: 'All Languages', count: allMovies.length },
+    ...languages.map(([lang, count]) => ({
+      value: lang,
+      label: lang,
+      count
+    }))
+  ];
+
+  const sortOptions = [
+    { value: 'Date (Newest)', label: 'Date (Newest)' },
+    { value: 'Date (Oldest)', label: 'Date (Oldest)' },
+    { value: 'Rating (Highest)', label: 'Rating (Highest)' },
+    { value: 'Rating (Lowest)', label: 'Rating (Lowest)' }
+  ];
+
+  const viewOptions = [
+    { value: 'Albums', label: 'Albums' },
+    { value: 'Flat', label: 'Flat' }
+  ];
+
   return (
     <section className="movies-section">
       {/* Header */}
@@ -122,86 +145,48 @@ export default function MoviesSection({ moviesData, onVideoSelect, searchQuery =
 
       {/* Controls row */}
       <div className="movies-section__controls">
-        {/* Language pills */}
+        {/* Language dropdown */}
         {languages.length > 1 && (
-          <div className="movies-section__lang-pills">
-            <button
-              className={`movies-section__pill ${activeLanguage === 'All' ? 'movies-section__pill--active' : ''}`}
-              onClick={() => setActiveLanguage('All')}
-            >
-              All
-              <span className="movies-section__pill-count">{allMovies.length}</span>
-            </button>
-            {languages.map(([lang, count]) => (
-              <button
-                key={lang}
-                className={`movies-section__pill ${activeLanguage === lang ? 'movies-section__pill--active' : ''}`}
-                onClick={() => setActiveLanguage(lang)}
-              >
-                {lang}
-                <span className="movies-section__pill-count">{count}</span>
-              </button>
-            ))}
+          <div className="movies-section__lang-dropdown">
+            <Dropdown
+              id="language-select"
+              value={activeLanguage}
+              options={languageOptions}
+              onChange={setActiveLanguage}
+              placeholder="All Languages"
+            />
           </div>
         )}
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
           {/* Sort Controls */}
           <div className="movies-section__sort">
             <span className="movies-section__sort-label">Sort by:</span>
-            <button 
-              className={`movies-section__sort-btn ${sortBy === 'Year' ? 'movies-section__sort-btn--active' : ''}`}
-              onClick={() => {
-                if (sortBy === 'Year') setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc');
-                else { setSortBy('Year'); setSortOrder('desc'); }
-              }}
-            >
-              Year
-              {sortBy === 'Year' && (
-                <svg className="movies-section__sort-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: sortOrder === 'asc' ? 'rotate(180deg)' : 'none' }}>
-                  <line x1="12" y1="5" x2="12" y2="19"></line>
-                  <polyline points="19 12 12 19 5 12"></polyline>
-                </svg>
-              )}
-            </button>
-            <button 
-              className={`movies-section__sort-btn ${sortBy === 'Rating' ? 'movies-section__sort-btn--active' : ''}`}
-              onClick={() => {
-                if (sortBy === 'Rating') setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc');
-                else { setSortBy('Rating'); setSortOrder('desc'); }
-              }}
-            >
-              Rating
-              {sortBy === 'Rating' && (
-                <svg className="movies-section__sort-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: sortOrder === 'asc' ? 'rotate(180deg)' : 'none' }}>
-                  <line x1="12" y1="5" x2="12" y2="19"></line>
-                  <polyline points="19 12 12 19 5 12"></polyline>
-                </svg>
-              )}
-            </button>
+            <Dropdown
+              id="sort-select"
+              value={activeSort}
+              options={sortOptions}
+              onChange={setActiveSort}
+              placeholder="Sort by"
+            />
           </div>
 
           {/* View Toggle */}
           <div className="movies-section__sort">
             <span className="movies-section__sort-label">View:</span>
-            <button 
-              className={`movies-section__sort-btn ${viewMode === 'albums' ? 'movies-section__sort-btn--active' : ''}`}
-              onClick={() => setViewMode('albums')}
-            >
-              Albums
-            </button>
-            <button 
-              className={`movies-section__sort-btn ${viewMode === 'flat' ? 'movies-section__sort-btn--active' : ''}`}
-              onClick={() => setViewMode('flat')}
-            >
-              Flat
-            </button>
+            <Dropdown
+              id="view-select"
+              value={viewMode}
+              options={viewOptions}
+              onChange={setViewMode}
+              placeholder="View Mode"
+            />
           </div>
         </div>
       </div>
 
       {/* Content Grid */}
-      {viewMode === 'albums' ? (
+      {viewMode === 'Albums' ? (
         filteredMovies.length > 0 ? (
           <div className="movies-section__grid">
             {filteredMovies.map((movie, index) => (

@@ -8,8 +8,20 @@ export default function ActorsSection({ moviesData }) {
   const [actorsData, setActorsData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedPersonId, setSelectedPersonId] = useState(null);
-  const [sortAgeDirection, setSortAgeDirection] = useState('none'); // 'none', 'asc', 'desc'
+  const [activeSort, setActiveSort] = useState('None'); // 'None', 'Age (Youngest)', 'Age (Oldest)'
   const [genderFilter, setGenderFilter] = useState('All'); // 'All', 'Male', 'Female'
+
+  const genderOptions = [
+    { value: 'All', label: 'All Genders' },
+    { value: 'Male', label: 'Male' },
+    { value: 'Female', label: 'Female' }
+  ];
+
+  const sortOptions = [
+    { value: 'None', label: 'No Sort' },
+    { value: 'Age (Youngest)', label: 'Age (Youngest)' },
+    { value: 'Age (Oldest)', label: 'Age (Oldest)' }
+  ];
 
   useEffect(() => {
     const fetchFavs = async () => {
@@ -79,16 +91,16 @@ export default function ActorsSection({ moviesData }) {
       result = result.filter(a => a.gender === 1);
     }
 
-    if (sortAgeDirection !== 'none') {
+    if (activeSort !== 'None') {
       result = [...result].sort((a, b) => {
         if (!a.birthday) return 1;
         if (!b.birthday) return -1;
         
         // localeCompare returns -1 if string A is smaller than string B
         // string A smaller = older date = older age
-        // 'asc' = youngest first (smallest age) = largest date first
-        // 'desc' = oldest first (largest age) = smallest date first
-        if (sortAgeDirection === 'asc') {
+        // 'Age (Youngest)' = youngest first (smallest age) = largest date first
+        // 'Age (Oldest)' = oldest first (largest age) = smallest date first
+        if (activeSort === 'Age (Youngest)') {
           return b.birthday.localeCompare(a.birthday);
         } else {
           return a.birthday.localeCompare(b.birthday);
@@ -97,7 +109,7 @@ export default function ActorsSection({ moviesData }) {
     }
 
     return result;
-  }, [actorsData, sortAgeDirection, genderFilter]);
+  }, [actorsData, activeSort, genderFilter]);
 
   return (
     <section className="movies-section">
@@ -107,30 +119,27 @@ export default function ActorsSection({ moviesData }) {
       </div>
 
       <div className="movies-section__controls">
-        <div className="movies-section__lang-pills">
-          {['All', 'Male', 'Female'].map(g => (
-            <button
-              key={g}
-              className={`movies-section__pill ${genderFilter === g ? 'movies-section__pill--active' : ''}`}
-              onClick={() => setGenderFilter(g)}
-            >
-              {g}
-            </button>
-          ))}
+        <div className="movies-section__lang-dropdown">
+          <Dropdown
+            id="gender-select"
+            value={genderFilter}
+            options={genderOptions}
+            onChange={setGenderFilter}
+            placeholder="All Genders"
+          />
         </div>
 
-        <div className="movies-section__sort">
-          <span className="movies-section__sort-label">Sort by:</span>
-          <button
-            className={`movies-section__sort-btn ${sortAgeDirection !== 'none' ? 'movies-section__sort-btn--active' : ''}`}
-            onClick={() => {
-              if (sortAgeDirection === 'none') setSortAgeDirection('asc');
-              else if (sortAgeDirection === 'asc') setSortAgeDirection('desc');
-              else setSortAgeDirection('none');
-            }}
-          >
-            Age {sortAgeDirection === 'asc' ? '↑' : sortAgeDirection === 'desc' ? '↓' : ''}
-          </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
+          <div className="movies-section__sort">
+            <span className="movies-section__sort-label">Sort by:</span>
+            <Dropdown
+              id="sort-select"
+              value={activeSort}
+              options={sortOptions}
+              onChange={setActiveSort}
+              placeholder="Sort by"
+            />
+          </div>
         </div>
       </div>
 
