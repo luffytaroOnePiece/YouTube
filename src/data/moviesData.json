@@ -1,6 +1,70 @@
 {
-  "lastUpdated": "2026-09-07T03:38:20.971Z",
+  "lastUpdated": "2026-09-12T02:27:49.317Z",
   "movies": {
+    "148284": {
+      "tmdbId": 148284,
+      "title": "Enthiran",
+      "originalTitle": "எந்திரன்",
+      "language": "Telugu",
+      "year": 2010,
+      "releaseDate": "2010-10-01",
+      "overview": "Dr. Vaseegaran creates Chitti, a powerful robot in his own image, but it is rejected by the scientific body AIRD due to its lack of human behaviour and emotions. After a lightning strike triggers emotions in Chitti, he begins to develop human-like feelings. However, Chitti falls in love with Dr. Vaseegaran's fiancée, Sana, and turns against his creator, leading to dangerous consequences.",
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Adventure"
+      ],
+      "runtime": 176,
+      "voteAverage": 6.581,
+      "voteCount": 265,
+      "posterPath": "/hai6CSCLxULO1RThjDP3lWAqOtQ.jpg",
+      "backdropPath": "/fvsSPqeVq4yhp7oZTGXA99uDQ1v.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/hai6CSCLxULO1RThjDP3lWAqOtQ.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/fvsSPqeVq4yhp7oZTGXA99uDQ1v.jpg",
+      "youtubePlaylistId": "PLQYvxXGWNisI",
+      "videos": [
+        {
+          "youtubeLinkID": "rn6GmQStrTA",
+          "title": "Inumulo O Hrudayam 8K Video Song | Robo | Rajinikanth, Aishwarya Rai | A.R. Rahman",
+          "thumbnail": "https://img.youtube.com/vi/rn6GmQStrTA/maxresdefault.jpg",
+          "duration": "5:26",
+          "durationSec": 326,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "eTbKM86DXuo",
+          "title": "Harima Harima Official Video Song 8K UHD | Robo | Rajinikanth, Aishwarya Rai | A.R.Rahman",
+          "thumbnail": "https://img.youtube.com/vi/eTbKM86DXuo/maxresdefault.jpg",
+          "duration": "5:23",
+          "durationSec": 323,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "GwBdFWv987Y",
+          "title": "Kilimanjaro Bhala - Official 8K Video Song | Robo | Rajinikanth, Aishwarya Rai | A.R.Rahman",
+          "thumbnail": "https://img.youtube.com/vi/GwBdFWv987Y/maxresdefault.jpg",
+          "duration": "5:46",
+          "durationSec": 346,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "5CttV9rxhic",
+          "title": "Neelo Valapu Official Video Song | Robot | Rajinikanth | Aishwarya Rai | A.R.Rahman",
+          "thumbnail": "https://img.youtube.com/vi/5CttV9rxhic/maxresdefault.jpg",
+          "duration": "5:24",
+          "durationSec": 324,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
     "262227": {
       "tmdbId": 262227,
       "title": "Race Gurram",
@@ -449,6 +513,164 @@
           "thumbnail": "https://img.youtube.com/vi/Km8Iwx9whFw/maxresdefault.jpg",
           "duration": "4:22",
           "durationSec": 262,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "858485": {
+      "tmdbId": 858485,
+      "title": "Kantara",
+      "originalTitle": "ಕಾಂತಾರ",
+      "language": "Kannada",
+      "year": 2022,
+      "releaseDate": "2022-09-30",
+      "overview": "Shiva, a tribal vagabond lives with his mother in hamlet, stays away from the traditional Daivaradhane and Bhoota Kola legacy due to an unforgettable childhood incident. He is happy loafing around with his friends and doing petty jobs for his landlord. When Forest officer Murali enters the scene, it gives a fresh dimension to the man-vs-nature fight. Can Shiva save the forest from Murali? Or is Murali just a dummy bait cast by bigger fish?",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "runtime": 147,
+      "voteAverage": 7.2,
+      "voteCount": 154,
+      "posterPath": "/jIsKmkxMzdCZ0Ux1GVSnu8m6Na6.jpg",
+      "backdropPath": "/kXElm7wt2kAXEVwJqW4cFhP43nW.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/jIsKmkxMzdCZ0Ux1GVSnu8m6Na6.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/kXElm7wt2kAXEVwJqW4cFhP43nW.jpg",
+      "youtubePlaylistId": "PLDmX4QJbwKrk",
+      "videos": [
+        {
+          "youtubeLinkID": "ILLo7cjohiE",
+          "title": "Kantara - Varaha Roopam 8K Video Song | Rishab Shetty | Ajaneesh Loknath | Hombale Music",
+          "thumbnail": "https://img.youtube.com/vi/ILLo7cjohiE/maxresdefault.jpg",
+          "duration": "4:43",
+          "durationSec": 283,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "qWfEhrcB6uw",
+          "title": "Kantara - Singara Siriye 8K Video Song | Rishab Shetty | Ajaneesh Loknath | Hombale Films",
+          "thumbnail": "https://img.youtube.com/vi/qWfEhrcB6uw/maxresdefault.jpg",
+          "duration": "5:14",
+          "durationSec": 314,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "3ocX9df0krI",
+          "title": "Brahmakalasha Kannada 8K Video Song  - Kantara Chapter 1 | Rishab Shetty, Rukmini | Hombale Music",
+          "thumbnail": "https://img.youtube.com/vi/3ocX9df0krI/maxresdefault.jpg",
+          "duration": "5:14",
+          "durationSec": 314,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "cCtWQtESPbI",
+          "title": "Varaha Roopam 8K Video Song- Kantara Chapter 1 | Rishab Shetty | Ajaneesh Loknath | Hombale Music",
+          "thumbnail": "https://img.youtube.com/vi/cCtWQtESPbI/maxresdefault.jpg",
+          "duration": "2:47",
+          "durationSec": 167,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "3OCBdugaNEM",
+          "title": "Madana Mana Mohini Kannada 8K Video Song- Kantara Chapter 1 | Rishab Shetty, Rukmini | Hombale Music",
+          "thumbnail": "https://img.youtube.com/vi/3OCBdugaNEM/maxresdefault.jpg",
+          "duration": "3:35",
+          "durationSec": 215,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "2eEenfugDKs",
+          "title": "Agriculture 8K Video Song (Kannada) -Kantara Chapter 1 | Rishab Shetty, Rukmini | Hombale Music",
+          "thumbnail": "https://img.youtube.com/vi/2eEenfugDKs/maxresdefault.jpg",
+          "duration": "2:21",
+          "durationSec": 141,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "DO8GPvtY988",
+          "title": "Karma 8K Video Song (Kannada) -Kantara Chapter 1 | Rishab Shetty, Rukmini Vasanth | Hombale Music",
+          "thumbnail": "https://img.youtube.com/vi/DO8GPvtY988/maxresdefault.jpg",
+          "duration": "4:11",
+          "durationSec": 251,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "894803": {
+      "tmdbId": 894803,
+      "title": "Sita Ramam",
+      "originalTitle": "సీతా రామం",
+      "language": "Telugu",
+      "year": 2022,
+      "releaseDate": "2022-08-05",
+      "overview": "Afreen, a rebellious Pakistani student sets ablaze the car of an Indian in London. Angered Afreen returns to Pakistan to ask for money from her grandfather that she has to pay in a month's time as damages. However, she gets to know that he is no more and the only thing he has left for her is a letter-delivering task, written by Ram to Sita. As Afreen sets out to find Ram, there begins her journey of discovering the secret behind the 20-year-old letter.",
+      "genres": [
+        "History",
+        "Romance",
+        "Drama"
+      ],
+      "runtime": 158,
+      "voteAverage": 7.829,
+      "voteCount": 117,
+      "posterPath": "/t1O94ZBzsQXJihtVkrsStRLyUDR.jpg",
+      "backdropPath": "/28EqsZDeEAy4VMZfrYbiyJZznKn.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/t1O94ZBzsQXJihtVkrsStRLyUDR.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/28EqsZDeEAy4VMZfrYbiyJZznKn.jpg",
+      "youtubePlaylistId": "PLRMzOH93RHEg",
+      "videos": [
+        {
+          "youtubeLinkID": "2zR4TNTXB6I",
+          "title": "Inthandham 8K/4K Video Song - Sita Ramam (Telugu) | Dulquer | Mrunal | Vishal | Hanu Raghavapudi",
+          "thumbnail": "https://img.youtube.com/vi/2zR4TNTXB6I/maxresdefault.jpg",
+          "duration": "4:07",
+          "durationSec": 247,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "TQomlyTYfrI",
+          "title": "Kaanunna Kalyanam 8K/4K Video Song | Sita Ramam (Telugu) | Dulquer | Mrunal | Vishal Chandrashekhar",
+          "thumbnail": "https://img.youtube.com/vi/TQomlyTYfrI/maxresdefault.jpg",
+          "duration": "3:32",
+          "durationSec": 212,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "r5scE4htrSU",
+          "title": "Oh Sita Hey Rama 8K/4K Video Song - Sita Ramam (Telugu) | Dulquer | Vishal | Hanu Raghavapudi",
+          "thumbnail": "https://img.youtube.com/vi/r5scE4htrSU/maxresdefault.jpg",
+          "duration": "3:46",
+          "durationSec": 226,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "1LswC7uX43Y",
+          "title": "EVARINI ADAGANU 8K/4K Video Song - Sita Ramam (Telugu) | Dulquer | Mrunal | Vishal Chandrasekhar",
+          "thumbnail": "https://img.youtube.com/vi/1LswC7uX43Y/maxresdefault.jpg",
+          "duration": "2:41",
+          "durationSec": 161,
           "date": "",
           "resolution": "",
           "viewCount": 0
@@ -1142,6 +1364,49 @@
         }
       ]
     },
+    "1408162": {
+      "tmdbId": 1408162,
+      "title": "Vishwanath & Sons",
+      "originalTitle": "விஸ்வநாத் & சன்ஸ்",
+      "language": "Tamil",
+      "year": 2026,
+      "releaseDate": "2026-08-14",
+      "overview": "Sanjay Vishwanath is an acclaimed professional handgunner in his 40s with a major stake in fame and wealth. When he comes across a woman named Maddy in her 20s, their dynamic poses many issues that they must come to terms with.",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 161,
+      "voteAverage": 7.3,
+      "voteCount": 15,
+      "posterPath": "/mLsvCffzpxxDwC7yVLJSLLjgzoq.jpg",
+      "backdropPath": "/mHTkvCDHIazVnmO3FborbN2j9t5.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/mLsvCffzpxxDwC7yVLJSLLjgzoq.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/mHTkvCDHIazVnmO3FborbN2j9t5.jpg",
+      "youtubePlaylistId": "PLcFEfwPOCOwM",
+      "videos": [
+        {
+          "youtubeLinkID": "C1LN4cWjMl0",
+          "title": "Pattampoochi Full Video Song | Vishwanath and Sons | Suriya, Mamitha Baiju | G.V. Prakash | Venky",
+          "thumbnail": "https://img.youtube.com/vi/C1LN4cWjMl0/maxresdefault.jpg",
+          "duration": "4:40",
+          "durationSec": 280,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "zyRHh9SFAnc",
+          "title": "The Wedding Song (Tamil) Full Video Song | Vishwanath and Sons | Suriya | Mamitha Baiju | GV Prakash",
+          "thumbnail": "https://img.youtube.com/vi/zyRHh9SFAnc/maxresdefault.jpg",
+          "duration": "4:21",
+          "durationSec": 261,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
     "1408170": {
       "tmdbId": 1408170,
       "title": "Lenin",
@@ -1354,6 +1619,59 @@
           "thumbnail": "https://img.youtube.com/vi/HcLdTujpQJc/maxresdefault.jpg",
           "duration": "2:21",
           "durationSec": 141,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        }
+      ]
+    },
+    "1112426-2": {
+      "tmdbId": 1112426,
+      "title": "Stree 2",
+      "originalTitle": "स्त्री 2: सरकटे का आतंक",
+      "language": "Hindi",
+      "year": 2024,
+      "releaseDate": "2024-08-15",
+      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
+      "runtime": 143,
+      "voteAverage": 6.695,
+      "voteCount": 100,
+      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "youtubePlaylistId": "PLRnfSOtSyGI4",
+      "videos": [
+        {
+          "youtubeLinkID": "0nrvPVnTWlc",
+          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
+          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
+          "duration": "3:08",
+          "durationSec": 188,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "ri1Ar5nEq4s",
+          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
+          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
+          "duration": "4:38",
+          "durationSec": 278,
+          "date": "",
+          "resolution": "",
+          "viewCount": 0
+        },
+        {
+          "youtubeLinkID": "FTI96c3mGG0",
+          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
+          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
+          "duration": "3:53",
+          "durationSec": 233,
           "date": "",
           "resolution": "",
           "viewCount": 0
@@ -1575,59 +1893,6 @@
           "thumbnail": "https://img.youtube.com/vi/q025lNfr9aU/maxresdefault.jpg",
           "duration": "2:51",
           "durationSec": 171,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        }
-      ]
-    },
-    "1112426-2": {
-      "tmdbId": 1112426,
-      "title": "Stree 2",
-      "originalTitle": "स्त्री 2: सरकटे का आतंक",
-      "language": "Hindi",
-      "year": 2024,
-      "releaseDate": "2024-08-15",
-      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
-      "genres": [
-        "Horror",
-        "Comedy"
-      ],
-      "runtime": 143,
-      "voteAverage": 6.695,
-      "voteCount": 100,
-      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "youtubePlaylistId": "PLRnfSOtSyGI4",
-      "videos": [
-        {
-          "youtubeLinkID": "0nrvPVnTWlc",
-          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
-          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
-          "duration": "3:08",
-          "durationSec": 188,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        },
-        {
-          "youtubeLinkID": "ri1Ar5nEq4s",
-          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
-          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
-          "duration": "4:38",
-          "durationSec": 278,
-          "date": "",
-          "resolution": "",
-          "viewCount": 0
-        },
-        {
-          "youtubeLinkID": "FTI96c3mGG0",
-          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
-          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
-          "duration": "3:53",
-          "durationSec": 233,
           "date": "",
           "resolution": "",
           "viewCount": 0
