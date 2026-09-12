@@ -3,6 +3,7 @@ import path from 'path';
 import { exec } from 'child_process';
 import { promisify } from 'util';
 import { fileURLToPath } from 'url';
+import ytdl from 'ytdl-core';
 
 const execAsync = promisify(exec);
 
@@ -66,33 +67,83 @@ function formatDuration(seconds) {
   return `${mins}:${String(secs).padStart(2, '0')}`;
 }
 
-// ── Fetch YouTube Playlist via yt-dlp ──────────────────────────
-async function fetchPlaylistVideos(playlistId) {
+function getResolutionLabel(formats) {
+  if (!formats || !Array.isArray(formats)) return '';
+  const heights = formats
+    .filter(f => f.qualityLabel)
+    .map(f => { const m = f.qualityLabel.match(/(\d+)p/); return m ? parseInt(m[1]) : 0; })
+    .filter(h => h > 0);
+  if (heights.length === 0) return '';
+  const max = Math.max(...heights);
+  if (max >= 4320) return '8K';
+  if (max >= 2160) return '4K';
+  if (max >= 1440) return '2K';
+  if (max >= 1080) return '1080p';
+  if (max >= 720) return '720p';
+  if (max >= 480) return '480p';
+  return `${max}p`;
+}
+
+// ── Fetch YouTube Playlist via yt-dlp & full metadata via ytdl-core ──
+async function fetchPlaylistVideos(playlistId, cachedVideosMap = new Map()) {
   if (!playlistId) return [];
+  let playlistItems = [];
   try {
     const url = `https://www.youtube.com/playlist?list=${playlistId}`;
     const { stdout: raw } = await execAsync(
       `yt-dlp --flat-playlist --dump-json --no-warnings "${url}"`,
       { encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, timeout: 120000 }
     );
-    return raw.trim().split('\n').filter(Boolean).map(line => {
-      const entry = JSON.parse(line);
-      const durationSec = Math.round(entry.duration || 0);
-      return {
-        youtubeLinkID: entry.id,
-        title: entry.title || 'Untitled',
-        thumbnail: `https://img.youtube.com/vi/${entry.id}/maxresdefault.jpg`,
-        duration: formatDuration(durationSec),
-        durationSec,
-        date: '',
-        resolution: '',
-        viewCount: 0,
-      };
-    });
+    playlistItems = raw.trim().split('\n').filter(Boolean).map(line => JSON.parse(line));
   } catch (err) {
     console.error(`  ⚠️  yt-dlp failed for ${playlistId}: ${err.message?.substring(0, 100)}`);
     return [];
   }
+
+  const videos = [];
+  for (const entry of playlistItems) {
+    const existing = cachedVideosMap.get(entry.id);
+    if (existing && existing.date) {
+      videos.push(existing);
+      continue;
+    }
+
+    let publishDate = '';
+    let resolution = '';
+    let viewCount = 0;
+    let durationSec = Math.round(entry.duration || 0);
+    let title = entry.title || 'Untitled';
+
+    try {
+      const info = await ytdl.getBasicInfo(entry.id);
+      publishDate = info.videoDetails.publishDate || '';
+      resolution = getResolutionLabel(info.formats || []);
+      viewCount = parseInt(info.videoDetails.viewCount) || 0;
+      
+      if (title === 'Fetching title...' || title === 'Untitled' || !title) {
+        title = info.videoDetails.title || 'Unknown Title';
+      }
+      if (!durationSec && info.videoDetails.lengthSeconds) {
+        durationSec = parseInt(info.videoDetails.lengthSeconds) || 0;
+      }
+    } catch (e) {
+      // Fallback to minimal data if ytdl fails
+    }
+
+    videos.push({
+      youtubeLinkID: entry.id,
+      title,
+      thumbnail: `https://img.youtube.com/vi/${entry.id}/maxresdefault.jpg`,
+      duration: formatDuration(durationSec),
+      durationSec,
+      date: publishDate,
+      resolution,
+      viewCount,
+    });
+    // Add small delay to avoid rate limiting
+    await new Promise(r => setTimeout(r, 200));
+  }
+  return videos;
 }
 
 // ── Fetch YouTube Playlist Count Only ────────────────────────
@@ -135,6 +186,15 @@ async function fetchMovies() {
     }
   }
 
+  const cachedVideosMap = new Map();
+  for (const movie of Object.values(existingMovies)) {
+    if (movie.videos) {
+      for (const v of movie.videos) {
+        cachedVideosMap.set(v.youtubeLinkID, v);
+      }
+    }
+  }
+
   const movies = {};
 
   const chunkArray = (arr, size) => Array.from({ length: Math.ceil(arr.length / size) }, (v, i) => arr.slice(i * size, i * size + size));
@@ -156,13 +216,20 @@ async function fetchMovies() {
         // Fetch current playlist count to see if we need to refetch
         const currentCount = await fetchPlaylistCount(entry.YoutubePlaylistId);
         
-        if (currentCount > 0 && currentCount === cached.videos.length) {
+        // Wait! We changed how `fetchPlaylistVideos` gets metadata.
+        // It's possible that older cached movies have empty resolutions.
+        // Let's do a quick check: if the first video has no resolution but we know we can fetch it, maybe we want to force refetch?
+        // Let's just assume cache is valid for now because if it has a `date`, it means it was fetched by `ytdl-core`.
+        // BUT wait, old cache has `date: ""`! So `date` will be empty.
+        // Our new cache check in `fetchPlaylistVideos` checks `if (existing && existing.date)`. If old cache has no date, it WILL refetch!
+        
+        if (currentCount > 0 && currentCount === cached.videos.length && cached.videos[0]?.date) {
           console.log(`  ⚡ CACHED — ${entry.title} (Count matches: ${currentCount})`);
           // Update language from input in case it changed
           movies[tmdbId] = { ...cached, language: entry.language || cached.language };
           return;
         } else {
-          console.log(`  🔄 REFETCHING — ${entry.title} (Cache: ${cached.videos.length}, New: ${currentCount || 'Unknown'})`);
+          console.log(`  🔄 REFETCHING — ${entry.title} (Cache: ${cached.videos.length}, New: ${currentCount || 'Unknown'}, Needs Full Meta)`);
         }
       }
 
@@ -183,7 +250,7 @@ async function fetchMovies() {
         : null;
 
       // ── Fetch YouTube playlist videos ────────────────────────
-      const videos = await fetchPlaylistVideos(entry.YoutubePlaylistId);
+      const videos = await fetchPlaylistVideos(entry.YoutubePlaylistId, cachedVideosMap);
       console.log(`  ✓ ${details.title} (${releaseYear}) — ${videos.length} videos found`);
 
       movies[tmdbId] = {

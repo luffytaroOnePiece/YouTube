@@ -8,6 +8,7 @@ export default function MoviesSection({ moviesData, onVideoSelect, searchQuery =
   const [activeLanguage, setActiveLanguage] = useState('All');
   const [activeSort, setActiveSort] = useState('Date (Newest)');
   const [viewMode, setViewMode] = useState('Albums');
+  const [activeResolution, setActiveResolution] = useState('All Quality');
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   // Parse movies from data
@@ -73,17 +74,24 @@ export default function MoviesSection({ moviesData, onVideoSelect, searchQuery =
     filteredMovies.forEach(movie => {
       if (movie.videos && movie.videos.length > 0) {
         movie.videos.forEach(v => {
-          videos.push({
-            ...v,
-            group: 'Movies',
-            category: movie.language || '',
-            type: movie.title || '',
-          });
+          const is8K = v.resolution === '8K';
+          const is4K = v.resolution === '4K';
+          const res = is8K ? '8K' : is4K ? '4K' : 'Other';
+
+          if (activeResolution === 'All Quality' || activeResolution === res) {
+            videos.push({
+              ...v,
+              group: 'Movies',
+              category: movie.language || '',
+              type: movie.title || '',
+              resolution: v.resolution || ''
+            });
+          }
         });
       }
     });
     return videos;
-  }, [filteredMovies, viewMode]);
+  }, [filteredMovies, viewMode, activeResolution]);
 
   if (allMovies.length === 0) return null;
 
@@ -134,6 +142,12 @@ export default function MoviesSection({ moviesData, onVideoSelect, searchQuery =
     { value: 'Flat', label: 'Flat' }
   ];
 
+  const resolutionOptions = [
+    { value: 'All Quality', label: 'All Quality' },
+    { value: '8K', label: '8K Ultra' },
+    { value: '4K', label: '4K' }
+  ];
+
   return (
     <section className="movies-section">
       {/* Header */}
@@ -159,6 +173,20 @@ export default function MoviesSection({ moviesData, onVideoSelect, searchQuery =
         )}
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
+          
+          {/* Resolution Filter (only in Flat view) */}
+          {viewMode === 'Flat' && (
+            <div className="movies-section__sort">
+              <span className="movies-section__sort-label">Quality:</span>
+              <Dropdown
+                id="res-select"
+                value={activeResolution}
+                options={resolutionOptions}
+                onChange={setActiveResolution}
+                placeholder="All Quality"
+              />
+            </div>
+          )}
           {/* Sort Controls */}
           <div className="movies-section__sort">
             <span className="movies-section__sort-label">Sort by:</span>
