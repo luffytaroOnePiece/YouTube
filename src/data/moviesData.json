@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-15T10:31:09.348Z",
+  "lastUpdated": "2026-09-15T10:32:35.578Z",
   "movies": {
     "148284": {
       "tmdbId": 148284,
@@ -1840,59 +1840,6 @@
         }
       ]
     },
-    "1112426-2": {
-      "tmdbId": 1112426,
-      "title": "Stree 2",
-      "originalTitle": "स्त्री 2: सरकटे का आतंक",
-      "language": "Hindi",
-      "year": 2024,
-      "releaseDate": "2024-08-15",
-      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
-      "genres": [
-        "Horror",
-        "Comedy"
-      ],
-      "runtime": 143,
-      "voteAverage": 6.7,
-      "voteCount": 102,
-      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "youtubePlaylistId": "PLRnfSOtSyGI4",
-      "videos": [
-        {
-          "youtubeLinkID": "0nrvPVnTWlc",
-          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
-          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
-          "duration": "3:08",
-          "durationSec": 188,
-          "date": "2025-05-30T04:30:01-07:00",
-          "resolution": "8K",
-          "viewCount": 33538316
-        },
-        {
-          "youtubeLinkID": "ri1Ar5nEq4s",
-          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
-          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
-          "duration": "4:38",
-          "durationSec": 278,
-          "date": "2025-05-18T22:56:10-07:00",
-          "resolution": "8K",
-          "viewCount": 242079306
-        },
-        {
-          "youtubeLinkID": "FTI96c3mGG0",
-          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
-          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
-          "duration": "3:53",
-          "durationSec": 233,
-          "date": "2025-06-16T02:30:07-07:00",
-          "resolution": "8K",
-          "viewCount": 8412235
-        }
-      ]
-    },
     "1290190-chapter-1": {
       "tmdbId": 1290190,
       "title": "Lokah Chapter 1: Chandra",
@@ -2048,6 +1995,59 @@
           "date": "2025-12-24T05:27:07-08:00",
           "resolution": "8K",
           "viewCount": 90633
+        }
+      ]
+    },
+    "1112426-2": {
+      "tmdbId": 1112426,
+      "title": "Stree 2",
+      "originalTitle": "स्त्री 2: सरकटे का आतंक",
+      "language": "Hindi",
+      "year": 2024,
+      "releaseDate": "2024-08-15",
+      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
+      "runtime": 143,
+      "voteAverage": 6.7,
+      "voteCount": 102,
+      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "youtubePlaylistId": "PLRnfSOtSyGI4",
+      "videos": [
+        {
+          "youtubeLinkID": "0nrvPVnTWlc",
+          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
+          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
+          "duration": "3:08",
+          "durationSec": 188,
+          "date": "2025-05-30T04:30:01-07:00",
+          "resolution": "8K",
+          "viewCount": 33538316
+        },
+        {
+          "youtubeLinkID": "ri1Ar5nEq4s",
+          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
+          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
+          "duration": "4:38",
+          "durationSec": 278,
+          "date": "2025-05-18T22:56:10-07:00",
+          "resolution": "8K",
+          "viewCount": 242079306
+        },
+        {
+          "youtubeLinkID": "FTI96c3mGG0",
+          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
+          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
+          "duration": "3:53",
+          "durationSec": 233,
+          "date": "2025-06-16T02:30:07-07:00",
+          "resolution": "8K",
+          "viewCount": 8412235
         }
       ]
     }
