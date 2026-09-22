@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-22T15:56:17.874Z",
+  "lastUpdated": "2026-09-22T16:02:49.105Z",
   "movies": {
     "148284": {
       "tmdbId": 148284,
@@ -1385,6 +1385,60 @@
         }
       ]
     },
+    "1384514": {
+      "tmdbId": 1384514,
+      "title": "The Vvaan",
+      "originalTitle": "द वन",
+      "language": "Hindi",
+      "year": 2026,
+      "releaseDate": "2026-09-25",
+      "overview": "A rational urban man defies his ancestral forbidden forest & awakens a divine goddess, only to realise that some powers exist beyond logic & he must rise as the village’s only saviour to protect his people from annihilation.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "runtime": 0,
+      "voteAverage": 0,
+      "voteCount": 0,
+      "posterPath": "/n0TSVS0saO1bJy8DAssE43G7pBE.jpg",
+      "backdropPath": "/rlOz3ZMwtIyvZB9O4btHASVJjI1.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/n0TSVS0saO1bJy8DAssE43G7pBE.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/rlOz3ZMwtIyvZB9O4btHASVJjI1.jpg",
+      "youtubePlaylistId": "PLGtCcc3BkObw",
+      "videos": [
+        {
+          "youtubeLinkID": "1IKsJiMLGu0",
+          "title": "Samjho Na - THE VVAAN | Sidharth Malhotra & Tamannaah | Jubin Nautiyal, Tanishk B, Suvarna, Manoj M",
+          "thumbnail": "https://img.youtube.com/vi/1IKsJiMLGu0/maxresdefault.jpg",
+          "duration": "4:24",
+          "durationSec": 264,
+          "date": "2026-09-03T05:31:53-07:00",
+          "resolution": "4K",
+          "viewCount": 34185941
+        },
+        {
+          "youtubeLinkID": "FCRb4kjnRx4",
+          "title": "Chhathi Maiya - The VVAAN | Sidharth Malhotra & Tamannaah | Vishal Mishra | Kaushal K | Chinni P",
+          "thumbnail": "https://img.youtube.com/vi/FCRb4kjnRx4/maxresdefault.jpg",
+          "duration": "3:31",
+          "durationSec": 211,
+          "date": "2026-09-10T00:41:02-07:00",
+          "resolution": "4K",
+          "viewCount": 47027347
+        },
+        {
+          "youtubeLinkID": "W9mU_iKY0KI",
+          "title": "Thummak Thummak - THE VVAAN | Sidharth Malhotra & Tamannaah | Dev Negi, Akasa, Tanishk B, Shabbir A",
+          "thumbnail": "https://img.youtube.com/vi/W9mU_iKY0KI/maxresdefault.jpg",
+          "duration": "2:32",
+          "durationSec": 152,
+          "date": "2026-09-21T02:30:04-07:00",
+          "resolution": "4K",
+          "viewCount": 10044741
+        }
+      ]
+    },
     "1389379": {
       "tmdbId": 1389379,
       "title": "Ranabaali",
@@ -1897,6 +1951,69 @@
         }
       ]
     },
+    "811941-devara-part-1": {
+      "tmdbId": 811941,
+      "title": "Devara: Part 1",
+      "originalTitle": "Devara: Part 1",
+      "language": "Telugu",
+      "year": 2024,
+      "releaseDate": "2024-09-26",
+      "overview": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
+      "genres": [
+        "Action",
+        "Drama"
+      ],
+      "runtime": 175,
+      "voteAverage": 6.847,
+      "voteCount": 225,
+      "posterPath": "/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
+      "backdropPath": "/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
+      "youtubePlaylistId": "PLE3PpP0ju53w",
+      "videos": [
+        {
+          "youtubeLinkID": "_0ak7rWPlmU",
+          "title": "Chuttamalle [8K] Video - Devara Part 1 | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao | Koratala Siva",
+          "thumbnail": "https://img.youtube.com/vi/_0ak7rWPlmU/maxresdefault.jpg",
+          "duration": "3:37",
+          "durationSec": 217,
+          "date": "2025-06-12T03:45:06-07:00",
+          "resolution": "8K",
+          "viewCount": 15968283
+        },
+        {
+          "youtubeLinkID": "iST7U0l4BJE",
+          "title": "Ayudha Pooja 8K Video | Devara | NTR | Saif Ali Khan | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/iST7U0l4BJE/maxresdefault.jpg",
+          "duration": "3:06",
+          "durationSec": 186,
+          "date": "2026-03-20T04:30:44-07:00",
+          "resolution": "8K",
+          "viewCount": 687001
+        },
+        {
+          "youtubeLinkID": "2So45J1dAu4",
+          "title": "Full Video: Daavudi [8K] - దావూదీ | Devara | NTR | Janhvi K | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/2So45J1dAu4/maxresdefault.jpg",
+          "duration": "3:06",
+          "durationSec": 186,
+          "date": "2025-06-25T05:30:06-07:00",
+          "resolution": "8K",
+          "viewCount": 4702149
+        },
+        {
+          "youtubeLinkID": "g44VQxMcFH4",
+          "title": "Full Video: Fear Song | Devara | NTR | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/g44VQxMcFH4/maxresdefault.jpg",
+          "duration": "2:46",
+          "durationSec": 166,
+          "date": "2024-10-29T06:29:07-07:00",
+          "resolution": "4K",
+          "viewCount": 34919799
+        }
+      ]
+    },
     "781732-animal": {
       "tmdbId": 781732,
       "title": "Animal",
@@ -1981,122 +2098,6 @@
         }
       ]
     },
-    "1112426-2": {
-      "tmdbId": 1112426,
-      "title": "Stree 2",
-      "originalTitle": "स्त्री 2: सरकटे का आतंक",
-      "language": "Hindi",
-      "year": 2024,
-      "releaseDate": "2024-08-15",
-      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
-      "genres": [
-        "Horror",
-        "Comedy"
-      ],
-      "runtime": 143,
-      "voteAverage": 6.7,
-      "voteCount": 102,
-      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "youtubePlaylistId": "PLRnfSOtSyGI4",
-      "videos": [
-        {
-          "youtubeLinkID": "0nrvPVnTWlc",
-          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
-          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
-          "duration": "3:08",
-          "durationSec": 188,
-          "date": "2025-05-30T04:30:01-07:00",
-          "resolution": "8K",
-          "viewCount": 33538316
-        },
-        {
-          "youtubeLinkID": "ri1Ar5nEq4s",
-          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
-          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
-          "duration": "4:38",
-          "durationSec": 278,
-          "date": "2025-05-18T22:56:10-07:00",
-          "resolution": "8K",
-          "viewCount": 242079306
-        },
-        {
-          "youtubeLinkID": "FTI96c3mGG0",
-          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
-          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
-          "duration": "3:53",
-          "durationSec": 233,
-          "date": "2025-06-16T02:30:07-07:00",
-          "resolution": "8K",
-          "viewCount": 8412235
-        }
-      ]
-    },
-    "811941-devara-part-1": {
-      "tmdbId": 811941,
-      "title": "Devara: Part 1",
-      "originalTitle": "Devara: Part 1",
-      "language": "Telugu",
-      "year": 2024,
-      "releaseDate": "2024-09-26",
-      "overview": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
-      "genres": [
-        "Action",
-        "Drama"
-      ],
-      "runtime": 175,
-      "voteAverage": 6.847,
-      "voteCount": 225,
-      "posterPath": "/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
-      "backdropPath": "/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
-      "youtubePlaylistId": "PLE3PpP0ju53w",
-      "videos": [
-        {
-          "youtubeLinkID": "_0ak7rWPlmU",
-          "title": "Chuttamalle [8K] Video - Devara Part 1 | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao | Koratala Siva",
-          "thumbnail": "https://img.youtube.com/vi/_0ak7rWPlmU/maxresdefault.jpg",
-          "duration": "3:37",
-          "durationSec": 217,
-          "date": "2025-06-12T03:45:06-07:00",
-          "resolution": "8K",
-          "viewCount": 15968283
-        },
-        {
-          "youtubeLinkID": "iST7U0l4BJE",
-          "title": "Ayudha Pooja 8K Video | Devara | NTR | Saif Ali Khan | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/iST7U0l4BJE/maxresdefault.jpg",
-          "duration": "3:06",
-          "durationSec": 186,
-          "date": "2026-03-20T04:30:44-07:00",
-          "resolution": "8K",
-          "viewCount": 687001
-        },
-        {
-          "youtubeLinkID": "2So45J1dAu4",
-          "title": "Full Video: Daavudi [8K] - దావూదీ | Devara | NTR | Janhvi K | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/2So45J1dAu4/maxresdefault.jpg",
-          "duration": "3:06",
-          "durationSec": 186,
-          "date": "2025-06-25T05:30:06-07:00",
-          "resolution": "8K",
-          "viewCount": 4702149
-        },
-        {
-          "youtubeLinkID": "g44VQxMcFH4",
-          "title": "Full Video: Fear Song | Devara | NTR | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/g44VQxMcFH4/maxresdefault.jpg",
-          "duration": "2:46",
-          "durationSec": 166,
-          "date": "2024-10-29T06:29:07-07:00",
-          "resolution": "4K",
-          "viewCount": 34919799
-        }
-      ]
-    },
     "1290190-chapter-1": {
       "tmdbId": 1290190,
       "title": "Lokah Chapter 1: Chandra",
@@ -2168,6 +2169,59 @@
           "date": "2025-09-05T07:07:48-07:00",
           "resolution": "4K",
           "viewCount": 9327181
+        }
+      ]
+    },
+    "1112426-2": {
+      "tmdbId": 1112426,
+      "title": "Stree 2",
+      "originalTitle": "स्त्री 2: सरकटे का आतंक",
+      "language": "Hindi",
+      "year": 2024,
+      "releaseDate": "2024-08-15",
+      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
+      "runtime": 143,
+      "voteAverage": 6.7,
+      "voteCount": 102,
+      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "youtubePlaylistId": "PLRnfSOtSyGI4",
+      "videos": [
+        {
+          "youtubeLinkID": "0nrvPVnTWlc",
+          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
+          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
+          "duration": "3:08",
+          "durationSec": 188,
+          "date": "2025-05-30T04:30:01-07:00",
+          "resolution": "8K",
+          "viewCount": 33538316
+        },
+        {
+          "youtubeLinkID": "ri1Ar5nEq4s",
+          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
+          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
+          "duration": "4:38",
+          "durationSec": 278,
+          "date": "2025-05-18T22:56:10-07:00",
+          "resolution": "8K",
+          "viewCount": 242079306
+        },
+        {
+          "youtubeLinkID": "FTI96c3mGG0",
+          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
+          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
+          "duration": "3:53",
+          "durationSec": 233,
+          "date": "2025-06-16T02:30:07-07:00",
+          "resolution": "8K",
+          "viewCount": 8412235
         }
       ]
     }
