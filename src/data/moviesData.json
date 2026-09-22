@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-15T10:32:35.578Z",
+  "lastUpdated": "2026-09-22T15:56:17.874Z",
   "movies": {
     "148284": {
       "tmdbId": 148284,
@@ -328,6 +328,91 @@
           "date": "2024-08-02T06:00:49-07:00",
           "resolution": "4K",
           "viewCount": 486819
+        }
+      ]
+    },
+    "628241": {
+      "tmdbId": 628241,
+      "title": "Ala Vaikunthapurramuloo",
+      "originalTitle": "అల వైకుంఠపురములో",
+      "language": "Telugu",
+      "year": 2020,
+      "releaseDate": "2020-01-12",
+      "overview": "After growing up enduring criticism from his father, a young man finds his world shaken upon learning he was switched at birth with a millionaire's son.",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Family"
+      ],
+      "runtime": 165,
+      "voteAverage": 6.6,
+      "voteCount": 117,
+      "posterPath": "/2rzORJaegE2bbKNVkQXbZCeV0BP.jpg",
+      "backdropPath": "/5SDMPORslLXaYPx7S1kRqsBJYI3.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/2rzORJaegE2bbKNVkQXbZCeV0BP.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/5SDMPORslLXaYPx7S1kRqsBJYI3.jpg",
+      "youtubePlaylistId": "PLS8zl6Nc8AI8",
+      "videos": [
+        {
+          "youtubeLinkID": "rOirJKJoE0o",
+          "title": "Butta Bomma Video Song 8K | Ala Vaikunthapurramuloo | Allu Arjun, Pooja Hegde | Thaman S | Trivikram",
+          "thumbnail": "https://img.youtube.com/vi/rOirJKJoE0o/maxresdefault.jpg",
+          "duration": "3:34",
+          "durationSec": 214,
+          "date": "2026-09-14T07:30:02-07:00",
+          "resolution": "8K",
+          "viewCount": 1001886
+        },
+        {
+          "youtubeLinkID": "yWG5bYvKARE",
+          "title": "Sittharala Sirapadu Full Video Song | AlaVaikunthapurramuloo | Allu Arjun || Trivikram | Thaman S",
+          "thumbnail": "https://img.youtube.com/vi/yWG5bYvKARE/maxresdefault.jpg",
+          "duration": "3:44",
+          "durationSec": 224,
+          "date": "2024-11-25T07:01:06-08:00",
+          "resolution": "4K",
+          "viewCount": 23945744
+        },
+        {
+          "youtubeLinkID": "gdt-yIgm2zc",
+          "title": "OMG Daddy Full Video Song (4K) | AlaVaikunthapurramuloo | Allu Arjun | Trivikram | Thaman S |#AA19",
+          "thumbnail": "https://img.youtube.com/vi/gdt-yIgm2zc/maxresdefault.jpg",
+          "duration": "3:52",
+          "durationSec": 232,
+          "date": "2020-02-23T04:26:46-08:00",
+          "resolution": "4K",
+          "viewCount": 61163489
+        },
+        {
+          "youtubeLinkID": "_nly3TM01AU",
+          "title": "#AlaVaikunthapurramloo (Title Song) Telugu Video Song | Allu Arjun | Trivikram | Thaman S | #AA19",
+          "thumbnail": "https://img.youtube.com/vi/_nly3TM01AU/maxresdefault.jpg",
+          "duration": "2:11",
+          "durationSec": 131,
+          "date": "2020-02-27T02:35:03-08:00",
+          "resolution": "4K",
+          "viewCount": 46530865
+        },
+        {
+          "youtubeLinkID": "OCg6BWlAXSw",
+          "title": "Samajavaragamana Video Song (4K) (Telugu) | AlaVaikunthapurramuloo | Allu Arjun | Trivikram | Thaman",
+          "thumbnail": "https://img.youtube.com/vi/OCg6BWlAXSw/maxresdefault.jpg",
+          "duration": "3:49",
+          "durationSec": 229,
+          "date": "2020-02-16T02:35:42-08:00",
+          "resolution": "4K",
+          "viewCount": 254143914
+        },
+        {
+          "youtubeLinkID": "Bg8Yb9zGYyA",
+          "title": "Ramuloo Ramulaa Full Video | Allu Arjun, Pooja Hegde | Ala Vaikunthapurramuloo | Trivikram | Thaman",
+          "thumbnail": "https://img.youtube.com/vi/Bg8Yb9zGYyA/maxresdefault.jpg",
+          "duration": "4:34",
+          "durationSec": 274,
+          "date": "2020-03-03T02:35:01-08:00",
+          "resolution": "4K",
+          "viewCount": 796978226
         }
       ]
     },
@@ -1300,6 +1385,41 @@
         }
       ]
     },
+    "1389379": {
+      "tmdbId": 1389379,
+      "title": "Ranabaali",
+      "originalTitle": "రణబాలి",
+      "language": "Telugu",
+      "year": 2026,
+      "releaseDate": "2026-10-16",
+      "overview": "",
+      "genres": [
+        "History",
+        "Action",
+        "Drama",
+        "War"
+      ],
+      "runtime": 0,
+      "voteAverage": 0,
+      "voteCount": 0,
+      "posterPath": "/rMg3BFUKs8IaekSJgMT1IYmypk.jpg",
+      "backdropPath": "/diWGrCrTUPCRF5xQQrndDf2JT1e.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/rMg3BFUKs8IaekSJgMT1IYmypk.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/diWGrCrTUPCRF5xQQrndDf2JT1e.jpg",
+      "youtubePlaylistId": "PLZkLqkOs1B2U",
+      "videos": [
+        {
+          "youtubeLinkID": "zoBTw-1vzyY",
+          "title": "Endhayya Saami | Ranabaali | Full Song | Vijay Deverakonda, Rashmika | Rahul Sankrityan | Ajay–Atul",
+          "thumbnail": "https://img.youtube.com/vi/zoBTw-1vzyY/maxresdefault.jpg",
+          "duration": "5:30",
+          "durationSec": 330,
+          "date": "2026-09-22T01:04:08-07:00",
+          "resolution": "4K",
+          "viewCount": 2904189
+        }
+      ]
+    },
     "1392469": {
       "tmdbId": 1392469,
       "title": "Cocktail 2",
@@ -1777,143 +1897,6 @@
         }
       ]
     },
-    "811941-devara-part-1": {
-      "tmdbId": 811941,
-      "title": "Devara: Part 1",
-      "originalTitle": "Devara: Part 1",
-      "language": "Telugu",
-      "year": 2024,
-      "releaseDate": "2024-09-26",
-      "overview": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
-      "genres": [
-        "Action",
-        "Drama"
-      ],
-      "runtime": 175,
-      "voteAverage": 6.847,
-      "voteCount": 225,
-      "posterPath": "/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
-      "backdropPath": "/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
-      "youtubePlaylistId": "PLE3PpP0ju53w",
-      "videos": [
-        {
-          "youtubeLinkID": "_0ak7rWPlmU",
-          "title": "Chuttamalle [8K] Video - Devara Part 1 | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao | Koratala Siva",
-          "thumbnail": "https://img.youtube.com/vi/_0ak7rWPlmU/maxresdefault.jpg",
-          "duration": "3:37",
-          "durationSec": 217,
-          "date": "2025-06-12T03:45:06-07:00",
-          "resolution": "8K",
-          "viewCount": 15968283
-        },
-        {
-          "youtubeLinkID": "iST7U0l4BJE",
-          "title": "Ayudha Pooja 8K Video | Devara | NTR | Saif Ali Khan | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/iST7U0l4BJE/maxresdefault.jpg",
-          "duration": "3:06",
-          "durationSec": 186,
-          "date": "2026-03-20T04:30:44-07:00",
-          "resolution": "8K",
-          "viewCount": 687001
-        },
-        {
-          "youtubeLinkID": "2So45J1dAu4",
-          "title": "Full Video: Daavudi [8K] - దావూదీ | Devara | NTR | Janhvi K | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/2So45J1dAu4/maxresdefault.jpg",
-          "duration": "3:06",
-          "durationSec": 186,
-          "date": "2025-06-25T05:30:06-07:00",
-          "resolution": "8K",
-          "viewCount": 4702149
-        },
-        {
-          "youtubeLinkID": "g44VQxMcFH4",
-          "title": "Full Video: Fear Song | Devara | NTR | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/g44VQxMcFH4/maxresdefault.jpg",
-          "duration": "2:46",
-          "durationSec": 166,
-          "date": "2024-10-29T06:29:07-07:00",
-          "resolution": "4K",
-          "viewCount": 34919799
-        }
-      ]
-    },
-    "1290190-chapter-1": {
-      "tmdbId": 1290190,
-      "title": "Lokah Chapter 1: Chandra",
-      "originalTitle": "ലോകഃ Chapter 1: ചന്ദ്ര",
-      "language": "Malayalam",
-      "year": 2025,
-      "releaseDate": "2025-08-28",
-      "overview": "The story follows Chandra, a mysterious, goth-influenced woman who has just moved to Bangalore and begins working night shifts at a café. Across the road from her apartment live Sunny and Venu, two aimless bachelors. Sunny becomes infatuated with Chandra, observing her odd routines, strange visitors, and reclusive nature. Their dynamic changes when Sunny gets a glimpse of Chandra in her act.",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "runtime": 151,
-      "voteAverage": 7.291,
-      "voteCount": 67,
-      "posterPath": "/nRn6is4m5sikO1rSoCoRT2rYtXB.jpg",
-      "backdropPath": "/tkRZ8BpIlvQIFBQWwEHuAlxczyb.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/nRn6is4m5sikO1rSoCoRT2rYtXB.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/tkRZ8BpIlvQIFBQWwEHuAlxczyb.jpg",
-      "youtubePlaylistId": "PLTn8b0kpAgS0",
-      "videos": [
-        {
-          "youtubeLinkID": "dR9B_gPxjkk",
-          "title": "Kiliye Kiliye - Video Song | Lokah Chapter 1: Chandra | Kalyani Priyadarshan | Naslen | Dominic Arun",
-          "thumbnail": "https://img.youtube.com/vi/dR9B_gPxjkk/maxresdefault.jpg",
-          "duration": "2:05",
-          "durationSec": 125,
-          "date": "2025-11-04T02:58:07-08:00",
-          "resolution": "4K",
-          "viewCount": 67273432
-        },
-        {
-          "youtubeLinkID": "DXm6diugHCc",
-          "title": "Queen of the Night | Lokah Movie Song | Kalyani | Naslen | Jakes Bejoy | Dominic Arun | Nimish Ravi",
-          "thumbnail": "https://img.youtube.com/vi/DXm6diugHCc/maxresdefault.jpg",
-          "duration": "3:22",
-          "durationSec": 202,
-          "date": "2025-09-17T06:30:06-07:00",
-          "resolution": "4K",
-          "viewCount": 7709379
-        },
-        {
-          "youtubeLinkID": "Y23dN3JZrcE",
-          "title": "Neeye Punchiri |  | Lokah | Hanan Sha | Reyan | Jakes Bejoy | Kalyani | Naslen | Dominic | Nimish ",
-          "thumbnail": "https://img.youtube.com/vi/Y23dN3JZrcE/maxresdefault.jpg",
-          "duration": "4:01",
-          "durationSec": 241,
-          "date": "2025-10-19T05:18:09-07:00",
-          "resolution": "4K",
-          "viewCount": 25940609
-        },
-        {
-          "youtubeLinkID": "bL1fxyAvPGc",
-          "title": "Paranje Paranje Song | Lokah  | Jakes Bejoy | Anuradha Sriram | Kalyani | Naslen | Dominic | Nimish",
-          "thumbnail": "https://img.youtube.com/vi/bL1fxyAvPGc/maxresdefault.jpg",
-          "duration": "3:35",
-          "durationSec": 215,
-          "date": "2025-10-05T05:35:06-07:00",
-          "resolution": "4K",
-          "viewCount": 3496039
-        },
-        {
-          "youtubeLinkID": "q025lNfr9aU",
-          "title": "Shoka Mookam | Lokah Movie Song 4K | Kalyani |  Naslen | Dominic Arun | Nimish Ravi | JK",
-          "thumbnail": "https://img.youtube.com/vi/q025lNfr9aU/maxresdefault.jpg",
-          "duration": "2:51",
-          "durationSec": 171,
-          "date": "2025-09-05T07:07:48-07:00",
-          "resolution": "4K",
-          "viewCount": 9327181
-        }
-      ]
-    },
     "781732-animal": {
       "tmdbId": 781732,
       "title": "Animal",
@@ -2048,6 +2031,143 @@
           "date": "2025-06-16T02:30:07-07:00",
           "resolution": "8K",
           "viewCount": 8412235
+        }
+      ]
+    },
+    "811941-devara-part-1": {
+      "tmdbId": 811941,
+      "title": "Devara: Part 1",
+      "originalTitle": "Devara: Part 1",
+      "language": "Telugu",
+      "year": 2024,
+      "releaseDate": "2024-09-26",
+      "overview": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
+      "genres": [
+        "Action",
+        "Drama"
+      ],
+      "runtime": 175,
+      "voteAverage": 6.847,
+      "voteCount": 225,
+      "posterPath": "/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
+      "backdropPath": "/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
+      "youtubePlaylistId": "PLE3PpP0ju53w",
+      "videos": [
+        {
+          "youtubeLinkID": "_0ak7rWPlmU",
+          "title": "Chuttamalle [8K] Video - Devara Part 1 | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao | Koratala Siva",
+          "thumbnail": "https://img.youtube.com/vi/_0ak7rWPlmU/maxresdefault.jpg",
+          "duration": "3:37",
+          "durationSec": 217,
+          "date": "2025-06-12T03:45:06-07:00",
+          "resolution": "8K",
+          "viewCount": 15968283
+        },
+        {
+          "youtubeLinkID": "iST7U0l4BJE",
+          "title": "Ayudha Pooja 8K Video | Devara | NTR | Saif Ali Khan | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/iST7U0l4BJE/maxresdefault.jpg",
+          "duration": "3:06",
+          "durationSec": 186,
+          "date": "2026-03-20T04:30:44-07:00",
+          "resolution": "8K",
+          "viewCount": 687001
+        },
+        {
+          "youtubeLinkID": "2So45J1dAu4",
+          "title": "Full Video: Daavudi [8K] - దావూదీ | Devara | NTR | Janhvi K | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/2So45J1dAu4/maxresdefault.jpg",
+          "duration": "3:06",
+          "durationSec": 186,
+          "date": "2025-06-25T05:30:06-07:00",
+          "resolution": "8K",
+          "viewCount": 4702149
+        },
+        {
+          "youtubeLinkID": "g44VQxMcFH4",
+          "title": "Full Video: Fear Song | Devara | NTR | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/g44VQxMcFH4/maxresdefault.jpg",
+          "duration": "2:46",
+          "durationSec": 166,
+          "date": "2024-10-29T06:29:07-07:00",
+          "resolution": "4K",
+          "viewCount": 34919799
+        }
+      ]
+    },
+    "1290190-chapter-1": {
+      "tmdbId": 1290190,
+      "title": "Lokah Chapter 1: Chandra",
+      "originalTitle": "ലോകഃ Chapter 1: ചന്ദ്ര",
+      "language": "Malayalam",
+      "year": 2025,
+      "releaseDate": "2025-08-28",
+      "overview": "The story follows Chandra, a mysterious, goth-influenced woman who has just moved to Bangalore and begins working night shifts at a café. Across the road from her apartment live Sunny and Venu, two aimless bachelors. Sunny becomes infatuated with Chandra, observing her odd routines, strange visitors, and reclusive nature. Their dynamic changes when Sunny gets a glimpse of Chandra in her act.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "runtime": 151,
+      "voteAverage": 7.291,
+      "voteCount": 67,
+      "posterPath": "/nRn6is4m5sikO1rSoCoRT2rYtXB.jpg",
+      "backdropPath": "/tkRZ8BpIlvQIFBQWwEHuAlxczyb.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/nRn6is4m5sikO1rSoCoRT2rYtXB.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/tkRZ8BpIlvQIFBQWwEHuAlxczyb.jpg",
+      "youtubePlaylistId": "PLTn8b0kpAgS0",
+      "videos": [
+        {
+          "youtubeLinkID": "dR9B_gPxjkk",
+          "title": "Kiliye Kiliye - Video Song | Lokah Chapter 1: Chandra | Kalyani Priyadarshan | Naslen | Dominic Arun",
+          "thumbnail": "https://img.youtube.com/vi/dR9B_gPxjkk/maxresdefault.jpg",
+          "duration": "2:05",
+          "durationSec": 125,
+          "date": "2025-11-04T02:58:07-08:00",
+          "resolution": "4K",
+          "viewCount": 67273432
+        },
+        {
+          "youtubeLinkID": "DXm6diugHCc",
+          "title": "Queen of the Night | Lokah Movie Song | Kalyani | Naslen | Jakes Bejoy | Dominic Arun | Nimish Ravi",
+          "thumbnail": "https://img.youtube.com/vi/DXm6diugHCc/maxresdefault.jpg",
+          "duration": "3:22",
+          "durationSec": 202,
+          "date": "2025-09-17T06:30:06-07:00",
+          "resolution": "4K",
+          "viewCount": 7709379
+        },
+        {
+          "youtubeLinkID": "Y23dN3JZrcE",
+          "title": "Neeye Punchiri |  | Lokah | Hanan Sha | Reyan | Jakes Bejoy | Kalyani | Naslen | Dominic | Nimish ",
+          "thumbnail": "https://img.youtube.com/vi/Y23dN3JZrcE/maxresdefault.jpg",
+          "duration": "4:01",
+          "durationSec": 241,
+          "date": "2025-10-19T05:18:09-07:00",
+          "resolution": "4K",
+          "viewCount": 25940609
+        },
+        {
+          "youtubeLinkID": "bL1fxyAvPGc",
+          "title": "Paranje Paranje Song | Lokah  | Jakes Bejoy | Anuradha Sriram | Kalyani | Naslen | Dominic | Nimish",
+          "thumbnail": "https://img.youtube.com/vi/bL1fxyAvPGc/maxresdefault.jpg",
+          "duration": "3:35",
+          "durationSec": 215,
+          "date": "2025-10-05T05:35:06-07:00",
+          "resolution": "4K",
+          "viewCount": 3496039
+        },
+        {
+          "youtubeLinkID": "q025lNfr9aU",
+          "title": "Shoka Mookam | Lokah Movie Song 4K | Kalyani |  Naslen | Dominic Arun | Nimish Ravi | JK",
+          "thumbnail": "https://img.youtube.com/vi/q025lNfr9aU/maxresdefault.jpg",
+          "duration": "2:51",
+          "durationSec": 171,
+          "date": "2025-09-05T07:07:48-07:00",
+          "resolution": "4K",
+          "viewCount": 9327181
         }
       ]
     }
