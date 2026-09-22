@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-22T16:02:49.105Z",
+  "lastUpdated": "2026-09-22T16:07:43.241Z",
   "movies": {
     "148284": {
       "tmdbId": 148284,
@@ -1951,69 +1951,6 @@
         }
       ]
     },
-    "811941-devara-part-1": {
-      "tmdbId": 811941,
-      "title": "Devara: Part 1",
-      "originalTitle": "Devara: Part 1",
-      "language": "Telugu",
-      "year": 2024,
-      "releaseDate": "2024-09-26",
-      "overview": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
-      "genres": [
-        "Action",
-        "Drama"
-      ],
-      "runtime": 175,
-      "voteAverage": 6.847,
-      "voteCount": 225,
-      "posterPath": "/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
-      "backdropPath": "/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
-      "youtubePlaylistId": "PLE3PpP0ju53w",
-      "videos": [
-        {
-          "youtubeLinkID": "_0ak7rWPlmU",
-          "title": "Chuttamalle [8K] Video - Devara Part 1 | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao | Koratala Siva",
-          "thumbnail": "https://img.youtube.com/vi/_0ak7rWPlmU/maxresdefault.jpg",
-          "duration": "3:37",
-          "durationSec": 217,
-          "date": "2025-06-12T03:45:06-07:00",
-          "resolution": "8K",
-          "viewCount": 15968283
-        },
-        {
-          "youtubeLinkID": "iST7U0l4BJE",
-          "title": "Ayudha Pooja 8K Video | Devara | NTR | Saif Ali Khan | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/iST7U0l4BJE/maxresdefault.jpg",
-          "duration": "3:06",
-          "durationSec": 186,
-          "date": "2026-03-20T04:30:44-07:00",
-          "resolution": "8K",
-          "viewCount": 687001
-        },
-        {
-          "youtubeLinkID": "2So45J1dAu4",
-          "title": "Full Video: Daavudi [8K] - దావూదీ | Devara | NTR | Janhvi K | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/2So45J1dAu4/maxresdefault.jpg",
-          "duration": "3:06",
-          "durationSec": 186,
-          "date": "2025-06-25T05:30:06-07:00",
-          "resolution": "8K",
-          "viewCount": 4702149
-        },
-        {
-          "youtubeLinkID": "g44VQxMcFH4",
-          "title": "Full Video: Fear Song | Devara | NTR | Koratala Siva | Anirudh Ravichander",
-          "thumbnail": "https://img.youtube.com/vi/g44VQxMcFH4/maxresdefault.jpg",
-          "duration": "2:46",
-          "durationSec": 166,
-          "date": "2024-10-29T06:29:07-07:00",
-          "resolution": "4K",
-          "viewCount": 34919799
-        }
-      ]
-    },
     "781732-animal": {
       "tmdbId": 781732,
       "title": "Animal",
@@ -2095,6 +2032,69 @@
           "date": "2025-12-24T05:27:07-08:00",
           "resolution": "8K",
           "viewCount": 90633
+        }
+      ]
+    },
+    "811941-devara-part-1": {
+      "tmdbId": 811941,
+      "title": "Devara: Part 1",
+      "originalTitle": "Devara: Part 1",
+      "language": "Telugu",
+      "year": 2024,
+      "releaseDate": "2024-09-26",
+      "overview": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
+      "genres": [
+        "Action",
+        "Drama"
+      ],
+      "runtime": 175,
+      "voteAverage": 6.847,
+      "voteCount": 225,
+      "posterPath": "/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
+      "backdropPath": "/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
+      "youtubePlaylistId": "PLE3PpP0ju53w",
+      "videos": [
+        {
+          "youtubeLinkID": "_0ak7rWPlmU",
+          "title": "Chuttamalle [8K] Video - Devara Part 1 | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao | Koratala Siva",
+          "thumbnail": "https://img.youtube.com/vi/_0ak7rWPlmU/maxresdefault.jpg",
+          "duration": "3:37",
+          "durationSec": 217,
+          "date": "2025-06-12T03:45:06-07:00",
+          "resolution": "8K",
+          "viewCount": 15968283
+        },
+        {
+          "youtubeLinkID": "iST7U0l4BJE",
+          "title": "Ayudha Pooja 8K Video | Devara | NTR | Saif Ali Khan | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/iST7U0l4BJE/maxresdefault.jpg",
+          "duration": "3:06",
+          "durationSec": 186,
+          "date": "2026-03-20T04:30:44-07:00",
+          "resolution": "8K",
+          "viewCount": 687001
+        },
+        {
+          "youtubeLinkID": "2So45J1dAu4",
+          "title": "Full Video: Daavudi [8K] - దావూదీ | Devara | NTR | Janhvi K | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/2So45J1dAu4/maxresdefault.jpg",
+          "duration": "3:06",
+          "durationSec": 186,
+          "date": "2025-06-25T05:30:06-07:00",
+          "resolution": "8K",
+          "viewCount": 4702149
+        },
+        {
+          "youtubeLinkID": "g44VQxMcFH4",
+          "title": "Full Video: Fear Song | Devara | NTR | Koratala Siva | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/g44VQxMcFH4/maxresdefault.jpg",
+          "duration": "2:46",
+          "durationSec": 166,
+          "date": "2024-10-29T06:29:07-07:00",
+          "resolution": "4K",
+          "viewCount": 34919799
         }
       ]
     },
