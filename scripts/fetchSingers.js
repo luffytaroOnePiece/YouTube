@@ -256,7 +256,15 @@ async function fetchSingers() {
             }
             if (liveOk) {
               console.log(`  ⚡ CACHED — ${singer.name}`);
-              return { ...cached, genre: singer.Genre || cached.genre, category };
+              const customImage = singer.customImage || null;
+              const profileUrl = customImage || cached.profileUrl;
+              return {
+                ...cached,
+                customImage,
+                profileUrl,
+                genre: singer.Genre || cached.genre,
+                category
+              };
             }
           }
           console.log(`  🔄 REFETCHING — ${singer.name}`);
@@ -284,8 +292,8 @@ async function fetchSingers() {
           }
         }
 
-        // Use customImage as fallback if TMDB has no profile
-        if (!profileUrl && singer.customImage) {
+        // Use customImage if provided (prioritizes customImage over TMDB or as fallback)
+        if (singer.customImage) {
           profileUrl = singer.customImage;
         }
 

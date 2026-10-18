@@ -24,7 +24,8 @@ export default function SingerDetail({ singer, onClose, onVideoSelect }) {
   const videos = singer.videos || [];
   const liveVideos = singer.liveVideos || [];
   const hasLive = liveVideos.length > 0;
-  const hasProfile = !!singer.profileUrl;
+  const effectiveProfile = singer.customImage || singer.profileUrl;
+  const hasProfile = !!effectiveProfile;
 
   const handleVideoClick = (video) => {
     // Enrich video with singer context for player display
@@ -59,7 +60,7 @@ export default function SingerDetail({ singer, onClose, onVideoSelect }) {
             <div className="singer-detail__hero-img-wrap">
               <img
                 className="singer-detail__hero-img"
-                src={singer.profileUrl}
+                src={effectiveProfile}
                 alt=""
               />
             </div>
@@ -72,7 +73,7 @@ export default function SingerDetail({ singer, onClose, onVideoSelect }) {
           {hasProfile && (
             <img
               className="singer-detail__poster"
-              src={singer.profileUrl}
+              src={effectiveProfile}
               alt={singer.name}
             />
           )}

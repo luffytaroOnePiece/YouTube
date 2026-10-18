@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { getPersonDetails, getImageUrl } from '../../services/tmdbApi';
 
 const FALLBACK_POSTER = 'data:image/svg+xml,' + encodeURIComponent(`
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450">
@@ -10,8 +11,32 @@ const FALLBACK_POSTER = 'data:image/svg+xml,' + encodeURIComponent(`
 export default function SingerCard({ singer, onClick, index }) {
   const [imgLoaded, setImgLoaded] = useState(false);
   const [imgError, setImgError] = useState(false);
+  const [dynamicImg, setDynamicImg] = useState(null);
 
-  const posterSrc = imgError || !singer.profileUrl ? FALLBACK_POSTER : singer.profileUrl;
+  const effectiveUrl = singer.customImage || singer.profileUrl || dynamicImg;
+  const posterSrc = imgError || !effectiveUrl ? FALLBACK_POSTER : effectiveUrl;
+
+  // Reset image state when effectiveUrl changes
+  useEffect(() => {
+    setImgLoaded(false);
+    setImgError(false);
+  }, [effectiveUrl]);
+
+  // Fetch TMDB image client-side if no image exists yet and singer has an ID
+  useEffect(() => {
+    if (singer.customImage || singer.profileUrl) return;
+    const match = singer.id ? String(singer.id).match(/^(\d+)/) : null;
+    if (match) {
+      getPersonDetails(match[1])
+        .then((data) => {
+          if (data?.profile_path) {
+            setDynamicImg(getImageUrl(data.profile_path, 'w500'));
+          }
+        })
+        .catch(() => {});
+    }
+  }, [singer.id, singer.customImage, singer.profileUrl]);
+
   const animationDelay = `${Math.min(index * 0.05, 0.8)}s`;
   const videoCount = (singer.videos?.length || 0) + (singer.liveVideos?.length || 0);
 

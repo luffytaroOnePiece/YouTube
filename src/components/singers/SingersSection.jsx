@@ -3,6 +3,7 @@ import SingerCard from './SingerCard';
 import SingerDetail from './SingerDetail';
 import VideoGrid from '../VideoGrid';
 import Dropdown from '../Dropdown';
+import rawSingersData from '../../data/singers.json';
 
 export default function SingersSection({ singersData, onVideoSelect, searchQuery = '' }) {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -12,14 +13,73 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
   const [activeResolution, setActiveResolution] = useState('All Quality');
   const [selectedSinger, setSelectedSinger] = useState(null);
 
-  // Parse all singers from data
+  // Parse all singers from data and merge latest customImage overrides from singers.json
   const allSingers = useMemo(() => {
-    if (!singersData?.singers) return [];
-    const result = [];
-    for (const [category, singers] of Object.entries(singersData.singers)) {
-      if (!Array.isArray(singers)) continue;
-      singers.forEach(s => result.push({ ...s, category }));
+    const rawMap = new Map();
+    const allRawItems = [];
+    if (rawSingersData && typeof rawSingersData === 'object') {
+      for (const [category, list] of Object.entries(rawSingersData)) {
+        if (!Array.isArray(list)) continue;
+        for (const item of list) {
+          const entry = { ...item, category };
+          allRawItems.push(entry);
+          if (item.id) rawMap.set(String(item.id), entry);
+          if (item.name) rawMap.set(item.name.toLowerCase().trim(), entry);
+        }
+      }
     }
+
+    const result = [];
+    const seenKeys = new Set();
+
+    if (singersData?.singers) {
+      for (const [category, singers] of Object.entries(singersData.singers)) {
+        if (!Array.isArray(singers)) continue;
+        singers.forEach((s) => {
+          const raw = (s.id && rawMap.get(String(s.id))) || (s.name && rawMap.get(s.name.toLowerCase().trim()));
+          // If raw has customImage specified, prioritize it over TMDB image immediately
+          const customImage = raw && raw.customImage ? raw.customImage : (s.customImage || null);
+          const profileUrl = customImage || s.profileUrl || null;
+          const key = s.id || s.name;
+          if (key) seenKeys.add(String(key));
+          if (s.name) seenKeys.add(s.name.toLowerCase().trim());
+
+          result.push({
+            ...s,
+            category: raw?.category || category,
+            genre: raw?.Genre || s.genre || '',
+            customImage,
+            profileUrl,
+          });
+        });
+      }
+    }
+
+    // Include any new singers in singers.json that haven't been fetched into singersData.json yet
+    for (const raw of allRawItems) {
+      const keyId = raw.id ? String(raw.id) : null;
+      const keyName = raw.name ? raw.name.toLowerCase().trim() : null;
+      if ((keyId && seenKeys.has(keyId)) || (keyName && seenKeys.has(keyName))) {
+        continue;
+      }
+      result.push({
+        id: raw.id || '',
+        name: raw.name || '',
+        genre: raw.Genre || '',
+        category: raw.category || 'Other',
+        customImage: raw.customImage || null,
+        profileUrl: raw.customImage || null,
+        biography: '',
+        birthday: '',
+        placeOfBirth: '',
+        knownForDepartment: '',
+        youtubePlaylistId: raw.YoutubePlaylistID || '',
+        livePlaylistId: raw.LivePlaylistID || '',
+        videos: [],
+        liveVideos: [],
+      });
+    }
+
     return result;
   }, [singersData]);
 
@@ -262,7 +322,7 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
       {/* Singer Detail Modal */}
       {selectedSinger && (
         <SingerDetail
-          singer={selectedSinger}
+          singer={allSingers.find(s => (s.id && s.id === selectedSinger.id) || s.name === selectedSinger.name) || selectedSinger}
           onClose={() => setSelectedSinger(null)}
           onVideoSelect={handleVideoSelect}
         />
