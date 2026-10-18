@@ -6,14 +6,17 @@ import ScriptsPage from "./components/ScriptsPage";
 import AnalyticsDashboard from "./components/AnalyticsDashboard";
 import AdvancedSearchPanel from "./components/AdvancedSearchPanel";
 import MoviesSection from "./components/movies/MoviesSection";
+import SingersSection from "./components/singers/SingersSection";
 import { useUrlFilters } from "./hooks/useUrlFilters";
 import videosData from "./data/videos.json";
 import favData from "./data/fav.json";
 import tagsData from "./data/tags.json";
 import ratingsData from "./data/ratings.json";
 import moviesData from "./data/moviesData.json";
+import singersData from "./data/singersData.json";
 import "./styles/App.css";
 import "./styles/movies/Movies.css";
+import "./styles/singers/Singers.css";
 
 const INITIAL_FILTERS = {
   group: "All",
@@ -170,6 +173,7 @@ function App() {
   const [showAnalytics, setShowAnalytics] = useState(false);
   const [showMovies, setShowMovies] = useState(false);
   const [showActors, setShowActors] = useState(false);
+  const [showSingers, setShowSingers] = useState(false);
   const [playerMode, setPlayerMode] = useState("normal");
   const [isMonitorSize, setIsMonitorSize] = useState(false);
   const [isMiniPlayer, setIsMiniPlayer] = useState(false);
@@ -855,6 +859,7 @@ function App() {
                 onClick={() => {
                   setShowMovies((prev) => !prev);
                   setShowActors(false);
+                  setShowSingers(false);
                   setShowAnalytics(false);
                   setShowScripts(false);
                 }}
@@ -889,6 +894,7 @@ function App() {
                   onClick={() => {
                     setShowActors((prev) => !prev);
                     setShowMovies(false);
+                    setShowSingers(false);
                     setShowAnalytics(false);
                     setShowScripts(false);
                   }}
@@ -901,6 +907,26 @@ function App() {
                   <span>Actors</span>
                 </button>
               )}
+
+              <button
+                className="header__analytics-btn"
+                onClick={() => {
+                  setShowSingers((prev) => !prev);
+                  setShowMovies(false);
+                  setShowActors(false);
+                  setShowAnalytics(false);
+                  setShowScripts(false);
+                }}
+                title="Singers"
+                style={showSingers ? { background: 'var(--accent-soft)', color: 'var(--accent)' } : {}}
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 18V5l12-2v13"></path>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <circle cx="18" cy="16" r="3"></circle>
+                </svg>
+                <span>Singers</span>
+              </button>
 
               <button
                 className="header__scripts-btn"
@@ -967,7 +993,7 @@ function App() {
         </header>
 
         {/* Filter Bar */}
-        {!showMovies && !showActors && (
+        {!showMovies && !showActors && !showSingers && (
           <FilterBar
             groups={groups}
             groupMeta={groupMeta}
@@ -1004,7 +1030,7 @@ function App() {
       </div>
 
       {/* Home View: Latest Videos */}
-      {isHomeView && !showMovies && !showActors && latestVideos.length > 0 && (
+      {isHomeView && !showMovies && !showActors && !showSingers && latestVideos.length > 0 && (
         <section className="home-section">
           <div className="home-section__header">
             <span className="home-section__title">Recently Added</span>
@@ -1026,7 +1052,7 @@ function App() {
       )}
 
       {/* Home View: Movies Section */}
-      {isHomeView && !showMovies && !showActors && (
+      {isHomeView && !showMovies && !showActors && !showSingers && (
         <MoviesSection
           moviesData={moviesData}
           onVideoSelect={handleVideoSelect}
@@ -1034,8 +1060,17 @@ function App() {
         />
       )}
 
+      {/* Home View: Singers Section */}
+      {isHomeView && !showMovies && !showActors && !showSingers && (
+        <SingersSection
+          singersData={singersData}
+          onVideoSelect={handleVideoSelect}
+          searchQuery={searchQuery}
+        />
+      )}
+
       {/* Dedicated Movies View */}
-      {showMovies && !showActors && (
+      {showMovies && !showActors && !showSingers && (
         <MoviesSection
           moviesData={moviesData}
           onVideoSelect={handleVideoSelect}
@@ -1050,8 +1085,17 @@ function App() {
         />
       )}
 
+      {/* Dedicated Singers View */}
+      {showSingers && (
+        <SingersSection
+          singersData={singersData}
+          onVideoSelect={handleVideoSelect}
+          searchQuery={searchQuery}
+        />
+      )}
+
       {/* Filtered View */}
-      {!isHomeView && !showMovies && !showActors && (
+      {!isHomeView && !showMovies && !showActors && !showSingers && (
         <VideoGrid
           videos={filteredVideos}
           onVideoSelect={handleVideoSelect}

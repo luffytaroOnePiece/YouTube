@@ -1,0 +1,22 @@
+{
+  "International": [
+    {
+      "name": "Sabrina Carpenter",
+      "id": "1152083-sabrina-carpenter",
+      "customImage": null,
+      "YoutubePlaylistID": "PLB63BM9qQL0g",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    }
+  ],
+  "Indian": [
+    {
+      "name": "Anirudh Ravichander",
+      "id": "1081464",
+      "customImage": null,
+      "YoutubePlaylistID": "PLK6XYwvqSyho",
+      "LivePlaylistID": "",
+      "Genre": "Male"
+    }
+  ]
+}

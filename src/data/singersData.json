@@ -1,0 +1,65 @@
+{
+  "lastUpdated": "2026-10-18T11:51:59.996Z",
+  "singers": {
+    "International": [
+      {
+        "id": "1152083-sabrina-carpenter",
+        "name": "Sabrina Carpenter",
+        "genre": "Female",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/h2JcSqZ220VXDqb6xKBVcRquGGN.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/h2JcSqZ220VXDqb6xKBVcRquGGN.jpg",
+        "biography": "Sabrina Annlynn Carpenter (born May 11, 1999) is an American singer, songwriter, and actress.\n\nShe made her acting debut in 2011. As an actress, she's best known for her roles the Disney Channel series Girl Meets World (2014—2017), the Disney Channel Original Movie Adventures in Babysitting (2016), and the Netflix Originals Tall Girl (2019) and Work It (2020). In 2019, she also starred in the critically acclaimed indie The Short History of the Long Road. Sabrina is also known for her chart-topping hits \"Nonsense\", \"Feather\", and \"Espresso\". In 2025, she won the awards for Best Pop Solo Performance and Best Pop Vocal Album at 76th Annual Grammy Awards.",
+        "birthday": "1999-05-11",
+        "placeOfBirth": "Quakertown, Pennsylvania, USA",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLB63BM9qQL0g",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "eVli-tstM5E",
+            "title": "Sabrina Carpenter - Espresso",
+            "thumbnail": "https://img.youtube.com/vi/eVli-tstM5E/maxresdefault.jpg",
+            "duration": "3:21",
+            "durationSec": 201,
+            "date": "2024-04-12T07:00:07-07:00",
+            "resolution": "4K",
+            "viewCount": 694751390
+          }
+        ],
+        "liveVideos": []
+      }
+    ],
+    "Indian": [
+      {
+        "id": "1081464",
+        "name": "Anirudh Ravichander",
+        "genre": "Male",
+        "category": "Indian",
+        "customImage": null,
+        "profilePath": "/xKvlrZpRaXkm2K2ZiXpqgrEedUU.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xKvlrZpRaXkm2K2ZiXpqgrEedUU.jpg",
+        "biography": "Anirudh is an Indian film composer and singer. He made his debut in the Tamil film, 3 directed by Aishwarya R. Dhanush. The song, \"Why This Kolaveri Di\", that Anirudh had composed for the Tamil film 3, went viral on YouTube and tracked more than 100 million views. Anirudh is the son of actor Ravi Raghavendra, nephew of Rajinikanth and Latha Rajinikanth, and cousin of Aishwarya and Soundarya Rajinikanth.\n\nHe did his schooling at Padma Seshadri Bala Bhavan, K.K. Nagar. He graduated from Loyola College, Chennai in 2011, which according to him was just a back up in case his music career did not take off. Anirudh learnt classical piano from Trinity College of Music, London. He also learnt Carnatic music, and was part of a Carnatic fusion band.",
+        "birthday": "1990-10-16",
+        "placeOfBirth": "Chennai, Tamil Nadu, India",
+        "knownForDepartment": "Sound",
+        "youtubePlaylistId": "PLK6XYwvqSyho",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "QTLiVG2ln-k",
+            "title": "Annakiliye - Music Video | Smith Asher | Viky Pup | Dheekshitha | Albuquerque Records | Anirudh",
+            "thumbnail": "https://img.youtube.com/vi/QTLiVG2ln-k/maxresdefault.jpg",
+            "duration": "5:24",
+            "durationSec": 324,
+            "date": "2026-09-27T21:50:03-07:00",
+            "resolution": "4K",
+            "viewCount": 2852217
+          }
+        ],
+        "liveVideos": []
+      }
+    ]
+  }
+}

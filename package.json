@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "npm run api & npm run dev",
-    "launch": "npm run fetch-videos & npm run fetch-movies & wait && git add . && git commit -m 'YT' && git push && npm run deploy",
+    "launch": "npm run fetch-videos & npm run fetch-movies & npm run fetch-singers & wait && git add . && git commit -m 'YT' && git push && npm run deploy",
     "push": "git add . && git commit -m 'YT' && git push && npm run deploy",
     "dev": "vite",
     "build": "vite build",
@@ -13,6 +13,7 @@
     "preview": "vite preview",
     "fetch-videos": "node scripts/fetchVideos.js",
     "fetch-movies": "node scripts/fetchMovies.js",
+    "fetch-singers": "node scripts/fetchSingers.js",
     "api": "node scripts/server.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
