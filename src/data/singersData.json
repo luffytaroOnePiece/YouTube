@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T11:51:59.996Z",
+  "lastUpdated": "2026-10-18T12:01:30.960Z",
   "singers": {
     "International": [
       {
@@ -29,6 +29,55 @@
           }
         ],
         "liveVideos": []
+      },
+      {
+        "id": "4535189-tyla",
+        "name": "Tyla",
+        "genre": "Female",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/jDJAaBsQCjH8XEel6AiBsA3qz8z.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jDJAaBsQCjH8XEel6AiBsA3qz8z.jpg",
+        "biography": "Tyla Laura Seethal (born January 30, 2002) , known mononymously as Tyla, is a South African singer and songwriter. Her musical style is characterised by a fusion of the pop and amapiano genres, with many publications dubbing her \"Queen of Popiano.\"\n\nBorn and raised in Johannesburg, during her final year of high school she began pursuing a career in music, posting original songs and covers on Instagram and actively seeking out opportunities in the music industry. She was discovered by her first manager, Garth von Glehn, who organized her first recording sessions. Tyla stated that she spent every weekend of her final year of high school in the recording studio. Tyla signed with Epic Records in 2021 following the domestic success of her 2019 debut single, \"Getting Late\". She gained international recognition after the release of her 2023 single \"Water\", which entered the top ten in multiple countries including her native South Africa, the United Kingdom and the United States. \"Water\" was the first song by a South African soloist to enter the US Billboard Hot 100 in 55 years and was awarded the inaugural Grammy Award for Best African Music Performance. The single preceded her self-titled debut album (2024), which was released to critical acclaim and moderate commercial success, entering the top 25 in multiple countries including the United States.\n\nTyla is the youngest African artist in history to win a Grammy Award. Her other accolades include an MTV Video Music Award,two BET Awards and the honorary Global Force Award at the first Billboard R&B's No. 1's among nominations for a Brit Award, an Ivor Novello Award, a Soul Train Music Award and nine South African Music Awards.\n\nTyla's biggest musical influences include Michael Jackson, Aaliyah, Rihanna, Cassie, Ciara, Shakira, Freshlyground, Britney Spears, Drake and Wizkid. She has said that her dream is to become the first global pop star from Africa.",
+        "birthday": "2002-01-30",
+        "placeOfBirth": "Edenvale, Gauteng, South Africa",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLPeN4ta-MgWI",
+        "livePlaylistId": "PLQcT8UvDMVXI",
+        "videos": [
+          {
+            "youtubeLinkID": "XoiOOiuH8iI",
+            "title": "Tyla - Water (Official Music Video)",
+            "thumbnail": "https://img.youtube.com/vi/XoiOOiuH8iI/maxresdefault.jpg",
+            "duration": "3:40",
+            "durationSec": 220,
+            "date": "2023-10-05T21:00:07-07:00",
+            "resolution": "1080p",
+            "viewCount": 414218231
+          },
+          {
+            "youtubeLinkID": "xiZUf98A1Ts",
+            "title": "Tyla - CHANEL (Official Music Video)",
+            "thumbnail": "https://img.youtube.com/vi/xiZUf98A1Ts/maxresdefault.jpg",
+            "duration": "3:10",
+            "durationSec": 190,
+            "date": "2025-10-23T21:00:06-07:00",
+            "resolution": "4K",
+            "viewCount": 158107666
+          }
+        ],
+        "liveVideos": [
+          {
+            "youtubeLinkID": "88a7rr8KXcE",
+            "title": "Tyla - Water (Live) | Vevo DSCVR",
+            "thumbnail": "https://img.youtube.com/vi/88a7rr8KXcE/maxresdefault.jpg",
+            "duration": "3:21",
+            "durationSec": 201,
+            "date": "2023-08-02T09:00:09-07:00",
+            "resolution": "4K",
+            "viewCount": 6990175
+          }
+        ]
       }
     ],
     "Indian": [
