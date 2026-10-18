@@ -15,6 +15,22 @@
       "YoutubePlaylistID": "PLPeN4ta-MgWI",
       "LivePlaylistID": "PLQcT8UvDMVXI",
       "Genre": "Female"
+    },
+    {
+      "name": "Dua Lipa",
+      "id": "1959397-dua-lipa",
+      "customImage": null,
+      "YoutubePlaylistID": "PLRljFr5iKIf0",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Bebe Rexha",
+      "id": "2167419-bebe-rexha",
+      "customImage": null,
+      "YoutubePlaylistID": "PLelnXXyQr0RM",
+      "LivePlaylistID": "",
+      "Genre": "Female"
     }
   ],
   "Indian": [

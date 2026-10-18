@@ -11,6 +11,7 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
   const [activeSort, setActiveSort] = useState('Name (A-Z)');
   const [viewMode, setViewMode] = useState('Albums');
   const [activeResolution, setActiveResolution] = useState('All Quality');
+  const [activeSongType, setActiveSongType] = useState('All'); // 'All', 'Normal', 'Live'
   const [selectedSinger, setSelectedSinger] = useState(null);
 
   // Parse all singers from data and merge latest customImage overrides from singers.json
@@ -144,25 +145,48 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
 
     const videos = [];
     filteredSingers.forEach(singer => {
-      const allVids = [...(singer.videos || []), ...(singer.liveVideos || [])];
-      allVids.forEach(v => {
-        const is8K = v.resolution === '8K';
-        const is4K = v.resolution === '4K';
-        const res = is8K ? '8K' : is4K ? '4K' : 'Other';
+      // Normal video songs
+      if (activeSongType === 'All' || activeSongType === 'Normal') {
+        (singer.videos || []).forEach(v => {
+          const is8K = v.resolution === '8K';
+          const is4K = v.resolution === '4K';
+          const res = is8K ? '8K' : is4K ? '4K' : 'Other';
 
-        if (activeResolution === 'All Quality' || activeResolution === res) {
-          videos.push({
-            ...v,
-            group: 'Singers',
-            category: singer.category || '',
-            type: singer.name || '',
-            resolution: v.resolution || ''
-          });
-        }
-      });
+          if (activeResolution === 'All Quality' || activeResolution === res) {
+            videos.push({
+              ...v,
+              group: 'Singers',
+              category: singer.category || '',
+              type: singer.name || '',
+              isLive: false,
+              resolution: v.resolution || ''
+            });
+          }
+        });
+      }
+
+      // Live video songs
+      if (activeSongType === 'All' || activeSongType === 'Live') {
+        (singer.liveVideos || []).forEach(v => {
+          const is8K = v.resolution === '8K';
+          const is4K = v.resolution === '4K';
+          const res = is8K ? '8K' : is4K ? '4K' : 'Other';
+
+          if (activeResolution === 'All Quality' || activeResolution === res) {
+            videos.push({
+              ...v,
+              group: 'Singers',
+              category: singer.category || '',
+              type: `${singer.name} (Live)`,
+              isLive: true,
+              resolution: v.resolution || ''
+            });
+          }
+        });
+      }
     });
     return videos;
-  }, [filteredSingers, viewMode, activeResolution]);
+  }, [filteredSingers, viewMode, activeResolution, activeSongType]);
 
   if (allSingers.length === 0) return null;
 
@@ -196,6 +220,20 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
       count
     }))
   ];
+
+  const songTypeOptions = useMemo(() => {
+    let normalCount = 0;
+    let liveCount = 0;
+    filteredSingers.forEach(s => {
+      normalCount += (s.videos?.length || 0);
+      liveCount += (s.liveVideos?.length || 0);
+    });
+    return [
+      { value: 'All', label: 'All Songs', count: normalCount + liveCount },
+      { value: 'Normal', label: 'Normal Videos', count: normalCount },
+      { value: 'Live', label: 'Live Songs', count: liveCount },
+    ];
+  }, [filteredSingers]);
 
   const sortOptions = [
     { value: 'Name (A-Z)', label: 'Name (A-Z)' },
@@ -249,6 +287,20 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
                 options={genreOptions}
                 onChange={setActiveGenre}
                 placeholder="All Genres"
+              />
+            </div>
+          )}
+
+          {/* Song Type Filter (Live vs Normal) — only in Flat view */}
+          {viewMode === 'Flat' && (
+            <div className="singers-section__sort">
+              <span className="singers-section__sort-label">Type:</span>
+              <Dropdown
+                id="singer-type-select"
+                value={activeSongType}
+                options={songTypeOptions}
+                onChange={setActiveSongType}
+                placeholder="All Songs"
               />
             </div>
           )}
@@ -313,10 +365,17 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
           </div>
         )
       ) : (
-        <VideoGrid
-          videos={flattenedVideos}
-          onVideoSelect={handleFlatVideoSelect}
-        />
+        flattenedVideos.length > 0 ? (
+          <VideoGrid
+            videos={flattenedVideos}
+            onVideoSelect={handleFlatVideoSelect}
+          />
+        ) : (
+          <div className="singers-section__empty">
+            <div className="singers-section__empty-icon">🎤</div>
+            <p className="singers-section__empty-text">No videos found for this filter.</p>
+          </div>
+        )
       )}
 
       {/* Singer Detail Modal */}
