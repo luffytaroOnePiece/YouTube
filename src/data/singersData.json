@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T05:00:45.262Z",
+  "lastUpdated": "2026-10-19T10:33:01.680Z",
   "singers": {
     "International": [
       {
@@ -191,6 +191,172 @@
             "date": "2019-03-22T10:00:02-07:00",
             "resolution": "1080p",
             "viewCount": 12794855
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "2240445-anne-marie",
+        "name": "Anne Marie",
+        "genre": "Female",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/nGNNNar0WjC3hbjexm7sRNbCffl.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nGNNNar0WjC3hbjexm7sRNbCffl.jpg",
+        "biography": "Anne-Marie (born Anne-Marie Rose Nicholson) is a highly successful English singer and songwriter who has achieved global chart success through her solo work and high-profile collaborations. She first gained widespread mainstream recognition in 2016 as a featured vocalist on Clean Bandit's global multi-platinum hit single \"Rockabye\" alongside Sean Paul.",
+        "birthday": "1991-04-07",
+        "placeOfBirth": "East Tilbury, Essex, England, UK",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLJvtul_L-JSs",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "qqob4D3BoZc",
+            "title": "Anne-Marie - Ciao Adios [Official Video]",
+            "thumbnail": "https://img.youtube.com/vi/qqob4D3BoZc/maxresdefault.jpg",
+            "duration": "3:30",
+            "durationSec": 210,
+            "date": "2017-03-09T07:48:09-08:00",
+            "resolution": "1080p",
+            "viewCount": 339013183
+          },
+          {
+            "youtubeLinkID": "jzD_yyEcp0M",
+            "title": "Marshmello & Anne-Marie - FRIENDS (Music Video) *OFFICIAL FRIENDZONE ANTHEM*",
+            "thumbnail": "https://img.youtube.com/vi/jzD_yyEcp0M/maxresdefault.jpg",
+            "duration": "3:52",
+            "durationSec": 232,
+            "date": "2018-02-16T04:41:36-08:00",
+            "resolution": "1080p",
+            "viewCount": 1145890140
+          },
+          {
+            "youtubeLinkID": "papuvlVeZg8",
+            "title": "Clean Bandit - Rockabye (feat. Sean Paul & Anne-Marie) [Official Video]",
+            "thumbnail": "https://img.youtube.com/vi/papuvlVeZg8/maxresdefault.jpg",
+            "duration": "4:14",
+            "durationSec": 254,
+            "date": "2016-10-21T04:30:36-07:00",
+            "resolution": "1080p",
+            "viewCount": 3226616929
+          },
+          {
+            "youtubeLinkID": "egVAW6l_QU8",
+            "title": "Anne-Marie - BIRTHDAY [Official Video]",
+            "thumbnail": "https://img.youtube.com/vi/egVAW6l_QU8/maxresdefault.jpg",
+            "duration": "3:47",
+            "durationSec": 227,
+            "date": "2020-02-07T02:00:11-08:00",
+            "resolution": "1080p",
+            "viewCount": 56439106
+          },
+          {
+            "youtubeLinkID": "r3RXHOTMmLw",
+            "title": "Anne-Marie - Alarm [Official Video]",
+            "thumbnail": "https://img.youtube.com/vi/r3RXHOTMmLw/maxresdefault.jpg",
+            "duration": "4:06",
+            "durationSec": 246,
+            "date": "2016-05-20T04:07:51-07:00",
+            "resolution": "1080p",
+            "viewCount": 104130128
+          },
+          {
+            "youtubeLinkID": "Il-an3K9pjg",
+            "title": "Anne-Marie - 2002 [Official Video]",
+            "thumbnail": "https://img.youtube.com/vi/Il-an3K9pjg/maxresdefault.jpg",
+            "duration": "3:15",
+            "durationSec": 195,
+            "date": "2018-05-08T04:05:08-07:00",
+            "resolution": "1080p",
+            "viewCount": 1092668148
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "579551-lana-del-rey",
+        "name": "Lana Del Rey",
+        "genre": "Female",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/6yAdwglAlUZHm90y6ChRKyoQQ6i.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6yAdwglAlUZHm90y6ChRKyoQQ6i.jpg",
+        "biography": "Elizabeth Woolridge Grant (born June 21, 1985), known professionally as Lana Del Rey, is an American singer and songwriter. Born and raised in New York,  Del Rey embarked on a music career in 2005 and first received  widespread attention in 2011, when the music video for her single \"Video Games\" became a viral internet sensation. Her music has been noted for its cinematic style, its preoccupation with themes of tragic romance and melancholia, and its references to pop culture, particularly 1950s and 1960s Americana.",
+        "birthday": "1986-06-21",
+        "placeOfBirth": "Lake Placid, New York, USA",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLDcHjz5JGcQA",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "o_1aF54DO60",
+            "title": "Lana Del Rey - Young and Beautiful",
+            "thumbnail": "https://img.youtube.com/vi/o_1aF54DO60/maxresdefault.jpg",
+            "duration": "3:59",
+            "durationSec": 239,
+            "date": "2013-05-10T00:01:10-07:00",
+            "resolution": "1080p",
+            "viewCount": 840781498
+          },
+          {
+            "youtubeLinkID": "TdrL3QxjyVw",
+            "title": "Lana Del Rey - Summertime Sadness (Official Music Video)",
+            "thumbnail": "https://img.youtube.com/vi/TdrL3QxjyVw/maxresdefault.jpg",
+            "duration": "4:26",
+            "durationSec": 266,
+            "date": "2013-08-23T03:38:53-07:00",
+            "resolution": "1080p",
+            "viewCount": 936722550
+          },
+          {
+            "youtubeLinkID": "oKxuiw3iMBE",
+            "title": "Lana Del Rey - West Coast",
+            "thumbnail": "https://img.youtube.com/vi/oKxuiw3iMBE/maxresdefault.jpg",
+            "duration": "4:26",
+            "durationSec": 266,
+            "date": "2014-05-07T08:33:46-07:00",
+            "resolution": "1080p",
+            "viewCount": 258407534
+          },
+          {
+            "youtubeLinkID": "MiAoetOXKcY",
+            "title": "Lana Del Rey - Say Yes To Heaven (Official Audio)",
+            "thumbnail": "https://img.youtube.com/vi/MiAoetOXKcY/maxresdefault.jpg",
+            "duration": "3:30",
+            "durationSec": 210,
+            "date": "2023-05-18T21:00:09-07:00",
+            "resolution": "1080p",
+            "viewCount": 122852997
+          },
+          {
+            "youtubeLinkID": "3-NTv0CdFCk",
+            "title": "Lana Del Rey - Love",
+            "thumbnail": "https://img.youtube.com/vi/3-NTv0CdFCk/maxresdefault.jpg",
+            "duration": "4:55",
+            "durationSec": 295,
+            "date": "2017-02-20T08:05:00-08:00",
+            "resolution": "1080p",
+            "viewCount": 251493816
+          },
+          {
+            "youtubeLinkID": "vBHild0PiTE",
+            "title": "Lana Del Rey - Chemtrails Over The Country Club (Official Music Video)",
+            "thumbnail": "https://img.youtube.com/vi/vBHild0PiTE/maxresdefault.jpg",
+            "duration": "5:41",
+            "durationSec": 341,
+            "date": "2021-01-11T11:10:09-08:00",
+            "resolution": "1080p",
+            "viewCount": 62882155
+          },
+          {
+            "youtubeLinkID": "DCYmJDO2_IE",
+            "title": "Cinnamon Girl",
+            "thumbnail": "https://img.youtube.com/vi/DCYmJDO2_IE/maxresdefault.jpg",
+            "duration": "5:01",
+            "durationSec": 301,
+            "date": "2019-08-29T03:01:12-07:00",
+            "resolution": "1080p",
+            "viewCount": 232439725
           }
         ],
         "liveVideos": []

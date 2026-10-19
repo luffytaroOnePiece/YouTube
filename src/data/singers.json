@@ -31,6 +31,22 @@
       "YoutubePlaylistID": "PLelnXXyQr0RM",
       "LivePlaylistID": "",
       "Genre": "Female"
+    },
+    {
+      "name": "Anne Marie",
+      "id": "2240445-anne-marie",
+      "customImage": null,
+      "YoutubePlaylistID": "PLJvtul_L-JSs",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Lana Del Rey",
+      "id": "579551-lana-del-rey",
+      "customImage": null,
+      "YoutubePlaylistID": "PLDcHjz5JGcQA",
+      "LivePlaylistID": "",
+      "Genre": "Female"
     }
   ],
   "Indian": [
