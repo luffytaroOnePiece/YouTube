@@ -3,7 +3,7 @@
     {
       "name": "Sabrina Carpenter",
       "id": "1152083-sabrina-carpenter",
-      "customImage": null,
+      "customImage": "https://raw.githubusercontent.com/Authormorgan6/singers/main/1152083-sabrina-carpenter.webp",
       "YoutubePlaylistID": "PLB63BM9qQL0g",
       "LivePlaylistID": "",
       "Genre": "Female"
@@ -11,7 +11,7 @@
     {
       "name": "Tyla",
       "id": "4535189-tyla",
-      "customImage": "https://media.vanityfair.com/photos/66198fc554db4652985baf00/1:1/w_1600,h_1600,c_limit/202405-van-opener-tyla01.jpg",
+      "customImage": "https://raw.githubusercontent.com/Authormorgan6/singers/main/4535189-tyla.webp",
       "YoutubePlaylistID": "PLPeN4ta-MgWI",
       "LivePlaylistID": "PLQcT8UvDMVXI",
       "Genre": "Female"
@@ -19,7 +19,7 @@
     {
       "name": "Dua Lipa",
       "id": "1959397-dua-lipa",
-      "customImage": null,
+      "customImage": "https://raw.githubusercontent.com/Authormorgan6/singers/main/1959397-dua-lipa.webp",
       "YoutubePlaylistID": "PLRljFr5iKIf0",
       "LivePlaylistID": "",
       "Genre": "Female"
@@ -27,7 +27,7 @@
     {
       "name": "Bebe Rexha",
       "id": "2167419-bebe-rexha",
-      "customImage": null,
+      "customImage": "https://raw.githubusercontent.com/Authormorgan6/singers/main/2167419-bebe-rexha.webp",
       "YoutubePlaylistID": "PLelnXXyQr0RM",
       "LivePlaylistID": "",
       "Genre": "Female"
