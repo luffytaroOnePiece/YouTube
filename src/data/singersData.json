@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T11:47:44.931Z",
+  "lastUpdated": "2026-10-21T11:49:04.007Z",
   "singers": {
     "International": [
       {
@@ -367,6 +367,16 @@
             "date": "2017-09-13T08:00:01-07:00",
             "resolution": "1080p",
             "viewCount": 71831738
+          },
+          {
+            "youtubeLinkID": "lfUmmGpg5Kc",
+            "title": "Lana Del Rey - Brooklyn Baby (Official Music Video)",
+            "thumbnail": "https://img.youtube.com/vi/lfUmmGpg5Kc/maxresdefault.jpg",
+            "duration": "5:53",
+            "durationSec": 353,
+            "date": "2019-12-22T20:00:59-08:00",
+            "resolution": "1080p",
+            "viewCount": 6130306
           }
         ],
         "liveVideos": []
