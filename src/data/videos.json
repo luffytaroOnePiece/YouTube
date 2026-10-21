@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T11:49:09.202Z",
+  "lastUpdated": "2026-10-21T12:02:53.092Z",
   "groups": {
     "Music": {
       "icon": "",
@@ -6189,103 +6189,6 @@
               "viewCount": 3409774
             }
           ],
-          "Sad": [
-            {
-              "youtubeLinkID": "R7atDOgjaFg",
-              "title": "Rendu Kaadhal 8K/4K Video Song | Kaathuvaakula Rendu Kaadhal | Vijay Sethupathi | AnirudhRavichander",
-              "thumbnail": "https://img.youtube.com/vi/R7atDOgjaFg/maxresdefault.jpg",
-              "duration": "4:04",
-              "durationSec": 244,
-              "group": "Music",
-              "category": "Tamil",
-              "type": "Sad",
-              "date": "2026-02-04T06:30:31-08:00",
-              "resolution": "8K",
-              "viewCount": 26238
-            }
-          ],
-          "Item": [
-            {
-              "youtubeLinkID": "ijBxe70sd8M",
-              "title": "Achacho - Video Song | Aranmanai 4  | Sundar.C | Tamannaah | Raashii Khanna | Hiphop Tamizha",
-              "thumbnail": "https://img.youtube.com/vi/ijBxe70sd8M/maxresdefault.jpg",
-              "duration": "3:13",
-              "durationSec": 193,
-              "group": "Music",
-              "category": "Tamil",
-              "type": "Item",
-              "date": "2024-05-06T23:30:02-07:00",
-              "resolution": "4K",
-              "viewCount": 530671359
-            },
-            {
-              "youtubeLinkID": "lM8h5Mm6ODo",
-              "title": "JAILER - Kaavaalaa Video Song | Superstar Rajinikanth | Sun Pictures | Anirudh | Nelson | Tamannaah",
-              "thumbnail": "https://img.youtube.com/vi/lM8h5Mm6ODo/maxresdefault.jpg",
-              "duration": "2:54",
-              "durationSec": 174,
-              "group": "Music",
-              "category": "Tamil",
-              "type": "Item",
-              "date": "2023-09-06T05:29:02-07:00",
-              "resolution": "4K",
-              "viewCount": 405521409
-            },
-            {
-              "youtubeLinkID": "neOasLBWoy0",
-              "title": "Monica - Video Song | COOLIE | Superstar Rajinikanth | Sun Pictures | Lokesh | Anirudh | Pooja Hegde",
-              "thumbnail": "https://img.youtube.com/vi/neOasLBWoy0/maxresdefault.jpg",
-              "duration": "3:06",
-              "durationSec": 186,
-              "group": "Music",
-              "category": "Tamil",
-              "type": "Item",
-              "date": "2025-09-11T05:28:59-07:00",
-              "resolution": "4K",
-              "viewCount": 132111093
-            },
-            {
-              "youtubeLinkID": "KUN5Uf9mObQ",
-              "title": "Arabic Kuthu - Video Song | Beast | Thalapathy Vijay | Pooja Hegde | Sun Pictures | Nelson | Anirudh",
-              "thumbnail": "https://img.youtube.com/vi/KUN5Uf9mObQ/maxresdefault.jpg",
-              "duration": "4:42",
-              "durationSec": 282,
-              "group": "Music",
-              "category": "Tamil",
-              "type": "Item",
-              "date": "2022-05-09T06:30:02-07:00",
-              "resolution": "4K",
-              "viewCount": 787676621
-            }
-          ],
-          "Classics": [
-            {
-              "youtubeLinkID": "W-7bAmBDF4c",
-              "title": "Kaala Kaala 8K Video Song Hi-Res Audio | Kaalai | STR | Vedhika | G. V. Prakash Kumar",
-              "thumbnail": "https://img.youtube.com/vi/W-7bAmBDF4c/maxresdefault.jpg",
-              "duration": "4:40",
-              "durationSec": 280,
-              "group": "Music",
-              "category": "Tamil",
-              "type": "Classics",
-              "date": "2026-04-29T07:30:34-07:00",
-              "resolution": "8K",
-              "viewCount": 58530
-            },
-            {
-              "youtubeLinkID": "IEr16FyTLxM",
-              "title": "Appadi Podu 4K Video Song | அப்படி போடு | Ghilli | Thalapathy Vijay | Trisha | Vidyasagar",
-              "thumbnail": "https://img.youtube.com/vi/IEr16FyTLxM/maxresdefault.jpg",
-              "duration": "4:55",
-              "durationSec": 295,
-              "group": "Music",
-              "category": "Tamil",
-              "type": "Classics",
-              "date": "2024-04-24T04:16:51-07:00",
-              "resolution": "4K",
-              "viewCount": 12428165
-            }
-          ],
           "Romance": [
             {
               "youtubeLinkID": "UCnlulzC6M4",
@@ -6559,6 +6462,103 @@
               "date": "2026-07-16T02:49:51-07:00",
               "resolution": "8K",
               "viewCount": 35541
+            }
+          ],
+          "Classics": [
+            {
+              "youtubeLinkID": "W-7bAmBDF4c",
+              "title": "Kaala Kaala 8K Video Song Hi-Res Audio | Kaalai | STR | Vedhika | G. V. Prakash Kumar",
+              "thumbnail": "https://img.youtube.com/vi/W-7bAmBDF4c/maxresdefault.jpg",
+              "duration": "4:40",
+              "durationSec": 280,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Classics",
+              "date": "2026-04-29T07:30:34-07:00",
+              "resolution": "8K",
+              "viewCount": 58530
+            },
+            {
+              "youtubeLinkID": "IEr16FyTLxM",
+              "title": "Appadi Podu 4K Video Song | அப்படி போடு | Ghilli | Thalapathy Vijay | Trisha | Vidyasagar",
+              "thumbnail": "https://img.youtube.com/vi/IEr16FyTLxM/maxresdefault.jpg",
+              "duration": "4:55",
+              "durationSec": 295,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Classics",
+              "date": "2024-04-24T04:16:51-07:00",
+              "resolution": "4K",
+              "viewCount": 12428165
+            }
+          ],
+          "Sad": [
+            {
+              "youtubeLinkID": "R7atDOgjaFg",
+              "title": "Rendu Kaadhal 8K/4K Video Song | Kaathuvaakula Rendu Kaadhal | Vijay Sethupathi | AnirudhRavichander",
+              "thumbnail": "https://img.youtube.com/vi/R7atDOgjaFg/maxresdefault.jpg",
+              "duration": "4:04",
+              "durationSec": 244,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Sad",
+              "date": "2026-02-04T06:30:31-08:00",
+              "resolution": "8K",
+              "viewCount": 26238
+            }
+          ],
+          "Item": [
+            {
+              "youtubeLinkID": "ijBxe70sd8M",
+              "title": "Achacho - Video Song | Aranmanai 4  | Sundar.C | Tamannaah | Raashii Khanna | Hiphop Tamizha",
+              "thumbnail": "https://img.youtube.com/vi/ijBxe70sd8M/maxresdefault.jpg",
+              "duration": "3:13",
+              "durationSec": 193,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Item",
+              "date": "2024-05-06T23:30:02-07:00",
+              "resolution": "4K",
+              "viewCount": 530671359
+            },
+            {
+              "youtubeLinkID": "lM8h5Mm6ODo",
+              "title": "JAILER - Kaavaalaa Video Song | Superstar Rajinikanth | Sun Pictures | Anirudh | Nelson | Tamannaah",
+              "thumbnail": "https://img.youtube.com/vi/lM8h5Mm6ODo/maxresdefault.jpg",
+              "duration": "2:54",
+              "durationSec": 174,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Item",
+              "date": "2023-09-06T05:29:02-07:00",
+              "resolution": "4K",
+              "viewCount": 405521409
+            },
+            {
+              "youtubeLinkID": "neOasLBWoy0",
+              "title": "Monica - Video Song | COOLIE | Superstar Rajinikanth | Sun Pictures | Lokesh | Anirudh | Pooja Hegde",
+              "thumbnail": "https://img.youtube.com/vi/neOasLBWoy0/maxresdefault.jpg",
+              "duration": "3:06",
+              "durationSec": 186,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Item",
+              "date": "2025-09-11T05:28:59-07:00",
+              "resolution": "4K",
+              "viewCount": 132111093
+            },
+            {
+              "youtubeLinkID": "KUN5Uf9mObQ",
+              "title": "Arabic Kuthu - Video Song | Beast | Thalapathy Vijay | Pooja Hegde | Sun Pictures | Nelson | Anirudh",
+              "thumbnail": "https://img.youtube.com/vi/KUN5Uf9mObQ/maxresdefault.jpg",
+              "duration": "4:42",
+              "durationSec": 282,
+              "group": "Music",
+              "category": "Tamil",
+              "type": "Item",
+              "date": "2022-05-09T06:30:02-07:00",
+              "resolution": "4K",
+              "viewCount": 787676621
             }
           ]
         },
@@ -6942,97 +6942,162 @@
               "viewCount": 1477967
             }
           ],
-          "Sad": [
+          "Mass": [
             {
-              "youtubeLinkID": "F2m4HPLvj-4",
-              "title": "JAIYE SAJANA (Video): Dhurandhar The Revenge | Shashwat Sachdev | Satinder Sartaaj | Jasmine Sandlas",
-              "thumbnail": "https://img.youtube.com/vi/F2m4HPLvj-4/maxresdefault.jpg",
+              "youtubeLinkID": "SX2kAdVPVNE",
+              "title": "Dhurandhar - Title Track - 8K Video | Ranveer Singh, Shashwat Sachdev, Hanumankind, Jasmine Sandlas",
+              "thumbnail": "https://img.youtube.com/vi/SX2kAdVPVNE/maxresdefault.jpg",
+              "duration": "1:27",
+              "durationSec": 87,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2026-02-01T20:40:02-08:00",
+              "resolution": "8K",
+              "viewCount": 4732295
+            },
+            {
+              "youtubeLinkID": "amdOdzmAbSk",
+              "title": "Ishq Jalakar - Karvaan - 8K Video | Dhurandhar | Ranveer Singh, Shashwat Sachdev, Shahzad Ali",
+              "thumbnail": "https://img.youtube.com/vi/amdOdzmAbSk/maxresdefault.jpg",
               "duration": "2:32",
               "durationSec": 152,
               "group": "Music",
               "category": "Hindi",
-              "type": "Sad",
-              "date": "2026-03-28T23:42:01-07:00",
+              "type": "Mass",
+              "date": "2026-03-18T00:30:01-07:00",
+              "resolution": "8K",
+              "viewCount": 6221129
+            },
+            {
+              "youtubeLinkID": "BWFr1xlkgL0",
+              "title": "Lutt Le Gaya - 8K Video | Dhurandhar | Ranveer Singh | Akshaye Khanna | Shashwat Sachdev",
+              "thumbnail": "https://img.youtube.com/vi/BWFr1xlkgL0/maxresdefault.jpg",
+              "duration": "2:05",
+              "durationSec": 125,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2026-03-12T00:41:37-07:00",
+              "resolution": "8K",
+              "viewCount": 6606221
+            },
+            {
+              "youtubeLinkID": "dESIGVxSSCE",
+              "title": "Dhurandhar The Revenge - AARI AARI (Video)| Ranveer Singh | Shashwat Sachdev,Bombay Rockers|Aditya D",
+              "thumbnail": "https://img.youtube.com/vi/dESIGVxSSCE/maxresdefault.jpg",
+              "duration": "2:44",
+              "durationSec": 164,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2026-03-11T23:42:17-07:00",
               "resolution": "4K",
-              "viewCount": 58431400
+              "viewCount": 61727202
             },
             {
-              "youtubeLinkID": "dzH-fG4murA",
-              "title": "Bekhayali 8K Full Song | Kabir Singh | Arijit Singh | Shahid K,Kiara A | Sandeep V |Sachet-Parampara",
-              "thumbnail": "https://img.youtube.com/vi/dzH-fG4murA/maxresdefault.jpg",
-              "duration": "5:54",
-              "durationSec": 354,
+              "youtubeLinkID": "47ooG3yi6dQ",
+              "title": "WILD RIDE (Full Video) | Dhurandhar The Revenge | Ranveer Singh | Shashwat Sachdev | Ellisar",
+              "thumbnail": "https://img.youtube.com/vi/47ooG3yi6dQ/maxresdefault.jpg",
+              "duration": "2:43",
+              "durationSec": 163,
               "group": "Music",
               "category": "Hindi",
-              "type": "Sad",
-              "date": "2025-08-21T04:30:36-07:00",
-              "resolution": "8K",
-              "viewCount": 3758336
-            },
-            {
-              "youtubeLinkID": "bqW-mtsWnhk",
-              "title": "Animal:Saari Duniya Jalaa Denge 8K Video | Ranbir K, Bobby D | Sandeep V | B Praak,Jaani | Bhushan K",
-              "thumbnail": "https://img.youtube.com/vi/bqW-mtsWnhk/maxresdefault.jpg",
-              "duration": "5:46",
-              "durationSec": 346,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Sad",
-              "date": "2025-06-21T04:25:22-07:00",
-              "resolution": "8K",
-              "viewCount": 2782950
-            },
-            {
-              "youtubeLinkID": "sNGwuOR3PQQ",
-              "title": "Deewaana Deewaana 8K Full Video: Tere Ishk Mein | Dhanush, Kriti | AR Rahman | Aanand LR | Bhushan K",
-              "thumbnail": "https://img.youtube.com/vi/sNGwuOR3PQQ/maxresdefault.jpg",
-              "duration": "5:39",
-              "durationSec": 339,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Sad",
-              "date": "2026-03-29T04:30:07-07:00",
-              "resolution": "8K",
-              "viewCount": 3229897
-            },
-            {
-              "youtubeLinkID": "9W6CSt6-PIU",
-              "title": "Animal: Satranga [8K] - Video | Ranbir K,Rashmika|Sandeep|Arijit,Shreyas,Siddharth-Garima|Bhushan K",
-              "thumbnail": "https://img.youtube.com/vi/9W6CSt6-PIU/maxresdefault.jpg",
-              "duration": "4:31",
-              "durationSec": 271,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Sad",
-              "date": "2025-06-17T22:30:05-07:00",
-              "resolution": "8K",
-              "viewCount": 1179063
-            },
-            {
-              "youtubeLinkID": "r8O3URprq1M",
-              "title": "PHIR SE (Full Video) | Dhurandhar The Revenge | Ranveer Singh | Shashwat Sachdev,Arijit S,Irshad K",
-              "thumbnail": "https://img.youtube.com/vi/r8O3URprq1M/maxresdefault.jpg",
-              "duration": "3:48",
-              "durationSec": 228,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Sad",
-              "date": "2026-04-20T23:42:03-07:00",
+              "type": "Mass",
+              "date": "2026-04-12T23:42:03-07:00",
               "resolution": "4K",
-              "viewCount": 524021
+              "viewCount": 744728
             },
             {
-              "youtubeLinkID": "IcMBZkvS7IY",
-              "title": "Deewaniyat (Title Track | 8K Remastered) | Ek Deewane Ki Deewaniyat | Harshvardhan, Sonam | Vishal",
-              "thumbnail": "https://img.youtube.com/vi/IcMBZkvS7IY/maxresdefault.jpg",
-              "duration": "3:26",
-              "durationSec": 206,
+              "youtubeLinkID": "v84ZYg0mDyg",
+              "title": "Ramba Ho | Dhurandhar | Ranveer Singh, Shashwat Sachdev, Madhubanti Bagchi",
+              "thumbnail": "https://img.youtube.com/vi/v84ZYg0mDyg/maxresdefault.jpg",
+              "duration": "2:08",
+              "durationSec": 128,
               "group": "Music",
               "category": "Hindi",
-              "type": "Sad",
-              "date": "2025-09-01T07:44:40-07:00",
+              "type": "Mass",
+              "date": "2026-01-05T22:30:38-08:00",
+              "resolution": "4K",
+              "viewCount": 29455091
+            },
+            {
+              "youtubeLinkID": "8SHaqaYSY34",
+              "title": "Run Down The City - Monica - 8K | Dhurandhar | Ranveer Singh, Sara A, Asha Bhosle, Shashwat Sachdev",
+              "thumbnail": "https://img.youtube.com/vi/8SHaqaYSY34/maxresdefault.jpg",
+              "duration": "1:55",
+              "durationSec": 115,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2026-04-12T20:30:10-07:00",
               "resolution": "8K",
-              "viewCount": 569586
+              "viewCount": 1108349
+            },
+            {
+              "youtubeLinkID": "4qliB6vzeRc",
+              "title": "Move - Yeh Ishq Ishq | 8K Video | Dhuarandhar | Ranveer Singh | Shashwat Sachdev | Sonu Nigam |Reble",
+              "thumbnail": "https://img.youtube.com/vi/4qliB6vzeRc/maxresdefault.jpg",
+              "duration": "2:47",
+              "durationSec": 167,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2026-04-17T04:20:53-07:00",
+              "resolution": "8K",
+              "viewCount": 514934
+            },
+            {
+              "youtubeLinkID": "_GFcWG0M-YM",
+              "title": "Animal: Arjan Vailly 8K Video Song | Ranbir Kapoor | Sandeep Vanga | Bhupinder B,Manan B | Bhushan K",
+              "thumbnail": "https://img.youtube.com/vi/_GFcWG0M-YM/maxresdefault.jpg",
+              "duration": "3:28",
+              "durationSec": 208,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2025-06-19T05:00:03-07:00",
+              "resolution": "8K",
+              "viewCount": 5995370
+            },
+            {
+              "youtubeLinkID": "KsEMAXNXnO4",
+              "title": "ANIMAL: ABRAR’S ENTRY - JAMAL KUDU 8K🔥 | Bobby Deol | Ranbir Kapoor | Sandeep Vanga | Bhushan Kumar",
+              "thumbnail": "https://img.youtube.com/vi/KsEMAXNXnO4/maxresdefault.jpg",
+              "duration": "2:13",
+              "durationSec": 133,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2025-10-03T22:30:09-07:00",
+              "resolution": "8K",
+              "viewCount": 1209366
+            },
+            {
+              "youtubeLinkID": "bW2_vX38MFE",
+              "title": "TAMMA TAMMA 8K Video Song | Dhurandhar The Revenge | Ranveer Singh, Sanjay Dutt | Bappi L,Anuradha P",
+              "thumbnail": "https://img.youtube.com/vi/bW2_vX38MFE/maxresdefault.jpg",
+              "duration": "3:38",
+              "durationSec": 218,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2026-07-15T04:30:07-07:00",
+              "resolution": "8K",
+              "viewCount": 301809
+            },
+            {
+              "youtubeLinkID": "0-Vgg04M3m0",
+              "title": "Agni Song | ALPHA | Alia Bhatt, Sharvari, Anil Kapoor, Bobby Deol | Rohansh & Abeer | Ranj",
+              "thumbnail": "https://img.youtube.com/vi/0-Vgg04M3m0/maxresdefault.jpg",
+              "duration": "2:00",
+              "durationSec": 120,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Mass",
+              "date": "2026-07-16T03:30:25-07:00",
+              "resolution": "4K",
+              "viewCount": 160727
             }
           ],
           "Energetic": [
@@ -7321,164 +7386,6 @@
               "date": "2026-09-21T02:30:04-07:00",
               "resolution": "4K",
               "viewCount": 10044741
-            }
-          ],
-          "Mass": [
-            {
-              "youtubeLinkID": "SX2kAdVPVNE",
-              "title": "Dhurandhar - Title Track - 8K Video | Ranveer Singh, Shashwat Sachdev, Hanumankind, Jasmine Sandlas",
-              "thumbnail": "https://img.youtube.com/vi/SX2kAdVPVNE/maxresdefault.jpg",
-              "duration": "1:27",
-              "durationSec": 87,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Mass",
-              "date": "2026-02-01T20:40:02-08:00",
-              "resolution": "8K",
-              "viewCount": 4732295
-            },
-            {
-              "youtubeLinkID": "amdOdzmAbSk",
-              "title": "Ishq Jalakar - Karvaan - 8K Video | Dhurandhar | Ranveer Singh, Shashwat Sachdev, Shahzad Ali",
-              "thumbnail": "https://img.youtube.com/vi/amdOdzmAbSk/maxresdefault.jpg",
-              "duration": "2:32",
-              "durationSec": 152,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Mass",
-              "date": "2026-03-18T00:30:01-07:00",
-              "resolution": "8K",
-              "viewCount": 6221129
-            },
-            {
-              "youtubeLinkID": "BWFr1xlkgL0",
-              "title": "Lutt Le Gaya - 8K Video | Dhurandhar | Ranveer Singh | Akshaye Khanna | Shashwat Sachdev",
-              "thumbnail": "https://img.youtube.com/vi/BWFr1xlkgL0/maxresdefault.jpg",
-              "duration": "2:05",
-              "durationSec": 125,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Mass",
-              "date": "2026-03-12T00:41:37-07:00",
-              "resolution": "8K",
-              "viewCount": 6606221
-            },
-            {
-              "youtubeLinkID": "dESIGVxSSCE",
-              "title": "Dhurandhar The Revenge - AARI AARI (Video)| Ranveer Singh | Shashwat Sachdev,Bombay Rockers|Aditya D",
-              "thumbnail": "https://img.youtube.com/vi/dESIGVxSSCE/maxresdefault.jpg",
-              "duration": "2:44",
-              "durationSec": 164,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Mass",
-              "date": "2026-03-11T23:42:17-07:00",
-              "resolution": "4K",
-              "viewCount": 61727202
-            },
-            {
-              "youtubeLinkID": "47ooG3yi6dQ",
-              "title": "WILD RIDE (Full Video) | Dhurandhar The Revenge | Ranveer Singh | Shashwat Sachdev | Ellisar",
-              "thumbnail": "https://img.youtube.com/vi/47ooG3yi6dQ/maxresdefault.jpg",
-              "duration": "2:43",
-              "durationSec": 163,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Mass",
-              "date": "2026-04-12T23:42:03-07:00",
-              "resolution": "4K",
-              "viewCount": 744728
-            },
-            {
-              "youtubeLinkID": "v84ZYg0mDyg",
-              "title": "Ramba Ho | Dhurandhar | Ranveer Singh, Shashwat Sachdev, Madhubanti Bagchi",
-              "thumbnail": "https://img.youtube.com/vi/v84ZYg0mDyg/maxresdefault.jpg",
-              "duration": "2:08",
-              "durationSec": 128,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Mass",
-              "date": "2026-01-05T22:30:38-08:00",
-              "resolution": "4K",
-              "viewCount": 29455091
-            },
-            {
-              "youtubeLinkID": "8SHaqaYSY34",
-              "title": "Run Down The City - Monica - 8K | Dhurandhar | Ranveer Singh, Sara A, Asha Bhosle, Shashwat Sachdev",
-              "thumbnail": "https://img.youtube.com/vi/8SHaqaYSY34/maxresdefault.jpg",
-              "duration": "1:55",
-              "durationSec": 115,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Mass",
-              "date": "2026-04-12T20:30:10-07:00",
-              "resolution": "8K",
-              "viewCount": 1108349
-            },
-            {
-              "youtubeLinkID": "4qliB6vzeRc",
-              "title": "Move - Yeh Ishq Ishq | 8K Video | Dhuarandhar | Ranveer Singh | Shashwat Sachdev | Sonu Nigam |Reble",
-              "thumbnail": "https://img.youtube.com/vi/4qliB6vzeRc/maxresdefault.jpg",
-              "duration": "2:47",
-              "durationSec": 167,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Mass",
-              "date": "2026-04-17T04:20:53-07:00",
-              "resolution": "8K",
-              "viewCount": 514934
-            },
-            {
-              "youtubeLinkID": "_GFcWG0M-YM",
-              "title": "Animal: Arjan Vailly 8K Video Song | Ranbir Kapoor | Sandeep Vanga | Bhupinder B,Manan B | Bhushan K",
-              "thumbnail": "https://img.youtube.com/vi/_GFcWG0M-YM/maxresdefault.jpg",
-              "duration": "3:28",
-              "durationSec": 208,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Mass",
-              "date": "2025-06-19T05:00:03-07:00",
-              "resolution": "8K",
-              "viewCount": 5995370
-            },
-            {
-              "youtubeLinkID": "KsEMAXNXnO4",
-              "title": "ANIMAL: ABRAR’S ENTRY - JAMAL KUDU 8K🔥 | Bobby Deol | Ranbir Kapoor | Sandeep Vanga | Bhushan Kumar",
-              "thumbnail": "https://img.youtube.com/vi/KsEMAXNXnO4/maxresdefault.jpg",
-              "duration": "2:13",
-              "durationSec": 133,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Mass",
-              "date": "2025-10-03T22:30:09-07:00",
-              "resolution": "8K",
-              "viewCount": 1209366
-            },
-            {
-              "youtubeLinkID": "bW2_vX38MFE",
-              "title": "TAMMA TAMMA 8K Video Song | Dhurandhar The Revenge | Ranveer Singh, Sanjay Dutt | Bappi L,Anuradha P",
-              "thumbnail": "https://img.youtube.com/vi/bW2_vX38MFE/maxresdefault.jpg",
-              "duration": "3:38",
-              "durationSec": 218,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Mass",
-              "date": "2026-07-15T04:30:07-07:00",
-              "resolution": "8K",
-              "viewCount": 301809
-            },
-            {
-              "youtubeLinkID": "0-Vgg04M3m0",
-              "title": "Agni Song | ALPHA | Alia Bhatt, Sharvari, Anil Kapoor, Bobby Deol | Rohansh & Abeer | Ranj",
-              "thumbnail": "https://img.youtube.com/vi/0-Vgg04M3m0/maxresdefault.jpg",
-              "duration": "2:00",
-              "durationSec": 120,
-              "group": "Music",
-              "category": "Hindi",
-              "type": "Mass",
-              "date": "2026-07-16T03:30:25-07:00",
-              "resolution": "4K",
-              "viewCount": 160727
             }
           ],
           "Groovy": [
@@ -7923,6 +7830,99 @@
               "date": "2026-08-31T01:12:21-07:00",
               "resolution": "8K",
               "viewCount": 116222
+            }
+          ],
+          "Sad": [
+            {
+              "youtubeLinkID": "F2m4HPLvj-4",
+              "title": "JAIYE SAJANA (Video): Dhurandhar The Revenge | Shashwat Sachdev | Satinder Sartaaj | Jasmine Sandlas",
+              "thumbnail": "https://img.youtube.com/vi/F2m4HPLvj-4/maxresdefault.jpg",
+              "duration": "2:32",
+              "durationSec": 152,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2026-03-28T23:42:01-07:00",
+              "resolution": "4K",
+              "viewCount": 58431400
+            },
+            {
+              "youtubeLinkID": "dzH-fG4murA",
+              "title": "Bekhayali 8K Full Song | Kabir Singh | Arijit Singh | Shahid K,Kiara A | Sandeep V |Sachet-Parampara",
+              "thumbnail": "https://img.youtube.com/vi/dzH-fG4murA/maxresdefault.jpg",
+              "duration": "5:54",
+              "durationSec": 354,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2025-08-21T04:30:36-07:00",
+              "resolution": "8K",
+              "viewCount": 3758336
+            },
+            {
+              "youtubeLinkID": "bqW-mtsWnhk",
+              "title": "Animal:Saari Duniya Jalaa Denge 8K Video | Ranbir K, Bobby D | Sandeep V | B Praak,Jaani | Bhushan K",
+              "thumbnail": "https://img.youtube.com/vi/bqW-mtsWnhk/maxresdefault.jpg",
+              "duration": "5:46",
+              "durationSec": 346,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2025-06-21T04:25:22-07:00",
+              "resolution": "8K",
+              "viewCount": 2782950
+            },
+            {
+              "youtubeLinkID": "sNGwuOR3PQQ",
+              "title": "Deewaana Deewaana 8K Full Video: Tere Ishk Mein | Dhanush, Kriti | AR Rahman | Aanand LR | Bhushan K",
+              "thumbnail": "https://img.youtube.com/vi/sNGwuOR3PQQ/maxresdefault.jpg",
+              "duration": "5:39",
+              "durationSec": 339,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2026-03-29T04:30:07-07:00",
+              "resolution": "8K",
+              "viewCount": 3229897
+            },
+            {
+              "youtubeLinkID": "9W6CSt6-PIU",
+              "title": "Animal: Satranga [8K] - Video | Ranbir K,Rashmika|Sandeep|Arijit,Shreyas,Siddharth-Garima|Bhushan K",
+              "thumbnail": "https://img.youtube.com/vi/9W6CSt6-PIU/maxresdefault.jpg",
+              "duration": "4:31",
+              "durationSec": 271,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2025-06-17T22:30:05-07:00",
+              "resolution": "8K",
+              "viewCount": 1179063
+            },
+            {
+              "youtubeLinkID": "r8O3URprq1M",
+              "title": "PHIR SE (Full Video) | Dhurandhar The Revenge | Ranveer Singh | Shashwat Sachdev,Arijit S,Irshad K",
+              "thumbnail": "https://img.youtube.com/vi/r8O3URprq1M/maxresdefault.jpg",
+              "duration": "3:48",
+              "durationSec": 228,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2026-04-20T23:42:03-07:00",
+              "resolution": "4K",
+              "viewCount": 524021
+            },
+            {
+              "youtubeLinkID": "IcMBZkvS7IY",
+              "title": "Deewaniyat (Title Track | 8K Remastered) | Ek Deewane Ki Deewaniyat | Harshvardhan, Sonam | Vishal",
+              "thumbnail": "https://img.youtube.com/vi/IcMBZkvS7IY/maxresdefault.jpg",
+              "duration": "3:26",
+              "durationSec": 206,
+              "group": "Music",
+              "category": "Hindi",
+              "type": "Sad",
+              "date": "2025-09-01T07:44:40-07:00",
+              "resolution": "8K",
+              "viewCount": 569586
             }
           ],
           "Item": [
@@ -8384,6 +8384,153 @@
           ]
         },
         "English": {
+          "Atmoshpheric": [
+            {
+              "youtubeLinkID": "_p2NvO6KrBs",
+              "title": "M83 - Solitude (Felsmann + Tiley Reinterpretation) (Official Audio)",
+              "thumbnail": "https://img.youtube.com/vi/_p2NvO6KrBs/maxresdefault.jpg",
+              "duration": "3:43",
+              "durationSec": 223,
+              "group": "Music",
+              "category": "English",
+              "type": "Atmoshpheric",
+              "date": "2020-05-14T02:41:12-07:00",
+              "resolution": "1080p",
+              "viewCount": 34558491
+            }
+          ],
+          "Serenity": [
+            {
+              "youtubeLinkID": "QbLGjeR9bvI",
+              "title": "Art Deco",
+              "thumbnail": "https://img.youtube.com/vi/QbLGjeR9bvI/maxresdefault.jpg",
+              "duration": "4:56",
+              "durationSec": 296,
+              "group": "Music",
+              "category": "English",
+              "type": "Serenity",
+              "date": "2018-12-12T04:05:25-08:00",
+              "resolution": "1080p",
+              "viewCount": 118510842
+            },
+            {
+              "youtubeLinkID": "o7e4IfE0ScI",
+              "title": "Radio",
+              "thumbnail": "https://img.youtube.com/vi/o7e4IfE0ScI/maxresdefault.jpg",
+              "duration": "3:35",
+              "durationSec": 215,
+              "group": "Music",
+              "category": "English",
+              "type": "Serenity",
+              "date": "2020-04-14T11:33:49-07:00",
+              "resolution": "1080p",
+              "viewCount": 92539094
+            },
+            {
+              "youtubeLinkID": "GxldQ9eX2wo",
+              "title": "Stephen Sanchez - Until I Found You (Official Video)",
+              "thumbnail": "https://img.youtube.com/vi/GxldQ9eX2wo/maxresdefault.jpg",
+              "duration": "2:56",
+              "durationSec": 176,
+              "group": "Music",
+              "category": "English",
+              "type": "Serenity",
+              "date": "2022-06-28T12:00:11-07:00",
+              "resolution": "1080p",
+              "viewCount": 584405891
+            },
+            {
+              "youtubeLinkID": "DCYmJDO2_IE",
+              "title": "Cinnamon Girl",
+              "thumbnail": "https://img.youtube.com/vi/DCYmJDO2_IE/maxresdefault.jpg",
+              "duration": "5:01",
+              "durationSec": 301,
+              "group": "Music",
+              "category": "English",
+              "type": "Serenity",
+              "date": "2019-08-29T03:01:12-07:00",
+              "resolution": "1080p",
+              "viewCount": 196554837
+            },
+            {
+              "youtubeLinkID": "o_1aF54DO60",
+              "title": "Lana Del Rey - Young and Beautiful",
+              "thumbnail": "https://img.youtube.com/vi/o_1aF54DO60/maxresdefault.jpg",
+              "duration": "3:59",
+              "durationSec": 239,
+              "group": "Music",
+              "category": "English",
+              "type": "Serenity",
+              "date": "2013-05-10T00:01:10-07:00",
+              "resolution": "1080p",
+              "viewCount": 785128059
+            },
+            {
+              "youtubeLinkID": "TdrL3QxjyVw",
+              "title": "Lana Del Rey - Summertime Sadness (Official Music Video)",
+              "thumbnail": "https://img.youtube.com/vi/TdrL3QxjyVw/maxresdefault.jpg",
+              "duration": "4:26",
+              "durationSec": 266,
+              "group": "Music",
+              "category": "English",
+              "type": "Serenity",
+              "date": "2013-08-23T03:38:53-07:00",
+              "resolution": "1080p",
+              "viewCount": 841143735
+            },
+            {
+              "youtubeLinkID": "vBHild0PiTE",
+              "title": "Lana Del Rey - Chemtrails Over The Country Club (Official Music Video)",
+              "thumbnail": "https://img.youtube.com/vi/vBHild0PiTE/maxresdefault.jpg",
+              "duration": "5:41",
+              "durationSec": 341,
+              "group": "Music",
+              "category": "English",
+              "type": "Serenity",
+              "date": "2021-01-11T11:10:09-08:00",
+              "resolution": "1080p",
+              "viewCount": 58227396
+            },
+            {
+              "youtubeLinkID": "MiAoetOXKcY",
+              "title": "Lana Del Rey - Say Yes To Heaven (Official Audio)",
+              "thumbnail": "https://img.youtube.com/vi/MiAoetOXKcY/maxresdefault.jpg",
+              "duration": "3:30",
+              "durationSec": 210,
+              "group": "Music",
+              "category": "English",
+              "type": "Serenity",
+              "date": "2023-05-18T21:00:09-07:00",
+              "resolution": "1080p",
+              "viewCount": 105573714
+            },
+            {
+              "youtubeLinkID": "oKxuiw3iMBE",
+              "title": "Lana Del Rey - West Coast",
+              "thumbnail": "https://img.youtube.com/vi/oKxuiw3iMBE/maxresdefault.jpg",
+              "duration": "4:26",
+              "durationSec": 266,
+              "group": "Music",
+              "category": "English",
+              "type": "Serenity",
+              "date": "2014-05-07T08:33:46-07:00",
+              "resolution": "1080p",
+              "viewCount": 246853008
+            },
+            {
+              "youtubeLinkID": "F4ELqraXx-U",
+              "title": "Lana Del Rey - White Mustang (Official Music Video)",
+              "thumbnail": "https://img.youtube.com/vi/F4ELqraXx-U/maxresdefault.jpg",
+              "duration": "4:42",
+              "durationSec": 282,
+              "group": "Music",
+              "category": "English",
+              "type": "Serenity",
+              "date": "2017-09-13T08:00:01-07:00",
+              "resolution": "1080p",
+              "viewCount": 69276312
+            }
+          ],
           "Resonance": [
             {
               "youtubeLinkID": "34Na4j8AVgA",
@@ -8410,21 +8557,6 @@
               "date": "2020-01-21T10:00:10-08:00",
               "resolution": "1080p",
               "viewCount": 1048246064
-            }
-          ],
-          "Atmoshpheric": [
-            {
-              "youtubeLinkID": "_p2NvO6KrBs",
-              "title": "M83 - Solitude (Felsmann + Tiley Reinterpretation) (Official Audio)",
-              "thumbnail": "https://img.youtube.com/vi/_p2NvO6KrBs/maxresdefault.jpg",
-              "duration": "3:43",
-              "durationSec": 223,
-              "group": "Music",
-              "category": "English",
-              "type": "Atmoshpheric",
-              "date": "2020-05-14T02:41:12-07:00",
-              "resolution": "1080p",
-              "viewCount": 34558491
             }
           ],
           "Savage": [
@@ -8702,138 +8834,6 @@
               "date": "2023-01-19T11:00:07-08:00",
               "resolution": "4K",
               "viewCount": 454686246
-            }
-          ],
-          "Serenity": [
-            {
-              "youtubeLinkID": "QbLGjeR9bvI",
-              "title": "Art Deco",
-              "thumbnail": "https://img.youtube.com/vi/QbLGjeR9bvI/maxresdefault.jpg",
-              "duration": "4:56",
-              "durationSec": 296,
-              "group": "Music",
-              "category": "English",
-              "type": "Serenity",
-              "date": "2018-12-12T04:05:25-08:00",
-              "resolution": "1080p",
-              "viewCount": 118510842
-            },
-            {
-              "youtubeLinkID": "o7e4IfE0ScI",
-              "title": "Radio",
-              "thumbnail": "https://img.youtube.com/vi/o7e4IfE0ScI/maxresdefault.jpg",
-              "duration": "3:35",
-              "durationSec": 215,
-              "group": "Music",
-              "category": "English",
-              "type": "Serenity",
-              "date": "2020-04-14T11:33:49-07:00",
-              "resolution": "1080p",
-              "viewCount": 92539094
-            },
-            {
-              "youtubeLinkID": "GxldQ9eX2wo",
-              "title": "Stephen Sanchez - Until I Found You (Official Video)",
-              "thumbnail": "https://img.youtube.com/vi/GxldQ9eX2wo/maxresdefault.jpg",
-              "duration": "2:56",
-              "durationSec": 176,
-              "group": "Music",
-              "category": "English",
-              "type": "Serenity",
-              "date": "2022-06-28T12:00:11-07:00",
-              "resolution": "1080p",
-              "viewCount": 584405891
-            },
-            {
-              "youtubeLinkID": "DCYmJDO2_IE",
-              "title": "Cinnamon Girl",
-              "thumbnail": "https://img.youtube.com/vi/DCYmJDO2_IE/maxresdefault.jpg",
-              "duration": "5:01",
-              "durationSec": 301,
-              "group": "Music",
-              "category": "English",
-              "type": "Serenity",
-              "date": "2019-08-29T03:01:12-07:00",
-              "resolution": "1080p",
-              "viewCount": 196554837
-            },
-            {
-              "youtubeLinkID": "o_1aF54DO60",
-              "title": "Lana Del Rey - Young and Beautiful",
-              "thumbnail": "https://img.youtube.com/vi/o_1aF54DO60/maxresdefault.jpg",
-              "duration": "3:59",
-              "durationSec": 239,
-              "group": "Music",
-              "category": "English",
-              "type": "Serenity",
-              "date": "2013-05-10T00:01:10-07:00",
-              "resolution": "1080p",
-              "viewCount": 785128059
-            },
-            {
-              "youtubeLinkID": "TdrL3QxjyVw",
-              "title": "Lana Del Rey - Summertime Sadness (Official Music Video)",
-              "thumbnail": "https://img.youtube.com/vi/TdrL3QxjyVw/maxresdefault.jpg",
-              "duration": "4:26",
-              "durationSec": 266,
-              "group": "Music",
-              "category": "English",
-              "type": "Serenity",
-              "date": "2013-08-23T03:38:53-07:00",
-              "resolution": "1080p",
-              "viewCount": 841143735
-            },
-            {
-              "youtubeLinkID": "vBHild0PiTE",
-              "title": "Lana Del Rey - Chemtrails Over The Country Club (Official Music Video)",
-              "thumbnail": "https://img.youtube.com/vi/vBHild0PiTE/maxresdefault.jpg",
-              "duration": "5:41",
-              "durationSec": 341,
-              "group": "Music",
-              "category": "English",
-              "type": "Serenity",
-              "date": "2021-01-11T11:10:09-08:00",
-              "resolution": "1080p",
-              "viewCount": 58227396
-            },
-            {
-              "youtubeLinkID": "MiAoetOXKcY",
-              "title": "Lana Del Rey - Say Yes To Heaven (Official Audio)",
-              "thumbnail": "https://img.youtube.com/vi/MiAoetOXKcY/maxresdefault.jpg",
-              "duration": "3:30",
-              "durationSec": 210,
-              "group": "Music",
-              "category": "English",
-              "type": "Serenity",
-              "date": "2023-05-18T21:00:09-07:00",
-              "resolution": "1080p",
-              "viewCount": 105573714
-            },
-            {
-              "youtubeLinkID": "oKxuiw3iMBE",
-              "title": "Lana Del Rey - West Coast",
-              "thumbnail": "https://img.youtube.com/vi/oKxuiw3iMBE/maxresdefault.jpg",
-              "duration": "4:26",
-              "durationSec": 266,
-              "group": "Music",
-              "category": "English",
-              "type": "Serenity",
-              "date": "2014-05-07T08:33:46-07:00",
-              "resolution": "1080p",
-              "viewCount": 246853008
-            },
-            {
-              "youtubeLinkID": "F4ELqraXx-U",
-              "title": "Lana Del Rey - White Mustang (Official Music Video)",
-              "thumbnail": "https://img.youtube.com/vi/F4ELqraXx-U/maxresdefault.jpg",
-              "duration": "4:42",
-              "durationSec": 282,
-              "group": "Music",
-              "category": "English",
-              "type": "Serenity",
-              "date": "2017-09-13T08:00:01-07:00",
-              "resolution": "1080p",
-              "viewCount": 69276312
             }
           ]
         },
@@ -9179,62 +9179,6 @@
           ]
         },
         "Live": {
-          "Telugu": [
-            {
-              "youtubeLinkID": "VIfuQsnJatE",
-              "title": "AR Rahman Live Performance of Rai Rai Raa Raa Song | Peddi Grand Pre-Release Event | Shreyas Media",
-              "thumbnail": "https://img.youtube.com/vi/VIfuQsnJatE/maxresdefault.jpg",
-              "duration": "5:01",
-              "durationSec": 301,
-              "group": "Music",
-              "category": "Live",
-              "type": "Telugu",
-              "date": "2026-06-01T08:35:37-07:00",
-              "resolution": "1080p",
-              "viewCount": 44597
-            },
-            {
-              "youtubeLinkID": "CULNjcWDUDU",
-              "title": "Hello Hello Song Live Performance at Peddi Grand Roar Pre-Release Event | Shreyas Media",
-              "thumbnail": "https://img.youtube.com/vi/CULNjcWDUDU/maxresdefault.jpg",
-              "duration": "4:10",
-              "durationSec": 250,
-              "group": "Music",
-              "category": "Live",
-              "type": "Telugu",
-              "date": "2026-06-01T08:44:44-07:00",
-              "resolution": "1080p",
-              "viewCount": 123004
-            }
-          ],
-          "Tamil": [
-            {
-              "youtubeLinkID": "UreAN6Zxsdo",
-              "title": "Anirudh & Sublahshini's live performance of Monica Song | Coolie Song Launch Event",
-              "thumbnail": "https://img.youtube.com/vi/UreAN6Zxsdo/maxresdefault.jpg",
-              "duration": "1:45",
-              "durationSec": 105,
-              "group": "Music",
-              "category": "Live",
-              "type": "Tamil",
-              "date": "2025-07-23T09:05:45-07:00",
-              "resolution": "4K",
-              "viewCount": 6520995
-            },
-            {
-              "youtubeLinkID": "byUbhCt952U",
-              "title": "Dhanush & Swetha Mohan's \"Vaa Vaathi\" Performance | Vaathi - Audio Launch | Best Moments | Sun TV",
-              "thumbnail": "https://img.youtube.com/vi/byUbhCt952U/maxresdefault.jpg",
-              "duration": "6:32",
-              "durationSec": 392,
-              "group": "Music",
-              "category": "Live",
-              "type": "Tamil",
-              "date": "2023-02-13T01:17:11-08:00",
-              "resolution": "1080p",
-              "viewCount": 145058514
-            }
-          ],
           "Hindi": [
             {
               "youtubeLinkID": "wEwKNS-JIPA",
@@ -9367,6 +9311,62 @@
               "date": "2023-10-26T12:37:38-07:00",
               "resolution": "1080p",
               "viewCount": 25879820
+            }
+          ],
+          "Telugu": [
+            {
+              "youtubeLinkID": "VIfuQsnJatE",
+              "title": "AR Rahman Live Performance of Rai Rai Raa Raa Song | Peddi Grand Pre-Release Event | Shreyas Media",
+              "thumbnail": "https://img.youtube.com/vi/VIfuQsnJatE/maxresdefault.jpg",
+              "duration": "5:01",
+              "durationSec": 301,
+              "group": "Music",
+              "category": "Live",
+              "type": "Telugu",
+              "date": "2026-06-01T08:35:37-07:00",
+              "resolution": "1080p",
+              "viewCount": 44597
+            },
+            {
+              "youtubeLinkID": "CULNjcWDUDU",
+              "title": "Hello Hello Song Live Performance at Peddi Grand Roar Pre-Release Event | Shreyas Media",
+              "thumbnail": "https://img.youtube.com/vi/CULNjcWDUDU/maxresdefault.jpg",
+              "duration": "4:10",
+              "durationSec": 250,
+              "group": "Music",
+              "category": "Live",
+              "type": "Telugu",
+              "date": "2026-06-01T08:44:44-07:00",
+              "resolution": "1080p",
+              "viewCount": 123004
+            }
+          ],
+          "Tamil": [
+            {
+              "youtubeLinkID": "UreAN6Zxsdo",
+              "title": "Anirudh & Sublahshini's live performance of Monica Song | Coolie Song Launch Event",
+              "thumbnail": "https://img.youtube.com/vi/UreAN6Zxsdo/maxresdefault.jpg",
+              "duration": "1:45",
+              "durationSec": 105,
+              "group": "Music",
+              "category": "Live",
+              "type": "Tamil",
+              "date": "2025-07-23T09:05:45-07:00",
+              "resolution": "4K",
+              "viewCount": 6520995
+            },
+            {
+              "youtubeLinkID": "byUbhCt952U",
+              "title": "Dhanush & Swetha Mohan's \"Vaa Vaathi\" Performance | Vaathi - Audio Launch | Best Moments | Sun TV",
+              "thumbnail": "https://img.youtube.com/vi/byUbhCt952U/maxresdefault.jpg",
+              "duration": "6:32",
+              "durationSec": 392,
+              "group": "Music",
+              "category": "Live",
+              "type": "Tamil",
+              "date": "2023-02-13T01:17:11-08:00",
+              "resolution": "1080p",
+              "viewCount": 145058514
             }
           ]
         },
@@ -9982,99 +9982,19 @@
               "date": "2026-03-07T07:31:58-08:00",
               "resolution": "4K",
               "viewCount": 50705969
-            }
-          ],
-          "International": [
-            {
-              "youtubeLinkID": "i7wveOu5hkQ",
-              "title": "INNA - Yalla | Official Music Video",
-              "thumbnail": "https://img.youtube.com/vi/i7wveOu5hkQ/maxresdefault.jpg",
-              "duration": "3:17",
-              "durationSec": 197,
-              "group": "Music",
-              "category": "Others",
-              "type": "International",
-              "date": "2015-11-12T07:24:45-08:00",
-              "resolution": "1080p",
-              "viewCount": 537261152
             },
             {
-              "youtubeLinkID": "zEf423kYfqk",
-              "title": "Becky G, NATTI NATASHA - Sin Pijama (Official Video)",
-              "thumbnail": "https://img.youtube.com/vi/zEf423kYfqk/maxresdefault.jpg",
-              "duration": "3:37",
-              "durationSec": 217,
+              "youtubeLinkID": "jR3rWCBeO6M",
+              "title": "@Sai Abhyankkar - Radhimaa (Music Video) | Bhagyashri Borse | Vivek | Thejo Bharathwaj | Think Indie",
+              "thumbnail": "https://img.youtube.com/vi/jR3rWCBeO6M/maxresdefault.jpg",
+              "duration": "5:48",
+              "durationSec": 348,
               "group": "Music",
               "category": "Others",
-              "type": "International",
-              "date": "2018-04-20T03:40:51-07:00",
-              "resolution": "1080p",
-              "viewCount": 2320513377
-            },
-            {
-              "youtubeLinkID": "wnJ6LuUFpMo",
-              "title": "J Balvin, Willy William - Mi Gente (Official Video)",
-              "thumbnail": "https://img.youtube.com/vi/wnJ6LuUFpMo/maxresdefault.jpg",
-              "duration": "3:06",
-              "durationSec": 186,
-              "group": "Music",
-              "category": "Others",
-              "type": "International",
-              "date": "2017-06-29T21:00:05-07:00",
-              "resolution": "1080p",
-              "viewCount": 3637555844
-            },
-            {
-              "youtubeLinkID": "ixkoVwKQaJg",
-              "title": "DJ Snake - Taki Taki ft. Selena Gomez, Ozuna, Cardi B (Official Music Video)",
-              "thumbnail": "https://img.youtube.com/vi/ixkoVwKQaJg/maxresdefault.jpg",
-              "duration": "3:52",
-              "durationSec": 232,
-              "group": "Music",
-              "category": "Others",
-              "type": "International",
-              "date": "2018-10-09T17:35:00-07:00",
+              "type": "Straight From The Studio",
+              "date": "2026-08-24T08:06:36-07:00",
               "resolution": "4K",
-              "viewCount": 2790175491
-            },
-            {
-              "youtubeLinkID": "kJQP7kiw5Fk",
-              "title": "Luis Fonsi - Despacito ft. Daddy Yankee",
-              "thumbnail": "https://img.youtube.com/vi/kJQP7kiw5Fk/maxresdefault.jpg",
-              "duration": "4:42",
-              "durationSec": 282,
-              "group": "Music",
-              "category": "Others",
-              "type": "International",
-              "date": "2017-01-12T21:00:02-08:00",
-              "resolution": "1080p",
-              "viewCount": 8997248912
-            },
-            {
-              "youtubeLinkID": "-j0dlcfekqw",
-              "title": "Otilia - Bilionera (official video)",
-              "thumbnail": "https://img.youtube.com/vi/-j0dlcfekqw/maxresdefault.jpg",
-              "duration": "3:06",
-              "durationSec": 186,
-              "group": "Music",
-              "category": "Others",
-              "type": "International",
-              "date": "2014-09-10T10:00:09-07:00",
-              "resolution": "1080p",
-              "viewCount": 719107217
-            },
-            {
-              "youtubeLinkID": "m9ezpAUvMC8",
-              "title": "JONY - Love your voice",
-              "thumbnail": "https://img.youtube.com/vi/m9ezpAUvMC8/maxresdefault.jpg",
-              "duration": "2:31",
-              "durationSec": 151,
-              "group": "Music",
-              "category": "Others",
-              "type": "International",
-              "date": "2019-06-20T13:58:45-07:00",
-              "resolution": "1080p",
-              "viewCount": 265294017
+              "viewCount": 96671600
             }
           ],
           "Dance Covers": [
@@ -10183,188 +10103,97 @@
               "viewCount": 5009
             }
           ],
-          "Workout": [
+          "International": [
             {
-              "youtubeLinkID": "Q6978DnF8C4",
-              "title": "Fat Papi and prodshushy - FREAKED OUT (Official Music Video)",
-              "thumbnail": "https://img.youtube.com/vi/Q6978DnF8C4/maxresdefault.jpg",
-              "duration": "2:52",
-              "durationSec": 172,
+              "youtubeLinkID": "i7wveOu5hkQ",
+              "title": "INNA - Yalla | Official Music Video",
+              "thumbnail": "https://img.youtube.com/vi/i7wveOu5hkQ/maxresdefault.jpg",
+              "duration": "3:17",
+              "durationSec": 197,
               "group": "Music",
               "category": "Others",
-              "type": "Workout",
-              "date": "2026-07-09T02:00:13-07:00",
+              "type": "International",
+              "date": "2015-11-12T07:24:45-08:00",
+              "resolution": "1080p",
+              "viewCount": 537261152
+            },
+            {
+              "youtubeLinkID": "zEf423kYfqk",
+              "title": "Becky G, NATTI NATASHA - Sin Pijama (Official Video)",
+              "thumbnail": "https://img.youtube.com/vi/zEf423kYfqk/maxresdefault.jpg",
+              "duration": "3:37",
+              "durationSec": 217,
+              "group": "Music",
+              "category": "Others",
+              "type": "International",
+              "date": "2018-04-20T03:40:51-07:00",
+              "resolution": "1080p",
+              "viewCount": 2320513377
+            },
+            {
+              "youtubeLinkID": "wnJ6LuUFpMo",
+              "title": "J Balvin, Willy William - Mi Gente (Official Video)",
+              "thumbnail": "https://img.youtube.com/vi/wnJ6LuUFpMo/maxresdefault.jpg",
+              "duration": "3:06",
+              "durationSec": 186,
+              "group": "Music",
+              "category": "Others",
+              "type": "International",
+              "date": "2017-06-29T21:00:05-07:00",
+              "resolution": "1080p",
+              "viewCount": 3637555844
+            },
+            {
+              "youtubeLinkID": "ixkoVwKQaJg",
+              "title": "DJ Snake - Taki Taki ft. Selena Gomez, Ozuna, Cardi B (Official Music Video)",
+              "thumbnail": "https://img.youtube.com/vi/ixkoVwKQaJg/maxresdefault.jpg",
+              "duration": "3:52",
+              "durationSec": 232,
+              "group": "Music",
+              "category": "Others",
+              "type": "International",
+              "date": "2018-10-09T17:35:00-07:00",
               "resolution": "4K",
-              "viewCount": 23041172
+              "viewCount": 2790175491
             },
             {
-              "youtubeLinkID": "4NRXx6U8ABQ",
-              "title": "The Weeknd - Blinding Lights (Official Video)",
-              "thumbnail": "https://img.youtube.com/vi/4NRXx6U8ABQ/maxresdefault.jpg",
-              "duration": "4:23",
-              "durationSec": 263,
+              "youtubeLinkID": "kJQP7kiw5Fk",
+              "title": "Luis Fonsi - Despacito ft. Daddy Yankee",
+              "thumbnail": "https://img.youtube.com/vi/kJQP7kiw5Fk/maxresdefault.jpg",
+              "duration": "4:42",
+              "durationSec": 282,
               "group": "Music",
               "category": "Others",
-              "type": "Workout",
-              "date": "2020-01-21T10:00:10-08:00",
+              "type": "International",
+              "date": "2017-01-12T21:00:02-08:00",
               "resolution": "1080p",
-              "viewCount": 1048246064
+              "viewCount": 8997248912
             },
             {
-              "youtubeLinkID": "YildrmFaInk",
-              "title": "TWXNY, Sxilwix, Innxcence - HEAVENLY JUMPSTYLE (Tiktok Version)",
-              "thumbnail": "https://img.youtube.com/vi/YildrmFaInk/maxresdefault.jpg",
-              "duration": "1:53",
-              "durationSec": 113,
+              "youtubeLinkID": "-j0dlcfekqw",
+              "title": "Otilia - Bilionera (official video)",
+              "thumbnail": "https://img.youtube.com/vi/-j0dlcfekqw/maxresdefault.jpg",
+              "duration": "3:06",
+              "durationSec": 186,
               "group": "Music",
               "category": "Others",
-              "type": "Workout",
-              "date": "2026-04-01T01:53:46-07:00",
-              "resolution": "8K",
-              "viewCount": 1330850
-            },
-            {
-              "youtubeLinkID": "_p2NvO6KrBs",
-              "title": "M83 - Solitude (Felsmann + Tiley Reinterpretation) (Official Audio)",
-              "thumbnail": "https://img.youtube.com/vi/_p2NvO6KrBs/maxresdefault.jpg",
-              "duration": "3:43",
-              "durationSec": 223,
-              "group": "Music",
-              "category": "Others",
-              "type": "Workout",
-              "date": "2020-05-14T02:41:12-07:00",
+              "type": "International",
+              "date": "2014-09-10T10:00:09-07:00",
               "resolution": "1080p",
-              "viewCount": 34558491
+              "viewCount": 719107217
             },
             {
-              "youtubeLinkID": "L3kVwP5b8Pk",
-              "title": "UdieNnx, HXVSAGE - VISION",
-              "thumbnail": "https://img.youtube.com/vi/L3kVwP5b8Pk/maxresdefault.jpg",
-              "duration": "1:50",
-              "durationSec": 110,
+              "youtubeLinkID": "m9ezpAUvMC8",
+              "title": "JONY - Love your voice",
+              "thumbnail": "https://img.youtube.com/vi/m9ezpAUvMC8/maxresdefault.jpg",
+              "duration": "2:31",
+              "durationSec": 151,
               "group": "Music",
               "category": "Others",
-              "type": "Workout",
-              "date": "2025-04-03T09:14:09-07:00",
+              "type": "International",
+              "date": "2019-06-20T13:58:45-07:00",
               "resolution": "1080p",
-              "viewCount": 9125342
-            },
-            {
-              "youtubeLinkID": "JQbjS0_ZfJ0",
-              "title": "Kendrick Lamar, SZA - All The Stars",
-              "thumbnail": "https://img.youtube.com/vi/JQbjS0_ZfJ0/maxresdefault.jpg",
-              "duration": "3:55",
-              "durationSec": 235,
-              "group": "Music",
-              "category": "Others",
-              "type": "Workout",
-              "date": "2018-02-06T09:00:02-08:00",
-              "resolution": "1080p",
-              "viewCount": 744334927
-            },
-            {
-              "youtubeLinkID": "16jA-6hiSUo",
-              "title": "The Weeknd, Playboi Carti - Timeless (Official Lyric Video)",
-              "thumbnail": "https://img.youtube.com/vi/16jA-6hiSUo/maxresdefault.jpg",
-              "duration": "4:17",
-              "durationSec": 257,
-              "group": "Music",
-              "category": "Others",
-              "type": "Workout",
-              "date": "2024-09-26T21:00:01-07:00",
-              "resolution": "1080p",
-              "viewCount": 82748721
-            },
-            {
-              "youtubeLinkID": "34Na4j8AVgA",
-              "title": "The Weeknd - Starboy ft. Daft Punk (Official Video) ft. Daft Punk",
-              "thumbnail": "https://img.youtube.com/vi/34Na4j8AVgA/maxresdefault.jpg",
-              "duration": "4:34",
-              "durationSec": 274,
-              "group": "Music",
-              "category": "Others",
-              "type": "Workout",
-              "date": "2016-09-28T09:00:01-07:00",
-              "resolution": "1080p",
-              "viewCount": 2778547294
-            },
-            {
-              "youtubeLinkID": "ZSFb1IBVbgQ",
-              "title": "Amaarae - Angels in Tibet (Official Music Video)",
-              "thumbnail": "https://img.youtube.com/vi/ZSFb1IBVbgQ/maxresdefault.jpg",
-              "duration": "2:26",
-              "durationSec": 146,
-              "group": "Music",
-              "category": "Others",
-              "type": "Workout",
-              "date": "2024-03-13T09:00:06-07:00",
-              "resolution": "4K",
-              "viewCount": 12178566
-            },
-            {
-              "youtubeLinkID": "FFxsTiFGWT8",
-              "title": "Ian Asher & Phantogram- Black Out Days (Official Audio)",
-              "thumbnail": "https://img.youtube.com/vi/FFxsTiFGWT8/maxresdefault.jpg",
-              "duration": "2:53",
-              "durationSec": 173,
-              "group": "Music",
-              "category": "Others",
-              "type": "Workout",
-              "date": "2025-08-15T13:21:39-07:00",
-              "resolution": "1080p",
-              "viewCount": 9633007
-            },
-            {
-              "youtubeLinkID": "2KVS-MYD3Fk",
-              "title": "Darci - On My Own (Official Audio)",
-              "thumbnail": "https://img.youtube.com/vi/2KVS-MYD3Fk/maxresdefault.jpg",
-              "duration": "2:53",
-              "durationSec": 173,
-              "group": "Music",
-              "category": "Others",
-              "type": "Workout",
-              "date": "2018-05-14T10:16:26-07:00",
-              "resolution": "1080p",
-              "viewCount": 44224452
-            },
-            {
-              "youtubeLinkID": "qsDfFE2i0Ws",
-              "title": "Often (Kygo Remix)",
-              "thumbnail": "https://img.youtube.com/vi/qsDfFE2i0Ws/maxresdefault.jpg",
-              "duration": "3:55",
-              "durationSec": 235,
-              "group": "Music",
-              "category": "Others",
-              "type": "Workout",
-              "date": "2018-07-28T06:23:58-07:00",
-              "resolution": "1080p",
-              "viewCount": 33032552
-            },
-            {
-              "youtubeLinkID": "LMda9kzKTJc",
-              "title": "The Lost Soul Down X Lost Soul",
-              "thumbnail": "https://img.youtube.com/vi/LMda9kzKTJc/maxresdefault.jpg",
-              "duration": "2:32",
-              "durationSec": 152,
-              "group": "Music",
-              "category": "Others",
-              "type": "Workout",
-              "date": "2023-08-17T03:00:15-07:00",
-              "resolution": "1080p",
-              "viewCount": 116603403
-            },
-            {
-              "youtubeLinkID": "OlStmta0Vh4",
-              "title": "The Weeknd - I Was Never There feat. Gesaffelstein (Official Audio)",
-              "thumbnail": "https://img.youtube.com/vi/OlStmta0Vh4/maxresdefault.jpg",
-              "duration": "4:02",
-              "durationSec": 242,
-              "group": "Music",
-              "category": "Others",
-              "type": "Workout",
-              "date": "2018-03-29T20:06:27-07:00",
-              "resolution": "1080p",
-              "viewCount": 292127141
+              "viewCount": 265294017
             }
           ],
           "Devotional": [
@@ -10668,6 +10497,190 @@
               "date": "2026-04-11T02:00:59-07:00",
               "resolution": "4K",
               "viewCount": 14650430
+            }
+          ],
+          "Workout": [
+            {
+              "youtubeLinkID": "Q6978DnF8C4",
+              "title": "Fat Papi and prodshushy - FREAKED OUT (Official Music Video)",
+              "thumbnail": "https://img.youtube.com/vi/Q6978DnF8C4/maxresdefault.jpg",
+              "duration": "2:52",
+              "durationSec": 172,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2026-07-09T02:00:13-07:00",
+              "resolution": "4K",
+              "viewCount": 23041172
+            },
+            {
+              "youtubeLinkID": "4NRXx6U8ABQ",
+              "title": "The Weeknd - Blinding Lights (Official Video)",
+              "thumbnail": "https://img.youtube.com/vi/4NRXx6U8ABQ/maxresdefault.jpg",
+              "duration": "4:23",
+              "durationSec": 263,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2020-01-21T10:00:10-08:00",
+              "resolution": "1080p",
+              "viewCount": 1048246064
+            },
+            {
+              "youtubeLinkID": "YildrmFaInk",
+              "title": "TWXNY, Sxilwix, Innxcence - HEAVENLY JUMPSTYLE (Tiktok Version)",
+              "thumbnail": "https://img.youtube.com/vi/YildrmFaInk/maxresdefault.jpg",
+              "duration": "1:53",
+              "durationSec": 113,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2026-04-01T01:53:46-07:00",
+              "resolution": "8K",
+              "viewCount": 1330850
+            },
+            {
+              "youtubeLinkID": "_p2NvO6KrBs",
+              "title": "M83 - Solitude (Felsmann + Tiley Reinterpretation) (Official Audio)",
+              "thumbnail": "https://img.youtube.com/vi/_p2NvO6KrBs/maxresdefault.jpg",
+              "duration": "3:43",
+              "durationSec": 223,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2020-05-14T02:41:12-07:00",
+              "resolution": "1080p",
+              "viewCount": 34558491
+            },
+            {
+              "youtubeLinkID": "L3kVwP5b8Pk",
+              "title": "UdieNnx, HXVSAGE - VISION",
+              "thumbnail": "https://img.youtube.com/vi/L3kVwP5b8Pk/maxresdefault.jpg",
+              "duration": "1:50",
+              "durationSec": 110,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2025-04-03T09:14:09-07:00",
+              "resolution": "1080p",
+              "viewCount": 9125342
+            },
+            {
+              "youtubeLinkID": "JQbjS0_ZfJ0",
+              "title": "Kendrick Lamar, SZA - All The Stars",
+              "thumbnail": "https://img.youtube.com/vi/JQbjS0_ZfJ0/maxresdefault.jpg",
+              "duration": "3:55",
+              "durationSec": 235,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2018-02-06T09:00:02-08:00",
+              "resolution": "1080p",
+              "viewCount": 744334927
+            },
+            {
+              "youtubeLinkID": "16jA-6hiSUo",
+              "title": "The Weeknd, Playboi Carti - Timeless (Official Lyric Video)",
+              "thumbnail": "https://img.youtube.com/vi/16jA-6hiSUo/maxresdefault.jpg",
+              "duration": "4:17",
+              "durationSec": 257,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2024-09-26T21:00:01-07:00",
+              "resolution": "1080p",
+              "viewCount": 82748721
+            },
+            {
+              "youtubeLinkID": "34Na4j8AVgA",
+              "title": "The Weeknd - Starboy ft. Daft Punk (Official Video) ft. Daft Punk",
+              "thumbnail": "https://img.youtube.com/vi/34Na4j8AVgA/maxresdefault.jpg",
+              "duration": "4:34",
+              "durationSec": 274,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2016-09-28T09:00:01-07:00",
+              "resolution": "1080p",
+              "viewCount": 2778547294
+            },
+            {
+              "youtubeLinkID": "ZSFb1IBVbgQ",
+              "title": "Amaarae - Angels in Tibet (Official Music Video)",
+              "thumbnail": "https://img.youtube.com/vi/ZSFb1IBVbgQ/maxresdefault.jpg",
+              "duration": "2:26",
+              "durationSec": 146,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2024-03-13T09:00:06-07:00",
+              "resolution": "4K",
+              "viewCount": 12178566
+            },
+            {
+              "youtubeLinkID": "FFxsTiFGWT8",
+              "title": "Ian Asher & Phantogram- Black Out Days (Official Audio)",
+              "thumbnail": "https://img.youtube.com/vi/FFxsTiFGWT8/maxresdefault.jpg",
+              "duration": "2:53",
+              "durationSec": 173,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2025-08-15T13:21:39-07:00",
+              "resolution": "1080p",
+              "viewCount": 9633007
+            },
+            {
+              "youtubeLinkID": "2KVS-MYD3Fk",
+              "title": "Darci - On My Own (Official Audio)",
+              "thumbnail": "https://img.youtube.com/vi/2KVS-MYD3Fk/maxresdefault.jpg",
+              "duration": "2:53",
+              "durationSec": 173,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2018-05-14T10:16:26-07:00",
+              "resolution": "1080p",
+              "viewCount": 44224452
+            },
+            {
+              "youtubeLinkID": "qsDfFE2i0Ws",
+              "title": "Often (Kygo Remix)",
+              "thumbnail": "https://img.youtube.com/vi/qsDfFE2i0Ws/maxresdefault.jpg",
+              "duration": "3:55",
+              "durationSec": 235,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2018-07-28T06:23:58-07:00",
+              "resolution": "1080p",
+              "viewCount": 33032552
+            },
+            {
+              "youtubeLinkID": "LMda9kzKTJc",
+              "title": "The Lost Soul Down X Lost Soul",
+              "thumbnail": "https://img.youtube.com/vi/LMda9kzKTJc/maxresdefault.jpg",
+              "duration": "2:32",
+              "durationSec": 152,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2023-08-17T03:00:15-07:00",
+              "resolution": "1080p",
+              "viewCount": 116603403
+            },
+            {
+              "youtubeLinkID": "OlStmta0Vh4",
+              "title": "The Weeknd - I Was Never There feat. Gesaffelstein (Official Audio)",
+              "thumbnail": "https://img.youtube.com/vi/OlStmta0Vh4/maxresdefault.jpg",
+              "duration": "4:02",
+              "durationSec": 242,
+              "group": "Music",
+              "category": "Others",
+              "type": "Workout",
+              "date": "2018-03-29T20:06:27-07:00",
+              "resolution": "1080p",
+              "viewCount": 292127141
             }
           ]
         }
