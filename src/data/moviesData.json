@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22T14:50:42.611Z",
+  "lastUpdated": "2026-10-22T15:46:07.468Z",
   "movies": {
     "148284": {
       "tmdbId": 148284,
@@ -509,6 +509,60 @@
         }
       ]
     },
+    "743563": {
+      "tmdbId": 743563,
+      "title": "Vikram",
+      "originalTitle": "விக்ரம்",
+      "language": "Tamil",
+      "year": 2022,
+      "releaseDate": "2022-06-02",
+      "overview": "Amar is assigned to investigate a case of serial killings. When Amar investigates the case, he realizes it is not what it seems to be and following down this path will lead to nothing but war between everyone involved.",
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "runtime": 174,
+      "voteAverage": 7.6,
+      "voteCount": 193,
+      "posterPath": "/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg",
+      "backdropPath": "/dkIX4dSMuVqjfrPGunBJUR7K3LQ.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/dkIX4dSMuVqjfrPGunBJUR7K3LQ.jpg",
+      "youtubePlaylistId": "PLRHXUc_UgzLg",
+      "videos": [
+        {
+          "youtubeLinkID": "aeLkBvyiRfg",
+          "title": "VIKRAM Title Track 8K/4K Video Song | Kamal Haasan | Vijay Sethupathi | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/aeLkBvyiRfg/maxresdefault.jpg",
+          "duration": "3:14",
+          "durationSec": 194,
+          "date": "2026-01-20T06:30:02-08:00",
+          "resolution": "8K",
+          "viewCount": 1298222
+        },
+        {
+          "youtubeLinkID": "4FPvdV_5ZOw",
+          "title": "Once Upon A Time 8K/4K Video Song | VIKRAM | Kamal Haasan | Anirudh Ravichander | Lokesh Kanagaraj",
+          "thumbnail": "https://img.youtube.com/vi/4FPvdV_5ZOw/maxresdefault.jpg",
+          "duration": "2:31",
+          "durationSec": 151,
+          "date": "2025-10-21T07:30:03-07:00",
+          "resolution": "8K",
+          "viewCount": 186401
+        },
+        {
+          "youtubeLinkID": "IxDvpoCmAaY",
+          "title": "Lokiverse Theme Video - Vikram | Kamal Haasan | ANIRUDH RAVICHANDER | Lokesh Kanagaraj",
+          "thumbnail": "https://img.youtube.com/vi/IxDvpoCmAaY/maxresdefault.jpg",
+          "duration": "2:33",
+          "durationSec": 153,
+          "date": "2022-08-05T07:26:24-07:00",
+          "resolution": "1080p",
+          "viewCount": 49394076
+        }
+      ]
+    },
     "784696": {
       "tmdbId": 784696,
       "title": "Sarkaru Vaari Paata",
@@ -869,6 +923,50 @@
           "date": "2023-09-06T05:29:02-07:00",
           "resolution": "4K",
           "viewCount": 432992754
+        }
+      ]
+    },
+    "949229": {
+      "tmdbId": 949229,
+      "title": "Leo",
+      "originalTitle": "லியோ",
+      "language": "Tamil",
+      "year": 2023,
+      "releaseDate": "2023-09-18",
+      "overview": "Parthiban, a cafe owner, lives with his family in Himachal Pradesh. Things take an absurd turn for him when he gets in the way of a drug cartel.",
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "runtime": 163,
+      "voteAverage": 6.8,
+      "voteCount": 154,
+      "posterPath": "/2XUHC4lp3tDsgfFLFygNZ2x2Um9.jpg",
+      "backdropPath": "/zXuGXX6IjWRVjHQqMaxaobqzD8O.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/2XUHC4lp3tDsgfFLFygNZ2x2Um9.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/zXuGXX6IjWRVjHQqMaxaobqzD8O.jpg",
+      "youtubePlaylistId": "PLUOtBtxO30HI",
+      "videos": [
+        {
+          "youtubeLinkID": "zluCin4zJHM",
+          "title": "Badass 8K 60 FPS Video Song | LEO | Thalapathy Vijay | Anirudh Ravichander | Trisha",
+          "thumbnail": "https://img.youtube.com/vi/zluCin4zJHM/maxresdefault.jpg",
+          "duration": "3:51",
+          "durationSec": 231,
+          "date": "2026-05-06T04:30:50-07:00",
+          "resolution": "8K",
+          "viewCount": 1191385
+        },
+        {
+          "youtubeLinkID": "PxjPg1C5V_8",
+          "title": "Leo - Ordinary Person 8K/4K Video Song | Thalapathy Vijay | Trisha | Anirudh Ravichander",
+          "thumbnail": "https://img.youtube.com/vi/PxjPg1C5V_8/maxresdefault.jpg",
+          "duration": "2:21",
+          "durationSec": 141,
+          "date": "2025-06-30T07:30:17-07:00",
+          "resolution": "8K",
+          "viewCount": 7124047
         }
       ]
     },
@@ -2071,133 +2169,6 @@
         }
       ]
     },
-    "1112426-2": {
-      "tmdbId": 1112426,
-      "title": "Stree 2",
-      "originalTitle": "स्त्री 2: सरकटे का आतंक",
-      "language": "Hindi",
-      "year": 2024,
-      "releaseDate": "2024-08-15",
-      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
-      "genres": [
-        "Horror",
-        "Comedy"
-      ],
-      "runtime": 143,
-      "voteAverage": 6.7,
-      "voteCount": 102,
-      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "youtubePlaylistId": "PLRnfSOtSyGI4",
-      "videos": [
-        {
-          "youtubeLinkID": "0nrvPVnTWlc",
-          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
-          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
-          "duration": "3:08",
-          "durationSec": 188,
-          "date": "2025-05-30T04:30:01-07:00",
-          "resolution": "8K",
-          "viewCount": 33538316
-        },
-        {
-          "youtubeLinkID": "ri1Ar5nEq4s",
-          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
-          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
-          "duration": "4:38",
-          "durationSec": 278,
-          "date": "2025-05-18T22:56:10-07:00",
-          "resolution": "8K",
-          "viewCount": 242079306
-        },
-        {
-          "youtubeLinkID": "FTI96c3mGG0",
-          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
-          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
-          "duration": "3:53",
-          "durationSec": 233,
-          "date": "2025-06-16T02:30:07-07:00",
-          "resolution": "8K",
-          "viewCount": 8412235
-        }
-      ]
-    },
-    "1290190-chapter-1": {
-      "tmdbId": 1290190,
-      "title": "Lokah Chapter 1: Chandra",
-      "originalTitle": "ലോകഃ Chapter 1: ചന്ദ്ര",
-      "language": "Malayalam",
-      "year": 2025,
-      "releaseDate": "2025-08-28",
-      "overview": "The story follows Chandra, a mysterious, goth-influenced woman who has just moved to Bangalore and begins working night shifts at a café. Across the road from her apartment live Sunny and Venu, two aimless bachelors. Sunny becomes infatuated with Chandra, observing her odd routines, strange visitors, and reclusive nature. Their dynamic changes when Sunny gets a glimpse of Chandra in her act.",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "runtime": 151,
-      "voteAverage": 7.291,
-      "voteCount": 67,
-      "posterPath": "/nRn6is4m5sikO1rSoCoRT2rYtXB.jpg",
-      "backdropPath": "/tkRZ8BpIlvQIFBQWwEHuAlxczyb.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/nRn6is4m5sikO1rSoCoRT2rYtXB.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/tkRZ8BpIlvQIFBQWwEHuAlxczyb.jpg",
-      "youtubePlaylistId": "PLTn8b0kpAgS0",
-      "videos": [
-        {
-          "youtubeLinkID": "dR9B_gPxjkk",
-          "title": "Kiliye Kiliye - Video Song | Lokah Chapter 1: Chandra | Kalyani Priyadarshan | Naslen | Dominic Arun",
-          "thumbnail": "https://img.youtube.com/vi/dR9B_gPxjkk/maxresdefault.jpg",
-          "duration": "2:05",
-          "durationSec": 125,
-          "date": "2025-11-04T02:58:07-08:00",
-          "resolution": "4K",
-          "viewCount": 67273432
-        },
-        {
-          "youtubeLinkID": "DXm6diugHCc",
-          "title": "Queen of the Night | Lokah Movie Song | Kalyani | Naslen | Jakes Bejoy | Dominic Arun | Nimish Ravi",
-          "thumbnail": "https://img.youtube.com/vi/DXm6diugHCc/maxresdefault.jpg",
-          "duration": "3:22",
-          "durationSec": 202,
-          "date": "2025-09-17T06:30:06-07:00",
-          "resolution": "4K",
-          "viewCount": 7709379
-        },
-        {
-          "youtubeLinkID": "Y23dN3JZrcE",
-          "title": "Neeye Punchiri |  | Lokah | Hanan Sha | Reyan | Jakes Bejoy | Kalyani | Naslen | Dominic | Nimish ",
-          "thumbnail": "https://img.youtube.com/vi/Y23dN3JZrcE/maxresdefault.jpg",
-          "duration": "4:01",
-          "durationSec": 241,
-          "date": "2025-10-19T05:18:09-07:00",
-          "resolution": "4K",
-          "viewCount": 25940609
-        },
-        {
-          "youtubeLinkID": "bL1fxyAvPGc",
-          "title": "Paranje Paranje Song | Lokah  | Jakes Bejoy | Anuradha Sriram | Kalyani | Naslen | Dominic | Nimish",
-          "thumbnail": "https://img.youtube.com/vi/bL1fxyAvPGc/maxresdefault.jpg",
-          "duration": "3:35",
-          "durationSec": 215,
-          "date": "2025-10-05T05:35:06-07:00",
-          "resolution": "4K",
-          "viewCount": 3496039
-        },
-        {
-          "youtubeLinkID": "q025lNfr9aU",
-          "title": "Shoka Mookam | Lokah Movie Song 4K | Kalyani |  Naslen | Dominic Arun | Nimish Ravi | JK",
-          "thumbnail": "https://img.youtube.com/vi/q025lNfr9aU/maxresdefault.jpg",
-          "duration": "2:51",
-          "durationSec": 171,
-          "date": "2025-09-05T07:07:48-07:00",
-          "resolution": "4K",
-          "viewCount": 9327181
-        }
-      ]
-    },
     "811941-devara-part-1": {
       "tmdbId": 811941,
       "title": "Devara: Part 1",
@@ -2258,6 +2229,59 @@
           "date": "2024-10-29T06:29:07-07:00",
           "resolution": "4K",
           "viewCount": 34919799
+        }
+      ]
+    },
+    "1112426-2": {
+      "tmdbId": 1112426,
+      "title": "Stree 2",
+      "originalTitle": "स्त्री 2: सरकटे का आतंक",
+      "language": "Hindi",
+      "year": 2024,
+      "releaseDate": "2024-08-15",
+      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
+      "runtime": 143,
+      "voteAverage": 6.7,
+      "voteCount": 102,
+      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "youtubePlaylistId": "PLRnfSOtSyGI4",
+      "videos": [
+        {
+          "youtubeLinkID": "0nrvPVnTWlc",
+          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
+          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
+          "duration": "3:08",
+          "durationSec": 188,
+          "date": "2025-05-30T04:30:01-07:00",
+          "resolution": "8K",
+          "viewCount": 33538316
+        },
+        {
+          "youtubeLinkID": "ri1Ar5nEq4s",
+          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
+          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
+          "duration": "4:38",
+          "durationSec": 278,
+          "date": "2025-05-18T22:56:10-07:00",
+          "resolution": "8K",
+          "viewCount": 242079306
+        },
+        {
+          "youtubeLinkID": "FTI96c3mGG0",
+          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
+          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
+          "duration": "3:53",
+          "durationSec": 233,
+          "date": "2025-06-16T02:30:07-07:00",
+          "resolution": "8K",
+          "viewCount": 8412235
         }
       ]
     },
@@ -2342,6 +2366,80 @@
           "date": "2025-12-24T05:27:07-08:00",
           "resolution": "8K",
           "viewCount": 90633
+        }
+      ]
+    },
+    "1290190-chapter-1": {
+      "tmdbId": 1290190,
+      "title": "Lokah Chapter 1: Chandra",
+      "originalTitle": "ലോകഃ Chapter 1: ചന്ദ്ര",
+      "language": "Malayalam",
+      "year": 2025,
+      "releaseDate": "2025-08-28",
+      "overview": "The story follows Chandra, a mysterious, goth-influenced woman who has just moved to Bangalore and begins working night shifts at a café. Across the road from her apartment live Sunny and Venu, two aimless bachelors. Sunny becomes infatuated with Chandra, observing her odd routines, strange visitors, and reclusive nature. Their dynamic changes when Sunny gets a glimpse of Chandra in her act.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "runtime": 151,
+      "voteAverage": 7.291,
+      "voteCount": 67,
+      "posterPath": "/nRn6is4m5sikO1rSoCoRT2rYtXB.jpg",
+      "backdropPath": "/tkRZ8BpIlvQIFBQWwEHuAlxczyb.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/nRn6is4m5sikO1rSoCoRT2rYtXB.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/tkRZ8BpIlvQIFBQWwEHuAlxczyb.jpg",
+      "youtubePlaylistId": "PLTn8b0kpAgS0",
+      "videos": [
+        {
+          "youtubeLinkID": "dR9B_gPxjkk",
+          "title": "Kiliye Kiliye - Video Song | Lokah Chapter 1: Chandra | Kalyani Priyadarshan | Naslen | Dominic Arun",
+          "thumbnail": "https://img.youtube.com/vi/dR9B_gPxjkk/maxresdefault.jpg",
+          "duration": "2:05",
+          "durationSec": 125,
+          "date": "2025-11-04T02:58:07-08:00",
+          "resolution": "4K",
+          "viewCount": 67273432
+        },
+        {
+          "youtubeLinkID": "DXm6diugHCc",
+          "title": "Queen of the Night | Lokah Movie Song | Kalyani | Naslen | Jakes Bejoy | Dominic Arun | Nimish Ravi",
+          "thumbnail": "https://img.youtube.com/vi/DXm6diugHCc/maxresdefault.jpg",
+          "duration": "3:22",
+          "durationSec": 202,
+          "date": "2025-09-17T06:30:06-07:00",
+          "resolution": "4K",
+          "viewCount": 7709379
+        },
+        {
+          "youtubeLinkID": "Y23dN3JZrcE",
+          "title": "Neeye Punchiri |  | Lokah | Hanan Sha | Reyan | Jakes Bejoy | Kalyani | Naslen | Dominic | Nimish ",
+          "thumbnail": "https://img.youtube.com/vi/Y23dN3JZrcE/maxresdefault.jpg",
+          "duration": "4:01",
+          "durationSec": 241,
+          "date": "2025-10-19T05:18:09-07:00",
+          "resolution": "4K",
+          "viewCount": 25940609
+        },
+        {
+          "youtubeLinkID": "bL1fxyAvPGc",
+          "title": "Paranje Paranje Song | Lokah  | Jakes Bejoy | Anuradha Sriram | Kalyani | Naslen | Dominic | Nimish",
+          "thumbnail": "https://img.youtube.com/vi/bL1fxyAvPGc/maxresdefault.jpg",
+          "duration": "3:35",
+          "durationSec": 215,
+          "date": "2025-10-05T05:35:06-07:00",
+          "resolution": "4K",
+          "viewCount": 3496039
+        },
+        {
+          "youtubeLinkID": "q025lNfr9aU",
+          "title": "Shoka Mookam | Lokah Movie Song 4K | Kalyani |  Naslen | Dominic Arun | Nimish Ravi | JK",
+          "thumbnail": "https://img.youtube.com/vi/q025lNfr9aU/maxresdefault.jpg",
+          "duration": "2:51",
+          "durationSec": 171,
+          "date": "2025-09-05T07:07:48-07:00",
+          "resolution": "4K",
+          "viewCount": 9327181
         }
       ]
     }
