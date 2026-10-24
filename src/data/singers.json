@@ -47,6 +47,30 @@
       "YoutubePlaylistID": "PLDcHjz5JGcQA",
       "LivePlaylistID": "",
       "Genre": "Female"
+    },
+    {
+      "name": "Camila Cabello",
+      "id": "1911673-camila-cabello",
+      "customImage": null,
+      "YoutubePlaylistID": "PLbzW2C4oC_QE",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Jennifer Lopez",
+      "id": "16866-jennifer-lopez",
+      "customImage": null,
+      "YoutubePlaylistID": "PLeOls_xHoygM",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "The Weeknd",
+      "id": "1549008-abel-tesfaye",
+      "customImage": null,
+      "YoutubePlaylistID": "PLK6XYwvqSyho",
+      "LivePlaylistID": "",
+      "Genre": "Male"
     }
   ],
   "Indian": [
