@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T06:03:28.888Z",
+  "lastUpdated": "2026-10-24T06:11:00.533Z",
   "singers": {
     "International": [
       {
@@ -539,20 +539,9 @@
         "birthday": "1990-02-16",
         "placeOfBirth": "Toronto, Ontario, Canada",
         "knownForDepartment": "Acting",
-        "youtubePlaylistId": "PLK6XYwvqSyho",
+        "youtubePlaylistId": "=PLbqkyN60IhaY",
         "livePlaylistId": "",
-        "videos": [
-          {
-            "youtubeLinkID": "QTLiVG2ln-k",
-            "title": "Annakiliye - Music Video | Smith Asher | Viky Pup | Dheekshitha | Albuquerque Records | Anirudh",
-            "thumbnail": "https://img.youtube.com/vi/QTLiVG2ln-k/maxresdefault.jpg",
-            "duration": "5:24",
-            "durationSec": 324,
-            "date": "2026-09-27T21:50:03-07:00",
-            "resolution": "4K",
-            "viewCount": 2852217
-          }
-        ],
+        "videos": [],
         "liveVideos": []
       }
     ],
