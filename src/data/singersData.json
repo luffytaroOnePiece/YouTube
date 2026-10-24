@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T08:01:03.123Z",
+  "lastUpdated": "2026-10-24T08:03:38.282Z",
   "singers": {
     "International": [
       {
@@ -539,9 +539,80 @@
         "birthday": "1990-02-16",
         "placeOfBirth": "Toronto, Ontario, Canada",
         "knownForDepartment": "Acting",
-        "youtubePlaylistId": "=PLbqkyN60IhaY",
+        "youtubePlaylistId": "PLbqkyN60IhaY",
         "livePlaylistId": "",
-        "videos": [],
+        "videos": [
+          {
+            "youtubeLinkID": "4NRXx6U8ABQ",
+            "title": "The Weeknd - Blinding Lights (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/4NRXx6U8ABQ/maxresdefault.jpg",
+            "duration": "4:23",
+            "durationSec": 263,
+            "date": "2020-01-21T10:00:10-08:00",
+            "resolution": "1080p",
+            "viewCount": 1076097053
+          },
+          {
+            "youtubeLinkID": "34Na4j8AVgA",
+            "title": "The Weeknd - Starboy ft. Daft Punk (Official Video) ft. Daft Punk",
+            "thumbnail": "https://img.youtube.com/vi/34Na4j8AVgA/maxresdefault.jpg",
+            "duration": "4:34",
+            "durationSec": 274,
+            "date": "2016-09-28T09:00:01-07:00",
+            "resolution": "1080p",
+            "viewCount": 2811732667
+          },
+          {
+            "youtubeLinkID": "qFLhGq0060w",
+            "title": "The Weeknd - I Feel It Coming ft. Daft Punk (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/qFLhGq0060w/maxresdefault.jpg",
+            "duration": "4:58",
+            "durationSec": 298,
+            "date": "2017-03-09T21:00:03-08:00",
+            "resolution": "1080p",
+            "viewCount": 1484906035
+          },
+          {
+            "youtubeLinkID": "M4ZoCHID9GI",
+            "title": "The Weeknd - Call Out My Name (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/M4ZoCHID9GI/maxresdefault.jpg",
+            "duration": "3:59",
+            "durationSec": 239,
+            "date": "2018-04-12T09:00:04-07:00",
+            "resolution": "1080p",
+            "viewCount": 1101222312
+          },
+          {
+            "youtubeLinkID": "JPIhUaONiLU",
+            "title": "The Weeknd - Often (NSFW) (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/JPIhUaONiLU/maxresdefault.jpg",
+            "duration": "4:10",
+            "durationSec": 250,
+            "date": "2014-08-21T13:25:01-07:00",
+            "resolution": "1080p",
+            "viewCount": 583007437
+          },
+          {
+            "youtubeLinkID": "JZjAg6fK-BQ",
+            "title": "The Weeknd - Reminder (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/JZjAg6fK-BQ/maxresdefault.jpg",
+            "duration": "3:51",
+            "durationSec": 231,
+            "date": "2017-02-16T09:00:03-08:00",
+            "resolution": "1080p",
+            "viewCount": 672542210
+          },
+          {
+            "youtubeLinkID": "5EpyN_6dqyk",
+            "title": "The Weeknd, Playboi Carti - Timeless",
+            "thumbnail": "https://img.youtube.com/vi/5EpyN_6dqyk/maxresdefault.jpg",
+            "duration": "4:17",
+            "durationSec": 257,
+            "date": "2024-09-30T09:00:07-07:00",
+            "resolution": "4K",
+            "viewCount": 296889814
+          }
+        ],
         "liveVideos": []
       },
       {
