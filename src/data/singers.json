@@ -65,12 +65,36 @@
       "Genre": "Female"
     },
     {
-      "name": "The Weeknd",
+      "name": "The Weekend",
       "id": "1549008-abel-tesfaye",
       "customImage": null,
       "YoutubePlaylistID": "=PLbqkyN60IhaY",
       "LivePlaylistID": "",
       "Genre": "Male"
+    },
+    {
+      "name": "Selena Gomez",
+      "id": "77948-selena-gomez",
+      "customImage": null,
+      "YoutubePlaylistID": "PLSPYB90Uxm9w",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Shakira",
+      "id": "446511-shakira",
+      "customImage": null,
+      "YoutubePlaylistID": "PLB7QiWg6Du7E",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Rihanna",
+      "id": "131519-rihanna",
+      "customImage": null,
+      "YoutubePlaylistID": "PLYKkR1tqnI5c",
+      "LivePlaylistID": "",
+      "Genre": "Female"
     }
   ],
   "Indian": [

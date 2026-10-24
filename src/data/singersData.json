@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T06:11:00.533Z",
+  "lastUpdated": "2026-10-24T08:01:03.123Z",
   "singers": {
     "International": [
       {
@@ -529,7 +529,7 @@
       },
       {
         "id": "1549008-abel-tesfaye",
-        "name": "The Weeknd",
+        "name": "The Weekend",
         "genre": "Male",
         "category": "International",
         "customImage": null,
@@ -542,6 +542,250 @@
         "youtubePlaylistId": "=PLbqkyN60IhaY",
         "livePlaylistId": "",
         "videos": [],
+        "liveVideos": []
+      },
+      {
+        "id": "77948-selena-gomez",
+        "name": "Selena Gomez",
+        "genre": "Female",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/fLjGtchxniZtAxnZsFzDn2lsWmY.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fLjGtchxniZtAxnZsFzDn2lsWmY.jpg",
+        "biography": "Selena Marie Gomez (born July 22, 1992, Texas, United States) is a Mexican-American singer, actress and producer. Regarded as a \"triple threat\" and one of the leading figures in pop culture, her accolades include a Cannes Film Festival Best Actress award, a Screen Actors Guild award, an honorary Latin Grammy award, 3 Grammy nominations, 10 Emmy nominations, 7 Golden Globe nominations and a BAFTA nomination.\n\nGomez began her acting career on the children's television series Barney & Friends (2002–2004). In her teenage years, she rose to stardom for her lead role as Alex Russo in the Emmy winning Disney Channel television series Wizards of Waverly Place (2007–2012). She then returned to television in 2021 on the Hulu/Disney+ comedy series Only Murders in the Building (2021–), alongside fellow stars and executive producers Steve Martin and Martin Short, for which she became the most nominated Latina producer in Emmys history.\n\nAlongside her television career, Gomez appeared in the films Another Cinderella Story (2008), Princess Protection Program (2009), Wizards of Waverly Place: The Movie (2009), Ramona and Beezus (2010), Monte Carlo (2011), Spring Breakers (2012), Getaway (2013), The Fundamentals of Caring (2016), The Dead Don't Die (2019), A Rainy Day in New York (2019) and Emilia Pérez (2024). She voices the character Mavis in the Hotel Transylvania film franchise (2012–). Gomez executive produced the Netflix television series 13 Reasons Why (2017–2020), which received an honorary Emmy award for it’s social impact.\n\nShe has released three albums with her former band, Selena Gomez & the Scene, all of which reached the top ten of the US Billboard 200: Kiss & Tell (2009), A Year Without Rain (2010), and When the Sun Goes Down (2011). Additionally, Gomez's three solo studio albums—Stars Dance (2013), Revival (2015), and Rare (2020)—each debuted atop the Billboard 200. She also released the Spanish-language EP Revelación (2021), for which she received a nomination for the Grammy Award for Best Latin Pop Album. A number of Gomez's singles have charted inside the top ten of the US Billboard Hot 100, including \"Come & Get It\", \"The Heart Wants What It Wants\", \"Good for You\", \"Same Old Love\", \"Hands to Myself\", \"We Don't Talk Anymore\", \"It Ain't Me\", her first number-one song \"Lose You to Love Me\" and \"Calm Down\". The Guardian credited her with popularizing \"whisper pop\", a style of pop music characterized by soft, hushed and breathy vocals.\n\nGomez has worked with many charitable organizations and serves as a UNICEF ambassador since age 17. She advocates for mental health, gender, racial, and LGBT equality. She founded the cosmetic company Rare Beauty in 2020, valued at $2 billion in 2024, and the non-profit organization Rare Impact Fund. She has appeared in lists such as the Time 100 (2020, 2024), Forbes 30 Under 30 (2016, 2020), was named Billboard's Woman of the Year (2017), Latin Woman of the Year (2025), and was made a member of the Order of Arts and Letters by the Government of France (2024). She is the most-followed woman on Instagram, and among the wealthiest musicians.\n\nDescription above from the Wikipedia article Selena Gomez, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+        "birthday": "1992-07-22",
+        "placeOfBirth": "Grand Prairie, Texas, USA",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLSPYB90Uxm9w",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "ij_0p_6qTss",
+            "title": "Selena Gomez - The Heart Wants What It Wants (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/ij_0p_6qTss/maxresdefault.jpg",
+            "duration": "4:36",
+            "durationSec": 276,
+            "date": "2014-11-06T03:03:00-08:00",
+            "resolution": "1080p",
+            "viewCount": 965487220
+          },
+          {
+            "youtubeLinkID": "n-D1EB74Ckg",
+            "title": "Selena Gomez - Come & Get It",
+            "thumbnail": "https://img.youtube.com/vi/n-D1EB74Ckg/maxresdefault.jpg",
+            "duration": "4:50",
+            "durationSec": 290,
+            "date": "2013-05-07T16:53:06-07:00",
+            "resolution": "1080p",
+            "viewCount": 847509919
+          },
+          {
+            "youtubeLinkID": "1TsVjvEkc4s",
+            "title": "Selena Gomez - Good For You",
+            "thumbnail": "https://img.youtube.com/vi/1TsVjvEkc4s/maxresdefault.jpg",
+            "duration": "3:15",
+            "durationSec": 195,
+            "date": "2015-06-26T06:00:00-07:00",
+            "resolution": "1080p",
+            "viewCount": 553667588
+          },
+          {
+            "youtubeLinkID": "9h30Bx4Klxg",
+            "title": "Selena Gomez - Same Old Love",
+            "thumbnail": "https://img.youtube.com/vi/9h30Bx4Klxg/maxresdefault.jpg",
+            "duration": "4:25",
+            "durationSec": 265,
+            "date": "2015-10-07T09:00:01-07:00",
+            "resolution": "1080p",
+            "viewCount": 556645483
+          },
+          {
+            "youtubeLinkID": "zlJDTxahav0",
+            "title": "Selena Gomez - Lose You To Love Me (Official Music Video)",
+            "thumbnail": "https://img.youtube.com/vi/zlJDTxahav0/maxresdefault.jpg",
+            "duration": "3:27",
+            "durationSec": 207,
+            "date": "2019-10-22T21:00:11-07:00",
+            "resolution": "1080p",
+            "viewCount": 539142850
+          },
+          {
+            "youtubeLinkID": "cH4E_t3m3xM",
+            "title": "Selena Gomez, Marshmello - Wolves",
+            "thumbnail": "https://img.youtube.com/vi/cH4E_t3m3xM/maxresdefault.jpg",
+            "duration": "3:33",
+            "durationSec": 213,
+            "date": "2017-11-18T08:00:02-08:00",
+            "resolution": "1080p",
+            "viewCount": 624333285
+          },
+          {
+            "youtubeLinkID": "STO4-8vkG0U",
+            "title": "Selena Gomez - Fetish ft. Gucci Mane (Official Music Video) ft. Gucci Mane",
+            "thumbnail": "https://img.youtube.com/vi/STO4-8vkG0U/maxresdefault.jpg",
+            "duration": "3:48",
+            "durationSec": 228,
+            "date": "2017-07-26T09:00:05-07:00",
+            "resolution": "1080p",
+            "viewCount": 251776071
+          },
+          {
+            "youtubeLinkID": "VY1eFxgRR-k",
+            "title": "Selena Gomez - Back To You",
+            "thumbnail": "https://img.youtube.com/vi/VY1eFxgRR-k/maxresdefault.jpg",
+            "duration": "4:28",
+            "durationSec": 268,
+            "date": "2018-06-05T07:00:07-07:00",
+            "resolution": "1080p",
+            "viewCount": 289382081
+          },
+          {
+            "youtubeLinkID": "HHP5MKgK0o8",
+            "title": "Selena Gomez - Kill Em With Kindness",
+            "thumbnail": "https://img.youtube.com/vi/HHP5MKgK0o8/maxresdefault.jpg",
+            "duration": "3:44",
+            "durationSec": 224,
+            "date": "2016-06-06T09:00:01-07:00",
+            "resolution": "1080p",
+            "viewCount": 571436907
+          },
+          {
+            "youtubeLinkID": "WcIcVapfqXw",
+            "title": "Rema, Selena Gomez - Calm Down (Official Music Video)",
+            "thumbnail": "https://img.youtube.com/vi/WcIcVapfqXw/maxresdefault.jpg",
+            "duration": "4:00",
+            "durationSec": 240,
+            "date": "2022-09-07T09:00:09-07:00",
+            "resolution": "1080p",
+            "viewCount": 1503384285
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "446511-shakira",
+        "name": "Shakira",
+        "genre": "Female",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/20k7YtDH2iU3KdAysdDPlZz7uhf.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/20k7YtDH2iU3KdAysdDPlZz7uhf.jpg",
+        "biography": "Shakira is a Colombian singer, songwriter, dancer, record producer, choreographer, and model. Born and raised in Barranquilla, she began performing in school, demonstrating Latin American, Arabic, and rock and roll influences and belly dancing abilities. Shakira released her first studio albums, Magia and Peligro, in the early 1990s, failing to attain commercial success; however, she rose to prominence in Latin America with her major-label debut, Pies Descalzos (1996), and her fourth album, Dónde Están los Ladrones? (1998).",
+        "birthday": "1977-02-02",
+        "placeOfBirth": "Barranquilla, Atlántico, Colombia",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLB7QiWg6Du7E",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "DUT5rEU6pqM",
+            "title": "Shakira - Hips Don't Lie (featuring Wyclef Jean) (Official 4K Video) ft. Wyclef Jean",
+            "thumbnail": "https://img.youtube.com/vi/DUT5rEU6pqM/maxresdefault.jpg",
+            "duration": "3:39",
+            "durationSec": 219,
+            "date": "2009-10-02T21:47:55-07:00",
+            "resolution": "4K",
+            "viewCount": 1925637099
+          },
+          {
+            "youtubeLinkID": "pRpeEdMmmQ0",
+            "title": "Shakira - Waka Waka (This Time for Africa) (The Official 2010 FIFA World Cup™ Song)",
+            "thumbnail": "https://img.youtube.com/vi/pRpeEdMmmQ0/maxresdefault.jpg",
+            "duration": "3:31",
+            "durationSec": 211,
+            "date": "2010-06-04T15:30:35-07:00",
+            "resolution": "1080p",
+            "viewCount": 4799475082
+          },
+          {
+            "youtubeLinkID": "weRHyjj34ZE",
+            "title": "Shakira - Whenever, Wherever (Official HD Video)",
+            "thumbnail": "https://img.youtube.com/vi/weRHyjj34ZE/maxresdefault.jpg",
+            "duration": "3:17",
+            "durationSec": 197,
+            "date": "2009-10-03T13:24:15-07:00",
+            "resolution": "1080p",
+            "viewCount": 923702327
+          },
+          {
+            "youtubeLinkID": "o3mP3mJDL2k",
+            "title": "Shakira - Can't Remember to Forget You (Official Video) ft. Rihanna",
+            "thumbnail": "https://img.youtube.com/vi/o3mP3mJDL2k/maxresdefault.jpg",
+            "duration": "3:26",
+            "durationSec": 206,
+            "date": "2014-01-30T17:35:01-08:00",
+            "resolution": "1080p",
+            "viewCount": 1445020139
+          },
+          {
+            "youtubeLinkID": "6Mgqbai3fKo",
+            "title": "Shakira - Chantaje (Official Video) ft. Maluma",
+            "thumbnail": "https://img.youtube.com/vi/6Mgqbai3fKo/maxresdefault.jpg",
+            "duration": "3:20",
+            "durationSec": 200,
+            "date": "2016-11-18T06:00:01-08:00",
+            "resolution": "1080p",
+            "viewCount": 3232667254
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "131519-rihanna",
+        "name": "Rihanna",
+        "genre": "Female",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/piXUA7L0gWQNtnDPXtBe24C9FF6.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/piXUA7L0gWQNtnDPXtBe24C9FF6.jpg",
+        "biography": "Robyn Rihanna Fenty (/riˈænə/ ree-AN-ə; born February 20, 1988) is a Barbadian singer, businesswoman and actress. She is noted as the best-selling female recording artist of the 21st century by Guinness World Records and the highest-certified female digital single artist by the Recording Industry Association of America (RIAA). As of 2024, Rihanna is the third wealthiest musician in the world. She has seven U.S. diamond-certified singles and 14 number-one singles on the Billboard Hot 100. The recipient of various accolades, Rihanna is among the best-selling recording artists of all time, with sales estimated at 250 million units globally.\n\nRihanna signed with Def Jam Recordings in 2005. She found mainstream recognition after releasing her first two studio albums, Music of the Sun (2005) and A Girl Like Me (2006). Both were influenced by Caribbean music, and the albums peaked within the top ten on the U.S. Billboard 200 chart. Her third album, Good Girl Gone Bad (2007), incorporated dance-pop elements, establishing her status as a pop icon. Its lead single, \"Umbrella\", peaked atop the U.S. Billboard Hot 100 and won her first Grammy Award.\n\nRihanna continued to blend pop, dance and influences in her subsequent albums, Rated R (2009), Loud (2010), Talk That Talk (2011), and Unapologetic (2012)—the latter of which topped the Billboard 200. The albums spawned the Billboard Hot 100-number one singles \"Rude Boy\", \"Only Girl (In the World)\", \"What's My Name?\", \"S&M\", \"We Found Love\", and \"Diamonds\". Her eighth album, Anti (2016), showcased new creative control following her departure from Def Jam in favour of Jay-Z's label, Roc Nation. Becoming her second U.S. number-one album, it was supported by the chart-topping single \"Work\".\n\nAside from music, Rihanna is recognized for her humanitarian involvement, entrepreneurship, and influence in the fashion industry. She established the Clara Lionel Foundation, cosmetics brand Fenty Beauty, and fashion house Fenty under LVMH, becoming the first black woman to lead a luxury brand for LVMH. Rihanna has acted in major roles in Battleship (2012), Home (2015), Valerian and the City of a Thousand Planets (2017), and Ocean's 8 (2018). In 2018, the Government of Barbados appointed her as an ambassador and declared a National Hero of Barbados in 2021.\n\nDescription above from the Wikipedia article Rihanna, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+        "birthday": "1988-02-20",
+        "placeOfBirth": "Saint Michael, Barbados",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLYKkR1tqnI5c",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "HBxt_v0WF6Y",
+            "title": "Rihanna - Where Have You Been",
+            "thumbnail": "https://img.youtube.com/vi/HBxt_v0WF6Y/maxresdefault.jpg",
+            "duration": "4:29",
+            "durationSec": 269,
+            "date": "2012-04-30T05:56:07-07:00",
+            "resolution": "1080p",
+            "viewCount": 879965671
+          },
+          {
+            "youtubeLinkID": "kOkQ4T5WO9E",
+            "title": "Calvin Harris, Rihanna - This Is What You Came For (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/kOkQ4T5WO9E/maxresdefault.jpg",
+            "duration": "4:00",
+            "durationSec": 240,
+            "date": "2016-06-16T21:01:00-07:00",
+            "resolution": "1080p",
+            "viewCount": 2975614244
+          },
+          {
+            "youtubeLinkID": "uelHwf8o7_U",
+            "title": "Eminem - Love The Way You Lie ft. Rihanna",
+            "thumbnail": "https://img.youtube.com/vi/uelHwf8o7_U/maxresdefault.jpg",
+            "duration": "4:27",
+            "durationSec": 267,
+            "date": "2010-08-05T12:09:46-07:00",
+            "resolution": "1080p",
+            "viewCount": 3213995074
+          },
+          {
+            "youtubeLinkID": "lWA2pjMjpBs",
+            "title": "Rihanna - Diamonds",
+            "thumbnail": "https://img.youtube.com/vi/lWA2pjMjpBs/maxresdefault.jpg",
+            "duration": "4:43",
+            "durationSec": 283,
+            "date": "2012-11-08T16:18:50-08:00",
+            "resolution": "1080p",
+            "viewCount": 2635366680
+          }
+        ],
         "liveVideos": []
       }
     ],
