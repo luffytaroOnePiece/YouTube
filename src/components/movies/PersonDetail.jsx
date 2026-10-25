@@ -24,7 +24,6 @@ export default function PersonDetail({ personId, onClose, moviesData }) {
     };
 
     window.addEventListener('favActorsUpdated', handleFavUpdated);
-    window.addEventListener('storage', handleFavUpdated);
 
     // Sync with API if available
     syncFollowedActorsWithApi().then(() => {
@@ -33,7 +32,6 @@ export default function PersonDetail({ personId, onClose, moviesData }) {
 
     return () => {
       window.removeEventListener('favActorsUpdated', handleFavUpdated);
-      window.removeEventListener('storage', handleFavUpdated);
     };
   }, [personId]);
 

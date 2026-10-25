@@ -6,9 +6,8 @@ import { getPersonDetails, getImageUrl } from '../../services/tmdbApi';
 import {
   getFollowedActorIds,
   syncFollowedActorsWithApi,
-  toggleFollowActor,
   getFollowedSingerIds,
-  toggleFollowSinger
+  syncFollowedSingersWithApi
 } from '../../services/favActors';
 import defaultSingersData from '../../data/singersData.json';
 import rawSingersData from '../../data/singers.json';
@@ -76,6 +75,12 @@ export default function ActorsSection({ moviesData, singersData, searchQuery = '
       }
     });
 
+    syncFollowedSingersWithApi().then((ids) => {
+      if (ids && ids.length > 0) {
+        setFavSingerIds(ids);
+      }
+    });
+
     const handleActorUpdate = (e) => {
       const ids = e?.detail || getFollowedActorIds();
       setFavActorIds(ids);
@@ -88,14 +93,10 @@ export default function ActorsSection({ moviesData, singersData, searchQuery = '
 
     window.addEventListener('favActorsUpdated', handleActorUpdate);
     window.addEventListener('followedSingersUpdated', handleSingerUpdate);
-    window.addEventListener('storage', handleActorUpdate);
-    window.addEventListener('storage', handleSingerUpdate);
 
     return () => {
       window.removeEventListener('favActorsUpdated', handleActorUpdate);
       window.removeEventListener('followedSingersUpdated', handleSingerUpdate);
-      window.removeEventListener('storage', handleActorUpdate);
-      window.removeEventListener('storage', handleSingerUpdate);
     };
   }, []);
 
@@ -259,15 +260,6 @@ export default function ActorsSection({ moviesData, singersData, searchQuery = '
     }
   };
 
-  const handleUnfollow = (e, artist) => {
-    e.stopPropagation();
-    if (artist.type === 'singer') {
-      toggleFollowSinger(artist.id);
-    } else {
-      toggleFollowActor(artist.id);
-    }
-  };
-
   return (
     <section className="movies-section">
       <div className="movies-section__header">
@@ -343,22 +335,13 @@ export default function ActorsSection({ moviesData, singersData, searchQuery = '
                     </div>
                   )}
 
-                  {/* Discipline Badge (Singer / Actor) */}
-                  <span className={`actors-section__type-badge actors-section__type-badge--${artist.type}`}>
-                    {artist.type === 'singer' ? '🎤 Singer' : '🎬 Actor'}
-                  </span>
-
-                  {/* Card quick unfollow button */}
-                  <button
-                    className="actors-section__card-follow-btn"
-                    onClick={(e) => handleUnfollow(e, artist)}
-                    title={`Unfollow ${artist.name}`}
+                  {/* Discipline Icon (Singer / Actor) */}
+                  <span
+                    className="actors-section__type-icon"
+                    title={artist.type === 'singer' ? 'Singer' : 'Actor'}
                   >
-                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>Following</span>
-                  </button>
+                    {artist.type === 'singer' ? '🎤' : '🎬'}
+                  </span>
                 </div>
                 <div className="actors-section__info">
                   <span className="actors-section__name">{artist.name}</span>

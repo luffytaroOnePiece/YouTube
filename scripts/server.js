@@ -156,6 +156,45 @@ app.post('/api/favActors', (req, res) => {
   }
 });
 
+// GET /api/favSingers — get favorite singers
+app.get('/api/favSingers', (req, res) => {
+  try {
+    const favFile = path.join(__dirname, '../src/data/favSingers.json');
+    if (!fs.existsSync(favFile)) return res.json([]);
+    const data = JSON.parse(fs.readFileSync(favFile, 'utf-8'));
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/favSingers — toggle favorite singer
+app.post('/api/favSingers', (req, res) => {
+  try {
+    const { singerId } = req.body;
+    if (!singerId) return res.status(400).json({ error: 'singerId required' });
+    
+    const favFile = path.join(__dirname, '../src/data/favSingers.json');
+    let data = [];
+    if (fs.existsSync(favFile)) {
+      data = JSON.parse(fs.readFileSync(favFile, 'utf-8'));
+    }
+    
+    const sid = String(singerId).trim();
+    const existingIndex = data.findIndex(id => id.toLowerCase().trim() === sid.toLowerCase());
+    if (existingIndex !== -1) {
+      data.splice(existingIndex, 1);
+    } else {
+      data.push(sid);
+    }
+    
+    fs.writeFileSync(favFile, JSON.stringify(data, null, 2), 'utf-8');
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // POST /api/tags — create a tag or toggle a video on a tag
 app.post('/api/tags', (req, res) => {
   try {
@@ -248,6 +287,8 @@ app.listen(PORT, () => {
   console.log(`   POST /api/fetch      — Start fetch job`);
   console.log(`   GET  /api/jobs/:id   — Check job status`);
   console.log(`   GET/POST /api/fav    — Manage favorites`);
+  console.log(`   GET/POST /api/favActors — Manage favorite actors`);
+  console.log(`   GET/POST /api/favSingers — Manage favorite singers`);
   console.log(`   POST /api/tags       — Create/toggle tags`);
   console.log(`   POST /api/tags/delete — Delete a tag`);
   console.log(`   POST /api/ratings    — Set rating for a video\n`);

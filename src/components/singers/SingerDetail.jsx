@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useState, useMemo } from 'react';
-import { isSingerFollowed, toggleFollowSinger } from '../../services/favActors';
+import { isSingerFollowed, toggleFollowSinger, syncFollowedSingersWithApi } from '../../services/favActors';
 
 export default function SingerDetail({ singer, onClose, onVideoSelect }) {
   // Lock body scroll
@@ -39,12 +39,14 @@ export default function SingerDetail({ singer, onClose, onVideoSelect }) {
 
     window.addEventListener('followedSingersUpdated', handleUpdate);
     window.addEventListener('favActorsUpdated', handleUpdate);
-    window.addEventListener('storage', handleUpdate);
+
+    syncFollowedSingersWithApi().then(() => {
+      setIsFollowed(isSingerFollowed(singerKey));
+    });
 
     return () => {
       window.removeEventListener('followedSingersUpdated', handleUpdate);
       window.removeEventListener('favActorsUpdated', handleUpdate);
-      window.removeEventListener('storage', handleUpdate);
     };
   }, [singerKey]);
 

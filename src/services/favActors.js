@@ -1,32 +1,24 @@
 import favActorsData from '../data/favActors.json';
+import favSingersData from '../data/favSingers.json';
 
-const STORAGE_KEY = 'yt_fav_actors';
-const EVENT_NAME = 'favActorsUpdated';
+const ACTOR_EVENT_NAME = 'favActorsUpdated';
+const SINGER_EVENT_NAME = 'followedSingersUpdated';
+
+// In-memory caches initialized directly from JSON files
+let followedActorIds = Array.isArray(favActorsData) ? favActorsData.map(String) : [];
+let followedSingerIds = Array.isArray(favSingersData) ? favSingersData.map(String) : [];
+
+const isLocalHost = () => {
+  if (typeof window === 'undefined') return false;
+  return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+};
 
 /**
  * Get current list of followed actor IDs (as string array).
- * Reads from localStorage if available, falls back to favActors.json.
+ * Directly backed by favActors.json data and memory cache.
  */
 export function getFollowedActorIds() {
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored !== null) {
-      const parsed = JSON.parse(stored);
-      if (Array.isArray(parsed)) {
-        return parsed.map(String);
-      }
-    }
-  } catch {
-    // Fall back to static dataset
-  }
-
-  const initial = Array.isArray(favActorsData) ? favActorsData.map(String) : [];
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(initial));
-  } catch {
-    // Ignore storage quota or access errors
-  }
-  return initial;
+  return [...followedActorIds];
 }
 
 /**
@@ -34,104 +26,85 @@ export function getFollowedActorIds() {
  */
 export function isActorFollowed(personId) {
   if (!personId) return false;
-  const ids = getFollowedActorIds();
-  return ids.includes(personId.toString());
+  const pid = personId.toString();
+  return followedActorIds.includes(pid);
 }
 
 /**
  * Toggle follow status for an actor.
- * Updates localStorage, dispatches window event, and syncs to backend API if available.
+ * Persists directly to favActors.json via local backend API.
  * Returns the new followed status (boolean).
  */
-export async function toggleFollowActor(personId) {
+export function toggleFollowActor(personId) {
   if (!personId) return false;
   const pid = personId.toString();
-  const current = getFollowedActorIds();
-  let updated;
-  const isFollowingNow = !current.includes(pid);
+  const isFollowingNow = !followedActorIds.includes(pid);
 
   if (isFollowingNow) {
-    updated = [pid, ...current.filter(id => id !== pid)];
+    followedActorIds = [pid, ...followedActorIds.filter((id) => id !== pid)];
   } else {
-    updated = current.filter(id => id !== pid);
+    followedActorIds = followedActorIds.filter((id) => id !== pid);
   }
 
-  // 1. Update localStorage immediately
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
-  } catch {
-    // Ignore storage write error
+  // Dispatch event for instant UI update
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent(ACTOR_EVENT_NAME, { detail: [...followedActorIds] }));
   }
 
-  // 2. Dispatch event for instant UI update everywhere
-  window.dispatchEvent(new CustomEvent(EVENT_NAME, { detail: updated }));
-
-  // 3. Try local API if available on localhost or 127.0.0.1
-  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  if (isLocal) {
-    try {
-      await fetch('http://localhost:3001/api/favActors', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ actorId: pid })
+  // Sync to backend JSON file
+  if (isLocalHost()) {
+    fetch('http://localhost:3001/api/favActors', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ actorId: pid }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data)) {
+          followedActorIds = data.map(String);
+          if (typeof window !== 'undefined') {
+            window.dispatchEvent(new CustomEvent(ACTOR_EVENT_NAME, { detail: [...followedActorIds] }));
+          }
+        }
+      })
+      .catch((err) => {
+        console.error('Failed to persist favorite actor to server:', err);
       });
-    } catch {
-      // Backend not running, localStorage already updated
-    }
   }
 
   return isFollowingNow;
 }
 
 /**
- * Synchronize followed actor IDs with backend API if online.
- * Merges any IDs from server with localStorage.
+ * Synchronize followed actor IDs with backend API / JSON storage.
  */
 export async function syncFollowedActorsWithApi() {
-  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  if (!isLocal) return getFollowedActorIds();
+  if (!isLocalHost()) return [...followedActorIds];
 
   try {
     const res = await fetch('http://localhost:3001/api/favActors');
     if (res.ok) {
       const serverIds = await res.json();
       if (Array.isArray(serverIds)) {
-        const localIds = getFollowedActorIds();
-        const merged = Array.from(new Set([...serverIds.map(String), ...localIds]));
-        try {
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
-        } catch {
-          // Ignore storage error
+        followedActorIds = serverIds.map(String);
+        if (typeof window !== 'undefined') {
+          window.dispatchEvent(new CustomEvent(ACTOR_EVENT_NAME, { detail: [...followedActorIds] }));
         }
-        window.dispatchEvent(new CustomEvent(EVENT_NAME, { detail: merged }));
-        return merged;
+        return [...followedActorIds];
       }
     }
   } catch {
-    // API not running
+    // API server not running, fall back to JSON import data
   }
-  return getFollowedActorIds();
+  return [...followedActorIds];
 }
-
-const SINGER_STORAGE_KEY = 'yt_followed_singers';
-const SINGER_EVENT_NAME = 'followedSingersUpdated';
 
 /**
  * Get current list of followed singer IDs/names (as string array).
+ * Directly backed by favSingers.json data and memory cache.
  */
 export function getFollowedSingerIds() {
-  try {
-    const stored = localStorage.getItem(SINGER_STORAGE_KEY);
-    if (stored !== null) {
-      const parsed = JSON.parse(stored);
-      if (Array.isArray(parsed)) {
-        return parsed.map(String);
-      }
-    }
-  } catch {
-    // Ignore storage parse error
-  }
-  return [];
+  return [...followedSingerIds];
 }
 
 /**
@@ -140,35 +113,84 @@ export function getFollowedSingerIds() {
 export function isSingerFollowed(singerId) {
   if (!singerId) return false;
   const sid = singerId.toString().toLowerCase().trim();
-  const ids = getFollowedSingerIds();
-  return ids.some(id => id.toLowerCase().trim() === sid);
+  return followedSingerIds.some((id) => id.toLowerCase().trim() === sid);
 }
 
 /**
  * Toggle follow status for a singer.
+ * Persists directly to favSingers.json via local backend API.
  * Returns the new followed status (boolean).
  */
 export function toggleFollowSinger(singerId) {
   if (!singerId) return false;
-  const sid = singerId.toString();
-  const current = getFollowedSingerIds();
-  let updated;
-  const isFollowingNow = !current.some(id => id.toLowerCase().trim() === sid.toLowerCase().trim());
+  const sid = singerId.toString().trim();
+  const sidLower = sid.toLowerCase();
+  const isFollowingNow = !followedSingerIds.some((id) => id.toLowerCase().trim() === sidLower);
 
   if (isFollowingNow) {
-    updated = [sid, ...current.filter(id => id.toLowerCase().trim() !== sid.toLowerCase().trim())];
+    followedSingerIds = [sid, ...followedSingerIds.filter((id) => id.toLowerCase().trim() !== sidLower)];
   } else {
-    updated = current.filter(id => id.toLowerCase().trim() !== sid.toLowerCase().trim());
+    followedSingerIds = followedSingerIds.filter((id) => id.toLowerCase().trim() !== sidLower);
   }
 
-  try {
-    localStorage.setItem(SINGER_STORAGE_KEY, JSON.stringify(updated));
-  } catch {
-    // Ignore storage write error
+  // Dispatch events for instant UI update
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent(SINGER_EVENT_NAME, { detail: [...followedSingerIds] }));
+    window.dispatchEvent(new CustomEvent(ACTOR_EVENT_NAME, { detail: [...followedActorIds] }));
   }
 
-  window.dispatchEvent(new CustomEvent(SINGER_EVENT_NAME, { detail: updated }));
-  window.dispatchEvent(new CustomEvent(EVENT_NAME)); // Also notify general followed list
+  // Sync to backend JSON file
+  if (isLocalHost()) {
+    fetch('http://localhost:3001/api/favSingers', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ singerId: sid }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data)) {
+          followedSingerIds = data.map(String);
+          if (typeof window !== 'undefined') {
+            window.dispatchEvent(new CustomEvent(SINGER_EVENT_NAME, { detail: [...followedSingerIds] }));
+            window.dispatchEvent(new CustomEvent(ACTOR_EVENT_NAME, { detail: [...followedActorIds] }));
+          }
+        }
+      })
+      .catch((err) => {
+        console.error('Failed to persist favorite singer to server:', err);
+      });
+  }
 
   return isFollowingNow;
+}
+
+/**
+ * Synchronize followed singer IDs with backend API / JSON storage.
+ */
+export async function syncFollowedSingersWithApi() {
+  if (!isLocalHost()) return [...followedSingerIds];
+
+  try {
+    const res = await fetch('http://localhost:3001/api/favSingers');
+    if (res.ok) {
+      const serverIds = await res.json();
+      if (Array.isArray(serverIds)) {
+        followedSingerIds = serverIds.map(String);
+        if (typeof window !== 'undefined') {
+          window.dispatchEvent(new CustomEvent(SINGER_EVENT_NAME, { detail: [...followedSingerIds] }));
+          window.dispatchEvent(new CustomEvent(ACTOR_EVENT_NAME, { detail: [...followedActorIds] }));
+        }
+        return [...followedSingerIds];
+      }
+    }
+  } catch {
+    // API server not running, fall back to JSON import data
+  }
+  return [...followedSingerIds];
+}
+
+// Perform initial sync on startup if running in browser
+if (typeof window !== 'undefined') {
+  syncFollowedActorsWithApi();
+  syncFollowedSingersWithApi();
 }

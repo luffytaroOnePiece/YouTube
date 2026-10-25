@@ -1392,71 +1392,19 @@
   position: relative;
 }
 
-.actors-section__card-follow-btn {
+
+.actors-section__type-icon {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 8px;
+  left: 8px;
   z-index: 5;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 5px 10px;
-  border-radius: 9999px;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #fff;
-  font-size: 0.75rem;
-  font-weight: 600;
-  cursor: pointer;
-  opacity: 0.85;
-  transition: all 0.2s ease;
-}
-
-.actors-section__card-follow-btn:hover {
-  opacity: 1;
-  background: rgba(255, 0, 51, 0.85);
-  border-color: rgba(255, 0, 51, 0.9);
-  color: #fff;
-  transform: scale(1.05);
-}
-
-.actors-section__card:hover .actors-section__card-follow-btn {
-  opacity: 1;
-}
-
-.actors-section__type-badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 5;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 4px 9px;
-  border-radius: 9999px;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #fff;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.actors-section__type-badge--singer {
-  background: rgba(255, 0, 51, 0.35);
-  border-color: rgba(255, 0, 51, 0.5);
-  color: #ffccd5;
-}
-
-.actors-section__type-badge--actor {
-  background: rgba(99, 102, 241, 0.35);
-  border-color: rgba(99, 102, 241, 0.5);
-  color: #e0e7ff;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: none;
+  border: none;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.75));
+  pointer-events: none;
+  user-select: none;
 }
 
 .actors-section__img {
