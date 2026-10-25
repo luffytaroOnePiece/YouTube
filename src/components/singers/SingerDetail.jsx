@@ -1,4 +1,5 @@
-import React, { useEffect, useCallback, useState } from 'react';
+import React, { useEffect, useCallback, useState, useMemo } from 'react';
+import { isSingerFollowed, toggleFollowSinger } from '../../services/favActors';
 
 export default function SingerDetail({ singer, onClose, onVideoSelect }) {
   // Lock body scroll
@@ -18,16 +19,43 @@ export default function SingerDetail({ singer, onClose, onVideoSelect }) {
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [handleKeyDown]);
 
-  if (!singer) return null;
-
-  const [activeTab, setActiveTab] = useState('songs');
-  const videos = singer.videos || [];
-  const liveVideos = singer.liveVideos || [];
+  const videos = useMemo(() => singer?.videos || [], [singer?.videos]);
+  const liveVideos = useMemo(() => singer?.liveVideos || [], [singer?.liveVideos]);
   const hasLive = liveVideos.length > 0;
-  const effectiveProfile = singer.customImage || singer.profileUrl;
+  const effectiveProfile = singer?.customImage || singer?.profileUrl;
   const hasProfile = !!effectiveProfile;
 
-  const handleVideoClick = (video) => {
+  const [activeTab, setActiveTab] = useState('songs');
+  const [copied, setCopied] = useState(false);
+
+  // Follow state persisted via favActors service
+  const singerKey = singer?.id || singer?.name;
+  const [isFollowed, setIsFollowed] = useState(() => isSingerFollowed(singerKey));
+
+  useEffect(() => {
+    const handleUpdate = () => {
+      setIsFollowed(isSingerFollowed(singerKey));
+    };
+
+    window.addEventListener('followedSingersUpdated', handleUpdate);
+    window.addEventListener('favActorsUpdated', handleUpdate);
+    window.addEventListener('storage', handleUpdate);
+
+    return () => {
+      window.removeEventListener('followedSingersUpdated', handleUpdate);
+      window.removeEventListener('favActorsUpdated', handleUpdate);
+      window.removeEventListener('storage', handleUpdate);
+    };
+  }, [singerKey]);
+
+  const toggleFollow = () => {
+    if (!singer) return;
+    const next = toggleFollowSinger(singer.id || singer.name);
+    setIsFollowed(next);
+  };
+
+  const handleVideoClick = useCallback((video) => {
+    if (!singer) return;
     // Enrich video with singer context for player display
     const enrich = (v) => ({
       ...v,
@@ -41,7 +69,86 @@ export default function SingerDetail({ singer, onClose, onVideoSelect }) {
     const enrichedAlbum = currentList.map(enrich);
 
     onVideoSelect(enrichedVideo, enrichedAlbum);
+  }, [singer, activeTab, liveVideos, videos, onVideoSelect]);
+
+  // Play All: Starts first track
+  const handlePlayAll = () => {
+    const list = videos.length > 0 ? videos : liveVideos;
+    if (list.length > 0) {
+      handleVideoClick(list[0]);
+    }
   };
+
+  // Shuffle: Plays random track with randomized queue
+  const handleShuffle = () => {
+    const list = videos.length > 0 ? videos : liveVideos;
+    if (list.length === 0 || !singer) return;
+
+    const randomIndex = Math.floor(Math.random() * list.length);
+    const pickedVideo = list[randomIndex];
+
+    // Create a shuffled list with the picked video first
+    const remaining = list.filter((_, idx) => idx !== randomIndex);
+    for (let i = remaining.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [remaining[i], remaining[j]] = [remaining[j], remaining[i]];
+    }
+    const shuffledList = [pickedVideo, ...remaining];
+
+    const enrich = (v) => ({
+      ...v,
+      group: 'Singers',
+      category: singer.genre || '',
+      type: singer.name || '',
+    });
+
+    onVideoSelect(enrich(pickedVideo), shuffledList.map(enrich));
+  };
+
+  // Share artist
+  const handleShare = () => {
+    if (!singer) return;
+    if (navigator.clipboard) {
+      const url = `${window.location.origin}?search=${encodeURIComponent(singer.name)}`;
+      navigator.clipboard.writeText(url).catch(() => {});
+    }
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  // Total Views across videos
+  const totalViews = useMemo(() => {
+    const all = [...videos, ...liveVideos];
+    const sum = all.reduce((acc, v) => acc + (Number(v.viewCount) || 0), 0);
+    if (!sum) return null;
+    if (sum >= 1_000_000_000) return `${(sum / 1_000_000_000).toFixed(1)}B views`;
+    if (sum >= 1_000_000) return `${(sum / 1_000_000).toFixed(1)}M views`;
+    if (sum >= 1_000) return `${(sum / 1_000).toFixed(1)}K views`;
+    return `${sum.toLocaleString()} views`;
+  }, [videos, liveVideos]);
+
+  // Formatted Birthday & Age
+  const birthday = singer?.birthday;
+  const formattedBirthday = useMemo(() => {
+    if (!birthday) return null;
+    try {
+      const birthDate = new Date(birthday);
+      const formatted = birthDate.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      });
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
+      return { date: formatted, age: `${age} yrs old` };
+    } catch {
+      return null;
+    }
+  }, [birthday]);
+
+  if (!singer) return null;
 
   return (
     <div
@@ -54,69 +161,224 @@ export default function SingerDetail({ singer, onClose, onVideoSelect }) {
           ✕
         </button>
 
-        {/* Hero */}
+        {/* Hero Section */}
         <div className="singer-detail__hero">
           {hasProfile && (
-            <div className="singer-detail__hero-img-wrap">
-              <img
-                className="singer-detail__hero-img"
-                src={effectiveProfile}
-                alt=""
+            <>
+              {/* Vibrant Ambient Glow Backdrop */}
+              <div
+                className="singer-detail__hero-ambient"
+                style={{ backgroundImage: `url(${effectiveProfile})` }}
+                aria-hidden="true"
               />
-            </div>
+
+              {/* High-res expanded spotlight banner on the right */}
+              <div className="singer-detail__hero-spotlight-wrap">
+                <img
+                  className="singer-detail__hero-spotlight"
+                  src={effectiveProfile}
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+            </>
           )}
+
+          {/* Cinematic Gradients & Meshes */}
           <div className="singer-detail__hero-gradient" />
+          <div className="singer-detail__hero-radial" />
+
+          {/* Top-Right Quick Stats / Accents */}
+          <div className="singer-detail__hero-stats">
+            {singer.category && (
+              <span className="singer-detail__stat-badge singer-detail__stat-badge--category">
+                {singer.category}
+              </span>
+            )}
+            {videos.length > 0 && (
+              <span className="singer-detail__stat-badge">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                  <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                </svg>
+                {videos.length} {videos.length === 1 ? 'Song' : 'Songs'}
+              </span>
+            )}
+            {totalViews && (
+              <span className="singer-detail__stat-badge singer-detail__stat-badge--views">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                  <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                </svg>
+                {totalViews}
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Info */}
         <div className="singer-detail__info">
           {hasProfile && (
-            <img
-              className="singer-detail__poster"
-              src={effectiveProfile}
-              alt={singer.name}
-            />
+            <div className="singer-detail__poster-wrap">
+              <img
+                className="singer-detail__poster"
+                src={effectiveProfile}
+                alt={singer.name}
+              />
+              <div
+                className="singer-detail__poster-glow"
+                style={{ backgroundImage: `url(${effectiveProfile})` }}
+                aria-hidden="true"
+              />
+            </div>
           )}
           <div className="singer-detail__metadata">
+            {/* Verified Artist Badge */}
+            <div className="singer-detail__verified-badge">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              <span>Verified Artist</span>
+            </div>
+
+            {/* Artist Title with strong contrast */}
             <h1 className="singer-detail__title">{singer.name}</h1>
 
-            <div className="singer-detail__meta">
+            {/* Metadata Chips with subtle SVG icon indicators */}
+            <div className="singer-detail__meta-chips">
               {singer.genre && (
-                <span className="singer-detail__meta-item">{singer.genre}</span>
+                <div className="singer-detail__meta-chip" title="Gender / Genre">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                  </svg>
+                  <span>{singer.genre}</span>
+                </div>
               )}
-              {singer.genre && singer.knownForDepartment && (
-                <span className="singer-detail__meta-dot" />
-              )}
+
               {singer.knownForDepartment && (
-                <span className="singer-detail__meta-item">{singer.knownForDepartment}</span>
+                <div className="singer-detail__meta-chip" title="Occupation / Known For">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                    <line x1="12" y1="19" x2="12" y2="22"/>
+                  </svg>
+                  <span>{singer.knownForDepartment}</span>
+                </div>
               )}
+
               {singer.placeOfBirth && (
-                <>
-                  <span className="singer-detail__meta-dot" />
-                  <span className="singer-detail__meta-item">{singer.placeOfBirth}</span>
-                </>
+                <div className="singer-detail__meta-chip" title="Origin / Birthplace">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span>{singer.placeOfBirth}</span>
+                </div>
+              )}
+
+              {formattedBirthday && (
+                <div className="singer-detail__meta-chip" title="Birthday">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/>
+                    <path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/>
+                    <path d="M2 21h20"/>
+                    <path d="M7 8v3"/>
+                    <path d="M12 8v3"/>
+                    <path d="M17 8v3"/>
+                    <path d="M7 4h.01"/>
+                    <path d="M12 4h.01"/>
+                    <path d="M17 4h.01"/>
+                  </svg>
+                  <span>{formattedBirthday.date} ({formattedBirthday.age})</span>
+                </div>
               )}
             </div>
 
-            {singer.birthday && (
-              <div className="singer-detail__birthday">
-                🎂 {new Date(singer.birthday).toLocaleDateString('en-US', {
-                  year: 'numeric', month: 'long', day: 'numeric'
-                })}
-                {(() => {
-                  const birthDate = new Date(singer.birthday);
-                  const today = new Date();
-                  let age = today.getFullYear() - birthDate.getFullYear();
-                  const m = today.getMonth() - birthDate.getMonth();
-                  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
-                  return ` (${age} years old)`;
-                })()}
-              </div>
-            )}
-
+            {/* Biography */}
             {singer.biography && (
               <p className="singer-detail__overview">{singer.biography}</p>
             )}
+
+            {/* Call-to-Action (CTA) Buttons */}
+            <div className="singer-detail__actions">
+              <button
+                className="singer-detail__action-btn singer-detail__action-btn--play"
+                onClick={handlePlayAll}
+                disabled={videos.length === 0 && liveVideos.length === 0}
+                title="Play tracks"
+              >
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+                <span>Play</span>
+              </button>
+
+              <button
+                className="singer-detail__action-btn singer-detail__action-btn--shuffle"
+                onClick={handleShuffle}
+                disabled={videos.length === 0 && liveVideos.length === 0}
+                title="Shuffle tracks"
+              >
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="16 3 21 3 21 8" />
+                  <line x1="4" y1="20" x2="21" y2="3" />
+                  <polyline points="21 16 21 21 16 21" />
+                  <line x1="15" y1="15" x2="21" y2="21" />
+                  <line x1="4" y1="4" x2="9" y2="9" />
+                </svg>
+                <span>Shuffle</span>
+              </button>
+
+              <button
+                className={`singer-detail__action-btn singer-detail__action-btn--follow ${isFollowed ? 'singer-detail__action-btn--following' : ''}`}
+                onClick={toggleFollow}
+                title={isFollowed ? 'Click to unfollow' : 'Follow artist'}
+              >
+                {isFollowed ? (
+                  <>
+                    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Following</span>
+                  </>
+                ) : (
+                  <>
+                    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                      <circle cx="8.5" cy="7" r="4" />
+                      <line x1="20" y1="8" x2="20" y2="14" />
+                      <line x1="23" y1="11" x2="17" y2="11" />
+                    </svg>
+                    <span>Follow</span>
+                  </>
+                )}
+              </button>
+
+              <button
+                className={`singer-detail__action-btn singer-detail__action-btn--share ${copied ? 'singer-detail__action-btn--copied' : ''}`}
+                onClick={handleShare}
+                title="Share artist link"
+              >
+                {copied ? (
+                  <>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Copied!</span>
+                  </>
+                ) : (
+                  <>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="18" cy="5" r="3" />
+                      <circle cx="6" cy="12" r="3" />
+                      <circle cx="18" cy="19" r="3" />
+                      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                    </svg>
+                    <span>Share</span>
+                  </>
+                )}
+              </button>
+            </div>
           </div>
         </div>
 

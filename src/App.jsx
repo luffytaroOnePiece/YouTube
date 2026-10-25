@@ -898,13 +898,15 @@ function App() {
                     setShowAnalytics(false);
                     setShowScripts(false);
                   }}
-                  title="Actors"
+                  title="Following (Artists & Actors)"
                   style={showActors ? { background: 'var(--accent-soft)', color: 'var(--accent)' } : {}}
                 >
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="8.5" cy="7" r="4"></circle>
+                    <polyline points="17 11 19 13 23 9"></polyline>
                   </svg>
-                  <span>Actors</span>
+                  <span>Following</span>
                 </button>
               )}
 
@@ -1078,10 +1080,13 @@ function App() {
         />
       )}
 
-      {/* Actors View */}
+      {/* Followed Artists & Actors View */}
       {showActors && ENABLE_ACTORS_FEATURE && (
         <ActorsSection
           moviesData={moviesData}
+          singersData={singersData}
+          searchQuery={searchQuery}
+          onVideoSelect={handleVideoSelect}
         />
       )}
 

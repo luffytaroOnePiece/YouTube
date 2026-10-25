@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { getPersonDetails, getPersonImages, getExternalIds, getPersonCredits, getImageUrl } from '../../services/tmdbApi';
-import favActorsData from '../../data/favActors.json';
+import { isActorFollowed, toggleFollowActor, syncFollowedActorsWithApi } from '../../services/favActors';
 
 export default function PersonDetail({ personId, onClose, moviesData }) {
   const [person, setPerson] = useState(null);
@@ -8,7 +8,34 @@ export default function PersonDetail({ personId, onClose, moviesData }) {
   const [externalIds, setExternalIds] = useState(null);
   const [credits, setCredits] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [isFav, setIsFav] = useState(false);
+  const [isFav, setIsFav] = useState(() => isActorFollowed(personId));
+
+  useEffect(() => {
+    // Listen for follow updates across the application
+    const handleFavUpdated = (e) => {
+      if (personId) {
+        const ids = e?.detail;
+        if (Array.isArray(ids)) {
+          setIsFav(ids.includes(personId.toString()));
+        } else {
+          setIsFav(isActorFollowed(personId));
+        }
+      }
+    };
+
+    window.addEventListener('favActorsUpdated', handleFavUpdated);
+    window.addEventListener('storage', handleFavUpdated);
+
+    // Sync with API if available
+    syncFollowedActorsWithApi().then(() => {
+      setIsFav(isActorFollowed(personId));
+    });
+
+    return () => {
+      window.removeEventListener('favActorsUpdated', handleFavUpdated);
+      window.removeEventListener('storage', handleFavUpdated);
+    };
+  }, [personId]);
 
   useEffect(() => {
     const fetchPersonData = async () => {
@@ -28,22 +55,6 @@ export default function PersonDetail({ personId, onClose, moviesData }) {
         if (creditsData && creditsData.cast) {
           setCredits(creditsData.cast);
         }
-        
-        // Check fav status — try API first, fallback to local JSON
-        const pid = personId.toString();
-        let favs = Array.isArray(favActorsData) ? favActorsData : [];
-        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-        if (isLocal) {
-          try {
-            const res = await fetch('http://localhost:3001/api/favActors');
-            if (res.ok) {
-              favs = await res.json();
-            }
-          } catch (e) {
-            // API not running, use local JSON
-          }
-        }
-        setIsFav(favs.includes(pid) || favs.includes(Number(personId)));
       } catch (err) {
         console.error("Failed to fetch person data:", err);
       } finally {
@@ -57,22 +68,9 @@ export default function PersonDetail({ personId, onClose, moviesData }) {
 
   const toggleFav = async (e) => {
     e.stopPropagation();
-    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    if (!isLocal) return;
-
-    try {
-      const res = await fetch('http://localhost:3001/api/favActors', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ actorId: personId.toString() })
-      });
-      if (res.ok) {
-        const favs = await res.json();
-        setIsFav(favs.includes(personId.toString()));
-      }
-    } catch (err) {
-      console.error("Failed to toggle fav actor", err);
-    }
+    if (!personId) return;
+    const nextState = await toggleFollowActor(personId);
+    setIsFav(nextState);
   };
 
   // Handle ESC
@@ -146,18 +144,31 @@ export default function PersonDetail({ personId, onClose, moviesData }) {
                           </a>
                       )}
 
-                      {/* Favorite Button — only on localhost */}
-                      {(window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && (
-                        <button 
-                          className={`person-detail__fav-btn ${isFav ? 'person-detail__fav-btn--active' : ''}`}
-                          onClick={toggleFav}
-                        >
-                          <svg viewBox="0 0 24 24" fill={isFav ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                          </svg>
-                          {isFav ? 'Favorited' : 'Add to Favorites'}
-                        </button>
-                      )}
+                      {/* Follow Button */}
+                      <button 
+                        className={`person-detail__fav-btn ${isFav ? 'person-detail__fav-btn--active' : ''}`}
+                        onClick={toggleFav}
+                        title={isFav ? 'Unfollow actor' : 'Follow actor'}
+                      >
+                        {isFav ? (
+                          <>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Following</span>
+                          </>
+                        ) : (
+                          <>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                              <circle cx="8.5" cy="7" r="4" />
+                              <line x1="20" y1="8" x2="20" y2="14" />
+                              <line x1="23" y1="11" x2="17" y2="11" />
+                            </svg>
+                            <span>Follow</span>
+                          </>
+                        )}
+                      </button>
                   </div>
                </div>
                
