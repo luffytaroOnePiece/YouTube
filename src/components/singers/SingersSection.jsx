@@ -10,6 +10,14 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
   const [activeGenre, setActiveGenre] = useState('All');
   const [activeSort, setActiveSort] = useState('Name (A-Z)');
   const [viewMode, setViewMode] = useState('Albums');
+
+  const flatOnlySorts = ['Most Views', 'Newest First', 'Oldest First'];
+  const handleViewModeChange = (mode) => {
+    setViewMode(mode);
+    if (mode !== 'Flat' && flatOnlySorts.includes(activeSort)) {
+      setActiveSort('Name (A-Z)');
+    }
+  };
   const [activeResolution, setActiveResolution] = useState('All Quality');
   const [activeSongType, setActiveSongType] = useState('All'); // 'All', 'Normal', 'Live'
   const [selectedSinger, setSelectedSinger] = useState(null);
@@ -185,8 +193,22 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
         });
       }
     });
+
+    // Sort flattened videos
+    if (activeSort === 'Most Views') {
+      videos.sort((a, b) => (Number(b.viewCount) || 0) - (Number(a.viewCount) || 0));
+    } else if (activeSort === 'Newest First') {
+      videos.sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime());
+    } else if (activeSort === 'Oldest First') {
+      videos.sort((a, b) => new Date(a.date || 0).getTime() - new Date(b.date || 0).getTime());
+    } else if (activeSort === 'Name (A-Z)') {
+      videos.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+    } else if (activeSort === 'Name (Z-A)') {
+      videos.sort((a, b) => (b.title || '').localeCompare(a.title || ''));
+    }
+
     return videos;
-  }, [filteredSingers, viewMode, activeResolution, activeSongType]);
+  }, [filteredSingers, viewMode, activeResolution, activeSongType, activeSort]);
 
   if (allSingers.length === 0) return null;
 
@@ -213,7 +235,7 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
   ];
 
   const genreOptions = [
-    { value: 'All', label: 'All Genres', count: allSingers.length },
+    { value: 'All', label: 'All Genders', count: allSingers.length },
     ...genres.map(([genre, count]) => ({
       value: genre,
       label: genre,
@@ -239,6 +261,11 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
     { value: 'Name (A-Z)', label: 'Name (A-Z)' },
     { value: 'Name (Z-A)', label: 'Name (Z-A)' },
     { value: 'Most Songs', label: 'Most Songs' },
+    ...(viewMode === 'Flat' ? [
+      { value: 'Most Views', label: 'Most Views' },
+      { value: 'Newest First', label: 'Newest First' },
+      { value: 'Oldest First', label: 'Oldest First' },
+    ] : []),
   ];
 
   const viewOptions = [
@@ -277,16 +304,16 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
         )}
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
-          {/* Genre Filter */}
+          {/* Gender Filter */}
           {genres.length > 1 && (
             <div className="singers-section__sort">
-              <span className="singers-section__sort-label">Genre:</span>
+              <span className="singers-section__sort-label">Gender:</span>
               <Dropdown
                 id="singer-genre-select"
                 value={activeGenre}
                 options={genreOptions}
                 onChange={setActiveGenre}
-                placeholder="All Genres"
+                placeholder="All Genders"
               />
             </div>
           )}
@@ -338,7 +365,7 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
               id="singer-view-select"
               value={viewMode}
               options={viewOptions}
-              onChange={setViewMode}
+              onChange={handleViewModeChange}
               placeholder="View Mode"
             />
           </div>
@@ -369,6 +396,7 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
           <VideoGrid
             videos={flattenedVideos}
             onVideoSelect={handleFlatVideoSelect}
+            gridColumns={3}
           />
         ) : (
           <div className="singers-section__empty">
@@ -382,8 +410,10 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
       {selectedSinger && (
         <SingerDetail
           singer={allSingers.find(s => (s.id && s.id === selectedSinger.id) || s.name === selectedSinger.name) || selectedSinger}
+          allSingers={allSingers}
           onClose={() => setSelectedSinger(null)}
           onVideoSelect={handleVideoSelect}
+          onSingerClick={handleSingerClick}
         />
       )}
     </section>

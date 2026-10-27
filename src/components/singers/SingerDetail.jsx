@@ -1,7 +1,7 @@
 import React, { useEffect, useCallback, useState, useMemo } from 'react';
 import { isSingerFollowed, toggleFollowSinger, syncFollowedSingersWithApi } from '../../services/favActors';
 
-export default function SingerDetail({ singer, onClose, onVideoSelect }) {
+export default function SingerDetail({ singer, allSingers = [], onClose, onVideoSelect, onSingerClick }) {
   // Lock body scroll
   useEffect(() => {
     const prev = document.body.style.overflow;
@@ -129,6 +129,39 @@ export default function SingerDetail({ singer, onClose, onVideoSelect }) {
     return `${sum.toLocaleString()} views`;
   }, [videos, liveVideos]);
 
+  // Recommendations: similar singers based on category, gender, song count proximity
+  const recommendations = useMemo(() => {
+    if (!allSingers || allSingers.length <= 1 || !singer) return [];
+    const singerId = singer.id || singer.name;
+    const singerCategory = (singer.category || '').toLowerCase();
+    const singerGenre = (singer.genre || '').toLowerCase();
+    const singerSongCount = (singer.videos?.length || 0) + (singer.liveVideos?.length || 0);
+
+    const scored = allSingers
+      .filter(s => (s.id || s.name) !== singerId)
+      .map(s => {
+        let score = 0;
+        // Same category (e.g. International): +5
+        if (singerCategory && (s.category || '').toLowerCase() === singerCategory) score += 5;
+        // Same gender: +3
+        if (singerGenre && (s.genre || '').toLowerCase() === singerGenre) score += 3;
+        // Song count proximity: closer = higher score
+        const otherCount = (s.videos?.length || 0) + (s.liveVideos?.length || 0);
+        if (singerSongCount > 0 && otherCount > 0) {
+          const diff = Math.abs(singerSongCount - otherCount);
+          if (diff <= 2) score += 2;
+          else if (diff <= 5) score += 1;
+        }
+        return { singer: s, score };
+      })
+      .filter(item => item.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 8)
+      .map(item => item.singer);
+
+    return scored;
+  }, [singer, allSingers]);
+
   // Formatted Birthday & Age
   const birthday = singer?.birthday;
   const formattedBirthday = useMemo(() => {
@@ -247,7 +280,7 @@ export default function SingerDetail({ singer, onClose, onVideoSelect }) {
             {/* Metadata Chips with subtle SVG icon indicators */}
             <div className="singer-detail__meta-chips">
               {singer.genre && (
-                <div className="singer-detail__meta-chip" title="Gender / Genre">
+                <div className="singer-detail__meta-chip" title="Gender">
                   <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
                     <circle cx="12" cy="7" r="4"/>
@@ -431,6 +464,24 @@ export default function SingerDetail({ singer, onClose, onVideoSelect }) {
                       src={video.thumbnail || `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`}
                       alt={video.title}
                       loading="lazy"
+                      onLoad={(e) => {
+                        if (e.target.naturalWidth <= 120 && e.target.src.includes('maxresdefault')) {
+                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/sddefault.jpg`;
+                        } else if (e.target.naturalWidth <= 120 && e.target.src.includes('sddefault')) {
+                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/hqdefault.jpg`;
+                        } else if (e.target.naturalWidth <= 120 && e.target.src.includes('hqdefault')) {
+                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`;
+                        }
+                      }}
+                      onError={(e) => {
+                        if (e.target.src.includes('maxresdefault')) {
+                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/sddefault.jpg`;
+                        } else if (e.target.src.includes('sddefault')) {
+                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/hqdefault.jpg`;
+                        } else if (e.target.src.includes('hqdefault')) {
+                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`;
+                        }
+                      }}
                     />
                     <div className="singer-detail__video-play">
                       <div className="singer-detail__video-play-icon">
@@ -479,6 +530,24 @@ export default function SingerDetail({ singer, onClose, onVideoSelect }) {
                       src={video.thumbnail || `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`}
                       alt={video.title}
                       loading="lazy"
+                      onLoad={(e) => {
+                        if (e.target.naturalWidth <= 120 && e.target.src.includes('maxresdefault')) {
+                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/sddefault.jpg`;
+                        } else if (e.target.naturalWidth <= 120 && e.target.src.includes('sddefault')) {
+                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/hqdefault.jpg`;
+                        } else if (e.target.naturalWidth <= 120 && e.target.src.includes('hqdefault')) {
+                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`;
+                        }
+                      }}
+                      onError={(e) => {
+                        if (e.target.src.includes('maxresdefault')) {
+                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/sddefault.jpg`;
+                        } else if (e.target.src.includes('sddefault')) {
+                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/hqdefault.jpg`;
+                        } else if (e.target.src.includes('hqdefault')) {
+                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`;
+                        }
+                      }}
                     />
                     <div className="singer-detail__video-play">
                       <div className="singer-detail__video-play-icon">
@@ -504,6 +573,55 @@ export default function SingerDetail({ singer, onClose, onVideoSelect }) {
         )}
         {activeTab === 'live' && liveVideos.length === 0 && (
           <div className="singer-detail__empty">No live performances found.</div>
+        )}
+
+        {/* Recommendations */}
+        {recommendations.length > 0 && (
+          <div className="singer-detail__recommendations">
+            <div className="singer-detail__recommendations-header">
+              <span className="singer-detail__recommendations-title">Similar Artists</span>
+              <span className="singer-detail__recommendations-count">{recommendations.length}</span>
+              <div className="singer-detail__recommendations-line" />
+            </div>
+            <div className="singer-detail__recommendations-grid">
+              {recommendations.map((rec) => {
+                const recImg = rec.customImage || rec.profileUrl;
+                const recSongCount = (rec.videos?.length || 0) + (rec.liveVideos?.length || 0);
+                return (
+                  <div
+                    key={rec.id || rec.name}
+                    className="singer-detail__rec-card"
+                    onClick={() => onSingerClick && onSingerClick(rec)}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        onSingerClick && onSingerClick(rec);
+                      }
+                    }}
+                  >
+                    <div className="singer-detail__rec-poster-wrap">
+                      {recImg ? (
+                        <img
+                          className="singer-detail__rec-poster"
+                          src={recImg}
+                          alt={rec.name}
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="singer-detail__rec-poster-fallback">🎤</div>
+                      )}
+                      <div className="singer-detail__rec-gradient" />
+                      <div className="singer-detail__rec-bottom">
+                        <span className="singer-detail__rec-name">{rec.name}</span>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         )}
       </div>
     </div>
