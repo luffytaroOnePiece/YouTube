@@ -95,6 +95,30 @@
       "YoutubePlaylistID": "PLYKkR1tqnI5c",
       "LivePlaylistID": "",
       "Genre": "Female"
+    },
+    {
+      "name": "Alan Walker",
+      "id": "3358480-alan-walker",
+      "customImage": null,
+      "YoutubePlaylistID": "PLESZvUp8R4g4",
+      "LivePlaylistID": "",
+      "Genre": "Male"
+    },
+    {
+      "name": "Billie Eilish",
+      "id": "2413513-billie-eilish",
+      "customImage": null,
+      "YoutubePlaylistID": "PLAhlQQ__RzEM",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Justin Bieber",
+      "id": "150810-justin-bieber",
+      "customImage": null,
+      "YoutubePlaylistID": "PLdcB6jttZh38",
+      "LivePlaylistID": "",
+      "Genre": "Male"
     }
   ],
   "Indian": [
