@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-27T09:23:40.456Z",
+  "lastUpdated": "2026-10-27T15:24:44.771Z",
   "singers": {
     "International": [
       {
@@ -1119,6 +1119,268 @@
             "date": "2012-08-01T05:00:14-07:00",
             "resolution": "1080p",
             "viewCount": 535920875
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "226001-ariana-grande",
+        "name": "Ariana Grande",
+        "genre": "Female",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/d4HtCXm58GuqVJVGgDKFn0dEj8M.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/d4HtCXm58GuqVJVGgDKFn0dEj8M.jpg",
+        "biography": "Ariana Grande-Butera (born June 26, 1993) is an American singer, songwriter, and actress. Regarded as a pop icon and an influential figure in popular music, Grande is known for her four-octave vocal range, which extends into the whistle register. Her accolades include two Grammy Awards, a Brit Award, two Billboard Music Awards, three American Music Awards, 39 Guinness World Records, and ten MTV Video Music Awards.\n\nShe began her career as a teenage actress by appearing in the Broadway musical 13 (2008). She rose to fame as Cat Valentine in the Nickelodeon television series Victorious (2010–2013) and its spin-off series Sam & Cat (2013–2014). Grande signed with Republic Records and released her retro-pop and R&B-influenced debut studio album, Yours Truly (2013), which debuted at number one on the Billboard 200. She blended pop, R&B, and electronic on her second and third albums, My Everything (2014) and Dangerous Woman (2016), which both achieved international success and contained the singles \"Problem\", \"Break Free\", \"Bang Bang\", \"One Last Time\", \"Into You\" and \"Side to Side\".\n\nPersonal struggles influenced Grande's trap-infused albums Sweetener (2018) and Thank U, Next (2019). The former won Grande her first Grammy award, while the latter garnered US number-one singles \"Thank U, Next\" and \"7 Rings\", and made her the first solo artist to occupy the top three spots of the Billboard Hot 100. She subsequently achieved the most number-one debuts in Hot 100 chart history with the title track of her sixth album, Positions (2020), as well as the collaborations \"Stuck with U\" and \"Rain on Me\". After a musical hiatus, Grande released her seventh album, Eternal Sunshine (2024), which yielded the US number-one singles \"Yes, And?\" and \"We Can't Be Friends (Wait for Your Love)\". She returned to film acting with the political satire Don't Look Up (2021) and received critical praise for her portrayal of Glinda in the fantasy musical Wicked (2024), earning her a nomination for the Academy Award for Best Supporting Actress.",
+        "birthday": "1993-06-26",
+        "placeOfBirth": "Boca Raton, Florida, USA",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLWAX6VWFvnsQ",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "SXiSVQZLje8",
+            "title": "Ariana Grande ft. Nicki Minaj - Side To Side (Official Video) ft. Nicki Minaj",
+            "thumbnail": "https://img.youtube.com/vi/SXiSVQZLje8/maxresdefault.jpg",
+            "duration": "3:58",
+            "durationSec": 238,
+            "date": "2016-08-29T20:00:00-07:00",
+            "resolution": "1080p",
+            "viewCount": 2488343868
+          },
+          {
+            "youtubeLinkID": "QYh6mYIJG2Y",
+            "title": "Ariana Grande - 7 rings (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/QYh6mYIJG2Y/maxresdefault.jpg",
+            "duration": "3:05",
+            "durationSec": 185,
+            "date": "2019-01-17T20:57:49-08:00",
+            "resolution": "1080p",
+            "viewCount": 1641093979
+          },
+          {
+            "youtubeLinkID": "ffxKSjUwKdU",
+            "title": "Ariana Grande - no tears left to cry (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/ffxKSjUwKdU/maxresdefault.jpg",
+            "duration": "3:59",
+            "durationSec": 239,
+            "date": "2018-04-19T21:00:03-07:00",
+            "resolution": "1080p",
+            "viewCount": 1335743475
+          },
+          {
+            "youtubeLinkID": "1ekZEVeXwek",
+            "title": "Ariana Grande - Into You (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/1ekZEVeXwek/maxresdefault.jpg",
+            "duration": "4:15",
+            "durationSec": 255,
+            "date": "2016-05-23T21:00:00-07:00",
+            "resolution": "1080p",
+            "viewCount": 1205998208
+          },
+          {
+            "youtubeLinkID": "gl1aHhXnN1k",
+            "title": "Ariana Grande - thank u, next (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/gl1aHhXnN1k/maxresdefault.jpg",
+            "duration": "5:31",
+            "durationSec": 331,
+            "date": "2018-11-30T11:58:22-08:00",
+            "resolution": "1080p",
+            "viewCount": 898721362
+          },
+          {
+            "youtubeLinkID": "tcYodQoapMg",
+            "title": "Ariana Grande - positions (official video)",
+            "thumbnail": "https://img.youtube.com/vi/tcYodQoapMg/maxresdefault.jpg",
+            "duration": "2:58",
+            "durationSec": 178,
+            "date": "2020-10-22T21:00:10-07:00",
+            "resolution": "1080p",
+            "viewCount": 717614030
+          },
+          {
+            "youtubeLinkID": "BPgEgaPk62M",
+            "title": "Ariana Grande - One Last Time (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/BPgEgaPk62M/maxresdefault.jpg",
+            "duration": "4:10",
+            "durationSec": 250,
+            "date": "2015-02-15T21:00:01-08:00",
+            "resolution": "1080p",
+            "viewCount": 395689566
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "1024736-ellie-goulding",
+        "name": "Ellie Goulding",
+        "genre": "Female",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/nNwRIUd74seLbR6kO8CI9irX7IA.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nNwRIUd74seLbR6kO8CI9irX7IA.jpg",
+        "biography": "Ellie Goulding is an English singer-songwriter, philanthropist and author.  She is known for her high piercing vibrato, breathy tone and emotive delivery vocals.\n\nRooted in electronic music, she has released sixth studio albums, which includes several worldwide hits, such as: 'Lights', 'Anything Could Happen', 'I Need Your Love', 'Outside', 'Love Me Like You Do', 'On My Mind', 'Something in the Way You Move', 'Close To Me', 'Hate Me' and most recently 'Miracle'.  She has sold more than 44 million albums and 216 million singles, and amassed 55 billion streams worldwide, making her one of the most successful British female singers of the 21st century.\n\nGoulding's music contributions on cinema has been highlighted by both music and film critics. Her best-known cinematic collaborations includes the original songs: \"Love Me Like You Do\" for Fifty Shades of Grey, \"Bittersweet\" for The Twilight Saga: Breaking Dawn – Part 2, \"Mirror\" for The Hunger Games: Catching Fire, \"Still Falling for You\" for Bridget Jones's Baby, \"Do You Remember\" for Fighting with My Family; \"How Long Will I Love You\" for About Time, and the Divergent soundtrack, including \"Beating Heart\".  During the 2010s, Goulding music was heavily featured on movies, such as: The Killing of a Sacred Deer, Spring Breakers, Kick-Ass, The Host, Now Is Good, Teen Spirit, The Festival, Kingsman: The Secret Service, and Cinderella.  She is the recipient of numerous accolades, including two Brit Awards, a Brit Billion Award, a Billboard Music Award, 17 BMI London Awards, a Cannes Lions Award, and nominations for two Grammy Awards.  She received a honorary 'Doctor of Arts degree' by the University of Kent for her contribution and impact in music, and was honored with a Decade Award by the Variety Hitmakers Awards in recognition of a decade of \"undeniable hits\". Meanwhile TIME100 honored her with the Impact Award for using her platform to protect the environment. In 2026, Goulding was appointed by King Charles III as a Member of the British Empire (MBE).",
+        "birthday": "1986-12-30",
+        "placeOfBirth": "Hereford, Herefordshire, England, UK",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLRdWygU1bl90",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "AJtDXIazrMo",
+            "title": "Ellie Goulding - Love Me Like You Do (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/AJtDXIazrMo/maxresdefault.jpg",
+            "duration": "4:10",
+            "durationSec": 250,
+            "date": "2015-01-22T00:00:06-08:00",
+            "resolution": "1080p",
+            "viewCount": 2419180938
+          },
+          {
+            "youtubeLinkID": "CGyEd0aKWZE",
+            "title": "Ellie Goulding - Burn (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/CGyEd0aKWZE/maxresdefault.jpg",
+            "duration": "3:59",
+            "durationSec": 239,
+            "date": "2013-07-07T16:00:13-07:00",
+            "resolution": "1080p",
+            "viewCount": 1692521209
+          },
+          {
+            "youtubeLinkID": "UZwi9SHgzGY",
+            "title": "Ellie Goulding, Juice WRLD - Hate Me (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/UZwi9SHgzGY/maxresdefault.jpg",
+            "duration": "3:26",
+            "durationSec": 206,
+            "date": "2019-07-17T06:58:14-07:00",
+            "resolution": "1080p",
+            "viewCount": 188415793
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "111455-katy-perry",
+        "name": "Katy Perry",
+        "genre": "Female",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/9U2JJMSlM8mDNSmEWNPvHFcUatl.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9U2JJMSlM8mDNSmEWNPvHFcUatl.jpg",
+        "biography": "Katheryn Elizabeth Hudson (born October 25, 1984), known professionally as Katy Perry, is an American singer, songwriter, and television judge. She is known for her influence on the pop sound and style of the 2010s. Pursuing a career in gospel music at 16, Perry released her commercially unsuccessful debut album, Katy Hudson (2001), under Red Hill Records. She moved to Los Angeles at 17 to venture into secular music, adopting the stage name \"Katy Perry\" from her mother's maiden name. With producers Glen Ballard and Greg Wells, she recorded an unreleased album titled Fingerprints while signed to Java Records and then Columbia Records before being dropped. After this, she signed a recording contract with Capitol Records in April 2007.\n\nPerry rose to fame with her second album and major label debut, One of the Boys (2008), a pop rock record containing her debut single \"I Kissed a Girl\" and follow-up single \"Hot n Cold\", which respectively reached number one and three on the U.S. Billboard Hot 100. The disco-influenced pop album Teenage Dream (2010) spawned five U.S. number one singles—\"California Gurls\", \"Teenage Dream\", \"Firework\", \"E.T.\", and \"Last Friday Night (T.G.I.F.)\"—becoming the first album by a solo female artist to do so. A reissue titled Teenage Dream: The Complete Confection (2012) subsequently had the U.S. number one single \"Part of Me\". Her fourth album Prism (2013) has themes of self-empowerment and relationships. With the music videos for its U.S. number one singles \"Roar\" and \"Dark Horse\", Perry became the first artist to have multiple videos reach one billion views on YouTube. Witness (2017) featured an electropop sound with themes of liberation and a political subtext, while Smile (2020) featured themes of motherhood and self-help. She later embarked on her first concert residency titled Play in Resorts World Las Vegas, selling out multiple shows and receiving critical acclaim.\n\nPerry is one of the best-selling artists of all time, having sold over 143 million records worldwide. All of her studio albums released under Capitol have individually surpassed one billion streams on Spotify. She has nine U.S. number one singles, three U.S. number one albums and has received various accolades, including four Guinness World Records, five Billboard Music Awards, five American Music Awards, a Brit Award, and a Juno Award. Perry has been included in the annual Forbes lists of highest-earning women in music from 2011 to 2019. Her critically acclaimed Super Bowl halftime show performance is the most watched in history. Outside of music, she released an autobiographical documentary titled Katy Perry: Part of Me in 2012, and voiced Smurfette in The Smurfs film series. Perry began serving as a judge on American Idol, starting from its sixteenth season in 2018. She is also the most followed woman on Twitter, with over 100 million followers.\n\nDescription above from the Wikipedia article Katy Perry, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+        "birthday": "1984-10-25",
+        "placeOfBirth": "Santa Barbara, California, USA",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLTVeVeASy3T4",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "CevxZvSJLk8",
+            "title": "Katy Perry - Roar",
+            "thumbnail": "https://img.youtube.com/vi/CevxZvSJLk8/maxresdefault.jpg",
+            "duration": "4:30",
+            "durationSec": 270,
+            "date": "2013-09-05T13:00:22-07:00",
+            "resolution": "1080p",
+            "viewCount": 4394089778
+          },
+          {
+            "youtubeLinkID": "0KSOMA3QBU0",
+            "title": "Katy Perry - Dark Horse ft. Juicy J",
+            "thumbnail": "https://img.youtube.com/vi/0KSOMA3QBU0/maxresdefault.jpg",
+            "duration": "3:45",
+            "durationSec": 225,
+            "date": "2014-02-20T12:00:03-08:00",
+            "resolution": "1080p",
+            "viewCount": 4263291556
+          },
+          {
+            "youtubeLinkID": "dPI-mRFEIH0",
+            "title": "Katy Perry - Bon Appétit (Official) ft. Migos",
+            "thumbnail": "https://img.youtube.com/vi/dPI-mRFEIH0/maxresdefault.jpg",
+            "duration": "4:18",
+            "durationSec": 258,
+            "date": "2017-05-12T12:00:06-07:00",
+            "resolution": "1080p",
+            "viewCount": 1434576297
+          },
+          {
+            "youtubeLinkID": "sQEgklEwhSo",
+            "title": "Katy Perry - Harleys In Hawaii (Official)",
+            "thumbnail": "https://img.youtube.com/vi/sQEgklEwhSo/maxresdefault.jpg",
+            "duration": "3:15",
+            "durationSec": 195,
+            "date": "2019-10-16T08:00:12-07:00",
+            "resolution": "1080p",
+            "viewCount": 252811137
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "212208-taylor-swift",
+        "name": "Taylor Swift",
+        "genre": "Female",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/3AcRnnAzIkmif4U9XWPvhtNX4sK.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3AcRnnAzIkmif4U9XWPvhtNX4sK.jpg",
+        "biography": "Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter. An influential figure in popular culture, she is known for her autobiographical songwriting and artistic reinventions. Swift is the highest-grossing live music artist, the wealthiest female musician, and one of the best-selling music artists of all time.\n\nSwift signed with Big Machine Records in 2005 and debuted as a country singer with the albums Taylor Swift (2006) and Fearless (2008). The singles \"Teardrops on My Guitar\", \"Love Story\", and \"You Belong with Me\" found crossover success on country and pop radio formats. Speak Now (2010) expanded her country pop sound with rock influences, while Red (2012) explored electronic influences. Swift recalibrated her artistic identity from country to pop with the synth-pop album 1989 (2014), while ensuing media scrutiny inspired hip-hop–imbued Reputation (2017). Through the 2010s, she accumulated the US Billboard Hot 100 number-one singles \"We Are Never Ever Getting Back Together\", \"Shake It Off\", \"Blank Space\", \"Bad Blood\", and \"Look What You Made Me Do\".\n\nShifting to Republic Records in 2018, Swift released the eclectic pop album Lover (2019) and re-recorded four of her first six albums due to a dispute with Big Machine. She explored indie folk on the 2020 albums Folklore and Evermore, synth-pop on Midnights (2022) and The Tortured Poets Department (2024), and soft rock on The Life of a Showgirl (2025). The singles \"Cardigan\", \"Willow\", \"All Too Well (Taylor's Version)\", \"Anti-Hero\", \"Cruel Summer\", \"Is It Over Now?\", \"Fortnight\", \"The Fate of Ophelia\", and \"Opalite\" topped the Hot 100. Her Eras Tour (2023–2024) and its associated film, Taylor Swift: The Eras Tour (2023), are the highest-grossing concert tour and concert film of all time.\n\nSwift is the only artist to have been named the IFPI Global Recording Artist of the Year six times. A record eight of her albums have each sold over a million copies first-week in the US. Publications such as Rolling Stone and Billboard have ranked Swift among the greatest artists of all time. She is the first individual from the arts to be named Time Person of the Year (2023) and the youngest female inductee of the Songwriters Hall of Fame (2026). Her accolades include 14 Grammy Awards—including a record four Album of the Year wins—and a Primetime Emmy Award. Swift is the most-awarded artist of the American Music Awards, the Billboard Music Awards, and the MTV Video Music Awards.\n\nDescription above from the Wikipedia article Taylor Swift, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+        "birthday": "1989-12-13",
+        "placeOfBirth": "West Reading, Pennsylvania, USA",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLSxjTbE1B_oo&si=YosjN2aZWbuZiWY_",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "e-ORhEE9VVg",
+            "title": "Taylor Swift - Blank Space",
+            "thumbnail": "https://img.youtube.com/vi/e-ORhEE9VVg/maxresdefault.jpg",
+            "duration": "4:33",
+            "durationSec": 273,
+            "date": "2014-11-10T09:05:44-08:00",
+            "resolution": "1080p",
+            "viewCount": 3873260323
+          },
+          {
+            "youtubeLinkID": "nfWlot6h_JM",
+            "title": "Taylor Swift - Shake It Off",
+            "thumbnail": "https://img.youtube.com/vi/nfWlot6h_JM/maxresdefault.jpg",
+            "duration": "4:02",
+            "durationSec": 242,
+            "date": "2014-08-18T14:18:00-07:00",
+            "resolution": "1080p",
+            "viewCount": 3744471566
+          },
+          {
+            "youtubeLinkID": "QcIy9NiNbmo",
+            "title": "Taylor Swift - Bad Blood ft. Kendrick Lamar",
+            "thumbnail": "https://img.youtube.com/vi/QcIy9NiNbmo/maxresdefault.jpg",
+            "duration": "4:05",
+            "durationSec": 245,
+            "date": "2015-05-17T21:00:00-07:00",
+            "resolution": "1080p",
+            "viewCount": 1692861480
+          },
+          {
+            "youtubeLinkID": "3tmd-ClpJxA",
+            "title": "Taylor Swift - Look What You Made Me Do",
+            "thumbnail": "https://img.youtube.com/vi/3tmd-ClpJxA/maxresdefault.jpg",
+            "duration": "4:16",
+            "durationSec": 256,
+            "date": "2017-08-27T17:30:22-07:00",
+            "resolution": "1080p",
+            "viewCount": 1579477419
+          },
+          {
+            "youtubeLinkID": "tCXGJQYZ9JA",
+            "title": "Taylor Swift - Delicate",
+            "thumbnail": "https://img.youtube.com/vi/tCXGJQYZ9JA/maxresdefault.jpg",
+            "duration": "3:55",
+            "durationSec": 235,
+            "date": "2018-03-11T18:15:10-07:00",
+            "resolution": "1080p",
+            "viewCount": 607457329
           }
         ],
         "liveVideos": []

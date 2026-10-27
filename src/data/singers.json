@@ -119,6 +119,38 @@
       "YoutubePlaylistID": "PLdcB6jttZh38",
       "LivePlaylistID": "",
       "Genre": "Male"
+    },
+    {
+      "name": "Ariana Grande",
+      "id": "226001-ariana-grande",
+      "customImage": null,
+      "YoutubePlaylistID": "PLWAX6VWFvnsQ",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Ellie Goulding",
+      "id": "1024736-ellie-goulding",
+      "customImage": null,
+      "YoutubePlaylistID": "PLRdWygU1bl90",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Katy Perry",
+      "id": "111455-katy-perry",
+      "customImage": null,
+      "YoutubePlaylistID": "PLTVeVeASy3T4",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Taylor Swift",
+      "id": "212208-taylor-swift",
+      "customImage": null,
+      "YoutubePlaylistID": "PLSxjTbE1B_oo&si=YosjN2aZWbuZiWY_",
+      "LivePlaylistID": "",
+      "Genre": "Female"
     }
   ],
   "Indian": [
