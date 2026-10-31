@@ -1,6 +1,24 @@
 import React, { useEffect, useCallback, useState, useMemo } from 'react';
 import { isSingerFollowed, toggleFollowSinger, syncFollowedSingersWithApi } from '../../services/favActors';
 
+function formatCompactNumber(count) {
+  if (!count) return null;
+  if (count >= 1_000_000_000) return `${(count / 1_000_000_000).toFixed(1)}B`;
+  if (count >= 1_000_000) return `${(count / 1_000_000).toFixed(1)}M`;
+  if (count >= 1_000) return `${(count / 1_000).toFixed(1)}K`;
+  return count.toLocaleString();
+}
+
+function formatDate(dateStr) {
+  if (!dateStr) return '';
+  try {
+    const d = new Date(dateStr);
+    return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+  } catch {
+    return '';
+  }
+}
+
 export default function SingerDetail({ singer, allSingers = [], onClose, onVideoSelect, onSingerClick }) {
   // Lock body scroll
   useEffect(() => {
@@ -27,6 +45,10 @@ export default function SingerDetail({ singer, allSingers = [], onClose, onVideo
 
   const [activeTab, setActiveTab] = useState('songs');
   const [copied, setCopied] = useState(false);
+
+  // Video search & sort state
+  const [videoSearch, setVideoSearch] = useState('');
+  const [videoSort, setVideoSort] = useState('default');
 
   // Follow state persisted via favActors service
   const singerKey = singer?.id || singer?.name;
@@ -56,6 +78,44 @@ export default function SingerDetail({ singer, allSingers = [], onClose, onVideo
     setIsFollowed(next);
   };
 
+  // Filtered & sorted videos
+  const applySearchAndSort = useCallback((list) => {
+    let result = [...list];
+
+    if (videoSearch.trim()) {
+      const q = videoSearch.toLowerCase().trim();
+      result = result.filter(v => (v.title || '').toLowerCase().includes(q));
+    }
+
+    switch (videoSort) {
+      case 'views-desc':
+        result.sort((a, b) => (Number(b.viewCount) || 0) - (Number(a.viewCount) || 0));
+        break;
+      case 'views-asc':
+        result.sort((a, b) => (Number(a.viewCount) || 0) - (Number(b.viewCount) || 0));
+        break;
+      case 'newest':
+        result.sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime());
+        break;
+      case 'oldest':
+        result.sort((a, b) => new Date(a.date || 0).getTime() - new Date(b.date || 0).getTime());
+        break;
+      case 'title-az':
+        result.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+        break;
+      case 'title-za':
+        result.sort((a, b) => (b.title || '').localeCompare(a.title || ''));
+        break;
+      default:
+        break;
+    }
+
+    return result;
+  }, [videoSearch, videoSort]);
+
+  const displayedVideos = useMemo(() => applySearchAndSort(videos), [videos, applySearchAndSort]);
+  const displayedLiveVideos = useMemo(() => applySearchAndSort(liveVideos), [liveVideos, applySearchAndSort]);
+
   const handleVideoClick = useCallback((video) => {
     if (!singer) return;
     // Enrich video with singer context for player display
@@ -67,13 +127,13 @@ export default function SingerDetail({ singer, allSingers = [], onClose, onVideo
     });
 
     const enrichedVideo = enrich(video);
-    const currentList = activeTab === 'live' ? liveVideos : videos;
+    const currentList = activeTab === 'live' ? displayedLiveVideos : displayedVideos;
     const enrichedAlbum = currentList.map(enrich);
 
     onVideoSelect(enrichedVideo, enrichedAlbum);
-  }, [singer, activeTab, liveVideos, videos, onVideoSelect]);
+  }, [singer, activeTab, displayedLiveVideos, displayedVideos, onVideoSelect]);
 
-  // Play All: Starts first track
+  // Play All: Starts first track (from unfiltered list)
   const handlePlayAll = () => {
     const list = videos.length > 0 ? videos : liveVideos;
     if (list.length > 0) {
@@ -127,6 +187,26 @@ export default function SingerDetail({ singer, allSingers = [], onClose, onVideo
     if (sum >= 1_000_000) return `${(sum / 1_000_000).toFixed(1)}M views`;
     if (sum >= 1_000) return `${(sum / 1_000).toFixed(1)}K views`;
     return `${sum.toLocaleString()} views`;
+  }, [videos, liveVideos]);
+
+  // Total Duration
+  const totalDuration = useMemo(() => {
+    const all = [...videos, ...liveVideos];
+    const totalSec = all.reduce((acc, v) => acc + (v.durationSec || 0), 0);
+    if (!totalSec) return null;
+    const hours = Math.floor(totalSec / 3600);
+    const mins = Math.floor((totalSec % 3600) / 60);
+    if (hours > 0) return `${hours}h ${mins}m`;
+    return `${mins} min`;
+  }, [videos, liveVideos]);
+
+  // Average views per song
+  const avgViews = useMemo(() => {
+    const all = [...videos, ...liveVideos];
+    if (all.length === 0) return null;
+    const sum = all.reduce((acc, v) => acc + (Number(v.viewCount) || 0), 0);
+    if (!sum) return null;
+    return formatCompactNumber(Math.round(sum / all.length));
   }, [videos, liveVideos]);
 
   // Recommendations: similar singers based on category, gender, song count proximity
@@ -183,6 +263,125 @@ export default function SingerDetail({ singer, allSingers = [], onClose, onVideo
     }
   }, [birthday]);
 
+  // Video card thumbnail fallback helpers
+  const handleThumbLoad = useCallback((e, videoId) => {
+    if (e.target.naturalWidth <= 120 && e.target.src.includes('maxresdefault')) {
+      e.target.src = `https://img.youtube.com/vi/${videoId}/sddefault.jpg`;
+    } else if (e.target.naturalWidth <= 120 && e.target.src.includes('sddefault')) {
+      e.target.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+    } else if (e.target.naturalWidth <= 120 && e.target.src.includes('hqdefault')) {
+      e.target.src = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+    }
+  }, []);
+
+  const handleThumbError = useCallback((e, videoId) => {
+    if (e.target.src.includes('maxresdefault')) {
+      e.target.src = `https://img.youtube.com/vi/${videoId}/sddefault.jpg`;
+    } else if (e.target.src.includes('sddefault')) {
+      e.target.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+    } else if (e.target.src.includes('hqdefault')) {
+      e.target.src = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+    }
+  }, []);
+
+  // Reusable video card renderer
+  const renderVideoCard = (video) => (
+    <div
+      key={video.youtubeLinkID}
+      className="singer-detail__video-card"
+      onClick={() => handleVideoClick(video)}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleVideoClick(video);
+        }
+      }}
+    >
+      <div className="singer-detail__video-thumb-wrap">
+        <img
+          className="singer-detail__video-thumb"
+          src={video.thumbnail || `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`}
+          alt={video.title}
+          loading="lazy"
+          onLoad={(e) => handleThumbLoad(e, video.youtubeLinkID)}
+          onError={(e) => handleThumbError(e, video.youtubeLinkID)}
+        />
+        <div className="singer-detail__video-play">
+          <div className="singer-detail__video-play-icon">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+          </div>
+        </div>
+        {video.duration && (
+          <span className="singer-detail__video-duration">{video.duration}</span>
+        )}
+        {video.resolution && (video.resolution === '4K' || video.resolution === '8K') && (
+          <span className={`singer-detail__video-res-badge singer-detail__video-res-badge--${video.resolution.toLowerCase()}`}>
+            {video.resolution}
+          </span>
+        )}
+      </div>
+      <div className="singer-detail__video-info">
+        <h4 className="singer-detail__video-title">{video.title}</h4>
+        <div className="singer-detail__video-meta">
+          {video.viewCount != null && Number(video.viewCount) > 0 && (
+            <span className="singer-detail__video-views">
+              <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor">
+                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+              </svg>
+              {formatCompactNumber(Number(video.viewCount))}
+            </span>
+          )}
+          {video.date && (
+            <span className="singer-detail__video-date">
+              {formatDate(video.date)}
+            </span>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+
+  // Videos toolbar (search + sort)
+  const renderToolbar = (totalCount) => {
+    if (totalCount <= 2) return null;
+    return (
+      <div className="singer-detail__videos-toolbar">
+        <div className="singer-detail__videos-search-wrap">
+          <svg className="singer-detail__videos-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <input
+            type="text"
+            className="singer-detail__videos-search"
+            placeholder="Search songs..."
+            value={videoSearch}
+            onChange={(e) => setVideoSearch(e.target.value)}
+            autoComplete="off"
+          />
+          {videoSearch && (
+            <button className="singer-detail__videos-search-clear" onClick={() => setVideoSearch('')} aria-label="Clear search">✕</button>
+          )}
+        </div>
+        <select
+          className="singer-detail__videos-sort-select"
+          value={videoSort}
+          onChange={(e) => setVideoSort(e.target.value)}
+        >
+          <option value="default">Default Order</option>
+          <option value="views-desc">Most Views</option>
+          <option value="views-asc">Least Views</option>
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+          <option value="title-az">Title A→Z</option>
+          <option value="title-za">Title Z→A</option>
+        </select>
+      </div>
+    );
+  };
+
   if (!singer) return null;
 
   return (
@@ -238,12 +437,37 @@ export default function SingerDetail({ singer, allSingers = [], onClose, onVideo
                 {videos.length} {videos.length === 1 ? 'Song' : 'Songs'}
               </span>
             )}
+            {liveVideos.length > 0 && (
+              <span className="singer-detail__stat-badge singer-detail__stat-badge--live">
+                <span className="singer-detail__stat-live-dot" />
+                {liveVideos.length} Live
+              </span>
+            )}
             {totalViews && (
               <span className="singer-detail__stat-badge singer-detail__stat-badge--views">
                 <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
                   <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
                 </svg>
                 {totalViews}
+              </span>
+            )}
+            {totalDuration && (
+              <span className="singer-detail__stat-badge singer-detail__stat-badge--duration">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                {totalDuration}
+              </span>
+            )}
+            {avgViews && (
+              <span className="singer-detail__stat-badge">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10" />
+                  <line x1="12" y1="20" x2="12" y2="4" />
+                  <line x1="6" y1="20" x2="6" y2="14" />
+                </svg>
+                ~{avgViews}/song
               </span>
             )}
           </div>
@@ -377,7 +601,7 @@ export default function SingerDetail({ singer, allSingers = [], onClose, onVideo
                   </>
                 ) : (
                   <>
-                    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
                       <circle cx="8.5" cy="7" r="4" />
                       <line x1="20" y1="8" x2="20" y2="14" />
@@ -402,7 +626,7 @@ export default function SingerDetail({ singer, allSingers = [], onClose, onVideo
                   </>
                 ) : (
                   <>
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <circle cx="18" cy="5" r="3" />
                       <circle cx="6" cy="12" r="3" />
                       <circle cx="18" cy="19" r="3" />
@@ -440,64 +664,17 @@ export default function SingerDetail({ singer, allSingers = [], onClose, onVideo
           <div className="singer-detail__videos">
             <div className="singer-detail__videos-header">
               <span className="singer-detail__videos-title">Songs</span>
-              <span className="singer-detail__videos-count">{videos.length}</span>
+              <span className="singer-detail__videos-count">{displayedVideos.length}{videoSearch ? ` / ${videos.length}` : ''}</span>
               <div className="singer-detail__videos-line" />
             </div>
-            <div className="singer-detail__video-grid">
-              {videos.map((video) => (
-                <div
-                  key={video.youtubeLinkID}
-                  className="singer-detail__video-card"
-                  onClick={() => handleVideoClick(video)}
-                  role="button"
-                  tabIndex={0}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      e.preventDefault();
-                      handleVideoClick(video);
-                    }
-                  }}
-                >
-                  <div className="singer-detail__video-thumb-wrap">
-                    <img
-                      className="singer-detail__video-thumb"
-                      src={video.thumbnail || `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`}
-                      alt={video.title}
-                      loading="lazy"
-                      onLoad={(e) => {
-                        if (e.target.naturalWidth <= 120 && e.target.src.includes('maxresdefault')) {
-                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/sddefault.jpg`;
-                        } else if (e.target.naturalWidth <= 120 && e.target.src.includes('sddefault')) {
-                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/hqdefault.jpg`;
-                        } else if (e.target.naturalWidth <= 120 && e.target.src.includes('hqdefault')) {
-                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`;
-                        }
-                      }}
-                      onError={(e) => {
-                        if (e.target.src.includes('maxresdefault')) {
-                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/sddefault.jpg`;
-                        } else if (e.target.src.includes('sddefault')) {
-                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/hqdefault.jpg`;
-                        } else if (e.target.src.includes('hqdefault')) {
-                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`;
-                        }
-                      }}
-                    />
-                    <div className="singer-detail__video-play">
-                      <div className="singer-detail__video-play-icon">
-                        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-                      </div>
-                    </div>
-                    {video.duration && (
-                      <span className="singer-detail__video-duration">{video.duration}</span>
-                    )}
-                  </div>
-                  <div className="singer-detail__video-info">
-                    <h4 className="singer-detail__video-title">{video.title}</h4>
-                  </div>
-                </div>
-              ))}
-            </div>
+            {renderToolbar(videos.length)}
+            {displayedVideos.length > 0 ? (
+              <div className="singer-detail__video-grid">
+                {displayedVideos.map(renderVideoCard)}
+              </div>
+            ) : (
+              <div className="singer-detail__empty">No songs matching "{videoSearch}"</div>
+            )}
           </div>
         )}
 
@@ -506,64 +683,17 @@ export default function SingerDetail({ singer, allSingers = [], onClose, onVideo
           <div className="singer-detail__videos">
             <div className="singer-detail__videos-header">
               <span className="singer-detail__videos-title">Live Performances</span>
-              <span className="singer-detail__videos-count">{liveVideos.length}</span>
+              <span className="singer-detail__videos-count">{displayedLiveVideos.length}{videoSearch ? ` / ${liveVideos.length}` : ''}</span>
               <div className="singer-detail__videos-line" />
             </div>
-            <div className="singer-detail__video-grid">
-              {liveVideos.map((video) => (
-                <div
-                  key={video.youtubeLinkID}
-                  className="singer-detail__video-card"
-                  onClick={() => handleVideoClick(video)}
-                  role="button"
-                  tabIndex={0}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      e.preventDefault();
-                      handleVideoClick(video);
-                    }
-                  }}
-                >
-                  <div className="singer-detail__video-thumb-wrap">
-                    <img
-                      className="singer-detail__video-thumb"
-                      src={video.thumbnail || `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`}
-                      alt={video.title}
-                      loading="lazy"
-                      onLoad={(e) => {
-                        if (e.target.naturalWidth <= 120 && e.target.src.includes('maxresdefault')) {
-                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/sddefault.jpg`;
-                        } else if (e.target.naturalWidth <= 120 && e.target.src.includes('sddefault')) {
-                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/hqdefault.jpg`;
-                        } else if (e.target.naturalWidth <= 120 && e.target.src.includes('hqdefault')) {
-                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`;
-                        }
-                      }}
-                      onError={(e) => {
-                        if (e.target.src.includes('maxresdefault')) {
-                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/sddefault.jpg`;
-                        } else if (e.target.src.includes('sddefault')) {
-                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/hqdefault.jpg`;
-                        } else if (e.target.src.includes('hqdefault')) {
-                          e.target.src = `https://img.youtube.com/vi/${video.youtubeLinkID}/mqdefault.jpg`;
-                        }
-                      }}
-                    />
-                    <div className="singer-detail__video-play">
-                      <div className="singer-detail__video-play-icon">
-                        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-                      </div>
-                    </div>
-                    {video.duration && (
-                      <span className="singer-detail__video-duration">{video.duration}</span>
-                    )}
-                  </div>
-                  <div className="singer-detail__video-info">
-                    <h4 className="singer-detail__video-title">{video.title}</h4>
-                  </div>
-                </div>
-              ))}
-            </div>
+            {renderToolbar(liveVideos.length)}
+            {displayedLiveVideos.length > 0 ? (
+              <div className="singer-detail__video-grid">
+                {displayedLiveVideos.map(renderVideoCard)}
+              </div>
+            ) : (
+              <div className="singer-detail__empty">No live performances matching "{videoSearch}"</div>
+            )}
           </div>
         )}
 
@@ -615,6 +745,9 @@ export default function SingerDetail({ singer, allSingers = [], onClose, onVideo
                       <div className="singer-detail__rec-gradient" />
                       <div className="singer-detail__rec-bottom">
                         <span className="singer-detail__rec-name">{rec.name}</span>
+                        {recSongCount > 0 && (
+                          <span className="singer-detail__rec-song-count">{recSongCount} songs</span>
+                        )}
                       </div>
                     </div>
                   </div>
