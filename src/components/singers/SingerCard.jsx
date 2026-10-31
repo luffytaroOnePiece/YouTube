@@ -26,7 +26,7 @@ function getCachedProfile(singer) {
   return (numericId && tmdbProfileCache.get(numericId)) || (singer.id && tmdbProfileCache.get(String(singer.id))) || null;
 }
 
-export default function SingerCard({ singer, onClick, onQuickPlay, onToggleFollow, isFollowed = false, index }) {
+export default function SingerCard({ singer, onClick, onQuickPlay, index }) {
   const cardRef = useRef(null);
   const [dynamicImg, setDynamicImg] = useState(() => getCachedProfile(singer));
   const effectiveUrl = singer.customImage || singer.profileUrl || dynamicImg;
@@ -96,18 +96,10 @@ export default function SingerCard({ singer, onClick, onQuickPlay, onToggleFollo
     }
   };
 
-  const handleFollowClick = (e) => {
-    e.stopPropagation();
-    e.preventDefault();
-    if (onToggleFollow) {
-      onToggleFollow(singer);
-    }
-  };
-
   return (
     <div
       ref={cardRef}
-      className={`singer-card ${isFollowed ? 'singer-card--followed' : ''}`}
+      className="singer-card"
       onClick={() => onClick(singer)}
       style={{ animationDelay }}
       role="button"
@@ -136,33 +128,6 @@ export default function SingerCard({ singer, onClick, onQuickPlay, onToggleFollo
 
       {/* Gradient overlay */}
       <div className="singer-card__gradient" />
-
-      {/* Top Left: Genre badge */}
-      {singer.genre && (
-        <span className="singer-card__genre-badge">{singer.genre}</span>
-      )}
-
-      {/* Top Right: Badges cluster */}
-      <div className="singer-card__top-actions">
-        {/* Favorite / Follow button */}
-        <button
-          className={`singer-card__fav-btn ${isFollowed ? 'singer-card__fav-btn--active' : ''}`}
-          onClick={handleFollowClick}
-          title={isFollowed ? 'Following (click to unfollow)' : 'Follow artist'}
-          aria-label={isFollowed ? 'Unfollow artist' : 'Follow artist'}
-        >
-          <svg viewBox="0 0 24 24" width="14" height="14" fill={isFollowed ? '#ef4444' : 'none'} stroke={isFollowed ? '#ef4444' : 'currentColor'} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-          </svg>
-        </button>
-
-        {/* Video count badge */}
-        {videoCount > 0 && (
-          <span className="singer-card__count-badge">
-            {videoCount}
-          </span>
-        )}
-      </div>
 
       {/* Live indicator */}
       {hasLive && (

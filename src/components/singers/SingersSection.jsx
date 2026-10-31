@@ -833,8 +833,6 @@ export default function SingersSection({ singersData, onVideoSelect, searchQuery
                 singer={singer}
                 onClick={handleSingerClick}
                 onQuickPlay={handleQuickPlay}
-                onToggleFollow={handleToggleFollow}
-                isFollowed={isSingerFollowed(singer.id || singer.name)}
                 index={index}
               />
             ))}

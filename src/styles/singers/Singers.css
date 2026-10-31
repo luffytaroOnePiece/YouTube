@@ -2149,49 +2149,6 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* ── Singer Card Top Actions (Fav button + Count) ──────────── */
-.singer-card__top-actions {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.singer-card__fav-btn {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: 0.5px solid rgba(255, 255, 255, 0.18);
-  background: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  color: rgba(255, 255, 255, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  padding: 0;
-}
-
-.singer-card__fav-btn:hover {
-  transform: scale(1.15);
-  background: rgba(0, 0, 0, 0.85);
-  color: #ef4444;
-}
-
-.singer-card__fav-btn--active {
-  color: #ef4444;
-  border-color: rgba(239, 68, 68, 0.4);
-}
-
-.singer-card--followed {
-  box-shadow: 0 4px 20px rgba(239, 68, 68, 0.15);
-}
-
 .singer-card__cat-label {
   font-size: 0.62rem;
   color: rgba(255, 255, 255, 0.4);
