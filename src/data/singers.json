@@ -151,6 +151,38 @@
       "YoutubePlaylistID": "PLSxjTbE1B_oo&si=YosjN2aZWbuZiWY_",
       "LivePlaylistID": "",
       "Genre": "Female"
+    },
+    {
+      "name": "Shawn Mendes",
+      "id": "1613304-shawn-mendes",
+      "customImage": null,
+      "YoutubePlaylistID": "PLLgf0Uj8BgBk",
+      "LivePlaylistID": "",
+      "Genre": "Male"
+    },
+    {
+      "name": "Charlie Puth",
+      "id": "1724000-charlie-puth",
+      "customImage": null,
+      "YoutubePlaylistID": "PLClB5Lf0J5V0",
+      "LivePlaylistID": "",
+      "Genre": "Male"
+    },
+    {
+      "name": "Ed Sheeran",
+      "id": "998387-ed-sheeran",
+      "customImage": null,
+      "YoutubePlaylistID": "PLa7CLLcj4yb8",
+      "LivePlaylistID": "",
+      "Genre": "Male"
+    },
+    {
+      "name": "Zayn Malik",
+      "id": "1146050-zayn-malik",
+      "customImage": null,
+      "YoutubePlaylistID": "PLFp-flFug0RY",
+      "LivePlaylistID": "",
+      "Genre": "Male"
     }
   ],
   "Indian": [

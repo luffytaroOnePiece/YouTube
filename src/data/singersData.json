@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T13:54:53.622Z",
+  "lastUpdated": "2026-11-01T04:31:58.616Z",
   "singers": {
     "International": [
       {
@@ -1381,6 +1381,198 @@
             "date": "2018-03-11T18:15:10-07:00",
             "resolution": "1080p",
             "viewCount": 607457329
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "1613304-shawn-mendes",
+        "name": "Shawn Mendes",
+        "genre": "Male",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/w73Vke45ItvcUJrf0v2Dex9MJCx.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/w73Vke45ItvcUJrf0v2Dex9MJCx.jpg",
+        "biography": "Shawn Peter Raul Mendes (born August 8, 1998) is a Canadian singer and songwriter. He gained a following in 2013, posting song covers on the video-sharing application Vine.",
+        "birthday": "1998-08-08",
+        "placeOfBirth": "Pickering, Ontario, Canada",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLLgf0Uj8BgBk",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "lY2yjAdbvdQ",
+            "title": "Shawn Mendes - Treat You Better",
+            "thumbnail": "https://img.youtube.com/vi/lY2yjAdbvdQ/maxresdefault.jpg",
+            "duration": "4:17",
+            "durationSec": 257,
+            "date": "2016-07-12T10:00:05-07:00",
+            "resolution": "1080p",
+            "viewCount": 2840269296
+          },
+          {
+            "youtubeLinkID": "dT2owtxkU8k",
+            "title": "Shawn Mendes - There's Nothing Holdin' Me Back (Official Music Video)",
+            "thumbnail": "https://img.youtube.com/vi/dT2owtxkU8k/maxresdefault.jpg",
+            "duration": "3:58",
+            "durationSec": 238,
+            "date": "2017-06-20T21:00:01-07:00",
+            "resolution": "1080p",
+            "viewCount": 1491310094
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "1724000-charlie-puth",
+        "name": "Charlie Puth",
+        "genre": "Male",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/7QiEiDvh9Wqml9EYomgKn38huda.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7QiEiDvh9Wqml9EYomgKn38huda.jpg",
+        "biography": "Charles Otto Puth Jr. (born December 2, 1991) is an American singer-songwriter. His initial exposure came through the viral success of his song covers uploaded to YouTube. Puth signed with the record label eleveneleven in 2011 after performing on The Ellen DeGeneres Show, during which he contributed songwriting and production work for other artists.\n\nPuth signed to Atlantic Records and Artist Partner Group to release his debut single, \"Marvin Gaye\" (featuring Meghan Trainor) in 2015. Later that year, he guest performed on Wiz Khalifa's single \"See You Again\", which peaked atop the US Billboard Hot 100 for 12 non-consecutive weeks, received diamond certification from the Recording Industry Association of America (RIAA), and earned him a Golden Globe Award for Best Original Song nomination, along with three nominations at the 58th Annual Grammy Awards, including Song of the Year.\n\n\"Marvin Gaye\" served as the lead single for Puth's debut studio album, Nine Track Mind (2016), which peaked within the top ten of both the Billboard 200 and UK Albums Chart despite critical failure. Its single, \"We Don't Talk Anymore\" (featuring Selena Gomez), peaked at number nine on the Billboard Hot 100. His second album, Voicenotes (2018), was met with a critical incline and similar commercial success. The album spawned the top-five single \"Attention\", and received a nomination for Best Engineered Album, Non-Classical at the 61st Annual Grammy Awards. Puth's third studio album, Charlie (2022), likewise entered the top ten and was supported by the singles \"Light Switch\" and \"Left and Right\", both of which peaked within the top 30 of the Billboard Hot 100.\n\nPuth has done songwriting and production work with other artists throughout his career, and in 2021 co-wrote and produced the single \"Stay\" for Justin Bieber and the Kid Laroi, becoming his first non-performing production to peak the Billboard Hot 100.\n\nCharles Otto Puth Jr. was born December 2, 1991, in Rumson, New Jersey, to Debra, a music teacher who also wrote commercials for HBO, and Charles Otto Puth Sr., a builder and real estate agent. He has two younger siblings, twins Stephen and Mikaela. Their father is Catholic of Italian, German and Hungarian descent and their mother is Jewish.\n\nAs a two-year-old, Puth's right eyebrow was permanently scarred in a nearly fatal dog bite incident. His mother introduced him to classical music and began teaching him the piano at age four. He started studying jazz at age 10 and participated in a summer youth jazz ensemble at Count Basie Theatre's Cool School in Red Bank, New Jersey, at 12. Puth was once hired by The Count Basie Theatre to play in a Charlie Brown production. In grade six, he went door to door selling a Christmas album called Have a Very Charlie Christmas that he had recorded and produced, making $600 in sales.\n\nHe attended the Holy Cross School, Rumson, and Forrestdale Middle School, before graduating from the Rumson-Fair Haven Regional High School in 2010. During his seventh grade to senior years, he attended Manhattan School of Music Pre-College as a jazz piano major and a classical studies minor. Puth is a 2013 graduate of Berklee College of Music, where he majored in music production and engineering. ...\n\nSource: Article \"Charlie Puth\" from Wikipedia in English, licensed under CC-BY-SA 3.0.",
+        "birthday": "1991-12-02",
+        "placeOfBirth": "Rumson, New Jersey, USA",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLClB5Lf0J5V0",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "3AtDnEC4zak",
+            "title": "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video]",
+            "thumbnail": "https://img.youtube.com/vi/3AtDnEC4zak/maxresdefault.jpg",
+            "duration": "3:51",
+            "durationSec": 231,
+            "date": "2016-08-02T13:00:26-07:00",
+            "resolution": "1080p",
+            "viewCount": 3628080905
+          },
+          {
+            "youtubeLinkID": "nfs8NYg7yQM",
+            "title": "Charlie Puth - Attention [Official Video]",
+            "thumbnail": "https://img.youtube.com/vi/nfs8NYg7yQM/maxresdefault.jpg",
+            "duration": "3:52",
+            "durationSec": 232,
+            "date": "2017-04-24T10:00:05-07:00",
+            "resolution": "1080p",
+            "viewCount": 1847107380
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "998387-ed-sheeran",
+        "name": "Ed Sheeran",
+        "genre": "Male",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/mDxoabaCvvIBGrtqsmLftCRFQoY.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mDxoabaCvvIBGrtqsmLftCRFQoY.jpg",
+        "biography": "Edward Christopher Sheeran (born 17 February 1991) is an English singer-songwriter. Born in Halifax, West Yorkshire, and raised in Framlingham, Suffolk, he began writing songs around the age of eleven. In early 2011, Sheeran independently released the extended play No.5 Collaborations Project. He signed with Asylum Records the same year.\n\nSheeran's debut album, + (\"Plus\") (2011), topped the UK Albums Chart and featured his breakout hit, \"The A Team\". His second studio album, × (\"Multiply\") (2014), became the second-best-selling album worldwide of 2015 and won the Brit Award for British Album of the Year. Its third single, \"Thinking Out Loud\", won two Grammy Awards, including Song of the Year. That same year, he established his own record label, Gingerbread Man Records.\n\nSheeran's third album, ÷ (\"Divide\") (2017), became the best-selling album worldwide of 2017 and charted ten top-10 singles on the UK singles chart. Its joint-lead singles, \"Shape of You\" and \"Castle on the Hill\", broke records in several countries by debuting in the top two positions on the charts, while its fourth single, \"Perfect\", reached number one in the US, Australia, and the UK. The world's best-selling artist of 2017, he was named the Global Recording Artist of the Year. His next albums, No.6 Collaborations Project (2019), = (\"Equals\") (2021) and − (\"Subtract\") (2023) each topped the charts in most major markets. During this period, he accumulated seven UK number-one singles: \"I Don't Care\", \"Beautiful People\", \"Take Me Back to London\", \"Bad Habits\", \"Shivers\", \"Merry Christmas\" and \"Eyes Closed\". He has since released the albums Autumn Variations (2023) and Play (2025) to varying critical and commercial success.\n\nSheeran has sold 200 million records worldwide, making him one of the world's best-selling music artists. He has 119 million RIAA-certified units in the US, and two of his albums are in the list of the best-selling albums in UK chart history. In December 2019, the Official Charts Company named him its artist of the decade, with the most combined success in the UK album and singles charts in the 2010s. As of September 2026, he is the fourth-most-followed artist on Spotify. Several of his tours are amongst the most-attended concert tours, and his ÷ Tour became the highest-grossing of all time in August 2019. An alumnus of the National Youth Theatre in London, Sheeran's acting roles include appearing in the 2019 film Yesterday, playing himself. In 2025, Time magazine listed him as one of the world's 100 most influential people.",
+        "birthday": "1991-02-17",
+        "placeOfBirth": "Halifax, West Yorkshire, England, UK",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLa7CLLcj4yb8",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "JGwWNGJdvx8",
+            "title": "Ed Sheeran - Shape of You (Official Music Video)",
+            "thumbnail": "https://img.youtube.com/vi/JGwWNGJdvx8/maxresdefault.jpg",
+            "duration": "4:24",
+            "durationSec": 264,
+            "date": "2017-01-30T02:57:50-08:00",
+            "resolution": "4K",
+            "viewCount": 6835549819
+          },
+          {
+            "youtubeLinkID": "2Vv-BfVoq4g",
+            "title": "Ed Sheeran - Perfect (Official Music Video)",
+            "thumbnail": "https://img.youtube.com/vi/2Vv-BfVoq4g/maxresdefault.jpg",
+            "duration": "4:42",
+            "durationSec": 282,
+            "date": "2017-11-09T03:04:14-08:00",
+            "resolution": "1080p",
+            "viewCount": 4253338637
+          },
+          {
+            "youtubeLinkID": "y83x7MgzWOA",
+            "title": "Ed Sheeran & Justin Bieber - I Don't Care [Official Music Video]",
+            "thumbnail": "https://img.youtube.com/vi/y83x7MgzWOA/maxresdefault.jpg",
+            "duration": "3:43",
+            "durationSec": 223,
+            "date": "2019-05-17T05:58:44-07:00",
+            "resolution": "1080p",
+            "viewCount": 661545868
+          },
+          {
+            "youtubeLinkID": "mj0XInqZMHY",
+            "title": "Ed Sheeran - Beautiful People (feat. Khalid) [Official Music Video]",
+            "thumbnail": "https://img.youtube.com/vi/mj0XInqZMHY/maxresdefault.jpg",
+            "duration": "3:48",
+            "durationSec": 228,
+            "date": "2019-06-28T00:00:05-07:00",
+            "resolution": "1080p",
+            "viewCount": 395403662
+          },
+          {
+            "youtubeLinkID": "JgDNFQ2RaLQ",
+            "title": "Ed Sheeran - Sapphire (Official Music Video)",
+            "thumbnail": "https://img.youtube.com/vi/JgDNFQ2RaLQ/maxresdefault.jpg",
+            "duration": "3:04",
+            "durationSec": 184,
+            "date": "2025-06-05T11:30:09-07:00",
+            "resolution": "4K",
+            "viewCount": 333216477
+          },
+          {
+            "youtubeLinkID": "UPOT2tgY9QQ",
+            "title": "Ed Sheeran - South of the Border (feat. Camila Cabello & Cardi B) [Official Music Video]",
+            "thumbnail": "https://img.youtube.com/vi/UPOT2tgY9QQ/maxresdefault.jpg",
+            "duration": "4:46",
+            "durationSec": 286,
+            "date": "2019-10-04T11:30:26-07:00",
+            "resolution": "1080p",
+            "viewCount": 285682515
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "1146050-zayn-malik",
+        "name": "Zayn Malik",
+        "genre": "Male",
+        "category": "International",
+        "customImage": null,
+        "profilePath": "/cbZQLps10ogcc4HhhPQlC5iZZFf.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cbZQLps10ogcc4HhhPQlC5iZZFf.jpg",
+        "biography": "Zain Javadd Malik (born 12 January 1993), who records mononymously as ZAYN, is an English singer and songwriter. In 2010, Malik auditioned as a solo artist for the British reality television music competition, \"The X Factor\". After being eliminated as a solo performer, Malik was brought back into the competition, along with Harry Styles, Niall Horan, Liam Payne, and Louis Tomlinson, to form the boy band 'One Direction'. During his time in the group, Malik and his bandmates released the albums Up All Night (2011), Take Me Home (2012), Midnight Memories (2013), and Four (2014). In March 2015, Malik's representative announced the singer's departure from the band.\n\nDescription above is from the Wikipedia article Zayn Malik, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+        "birthday": "1993-01-12",
+        "placeOfBirth": "Bradford, West Yorkshire, England, UK ",
+        "knownForDepartment": "Acting",
+        "youtubePlaylistId": "PLFp-flFug0RY",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "tt2k8PGm-TI",
+            "title": "ZAYN - Dusk Till Dawn (Official Video) ft. Sia",
+            "thumbnail": "https://img.youtube.com/vi/tt2k8PGm-TI/maxresdefault.jpg",
+            "duration": "5:38",
+            "durationSec": 338,
+            "date": "2017-09-07T05:00:09-07:00",
+            "resolution": "1080p",
+            "viewCount": 2439034763
+          },
+          {
+            "youtubeLinkID": "C_3d6GntKbk",
+            "title": "ZAYN - PILLOWTALK (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/C_3d6GntKbk/maxresdefault.jpg",
+            "duration": "3:27",
+            "durationSec": 207,
+            "date": "2016-01-28T21:01:00-08:00",
+            "resolution": "1080p",
+            "viewCount": 1307087025
           }
         ],
         "liveVideos": []
