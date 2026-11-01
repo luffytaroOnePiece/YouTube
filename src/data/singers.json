@@ -183,6 +183,30 @@
       "YoutubePlaylistID": "PLFp-flFug0RY",
       "LivePlaylistID": "",
       "Genre": "Male"
+    },
+    {
+      "name": "Adele",
+      "id": "449538-adele",
+      "customImage": null,
+      "YoutubePlaylistID": "PLdihSP4NlzVw",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Indila",
+      "id": "4101005-indila",
+      "customImage": null,
+      "YoutubePlaylistID": "PLWh_3WgU0JcI",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Halsey",
+      "id": "1997030-halsey",
+      "customImage": null,
+      "YoutubePlaylistID": "PLIr5CZezzluY",
+      "LivePlaylistID": "",
+      "Genre": "Female"
     }
   ],
   "Indian": [
