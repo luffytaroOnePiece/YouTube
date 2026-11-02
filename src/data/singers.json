@@ -281,6 +281,30 @@
       "YoutubePlaylistID": "PLBUsWVfFSOnM",
       "LivePlaylistID": "",
       "Genre": "Male"
+    },
+    {
+      "name": "Aditya Rikhari",
+      "id": "6167359-aditya-rikhari",
+      "customImage": null,
+      "YoutubePlaylistID": "PLf5TghQKVQ80",
+      "LivePlaylistID": "",
+      "Genre": "Male"
+    },
+    {
+      "name": "Shreya Ghoshal",
+      "id": "1932076-shreya-ghoshal",
+      "customImage": null,
+      "YoutubePlaylistID": "PLTTy-9Q3Lfjo",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Hanumankind",
+      "id": "3867424",
+      "customImage": null,
+      "YoutubePlaylistID": "PLKYe6lfhRbj4",
+      "LivePlaylistID": "",
+      "Genre": "Male"
     }
   ]
 }

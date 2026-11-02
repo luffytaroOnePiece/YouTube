@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02T03:37:39.229Z",
+  "lastUpdated": "2026-11-02T10:18:18.507Z",
   "singers": {
     "International": [
       {
@@ -2101,6 +2101,120 @@
             "date": "2026-08-24T08:06:36-07:00",
             "resolution": "4K",
             "viewCount": 107319548
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "6167359-aditya-rikhari",
+        "name": "Aditya Rikhari",
+        "genre": "Male",
+        "category": "Indian",
+        "customImage": null,
+        "profilePath": "",
+        "profileUrl": null,
+        "biography": "",
+        "birthday": "",
+        "placeOfBirth": "",
+        "knownForDepartment": "Sound",
+        "youtubePlaylistId": "PLf5TghQKVQ80",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "cDuuYdJYIGY",
+            "title": "Sahiba 8K Full Video Song | Aditya Rikhari | Ankita Chhetri | T-Series",
+            "thumbnail": "https://img.youtube.com/vi/cDuuYdJYIGY/maxresdefault.jpg",
+            "duration": "3:03",
+            "durationSec": 183,
+            "date": "2025-07-11T22:30:08-07:00",
+            "resolution": "8K",
+            "viewCount": 7943146
+          },
+          {
+            "youtubeLinkID": "MhXCj8E9CZU",
+            "title": "Aditya Rikhari - SAMJHO NA ( NASAMAJH )",
+            "thumbnail": "https://img.youtube.com/vi/MhXCj8E9CZU/maxresdefault.jpg",
+            "duration": "2:50",
+            "durationSec": 170,
+            "date": "2022-02-09T23:53:48-08:00",
+            "resolution": "1080p",
+            "viewCount": 139861368
+          },
+          {
+            "youtubeLinkID": "DxsDekHDKXo",
+            "title": "Aditya Rikhari - Paaro (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/DxsDekHDKXo/maxresdefault.jpg",
+            "duration": "3:38",
+            "durationSec": 218,
+            "date": "2024-03-25T22:30:02-07:00",
+            "resolution": "4K",
+            "viewCount": 104543513
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "1932076-shreya-ghoshal",
+        "name": "Shreya Ghoshal",
+        "genre": "Female",
+        "category": "Indian",
+        "customImage": null,
+        "profilePath": "/rTmgSXriOmd6TyQVFXvf3DctYXQ.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rTmgSXriOmd6TyQVFXvf3DctYXQ.jpg",
+        "biography": "Shreya Ghoshal was born on March 12, 1984 in Rawatbhata, Rajasthan, India. She is known for her work on 3 Idiots (2009), Raanjhanaa (2013) and My Name Is Khan (2010). She has been married to Shiladitya Mukhopadhyaya since February 5, 2015.",
+        "birthday": "1984-03-12",
+        "placeOfBirth": "Rawatbhata, Rajasthan, India",
+        "knownForDepartment": "Sound",
+        "youtubePlaylistId": "PLTTy-9Q3Lfjo",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "z5y8Clp_TdE",
+            "title": "KALYANI (with Shreya Ghoshal) ARJN | KDS | FIFTY4 | RONN | Kya Fitoor Door Raha Kyun JaayeNa Lyrical",
+            "thumbnail": "https://img.youtube.com/vi/z5y8Clp_TdE/maxresdefault.jpg",
+            "duration": "4:09",
+            "durationSec": 249,
+            "date": "2026-07-30T22:30:11-07:00",
+            "resolution": "1080p",
+            "viewCount": 103202261
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "3867424",
+        "name": "Hanumankind",
+        "genre": "Male",
+        "category": "Indian",
+        "customImage": null,
+        "profilePath": "/ydweL8tiG9eeN43vcsm0kKdBT1H.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ydweL8tiG9eeN43vcsm0kKdBT1H.jpg",
+        "biography": "Sooraj Cherukat (born 1992) known professionally as Hanumankind, is an Indian rapper, singer, songwriter, and actor from Kerala, India. He released his first single \"Daily Dose\" from his debut EP Kalari in 2019. He received mainstream popularity in India and internationally with his track \"Big Dawgs\", which features the Hyderabad-based artist and producer Kalmi.",
+        "birthday": "1992-10-17",
+        "placeOfBirth": "Malappuram, Kondotty, Kerala, India",
+        "knownForDepartment": "Sound",
+        "youtubePlaylistId": "PLKYe6lfhRbj4",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "MbJ72KO5khs",
+            "title": "Hanumankind - Run It Up ( Prod. By Kalmi ) | (Official Music Video)",
+            "thumbnail": "https://img.youtube.com/vi/MbJ72KO5khs/maxresdefault.jpg",
+            "duration": "3:14",
+            "durationSec": 194,
+            "date": "2025-03-06T21:52:06-08:00",
+            "resolution": "4K",
+            "viewCount": 73474882
+          },
+          {
+            "youtubeLinkID": "hOHKltAiKXQ",
+            "title": "Hanumankind, Kalmi - Hanumankind – Big Dawgs | Prod. Kalmi (Official Music Video) | Def Jam India",
+            "thumbnail": "https://img.youtube.com/vi/hOHKltAiKXQ/maxresdefault.jpg",
+            "duration": "3:55",
+            "durationSec": 235,
+            "date": "2024-07-09T22:41:01-07:00",
+            "resolution": "4K",
+            "viewCount": 325746508
           }
         ],
         "liveVideos": []
