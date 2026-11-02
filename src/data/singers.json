@@ -207,6 +207,62 @@
       "YoutubePlaylistID": "PLIr5CZezzluY",
       "LivePlaylistID": "",
       "Genre": "Female"
+    },
+    {
+      "name": "Bruno Mars",
+      "id": "969218-bruno-mars",
+      "customImage": null,
+      "YoutubePlaylistID": "PLWSiJis3a5T0",
+      "LivePlaylistID": "",
+      "Genre": "Male"
+    },
+    {
+      "name": "Cardi B",
+      "id": "1562344-cardi-b",
+      "customImage": null,
+      "YoutubePlaylistID": "PLSzJHzjwG4wE",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Doja Cat",
+      "id": "3006401-doja-cat",
+      "customImage": null,
+      "YoutubePlaylistID": "PLKwml-AY21Kw",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Becky G",
+      "id": "1529446-becky-g",
+      "customImage": null,
+      "YoutubePlaylistID": "PLUMt2ryMR-OU",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Natti Natasha",
+      "id": "3298459-natti-natasha",
+      "customImage": null,
+      "YoutubePlaylistID": "PLUuw0N0IqH-8",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Sia",
+      "id": "1136517-sia",
+      "customImage": null,
+      "YoutubePlaylistID": "PLCOvATiUkz8E",
+      "LivePlaylistID": "",
+      "Genre": "Female"
+    },
+    {
+      "name": "Zara Larsson",
+      "id": "1689254-zara-larsson",
+      "customImage": null,
+      "YoutubePlaylistID": "PLJiLEjn4gEK4",
+      "LivePlaylistID": "",
+      "Genre": "Female"
     }
   ],
   "Indian": [
