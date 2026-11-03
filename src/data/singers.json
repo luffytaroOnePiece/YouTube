@@ -305,6 +305,22 @@
       "YoutubePlaylistID": "PLKYe6lfhRbj4",
       "LivePlaylistID": "",
       "Genre": "Male"
+    },
+    {
+      "name": "Mitraz",
+      "id": "4488209-mitraz",
+      "customImage": null,
+      "YoutubePlaylistID": "PLGAKePAZozz8",
+      "LivePlaylistID": "",
+      "Genre": "Male"
+    },
+    {
+      "name": "Anuv Jain",
+      "id": "5040583-anuv-jain",
+      "customImage": null,
+      "YoutubePlaylistID": "PLZ9d3G3FUOQY",
+      "LivePlaylistID": "",
+      "Genre": "Male"
     }
   ]
 }

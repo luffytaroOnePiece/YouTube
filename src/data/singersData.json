@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02T10:18:18.507Z",
+  "lastUpdated": "2026-11-03T02:49:10.534Z",
   "singers": {
     "International": [
       {
@@ -2110,9 +2110,9 @@
         "name": "Aditya Rikhari",
         "genre": "Male",
         "category": "Indian",
-        "customImage": null,
+        "customImage": "https://raw.githubusercontent.com/Authormorgan6/singers/main/6167359-aditya-rikhari.webp",
         "profilePath": "",
-        "profileUrl": null,
+        "profileUrl": "https://raw.githubusercontent.com/Authormorgan6/singers/main/6167359-aditya-rikhari.webp",
         "biography": "",
         "birthday": "",
         "placeOfBirth": "",
@@ -2215,6 +2215,112 @@
             "date": "2024-07-09T22:41:01-07:00",
             "resolution": "4K",
             "viewCount": 325746508
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "4488209-mitraz",
+        "name": "Mitraz",
+        "genre": "Male",
+        "category": "Indian",
+        "customImage": null,
+        "profilePath": "",
+        "profileUrl": null,
+        "biography": "",
+        "birthday": "",
+        "placeOfBirth": "",
+        "knownForDepartment": "Sound",
+        "youtubePlaylistId": "PLGAKePAZozz8",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "xEALTVLxrDw",
+            "title": "MITRAZ - Akhiyaan (Official Music Video)",
+            "thumbnail": "https://img.youtube.com/vi/xEALTVLxrDw/maxresdefault.jpg",
+            "duration": "3:11",
+            "durationSec": 191,
+            "date": "2022-09-04T23:01:22-07:00",
+            "resolution": "4K",
+            "viewCount": 118846778
+          },
+          {
+            "youtubeLinkID": "5Z9oa3gMX5s",
+            "title": "MITRAZ - Gulaab (Official Audio)",
+            "thumbnail": "https://img.youtube.com/vi/5Z9oa3gMX5s/maxresdefault.jpg",
+            "duration": "2:50",
+            "durationSec": 170,
+            "date": "2022-11-17T22:59:54-08:00",
+            "resolution": "1080p",
+            "viewCount": 25790579
+          },
+          {
+            "youtubeLinkID": "r6LNuLH4skg",
+            "title": "MITRAZ - Nadiyon sa (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/r6LNuLH4skg/maxresdefault.jpg",
+            "duration": "2:44",
+            "durationSec": 164,
+            "date": "2023-05-12T23:00:11-07:00",
+            "resolution": "1080p",
+            "viewCount": 42596366
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "5040583-anuv-jain",
+        "name": "Anuv Jain",
+        "genre": "Male",
+        "category": "Indian",
+        "customImage": null,
+        "profilePath": "/s0HoOwc0SFAaf7n0OT3WMtol9im.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s0HoOwc0SFAaf7n0OT3WMtol9im.jpg",
+        "biography": "Sai Abhyankkar (born on 4 November 2004) is an Indian composer, playback singer and music producer who works primarily in Tamil cinema. Sai grew up immersed in music and trained in both vocals and instruments like keyboards, drums, and tabla. He broke through with the independent singles Katchi Sera (2024) and Aasa Kooda (2024) which were huge hits and helped cement his reputation as a fresh voice in the Tamil indie music scene.",
+        "birthday": "2004-11-04",
+        "placeOfBirth": "Chennai, Tamil Nadu, India",
+        "knownForDepartment": "Sound",
+        "youtubePlaylistId": "PLZ9d3G3FUOQY",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "41yIVNzGye8",
+            "title": "Anuv Jain - ANTARIKSH (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/41yIVNzGye8/maxresdefault.jpg",
+            "duration": "2:51",
+            "durationSec": 171,
+            "date": "2023-05-18T07:30:12-07:00",
+            "resolution": "4K",
+            "viewCount": 4196104
+          },
+          {
+            "youtubeLinkID": "ilNt2bikxDI",
+            "title": "Anuv Jain - JO TUM MERE HO (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/ilNt2bikxDI/maxresdefault.jpg",
+            "duration": "4:18",
+            "durationSec": 258,
+            "date": "2024-08-01T07:30:08-07:00",
+            "resolution": "4K",
+            "viewCount": 476037220
+          },
+          {
+            "youtubeLinkID": "gJLVTKhTnog",
+            "title": "Anuv Jain - HUSN (Official Video)",
+            "thumbnail": "https://img.youtube.com/vi/gJLVTKhTnog/maxresdefault.jpg",
+            "duration": "4:00",
+            "durationSec": 240,
+            "date": "2023-11-30T06:30:08-08:00",
+            "resolution": "4K",
+            "viewCount": 301540968
+          },
+          {
+            "youtubeLinkID": "SmaY7RfBgas",
+            "title": "Anuv Jain - GUL (Studio)",
+            "thumbnail": "https://img.youtube.com/vi/SmaY7RfBgas/maxresdefault.jpg",
+            "duration": "3:45",
+            "durationSec": 225,
+            "date": "2021-07-15T07:30:11-07:00",
+            "resolution": "4K",
+            "viewCount": 80283170
           }
         ],
         "liveVideos": []
