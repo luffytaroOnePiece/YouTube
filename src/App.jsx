@@ -655,6 +655,11 @@ function App() {
                       setIsSearchFocused(false);
                       document.getElementById("search-input")?.blur();
                     }
+                  } else if (e.key === "Enter" && showYouTube) {
+                    e.preventDefault();
+                    setYouTubeQuery(searchQuery);
+                    setIsSearchFocused(false);
+                    document.getElementById("search-input")?.blur();
                   }
                 }}
                 autoComplete="off"

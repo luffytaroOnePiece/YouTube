@@ -1,4 +1,11 @@
-import { CACHE_TTL_MS } from './cacheConfig';
+import {
+  getCachedSearch,
+  setCachedSearch,
+  getCachedVideoDetails,
+  setCachedVideoDetails,
+  clearAllYouTubeCache,
+  getCacheStats,
+} from './youtubeCache';
 
 const YOUTUBE_API_KEY =
   import.meta.env.VITE_YOUTUBE_API_KEY ||
@@ -6,25 +13,7 @@ const YOUTUBE_API_KEY =
 
 const BASE_URL = 'https://www.googleapis.com/youtube/v3';
 
-// ─── Cache ───────────────────────────────────────────────────────────────────
-const youtubeCache = new Map(); // key → { data, timestamp }
-
-const getCached = (key) => {
-  const entry = youtubeCache.get(key);
-  if (!entry) return null;
-  if (Date.now() - entry.timestamp > CACHE_TTL_MS) {
-    youtubeCache.delete(key);
-    return null;
-  }
-  return entry.data;
-};
-
-const setCache = (key, data) => {
-  youtubeCache.set(key, { data, timestamp: Date.now() });
-};
-
-/** Clear in-memory YouTube cache */
-export const clearYouTubeCache = () => youtubeCache.clear();
+export { clearAllYouTubeCache, getCacheStats };
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 export function decodeHtmlEntities(str) {
@@ -72,48 +61,59 @@ export function formatViewCount(num) {
 
 /**
  * Fetch video details (duration, definition, views) in batch for given IDs
+ * Leverages persistent multi-tier video cache to query ONLY missing IDs!
  */
 export async function getVideoDetails(videoIds) {
   if (!videoIds || videoIds.length === 0) return {};
-  const idsStr = Array.isArray(videoIds) ? videoIds.join(',') : videoIds;
-  const url = new URL(`${BASE_URL}/videos`);
-  url.search = new URLSearchParams({
-    part: 'contentDetails,statistics,snippet',
-    id: idsStr,
-    key: YOUTUBE_API_KEY,
-  }).toString();
+  const ids = Array.isArray(videoIds) ? videoIds : [videoIds];
 
-  const cacheKey = url.toString();
-  const cached = getCached(cacheKey);
-  if (cached) return cached;
+  // 1. Check persistent video details cache
+  const { cachedMap, missingIds } = getCachedVideoDetails(ids);
+  if (missingIds.length === 0) {
+    return cachedMap;
+  }
 
+  // 2. Fetch ONLY the missing IDs from YouTube API
   try {
+    const url = new URL(`${BASE_URL}/videos`);
+    url.search = new URLSearchParams({
+      part: 'contentDetails,statistics,snippet',
+      id: missingIds.join(','),
+      key: YOUTUBE_API_KEY,
+    }).toString();
+
     const res = await fetch(url.toString());
     if (!res.ok) {
       console.warn('YouTube Video Details API Error:', res.status, res.statusText);
-      return {};
+      return cachedMap;
     }
+
     const data = await res.json();
-    const map = {};
+    const fetchedMap = {};
     (data.items || []).forEach((item) => {
-      map[item.id] = item;
+      fetchedMap[item.id] = item;
     });
-    setCache(cacheKey, map);
-    return map;
+
+    // 3. Store newly fetched items in persistent video cache (persists for 7 days)
+    setCachedVideoDetails(fetchedMap);
+
+    return { ...cachedMap, ...fetchedMap };
   } catch (err) {
-    console.warn('Failed to fetch video details:', err);
-    return {};
+    console.warn('Failed to fetch missing video details:', err);
+    return cachedMap;
   }
 }
 
 /**
- * Search YouTube videos
+ * Search YouTube videos with Multi-Tier Persistent Caching
+ * Saves 100 quota units on every cache hit
  * @param {Object} options
  * @param {string} options.query - Search keywords
  * @param {number} [options.maxResults=24] - Max items to return
  * @param {string} [options.pageToken=''] - Pagination pageToken
  * @param {string} [options.order='relevance'] - 'relevance' | 'date' | 'viewCount' | 'rating'
  * @param {string} [options.videoDuration='any'] - 'any' | 'short' | 'medium' | 'long'
+ * @param {boolean} [options.forceRefresh=false] - Bypass cache and fetch fresh results
  */
 export async function searchYouTubeVideos({
   query,
@@ -121,12 +121,35 @@ export async function searchYouTubeVideos({
   pageToken = '',
   order = 'relevance',
   videoDuration = 'any',
+  forceRefresh = false,
 } = {}) {
   const q = (query || '').trim();
   if (!q) {
-    return { videos: [], nextPageToken: null, totalResults: 0 };
+    return { videos: [], nextPageToken: null, totalResults: 0, fromCache: false };
   }
 
+  const cacheParams = {
+    query: q,
+    maxResults,
+    pageToken,
+    order,
+    videoDuration,
+  };
+
+  // 1. Check persistent search cache (survives refreshes & restarts)
+  if (!forceRefresh) {
+    const cached = getCachedSearch(cacheParams);
+    if (cached) {
+      console.debug(`[YouTube Search Cache HIT: Saved 100 API Credits]`, q);
+      return {
+        ...cached.data,
+        fromCache: true,
+        cachedAt: cached.cachedAt,
+      };
+    }
+  }
+
+  // 2. Query YouTube Data API v3
   const url = new URL(`${BASE_URL}/search`);
   const params = {
     part: 'snippet',
@@ -141,13 +164,6 @@ export async function searchYouTubeVideos({
   if (videoDuration && videoDuration !== 'any') params.videoDuration = videoDuration;
 
   url.search = new URLSearchParams(params).toString();
-  const cacheKey = url.toString();
-
-  const cached = getCached(cacheKey);
-  if (cached) {
-    console.debug(`[YouTube Cache HIT] ${cacheKey}`);
-    return cached;
-  }
 
   try {
     const response = await fetch(url.toString());
@@ -164,7 +180,7 @@ export async function searchYouTubeVideos({
       .map((item) => item.id?.videoId)
       .filter(Boolean);
 
-    // Hydrate with video duration, definition, views
+    // Hydrate video details using persistent cache
     let detailsMap = {};
     if (videoIds.length > 0) {
       try {
@@ -220,9 +236,12 @@ export async function searchYouTubeVideos({
       nextPageToken: data.nextPageToken || null,
       prevPageToken: data.prevPageToken || null,
       totalResults: data.pageInfo?.totalResults || videos.length,
+      fromCache: false,
     };
 
-    setCache(cacheKey, result);
+    // Save to persistent multi-tier cache
+    setCachedSearch(cacheParams, result);
+
     return result;
   } catch (error) {
     console.error('YouTube search request failed:', error);
