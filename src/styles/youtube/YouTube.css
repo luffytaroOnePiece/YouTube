@@ -1,0 +1,412 @@
+/* ═══════════════════════════════════════════════════════════════
+   YouTube Live Search Section — Dark Theme Styles
+   Matches the design system of Movies & Singers sections
+   ═══════════════════════════════════════════════════════════════ */
+
+.youtube-section {
+  padding: 16px 0 50px;
+  max-width: 100%;
+}
+
+.youtube-section__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.youtube-section__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(255, 0, 51, 0.12);
+  color: #ff0033;
+}
+
+.youtube-section__title-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.youtube-section__title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  background: linear-gradient(180deg, #ffffff 0%, #e4e4e7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.youtube-section__subtitle {
+  font-size: 0.8rem;
+  color: var(--text-muted, #717171);
+  margin-top: 2px;
+}
+
+.youtube-section__line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 51, 0.3) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  margin-left: 12px;
+}
+
+/* ── Search Bar & Filter Controls ───────────────────────────── */
+.youtube-search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: rgba(24, 24, 27, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.youtube-search-bar__input-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.youtube-search-bar__input-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.youtube-search-bar__input-icon {
+  position: absolute;
+  left: 14px;
+  color: #a1a1aa;
+  pointer-events: none;
+}
+
+.youtube-search-bar__input {
+  width: 100%;
+  height: 46px;
+  padding: 0 42px 0 44px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.youtube-search-bar__input:focus {
+  border-color: #ff0033;
+  box-shadow: 0 0 0 3px rgba(255, 0, 51, 0.2);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.youtube-search-bar__input::placeholder {
+  color: #71717a;
+}
+
+.youtube-search-bar__clear {
+  position: absolute;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: #a1a1aa;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-search-bar__clear:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.youtube-search-bar__submit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 46px;
+  padding: 0 20px;
+  background: linear-gradient(135deg, #ff0033 0%, #cc0029 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.youtube-search-bar__submit:hover:not(:disabled) {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(255, 0, 51, 0.4);
+}
+
+.youtube-search-bar__submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Filter Row & Options ──────────────────────────────────── */
+.youtube-search-bar__filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.youtube-search-bar__chips {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: 1;
+}
+
+.youtube-search-bar__chip-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #71717a;
+  font-weight: 600;
+  margin-right: 2px;
+}
+
+.youtube-search-chip {
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #d4d4d8;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.youtube-search-chip:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.youtube-search-bar__select-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.youtube-filter-select {
+  background: #18181b;
+  color: #e4e4e7;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.youtube-filter-select:focus {
+  border-color: #ff0033;
+}
+
+/* ── Status Banners ────────────────────────────────────────── */
+.youtube-section__status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+}
+
+.youtube-section__error {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #f87171;
+  padding: 14px 18px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+}
+
+.youtube-section__retry-btn {
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-left: auto;
+}
+
+.youtube-section__retry-btn:hover {
+  background: rgba(239, 68, 68, 0.3);
+}
+
+/* ── Loading Skeleton Grid ─────────────────────────────────── */
+.youtube-skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.youtube-skeleton-card {
+  background: #18181b;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.youtube-skeleton-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  background-size: 200% 100%;
+  animation: skeletonPulse 1.5s infinite;
+}
+
+.youtube-skeleton-info {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.youtube-skeleton-line {
+  height: 12px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.youtube-skeleton-line--title {
+  width: 85%;
+  height: 14px;
+}
+
+.youtube-skeleton-line--sub {
+  width: 45%;
+}
+
+@keyframes skeletonPulse {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ── Load More ─────────────────────────────────────────────── */
+.youtube-section__load-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.youtube-section__load-more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.youtube-section__load-more:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+.youtube-section__load-more:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ── Empty State ───────────────────────────────────────────── */
+.youtube-section__empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #71717a;
+}
+
+.youtube-section__empty-icon {
+  margin-bottom: 12px;
+  color: #52525b;
+}
+
+.youtube-section__empty-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e4e4e7;
+  margin-bottom: 6px;
+}
+
+/* ── Header Dropdown YouTube Option ────────────────────────── */
+.search-dropdown__yt-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 0, 51, 0.06);
+  color: #ff4d6d;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.search-dropdown__yt-action:hover {
+  background: rgba(255, 0, 51, 0.15);
+  color: #ff758f;
+}
+
+.search-dropdown__yt-badge {
+  margin-left: auto;
+  font-size: 0.72rem;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: rgba(255, 0, 51, 0.2);
+  color: #ff0033;
+  font-weight: 600;
+}

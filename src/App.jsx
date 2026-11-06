@@ -7,6 +7,7 @@ import AnalyticsDashboard from "./components/AnalyticsDashboard";
 import AdvancedSearchPanel from "./components/AdvancedSearchPanel";
 import MoviesSection from "./components/movies/MoviesSection";
 import SingersSection from "./components/singers/SingersSection";
+import YouTubeSection from "./components/youtube/YouTubeSection";
 import { useUrlFilters } from "./hooks/useUrlFilters";
 import videosData from "./data/videos.json";
 import favData from "./data/fav.json";
@@ -17,6 +18,7 @@ import singersData from "./data/singersData.json";
 import "./styles/App.css";
 import "./styles/movies/Movies.css";
 import "./styles/singers/Singers.css";
+import "./styles/youtube/YouTube.css";
 
 const INITIAL_FILTERS = {
   group: "All",
@@ -174,6 +176,8 @@ function App() {
   const [showMovies, setShowMovies] = useState(false);
   const [showActors, setShowActors] = useState(false);
   const [showSingers, setShowSingers] = useState(false);
+  const [showYouTube, setShowYouTube] = useState(false);
+  const [youTubeQuery, setYouTubeQuery] = useState("");
   const [playerMode, setPlayerMode] = useState("normal");
   const [isMonitorSize, setIsMonitorSize] = useState(false);
   const [isMiniPlayer, setIsMiniPlayer] = useState(false);
@@ -490,6 +494,8 @@ function App() {
     setShuffleActive(false);
     setIsFavoritesMode(false);
     setActiveTag(null);
+    setShowYouTube(false);
+    setYouTubeQuery("");
   }, [setFilters]);
 
   const handleToggleShuffle = useCallback(() => {
@@ -804,6 +810,26 @@ function App() {
                           <kbd className="search-dropdown__footer-kbd">↵</kbd>
                         </div>
                       )}
+
+                      <div
+                        className="search-dropdown__yt-action"
+                        onMouseDown={() => {
+                          setYouTubeQuery(searchQuery);
+                          setShowYouTube(true);
+                          setShowMovies(false);
+                          setShowActors(false);
+                          setShowSingers(false);
+                          setShowAnalytics(false);
+                          setShowScripts(false);
+                          setIsSearchFocused(false);
+                        }}
+                      >
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                        <span>Search YouTube for "{searchQuery}"</span>
+                        <span className="search-dropdown__yt-badge">Live API</span>
+                      </div>
                     </>
                   ) : (
                     <div className="search-dropdown__empty">
@@ -825,8 +851,28 @@ function App() {
                         No Results
                       </span>
                       <span className="search-dropdown__empty-subtitle">
-                        Try a different search term
+                        Try searching YouTube directly:
                       </span>
+                      <div
+                        className="search-dropdown__yt-action"
+                        style={{ marginTop: '12px', borderRadius: '8px' }}
+                        onMouseDown={() => {
+                          setYouTubeQuery(searchQuery);
+                          setShowYouTube(true);
+                          setShowMovies(false);
+                          setShowActors(false);
+                          setShowSingers(false);
+                          setShowAnalytics(false);
+                          setShowScripts(false);
+                          setIsSearchFocused(false);
+                        }}
+                      >
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                        <span>Search YouTube for "{searchQuery}"</span>
+                        <span className="search-dropdown__yt-badge">Live API</span>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -860,6 +906,7 @@ function App() {
                   setShowMovies((prev) => !prev);
                   setShowActors(false);
                   setShowSingers(false);
+                  setShowYouTube(false);
                   setShowAnalytics(false);
                   setShowScripts(false);
                 }}
@@ -895,6 +942,7 @@ function App() {
                     setShowActors((prev) => !prev);
                     setShowMovies(false);
                     setShowSingers(false);
+                    setShowYouTube(false);
                     setShowAnalytics(false);
                     setShowScripts(false);
                   }}
@@ -916,6 +964,7 @@ function App() {
                   setShowSingers((prev) => !prev);
                   setShowMovies(false);
                   setShowActors(false);
+                  setShowYouTube(false);
                   setShowAnalytics(false);
                   setShowScripts(false);
                 }}
@@ -928,6 +977,25 @@ function App() {
                   <circle cx="18" cy="16" r="3"></circle>
                 </svg>
                 <span>Singers</span>
+              </button>
+
+              <button
+                className="header__analytics-btn"
+                onClick={() => {
+                  setShowYouTube((prev) => !prev);
+                  setShowMovies(false);
+                  setShowActors(false);
+                  setShowSingers(false);
+                  setShowAnalytics(false);
+                  setShowScripts(false);
+                }}
+                title="Search YouTube"
+                style={showYouTube ? { background: 'var(--accent-soft)', color: 'var(--accent)' } : {}}
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+                <span>YouTube</span>
               </button>
 
               <button
@@ -995,7 +1063,7 @@ function App() {
         </header>
 
         {/* Filter Bar */}
-        {!showMovies && !showActors && !showSingers && (
+        {!showMovies && !showActors && !showSingers && !showYouTube && (
           <FilterBar
             groups={groups}
             groupMeta={groupMeta}
@@ -1032,7 +1100,7 @@ function App() {
       </div>
 
       {/* Home View: Latest Videos */}
-      {isHomeView && !showMovies && !showActors && !showSingers && latestVideos.length > 0 && (
+      {isHomeView && !showMovies && !showActors && !showSingers && !showYouTube && latestVideos.length > 0 && (
         <section className="home-section">
           <div className="home-section__header">
             <span className="home-section__title">Recently Added</span>
@@ -1054,7 +1122,7 @@ function App() {
       )}
 
       {/* Home View: Movies Section */}
-      {isHomeView && !showMovies && !showActors && !showSingers && (
+      {isHomeView && !showMovies && !showActors && !showSingers && !showYouTube && (
         <MoviesSection
           moviesData={moviesData}
           onVideoSelect={handleVideoSelect}
@@ -1063,7 +1131,7 @@ function App() {
       )}
 
       {/* Home View: Singers Section */}
-      {isHomeView && !showMovies && !showActors && !showSingers && (
+      {isHomeView && !showMovies && !showActors && !showSingers && !showYouTube && (
         <SingersSection
           singersData={singersData}
           onVideoSelect={handleVideoSelect}
@@ -1072,7 +1140,7 @@ function App() {
       )}
 
       {/* Dedicated Movies View */}
-      {showMovies && !showActors && !showSingers && (
+      {showMovies && !showActors && !showSingers && !showYouTube && (
         <MoviesSection
           moviesData={moviesData}
           onVideoSelect={handleVideoSelect}
@@ -1091,7 +1159,7 @@ function App() {
       )}
 
       {/* Dedicated Singers View */}
-      {showSingers && (
+      {showSingers && !showYouTube && (
         <SingersSection
           singersData={singersData}
           onVideoSelect={handleVideoSelect}
@@ -1099,8 +1167,24 @@ function App() {
         />
       )}
 
+      {/* Dedicated YouTube Search View */}
+      {showYouTube && (
+        <YouTubeSection
+          initialQuery={youTubeQuery || searchQuery}
+          onVideoSelect={handleVideoSelect}
+          gridColumns={gridColumns}
+          isLocal={isLocal}
+          favorites={favorites}
+          onToggleFav={handleToggleFav}
+          tags={tags}
+          onToggleTag={handleToggleTag}
+          ratings={ratings}
+          onSetRating={handleSetRating}
+        />
+      )}
+
       {/* Filtered View */}
-      {!isHomeView && !showMovies && !showActors && !showSingers && (
+      {!isHomeView && !showMovies && !showActors && !showSingers && !showYouTube && (
         <VideoGrid
           videos={filteredVideos}
           onVideoSelect={handleVideoSelect}
