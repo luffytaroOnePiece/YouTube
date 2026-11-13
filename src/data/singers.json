@@ -107,7 +107,7 @@
     {
       "name": "Billie Eilish",
       "id": "2413513-billie-eilish",
-      "customImage": null,
+      "customImage": "https://raw.githubusercontent.com/Authormorgan6/singers/main/2413513-billie-eilish.webp",
       "YoutubePlaylistID": "PLAhlQQ__RzEM",
       "LivePlaylistID": "",
       "Genre": "Female"
@@ -219,7 +219,7 @@
     {
       "name": "Cardi B",
       "id": "1562344-cardi-b",
-      "customImage": null,
+      "customImage": "https://raw.githubusercontent.com/Authormorgan6/singers/main/1562344-cardi-b.webp",
       "YoutubePlaylistID": "PLSzJHzjwG4wE",
       "LivePlaylistID": "",
       "Genre": "Female"
@@ -227,7 +227,7 @@
     {
       "name": "Doja Cat",
       "id": "3006401-doja-cat",
-      "customImage": null,
+      "customImage": "https://raw.githubusercontent.com/Authormorgan6/singers/main/3006401-doja-cat.webp",
       "YoutubePlaylistID": "PLKwml-AY21Kw",
       "LivePlaylistID": "",
       "Genre": "Female"
