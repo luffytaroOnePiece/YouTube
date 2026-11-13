@@ -263,7 +263,15 @@ async function fetchSingers() {
                 customImage,
                 profileUrl,
                 genre: singer.Genre || cached.genre,
-                category
+                category,
+                // If singer has no TMDB id, clear any stale bio fields from cache
+                ...(!tmdbId ? {
+                  id: singer.id,
+                  biography: '',
+                  birthday: '',
+                  placeOfBirth: '',
+                  knownForDepartment: '',
+                } : {}),
               };
             }
           }

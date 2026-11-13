@@ -316,8 +316,8 @@
     },
     {
       "name": "Anuv Jain",
-      "id": "5040583-anuv-jain",
-      "customImage": null,
+      "id": null,
+      "customImage": "https://raw.githubusercontent.com/Authormorgan6/singers/main/anuv-jain.webp",
       "YoutubePlaylistID": "PLZ9d3G3FUOQY",
       "LivePlaylistID": "",
       "Genre": "Male"
