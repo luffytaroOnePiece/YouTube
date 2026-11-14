@@ -2,6 +2,7 @@ import React, { useEffect, useCallback, useState, useRef } from 'react';
 import YouTube from 'react-youtube';
 import RelatedPanel from './RelatedPanel';
 import QueuePanel from './QueuePanel';
+import StoryPoster from './StoryPoster';
 
 function formatDate(dateStr) {
   if (!dateStr) return '';
@@ -51,6 +52,7 @@ export default function Player({
   const wasFullscreenRef = useRef(false); // tracks fullscreen intent across autoplay
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [showStoryPoster, setShowStoryPoster] = useState(false);
 
   // Fullscreen toggle
   const enterFullscreen = useCallback(() => {
@@ -203,6 +205,20 @@ export default function Player({
           <div className="player-modal__header">
             <h2 className="player-modal__title">{video.title}</h2>
             <div className="player-modal__actions">
+              {!isMiniPlayer && (
+                <button
+                  className="player-modal__btn player-modal__btn--story"
+                  onClick={() => setShowStoryPoster(true)}
+                  title="Create Instagram Story Poster"
+                >
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                  </svg>
+                  Story Poster
+                </button>
+              )}
               {!isMiniPlayer && (
                 <button
                   className="player-modal__btn"
@@ -392,6 +408,9 @@ export default function Player({
           </div>
         )}
       </div>
+      {showStoryPoster && (
+        <StoryPoster video={video} onClose={() => setShowStoryPoster(false)} />
+      )}
     </div>
   );
 }
