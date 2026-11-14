@@ -329,6 +329,14 @@
       "YoutubePlaylistID": "PLR4jtUFJ7VVM",
       "LivePlaylistID": "",
       "Genre": "Male"
+    },
+    {
+      "name": "Nora Fatehi",
+      "id": "1488785-nora-fatehi",
+      "customImage": null,
+      "YoutubePlaylistID": "PLeOqBlBBbD2Y",
+      "LivePlaylistID": "",
+      "Genre": "Female"
     }
   ]
 }
