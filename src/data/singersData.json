@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13T15:47:02.982Z",
+  "lastUpdated": "2026-11-14T08:31:44.670Z",
   "singers": {
     "International": [
       {
@@ -2177,6 +2177,16 @@
             "date": "2026-07-30T22:30:11-07:00",
             "resolution": "1080p",
             "viewCount": 103202261
+          },
+          {
+            "youtubeLinkID": "OzI9M74IfR0",
+            "title": "Yimmy Yimmy - Tayc | Shreya Ghoshal | Jacqueline Fernandez | Rajat N | Rana | Nyadjiko | Anshul Garg",
+            "thumbnail": "https://img.youtube.com/vi/OzI9M74IfR0/maxresdefault.jpg",
+            "duration": "3:36",
+            "durationSec": 216,
+            "date": "2024-03-07T21:30:07-08:00",
+            "resolution": "4K",
+            "viewCount": 300163626
           }
         ],
         "liveVideos": []
@@ -2321,6 +2331,84 @@
             "date": "2021-07-15T07:30:11-07:00",
             "resolution": "4K",
             "viewCount": 80283170
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "2315636-badshah",
+        "name": "Badshah",
+        "genre": "Male",
+        "category": "Indian",
+        "customImage": null,
+        "profilePath": "/kPYZ56EGciSLe9nMVn5UaAZqGHD.jpg",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kPYZ56EGciSLe9nMVn5UaAZqGHD.jpg",
+        "biography": "From Wikipedia, the free encyclopedia\n\nAditya Prateek Singh Sisodia, better known by his stage name Badshah, is an Indian rap-music composer rapper and singer known for his Hindi, Haryanvi, and Punjabi songs. He started his career in 2006 alongside Yo Yo Honey Singh in his band Mafia Mundeer.",
+        "birthday": "1985-11-19",
+        "placeOfBirth": "New Delhi, Delhi, India",
+        "knownForDepartment": "Sound",
+        "youtubePlaylistId": "PLR4jtUFJ7VVM",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "EgXkduRe9ZU",
+            "title": "Mahiya (Official Music Video) Badshah x Shreya Ghoshal - Mahiya ft. Avneet Kaur",
+            "thumbnail": "https://img.youtube.com/vi/EgXkduRe9ZU/maxresdefault.jpg",
+            "duration": "2:35",
+            "durationSec": 155,
+            "date": "2026-11-03T21:17:02-08:00",
+            "resolution": "4K",
+            "viewCount": 73078832
+          },
+          {
+            "youtubeLinkID": "mvCWGL_r-Zg",
+            "title": "Badshah - Gone Girl (लड़की ख़राब) | Official Music Video | Payal Dev | Sakshi Vaidya",
+            "thumbnail": "https://img.youtube.com/vi/mvCWGL_r-Zg/maxresdefault.jpg",
+            "duration": "3:15",
+            "durationSec": 195,
+            "date": "2023-08-07T22:30:10-07:00",
+            "resolution": "4K",
+            "viewCount": 179063593
+          },
+          {
+            "youtubeLinkID": "EYsYY_SfX0A",
+            "title": "Badshah - Jugnu (8K Music Video) | Nikhita Gandhi | Akanksha Sharma",
+            "thumbnail": "https://img.youtube.com/vi/EYsYY_SfX0A/maxresdefault.jpg",
+            "duration": "3:55",
+            "durationSec": 235,
+            "date": "2025-09-17T22:30:03-07:00",
+            "resolution": "8K",
+            "viewCount": 1314913
+          },
+          {
+            "youtubeLinkID": "muv8OvEZiSo",
+            "title": "She Move It Like | Official 4K Video | Badshah | Warina Hussain | ONE Album | 🎶🎥💃 | #viral",
+            "thumbnail": "https://img.youtube.com/vi/muv8OvEZiSo/maxresdefault.jpg",
+            "duration": "3:05",
+            "durationSec": 185,
+            "date": "2023-11-22T22:00:30-08:00",
+            "resolution": "4K",
+            "viewCount": 3401582
+          },
+          {
+            "youtubeLinkID": "gU3czqYTpVE",
+            "title": "Paani Paani - 8K Video | BADSHAH | Jacqueline Fernandez | Aastha Gill",
+            "thumbnail": "https://img.youtube.com/vi/gU3czqYTpVE/maxresdefault.jpg",
+            "duration": "2:59",
+            "durationSec": 179,
+            "date": "2025-06-19T21:30:24-07:00",
+            "resolution": "8K",
+            "viewCount": 4331402
+          },
+          {
+            "youtubeLinkID": "t-C29iYLfak",
+            "title": "Badshah - Genda Phool | Jacqueline Fernandez | Payal Dev | All-time Hit Anthem | 4K",
+            "thumbnail": "https://img.youtube.com/vi/t-C29iYLfak/maxresdefault.jpg",
+            "duration": "2:52",
+            "durationSec": 172,
+            "date": "2024-03-15T06:30:33-07:00",
+            "resolution": "4K",
+            "viewCount": 31005041
           }
         ],
         "liveVideos": []

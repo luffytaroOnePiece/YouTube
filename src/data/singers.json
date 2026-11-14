@@ -321,6 +321,14 @@
       "YoutubePlaylistID": "PLZ9d3G3FUOQY",
       "LivePlaylistID": "",
       "Genre": "Male"
+    },
+    {
+      "name": "Badshah",
+      "id": "2315636-badshah",
+      "customImage": null,
+      "YoutubePlaylistID": "PLR4jtUFJ7VVM",
+      "LivePlaylistID": "",
+      "Genre": "Male"
     }
   ]
 }
