@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-14T08:45:57.325Z",
+  "lastUpdated": "2026-11-16T04:27:11.019Z",
   "movies": {
     "148284": {
       "tmdbId": 148284,
@@ -1610,40 +1610,40 @@
       "language": "Hindi",
       "year": 2026,
       "releaseDate": "2026-09-25",
-      "overview": "A rational urban man defies his ancestral forbidden forest & awakens a divine goddess, only to realise that some powers exist beyond logic & he must rise as the village’s only saviour to protect his people from annihilation.",
+      "overview": "A rational urban man defies his ancestral forbidden forest and awakens a divine goddess, only to realise that not only do some powers exist beyond logic but he must rise as the village’s only saviour to protect his people from annihilation.",
       "genres": [
         "Action",
         "Adventure",
         "Thriller"
       ],
-      "runtime": 0,
-      "voteAverage": 0,
-      "voteCount": 0,
-      "posterPath": "/n0TSVS0saO1bJy8DAssE43G7pBE.jpg",
+      "runtime": 136,
+      "voteAverage": 7.909,
+      "voteCount": 22,
+      "posterPath": "/fygsmzrKBGV3O4ky6l26wKF8QBA.jpg",
       "backdropPath": "/rlOz3ZMwtIyvZB9O4btHASVJjI1.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/n0TSVS0saO1bJy8DAssE43G7pBE.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/fygsmzrKBGV3O4ky6l26wKF8QBA.jpg",
       "backdropUrl": "https://image.tmdb.org/t/p/original/rlOz3ZMwtIyvZB9O4btHASVJjI1.jpg",
       "youtubePlaylistId": "PLGtCcc3BkObw",
       "videos": [
         {
-          "youtubeLinkID": "1IKsJiMLGu0",
-          "title": "Samjho Na - THE VVAAN | Sidharth Malhotra & Tamannaah | Jubin Nautiyal, Tanishk B, Suvarna, Manoj M",
-          "thumbnail": "https://img.youtube.com/vi/1IKsJiMLGu0/maxresdefault.jpg",
-          "duration": "4:24",
-          "durationSec": 264,
-          "date": "2026-09-03T05:31:53-07:00",
+          "youtubeLinkID": "jewBKHdHERA",
+          "title": "Chhathi Maiya - Palak Muchhal (Full Video) | THE VVAAN | Sidharth Malhotra & Tamannaah | Vishal M",
+          "thumbnail": "https://img.youtube.com/vi/jewBKHdHERA/maxresdefault.jpg",
+          "duration": "5:14",
+          "durationSec": 314,
+          "date": "2026-10-30T02:30:04-07:00",
           "resolution": "4K",
-          "viewCount": 34185941
+          "viewCount": 3032693
         },
         {
-          "youtubeLinkID": "FCRb4kjnRx4",
-          "title": "Chhathi Maiya - The VVAAN | Sidharth Malhotra & Tamannaah | Vishal Mishra | Kaushal K | Chinni P",
-          "thumbnail": "https://img.youtube.com/vi/FCRb4kjnRx4/maxresdefault.jpg",
-          "duration": "3:31",
-          "durationSec": 211,
-          "date": "2026-09-10T00:41:02-07:00",
+          "youtubeLinkID": "1c1GCjb2wT4",
+          "title": "Samjho Na - Full Video | THE VVAAN | Sidharth Malhotra & Tamannaah | Jubin Nautiyal, Tanishk Bagchi",
+          "thumbnail": "https://img.youtube.com/vi/1c1GCjb2wT4/maxresdefault.jpg",
+          "duration": "4:23",
+          "durationSec": 263,
+          "date": "2026-10-28T02:30:00-07:00",
           "resolution": "4K",
-          "viewCount": 47027347
+          "viewCount": 414196
         },
         {
           "youtubeLinkID": "W9mU_iKY0KI",
@@ -1652,8 +1652,18 @@
           "duration": "2:32",
           "durationSec": 152,
           "date": "2026-09-21T02:30:04-07:00",
+          "resolution": "1080p",
+          "viewCount": 30133855
+        },
+        {
+          "youtubeLinkID": "5Mk6bi925LY",
+          "title": "Thummak Thummak - Full Video | THE VVAAN | Sidharth Malhotra & Tamannaah | Dev Negi, Akasa, Tanishk",
+          "thumbnail": "https://img.youtube.com/vi/5Mk6bi925LY/maxresdefault.jpg",
+          "duration": "2:29",
+          "durationSec": 149,
+          "date": "2026-11-13T18:30:34-08:00",
           "resolution": "4K",
-          "viewCount": 10044741
+          "viewCount": 264739
         }
       ]
     },
@@ -2253,59 +2263,6 @@
         }
       ]
     },
-    "1112426-2": {
-      "tmdbId": 1112426,
-      "title": "Stree 2",
-      "originalTitle": "स्त्री 2: सरकटे का आतंक",
-      "language": "Hindi",
-      "year": 2024,
-      "releaseDate": "2024-08-15",
-      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
-      "genres": [
-        "Horror",
-        "Comedy"
-      ],
-      "runtime": 143,
-      "voteAverage": 6.7,
-      "voteCount": 102,
-      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
-      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
-      "youtubePlaylistId": "PLRnfSOtSyGI4",
-      "videos": [
-        {
-          "youtubeLinkID": "0nrvPVnTWlc",
-          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
-          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
-          "duration": "3:08",
-          "durationSec": 188,
-          "date": "2025-05-30T04:30:01-07:00",
-          "resolution": "8K",
-          "viewCount": 33538316
-        },
-        {
-          "youtubeLinkID": "ri1Ar5nEq4s",
-          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
-          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
-          "duration": "4:38",
-          "durationSec": 278,
-          "date": "2025-05-18T22:56:10-07:00",
-          "resolution": "8K",
-          "viewCount": 242079306
-        },
-        {
-          "youtubeLinkID": "FTI96c3mGG0",
-          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
-          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
-          "duration": "3:53",
-          "durationSec": 233,
-          "date": "2025-06-16T02:30:07-07:00",
-          "resolution": "8K",
-          "viewCount": 8412235
-        }
-      ]
-    },
     "811941-devara-part-1": {
       "tmdbId": 811941,
       "title": "Devara: Part 1",
@@ -2366,6 +2323,59 @@
           "date": "2024-10-29T06:29:07-07:00",
           "resolution": "4K",
           "viewCount": 34919799
+        }
+      ]
+    },
+    "1112426-2": {
+      "tmdbId": 1112426,
+      "title": "Stree 2",
+      "originalTitle": "स्त्री 2: सरकटे का आतंक",
+      "language": "Hindi",
+      "year": 2024,
+      "releaseDate": "2024-08-15",
+      "overview": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
+      "runtime": 143,
+      "voteAverage": 6.7,
+      "voteCount": 102,
+      "posterPath": "/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropPath": "/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/nfnhwfUEFuSOxxf4jDdBlY6Lccw.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+      "youtubePlaylistId": "PLRnfSOtSyGI4",
+      "videos": [
+        {
+          "youtubeLinkID": "0nrvPVnTWlc",
+          "title": "Aayi Nai - 8K Video | Stree 2 | Shraddha Kapoor, Rajkummar, Sachin-Jigar, Pawan Singh, Simran, Divya",
+          "thumbnail": "https://img.youtube.com/vi/0nrvPVnTWlc/maxresdefault.jpg",
+          "duration": "3:08",
+          "durationSec": 188,
+          "date": "2025-05-30T04:30:01-07:00",
+          "resolution": "8K",
+          "viewCount": 33538316
+        },
+        {
+          "youtubeLinkID": "ri1Ar5nEq4s",
+          "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
+          "thumbnail": "https://img.youtube.com/vi/ri1Ar5nEq4s/maxresdefault.jpg",
+          "duration": "4:38",
+          "durationSec": 278,
+          "date": "2025-05-18T22:56:10-07:00",
+          "resolution": "8K",
+          "viewCount": 242079306
+        },
+        {
+          "youtubeLinkID": "FTI96c3mGG0",
+          "title": "Khoobsurat - 8K Video | Stree 2 | Varun Dhawan, Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Vishal",
+          "thumbnail": "https://img.youtube.com/vi/FTI96c3mGG0/maxresdefault.jpg",
+          "duration": "3:53",
+          "durationSec": 233,
+          "date": "2025-06-16T02:30:07-07:00",
+          "resolution": "8K",
+          "viewCount": 8412235
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-14T08:46:23.452Z",
+  "lastUpdated": "2026-11-16T04:27:16.823Z",
   "singers": {
     "International": [
       {
@@ -2537,6 +2537,34 @@
             "date": "2023-06-23T04:30:10-07:00",
             "resolution": "4K",
             "viewCount": 13162658
+          }
+        ],
+        "liveVideos": []
+      },
+      {
+        "id": "3734220-damini-bhatla",
+        "name": "Damini Bhatla",
+        "genre": "Female",
+        "category": "Indian",
+        "customImage": "https://raw.githubusercontent.com/Authormorgan6/singers/main/3734220-damini-bhatla.webp",
+        "profilePath": "/8iC6qeOi3jXpXtg8tPSgm7HRn9f.jpg",
+        "profileUrl": "https://raw.githubusercontent.com/Authormorgan6/singers/main/3734220-damini-bhatla.webp",
+        "biography": "",
+        "birthday": "",
+        "placeOfBirth": "",
+        "knownForDepartment": "Sound",
+        "youtubePlaylistId": "PLT8VykcWSs8Y",
+        "livePlaylistId": "",
+        "videos": [
+          {
+            "youtubeLinkID": "VJJ0rRj55YA",
+            "title": "Seethakaalam - Side A, Side B (Official Music Video) - Damini Bhatla, Rishi Roy, Ahmer & 30KEY!",
+            "thumbnail": "https://img.youtube.com/vi/VJJ0rRj55YA/maxresdefault.jpg",
+            "duration": "4:05",
+            "durationSec": 245,
+            "date": "2026-07-31T05:30:06-07:00",
+            "resolution": "4K",
+            "viewCount": 211101
           }
         ],
         "liveVideos": []
