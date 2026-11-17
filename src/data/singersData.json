@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-16T04:27:16.823Z",
+  "lastUpdated": "2026-11-17T02:21:19.773Z",
   "singers": {
     "International": [
       {
@@ -2158,9 +2158,9 @@
         "name": "Shreya Ghoshal",
         "genre": "Female",
         "category": "Indian",
-        "customImage": null,
+        "customImage": "https://raw.githubusercontent.com/Authormorgan6/singers/main/1932076-shreya-ghoshal.webp",
         "profilePath": "/rTmgSXriOmd6TyQVFXvf3DctYXQ.jpg",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/rTmgSXriOmd6TyQVFXvf3DctYXQ.jpg",
+        "profileUrl": "https://raw.githubusercontent.com/Authormorgan6/singers/main/1932076-shreya-ghoshal.webp",
         "biography": "Shreya Ghoshal was born on March 12, 1984 in Rawatbhata, Rajasthan, India. She is known for her work on 3 Idiots (2009), Raanjhanaa (2013) and My Name Is Khan (2010). She has been married to Shiladitya Mukhopadhyaya since February 5, 2015.",
         "birthday": "1984-03-12",
         "placeOfBirth": "Rawatbhata, Rajasthan, India",
@@ -2340,9 +2340,9 @@
         "name": "Badshah",
         "genre": "Male",
         "category": "Indian",
-        "customImage": null,
+        "customImage": "https://raw.githubusercontent.com/Authormorgan6/singers/main/2315636-badshah.webp",
         "profilePath": "/kPYZ56EGciSLe9nMVn5UaAZqGHD.jpg",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/kPYZ56EGciSLe9nMVn5UaAZqGHD.jpg",
+        "profileUrl": "https://raw.githubusercontent.com/Authormorgan6/singers/main/2315636-badshah.webp",
         "biography": "From Wikipedia, the free encyclopedia\n\nAditya Prateek Singh Sisodia, better known by his stage name Badshah, is an Indian rap-music composer rapper and singer known for his Hindi, Haryanvi, and Punjabi songs. He started his career in 2006 alongside Yo Yo Honey Singh in his band Mafia Mundeer.",
         "birthday": "1985-11-19",
         "placeOfBirth": "New Delhi, Delhi, India",
@@ -2418,9 +2418,9 @@
         "name": "Nora Fatehi",
         "genre": "Female",
         "category": "Indian",
-        "customImage": null,
+        "customImage": "https://raw.githubusercontent.com/Authormorgan6/singers/main/1488785-nora-fatehi.webp",
         "profilePath": "/jKvLkySOJFUUnUdE7Zo4oPb9ZzM.jpg",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/jKvLkySOJFUUnUdE7Zo4oPb9ZzM.jpg",
+        "profileUrl": "https://raw.githubusercontent.com/Authormorgan6/singers/main/1488785-nora-fatehi.webp",
         "biography": "Nora Fatehi (born February 6, 1992) is a Moroccan-Canadian actress and dancer who works primarily in Hindi cinema. She made her Hindi film debut in the action thriller *Roar: Tigers of the Sundarbans* (2014) and gained early screen attention appearing in featured dance sequences across Telugu, Tamil, and Malayalam cinema, including *Bāhubali: The Beginning* (2015). She achieved widespread recognition in 2018 for her performance in the recreation of the song \"Dilbar\" in the vigilante action film *Satyameva Jayate*, followed by similar musical appearances in *Stree* (2018) and the action thriller *Batla House* (2019).\n\nFatehi subsequently transitioned to substantive acting roles, portraying supporting characters in the dance drama *Street Dancer 3D* (2020) and the historical war drama *Bhuj: The Pride of India* (2021). In 2024, she played primary roles in the action film *Crakk*, the comedy *Madgaon Express*, and the Telugu period action drama *Matka*. Her subsequent credits include the series *The Royals* (2025), *Be Happy* (2025), and *Ufff Yeh Siyapaa* (2025).",
         "birthday": "1992-02-06",
         "placeOfBirth": "Québec City, Québec, Canada",
@@ -2565,6 +2565,36 @@
             "date": "2026-07-31T05:30:06-07:00",
             "resolution": "4K",
             "viewCount": 211101
+          },
+          {
+            "youtubeLinkID": "cnde3waAkzg",
+            "title": "Say You Want Me - Official Music Video - Damini Bhatla, Shalmali Kholgade",
+            "thumbnail": "https://img.youtube.com/vi/cnde3waAkzg/maxresdefault.jpg",
+            "duration": "3:31",
+            "durationSec": 211,
+            "date": "2026-10-09T03:30:10-07:00",
+            "resolution": "4K",
+            "viewCount": 54475
+          },
+          {
+            "youtubeLinkID": "E9kyCJBgiqU",
+            "title": "Premalekha - Official Music Video",
+            "thumbnail": "https://img.youtube.com/vi/E9kyCJBgiqU/maxresdefault.jpg",
+            "duration": "4:51",
+            "durationSec": 291,
+            "date": "2024-01-12T04:25:09-08:00",
+            "resolution": "4K",
+            "viewCount": 459510
+          },
+          {
+            "youtubeLinkID": "3BblO7EGdhQ",
+            "title": "Ramba Urvasi Menaka (Official Music Video) - Damini Bhatla, Manisha Eerabathani, Pho",
+            "thumbnail": "https://img.youtube.com/vi/3BblO7EGdhQ/maxresdefault.jpg",
+            "duration": "3:56",
+            "durationSec": 236,
+            "date": "2026-06-10T05:25:06-07:00",
+            "resolution": "4K",
+            "viewCount": 60381
           }
         ],
         "liveVideos": []
